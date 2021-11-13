@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	    <meta name="description" content="">
+	    <meta name="author" content="">
+	    <meta charset="ISO-8859-1">
+	    <link rel="icon" href="https://getbootstrap.com/docs/4.0/assets/img/favicons/favicon.ico">
+	
+	    <title>Enterprise Ontology (external) (EO)</title>
+	
+	    <!-- Bootstrap core CSS -->
+	    <link href="../lib/Bootstrap_files/bootstrap.min.css" rel="stylesheet">
+	
+	    <!-- Custom styles for this template -->
+	    <link href="../lib/Bootstrap_files/sticky-footer-navbar.css" rel="stylesheet">    
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	    
+	    <script type="text/javascript" src="jquery.min.js"></script>
+			<script type="text/javascript" src="maphilight.js"></script>
+			<script type="text/javascript">
+				$(function() {
+			        $('.map').maphilight();
+			    });
+			</script>
+
+
+  </head>
+
+  <body data-new-gr-c-s-check-loaded="14.1038.0" data-gr-ext-installed="">
+
+		<header>
+			
+	<!--Fixed navbar -->		
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="#">Navbar</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+	        <li class="nav-item">
+	          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+	        </li>
+
+	        <li class="nav-item dropdown">
+	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	            The Network
+	          </a>
+	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+	            <li><a class="dropdown-item fst-italic" href="#" tabindex="-1" aria-disabled="true">Architecture</a></li>
+	            <li><a class="dropdown-item fst-italic" href="#" tabindex="-1" aria-disabled="true">Evolution Mechanisms</a></li>
+	            <li><a class="dropdown-item fst-italic" href="#" tabindex="-1" aria-disabled="true">Relationship with SEON</a></li>
+	          	<li><hr class="dropdown-divider"></li>
+
+	            <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Foundational Layer</a></li>
+	            <li><a class="dropdown-item" href="UFO.html">UFO - Unified Foundational Ontology</a></li>
+
+	            <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Core Layer</a></li>
+	            <li><a class="dropdown-item" href="HCIO.html">HCIO - Human-Computer Interaction Ontology</a></li>
+
+	            <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Domain Layer</a></li>
+	            <li><a class="dropdown-item" href="HCIDO.html">HCIDO - Human-Computer Interaction Design Ontology</a></li>
+<li><a class="dropdown-item" href="HCIEO.html">HCIEO - Human-Computer Interaction Evaluation Ontology</a></li>
+<li><a class="dropdown-item" href="HCIDPO.html">HCIDPO - Human-Computer Interaction Design Process Ontology</a></li>
+
+
+	          </ul>
+	        </li>
+
+	        <li class="nav-item dropdown">
+	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	            Features
+	          </a>
+	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+	            <li><a class="dropdown-item" href="SearchFrames.html">Concepts Searcher</a></li>
+	            <li><a class="dropdown-item" href="NetworkGraph.html">Graph</a></li>
+	            <li><a class="dropdown-item" href="NetworkStats.html">Stats</a></li>
+
+	            <li><hr class="dropdown-divider"></li>
+	            <li><a class="dropdown-item" href="SeonFeedback.html">Feedback</a></li>
+	          </ul>
+	        </li>
+
+	        <li class="nav-item dropdown">
+	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	            More
+	          </a>
+	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+	            <li><a class="dropdown-item" href="SEON.owl" target="_blank">Operational Version (in OWL)</a></li>
+	            <li><a class="dropdown-item" href="#">Astah file</a></li>
+	            <li><a class="dropdown-item" href="#">Specifications</a></li>
+	            <li><a class="dropdown-item" href="#">Publications</a></li>
+	          </ul>
+	        </li>
+
+<!--	        <li class="nav-item">
+	          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+	        </li>-->
+        
+	      </ul>
+	      
+	    </div>
+	  </div>
+	</nav>	
+	
+		</header>
+
+		<!-- Begin page content -->
+    <main role="main" class="container">	
+				<h3 align="center">HCI-ON: Networked Ontology Specification</h3>
+				<h1 align="center">Enterprise Ontology (external) (EO)</h1>
+
+				<h2>1. Ontology Description</h2>
+				<p align="justify">The Enterprise Ontology (EO) aims at establishing a common conceptualization on the Entreprise domain, including organizations, organizational units, people, roles, teams and projects.<br/>Currently, it as considered external to SEON.</p>
+
+				<h2>2. Related Ontologies</h2>
+				<p>Networked ontologies used by EO:</p>
+				<table border="1" style="width: 100%" cellpadding="6">
+					<tbody>
+						<tr style="background-color: #D8D8D8">
+							<td style="width: 20%"><b>Ontology</b></td>
+							<td style="width: 66%"><b>Relation</b></td>
+							<td style="width: 14%; text-align: center"><b>Integration Level</b></td>
+						</tr>
+						<tr><td><a href="UFO.html">UFO - Unified Foundational Ontology</a></td><td>The EO concepts are derived from UFO (mostly social entities from UFO-C).</td><td style="text-align:center">High</td></tr>
+
+					</tbody>
+				</table>
+
+				<h2>3. Ontology Models</h2>
+				<p>Figure 1 presents the packages of the Teams.</p>
+<p align="center"><IMG src="images/Teams.png" width="1100" class="map" usemap="#Teams"><MAP NAME="Teams"></MAP></p>
+<p align="center"><b>Figure 1. Teams.</b></p>
+<p align="justify">Project Team<br/>Organizational Team<br/>Team Membership</p>
+<p>Figure 2 presents the packages of the Job Plan and Roles.</p>
+<p align="center"><IMG src="images/Job Plan and Roles.png" width="734" class="map" usemap="#Job Plan and Roles"><MAP NAME="Job Plan and Roles"></MAP></p>
+<p align="center"><b>Figure 2. Job Plan and Roles.</b></p>
+<p align="justify"></p>
+
+<h3><a name="EO_Human+Resource+Management_section">3.1.  Human Resource Management</a></h3>
+<p align="justify"></p>
+<p>Figure 3 presents the conceptual model of the HR Management subontology.</p>
+<p align="center"><IMG src="images/HR Management.png" width="1310" class="map" usemap="#HR Management"><MAP NAME="HR Management">
+<area shape="rect" coords="494,79,606,115" href="UFO.html#UFO_Physical+Agent" title="">
+<area shape="rect" coords="511,154,597,190" href="UFO.html#UFO_Person" title="Same as UFO::Human Agent
+A human Physical Agent.">
+<area shape="rect" coords="487,229,612,265" href="EO.html#EO_Human+Resource" title="">
+<area shape="rect" coords="1045,161,1193,197" href="EO.html#EO_Formal+Organization" title="">
+<area shape="rect" coords="1176,80,1288,116" href="EO.html#EO_Organization" title="Same as UFO::Organization.
+A Social Agent involving people and other agents and facilities with an arrangement of responsibilities, authorities and relationships.">
+<area shape="rect" coords="757,212,885,285" href="EO.html#EO_Employment" title="">
+<area shape="rect" coords="997,231,1208,267" href="EO.html#EO_Formal+Organization+Employer" title="">
+<area shape="rect" coords="1158,291,1300,327" href="EO.html#EO_Organizational+Unit" title="">
+<area shape="rect" coords="757,359,885,432" href="EO.html#EO_OU+Assignment" title="">
+<area shape="rect" coords="503,378,596,414" href="EO.html#EO_OU+Member" title="">
+<area shape="rect" coords="997,378,1110,414" href="EO.html#EO_Allocation+Unit" title="">
+<area shape="rect" coords="802,17,984,53" href="EO.html#EO_Formal+Organization+Type" title="">
+<area shape="rect" coords="205,124,441,160" href="EO.html#EO_Formal+Organization+Member+Type" title="">
+<area shape="rect" coords="54,226,161,262" href="EO.html#EO_Business+Role" title="">
+<area shape="rect" coords="133,33,288,69" href="EO.html#EO_Human+Resource+Role" title="">
+<area shape="rect" coords="510,17,642,53" href="EO.html#EO_Employment+Type" title="">
+<area shape="rect" coords="1050,525,1226,561" href="EO.html#EO_Organizational+Unit+Type" title="">
+<area shape="rect" coords="436,525,588,561" href="EO.html#EO_OU+Assignment+Type" title=""></MAP></p>
+<p align="center"><b>Figure 3. HR Management conceptual model.</b></p>
+<p align="justify"></p>
+
+<h3><a name="EO_Organizational+Structure_section">3.2.  Organizational Structure</a></h3>
+<p align="justify"></p>
+<p>Figure 4 presents the conceptual model of the Organizational Structure subontology.</p>
+<p align="center"><IMG src="images/Organizational Structure.png" width="1216" class="map" usemap="#Organizational Structure"><MAP NAME="Organizational Structure">
+<area shape="rect" coords="504,126,629,162" href="EO.html#EO_Organization" title="Same as UFO::Organization.
+A Social Agent involving people and other agents and facilities with an arrangement of responsibilities, authorities and relationships.">
+<area shape="rect" coords="356,223,504,259" href="EO.html#EO_Formal+Organization" title="">
+<area shape="rect" coords="633,223,775,259" href="EO.html#EO_Organizational+Unit" title="">
+<area shape="rect" coords="495,54,641,90" href="UFO.html#UFO_Social+Agent" title="">
+<area shape="rect" coords="914,223,1090,259" href="EO.html#EO_Organizational+Unit+Type" title="">
+<area shape="rect" coords="44,223,226,259" href="EO.html#EO_Formal+Organization+Type" title="">
+<area shape="rect" coords="251,347,435,377" href="EO.html#EO_Multi+Formal+Organization" title="">
+<area shape="rect" coords="388,398,609,428" href="EO.html#EO_Standalone+Formal+Organization" title="">
+<area shape="rect" coords="154,487,421,517" href="EO.html#EO_Simple+Standalone+Formal+Organization" title="">
+<area shape="rect" coords="410,487,690,517" href="EO.html#EO_Complex+Standalone+Formal+Organization" title="">
+<area shape="rect" coords="857,411,1045,441" href="EO.html#EO_Simple+Organizational+Unit" title="">
+<area shape="rect" coords="736,347,937,377" href="EO.html#EO_Complex+Organizational+Unit" title=""></MAP></p>
+<p align="center"><b>Figure 4. Organizational Structure conceptual model.</b></p>
+<p align="justify"></p>
+
+
+				<h2>4. Concepts Definition</h2>
+				<p align="justify">The following table shows the definitions for EO concepts.
+			<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->
+				</p>
+				<table style="width: 100%" border="1" cellpadding="6">
+					<tbody>
+						<tr style="background-color: #D8D8D8">
+							<td style="width: 25%"><b>Concept</b></td>
+							<td style="width: 75%"><b>Definition</b></td>
+						</tr>
+						<tr>
+<td><a name="EO_Allocation+Unit"><b><i>Allocation Unit</i></b></a>
+<a href=#EO_Allocation+Unit_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="EO_Business+Role"><b><i>Business Role</i></b></a>
+<a href=#EO_Business+Role_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="EO_Complex+Organizational+Unit"><b><i>Complex Organizational Unit</i></b></a>
+<a href=#EO_Complex+Organizational+Unit_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="EO_Complex+Standalone+Formal+Organization"><b><i>Complex Standalone Formal Organization</i></b></a>
+<a href=#EO_Complex+Standalone+Formal+Organization_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="EO_Employment"><b><i>Employment</i></b></a>
+<a href=#EO_Employment_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="EO_Employment+Type"><b><i>Employment Type</i></b></a>
+<a href=#EO_Employment+Type_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="EO_Formal+Organization"><b><i>Formal Organization</i></b></a>
+<a href=#EO_Formal+Organization_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="EO_Formal+Organization+Employer"><b><i>Formal Organization Employer</i></b></a>
+<a href=#EO_Formal+Organization+Employer_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="EO_Formal+Organization+Member+Type"><b><i>Formal Organization Member Type</i></b></a>
+<a href=#EO_Formal+Organization+Member+Type_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="EO_Formal+Organization+Type"><b><i>Formal Organization Type</i></b></a>
+<a href=#EO_Formal+Organization+Type_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="EO_Human+Resource"><b><i>Human Resource</i></b></a>
+<a href=#EO_Human+Resource_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="EO_Human+Resource+Role"><b><i>Human Resource Role</i></b></a>
+<a href=#EO_Human+Resource+Role_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="EO_Job+Plan"><b><i>Job Plan</i></b></a>
+<a href=#EO_Job+Plan_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="EO_Multi+Formal+Organization"><b><i>Multi Formal Organization</i></b></a>
+<a href=#EO_Multi+Formal+Organization_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="EO_OU+Assignment"><b><i>OU Assignment</i></b></a>
+<a href=#EO_OU+Assignment_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="EO_OU+Assignment+Type"><b><i>OU Assignment Type</i></b></a>
+<a href=#EO_OU+Assignment+Type_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="EO_OU+Member"><b><i>OU Member</i></b></a>
+<a href=#EO_OU+Member_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="EO_Organization"><b><i>Organization</i></b></a>
+<a href=#EO_Organization_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Same as UFO::Organization.<br/>A Social Agent involving people and other agents and facilities with an arrangement of responsibilities, authorities and relationships.
+<br/>Ex.:<i> A company, an enterprise, a software house.</i></td>
+</tr>
+<tr>
+<td><a name="EO_Organizational+Role"><b><i>Organizational Role</i></b></a>
+<a href=#EO_Organizational+Role_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>A Social Role, recognized by the Organization, assigned to Agents when they are hired, included in a team, allocated or participating in activities.
+<br/>Ex.:<i> System Analyst, Designer, Programmer, Client Organization.</i></td>
+</tr>
+<tr>
+<td><a name="EO_Organizational+Team"><b><i>Organizational Team</i></b></a>
+<a href=#EO_Organizational+Team_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="EO_Organizational+Unit"><b><i>Organizational Unit</i></b></a>
+<a href=#EO_Organizational+Unit_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="EO_Organizational+Unit+Type"><b><i>Organizational Unit Type</i></b></a>
+<a href=#EO_Organizational+Unit+Type_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="EO_Project"><b><i>Project</i></b></a>
+<a href=#EO_Project_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>A Social Object as a temporary endeavor undertaken to create a unique product, service, or result.
+<br/>Ex.:<i> A project to produce a software on demand.</i></td>
+</tr>
+<tr>
+<td><a name="EO_Project+Team"><b><i>Project Team</i></b></a>
+<a href=#EO_Project+Team_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="EO_Simple+Organizational+Unit"><b><i>Simple Organizational Unit</i></b></a>
+<a href=#EO_Simple+Organizational+Unit_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="EO_Simple+Standalone+Formal+Organization"><b><i>Simple Standalone Formal Organization</i></b></a>
+<a href=#EO_Simple+Standalone+Formal+Organization_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="EO_Standalone+Formal+Organization"><b><i>Standalone Formal Organization</i></b></a>
+<a href=#EO_Standalone+Formal+Organization_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="EO_Team"><b><i>Team</i></b></a>
+<a href=#EO_Team_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Social Agent representing a group of people with a defined purpose.
+<br/>Ex.:<i> a Testing team, a Quality Assurance team, a Deployment team.</i></td>
+</tr>
+<tr>
+<td><a name="EO_Team+Member"><b><i>Team Member</i></b></a>
+<a href=#EO_Team+Member_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="EO_Team+Membership"><b><i>Team Membership</i></b></a>
+<a href=#EO_Team+Membership_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="EO_Team+Purpose"><b><i>Team Purpose</i></b></a>
+<a href=#EO_Team+Purpose_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+
+					</tbody>
+				</table>
+				<br/>
+				<h2>Detailed Concepts</h2>
+				<a name="EO_Allocation+Unit_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltrole&gt&gt</code><br/>
+<strong>Allocation Unit<strong></td></tr>
+</table><br/>
+<b>EO::Allocation Unit</b><br/>
+Specializes EO::Organizational Unit<br/><br/>
+<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Allocation Unit <>-- OU Member  &lt&ltmemberOf&gt&gt<br/>
+OU Assignment (1..*) assigns to (1..1) Allocation Unit  &lt&ltmediation&gt&gt<br/>
+</code><br/>
+<br/><br/>
+
+<a name="EO_Business+Role_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&lt2ndOT&gt&gt</code><br/>
+<strong>Business Role<strong></td></tr>
+</table><br/>
+<b>EO::Business Role</b><br/>
+Specializes EO::Human Resource Role<br/><br/>
+<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Business Role (0..*) covers (0..*) Business Role<br/>
+Business Role (1..*)  (0..*) OU Member  &lt&ltinstantiation&gt&gt<br/>
+OU Assignment Type (0..*) mediates business role (1..*) Business Role<br/>
+Formal Organization Member Type (1..*) covers (0..*) Business Role<br/>
+</code><br/>
+<br/><br/>
+
+<a name="EO_Complex+Organizational+Unit_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Complex Organizational Unit<strong></td></tr>
+</table><br/>
+<b>EO::Complex Organizational Unit</b><br/>
+Specializes EO::Organizational Unit<br/><br/>
+<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Complex Organizational Unit (0..1) <>-- (2..*) Simple Organizational Unit  &lt&ltmaterial&gt&gt<br/>
+</code><br/>
+<br/><br/>
+
+<a name="EO_Complex+Standalone+Formal+Organization_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Complex Standalone Formal Organization<strong></td></tr>
+</table><br/>
+<b>EO::Complex Standalone Formal Organization</b><br/>
+Specializes EO::Standalone Formal Organization<br/><br/>
+<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Complex Standalone Formal Organization (1..1) <>-- (2..*) Organizational Unit  &lt&ltmaterial&gt&gt<br/>
+</code><br/>
+<br/><br/>
+
+<a name="EO_Employment_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltrelator&gt&gt</code><br/>
+<strong>Employment<strong></td></tr>
+</table><br/>
+<b>EO::Employment</b><br/>
+Specializes UFO::Social Relator<br/><br/>
+<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Employment (0..*) made by (1..1) Formal Organization Employer  &lt&ltmediation&gt&gt<br/>
+Employment (1..*) employs (1..1) Human Resource  &lt&ltmediation&gt&gt<br/>
+Employment (0..*) to act as (1..1) Organizational Role  &lt&ltmediation&gt&gt<br/>
+Employment Type (1..1)  (0..*) Employment  &lt&ltinstantiation&gt&gt<br/>
+OU Assignment (0..*) refers to (1..1) Employment<br/>
+</code><br/>
+<br/><br/>
+
+<a name="EO_Employment+Type_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&lt2ndOT&gt&gt</code><br/>
+<strong>Employment Type<strong></td></tr>
+</table><br/>
+<b>EO::Employment Type</b><br/>
+Specializes <br/><br/>
+<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Employment Type (0..*) mediates org type (1..*) Formal Organization Type<br/>
+Employment Type (0..*) mediates org member type (1..*) Formal Organization Member Type<br/>
+Employment Type (1..1)  (0..*) Employment  &lt&ltinstantiation&gt&gt<br/>
+</code><br/>
+<br/><br/>
+
+<a name="EO_Formal+Organization_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltkind&gt&gt</code><br/>
+<strong>Formal Organization<strong></td></tr>
+</table><br/>
+<b>EO::Formal Organization</b><br/>
+Specializes EO::Organization<br/><br/>
+<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Formal Organization Type (1..*)  (0..*) Formal Organization  &lt&ltinstantiation&gt&gt<br/>
+</code><br/>
+<br/><br/>
+
+<a name="EO_Formal+Organization+Employer_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltrole&gt&gt</code><br/>
+<strong>Formal Organization Employer<strong></td></tr>
+</table><br/>
+<b>EO::Formal Organization Employer</b><br/>
+Specializes EO::Formal Organization<br/><br/>
+<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Formal Organization Employer <>-- Human Resource  &lt&ltmemberOf&gt&gt<br/>
+Employment (0..*) made by (1..1) Formal Organization Employer  &lt&ltmediation&gt&gt<br/>
+</code><br/>
+<br/><br/>
+
+<a name="EO_Formal+Organization+Member+Type_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&lt2ndOT&gt&gt</code><br/>
+<strong>Formal Organization Member Type<strong></td></tr>
+</table><br/>
+<b>EO::Formal Organization Member Type</b><br/>
+Specializes EO::Human Resource Role<br/><br/>
+<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Formal Organization Member Type (1..*) covers (0..*) Business Role<br/>
+Formal Organization Member Type (1..*)  (0..*) Human Resource  &lt&ltinstantiation&gt&gt<br/>
+Employment Type (0..*) mediates org member type (1..*) Formal Organization Member Type<br/>
+</code><br/>
+<br/><br/>
+
+<a name="EO_Formal+Organization+Type_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&lt2ndOT&gt&gt</code><br/>
+<strong>Formal Organization Type<strong></td></tr>
+</table><br/>
+<b>EO::Formal Organization Type</b><br/>
+Specializes <br/><br/>
+<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Formal Organization Type (0..*) is compatible with org type (0..*) Formal Organization Type<br/>
+Formal Organization Type (0..*) is compatible with unit type (0..*) Organizational Unit Type<br/>
+Formal Organization Type (1..*)  (0..*) Formal Organization  &lt&ltinstantiation&gt&gt<br/>
+Employment Type (0..*) mediates org type (1..*) Formal Organization Type<br/>
+</code><br/>
+<br/><br/>
+
+<a name="EO_Human+Resource_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltrole&gt&gt</code><br/>
+<strong>Human Resource<strong></td></tr>
+</table><br/>
+<b>EO::Human Resource</b><br/>
+Specializes UFO::Role, UFO::Person<br/><br/>
+<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Formal Organization Employer <>-- Human Resource  &lt&ltmemberOf&gt&gt<br/>
+Employment (1..*) employs (1..1) Human Resource  &lt&ltmediation&gt&gt<br/>
+Formal Organization Member Type (1..*)  (0..*) Human Resource  &lt&ltinstantiation&gt&gt<br/>
+</code><br/>
+<br/><br/>
+
+<a name="EO_Human+Resource+Role_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&lt2ndOT&gt&gt</code><br/>
+<strong>Human Resource Role<strong></td></tr>
+</table><br/>
+<b>EO::Human Resource Role</b><br/>
+Specializes <br/><br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/><br/>
+
+<a name="EO_Job+Plan_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltkind&gt&gt</code><br/>
+<strong>Job Plan<strong></td></tr>
+</table><br/>
+<b>EO::Job Plan</b><br/>
+Specializes UFO::Normative Description<br/><br/>
+<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Job Plan (1..1) defines (1..*) Organizational Role<br/>
+Job Plan (0..*) recognized by (1..1) Organization<br/>
+</code><br/>
+<br/><br/>
+
+<a name="EO_Multi+Formal+Organization_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Multi Formal Organization<strong></td></tr>
+</table><br/>
+<b>EO::Multi Formal Organization</b><br/>
+Specializes EO::Formal Organization<br/><br/>
+<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Multi Formal Organization (0..1) <>-- (2..*) Standalone Formal Organization  &lt&ltmaterial&gt&gt<br/>
+</code><br/>
+<br/><br/>
+
+<a name="EO_OU+Assignment_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltrelator&gt&gt</code><br/>
+<strong>OU Assignment<strong></td></tr>
+</table><br/>
+<b>EO::OU Assignment</b><br/>
+Specializes <br/><br/>
+<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>OU Assignment (1..*) assigns (1..1) OU Member  &lt&ltmediation&gt&gt<br/>
+OU Assignment (1..*) assigns to (1..1) Allocation Unit  &lt&ltmediation&gt&gt<br/>
+OU Assignment (0..*) refers to (1..1) Employment<br/>
+OU Assignment Type (1..1)  (0..*) OU Assignment  &lt&ltinstantiation&gt&gt<br/>
+</code><br/>
+<br/><br/>
+
+<a name="EO_OU+Assignment+Type_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&lt2ndOT&gt&gt</code><br/>
+<strong>OU Assignment Type<strong></td></tr>
+</table><br/>
+<b>EO::OU Assignment Type</b><br/>
+Specializes <br/><br/>
+<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>OU Assignment Type (0..*) mediates ou type (1..*) Organizational Unit Type<br/>
+OU Assignment Type (0..*) mediates business role (1..*) Business Role<br/>
+OU Assignment Type (1..1)  (0..*) OU Assignment  &lt&ltinstantiation&gt&gt<br/>
+</code><br/>
+<br/><br/>
+
+<a name="EO_OU+Member_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltrole&gt&gt</code><br/>
+<strong>OU Member<strong></td></tr>
+</table><br/>
+<b>EO::OU Member</b><br/>
+Specializes EO::Human Resource<br/><br/>
+<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Allocation Unit <>-- OU Member  &lt&ltmemberOf&gt&gt<br/>
+OU Assignment (1..*) assigns (1..1) OU Member  &lt&ltmediation&gt&gt<br/>
+Business Role (1..*)  (0..*) OU Member  &lt&ltinstantiation&gt&gt<br/>
+</code><br/>
+<br/><br/>
+
+<a name="EO_Organization_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltcategory&gt&gt</code><br/>
+<strong>Organization<strong></td></tr>
+</table><br/>
+<b>EO::Organization</b><br/>
+Specializes UFO::Social Agent<br/><br/>
+Same as UFO::Organization.<br/>A Social Agent involving people and other agents and facilities with an arrangement of responsibilities, authorities and relationships.<br/>
+Ex.:<i> A company, an enterprise, a software house.</i><br/>
+<br/>
+Relations:<br/>
+<code>Organization (1..1) has (0..*) Organizational Team<br/>
+Performed Organizational Process (0..*) performed in (1..1) Organization<br/>
+Organizational Intended Process (0..*) defined for (1..1) Organization<br/>
+Standard Process Definition Document (0..*) recognized by (1..*) Organization<br/>
+Job Plan (0..*) recognized by (1..1) Organization<br/>
+</code><br/>
+<br/><br/>
+
+<a name="EO_Organizational+Role_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&lt2ndOT&gt&gt</code><br/>
+<strong>Organizational Role<strong></td></tr>
+</table><br/>
+<b>EO::Organizational Role</b><br/>
+Specializes UFO::Social Role<br/><br/>
+A Social Role, recognized by the Organization, assigned to Agents when they are hired, included in a team, allocated or participating in activities.<br/>
+Ex.:<i> System Analyst, Designer, Programmer, Client Organization.</i><br/>
+<br/>
+Relations:<br/>
+<code>Operational Definition of Measure (0..*) indicates (0..1) Organizational Role<br/>
+Stakeholder Participation (0..*) acts as (1..1) Organizational Role<br/>
+Stakeholder Allocation (0..*) to act as (1..1) Organizational Role  &lt&ltmaterial&gt&gt<br/>
+Team Membership (0..*) is to play (1..1) Organizational Role  &lt&ltmediation&gt&gt<br/>
+Job Plan (1..1) defines (1..*) Organizational Role<br/>
+Employment (0..*) to act as (1..1) Organizational Role  &lt&ltmediation&gt&gt<br/>
+Intended Activity (0..*) is to be performed by (0..*) Organizational Role<br/>
+Standard Activity (0..*) is to be performed by (0..*) Organizational Role<br/>
+</code><br/>
+<br/><br/>
+
+<a name="EO_Organizational+Team_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
+<strong>Organizational Team<strong></td></tr>
+</table><br/>
+<b>EO::Organizational Team</b><br/>
+Specializes EO::Team<br/><br/>
+<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Organization (1..1) has (0..*) Organizational Team<br/>
+</code><br/>
+<br/><br/>
+
+<a name="EO_Organizational+Unit_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltkind&gt&gt</code><br/>
+<strong>Organizational Unit<strong></td></tr>
+</table><br/>
+<b>EO::Organizational Unit</b><br/>
+Specializes EO::Organization<br/><br/>
+<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Organizational Unit Type (1..*)  (0..*) Organizational Unit  &lt&ltinstantiation&gt&gt<br/>
+Complex Standalone Formal Organization (1..1) <>-- (2..*) Organizational Unit  &lt&ltmaterial&gt&gt<br/>
+</code><br/>
+<br/><br/>
+
+<a name="EO_Organizational+Unit+Type_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&lt2ndOT&gt&gt</code><br/>
+<strong>Organizational Unit Type<strong></td></tr>
+</table><br/>
+<b>EO::Organizational Unit Type</b><br/>
+Specializes <br/><br/>
+<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Organizational Unit Type (0..*) is compatible with subunit type (0..*) Organizational Unit Type<br/>
+Organizational Unit Type (1..*)  (0..*) Organizational Unit  &lt&ltinstantiation&gt&gt<br/>
+OU Assignment Type (0..*) mediates ou type (1..*) Organizational Unit Type<br/>
+Formal Organization Type (0..*) is compatible with unit type (0..*) Organizational Unit Type<br/>
+</code><br/>
+<br/><br/>
+
+<a name="EO_Project_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltkind&gt&gt</code><br/>
+<strong>Project<strong></td></tr>
+</table><br/>
+<b>EO::Project</b><br/>
+Specializes UFO::Social Object<br/><br/>
+A Social Object as a temporary endeavor undertaken to create a unique product, service, or result.<br/>
+Ex.:<i> A project to produce a software on demand.</i><br/>
+<br/>
+Relations:<br/>
+<code>Project (1..1) has (0..*) Project Team<br/>
+</code><br/>
+<br/><br/>
+
+<a name="EO_Project+Team_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
+<strong>Project Team<strong></td></tr>
+</table><br/>
+<b>EO::Project Team</b><br/>
+Specializes EO::Team, SPO::Team Stakeholder<br/><br/>
+<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Project Team participates in Adherence Evaluation<br/>
+Project (1..1) has (0..*) Project Team<br/>
+</code><br/>
+<br/><br/>
+
+<a name="EO_Simple+Organizational+Unit_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Simple Organizational Unit<strong></td></tr>
+</table><br/>
+<b>EO::Simple Organizational Unit</b><br/>
+Specializes EO::Organizational Unit<br/><br/>
+<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Complex Organizational Unit (0..1) <>-- (2..*) Simple Organizational Unit  &lt&ltmaterial&gt&gt<br/>
+</code><br/>
+<br/><br/>
+
+<a name="EO_Simple+Standalone+Formal+Organization_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Simple Standalone Formal Organization<strong></td></tr>
+</table><br/>
+<b>EO::Simple Standalone Formal Organization</b><br/>
+Specializes EO::Standalone Formal Organization<br/><br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/><br/>
+
+<a name="EO_Standalone+Formal+Organization_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Standalone Formal Organization<strong></td></tr>
+</table><br/>
+<b>EO::Standalone Formal Organization</b><br/>
+Specializes EO::Formal Organization<br/><br/>
+<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Multi Formal Organization (0..1) <>-- (2..*) Standalone Formal Organization  &lt&ltmaterial&gt&gt<br/>
+</code><br/>
+<br/><br/>
+
+<a name="EO_Team_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltkind&gt&gt</code><br/>
+<strong>Team<strong></td></tr>
+</table><br/>
+<b>EO::Team</b><br/>
+Specializes UFO::Social Agent<br/><br/>
+Social Agent representing a group of people with a defined purpose.<br/>
+Ex.:<i> a Testing team, a Quality Assurance team, a Deployment team.</i><br/>
+<br/>
+Relations:<br/>
+<code>Team (1..1) has (1..*) Team Purpose<br/>
+Team (1..1) done for (1..*) Team Membership  &lt&ltmediation&gt&gt<br/>
+</code><br/>
+<br/><br/>
+
+<a name="EO_Team+Member_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltrole&gt&gt</code><br/>
+<strong>Team Member<strong></td></tr>
+</table><br/>
+<b>EO::Team Member</b><br/>
+Specializes UFO::Person<br/><br/>
+<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Team Member (1..1) allocates (1..*) Team Membership  &lt&ltmediation&gt&gt<br/>
+</code><br/>
+<br/><br/>
+
+<a name="EO_Team+Membership_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltrelator&gt&gt</code><br/>
+<strong>Team Membership<strong></td></tr>
+</table><br/>
+<b>EO::Team Membership</b><br/>
+Specializes UFO::Social Relator<br/><br/>
+<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Team Membership (0..*) is to play (1..1) Organizational Role  &lt&ltmediation&gt&gt<br/>
+Team (1..1) done for (1..*) Team Membership  &lt&ltmediation&gt&gt<br/>
+Team Member (1..1) allocates (1..*) Team Membership  &lt&ltmediation&gt&gt<br/>
+</code><br/>
+<br/><br/>
+
+<a name="EO_Team+Purpose_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><code>&lt&ltmode&gt&gt</code><br/>
+<strong>Team Purpose<strong></td></tr>
+</table><br/>
+<b>EO::Team Purpose</b><br/>
+Specializes UFO::Intention<br/><br/>
+<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Team (1..1) has (1..*) Team Purpose<br/>
+</code><br/>
+<br/><br/>
+
+
+				<hr>
+				<br/>
+				<small><b>Enterprise Ontology (external) (EO)</b></small><br/>
+				<small>Sat Nov 13 13:05:01 BRT 2021</small>
+			</main>
+	
+			<div class="embed-responsive embed-responsive-21by9">
+				<iframe class="embed-responsive-item" src="footer.html" name="footer"></iframe>
+			</div>
+	    <!-- Bootstrap core JavaScript
+	    ================================================== -->
+	    <!-- Placed at the end of the document so the pages load faster -->
+	    <script src="./bootstrap-5.1.3-dist/js/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+	    <script src="./bootstrap-5.1.3-dist/js/popper.min.js"></script>
+	    <script src="./bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+	    
+	    
+	    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+	</body>
+	<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+</html>

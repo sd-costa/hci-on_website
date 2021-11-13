@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	    <meta name="description" content="">
+	    <meta name="author" content="">
+	    <meta charset="ISO-8859-1">
+	    <link rel="icon" href="https://getbootstrap.com/docs/4.0/assets/img/favicons/favicon.ico">
+	
+	    <title>Human-Computer Interaction Design Ontology (HCIDO)</title>
+	
+	    <!-- Bootstrap core CSS -->
+	    <link href="../lib/Bootstrap_files/bootstrap.min.css" rel="stylesheet">
+	
+	    <!-- Custom styles for this template -->
+	    <link href="../lib/Bootstrap_files/sticky-footer-navbar.css" rel="stylesheet">    
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	    
+	    <script type="text/javascript" src="jquery.min.js"></script>
+			<script type="text/javascript" src="maphilight.js"></script>
+			<script type="text/javascript">
+				$(function() {
+			        $('.map').maphilight();
+			    });
+			</script>
+
+
+  </head>
+
+  <body data-new-gr-c-s-check-loaded="14.1038.0" data-gr-ext-installed="">
+
+		<header>
+			
+	<!--Fixed navbar -->		
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="#">Navbar</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+	        <li class="nav-item">
+	          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+	        </li>
+
+	        <li class="nav-item dropdown">
+	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	            The Network
+	          </a>
+	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+	            <li><a class="dropdown-item fst-italic" href="#" tabindex="-1" aria-disabled="true">Architecture</a></li>
+	            <li><a class="dropdown-item fst-italic" href="#" tabindex="-1" aria-disabled="true">Evolution Mechanisms</a></li>
+	            <li><a class="dropdown-item fst-italic" href="#" tabindex="-1" aria-disabled="true">Relationship with SEON</a></li>
+	          	<li><hr class="dropdown-divider"></li>
+
+	            <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Foundational Layer</a></li>
+	            <li><a class="dropdown-item" href="UFO.html">UFO - Unified Foundational Ontology</a></li>
+
+	            <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Core Layer</a></li>
+	            <li><a class="dropdown-item" href="HCIO.html">HCIO - Human-Computer Interaction Ontology</a></li>
+
+	            <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Domain Layer</a></li>
+	            <li><a class="dropdown-item" href="HCIDO.html">HCIDO - Human-Computer Interaction Design Ontology</a></li>
+<li><a class="dropdown-item" href="HCIEO.html">HCIEO - Human-Computer Interaction Evaluation Ontology</a></li>
+<li><a class="dropdown-item" href="HCIDPO.html">HCIDPO - Human-Computer Interaction Design Process Ontology</a></li>
+
+
+	          </ul>
+	        </li>
+
+	        <li class="nav-item dropdown">
+	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	            Features
+	          </a>
+	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+	            <li><a class="dropdown-item" href="SearchFrames.html">Concepts Searcher</a></li>
+	            <li><a class="dropdown-item" href="NetworkGraph.html">Graph</a></li>
+	            <li><a class="dropdown-item" href="NetworkStats.html">Stats</a></li>
+
+	            <li><hr class="dropdown-divider"></li>
+	            <li><a class="dropdown-item" href="SeonFeedback.html">Feedback</a></li>
+	          </ul>
+	        </li>
+
+	        <li class="nav-item dropdown">
+	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	            More
+	          </a>
+	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+	            <li><a class="dropdown-item" href="SEON.owl" target="_blank">Operational Version (in OWL)</a></li>
+	            <li><a class="dropdown-item" href="#">Astah file</a></li>
+	            <li><a class="dropdown-item" href="#">Specifications</a></li>
+	            <li><a class="dropdown-item" href="#">Publications</a></li>
+	          </ul>
+	        </li>
+
+<!--	        <li class="nav-item">
+	          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+	        </li>-->
+        
+	      </ul>
+	      
+	    </div>
+	  </div>
+	</nav>	
+	
+		</header>
+
+		<!-- Begin page content -->
+    <main role="main" class="container">	
+				<h3 align="center">HCI-ON: Networked Ontology Specification</h3>
+				<h1 align="center">Human-Computer Interaction Design Ontology (HCIDO)</h1>
+
+				<h2>1. Ontology Description</h2>
+				<p align="justify"></p>
+
+				<h2>2. Related Ontologies</h2>
+				<p>Networked ontologies used by HCIDO:</p>
+				<table border="1" style="width: 100%" cellpadding="6">
+					<tbody>
+						<tr style="background-color: #D8D8D8">
+							<td style="width: 20%"><b>Ontology</b></td>
+							<td style="width: 66%"><b>Relation</b></td>
+							<td style="width: 14%; text-align: center"><b>Integration Level</b></td>
+						</tr>
+						<tr><td><a href="SDRO.html">SDRO - SDRO</a></td><td></td><td style="text-align:center"></td></tr>
+<tr><td><a href="SySwO.html">SySwO - System and Software Ontology</a></td><td></td><td style="text-align:center"></td></tr>
+
+					</tbody>
+				</table>
+
+				<h2>3. Ontology Models</h2>
+				<p>Figure 1 presents the packages of the HCIDO Modularization.</p>
+<p align="center"><IMG src="images/HCIDO Modularization.png" width="1113" class="map" usemap="#HCIDO Modularization"><MAP NAME="HCIDO Modularization">
+<area shape="rect" coords="791,283,921,351" href="HCIO.html#HCIO_HC+Interaction_section" title="">
+<area shape="rect" coords="831,383,1051,451" href="HCIO.html#HCIO_Interactive+Computer+System_section" title="">
+<area shape="rect" coords="680,383,785,451" href="HCIO.html#HCIO_User_section" title="">
+<area shape="rect" coords="925,648,1053,716" href="HCIDO.html#HCIDO_Design+Object_section" title="">
+<area shape="rect" coords="674,648,841,716" href="HCIDO.html#HCIDO_Design+Specification_section" title="">
+<area shape="rect" coords="177,550,312,618" href="SDRO.html#SDRO_Mental+Aspects_section" title="">
+<area shape="rect" coords="359,550,503,618" href="SDRO.html#SDRO_Physical+Aspects_section" title="">
+<area shape="rect" coords="665,239,1066,466" href="HCIO.html#HCIO_HCIO_section" title="">
+<area shape="rect" coords="659,591,1073,750" href="HCIDO.html#HCIDO_HCIDO_section" title="">
+<area shape="rect" coords="326,226,454,294" href="SySwO.html#SySwO_SysSwO_section" title="">
+<area shape="rect" coords="162,267,275,335" href="SPO.html#SPO_SPO_section" title="">
+<area shape="rect" coords="41,538,115,606" href="RSRO.html#RSRO_RSRO_section" title="">
+<area shape="rect" coords="162,510,518,634" href="SDRO.html#SDRO_SDRO_section" title="">
+<area shape="rect" coords="397,10,626,85" href="UFO.html#UFO_UFO_section" title="">
+<area shape="rect" coords="650,183,1086,495" href="Core+Layer_section" title="">
+<area shape="rect" coords="642,542,1088,767" href="Domain+Layer_section" title="">
+<area shape="rect" coords="135,182,469,358" href="Core+Layer_section" title="">
+<area shape="rect" coords="25,450,540,649" href="Domain+Layer_section" title="">
+<area shape="rect" coords="10,122,555,664" href="SEON_section" title="">
+<area shape="rect" coords="627,122,1103,783" href="HCI-ON_section" title=""></MAP></p>
+<p align="center"><b>Figure 1. HCIDO Modularization.</b></p>
+<p align="justify"></p>
+
+<h3><a name="HCIDO_Design+Object_section">3.1.  Design Object</a></h3>
+<p align="justify"></p>
+<p>Figure 2 presents the conceptual model of the HCIDO - Design Object subontology.</p>
+<p align="center"><IMG src="images/HCIDO - Design Object.png" width="1620" class="map" usemap="#HCIDO - Design Object"><MAP NAME="HCIDO - Design Object">
+<area shape="rect" coords="90,434,284,464" href="HCIO.html#HCIO_Interactive+Software+System" title="Software system that includes, among other programs, User Interface Programs. E.g., a home banking system and its graphical programs that deals with user interface aspects.">
+<area shape="rect" coords="90,135,216,165" href="SySwO.html#SySwO_Software+Artifact" title="Object intentionally made to serve a given purpose in the context of a software Project or Organization.">
+<area shape="rect" coords="454,22,515,52" href="UFO.html#UFO_Object" title="Non-agentive substantial individuals. Objects can be Physical or Social.">
+<area shape="rect" coords="302,528,469,558" href="SDRO.html#SDRO_Software+Design+Object" title="A Software System which is the concrete realization of some Software Design Specification, implementing Mental Software Design Objects.">
+<area shape="rect" coords="292,135,399,165" href="SySwO.html#SySwO_Software+Item" title="Piece of software, produced during the software process, not considered a complete Software Product, but an intermediary result.">
+<area shape="rect" coords="594,605,793,635" href="SDRO.html#SDRO_Software+Design+Component" title="A Program that plays a specific role in a Software System, implementing a Mental Software Design Component.
+
+Adapted from [Guarino, N., & Melone, M. R. S. (2015)]">
+<area shape="rect" coords="221,245,344,275" href="SySwO.html#SySwO_Software+System" title="Software Item that aims at satisfying a specification (System Specification), concerning a desired change in a data structure inside a computer, abstracting away from the behavior.">
+<area shape="rect" coords="1235,16,1311,46" href="UFO.html#UFO_Situation" title="A situation is a particular configuration of a part of reality which can be understood as a whole. Situations can be factual or counterfactual (@e.g., the situation in which “Al Gore is the president of the USA”).">
+<area shape="rect" coords="687,529,903,559" href="SDRO.html#SDRO_Loaded+Software+Design+Object" title="The materialization of a Software Design Object (i.e., the resulting designed software loaded in the computer memory)">
+<area shape="rect" coords="672,182,880,212" href="SySwO.html#SySwO_Loaded+Software+System+Copy" title="Loaded Software System Copy is the materialization of a Software System, inhering in a Computer Machine.">
+<area shape="rect" coords="929,16,1022,46" href="UFO.html#UFO_Disposition" title="Dispositions are properties (moments) that are only manifested in particular situations and that can also fail to be manifested. When manifested, they are manifested through the occurrence of events. Take for example the disposition of a magnet m to attract metallic material. The object m has this disposition even if it is never manifested, for example, because it is never close to any magnetic material. Nonetheless, m can certainly be said to possess that intrinsic moment, which it shares with other magnets.">
+<area shape="rect" coords="946,605,1194,635" href="SDRO.html#SDRO_Loaded+Software+Design+Component" title="The materialization of a Software Design Component (i.e., the resulting designed program loaded in the computer memory)">
+<area shape="rect" coords="524,244,597,274" href="SySwO.html#SySwO_Program" title="Software Item which aims at producing a certain result through execution on a computer, in a particular way, given by the Program Specification. A Program is constituted by code, but it is not identical to code. Code can be changed without altering the identity of its program, which is anchored to the program's essential property: its intended specification (Program Specification).">
+<area shape="rect" coords="982,245,1140,275" href="SySwO.html#SySwO_Loaded+Program+Copy" title="Loaded Program Copy is the materialization of a Program, inhering in a Computer Machine.">
+<area shape="rect" coords="1063,136,1236,166" href="SySwO.html#SySwO_Program+Copy+Execution" title="Program Copy Execution is an Event representing the execution of the Loaded Program Copy running in a Machine. In other words, the Program Copy Execution is the event of the physical manifestation of the dispositions (represented as the complex disposition Loaded Program Copy) that inhere in the Machine.">
+<area shape="rect" coords="1273,245,1461,275" href="SySwO.html#SySwO_Computing+Resulting+State" title="Observable State is a situation resulting from the execution of a program copy. It involves qualities and quality values (qualia) of the Machine in which the Loaded Program Copy inheres, as well as of entities residing in that Machine (including the Loaded Program Copy itself).">
+<area shape="rect" coords="1087,15,1216,45" href="UFO.html#UFO_Event+(Perdurant)" title="Events (also called perdurants) are individuals composed of temporal parts. They happen in time in the sense that they extend in time accumulating temporal parts. @Examples of events are a conversation, a football game, a symphony execution, a birthday party, or a particular business process.">
+<area shape="rect" coords="310,745,444,775" href="HCIDO.html#HCIDO_HCI+Design+Object" title="A Software Design Object is an Interactive Software System that plays the role of Software Design Object and implements a Mental HCI Design Object.">
+<area shape="rect" coords="423,829,590,859" href="HCIDO.html#HCIDO_HCI+Design+Component" title="A User Interface Program that plays the role of Software Design Component and implements Mental HCI Design Components, having its own structure, appearance and behavior. It can be composed of other HCI Design Components.">
+<area shape="rect" coords="101,793,281,823" href="HCIDO.html#HCIDO_Mental+HCI+Design+Object" title="A Mental Software Design Object specified by a Mental HCI Design Specification that refers to an Interactive Software System being designed (i.e., what is expected to exist after the HCI design effort)">
+<area shape="rect" coords="656,878,916,908" href="HCIDO.html#HCIDO_Presentational+HCI+Design+Component" title="A HCI Design Component that implements Mental User Observable States and aims to present information that can be perceived through users’ senses">
+<area shape="rect" coords="396,434,561,464" href="HCIO.html#HCIO_User+Interface+Program" title="Program that deals with aspects related to the User Interface. E.g., the program responsible for the graphical user interface of the component that captures the user fingerprint to unlock a mobile phone.">
+<area shape="rect" coords="648,344,756,374" href="HCIO.html#HCIO_User+Interface" title="All components of an interactive system (software or hardware) that provide information and controls for the user to accomplish specific tasks with the interactive system. E.g., mouse, keyboard, monitor, sensors and the software that handle them. Adapted from (ISO 9241-210, 2010) (ISO 9241-112, 2017)">
+<area shape="rect" coords="882,344,1017,374" href="HCIO.html#HCIO_Output+Equipment" title="Hardware Equipment used to transmit or display information or data, communicating output to Users. E. g.: Monitor, speaker, etc. Adapted from (Dix et al., 2004)">
+<area shape="rect" coords="1327,344,1485,374" href="HCIO.html#HCIO_User+Observable+State" title="A situation (an Observable State) perceivable by Users, typically achieved as the result (output) of a Program Copy Execution, communicated or presented by an Output Equipment. E.g., a message shown in the mobile phone screen informing the user that the captured fingerprint was not recognized, smart watch vibrating; sounds emitted by the mobile phone.">
+<area shape="rect" coords="1086,427,1269,457" href="HCIO.html#HCIO_User+Input+Resulting+State" title="A situation achieved as the result of User’s input (data or information) received by means of an Input Equipment. E.g., the user fingerprint captured by the mobile phone system; the button clicked.">
+<area shape="rect" coords="689,434,938,464" href="HCIO.html#HCIO_Loaded+User+Interface+Program+Copy" title="Loaded Program Copy that is the materialization of a User Interface Program. E.g., the copy of the programs that deal with interface aspects of the home banking system loaded in the computer of a certain user.">
+<area shape="rect" coords="658,136,809,166" href="SySwO.html#SySwO_Hardware+Equipment" title="DEFINIÇÃO NOVA: Physical Object used to process, transform, store, display or transmit information or data
+
+
+DEFINIÇÃO ANTIGA: Physical Object used for running software programs or to support some related action.">
+<area shape="rect" coords="882,735,1098,765" href="HCIDO.html#HCIDO_Loaded+HCI+Design+Component" title="A Loaded User Interface Program that plays the role of Loaded Software Design Component (i.e., a copy of a programs that deals with user interface aspects loaded in the memory of an interactive computer system)">
+<area shape="rect" coords="202,883,415,913" href="HCIDO.html#HCIDO_Mental+HCI+Design+Component" title="A Mental Software Design Component that can be perceived or triggered by users (e.g., a text label and a button) through the user interface.">
+<area shape="rect" coords="1085,801,1314,831" href="HCIDO.html#HCIDO_Mental+User+Input+Resulting+State" title="A Software Design Proposition describing situations, conditions or constraints related to actions that users can or cannot perform in a Mental HCI Design Component (e.g., a button that can only be clicked after filling all required fields in a form, a text input field that accepts only numbers)">
+<area shape="rect" coords="1235,878,1439,908" href="HCIDO.html#HCIDO_Mental+User+Observable+State" title="A Mental Computing Resulting State decscribing how a Mental HCI Design Component should be presented to users (e.g., presenting a collection of products as a list or in a 3x3 grid).">
+<area shape="rect" coords="28,704,201,734" href="HCIDO.html#HCIDO_HCI+Design+Specification" title="A Software Design Specification that describes Mental HCI Design Specifications, encoding one or more HCI Design Choices (e.g., a hand-drawn sketch or a text document).">
+<area shape="rect" coords="656,801,892,831" href="HCIDO.html#HCIDO_Interactive+HCI+Design+Component" title="A HCI Design Component that implements Mental User Input Resulting States and is expected to be triggered or not in certain conditions after actions performed by users of the interactive system"></MAP></p>
+<p align="center"><b>Figure 2. HCIDO - Design Object conceptual model.</b></p>
+<p align="justify"></p>
+
+<h3><a name="HCIDO_Design+Specification_section">3.2.  Design Specification</a></h3>
+<p align="justify"></p>
+<p>Figure 3 presents the conceptual model of the HCIDO - Design Specification subontology.</p>
+<p align="center"><IMG src="images/HCIDO - Design Specification.png" width="1693" class="map" usemap="#HCIDO - Design Specification"><MAP NAME="HCIDO - Design Specification">
+<area shape="rect" coords="626,491,840,521" href="SDRO.html#SDRO_Mental+Software+Design+Choice" title="A Software Design Proposition concerning a choice in the mind of a designer about how certain requirements of the system will be realized. It involves defining which components are part of the system and how they are connected to each other.
+
+Adapted from [Guarino, N. (2014)]">
+<area shape="rect" coords="651,69,768,99" href="UFO.html#UFO_Mental+Moment" title="">
+<area shape="rect" coords="396,19,488,49" href="UFO.html#UFO_Proposition" title="A Proposition is a sentence that is either true or false. The truth of a proposition is determined by its correspondence to the existence of an entity or fact in reality, the so-called truthmaker of a proposition.">
+<area shape="rect" coords="1046,72,1103,102" href="UFO.html#UFO_Agent" title="Agents are Substantials (Functional Complexes or Collectives) that can bear special kinds of Intrinsic Moments named Intentional Moments.">
+<area shape="rect" coords="271,326,371,356" href="RSRO.html#RSRO_Requirement" title="Goal to be achieved, representing a condition or capacity needed for the system users for solving a problem.">
+<area shape="rect" coords="290,395,488,425" href="SDRO.html#SDRO_Software+Design+Proposition" title="The propositional content of Software Designer Mental Moments.">
+<area shape="rect" coords="327,69,375,99" href="UFO.html#UFO_Goal" title="The propositional content of an Intention.">
+<area shape="rect" coords="291,491,536,521" href="SDRO.html#SDRO_Mental+Software+Design+Component" title="A Software Design Proposition describing parts, or components, of the software system being designed. It represents what the designer has in mind about how components of system should be implemented. Thus, these components have specific properties, play specific roles and are expected to exist in particular places in the software system.
+">
+<area shape="rect" coords="903,71,1015,101" href="UFO.html#UFO_Physical+Agent" title="">
+<area shape="rect" coords="794,69,857,99" href="UFO.html#UFO_Person" title="Same as UFO::Human Agent
+A human Physical Agent.">
+<area shape="rect" coords="335,572,569,602" href="SDRO.html#SDRO_Mental+Computing+Resulting+State" title="A Software Design Proposition that represents an expected result of a Mental Software Design Choice that can only be assessed in runtime. ">
+<area shape="rect" coords="827,554,1079,584" href="SDRO.html#SDRO_Mental+Software+Design+Specification" title="A complex Software Design Proposition consisting in design choices about the designed system. It represents the ideas in the designer’s mind that form a detailed description of the system in terms of its structure.
+
+Adapted from [Ralph, P., & Wand, Y. (2009)]  and  [Guarino, N. (2014)]">
+<area shape="rect" coords="254,708,467,738" href="HCIDO.html#HCIDO_Mental+HCI+Design+Component" title="A Mental Software Design Component that can be perceived or triggered by users (e.g., a text label and a button) through the user interface.">
+<area shape="rect" coords="844,726,1063,756" href="HCIDO.html#HCIDO_Mental+HCI+Design+Specification" title="A Mental Software Design Specification consisting of a set of Mental HCI Design Choices. It represents the ideas that give form to a detailed description in the designer’s mind about HCI structural and behavioral aspects of the design object (i.e., it specifies the Mental HCI Design Object).">
+<area shape="rect" coords="357,770,561,800" href="HCIDO.html#HCIDO_Mental+User+Observable+State" title="A Mental Computing Resulting State decscribing how a Mental HCI Design Component should be presented to users (e.g., presenting a collection of products as a list or in a 3x3 grid).">
+<area shape="rect" coords="191,840,323,870" href="HCIDO.html#HCIDO_User+Requirement" title="A Requirement that refers to User Goals (i.e., a Requirement concerned with users' needs or capabilities that should be addressed by the system, in order to allow users to achieve their goals in an effective, efficient, safe and satisfying manner).
+
+(Adapted from: ISO 9241-220:2019)">
+<area shape="rect" coords="769,248,817,278" href="HCIO.html#HCIO_User" title="A Person who interacts with (or is expected to interact with) an Interactive Computer System. E.g., a person who uses a home banking system, smart watch or smart mobile phone. Adapted from (ISO 9241-210, 2010)">
+<area shape="rect" coords="515,248,624,278" href="HCIO.html#HCIO_User+Intention" title="An Intention that inheres in a User, causing him to perform intentional user actions. E.g., the intention to travel on vacation.  ">
+<area shape="rect" coords="548,69,625,99" href="UFO.html#UFO_Intention" title="Intentions are desired state of affairs (situations) for which the agent commits at pursuing (@e.g., the Intention of going to a beach resort for the next summer break).">
+<area shape="rect" coords="410,910,639,940" href="HCIDO.html#HCIDO_Mental+User+Input+Resulting+State" title="A Software Design Proposition describing situations, conditions or constraints related to actions that users can or cannot perform in a Mental HCI Design Component (e.g., a button that can only be clicked after filling all required fields in a form, a text input field that accepts only numbers)">
+<area shape="rect" coords="1150,850,1323,880" href="HCIDO.html#HCIDO_HCI+Design+Specification" title="A Software Design Specification that describes Mental HCI Design Specifications, encoding one or more HCI Design Choices (e.g., a hand-drawn sketch or a text document).">
+<area shape="rect" coords="910,909,1046,939" href="HCIDO.html#HCIDO_HCI+Design+Choice" title="A Software Design Choice that describes Mental HCI Design Choices. It is a physical representation of Mental HCI Design Choices, which can be used for communication and evaluation purposes (e.g., the fragment of a sketch showing the fields of a form arranged in two columns or a sentence written in a document describing the expected behavior after a form submission).">
+<area shape="rect" coords="1383,927,1532,957" href="HCIDO.html#HCIDO_Functional+Prototype" title="A HCI Design Specitication that is a piece of code (i.e., a Software Item) intended to present basic functionality of an interactive system or of its components. It is developed for early evaluation purposes and cannot be considered the final implementation.">
+<area shape="rect" coords="1384,850,1453,880" href="HCIDO.html#HCIDO_Mockup" title="A HCI Design Specification that is a higher fidelity Document depicting how the interactive system should be presented to users, similar to screenshots of the system’s future screens.">
+<area shape="rect" coords="1350,770,1434,800" href="HCIDO.html#HCIDO_Wireframe" title="A HCI Design Specification that is a Document outlining the basic structure of the interactive system’s user interface (e.g., how elements are visually organized on the screen) in a low fidelity sketch, which does not address specific details such as colors and typography.">
+<area shape="rect" coords="1171,460,1377,490" href="SDRO.html#SDRO_Software+Design+Specification" title="A Software Artifact that provides a physical representation of a mental specification. It can be presented as a Model, a Document or a Software Item.
+">
+<area shape="rect" coords="1054,607,1222,637" href="SDRO.html#SDRO_Software+Design+Choice" title="Information Item describing a Mental Software Design Choice, i.e. a physical representation of design choices that can be used for communication and evaluation purposes.
+">
+<area shape="rect" coords="1118,175,1244,205" href="SySwO.html#SySwO_Software+Artifact" title="Object intentionally made to serve a given purpose in the context of a software Project or Organization.">
+<area shape="rect" coords="1366,161,1473,191" href="SySwO.html#SySwO_Software+Item" title="Piece of software, produced during the software process, not considered a complete Software Product, but an intermediary result.">
+<area shape="rect" coords="1128,70,1189,100" href="UFO.html#UFO_Object" title="Non-agentive substantial individuals. Objects can be Physical or Social.">
+<area shape="rect" coords="869,325,1020,355" href="RSRO.html#RSRO_Requirement+Artifact" title="Information Item describing a Requirement.">
+<area shape="rect" coords="233,956,416,986" href="HCIDO.html#HCIDO_User+Requirement+Artifact" title="Requirement Artifacts that describe User Requirements (e.g., user requirements written as user stories).">
+<area shape="rect" coords="899,175,1025,205" href="SySwO.html#SySwO_Information+Item" title="Relevant information for human use, produced or used by Performed Activity.">
+<area shape="rect" coords="169,247,249,277" href="HCIO.html#HCIO_User+Goal" title="The propositional content of something the User wants to achieve (User Intention). E.g., the goal of buying fly tickets to go on vacation.">
+<area shape="rect" coords="1271,197,1355,227" href="SySwO.html#SySwO_Document" title="Any written or pictorial, uniquely identified, information related to the software development, usually presented in a predefined format.">
+<area shape="rect" coords="1203,715,1305,745" href="HCIDO.html#HCIDO_HCI+Designer" title="A Software Designer that uses his or her skills to directly contribute to the creation of a specification containing design choices about human-computer interaction aspects of the interactive software system being designed.">
+<area shape="rect" coords="972,418,1107,448" href="SDRO.html#SDRO_Software+Designer" title="A Stakeholder that uses his or her skills to directly contribute to the creation of a specification containing design choices about the software system being designed.  
+
+Adapted from [Ralph, P., & Wand, Y. (2009)]">
+<area shape="rect" coords="664,418,899,448" href="SDRO.html#SDRO_Software+Designer+Mental+Moment" title="A mental moment inhering in a Software Designer.">
+<area shape="rect" coords="664,840,846,870" href="HCIDO.html#HCIDO_Mental+HCI+Design+Choice" title="Mental Software Design Choices defining how the human-computer interaction should be implemented, including aspects related to the system’s appearance, the disposition of components in space and time and their expected behaviors in response to user actions.">
+<area shape="rect" coords="12,555,225,585" href="SDRO.html#SDRO_Mental+Software+Design+Object" title="A Software Design Proposition concerning the software system being designed, i.e., the picture the designer has in mind about the system he/she is designing.">
+<area shape="rect" coords="30,746,210,776" href="HCIDO.html#HCIDO_Mental+HCI+Design+Object" title="A Mental Software Design Object specified by a Mental HCI Design Specification that refers to an Interactive Software System being designed (i.e., what is expected to exist after the HCI design effort)"></MAP></p>
+<p align="center"><b>Figure 3. HCIDO - Design Specification conceptual model.</b></p>
+<p align="justify"></p>
+
+
+				<h2>4. Concepts Definition</h2>
+				<p align="justify">The following table shows the definitions for HCIDO concepts.
+			<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->
+				</p>
+				<table style="width: 100%" border="1" cellpadding="6">
+					<tbody>
+						<tr style="background-color: #D8D8D8">
+							<td style="width: 25%"><b>Concept</b></td>
+							<td style="width: 75%"><b>Definition</b></td>
+						</tr>
+						<tr>
+<td><a name="HCIDO_Functional+Prototype"><b>Functional Prototype</b></a>
+<a href=#HCIDO_Functional+Prototype_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>A HCI Design Specitication that is a piece of code (i.e., a Software Item) intended to present basic functionality of an interactive system or of its components. It is developed for early evaluation purposes and cannot be considered the final implementation.
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDO_HCI+Design+Choice"><b>HCI Design Choice</b></a>
+<a href=#HCIDO_HCI+Design+Choice_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>A Software Design Choice that describes Mental HCI Design Choices. It is a physical representation of Mental HCI Design Choices, which can be used for communication and evaluation purposes (e.g., the fragment of a sketch showing the fields of a form arranged in two columns or a sentence written in a document describing the expected behavior after a form submission).
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDO_HCI+Design+Component"><b>HCI Design Component</b></a>
+<a href=#HCIDO_HCI+Design+Component_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>A User Interface Program that plays the role of Software Design Component and implements Mental HCI Design Components, having its own structure, appearance and behavior. It can be composed of other HCI Design Components.
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDO_HCI+Design+Object"><b>HCI Design Object</b></a>
+<a href=#HCIDO_HCI+Design+Object_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>A Software Design Object is an Interactive Software System that plays the role of Software Design Object and implements a Mental HCI Design Object.
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDO_HCI+Design+Proposition"><b>HCI Design Proposition</b></a>
+<a href=#HCIDO_HCI+Design+Proposition_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDO_HCI+Design+Specification"><b>HCI Design Specification</b></a>
+<a href=#HCIDO_HCI+Design+Specification_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>A Software Design Specification that describes Mental HCI Design Specifications, encoding one or more HCI Design Choices (e.g., a hand-drawn sketch or a text document).
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDO_HCI+Designer"><b>HCI Designer</b></a>
+<a href=#HCIDO_HCI+Designer_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>A Software Designer that uses his or her skills to directly contribute to the creation of a specification containing design choices about human-computer interaction aspects of the interactive software system being designed.
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDO_HCI+Designer+Mental+Moment"><b>HCI Designer Mental Moment</b></a>
+<a href=#HCIDO_HCI+Designer+Mental+Moment_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDO_Interactive+HCI+Design+Component"><b>Interactive HCI Design Component</b></a>
+<a href=#HCIDO_Interactive+HCI+Design+Component_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>A HCI Design Component that implements Mental User Input Resulting States and is expected to be triggered or not in certain conditions after actions performed by users of the interactive system
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDO_Loaded+HCI+Design+Component"><b>Loaded HCI Design Component</b></a>
+<a href=#HCIDO_Loaded+HCI+Design+Component_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>A Loaded User Interface Program that plays the role of Loaded Software Design Component (i.e., a copy of a programs that deals with user interface aspects loaded in the memory of an interactive computer system)
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDO_Mental+HCI+Design+Choice"><b>Mental HCI Design Choice</b></a>
+<a href=#HCIDO_Mental+HCI+Design+Choice_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Mental Software Design Choices defining how the human-computer interaction should be implemented, including aspects related to the system’s appearance, the disposition of components in space and time and their expected behaviors in response to user actions.
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDO_Mental+HCI+Design+Component"><b>Mental HCI Design Component</b></a>
+<a href=#HCIDO_Mental+HCI+Design+Component_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>A Mental Software Design Component that can be perceived or triggered by users (e.g., a text label and a button) through the user interface.
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDO_Mental+HCI+Design+Object"><b>Mental HCI Design Object</b></a>
+<a href=#HCIDO_Mental+HCI+Design+Object_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>A Mental Software Design Object specified by a Mental HCI Design Specification that refers to an Interactive Software System being designed (i.e., what is expected to exist after the HCI design effort)
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDO_Mental+HCI+Design+Specification"><b>Mental HCI Design Specification</b></a>
+<a href=#HCIDO_Mental+HCI+Design+Specification_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>A Mental Software Design Specification consisting of a set of Mental HCI Design Choices. It represents the ideas that give form to a detailed description in the designer’s mind about HCI structural and behavioral aspects of the design object (i.e., it specifies the Mental HCI Design Object).
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDO_Mental+User+Input+Resulting+State"><b>Mental User Input Resulting State</b></a>
+<a href=#HCIDO_Mental+User+Input+Resulting+State_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>A Software Design Proposition describing situations, conditions or constraints related to actions that users can or cannot perform in a Mental HCI Design Component (e.g., a button that can only be clicked after filling all required fields in a form, a text input field that accepts only numbers)
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDO_Mental+User+Observable+State"><b>Mental User Observable State</b></a>
+<a href=#HCIDO_Mental+User+Observable+State_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>A Mental Computing Resulting State decscribing how a Mental HCI Design Component should be presented to users (e.g., presenting a collection of products as a list or in a 3x3 grid).
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDO_Mockup"><b>Mockup</b></a>
+<a href=#HCIDO_Mockup_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>A HCI Design Specification that is a higher fidelity Document depicting how the interactive system should be presented to users, similar to screenshots of the system’s future screens.
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDO_Presentational+HCI+Design+Component"><b>Presentational HCI Design Component</b></a>
+<a href=#HCIDO_Presentational+HCI+Design+Component_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>A HCI Design Component that implements Mental User Observable States and aims to present information that can be perceived through users’ senses
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDO_User+Requirement"><b>User Requirement</b></a>
+<a href=#HCIDO_User+Requirement_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>A Requirement that refers to User Goals (i.e., a Requirement concerned with users' needs or capabilities that should be addressed by the system, in order to allow users to achieve their goals in an effective, efficient, safe and satisfying manner).<br/><br/>(Adapted from: ISO 9241-220:2019)
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDO_User+Requirement+Artifact"><b>User Requirement Artifact</b></a>
+<a href=#HCIDO_User+Requirement+Artifact_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Requirement Artifacts that describe User Requirements (e.g., user requirements written as user stories).
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDO_Wireframe"><b>Wireframe</b></a>
+<a href=#HCIDO_Wireframe_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>A HCI Design Specification that is a Document outlining the basic structure of the interactive system’s user interface (e.g., how elements are visually organized on the screen) in a low fidelity sketch, which does not address specific details such as colors and typography.
+<br/></td>
+</tr>
+
+					</tbody>
+				</table>
+				<br/>
+				<h2>Detailed Concepts</h2>
+				<a name="HCIDO_Functional+Prototype_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Functional Prototype<strong></td></tr>
+</table><br/>
+<b>HCIDO::Functional Prototype</b><br/>
+Specializes HCIDO::HCI Design Specification, SySwO::Software Item<br/><br/>
+A HCI Design Specitication that is a piece of code (i.e., a Software Item) intended to present basic functionality of an interactive system or of its components. It is developed for early evaluation purposes and cannot be considered the final implementation.<br/>
+<br/>
+<br/>
+<br/>
+<br/><br/>
+
+<a name="HCIDO_HCI+Design+Choice_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>HCI Design Choice<strong></td></tr>
+</table><br/>
+<b>HCIDO::HCI Design Choice</b><br/>
+Specializes SDRO::Software Design Choice<br/><br/>
+A Software Design Choice that describes Mental HCI Design Choices. It is a physical representation of Mental HCI Design Choices, which can be used for communication and evaluation purposes (e.g., the fragment of a sketch showing the fields of a form arranged in two columns or a sentence written in a document describing the expected behavior after a form submission).<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>HCI Design Choice (0..*) describes (1..*) Mental HCI Design Choice<br/>
+HCI Design Choice (0..*) /motivated by (0..*) User Requirement Artifact<br/>
+HCI Design Choice (0..*) /motivated by (0..*) HCI Design Choice<br/>
+HCI Design Specification (1..*) <>-- (1..*) HCI Design Choice<br/>
+</code><br/>
+<br/><br/>
+
+<a name="HCIDO_HCI+Design+Component_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>HCI Design Component<strong></td></tr>
+</table><br/>
+<b>HCIDO::HCI Design Component</b><br/>
+Specializes HCIO::User Interface Program, SDRO::Software Design Component<br/><br/>
+A User Interface Program that plays the role of Software Design Component and implements Mental HCI Design Components, having its own structure, appearance and behavior. It can be composed of other HCI Design Components.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>HCI Design Component (0..*) implements (1..*) Mental HCI Design Component<br/>
+HCI Design Component (0..*) <>-- (0..*) HCI Design Component<br/>
+HCI Design Object (1..1) <>-- (1..*) HCI Design Component<br/>
+Loaded HCI Design Component (0..*) materialization of (1..1) HCI Design Component<br/>
+</code><br/>
+<br/><br/>
+
+<a name="HCIDO_HCI+Design+Object_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>HCI Design Object<strong></td></tr>
+</table><br/>
+<b>HCIDO::HCI Design Object</b><br/>
+Specializes SDRO::Software Design Object, HCIO::Interactive Software System<br/><br/>
+A Software Design Object is an Interactive Software System that plays the role of Software Design Object and implements a Mental HCI Design Object.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>HCI Design Object (1..1) <>-- (1..*) HCI Design Component<br/>
+HCI Design Object (0..*) realizes (0..*) HCI Design Specification<br/>
+HCI Design Object (0..*) implements (1..*) Mental HCI Design Object<br/>
+</code><br/>
+<br/><br/>
+
+<a name="HCIDO_HCI+Design+Proposition_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>HCI Design Proposition<strong></td></tr>
+</table><br/>
+<b>HCIDO::HCI Design Proposition</b><br/>
+Specializes SDRO::Software Design Proposition<br/><br/>
+<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>HCI Design Proposition (1..1) propositional content of (1..*) HCI Designer Mental Moment<br/>
+</code><br/>
+<br/><br/>
+
+<a name="HCIDO_HCI+Design+Specification_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>HCI Design Specification<strong></td></tr>
+</table><br/>
+<b>HCIDO::HCI Design Specification</b><br/>
+Specializes SDRO::Software Design Specification<br/><br/>
+A Software Design Specification that describes Mental HCI Design Specifications, encoding one or more HCI Design Choices (e.g., a hand-drawn sketch or a text document).<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>HCI Design Specification (1..*) <>-- (1..*) HCI Design Choice<br/>
+HCI Design Specification (0..*) describes (1..*) Mental HCI Design Specification<br/>
+HCI Design Object (0..*) realizes (0..*) HCI Design Specification<br/>
+HCI Designer (1..*) responsible for (0..*) HCI Design Specification<br/>
+</code><br/>
+<br/><br/>
+
+<a name="HCIDO_HCI+Designer_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>HCI Designer<strong></td></tr>
+</table><br/>
+<b>HCIDO::HCI Designer</b><br/>
+Specializes SDRO::Software Designer<br/><br/>
+A Software Designer that uses his or her skills to directly contribute to the creation of a specification containing design choices about human-computer interaction aspects of the interactive software system being designed.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>HCI Designer (1..*) responsible for (0..*) HCI Design Specification<br/>
+HCI Designer Mental Moment (0..*) inheres in (1..1) HCI Designer<br/>
+</code><br/>
+<br/><br/>
+
+<a name="HCIDO_HCI+Designer+Mental+Moment_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>HCI Designer Mental Moment<strong></td></tr>
+</table><br/>
+<b>HCIDO::HCI Designer Mental Moment</b><br/>
+Specializes SDRO::Software Designer Mental Moment<br/><br/>
+<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>HCI Designer Mental Moment (0..*) inheres in (1..1) HCI Designer<br/>
+HCI Design Proposition (1..1) propositional content of (1..*) HCI Designer Mental Moment<br/>
+</code><br/>
+<br/><br/>
+
+<a name="HCIDO_Interactive+HCI+Design+Component_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Interactive HCI Design Component<strong></td></tr>
+</table><br/>
+<b>HCIDO::Interactive HCI Design Component</b><br/>
+Specializes HCIDO::HCI Design Component<br/><br/>
+A HCI Design Component that implements Mental User Input Resulting States and is expected to be triggered or not in certain conditions after actions performed by users of the interactive system<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Interactive HCI Design Component (0..*) expects to be actioned by (1..*) Mental User Input Resulting State<br/>
+</code><br/>
+<br/><br/>
+
+<a name="HCIDO_Loaded+HCI+Design+Component_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Loaded HCI Design Component<strong></td></tr>
+</table><br/>
+<b>HCIDO::Loaded HCI Design Component</b><br/>
+Specializes SDRO::Loaded Software Design Component, HCIO::Loaded User Interface Program Copy<br/><br/>
+A Loaded User Interface Program that plays the role of Loaded Software Design Component (i.e., a copy of a programs that deals with user interface aspects loaded in the memory of an interactive computer system)<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Loaded HCI Design Component (0..*) materialization of (1..1) HCI Design Component<br/>
+</code><br/>
+<br/><br/>
+
+<a name="HCIDO_Mental+HCI+Design+Choice_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Mental HCI Design Choice<strong></td></tr>
+</table><br/>
+<b>HCIDO::Mental HCI Design Choice</b><br/>
+Specializes HCIDO::HCI Design Proposition, SDRO::Mental Software Design Choice<br/><br/>
+Mental Software Design Choices defining how the human-computer interaction should be implemented, including aspects related to the system’s appearance, the disposition of components in space and time and their expected behaviors in response to user actions.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Mental HCI Design Choice (1..*) concerns (0..*) Mental HCI Design Component<br/>
+Mental HCI Design Choice (1..*) concerns (0..*) Mental User Observable State<br/>
+Mental HCI Design Choice (1..*) concerns (0..*) Mental User Input Resulting State<br/>
+Mental HCI Design Choice (0..*) motivated by (0..*) Mental HCI Design Choice<br/>
+HCI Design Choice (0..*) describes (1..*) Mental HCI Design Choice<br/>
+User Requirement (0..*) motivates (0..*) Mental HCI Design Choice<br/>
+Mental HCI Design Specification (1..*) <>-- (1..*) Mental HCI Design Choice<br/>
+</code><br/>
+<br/><br/>
+
+<a name="HCIDO_Mental+HCI+Design+Component_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Mental HCI Design Component<strong></td></tr>
+</table><br/>
+<b>HCIDO::Mental HCI Design Component</b><br/>
+Specializes HCIDO::HCI Design Proposition, SDRO::Mental Software Design Component<br/><br/>
+A Mental Software Design Component that can be perceived or triggered by users (e.g., a text label and a button) through the user interface.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>HCI Design Component (0..*) implements (1..*) Mental HCI Design Component<br/>
+Mental HCI Design Choice (1..*) concerns (0..*) Mental HCI Design Component<br/>
+</code><br/>
+<br/><br/>
+
+<a name="HCIDO_Mental+HCI+Design+Object_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Mental HCI Design Object<strong></td></tr>
+</table><br/>
+<b>HCIDO::Mental HCI Design Object</b><br/>
+Specializes HCIDO::HCI Design Proposition, SDRO::Mental Software Design Object<br/><br/>
+A Mental Software Design Object specified by a Mental HCI Design Specification that refers to an Interactive Software System being designed (i.e., what is expected to exist after the HCI design effort)<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>HCI Design Object (0..*) implements (1..*) Mental HCI Design Object<br/>
+Mental HCI Design Specification (1..*) specifies (1..*) Mental HCI Design Object<br/>
+</code><br/>
+<br/><br/>
+
+<a name="HCIDO_Mental+HCI+Design+Specification_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Mental HCI Design Specification<strong></td></tr>
+</table><br/>
+<b>HCIDO::Mental HCI Design Specification</b><br/>
+Specializes HCIDO::HCI Design Proposition, SDRO::Mental Software Design Specification<br/><br/>
+A Mental Software Design Specification consisting of a set of Mental HCI Design Choices. It represents the ideas that give form to a detailed description in the designer’s mind about HCI structural and behavioral aspects of the design object (i.e., it specifies the Mental HCI Design Object).<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Mental HCI Design Specification (1..*) specifies (1..*) Mental HCI Design Object<br/>
+Mental HCI Design Specification (1..*) <>-- (1..*) Mental HCI Design Choice<br/>
+HCI Design Specification (0..*) describes (1..*) Mental HCI Design Specification<br/>
+</code><br/>
+<br/><br/>
+
+<a name="HCIDO_Mental+User+Input+Resulting+State_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Mental User Input Resulting State<strong></td></tr>
+</table><br/>
+<b>HCIDO::Mental User Input Resulting State</b><br/>
+Specializes HCIDO::HCI Design Proposition, SDRO::Software Design Proposition<br/><br/>
+A Software Design Proposition describing situations, conditions or constraints related to actions that users can or cannot perform in a Mental HCI Design Component (e.g., a button that can only be clicked after filling all required fields in a form, a text input field that accepts only numbers)<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Interactive HCI Design Component (0..*) expects to be actioned by (1..*) Mental User Input Resulting State<br/>
+Mental HCI Design Choice (1..*) concerns (0..*) Mental User Input Resulting State<br/>
+User Input Resulting State (0..*) satisfies (0..*) Mental User Input Resulting State<br/>
+</code><br/>
+<br/><br/>
+
+<a name="HCIDO_Mental+User+Observable+State_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Mental User Observable State<strong></td></tr>
+</table><br/>
+<b>HCIDO::Mental User Observable State</b><br/>
+Specializes HCIDO::HCI Design Proposition, SDRO::Mental Computing Resulting State<br/><br/>
+A Mental Computing Resulting State decscribing how a Mental HCI Design Component should be presented to users (e.g., presenting a collection of products as a list or in a 3x3 grid).<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Presentational HCI Design Component (0..*) aims to present (1..*) Mental User Observable State<br/>
+User Observable State (0..*) satisfies (0..*) Mental User Observable State<br/>
+Mental HCI Design Choice (1..*) concerns (0..*) Mental User Observable State<br/>
+</code><br/>
+<br/><br/>
+
+<a name="HCIDO_Mockup_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Mockup<strong></td></tr>
+</table><br/>
+<b>HCIDO::Mockup</b><br/>
+Specializes HCIDO::HCI Design Specification, SySwO::Document<br/><br/>
+A HCI Design Specification that is a higher fidelity Document depicting how the interactive system should be presented to users, similar to screenshots of the system’s future screens.<br/>
+<br/>
+<br/>
+<br/>
+<br/><br/>
+
+<a name="HCIDO_Presentational+HCI+Design+Component_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Presentational HCI Design Component<strong></td></tr>
+</table><br/>
+<b>HCIDO::Presentational HCI Design Component</b><br/>
+Specializes HCIDO::HCI Design Component<br/><br/>
+A HCI Design Component that implements Mental User Observable States and aims to present information that can be perceived through users’ senses<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Presentational HCI Design Component (0..*) aims to present (1..*) Mental User Observable State<br/>
+</code><br/>
+<br/><br/>
+
+<a name="HCIDO_User+Requirement_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>User Requirement<strong></td></tr>
+</table><br/>
+<b>HCIDO::User Requirement</b><br/>
+Specializes RSRO::Requirement<br/><br/>
+A Requirement that refers to User Goals (i.e., a Requirement concerned with users' needs or capabilities that should be addressed by the system, in order to allow users to achieve their goals in an effective, efficient, safe and satisfying manner).<br/><br/>(Adapted from: ISO 9241-220:2019)<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>User Requirement (0..*) motivates (0..*) Mental HCI Design Choice<br/>
+User Requirement (0..*) refers to (1..*) User Goal<br/>
+User Requirement Artifact (0..*) describes (1..1) User Requirement<br/>
+HCI Evaluation Criteria (0..*) refers to (0..*) User Requirement<br/>
+</code><br/>
+<br/><br/>
+
+<a name="HCIDO_User+Requirement+Artifact_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>User Requirement Artifact<strong></td></tr>
+</table><br/>
+<b>HCIDO::User Requirement Artifact</b><br/>
+Specializes RSRO::Requirement Artifact<br/><br/>
+Requirement Artifacts that describe User Requirements (e.g., user requirements written as user stories).<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>User Requirement Artifact (0..*) describes (1..1) User Requirement<br/>
+HCI Design Choice (0..*) /motivated by (0..*) User Requirement Artifact<br/>
+</code><br/>
+<br/><br/>
+
+<a name="HCIDO_Wireframe_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Wireframe<strong></td></tr>
+</table><br/>
+<b>HCIDO::Wireframe</b><br/>
+Specializes HCIDO::HCI Design Specification, SySwO::Document<br/><br/>
+A HCI Design Specification that is a Document outlining the basic structure of the interactive system’s user interface (e.g., how elements are visually organized on the screen) in a low fidelity sketch, which does not address specific details such as colors and typography.<br/>
+<br/>
+<br/>
+<br/>
+<br/><br/>
+
+
+				<hr>
+				<br/>
+				<small><b>Human-Computer Interaction Design Ontology (HCIDO)</b></small><br/>
+				<small>Sat Nov 13 13:05:00 BRT 2021</small>
+			</main>
+	
+			<div class="embed-responsive embed-responsive-21by9">
+				<iframe class="embed-responsive-item" src="footer.html" name="footer"></iframe>
+			</div>
+	    <!-- Bootstrap core JavaScript
+	    ================================================== -->
+	    <!-- Placed at the end of the document so the pages load faster -->
+	    <script src="./bootstrap-5.1.3-dist/js/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+	    <script src="./bootstrap-5.1.3-dist/js/popper.min.js"></script>
+	    <script src="./bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+	    
+	    
+	    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+	</body>
+	<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+</html>

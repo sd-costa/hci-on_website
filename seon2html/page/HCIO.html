@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	    <meta name="description" content="">
+	    <meta name="author" content="">
+	    <meta charset="ISO-8859-1">
+	    <link rel="icon" href="https://getbootstrap.com/docs/4.0/assets/img/favicons/favicon.ico">
+	
+	    <title>Human-Computer Interaction Ontology (HCIO)</title>
+	
+	    <!-- Bootstrap core CSS -->
+	    <link href="../lib/Bootstrap_files/bootstrap.min.css" rel="stylesheet">
+	
+	    <!-- Custom styles for this template -->
+	    <link href="../lib/Bootstrap_files/sticky-footer-navbar.css" rel="stylesheet">    
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	    
+	    <script type="text/javascript" src="jquery.min.js"></script>
+			<script type="text/javascript" src="maphilight.js"></script>
+			<script type="text/javascript">
+				$(function() {
+			        $('.map').maphilight();
+			    });
+			</script>
+
+
+  </head>
+
+  <body data-new-gr-c-s-check-loaded="14.1038.0" data-gr-ext-installed="">
+
+		<header>
+			
+	<!--Fixed navbar -->		
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="#">Navbar</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+	        <li class="nav-item">
+	          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+	        </li>
+
+	        <li class="nav-item dropdown">
+	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	            The Network
+	          </a>
+	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+	            <li><a class="dropdown-item fst-italic" href="#" tabindex="-1" aria-disabled="true">Architecture</a></li>
+	            <li><a class="dropdown-item fst-italic" href="#" tabindex="-1" aria-disabled="true">Evolution Mechanisms</a></li>
+	            <li><a class="dropdown-item fst-italic" href="#" tabindex="-1" aria-disabled="true">Relationship with SEON</a></li>
+	          	<li><hr class="dropdown-divider"></li>
+
+	            <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Foundational Layer</a></li>
+	            <li><a class="dropdown-item" href="UFO.html">UFO - Unified Foundational Ontology</a></li>
+
+	            <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Core Layer</a></li>
+	            <li><a class="dropdown-item" href="HCIO.html">HCIO - Human-Computer Interaction Ontology</a></li>
+
+	            <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Domain Layer</a></li>
+	            <li><a class="dropdown-item" href="HCIDO.html">HCIDO - Human-Computer Interaction Design Ontology</a></li>
+<li><a class="dropdown-item" href="HCIEO.html">HCIEO - Human-Computer Interaction Evaluation Ontology</a></li>
+<li><a class="dropdown-item" href="HCIDPO.html">HCIDPO - Human-Computer Interaction Design Process Ontology</a></li>
+
+
+	          </ul>
+	        </li>
+
+	        <li class="nav-item dropdown">
+	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	            Features
+	          </a>
+	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+	            <li><a class="dropdown-item" href="SearchFrames.html">Concepts Searcher</a></li>
+	            <li><a class="dropdown-item" href="NetworkGraph.html">Graph</a></li>
+	            <li><a class="dropdown-item" href="NetworkStats.html">Stats</a></li>
+
+	            <li><hr class="dropdown-divider"></li>
+	            <li><a class="dropdown-item" href="SeonFeedback.html">Feedback</a></li>
+	          </ul>
+	        </li>
+
+	        <li class="nav-item dropdown">
+	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	            More
+	          </a>
+	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+	            <li><a class="dropdown-item" href="SEON.owl" target="_blank">Operational Version (in OWL)</a></li>
+	            <li><a class="dropdown-item" href="#">Astah file</a></li>
+	            <li><a class="dropdown-item" href="#">Specifications</a></li>
+	            <li><a class="dropdown-item" href="#">Publications</a></li>
+	          </ul>
+	        </li>
+
+<!--	        <li class="nav-item">
+	          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+	        </li>-->
+        
+	      </ul>
+	      
+	    </div>
+	  </div>
+	</nav>	
+	
+		</header>
+
+		<!-- Begin page content -->
+    <main role="main" class="container">	
+				<h3 align="center">HCI-ON: Networked Ontology Specification</h3>
+				<h1 align="center">Human-Computer Interaction Ontology (HCIO)</h1>
+
+				<h2>1. Ontology Description</h2>
+				<p align="justify">The Human-Computer Interaction Ontology (HCIO), a reference ontology that aims to provide a common conceptualization of the Human-Computer Interaction (HCI) phenomenon and serves as a core ontology of HCI-ON. Given that a human-computer interaction involves communication between user and interactive computer system, HCIO is composed of sub-ontologies to deal with the interaction participants and with the interaction itself. <br/><br/>Given that a human-computer interaction involves communication between user and interactive computer system, HCIO is composed of sub-ontologies to deal with the interaction participants and with the interaction itself.</p>
+
+				<h2>2. Related Ontologies</h2>
+				<p>Networked ontologies used by HCIO:</p>
+				<table border="1" style="width: 100%" cellpadding="6">
+					<tbody>
+						<tr style="background-color: #D8D8D8">
+							<td style="width: 20%"><b>Ontology</b></td>
+							<td style="width: 66%"><b>Relation</b></td>
+							<td style="width: 14%; text-align: center"><b>Integration Level</b></td>
+						</tr>
+						<tr><td><a href="SPO.html">SPO - Software Process Ontology</a></td><td></td><td style="text-align:center"></td></tr>
+<tr><td><a href="UFO.html">UFO - Unified Foundational Ontology</a></td><td></td><td style="text-align:center"></td></tr>
+<tr><td><a href="UFO.html">UFO - Unified Foundational Ontology</a></td><td></td><td style="text-align:center"></td></tr>
+<tr><td><a href="SySwO.html">SySwO - System and Software Ontology</a></td><td></td><td style="text-align:center"></td></tr>
+
+					</tbody>
+				</table>
+
+				<h2>3. Ontology Models</h2>
+				<p>Figure 1 presents the packages of the HCIO Modularization.</p>
+<p align="center"><IMG src="images/HCIO Modularization.png" width="661" class="map" usemap="#HCIO Modularization"><MAP NAME="HCIO Modularization">
+<area shape="rect" coords="145,146,275,214" href="HCIO.html#HCIO_HC+Interaction_section" title="">
+<area shape="rect" coords="40,241,260,311" href="HCIO.html#HCIO_Interactive+Computer+System_section" title="">
+<area shape="rect" coords="290,243,440,311" href="HCIO.html#HCIO_User_section" title="">
+<area shape="rect" coords="10,104,455,327" href="HCIO.html#HCIO_HCIO_section" title="">
+<area shape="rect" coords="563,193,651,261" href="SySwO.html#SySwO_SysSwO_section" title="">
+<area shape="rect" coords="374,10,440,78" href="UFO.html#UFO_UFO_section" title=""></MAP></p>
+<p align="center"><b>Figure 1. HCIO Modularization.</b></p>
+<p align="justify"></p>
+
+<h3><a name="HCIO_Interactive+Computer+System_section">3.1.  Interactive Computer System</a></h3>
+<p align="justify"></p>
+<p>Figure 2 presents the conceptual model of the Interactive Computer System subontology.</p>
+<p align="center"><IMG src="images/Interactive Computer System.png" width="1115" class="map" usemap="#Interactive Computer System"><MAP NAME="Interactive Computer System">
+<area shape="rect" coords="75,495,265,525" href="SySwO.html#SySwO_Complex+Computer+System" title="">
+<area shape="rect" coords="407,780,666,810" href="HCIO.html#HCIO_Complex+Interactive+Computer+System" title="Interactive Computer System composed of others Interactive Computer System. E.g., IoT in a smart home. Adapted from (ISO 9241-210, 2010) (ISO 9241-11, 2018)">
+<area shape="rect" coords="406,695,606,725" href="HCIO.html#HCIO_Interactive+Computer+System" title="Computer System that combines User Interface, Computer Machine and Loaded Software System Copies, used to process, transform, store, display or transmit information or data by receiving input, and communicating output to Users. E.g., a desktop computer, its monitor, keyboard, mouse and software systems loaded in the computer (operational system, browser, text editor, etc.); smart watch; smart mobile phone. Adapted from (ISO 9241-210, 2010)
+
+">
+<area shape="rect" coords="655,161,716,191" href="UFO.html#UFO_Object" title="Non-agentive substantial individuals. Objects can be Physical or Social.">
+<area shape="rect" coords="672,695,780,725" href="HCIO.html#HCIO_User+Interface" title="All components of an interactive system (software or hardware) that provide information and controls for the user to accomplish specific tasks with the interactive system. E.g., mouse, keyboard, monitor, sensors and the software that handle them. Adapted from (ISO 9241-210, 2010) (ISO 9241-112, 2017)">
+<area shape="rect" coords="874,234,1025,264" href="SySwO.html#SySwO_Hardware+Equipment" title="DEFINIÇÃO NOVA: Physical Object used to process, transform, store, display or transmit information or data
+
+
+DEFINIÇÃO ANTIGA: Physical Object used for running software programs or to support some related action.">
+<area shape="rect" coords="774,392,911,422" href="SySwO.html#SySwO_Computer+Machine" title="Hardware Equipment able to run programs, processing, transforming and storing data
+
+_____________
+
+Computer Machine is a hardware equipament able to run programs, processing, transforming and storing data and information.
+
+Definição ANTIGA: Machine is a hardware equipament able to run programs.">
+<area shape="rect" coords="318,392,476,422" href="SySwO.html#SySwO_Loaded+Program+Copy" title="Loaded Program Copy is the materialization of a Program, inhering in a Computer Machine.">
+<area shape="rect" coords="232,345,355,375" href="SySwO.html#SySwO_Software+System" title="Software Item that aims at satisfying a specification (System Specification), concerning a desired change in a data structure inside a computer, abstracting away from the behavior.">
+<area shape="rect" coords="25,345,98,375" href="SySwO.html#SySwO_Program" title="Software Item which aims at producing a certain result through execution on a computer, in a particular way, given by the Program Specification. A Program is constituted by code, but it is not identical to code. Code can be changed without altering the identity of its program, which is anchored to the program's essential property: its intended specification (Program Specification).">
+<area shape="rect" coords="910,738,1034,768" href="HCIO.html#HCIO_Input+Equipment" title="Hardware Equipment used to receive and transmit information or data from a User (input). E.g.: keyboard, mouse, sensors. Adapted from (Dix et al., 2004)">
+<area shape="rect" coords="866,649,1001,679" href="HCIO.html#HCIO_Output+Equipment" title="Hardware Equipment used to transmit or display information or data, communicating output to Users. E. g.: Monitor, speaker, etc. Adapted from (Dix et al., 2004)">
+<area shape="rect" coords="22,658,187,688" href="HCIO.html#HCIO_User+Interface+Program" title="Program that deals with aspects related to the User Interface. E.g., the program responsible for the graphical user interface of the component that captures the user fingerprint to unlock a mobile phone.">
+<area shape="rect" coords="442,458,573,488" href="SySwO.html#SySwO_Computer+System" title="System containing one or more Computer Machines, and other Hardware Equipments connected to them, and associated software systems that are installed/loaded in these Machines (adapted from ISO/IEC/IEEE 24765:2017).">
+<area shape="rect" coords="425,265,633,295" href="SySwO.html#SySwO_Loaded+Software+System+Copy" title="Loaded Software System Copy is the materialization of a Software System, inhering in a Computer Machine.">
+<area shape="rect" coords="214,657,463,687" href="HCIO.html#HCIO_Loaded+User+Interface+Program+Copy" title="Loaded Program Copy that is the materialization of a User Interface Program. E.g., the copy of the programs that deal with interface aspects of the home banking system loaded in the computer of a certain user.">
+<area shape="rect" coords="78,281,185,311" href="SySwO.html#SySwO_Software+Item" title="Piece of software, produced during the software process, not considered a complete Software Product, but an intermediary result.">
+<area shape="rect" coords="541,20,618,50" href="UFO.html#UFO_Endurant" title="Endurants are said to be wholly present whenever they are present, i.e., they are in time. They can be understood in contrast with the category of Perdurants (Processes, Events). Examples of endurants are a house, a person, the Moon, an amount of sand. For instance, we can say that an individual John weights 80kg at in circumstance c1 but 68kg at in circumstance c2. Nonetheless, we are in these two cases referring to the same individual.">
+<area shape="rect" coords="392,91,463,121" href="UFO.html#UFO_Moment" title="Moments are individuals that can only exist by inhering in other individuals. In other words, moments are individuals that are existentially-dependent on their bearers (@e.g., a person’s headache, a covalent bond between atoms).">
+<area shape="rect" coords="640,91,730,121" href="UFO.html#UFO_Substantial" title="Substantials (objects) are existentially-independent Endurants (@e.g., a person, a car).">
+<area shape="rect" coords="193,131,319,161" href="UFO.html#UFO_Intrinsic+Moment" title="Intrinsic Moments are moments that inhere in one single individual (e.g., an apple’s color). An example of an intrinsic moment is a Mode (@e.g., John’s desires, intentions, perceptions, symptoms, skills).">
+<area shape="rect" coords="382,163,475,193" href="UFO.html#UFO_Disposition" title="Dispositions are properties (moments) that are only manifested in particular situations and that can also fail to be manifested. When manifested, they are manifested through the occurrence of events. Take for example the disposition of a magnet m to attract metallic material. The object m has this disposition even if it is never manifested, for example, because it is never close to any magnetic material. Nonetheless, m can certainly be said to possess that intrinsic moment, which it shares with other magnets.">
+<area shape="rect" coords="169,560,363,590" href="HCIO.html#HCIO_Interactive+Software+System" title="Software system that includes, among other programs, User Interface Programs. E.g., a home banking system and its graphical programs that deals with user interface aspects.">
+<area shape="rect" coords="703,560,981,590" href="HCIO.html#HCIO_Loaded+Interactive+Software+System+Copy" title="Loaded Software System Copy that is the materialization of an Interactive Software System. E.g., the copy of the home banking system loaded in the computer of a certain user."></MAP></p>
+<p align="center"><b>Figure 2. Interactive Computer System conceptual model.</b></p>
+<p align="justify">The Interactive Computer System sub-ontology addresses what an interactive computer system is and its elements, including the user interface. It is mainly an extension of SysSwO (SEON Core Layer). <br/><br/>Interactive Computer System is a subtype of Computer System, and like the last, it combines hardware and software. Concerning hardware, an Interactive Computer System is (the Computer System) composed of a set of Computer Machines and peripheral devices (Hardware Equipment) connected to them. The striking feature of an Interactive Computer System is that it has a User Interface, a complex Object that is composed of Input Equipment and Output Equipment connected to the Computer Machine. If an Output Equipment is part of a User Interface of an Interactive Computer System, then this Interactive Computer System should be constituted of the Computer Machine that connects the Output Equipment. The same applies to Input Equipment. These constraints are addressed by the following axioms:<br/><br/>A1. &forall; oeq: Output Equipment, ui: User Interface, ics: Interactive Computer System partOf (oeq, ui) &and; partOf (ui, ics) &rarr; (&exist; cm: Computer Machine partOf (cm, ics) &and; connectedTo (oeq, cm))<br/><br/>A2. &forall; ieq: Input Equipment, ui: User Interface, ics: Interactive Computer System partOf (ieq, ui) &and; partOf (ui, ics) &rarr; (&exist; cm: Computer Machine partOf (cm, ics) &and; connectedTo (ieq, cm))<br/><br/>When a Hardware Equipment is both an Input Equipment and an Output Equipment it is said an IO Equipment. Thus:<br/><br/>A3. &forall; he: Hardware Equipment Input Equipment(he) &and; OutputEquipment(he) &rarr; IOEquipment (he)<br/><br/>Regarding software, an Interactive Computer System has a set of Software Systems (In- teractive Software System) loaded in its Computer Machines (Loaded Interactive Software System Copies). The programs that constitute these systems are instances of Program. Some of them deal with aspects related to the user interface and, thus, are instances of User Interface Program. Thus, an Interactive Computer System has a User Interface and the copies of the programs loaded in its computer (Loaded User Interface Programs Copy) that handle its User Interface. The following axiom applies:<br/><br/>A4. &forall; ui: User Interface, ics: Interactive Computer System, lissc: Loaded Interactive Software System Copy partOf (ui, ics) &and; has (ics, lissc) &rarr; &exist; luipc: Loaded User Interface Program Copy includes (lissc, luipc) &and; handles (luipc, ui)<br/><br/>Interactive Computer Systems can form another Interactive Computer System, which is said a Complex Interactive Computer System.</p>
+
+<h3><a name="HCIO_User_section">3.2.  User</a></h3>
+<p align="justify"></p>
+<p>Figure 3 presents the conceptual model of the User subontology.</p>
+<p align="center"><IMG src="images/User.png" width="1178" class="map" usemap="#User"><MAP NAME="User">
+<area shape="rect" coords="259,506,547,536" href="HCIO.html#HCIO_Intentional+User+Participation+(User+Action)" title="User participation intentionally performed. E.g., user touching her finger to unlock her mobile phone by using her fingerprint; user clicking the send button to send an e-mail.">
+<area shape="rect" coords="686,506,873,536" href="HCIO.html#HCIO_User+Initiated+Participation" title="Event in which a User inputs data or information using an Input Equipment. E.g., user touching her finger to unlock her mobile phone by using her fingerprint.">
+<area shape="rect" coords="181,322,247,353" href="HCIO.html#HCIO_User" title="A Person who interacts with (or is expected to interact with) an Interactive Computer System. E.g., a person who uses a home banking system, smart watch or smart mobile phone. Adapted from (ISO 9241-210, 2010)">
+<area shape="rect" coords="116,215,179,245" href="UFO.html#UFO_Person" title="Same as UFO::Human Agent
+A human Physical Agent.">
+<area shape="rect" coords="92,153,204,183" href="UFO.html#UFO_Physical+Agent" title="">
+<area shape="rect" coords="27,98,84,128" href="UFO.html#UFO_Agent" title="Agents are Substantials (Functional Complexes or Collectives) that can bear special kinds of Intrinsic Moments named Intentional Moments.">
+<area shape="rect" coords="16,414,96,444" href="HCIO.html#HCIO_User+Goal" title="The propositional content of something the User wants to achieve (User Intention). E.g., the goal of buying fly tickets to go on vacation.">
+<area shape="rect" coords="623,123,683,153" href="UFO.html#UFO_Action" title="Actions are intentional events, i.e. they are caused by Intentions. Actions are events which instantiate a Plan (Action Universal) with the specific purpose of satisfying (the propositional content of) some Intention.">
+<area shape="rect" coords="434,122,511,152" href="UFO.html#UFO_Intention" title="Intentions are desired state of affairs (situations) for which the agent commits at pursuing (@e.g., the Intention of going to a beach resort for the next summer break).">
+<area shape="rect" coords="229,122,277,152" href="UFO.html#UFO_Goal" title="The propositional content of an Intention.">
+<area shape="rect" coords="312,68,429,98" href="UFO.html#UFO_Mental+Moment" title="">
+<area shape="rect" coords="208,20,351,50" href="UFO.html#UFO_Intentional+Moment" title="The capacity of some properties of certain individuals to refer to possible Situations of reality. Every intentional moment has a propositional content (Proposition), which is an abstract representation of a class of situations referred by that intentional moment.">
+<area shape="rect" coords="730,95,829,125" href="UFO.html#UFO_Participation" title="A participation is the portion of an event which depends exclusively on a single object. Each of participations is itself an event that can be complex or atomic but which existentially depends on a single substantial. Take for instance the event e: the stabbing of Caesar by Brutus. In this event we have the participation of Caesar himself, of Brutus and of the knife. In this case, e is composed of the individual participation of each of these entities.">
+<area shape="rect" coords="709,153,849,183" href="UFO.html#UFO_Agent+Participation" title="">
+<area shape="rect" coords="568,210,712,240" href="UFO.html#UFO_Action+Contribution" title="Action Contribution is a participation that are intentional.">
+<area shape="rect" coords="600,322,731,352" href="HCIO.html#HCIO_User+Participation" title="Event in which the user participates in a Human-Computer Interaction. E.g., user walking and unintentionally giving information about number of steps to a monitoring system loaded in her smart watch; user touching her finger to unlock her mobile phone by using her fingerprint; user interpreting a message from the mobile phone system informing that the captured fingerprint was not recognized.">
+<area shape="rect" coords="647,10,776,40" href="UFO.html#UFO_Event+(Perdurant)" title="Events (also called perdurants) are individuals composed of temporal parts. They happen in time in the sense that they extend in time accumulating temporal parts. @Examples of events are a conversation, a football game, a symphony execution, a birthday party, or a particular business process.">
+<area shape="rect" coords="641,460,780,490" href="HCIO.html#HCIO_User+Interpretation" title="Event in which a User interprets the system output. E.g., user interpreting a message from the mobile phone system informing that the captured fingerprint was not recognized; user sensing her smart watch vibrate; user hearing the notification sound of new message.">
+<area shape="rect" coords="463,547,683,577" href="HCIO.html#HCIO_Unintentional+User+Participation" title="User participation unintentionally performed. E.g., a user walking and unintentionally giving information about number of steps to a monitoring system loaded in her smart watch; user entering a room, in a smart home, which automatically turns on the light.  ">
+<area shape="rect" coords="214,577,362,607" href="HCIO.html#HCIO_User+Initiated+Action" title="Intentional User Action of inputting data or information using an Input Equipment. E.g., user touching her finger to unlock her mobile phone by using her fingerprint; user clicking the send button to send an email.">
+<area shape="rect" coords="890,475,1080,505" href="HCIO.html#HCIO_Complex+User+Participation" title="Participation composed of two or more User Participations. E.g., user typing her password and then answering security questions to log in the e-mail system.">
+<area shape="rect" coords="946,430,1125,460" href="HCIO.html#HCIO_Atomic+User+Participation" title="Single User Participation. E.g., user touching her finger to unlock her mobile phone by using her fingerprint; user clicking a button. ">
+<area shape="rect" coords="279,414,388,444" href="HCIO.html#HCIO_User+Intention" title="An Intention that inheres in a User, causing him to perform intentional user actions. E.g., the intention to travel on vacation.  "></MAP></p>
+<p align="center"><b>Figure 3. User conceptual model.</b></p>
+<p align="justify">The User sub-ontology focuses on the user and its possible actions when interacting with an interactive computer system.<br/><br/>User is the role played by a Person that participates in a human-computer interaction. Such participation is said a User Participation, which can be either intentional (Intentional User Participation &minus; or simply User Action) or unintentional (Unintentional User Participation).<br/><br/>In terms of UFO, User Participation is an Agent Participation. Intentional User Participation (User Action) is an Action Contribution, i.e., an intentional participation of a User. Intentional User Participations (User Actions) are caused by Intentions (User Intentions) that inhere in the User. As an Intention, User Intention has a Goal (more specifically a User Goal) as its propositional content. User Action, as an intentional participation, is performed by the User in order to achieve a User Goal. User Actions performed by a User can only be caused by User Intentions that inhere in that User. This constraint is addressed by the following axiom:<br/><br/>A5. &forall; user: User, ua: Intentional User Participation (User Action), uint: User Intention participationOf (ua, user) &and; causedBy (ua, uint) &rarr; inheresIn (uint, user)<br/><br/>Considering its mereological structure, a User Participation can be an Atomic User Participation or a Complex User Participation, which is composed of others User Participations. In a Complex User Participation, all the User Participations are participations from the same User. Thus:<br/><br/>A6. &forall; cup: Complex User Participation, user: User, up: User Participation participationOf (cup, user) &and; partOf (up, cup) &rarr; participationOf (up, user)<br/><br/>In another classification, which considers the nature of participations and is orthogonal to the ones discussed above, User Participations are classified into two disjoint types: User Initiated Participation and User Interpretation. User Initiated Participation refers to an act performed by the user making an input in the system. User Interpretation, in turn, regards interpreting a state of the system. When a User Initiated Participation is intentional, it is said a User Initiated Action.</p>
+
+<h3><a name="HCIO_HC+Interaction_section">3.3.  HC Interaction</a></h3>
+<p align="justify"></p>
+<p>Figure 4 presents the conceptual model of the HC Interaction subontology.</p>
+<p align="center"><IMG src="images/HC Interaction.png" width="1604" class="map" usemap="#HC Interaction"><MAP NAME="HC Interaction">
+<area shape="rect" coords="461,848,666,878" href="HCIO.html#HCIO_Human-Computer+Interaction" title="An exchange of information (i.e., communication) between a User and an Interactive Computer System via the User Interface. E.g., user touching her finger to unlock her mobile phone by using her fingerprint and the mobile phone system showing a message informing that the fingerprint was not recognized; user entering a room, in a smart home, which automatically turns on the light.  Adapted from (ISO 9241-210, 2010)">
+<area shape="rect" coords="685,987,843,1017" href="HCIO.html#HCIO_User+Observable+State" title="A situation (an Observable State) perceivable by Users, typically achieved as the result (output) of a Program Copy Execution, communicated or presented by an Output Equipment. E.g., a message shown in the mobile phone screen informing the user that the captured fingerprint was not recognized, smart watch vibrating; sounds emitted by the mobile phone.">
+<area shape="rect" coords="1079,594,1237,624" href="SySwO.html#SySwO_Loaded+Program+Copy" title="Loaded Program Copy is the materialization of a Program, inhering in a Computer Machine.">
+<area shape="rect" coords="1062,683,1193,713" href="SySwO.html#SySwO_Computer+System" title="System containing one or more Computer Machines, and other Hardware Equipments connected to them, and associated software systems that are installed/loaded in these Machines (adapted from ISO/IEC/IEEE 24765:2017).">
+<area shape="rect" coords="242,804,308,835" href="HCIO.html#HCIO_User" title="A Person who interacts with (or is expected to interact with) an Interactive Computer System. E.g., a person who uses a home banking system, smart watch or smart mobile phone. Adapted from (ISO 9241-210, 2010)">
+<area shape="rect" coords="250,275,410,305" href="UFO.html#UFO_Physical+Agent" title="">
+<area shape="rect" coords="277,211,383,241" href="UFO.html#UFO_Agent" title="Agents are Substantials (Functional Complexes or Collectives) that can bear special kinds of Intrinsic Moments named Intentional Moments.">
+<area shape="rect" coords="553,190,662,220" href="UFO.html#UFO_Action" title="Actions are intentional events, i.e. they are caused by Intentions. Actions are events which instantiate a Plan (Action Universal) with the specific purpose of satisfying (the propositional content of) some Intention.">
+<area shape="rect" coords="1027,751,1227,781" href="HCIO.html#HCIO_Interactive+Computer+System" title="Computer System that combines User Interface, Computer Machine and Loaded Software System Copies, used to process, transform, store, display or transmit information or data by receiving input, and communicating output to Users. E.g., a desktop computer, its monitor, keyboard, mouse and software systems loaded in the computer (operational system, browser, text editor, etc.); smart watch; smart mobile phone. Adapted from (ISO 9241-210, 2010)
+
+">
+<area shape="rect" coords="920,249,1066,279" href="UFO.html#UFO_Participation" title="A participation is the portion of an event which depends exclusively on a single object. Each of participations is itself an event that can be complex or atomic but which existentially depends on a single substantial. Take for instance the event e: the stabbing of Caesar by Brutus. In this event we have the participation of Caesar himself, of Brutus and of the knife. In this case, e is composed of the individual participation of each of these entities.">
+<area shape="rect" coords="785,319,973,349" href="UFO.html#UFO_Agent+Participation" title="">
+<area shape="rect" coords="920,360,1112,390" href="UFO.html#UFO_Object+Participation" title="Object Participation is a set of different ways than an object can participate in actions. There are four different types of Object Participation, namely: Creation, Termination, Change and Usage.">
+<area shape="rect" coords="1238,85,1347,115" href="UFO.html#UFO_Object" title="Non-agentive substantial individuals. Objects can be Physical or Social.">
+<area shape="rect" coords="533,249,701,279" href="UFO.html#UFO_Complex+Action" title="A Complex Action is composed of two or more Participations. These participations can themselves be intentional (i.e., be themselves actions) or unintentional events. For @ex, the stabbing of Caesar by Brutus includes the intentional participation of Brutus and the unintentional. participation of Caesar and the knife. In a complex action, at least one participation should be intentional, i.e., an action contribution">
+<area shape="rect" coords="654,122,830,152" href="UFO.html#UFO_Event+(Perdurant)" title="Events (also called perdurants) are individuals composed of temporal parts. They happen in time in the sense that they extend in time accumulating temporal parts. @Examples of events are a conversation, a football game, a symphony execution, a birthday party, or a particular business process.">
+<area shape="rect" coords="967,848,1250,878" href="HCIO.html#HCIO_Interactive+Computer+System+Participation" title="The participation of an Interactive Computer System in a Human-Computer Interaction. E.g., the participation of the mobile phone system in the human-computer interaction in which the user touches her finger to unlock her mobile phone by using her fingerprint and the mobile phone system shows a message informing that the fingerprint was not recognized; the participation of the smart watch in the human-computer interaction in which the user uses the smart watch to monitor her heart pulse.">
+<area shape="rect" coords="1282,840,1390,870" href="HCIO.html#HCIO_User+Interface" title="All components of an interactive system (software or hardware) that provide information and controls for the user to accomplish specific tasks with the interactive system. E.g., mouse, keyboard, monitor, sensors and the software that handle them. Adapted from (ISO 9241-210, 2010) (ISO 9241-112, 2017)">
+<area shape="rect" coords="1399,482,1550,512" href="SySwO.html#SySwO_Hardware+Equipment" title="DEFINIÇÃO NOVA: Physical Object used to process, transform, store, display or transmit information or data
+
+
+DEFINIÇÃO ANTIGA: Physical Object used for running software programs or to support some related action.">
+<area shape="rect" coords="592,579,780,609" href="SySwO.html#SySwO_Computing+Resulting+State" title="Observable State is a situation resulting from the execution of a program copy. It involves qualities and quality values (qualia) of the Machine in which the Loaded Program Copy inheres, as well as of entities residing in that Machine (including the Loaded Program Copy itself).">
+<area shape="rect" coords="811,648,984,678" href="SySwO.html#SySwO_Program+Copy+Execution" title="Program Copy Execution is an Event representing the execution of the Loaded Program Copy running in a Machine. In other words, the Program Copy Execution is the event of the physical manifestation of the dispositions (represented as the complex disposition Loaded Program Copy) that inhere in the Machine.">
+<area shape="rect" coords="423,121,548,152" href="UFO.html#UFO_Situation" title="A situation is a particular configuration of a part of reality which can be understood as a whole. Situations can be factual or counterfactual (@e.g., the situation in which “Al Gore is the president of the USA”).">
+<area shape="rect" coords="645,487,768,517" href="SySwO.html#SySwO_Software+System" title="Software Item that aims at satisfying a specification (System Specification), concerning a desired change in a data structure inside a computer, abstracting away from the behavior.">
+<area shape="rect" coords="1005,521,1078,551" href="SySwO.html#SySwO_Program" title="Software Item which aims at producing a certain result through execution on a computer, in a particular way, given by the Program Specification. A Program is constituted by code, but it is not identical to code. Code can be changed without altering the identity of its program, which is anchored to the program's essential property: its intended specification (Program Specification).">
+<area shape="rect" coords="1264,1119,1388,1149" href="HCIO.html#HCIO_Input+Equipment" title="Hardware Equipment used to receive and transmit information or data from a User (input). E.g.: keyboard, mouse, sensors. Adapted from (Dix et al., 2004)">
+<area shape="rect" coords="1062,988,1197,1018" href="HCIO.html#HCIO_Output+Equipment" title="Hardware Equipment used to transmit or display information or data, communicating output to Users. E. g.: Monitor, speaker, etc. Adapted from (Dix et al., 2004)">
+<area shape="rect" coords="645,1098,828,1128" href="HCIO.html#HCIO_User+Input+Resulting+State" title="A situation achieved as the result of User’s input (data or information) received by means of an Input Equipment. E.g., the user fingerprint captured by the mobile phone system; the button clicked.">
+<area shape="rect" coords="1007,160,1168,190" href="UFO.html#UFO_Complex+Event" title="Complex events are aggregations of at least two disjoint events. A Complex Event is existentially dependent on all its proper parts and, indirectly, to the objects these proper parts depend on.">
+<area shape="rect" coords="1155,202,1305,232" href="UFO.html#UFO_Atomic+Event" title="Atomic Events are those events which have no proper parts, i.e., events which cannot be further decomposed.">
+<area shape="rect" coords="1139,481,1347,511" href="SySwO.html#SySwO_Loaded+Software+System+Copy" title="Loaded Software System Copy is the materialization of a Software System, inhering in a Computer Machine.">
+<area shape="rect" coords="642,10,781,40" href="UFO.html#UFO_Substantial" title="Substantials (objects) are existentially-independent Endurants (@e.g., a person, a car).">
+<area shape="rect" coords="1290,627,1427,657" href="SySwO.html#SySwO_Computer+Machine" title="Hardware Equipment able to run programs, processing, transforming and storing data
+
+_____________
+
+Computer Machine is a hardware equipament able to run programs, processing, transforming and storing data and information.
+
+Definição ANTIGA: Machine is a hardware equipament able to run programs.">
+<area shape="rect" coords="593,361,737,391" href="UFO.html#UFO_Action+Contribution" title="Action Contribution is a participation that are intentional.">
+<area shape="rect" coords="402,936,541,966" href="HCIO.html#HCIO_User+Interpretation" title="Event in which a User interprets the system output. E.g., user interpreting a message from the mobile phone system informing that the captured fingerprint was not recognized; user sensing her smart watch vibrate; user hearing the notification sound of new message.">
+<area shape="rect" coords="321,1098,508,1128" href="HCIO.html#HCIO_User+Initiated+Participation" title="Event in which a User inputs data or information using an Input Equipment. E.g., user touching her finger to unlock her mobile phone by using her fingerprint.">
+<area shape="rect" coords="377,751,508,781" href="HCIO.html#HCIO_User+Participation" title="Event in which the user participates in a Human-Computer Interaction. E.g., user walking and unintentionally giving information about number of steps to a monitoring system loaded in her smart watch; user touching her finger to unlock her mobile phone by using her fingerprint; user interpreting a message from the mobile phone system informing that the captured fingerprint was not recognized.">
+<area shape="rect" coords="246,370,309,400" href="UFO.html#UFO_Person" title="Same as UFO::Human Agent
+A human Physical Agent.">
+<area shape="rect" coords="102,864,182,894" href="HCIO.html#HCIO_User+Goal" title="The propositional content of something the User wants to achieve (User Intention). E.g., the goal of buying fly tickets to go on vacation.">
+<area shape="rect" coords="25,769,134,799" href="HCIO.html#HCIO_User+Intention" title="An Intention that inheres in a User, causing him to perform intentional user actions. E.g., the intention to travel on vacation.  ">
+<area shape="rect" coords="886,434,993,464" href="SySwO.html#SySwO_Software+Item" title="Piece of software, produced during the software process, not considered a complete Software Product, but an intermediary result."></MAP></p>
+<p align="center"><b>Figure 4. HC Interaction conceptual model.</b></p>
+<p align="justify">The HC Interaction sub-ontology links concepts from the other two sub-ontologies to define what a human-computer interaction is.<br/><br/>A Human-Computer Interaction is an interaction between a User and an Interactive Computer System. Thus, a Human-Computer Interaction is composed by a User Participation and an Interactive Computer System Participation, indicating the events performed by both parties in a specific interaction.<br/><br/>As said before (see User Sub-ontology), in terms of UFO, User Participation is an Agent Participation. Interactive Computer System Participation, in turn, is a Complex Object Participation. It is a Complex Event, since it aggregates all events performed by the Interactive Computer System in the context of a single Human-Computer Interaction. It is an Object Participation because, being the Interactive Computer System an Object, its participation is always unintentional.<br/><br/>A User Initiated Participation is performed using one or more Input Equipment. As a result of a User Initiated Participation, a User Input Resulting State is achieved. User Input Resulting State is a Situation representing the data entered by the user before any program execution. This situation triggers Program Copy Executions. Moreover, we can say that User Initiated Participation directly causes Program Copy Execution. Program Copy Execution brings about a Computing Resulting State (internal computer state), which, in turn, can trigger other Program Copy Executions. Thus, a Program Copy Execution can directly cause new Program Copy Executions.<br/><br/>Some Program Copy Executions can bring about a special type of Computing Resulting State, the one that is perceivable by user, said User Observable State. A User Observable State, thus, triggers User Interpretation. Therefore, we say that Program Copy Execution directly causes User Interpretation. In this context, the following axiom applies:<br/><br/>A7. &forall; ui: User Interpretation, uos: User Observable State, pce: Program Copy Execution, uirs: User Input Resulting State, uip: User Initiated Participation triggers (uos, ui) &and; bringsAbout (pce, uos) &and; triggers (uirs, pce) &and; bringsAbout (uip, uirs) &rarr; causes (uip, ui)<br/><br/>It is important to say that (A7) does not constrain who are the users involved in the User Initiated Participation and in the User Interpretation, i.e., the User in the User Initiated Participation may be different from the one involved in the User Interpretation.<br/><br/>A User Observable State triggers User Interpretation and is presented by one or more Output Equipment. Thus, Output Equipment supports User Interpretation, i.e.:<br/><br/>A8. &forall; oe: Output Equipment, uos: User Observable State, ui: User Interpretation presents (oe, uos) &and; triggers (uos, ui) &rarr; supports (oe, ui)<br/><br/>In a Human-Computer Interaction, both the Input and Output Equipment involved in the interaction should be part of the User Interface of the Interactive Computer System that participates in the interaction.<br/><br/>Since User Initiated Participation typically leads to some processing inside the system that results in an output to the user who can interpret it, we say that User Initiated Participation (indirectly) causes User Interpretation. User Interpretation may cause the User to act again. Thus, User Interpretation may directly cause (in terms of UFO) User Initiated Participations.<br/><br/>When a User Participation is intentional, it means that the User performed it considering some goal (User Goal). Interpretations performed by the user (User Interpretations) may evaluate User Goal achievement. This is a case of goal-driven behavior, in which a cycle of actions (User Participation) are repeated until the user achieves his/her goal (User Initiated Participation (indirectly) causes User Interpretation and User Interpretations (directly) causes User Initiated Participations).<br/><br/>The HC Interaction sub-ontology main purpose is to define what human-computer interaction is. In view of what was discussed, in summary, a Human-Computer Interaction is a Complex Event composed of User Participation and Interactive Computer System Participation. User Participation can involve both User Initiated Participations and User Interpretations. Interactive Computer System Participation regards the set of Program Executions performed by the Interactive Computer System in the interaction.</p>
+
+
+				<h2>4. Concepts Definition</h2>
+				<p align="justify">The following table shows the definitions for HCIO concepts.
+			<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->
+				</p>
+				<table style="width: 100%" border="1" cellpadding="6">
+					<tbody>
+						<tr style="background-color: #D8D8D8">
+							<td style="width: 25%"><b>Concept</b></td>
+							<td style="width: 75%"><b>Definition</b></td>
+						</tr>
+						<tr>
+<td><a name="HCIO_Atomic+User+Participation"><b><i>Atomic User Participation</i></b></a>
+<a href=#HCIO_Atomic+User+Participation_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Single User Participation. E.g., user touching her finger to unlock her mobile phone by using her fingerprint; user clicking a button. 
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIO_Complex+Interactive+Computer+System"><b><i>Complex Interactive Computer System</i></b></a>
+<a href=#HCIO_Complex+Interactive+Computer+System_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Interactive Computer System composed of others Interactive Computer System. E.g., IoT in a smart home. Adapted from (ISO 9241-210, 2010) (ISO 9241-11, 2018)
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIO_Complex+User+Participation"><b><i>Complex User Participation</i></b></a>
+<a href=#HCIO_Complex+User+Participation_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Participation composed of two or more User Participations. E.g., user typing her password and then answering security questions to log in the e-mail system.
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIO_Human-Computer+Interaction"><b><i>Human-Computer Interaction</i></b></a>
+<a href=#HCIO_Human-Computer+Interaction_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>An exchange of information (i.e., communication) between a User and an Interactive Computer System via the User Interface. E.g., user touching her finger to unlock her mobile phone by using her fingerprint and the mobile phone system showing a message informing that the fingerprint was not recognized; user entering a room, in a smart home, which automatically turns on the light.  Adapted from (ISO 9241-210, 2010)
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIO_Input+Equipment"><b><i>Input Equipment</i></b></a>
+<a href=#HCIO_Input+Equipment_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Hardware Equipment used to receive and transmit information or data from a User (input). E.g.: keyboard, mouse, sensors. Adapted from (Dix et al., 2004)
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIO_Intentional+User+Participation+(User+Action)"><b><i>Intentional User Participation (User Action)</i></b></a>
+<a href=#HCIO_Intentional+User+Participation+(User+Action)_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>User participation intentionally performed. E.g., user touching her finger to unlock her mobile phone by using her fingerprint; user clicking the send button to send an e-mail.
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIO_Interactive+Computer+System"><b><i>Interactive Computer System</i></b></a>
+<a href=#HCIO_Interactive+Computer+System_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Computer System that combines User Interface, Computer Machine and Loaded Software System Copies, used to process, transform, store, display or transmit information or data by receiving input, and communicating output to Users. E.g., a desktop computer, its monitor, keyboard, mouse and software systems loaded in the computer (operational system, browser, text editor, etc.); smart watch; smart mobile phone. Adapted from (ISO 9241-210, 2010)<br/><br/>
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIO_Interactive+Computer+System+Participation"><b><i>Interactive Computer System Participation</i></b></a>
+<a href=#HCIO_Interactive+Computer+System+Participation_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>The participation of an Interactive Computer System in a Human-Computer Interaction. E.g., the participation of the mobile phone system in the human-computer interaction in which the user touches her finger to unlock her mobile phone by using her fingerprint and the mobile phone system shows a message informing that the fingerprint was not recognized; the participation of the smart watch in the human-computer interaction in which the user uses the smart watch to monitor her heart pulse.
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIO_Interactive+Software+System"><b><i>Interactive Software System</i></b></a>
+<a href=#HCIO_Interactive+Software+System_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Software system that includes, among other programs, User Interface Programs. E.g., a home banking system and its graphical programs that deals with user interface aspects.
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIO_Loaded+Interactive+Software+System+Copy"><b><i>Loaded Interactive Software System Copy</i></b></a>
+<a href=#HCIO_Loaded+Interactive+Software+System+Copy_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Loaded Software System Copy that is the materialization of an Interactive Software System. E.g., the copy of the home banking system loaded in the computer of a certain user.
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIO_Loaded+User+Interface+Program+Copy"><b><i>Loaded User Interface Program Copy</i></b></a>
+<a href=#HCIO_Loaded+User+Interface+Program+Copy_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Loaded Program Copy that is the materialization of a User Interface Program. E.g., the copy of the programs that deal with interface aspects of the home banking system loaded in the computer of a certain user.
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIO_Output+Equipment"><b><i>Output Equipment</i></b></a>
+<a href=#HCIO_Output+Equipment_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Hardware Equipment used to transmit or display information or data, communicating output to Users. E. g.: Monitor, speaker, etc. Adapted from (Dix et al., 2004)
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIO_Unintentional+User+Participation"><b><i>Unintentional User Participation</i></b></a>
+<a href=#HCIO_Unintentional+User+Participation_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>User participation unintentionally performed. E.g., a user walking and unintentionally giving information about number of steps to a monitoring system loaded in her smart watch; user entering a room, in a smart home, which automatically turns on the light.  
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIO_User"><b><i>User</i></b></a>
+<a href=#HCIO_User_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>A Person who interacts with (or is expected to interact with) an Interactive Computer System. E.g., a person who uses a home banking system, smart watch or smart mobile phone. Adapted from (ISO 9241-210, 2010)
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIO_User+Goal"><b><i>User Goal</i></b></a>
+<a href=#HCIO_User+Goal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>The propositional content of something the User wants to achieve (User Intention). E.g., the goal of buying fly tickets to go on vacation.
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIO_User+Initiated+Action"><b><i>User Initiated Action</i></b></a>
+<a href=#HCIO_User+Initiated+Action_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Intentional User Action of inputting data or information using an Input Equipment. E.g., user touching her finger to unlock her mobile phone by using her fingerprint; user clicking the send button to send an email.
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIO_User+Initiated+Participation"><b><i>User Initiated Participation</i></b></a>
+<a href=#HCIO_User+Initiated+Participation_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Event in which a User inputs data or information using an Input Equipment. E.g., user touching her finger to unlock her mobile phone by using her fingerprint.
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIO_User+Input+Resulting+State"><b><i>User Input Resulting State</i></b></a>
+<a href=#HCIO_User+Input+Resulting+State_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>A situation achieved as the result of User’s input (data or information) received by means of an Input Equipment. E.g., the user fingerprint captured by the mobile phone system; the button clicked.
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIO_User+Intention"><b><i>User Intention</i></b></a>
+<a href=#HCIO_User+Intention_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>An Intention that inheres in a User, causing him to perform intentional user actions. E.g., the intention to travel on vacation.  
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIO_User+Interface"><b><i>User Interface</i></b></a>
+<a href=#HCIO_User+Interface_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>All components of an interactive system (software or hardware) that provide information and controls for the user to accomplish specific tasks with the interactive system. E.g., mouse, keyboard, monitor, sensors and the software that handle them. Adapted from (ISO 9241-210, 2010) (ISO 9241-112, 2017)
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIO_User+Interface+Program"><b><i>User Interface Program</i></b></a>
+<a href=#HCIO_User+Interface+Program_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Program that deals with aspects related to the User Interface. E.g., the program responsible for the graphical user interface of the component that captures the user fingerprint to unlock a mobile phone.
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIO_User+Interpretation"><b><i>User Interpretation</i></b></a>
+<a href=#HCIO_User+Interpretation_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Event in which a User interprets the system output. E.g., user interpreting a message from the mobile phone system informing that the captured fingerprint was not recognized; user sensing her smart watch vibrate; user hearing the notification sound of new message.
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIO_User+Observable+State"><b><i>User Observable State</i></b></a>
+<a href=#HCIO_User+Observable+State_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>A situation (an Observable State) perceivable by Users, typically achieved as the result (output) of a Program Copy Execution, communicated or presented by an Output Equipment. E.g., a message shown in the mobile phone screen informing the user that the captured fingerprint was not recognized, smart watch vibrating; sounds emitted by the mobile phone.
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIO_User+Participation"><b><i>User Participation</i></b></a>
+<a href=#HCIO_User+Participation_detail><IMG src="images/plus-4-16.ico"></a></td>
+<td>Event in which the user participates in a Human-Computer Interaction. E.g., user walking and unintentionally giving information about number of steps to a monitoring system loaded in her smart watch; user touching her finger to unlock her mobile phone by using her fingerprint; user interpreting a message from the mobile phone system informing that the captured fingerprint was not recognized.
+<br/></td>
+</tr>
+
+					</tbody>
+				</table>
+				<br/>
+				<h2>Detailed Concepts</h2>
+				<a name="HCIO_Atomic+User+Participation_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Atomic User Participation<strong></td></tr>
+</table><br/>
+<b>HCIO::Atomic User Participation</b><br/>
+Specializes HCIO::User Participation<br/><br/>
+Single User Participation. E.g., user touching her finger to unlock her mobile phone by using her fingerprint; user clicking a button. <br/>
+<br/>
+<br/>
+<br/>
+<br/><br/>
+
+<a name="HCIO_Complex+Interactive+Computer+System_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Complex Interactive Computer System<strong></td></tr>
+</table><br/>
+<b>HCIO::Complex Interactive Computer System</b><br/>
+Specializes HCIO::Interactive Computer System<br/><br/>
+Interactive Computer System composed of others Interactive Computer System. E.g., IoT in a smart home. Adapted from (ISO 9241-210, 2010) (ISO 9241-11, 2018)<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Complex Interactive Computer System (0..*) <>-- (2..*) Interactive Computer System<br/>
+</code><br/>
+<br/><br/>
+
+<a name="HCIO_Complex+User+Participation_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Complex User Participation<strong></td></tr>
+</table><br/>
+<b>HCIO::Complex User Participation</b><br/>
+Specializes HCIO::User Participation<br/><br/>
+Participation composed of two or more User Participations. E.g., user typing her password and then answering security questions to log in the e-mail system.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Complex User Participation (0..*) <>-- (2..*) User Participation<br/>
+</code><br/>
+<br/><br/>
+
+<a name="HCIO_Human-Computer+Interaction_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Human-Computer Interaction<strong></td></tr>
+</table><br/>
+<b>HCIO::Human-Computer Interaction</b><br/>
+Specializes COM::Measurable Entity, UFO::Complex Action<br/><br/>
+An exchange of information (i.e., communication) between a User and an Interactive Computer System via the User Interface. E.g., user touching her finger to unlock her mobile phone by using her fingerprint and the mobile phone system showing a message informing that the fingerprint was not recognized; user entering a room, in a smart home, which automatically turns on the light.  Adapted from (ISO 9241-210, 2010)<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Human-Computer Interaction comunicates user input User Interface<br/>
+Human-Computer Interaction (1..1) <>-- (1..1) Interactive Computer System Participation<br/>
+Human-Computer Interaction <>-- (1..1) User Participation<br/>
+HCI Evaluation (0..*) evaluates (1..*) Human-Computer Interaction<br/>
+User Interface comunicates system output Human-Computer Interaction<br/>
+HCI Quality Characteristic (1..*) inheres in (1..*) Human-Computer Interaction<br/>
+</code><br/>
+<br/><br/>
+
+<a name="HCIO_Input+Equipment_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Input Equipment<strong></td></tr>
+</table><br/>
+<b>HCIO::Input Equipment</b><br/>
+Specializes SySwO::Hardware Equipment<br/><br/>
+Hardware Equipment used to receive and transmit information or data from a User (input). E.g.: keyboard, mouse, sensors. Adapted from (Dix et al., 2004)<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Input Equipment (1..*) is done using (0..*) User Initiated Participation<br/>
+User Interface (0..*) <>-- (1..*) Input Equipment<br/>
+Interactive Computer System (0..*) <>-- (1..*) Input Equipment<br/>
+</code><br/>
+<br/><br/>
+
+<a name="HCIO_Intentional+User+Participation+(User+Action)_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Intentional User Participation (User Action)<strong></td></tr>
+</table><br/>
+<b>HCIO::Intentional User Participation (User Action)</b><br/>
+Specializes HCIO::User Participation, UFO::Action Contribution<br/><br/>
+User participation intentionally performed. E.g., user touching her finger to unlock her mobile phone by using her fingerprint; user clicking the send button to send an e-mail.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Intentional User Participation (User Action) (0..*) caused by (1..*) User Intention<br/>
+</code><br/>
+<br/><br/>
+
+<a name="HCIO_Interactive+Computer+System_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Interactive Computer System<strong></td></tr>
+</table><br/>
+<b>HCIO::Interactive Computer System</b><br/>
+Specializes SySwO::Hardware Equipment, SySwO::Computer System, COM::Measurable Entity<br/><br/>
+Computer System that combines User Interface, Computer Machine and Loaded Software System Copies, used to process, transform, store, display or transmit information or data by receiving input, and communicating output to Users. E.g., a desktop computer, its monitor, keyboard, mouse and software systems loaded in the computer (operational system, browser, text editor, etc.); smart watch; smart mobile phone. Adapted from (ISO 9241-210, 2010)<br/><br/><br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Interactive Computer System <>-- User Interface<br/>
+Interactive Computer System <>-- Hardware Equipment<br/>
+Interactive Computer System (0..*) <>-- (1..*) Input Equipment<br/>
+Interactive Computer System <>-- User Input Resulting State<br/>
+Interactive Computer System (1..1) has (1..*) Loaded Interactive Software System Copy<br/>
+Interactive Computer System (1..*) has (0..*) HCI Quality Characteristic<br/>
+HCI Evaluation (0..*) evaluates (1..1) Interactive Computer System<br/>
+Complex Interactive Computer System (0..*) <>-- (2..*) Interactive Computer System<br/>
+Interactive Computer System Participation (0..*) participation of (1..1) Interactive Computer System<br/>
+</code><br/>
+<br/><br/>
+
+<a name="HCIO_Interactive+Computer+System+Participation_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Interactive Computer System Participation<strong></td></tr>
+</table><br/>
+<b>HCIO::Interactive Computer System Participation</b><br/>
+Specializes UFO::Object Participation, UFO::Complex Event<br/><br/>
+The participation of an Interactive Computer System in a Human-Computer Interaction. E.g., the participation of the mobile phone system in the human-computer interaction in which the user touches her finger to unlock her mobile phone by using her fingerprint and the mobile phone system shows a message informing that the fingerprint was not recognized; the participation of the smart watch in the human-computer interaction in which the user uses the smart watch to monitor her heart pulse.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Interactive Computer System Participation (0..*) participation of (1..1) Interactive Computer System<br/>
+Interactive Computer System Participation (1..1) <>-- (0..*) Program Copy Execution<br/>
+HCI Evaluation (0..*) evaluates (1..*) Interactive Computer System Participation<br/>
+Human-Computer Interaction (1..1) <>-- (1..1) Interactive Computer System Participation<br/>
+</code><br/>
+<br/><br/>
+
+<a name="HCIO_Interactive+Software+System_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Interactive Software System<strong></td></tr>
+</table><br/>
+<b>HCIO::Interactive Software System</b><br/>
+Specializes SySwO::Software System<br/><br/>
+Software system that includes, among other programs, User Interface Programs. E.g., a home banking system and its graphical programs that deals with user interface aspects.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Interactive Software System (0..*) constituted of (1..*) User Interface Program<br/>
+Loaded Interactive Software System Copy (0..*) materialization of (1..1) Interactive Software System<br/>
+</code><br/>
+<br/><br/>
+
+<a name="HCIO_Loaded+Interactive+Software+System+Copy_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Loaded Interactive Software System Copy<strong></td></tr>
+</table><br/>
+<b>HCIO::Loaded Interactive Software System Copy</b><br/>
+Specializes SySwO::Loaded Software System Copy<br/><br/>
+Loaded Software System Copy that is the materialization of an Interactive Software System. E.g., the copy of the home banking system loaded in the computer of a certain user.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Loaded Interactive Software System Copy (0..*) materialization of (1..1) Interactive Software System<br/>
+Loaded Interactive Software System Copy (1..1) includes (1..*) Loaded User Interface Program Copy<br/>
+Interactive Computer System (1..1) has (1..*) Loaded Interactive Software System Copy<br/>
+</code><br/>
+<br/><br/>
+
+<a name="HCIO_Loaded+User+Interface+Program+Copy_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Loaded User Interface Program Copy<strong></td></tr>
+</table><br/>
+<b>HCIO::Loaded User Interface Program Copy</b><br/>
+Specializes SySwO::Loaded Program Copy<br/><br/>
+Loaded Program Copy that is the materialization of a User Interface Program. E.g., the copy of the programs that deal with interface aspects of the home banking system loaded in the computer of a certain user.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Loaded User Interface Program Copy (0..*) materialization of (1..1) User Interface Program<br/>
+Loaded User Interface Program Copy (1..*) handles (1..1) User Interface<br/>
+User Interface (1..1) handles (1..*) Loaded User Interface Program Copy<br/>
+Loaded Interactive Software System Copy (1..1) includes (1..*) Loaded User Interface Program Copy<br/>
+</code><br/>
+<br/><br/>
+
+<a name="HCIO_Output+Equipment_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Output Equipment<strong></td></tr>
+</table><br/>
+<b>HCIO::Output Equipment</b><br/>
+Specializes SySwO::Hardware Equipment<br/><br/>
+Hardware Equipment used to transmit or display information or data, communicating output to Users. E. g.: Monitor, speaker, etc. Adapted from (Dix et al., 2004)<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Output Equipment (1..*) presents (0..*) User Observable State<br/>
+Output Equipment (1..*) /supports (0..*) User Interpretation<br/>
+User Interface (0..*) <>-- (1..*) Output Equipment<br/>
+</code><br/>
+<br/><br/>
+
+<a name="HCIO_Unintentional+User+Participation_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>Unintentional User Participation<strong></td></tr>
+</table><br/>
+<b>HCIO::Unintentional User Participation</b><br/>
+Specializes HCIO::User Participation<br/><br/>
+User participation unintentionally performed. E.g., a user walking and unintentionally giving information about number of steps to a monitoring system loaded in her smart watch; user entering a room, in a smart home, which automatically turns on the light.  <br/>
+<br/>
+<br/>
+<br/>
+<br/><br/>
+
+<a name="HCIO_User_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>User<strong></td></tr>
+</table><br/>
+<b>HCIO::User</b><br/>
+Specializes UFO::Person<br/><br/>
+A Person who interacts with (or is expected to interact with) an Interactive Computer System. E.g., a person who uses a home banking system, smart watch or smart mobile phone. Adapted from (ISO 9241-210, 2010)<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>User (1..1) participation of (1..*) User Participation<br/>
+User (0..*) participates in (0..*) HCI Evaluation<br/>
+User Intention (0..*) inheres in (1..1) User<br/>
+</code><br/>
+<br/><br/>
+
+<a name="HCIO_User+Goal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>User Goal<strong></td></tr>
+</table><br/>
+<b>HCIO::User Goal</b><br/>
+Specializes UFO::Goal<br/><br/>
+The propositional content of something the User wants to achieve (User Intention). E.g., the goal of buying fly tickets to go on vacation.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>User Goal (1..1) propositional content of (1..*) User Intention<br/>
+User Interpretation (0..*) may evaluate achievement of (0..*) User Goal<br/>
+User Requirement (0..*) refers to (1..*) User Goal<br/>
+</code><br/>
+<br/><br/>
+
+<a name="HCIO_User+Initiated+Action_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>User Initiated Action<strong></td></tr>
+</table><br/>
+<b>HCIO::User Initiated Action</b><br/>
+Specializes HCIO::User Initiated Participation, HCIO::Intentional User Participation (User Action)<br/><br/>
+Intentional User Action of inputting data or information using an Input Equipment. E.g., user touching her finger to unlock her mobile phone by using her fingerprint; user clicking the send button to send an email.<br/>
+<br/>
+<br/>
+<br/>
+<br/><br/>
+
+<a name="HCIO_User+Initiated+Participation_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>User Initiated Participation<strong></td></tr>
+</table><br/>
+<b>HCIO::User Initiated Participation</b><br/>
+Specializes HCIO::User Participation<br/><br/>
+Event in which a User inputs data or information using an Input Equipment. E.g., user touching her finger to unlock her mobile phone by using her fingerprint.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>User Initiated Participation (0..*) causes (0..*) User Interpretation<br/>
+User Initiated Participation (1..1) brings about (1..1) User Input Resulting State<br/>
+User Initiated Participation (0..1) /directly causes (0..*) Program Copy Execution<br/>
+User Interpretation (0..*) directly causes (0..*) User Initiated Participation<br/>
+Input Equipment (1..*) is done using (0..*) User Initiated Participation<br/>
+</code><br/>
+<br/><br/>
+
+<a name="HCIO_User+Input+Resulting+State_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>User Input Resulting State<strong></td></tr>
+</table><br/>
+<b>HCIO::User Input Resulting State</b><br/>
+Specializes UFO::Situation<br/><br/>
+A situation achieved as the result of User’s input (data or information) received by means of an Input Equipment. E.g., the user fingerprint captured by the mobile phone system; the button clicked.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>User Input Resulting State (0..1) triggers (0..*) Program Copy Execution<br/>
+User Input Resulting State (0..*) satisfies (0..*) Mental User Input Resulting State<br/>
+User Initiated Participation (1..1) brings about (1..1) User Input Resulting State<br/>
+Interactive Computer System <>-- User Input Resulting State<br/>
+</code><br/>
+<br/><br/>
+
+<a name="HCIO_User+Intention_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>User Intention<strong></td></tr>
+</table><br/>
+<b>HCIO::User Intention</b><br/>
+Specializes UFO::Intention<br/><br/>
+An Intention that inheres in a User, causing him to perform intentional user actions. E.g., the intention to travel on vacation.  <br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>User Intention (0..*) inheres in (1..1) User<br/>
+User Goal (1..1) propositional content of (1..*) User Intention<br/>
+Intentional User Participation (User Action) (0..*) caused by (1..*) User Intention<br/>
+</code><br/>
+<br/><br/>
+
+<a name="HCIO_User+Interface_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>User Interface<strong></td></tr>
+</table><br/>
+<b>HCIO::User Interface</b><br/>
+Specializes UFO::Object, COM::Measurable Entity<br/><br/>
+All components of an interactive system (software or hardware) that provide information and controls for the user to accomplish specific tasks with the interactive system. E.g., mouse, keyboard, monitor, sensors and the software that handle them. Adapted from (ISO 9241-210, 2010) (ISO 9241-112, 2017)<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>User Interface <>-- Software Product<br/>
+User Interface <>-- Hardware Equipment<br/>
+User Interface comunicates system output Human-Computer Interaction<br/>
+User Interface shows Computing Resulting State<br/>
+User Interface (0..*) <>-- (1..*) Input Equipment<br/>
+User Interface (0..*) <>-- (1..*) Output Equipment<br/>
+User Interface (1..1) handles (1..*) Loaded User Interface Program Copy<br/>
+User Interface (1..*) /has (0..*) HCI Quality Characteristic<br/>
+HCI Evaluation (0..*) evaluates (1..1) User Interface<br/>
+Human-Computer Interaction comunicates user input User Interface<br/>
+Interactive Computer System <>-- User Interface<br/>
+Loaded Program Copy (1..*) handles (0..1) User Interface<br/>
+Loaded User Interface Program Copy (1..*) handles (1..1) User Interface<br/>
+</code><br/>
+<br/><br/>
+
+<a name="HCIO_User+Interface+Program_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>User Interface Program<strong></td></tr>
+</table><br/>
+<b>HCIO::User Interface Program</b><br/>
+Specializes SySwO::Program<br/><br/>
+Program that deals with aspects related to the User Interface. E.g., the program responsible for the graphical user interface of the component that captures the user fingerprint to unlock a mobile phone.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>User Interface Program (0..*) implements (1..*) Quality Characteristic<br/>
+Interactive Software System (0..*) constituted of (1..*) User Interface Program<br/>
+Loaded User Interface Program Copy (0..*) materialization of (1..1) User Interface Program<br/>
+</code><br/>
+<br/><br/>
+
+<a name="HCIO_User+Interpretation_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>User Interpretation<strong></td></tr>
+</table><br/>
+<b>HCIO::User Interpretation</b><br/>
+Specializes HCIO::User Participation<br/><br/>
+Event in which a User interprets the system output. E.g., user interpreting a message from the mobile phone system informing that the captured fingerprint was not recognized; user sensing her smart watch vibrate; user hearing the notification sound of new message.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>User Interpretation (0..*) directly causes (0..*) User Initiated Participation<br/>
+User Interpretation (0..*) may evaluate achievement of (0..*) User Goal<br/>
+User Interpretation (0..*) interprets (1..1) User Observable State<br/>
+User Interpretation (0..*) /interprets (1..1) User Observable State<br/>
+User Observable State (1..1) triggers (0..*) User Interpretation<br/>
+User Initiated Participation (0..*) causes (0..*) User Interpretation<br/>
+Program Copy Execution (1..1) /directly causes (0..*) User Interpretation<br/>
+Output Equipment (1..*) /supports (0..*) User Interpretation<br/>
+</code><br/>
+<br/><br/>
+
+<a name="HCIO_User+Observable+State_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>User Observable State<strong></td></tr>
+</table><br/>
+<b>HCIO::User Observable State</b><br/>
+Specializes SySwO::Computing Resulting State<br/><br/>
+A situation (an Observable State) perceivable by Users, typically achieved as the result (output) of a Program Copy Execution, communicated or presented by an Output Equipment. E.g., a message shown in the mobile phone screen informing the user that the captured fingerprint was not recognized, smart watch vibrating; sounds emitted by the mobile phone.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>User Observable State (1..1) triggers (0..*) User Interpretation<br/>
+User Observable State (0..*) satisfies (0..*) Mental User Observable State<br/>
+User Interpretation (0..*) interprets (1..1) User Observable State<br/>
+User Interpretation (0..*) /interprets (1..1) User Observable State<br/>
+Output Equipment (1..*) presents (0..*) User Observable State<br/>
+</code><br/>
+<br/><br/>
+
+<a name="HCIO_User+Participation_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+<tr><td style="text-align:center"><strong>User Participation<strong></td></tr>
+</table><br/>
+<b>HCIO::User Participation</b><br/>
+Specializes UFO::Agent Participation<br/><br/>
+Event in which the user participates in a Human-Computer Interaction. E.g., user walking and unintentionally giving information about number of steps to a monitoring system loaded in her smart watch; user touching her finger to unlock her mobile phone by using her fingerprint; user interpreting a message from the mobile phone system informing that the captured fingerprint was not recognized.<br/>
+<br/>
+<br/>
+Relations:<br/>
+<code>Human-Computer Interaction <>-- (1..1) User Participation<br/>
+Complex User Participation (0..*) <>-- (2..*) User Participation<br/>
+User (1..1) participation of (1..*) User Participation<br/>
+</code><br/>
+<br/><br/>
+
+
+				<hr>
+				<br/>
+				<small><b>Human-Computer Interaction Ontology (HCIO)</b></small><br/>
+				<small>Sat Nov 13 13:05:00 BRT 2021</small>
+			</main>
+	
+			<div class="embed-responsive embed-responsive-21by9">
+				<iframe class="embed-responsive-item" src="footer.html" name="footer"></iframe>
+			</div>
+	    <!-- Bootstrap core JavaScript
+	    ================================================== -->
+	    <!-- Placed at the end of the document so the pages load faster -->
+	    <script src="./bootstrap-5.1.3-dist/js/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+	    <script src="./bootstrap-5.1.3-dist/js/popper.min.js"></script>
+	    <script src="./bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+	    
+	    
+	    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+	</body>
+	<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+</html>
