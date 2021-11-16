@@ -13,38 +13,59 @@
 	    <title>Quality Assurance Process Ontology (QAPO)</title>
 	
 	    <!-- Bootstrap core CSS -->
-	    <link href="../lib/Bootstrap_files/bootstrap.min.css" rel="stylesheet">
-	
-	    <!-- Custom styles for this template -->
-	    <link href="../lib/Bootstrap_files/sticky-footer-navbar.css" rel="stylesheet">    
-	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	    <link href="../resources/static/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
 	    
-	    <script type="text/javascript" src="jquery.min.js"></script>
-			<script type="text/javascript" src="maphilight.js"></script>
-			<script type="text/javascript">
-				$(function() {
-			        $('.map').maphilight();
-			    });
-			</script>
+	    <!-- Custom styles for this template -->
+	    <link href="../resources/static/bootstrap-5.1.3-dist/css/navbar-top-fixed.css" rel="stylesheet">
+	    <link href="../resources/static/bootstrap-5.1.3-dist/css/sticky-footer-navbar.css" rel="stylesheet">
+	       
+
+	    <style>
+	      .bd-placeholder-img {
+	        font-size: 1.125rem;
+	        text-anchor: middle;
+	        -webkit-user-select: none;
+	        -moz-user-select: none;
+	        -ms-user-select: none;
+	        user-select: none;
+	      }
+
+	      @media (min-width: 768px) {
+	        .bd-placeholder-img-lg {
+	          font-size: 3.5rem;
+	        }
+	      }
+
+	      .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+	      	margin-bottom: 2rem;
+	      }
+
+	    </style>
+
+	    
+	    
+<!--	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+	    
+	    
 
 
   </head>
 
   <body data-new-gr-c-s-check-loaded="14.1038.0" data-gr-ext-installed="">
 
-		<header>
-			
-	<!--Fixed navbar -->		
+	<header>
+	
+	<!--MAIN fixed navbar -->	
 	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
 	  <div class="container-fluid">
-	    <a class="navbar-brand" href="#">Navbar</a>
+	    <a class="navbar-brand" href="#">HCI-ON</a>
 	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
 	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 	        <li class="nav-item">
-	          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+	          <a class="nav-link" aria-current="page" href="index.html">Home</a>
 	        </li>
 
 	        <li class="nav-item dropdown">
@@ -65,8 +86,8 @@
 
 	            <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Domain Layer</a></li>
 	            <li><a class="dropdown-item" href="HCIDO.html">HCIDO - Human-Computer Interaction Design Ontology</a></li>
-<li><a class="dropdown-item" href="HCIEO.html">HCIEO - Human-Computer Interaction Evaluation Ontology</a></li>
-<li><a class="dropdown-item" href="HCIDPO.html">HCIDPO - Human-Computer Interaction Design Process Ontology</a></li>
+							<li><a class="dropdown-item" href="HCIEO.html">HCIEO - Human-Computer Interaction Evaluation Ontology</a></li>
+							<li><a class="dropdown-item" href="HCIDPO.html">HCIDPO - Human-Computer Interaction Design Process Ontology</a></li>
 
 
 	          </ul>
@@ -98,6 +119,19 @@
 	          </ul>
 	        </li>
 
+					<li class="nav-item dropdown">
+	          <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	            QAPO
+	          </a>
+	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+	            <li><a class="dropdown-item" href="#ontologydescription" >Ontology Description</a></li>
+	            <li><a class="dropdown-item" href="#relatedontologies">Related Ontologies</a></li>
+	            <li><a class="dropdown-item" href="#ontologymodels">Ontology Models</a></li>
+	            <li><a class="dropdown-item" href="#conceptsdefinition">Concepts Definition</a></li>
+	            <li><a class="dropdown-item" href="#detailedconcepts">Detailed Concepts</a></li>
+	          </ul>
+	        </li>
+
 <!--	        <li class="nav-item">
 	          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
 	        </li>-->
@@ -107,33 +141,46 @@
 	    </div>
 	  </div>
 	</nav>	
+		
+	
+
+
 	
 		</header>
 
 		<!-- Begin page content -->
-    <main role="main" class="container">	
-				<h3 align="center">HCI-ON: Networked Ontology Specification</h3>
-				<h1 align="center">Quality Assurance Process Ontology (QAPO)</h1>
+    <main role="main" class="container-fluid">	
 
-				<h2>1. Ontology Description</h2>
-				<p align="justify">The Quality Assurance Process Ontology (QAPO) aims at representing the activities, artifacts and stakeholders involved in the Quality Assurance Process. Since QAPO can be applied in the context of several SE subdomains, it represents some general notions applicable for diverse SEON processes and artifacts.</p>
+				<div class="bg-light p-5 rounded" id="ontologydescription">
+    			<h1 class="featurette-heading">The Quality Assurance Process Ontology (QAPO)</h1>
+					<p class="lead" align="justify"><span class="text-muted font-weight-bold font-italic">Ontology Description. </span>The Quality Assurance Process Ontology (QAPO) aims at representing the activities, artifacts and stakeholders involved in the Quality Assurance Process. Since QAPO can be applied in the context of several SE subdomains, it represents some general notions applicable for diverse SEON processes and artifacts.</p>
+					<h6 class="lead text-right text-muted font-weight-bold font-italic">- domain ontology from SEON. </h6>
+    		</div>
 
-				<h2>2. Related Ontologies</h2>
-				<p>Networked ontologies used by QAPO:</p>
-				<table border="1" style="width: 100%" cellpadding="6">
-					<tbody>
-						<tr style="background-color: #D8D8D8">
-							<td style="width: 20%"><b>Ontology</b></td>
-							<td style="width: 66%"><b>Relation</b></td>
-							<td style="width: 14%; text-align: center"><b>Integration Level</b></td>
-						</tr>
-						<tr><td><a href="SPO.html">SPO - Software Process Ontology</a></td><td>All QAPO concepts extend concepts from SPO.</td><td style="text-align:center">High</td></tr>
+				<hr class="featurette-divider">
 
-					</tbody>
-				</table>
+				<div class="container" id="relatedontologies">
+					<h2 class="featurette-heading">2. Related Ontologies</h2>
+					<p class="lead">Networked ontologies used by QAPO:</p>	
 
-				<h2>3. Ontology Models</h2>
-				<p>Figure 1 presents the conceptual model of the QAPO.</p>
+					<table border="1" style="width: 100%" cellpadding="6">
+						<tbody>
+							<tr style="background-color: #D8D8D8">
+								<td style="width: 20%"><b>Ontology</b></td>
+								<td style="width: 66%"><b>Relation</b></td>
+								<td style="width: 14%; text-align: center"><b>Integration Level</b></td>
+							</tr>
+							QAPOlogyDependencies
+						</tbody>
+					</table>
+
+				</div>	
+
+				<hr class="featurette-divider">
+    	
+				<div class="container" id="ontologymodels">
+					<h2 class="featurette-heading">3. Ontology Models</h2>
+					<p class="lead"><p>Figure 1 presents the conceptual model of the QAPO.</p>
 <p align="center"><IMG src="images/QAPO.png" width="1066" class="map" usemap="#QAPO"><MAP NAME="QAPO">
 <area shape="rect" coords="724,196,850,243" href="SySwO.html#SySwO_Software+Artifact" title="Object intentionally made to serve a given purpose in the context of a software Project or Organization.">
 <area shape="rect" coords="539,337,686,367" href="SySwO.html#SySwO_Complex+Sw+Artifact" title="Artifact composed of other Artifacts.">
@@ -174,19 +221,22 @@
 <area shape="rect" coords="56,329,197,359" href="SPO.html#SPO_Person+Stakeholder" title="Person interested or affected by the process activities or their results."></MAP></p>
 <p align="center"><b>Figure 1. QAPO conceptual model.</b></p>
 <p align="justify">The Quality Assurance Process is a Process with the purpose of conducting the activities related to software quality assurance, assessing and assuring adherence of the performed processes and produced artifacts to the applicable requirements. It is composed of three main activities. (1) Quality Assurance Planning plans the quality assurance activities, resulting in a Quality Assurance Plan. (2) Adherence Evaluation objectively evaluates the adherence of processes and products to the applicable requirements, registering the identified issues. It has three sub-actvities: Artifact Evaluation, for evaluating the adherence of products and deliverables; Process Evaluation, for evaluating the adherence of processes and activities; and Noncompliance Identification, for registering the noncompliances identified in processes and artifacts. (3) Noncompliance Control manages the registered noncompliances until their effective resolution. It is decomposed into two sub-activities: Noncompliance Resolution, for analyzing a Noncompliance, planning and executing the applicable Corrective Actions to its resolution; and Noncompliance Closing, for finishing a noncompliance once it is satisfactorily solved.<br/>The process involves four Stakeholders: the Quality Auditor, who is responsible for conducting the objective evaluations; the Noncompliance Responsible, who is assigned for solving a noncompliance; the Project Manager, who is in charge of planning the Quality Assurance Process; and Project Team, who is involved in the objective evaluations of its project.</p>
+</p>					
+				</div>
 
+				<hr class="featurette-divider">
 
-				<h2>4. Concepts Definition</h2>
-				<p align="justify">The following table shows the definitions for QAPO concepts.
-			<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->
-				</p>
-				<table style="width: 100%" border="1" cellpadding="6">
-					<tbody>
-						<tr style="background-color: #D8D8D8">
-							<td style="width: 25%"><b>Concept</b></td>
-							<td style="width: 75%"><b>Definition</b></td>
-						</tr>
-						<tr>
+				<div class="container" id="conceptsdefinition">
+					<h2 class="featurette-heading">4. Concepts Definition</h2>
+					<p class="lead">The following table shows the definitions for QAPO concepts.</p>		
+					<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->				
+					<table style="width: 100%" border="1" cellpadding="6">
+						<tbody>
+							<tr style="background-color: #D8D8D8">
+								<td style="width: 25%"><b>Concept</b></td>
+								<td style="width: 75%"><b>Definition</b></td>
+							</tr>
+							<tr>
 <td><a name="QAPO_Adherence+Evaluation"><b>Adherence Evaluation</b></a>
 <a href=#QAPO_Adherence+Evaluation_detail><IMG src="images/plus-4-16.ico"></a></td>
 <td>Activity for objectively evaluating the adherence of processes and products to the applicable requirements, registering the identified issues.
@@ -283,11 +333,16 @@
 <br/></td>
 </tr>
 
-					</tbody>
-				</table>
-				<br/>
-				<h2>Detailed Concepts</h2>
-				<a name="QAPO_Adherence+Evaluation_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+						</tbody>
+					</table>
+
+				</div>
+
+				<hr class="featurette-divider">		
+
+				<div class="container" id="detailedconcepts">
+					<h2 class="featurette-heading">5. Detailed Concepts</h2>
+					<p class="lead"><a name="QAPO_Adherence+Evaluation_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
 <tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
 <strong>Adherence Evaluation<strong></td></tr>
 </table><br/>
@@ -535,28 +590,40 @@ Quality Auditor is in charge of Noncompliance Control<br/>
 </code><br/>
 <br/><br/>
 
-
-				<hr>
-				<br/>
-				<small><b>Quality Assurance Process Ontology (QAPO)</b></small><br/>
-				<small>Sat Nov 13 13:05:01 BRT 2021</small>
+</p>					
+				</div>
+				
 			</main>
 	
-			<div class="embed-responsive embed-responsive-21by9">
-				<iframe class="embed-responsive-item" src="footer.html" name="footer"></iframe>
-			</div>
-	    <!-- Bootstrap core JavaScript
-	    ================================================== -->
-	    <!-- Placed at the end of the document so the pages load faster -->
-	    <script src="./bootstrap-5.1.3-dist/js/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-	    <script src="./bootstrap-5.1.3-dist/js/popper.min.js"></script>
-	    <script src="./bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+    <footer class="footer">
+      <div class="container-fluid">
+        <span class="text-muted">Powered by NEMO.</span>
+        <span class="text-muted"><small><b>Quality Assurance Process Ontology (QAPO)</b></small></span>
+        <span class="text-muted"><small>Tue Nov 16 16:58:09 BRT 2021</small></span>		
+      </div>
+    </footer>
+	   
 	    
-	    
-	    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
-	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
 
+    <script src="../resources/static/bootstrap-5.1.3-dist/js/jquery-3.2.1.slim.min.js"></script>
+
+    <script src="../resources/static/bootstrap-5.1.3-dist/js/popper.min.js"></script>
+
+
+    <script src="../resources/static/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+
+    <script src="../resources/static/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript" src="maphilight.js"></script>
+		<script type="text/javascript">
+			$(function() {
+		        $('.map').maphilight();
+		    });
+		</script>
 
 	</body>
 	<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>

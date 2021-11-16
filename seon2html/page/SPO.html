@@ -13,38 +13,59 @@
 	    <title>Software Process Ontology (SPO)</title>
 	
 	    <!-- Bootstrap core CSS -->
-	    <link href="../lib/Bootstrap_files/bootstrap.min.css" rel="stylesheet">
-	
-	    <!-- Custom styles for this template -->
-	    <link href="../lib/Bootstrap_files/sticky-footer-navbar.css" rel="stylesheet">    
-	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	    <link href="../resources/static/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
 	    
-	    <script type="text/javascript" src="jquery.min.js"></script>
-			<script type="text/javascript" src="maphilight.js"></script>
-			<script type="text/javascript">
-				$(function() {
-			        $('.map').maphilight();
-			    });
-			</script>
+	    <!-- Custom styles for this template -->
+	    <link href="../resources/static/bootstrap-5.1.3-dist/css/navbar-top-fixed.css" rel="stylesheet">
+	    <link href="../resources/static/bootstrap-5.1.3-dist/css/sticky-footer-navbar.css" rel="stylesheet">
+	       
+
+	    <style>
+	      .bd-placeholder-img {
+	        font-size: 1.125rem;
+	        text-anchor: middle;
+	        -webkit-user-select: none;
+	        -moz-user-select: none;
+	        -ms-user-select: none;
+	        user-select: none;
+	      }
+
+	      @media (min-width: 768px) {
+	        .bd-placeholder-img-lg {
+	          font-size: 3.5rem;
+	        }
+	      }
+
+	      .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+	      	margin-bottom: 2rem;
+	      }
+
+	    </style>
+
+	    
+	    
+<!--	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+	    
+	    
 
 
   </head>
 
   <body data-new-gr-c-s-check-loaded="14.1038.0" data-gr-ext-installed="">
 
-		<header>
-			
-	<!--Fixed navbar -->		
+	<header>
+	
+	<!--MAIN fixed navbar -->	
 	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
 	  <div class="container-fluid">
-	    <a class="navbar-brand" href="#">Navbar</a>
+	    <a class="navbar-brand" href="#">HCI-ON</a>
 	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
 	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 	        <li class="nav-item">
-	          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+	          <a class="nav-link" aria-current="page" href="index.html">Home</a>
 	        </li>
 
 	        <li class="nav-item dropdown">
@@ -65,8 +86,8 @@
 
 	            <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Domain Layer</a></li>
 	            <li><a class="dropdown-item" href="HCIDO.html">HCIDO - Human-Computer Interaction Design Ontology</a></li>
-<li><a class="dropdown-item" href="HCIEO.html">HCIEO - Human-Computer Interaction Evaluation Ontology</a></li>
-<li><a class="dropdown-item" href="HCIDPO.html">HCIDPO - Human-Computer Interaction Design Process Ontology</a></li>
+							<li><a class="dropdown-item" href="HCIEO.html">HCIEO - Human-Computer Interaction Evaluation Ontology</a></li>
+							<li><a class="dropdown-item" href="HCIDPO.html">HCIDPO - Human-Computer Interaction Design Process Ontology</a></li>
 
 
 	          </ul>
@@ -98,6 +119,19 @@
 	          </ul>
 	        </li>
 
+					<li class="nav-item dropdown">
+	          <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	            SPO
+	          </a>
+	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+	            <li><a class="dropdown-item" href="#ontologydescription" >Ontology Description</a></li>
+	            <li><a class="dropdown-item" href="#relatedontologies">Related Ontologies</a></li>
+	            <li><a class="dropdown-item" href="#ontologymodels">Ontology Models</a></li>
+	            <li><a class="dropdown-item" href="#conceptsdefinition">Concepts Definition</a></li>
+	            <li><a class="dropdown-item" href="#detailedconcepts">Detailed Concepts</a></li>
+	          </ul>
+	        </li>
+
 <!--	        <li class="nav-item">
 	          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
 	        </li>-->
@@ -107,37 +141,46 @@
 	    </div>
 	  </div>
 	</nav>	
+		
+	
+
+
 	
 		</header>
 
 		<!-- Begin page content -->
-    <main role="main" class="container">	
-				<h3 align="center">HCI-ON: Networked Ontology Specification</h3>
-				<h1 align="center">Software Process Ontology (SPO)</h1>
+    <main role="main" class="container-fluid">	
 
-				<h2>1. Ontology Description</h2>
-				<p align="justify">The Software Process Ontology (SPO) aims at establishing a common conceptualization on the Software Process domain, including processes, activities, resources, people, artifacts and procedures. As a core ontology, SPO provides the general concepts for software processes, to be specialized and reused in domain-specific ontologies.</p>
+				<div class="bg-light p-5 rounded" id="ontologydescription">
+    			<h1 class="featurette-heading">The Software Process Ontology (SPO)</h1>
+					<p class="lead" align="justify"><span class="text-muted font-weight-bold font-italic">Ontology Description. </span>The Software Process Ontology (SPO) aims at establishing a common conceptualization on the Software Process domain, including processes, activities, resources, people, artifacts and procedures. As a core ontology, SPO provides the general concepts for software processes, to be specialized and reused in domain-specific ontologies.</p>
+					<h6 class="lead text-right text-muted font-weight-bold font-italic">- core ontology from SEON. </h6>
+    		</div>
 
-				<h2>2. Related Ontologies</h2>
-				<p>Networked ontologies used by SPO:</p>
-				<table border="1" style="width: 100%" cellpadding="6">
-					<tbody>
-						<tr style="background-color: #D8D8D8">
-							<td style="width: 20%"><b>Ontology</b></td>
-							<td style="width: 66%"><b>Relation</b></td>
-							<td style="width: 14%; text-align: center"><b>Integration Level</b></td>
-						</tr>
-						<tr><td><a href="EO.html">EO - Enterprise Ontology (external)</a></td><td>Some concepts from the Enterprise core Ontology are used by SPO.</td><td style="text-align:center">Medium</td></tr>
-<tr><td><a href="SySwO.html">SySwO - System and Software Ontology</a></td><td></td><td style="text-align:center"></td></tr>
-<tr><td><a href="UFO.html">UFO - Unified Foundational Ontology</a></td><td>The SPO concepts are derived from UFO (mostly social entities from UFO-C).</td><td style="text-align:center">High</td></tr>
-<tr><td><a href="SySwO.html">SySwO - System and Software Ontology</a></td><td></td><td style="text-align:center"></td></tr>
-<tr><td><a href="SySwO.html">SySwO - System and Software Ontology</a></td><td></td><td style="text-align:center"></td></tr>
+				<hr class="featurette-divider">
 
-					</tbody>
-				</table>
+				<div class="container" id="relatedontologies">
+					<h2 class="featurette-heading">2. Related Ontologies</h2>
+					<p class="lead">Networked ontologies used by SPO:</p>	
 
-				<h2>3. Ontology Models</h2>
-				<p>Figure 1 presents the packages of the SPO Modularization .</p>
+					<table border="1" style="width: 100%" cellpadding="6">
+						<tbody>
+							<tr style="background-color: #D8D8D8">
+								<td style="width: 20%"><b>Ontology</b></td>
+								<td style="width: 66%"><b>Relation</b></td>
+								<td style="width: 14%; text-align: center"><b>Integration Level</b></td>
+							</tr>
+							SPOlogyDependencies
+						</tbody>
+					</table>
+
+				</div>	
+
+				<hr class="featurette-divider">
+    	
+				<div class="container" id="ontologymodels">
+					<h2 class="featurette-heading">3. Ontology Models</h2>
+					<p class="lead"><p>Figure 1 presents the packages of the SPO Modularization .</p>
 <p align="center"><IMG src="images/SPO Modularization .png" width="771" class="map" usemap="#SPO Modularization "><MAP NAME="SPO Modularization ">
 <area shape="rect" coords="25,51,234,121" href="SPO.html#SPO_Standard+Process+Structure_section" title="">
 <area shape="rect" coords="286,51,499,121" href="SPO.html#SPO_Standard+Activity+Definition_section" title="">
@@ -488,19 +531,22 @@ A Social Agent involving people and other agents and facilities with an arrangem
 <area shape="rect" coords="627,311,801,341" href="SPO.html#SPO_Hybrid+Standard+Process" title="Standard Process established to be performed in the context of a Project or Organization."></MAP></p>
 <p align="center"><b>Figure 16. Standard Process Structure conceptual model.</b></p>
 <p align="justify">Standard Processes and Activities are institutionalized generic actions establishing basic requirements for intended processes and activities to be performed in an organization or in its projects (for example, a standard Development Process, and its activities, to be performed in the Projects of an Organization). A Standard Process Definition Document, used for describing a set of Standard Processes, is recognized by one or more Organizations.<br/>A Standard Process is established to be performed in the context of projects, configuring a Project Standard Process (such as a standard Development Process), in the context of an organization, configuring an Organizational Standard Process (such as a standard Portfolio Management Process), or can be applicable to both contexts, configuring a Hybrid Standard Process (such as a standard Training Process).<br/>A Standard Process can be general or specific. A General Standard Process is composed of two or more Specific Standard Processes (e.g. a standard Development Process composed of standard Requirements, Design, Constructions and Test Processes). A Specific Standard Process is composed of two or more Standard Activities. A Standard Activity, analogously, can be composite or simple. A Composite Standard Activity is composed of other two or more Standard Activities; a Simple Standard Activity is not decomposable into smaller activities.<br/>Every process and activity performed in an organization or project happen based on an action type. For processes, this action type is the Process Universal, and for activities, this type is the Activity Universal. These generic actions can be formalized in an organization (configuring the discussed Standard Process and Activities), or remain non-formalized.</p>
+</p>					
+				</div>
 
+				<hr class="featurette-divider">
 
-				<h2>4. Concepts Definition</h2>
-				<p align="justify">The following table shows the definitions for SPO concepts.
-			<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->
-				</p>
-				<table style="width: 100%" border="1" cellpadding="6">
-					<tbody>
-						<tr style="background-color: #D8D8D8">
-							<td style="width: 25%"><b>Concept</b></td>
-							<td style="width: 75%"><b>Definition</b></td>
-						</tr>
-						<tr>
+				<div class="container" id="conceptsdefinition">
+					<h2 class="featurette-heading">4. Concepts Definition</h2>
+					<p class="lead">The following table shows the definitions for SPO concepts.</p>		
+					<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->				
+					<table style="width: 100%" border="1" cellpadding="6">
+						<tbody>
+							<tr style="background-color: #D8D8D8">
+								<td style="width: 25%"><b>Concept</b></td>
+								<td style="width: 75%"><b>Definition</b></td>
+							</tr>
+							<tr>
 <td><a name="SPO_Activity+Universal"><b><i>Activity Universal</i></b></a>
 <a href=#SPO_Activity+Universal_detail><IMG src="images/plus-4-16.ico"></a></td>
 <td>Action Universal representing any generic activity in an Organization (formalized or not), which is the powertype of every Performed Activity.
@@ -879,11 +925,16 @@ A Social Agent involving people and other agents and facilities with an arrangem
 <br/>Ex.:<i> White-box testing, Pair programming.</i></td>
 </tr>
 
-					</tbody>
-				</table>
-				<br/>
-				<h2>Detailed Concepts</h2>
-				<a name="SPO_Activity+Universal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+						</tbody>
+					</table>
+
+				</div>
+
+				<hr class="featurette-divider">		
+
+				<div class="container" id="detailedconcepts">
+					<h2 class="featurette-heading">5. Detailed Concepts</h2>
+					<p class="lead"><a name="SPO_Activity+Universal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
 <tr><td style="text-align:center"><code>&lt&lt2ndOT&gt&gt</code><br/>
 <strong>Activity Universal<strong></td></tr>
 </table><br/>
@@ -1817,28 +1868,40 @@ Ex.:<i> White-box testing, Pair programming.</i><br/>
 <br/>
 <br/><br/>
 
-
-				<hr>
-				<br/>
-				<small><b>Software Process Ontology (SPO)</b></small><br/>
-				<small>Sat Nov 13 13:05:01 BRT 2021</small>
+</p>					
+				</div>
+				
 			</main>
 	
-			<div class="embed-responsive embed-responsive-21by9">
-				<iframe class="embed-responsive-item" src="footer.html" name="footer"></iframe>
-			</div>
-	    <!-- Bootstrap core JavaScript
-	    ================================================== -->
-	    <!-- Placed at the end of the document so the pages load faster -->
-	    <script src="./bootstrap-5.1.3-dist/js/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-	    <script src="./bootstrap-5.1.3-dist/js/popper.min.js"></script>
-	    <script src="./bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+    <footer class="footer">
+      <div class="container-fluid">
+        <span class="text-muted">Powered by NEMO.</span>
+        <span class="text-muted"><small><b>Software Process Ontology (SPO)</b></small></span>
+        <span class="text-muted"><small>Tue Nov 16 16:58:09 BRT 2021</small></span>		
+      </div>
+    </footer>
+	   
 	    
-	    
-	    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
-	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
 
+    <script src="../resources/static/bootstrap-5.1.3-dist/js/jquery-3.2.1.slim.min.js"></script>
+
+    <script src="../resources/static/bootstrap-5.1.3-dist/js/popper.min.js"></script>
+
+
+    <script src="../resources/static/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+
+    <script src="../resources/static/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript" src="maphilight.js"></script>
+		<script type="text/javascript">
+			$(function() {
+		        $('.map').maphilight();
+		    });
+		</script>
 
 	</body>
 	<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>

@@ -264,7 +264,6 @@ public class PageWriter {
 
 		// Writing the HTML page
 		
-		Utils.stringToFile("./resources/static/nav.html", html);
 		Utils.stringToFile("./page/menu.html", html);
 	}
 
@@ -356,9 +355,47 @@ public class PageWriter {
 		// Reading the HTML template
 		String html = Utils.fileToString("./resources/Template.Page.html");
 
+		//Onto Level
+		// Replacing the tags for the actual values
+		String onto_level = "";
+		String hcion = "HCI-ON";
+		String seon = "SEON";
+		
+		for (Ontology ontology : ontologies) {
+			OntoLevel level = ontology.getLevel();
+			if (level != null) {
+				//if (level == OntoLevel.FOUNDATIONAL) {onto_level = "Foundational Ontology";}
+				if (level == OntoLevel.CORE ) {
+					//System.out.println("**CORE LEVEL**");
+					//System.out.println(ontology.getFullName());
+					//System.out.println(ontology.getNetwork());
+					if (ontology.getNetwork().equals(hcion)) {onto_level = "- core ontology from HCI-ON. ";}
+					else if(ontology.getNetwork().equals(seon)) {onto_level = "- core ontology from SEON. ";}
+					else {
+						System.out.println("Network not found: " + ontology.getNetwork());
+					}
+				}
+				else if (level == OntoLevel.DOMAIN) {
+					//System.out.println("**DOMAIN LEVEL**");
+					if (ontology.getNetwork().equals(hcion)) {onto_level = "- domain ontology from HCI-ON. ";}
+					else if (ontology.getNetwork().equals(seon)){onto_level = "- domain ontology from SEON. ";}
+					else {
+						System.out.println("Network not found:" + ontology.getNetwork());
+					}
+				}
+				// other level: ignore
+			}
+				
+		}
+			
+		
+		html = html.replace("@onto_level", onto_level);
+		
+
 		///// Replacing the tags for the actual values /////
 		// Page Introduction
 		html = html.replace("@title", onto.getFullName() + " (" + onto.getShortName() + ")");
+		html = html.replace("@onto", onto.getShortName());
 		html = html.replace("@description", formatDescription(onto.getDefinition()));
 
 		// Ontology Dependencies
@@ -704,6 +741,7 @@ public class PageWriter {
 		String text = "<b style='color:red'>No definition in Astah file</b>";
 		if (!description.isEmpty() || SeonParser.STABLE) {
 			text = description.replaceAll("(\\r\\n|\\n\\r|\\r|\\n)", "<br/>");
+			//text = description.replaceAll("(\\r\\n|\\n\\r|\\r|\\n)", "");
 		}
 		return text;
 	}

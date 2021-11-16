@@ -13,38 +13,59 @@
 	    <title>Goal-Oriented Requirements Ontology (GORO)</title>
 	
 	    <!-- Bootstrap core CSS -->
-	    <link href="../lib/Bootstrap_files/bootstrap.min.css" rel="stylesheet">
-	
-	    <!-- Custom styles for this template -->
-	    <link href="../lib/Bootstrap_files/sticky-footer-navbar.css" rel="stylesheet">    
-	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	    <link href="../resources/static/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
 	    
-	    <script type="text/javascript" src="jquery.min.js"></script>
-			<script type="text/javascript" src="maphilight.js"></script>
-			<script type="text/javascript">
-				$(function() {
-			        $('.map').maphilight();
-			    });
-			</script>
+	    <!-- Custom styles for this template -->
+	    <link href="../resources/static/bootstrap-5.1.3-dist/css/navbar-top-fixed.css" rel="stylesheet">
+	    <link href="../resources/static/bootstrap-5.1.3-dist/css/sticky-footer-navbar.css" rel="stylesheet">
+	       
+
+	    <style>
+	      .bd-placeholder-img {
+	        font-size: 1.125rem;
+	        text-anchor: middle;
+	        -webkit-user-select: none;
+	        -moz-user-select: none;
+	        -ms-user-select: none;
+	        user-select: none;
+	      }
+
+	      @media (min-width: 768px) {
+	        .bd-placeholder-img-lg {
+	          font-size: 3.5rem;
+	        }
+	      }
+
+	      .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+	      	margin-bottom: 2rem;
+	      }
+
+	    </style>
+
+	    
+	    
+<!--	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+	    
+	    
 
 
   </head>
 
   <body data-new-gr-c-s-check-loaded="14.1038.0" data-gr-ext-installed="">
 
-		<header>
-			
-	<!--Fixed navbar -->		
+	<header>
+	
+	<!--MAIN fixed navbar -->	
 	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
 	  <div class="container-fluid">
-	    <a class="navbar-brand" href="#">Navbar</a>
+	    <a class="navbar-brand" href="#">HCI-ON</a>
 	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
 	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 	        <li class="nav-item">
-	          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+	          <a class="nav-link" aria-current="page" href="index.html">Home</a>
 	        </li>
 
 	        <li class="nav-item dropdown">
@@ -65,8 +86,8 @@
 
 	            <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Domain Layer</a></li>
 	            <li><a class="dropdown-item" href="HCIDO.html">HCIDO - Human-Computer Interaction Design Ontology</a></li>
-<li><a class="dropdown-item" href="HCIEO.html">HCIEO - Human-Computer Interaction Evaluation Ontology</a></li>
-<li><a class="dropdown-item" href="HCIDPO.html">HCIDPO - Human-Computer Interaction Design Process Ontology</a></li>
+							<li><a class="dropdown-item" href="HCIEO.html">HCIEO - Human-Computer Interaction Evaluation Ontology</a></li>
+							<li><a class="dropdown-item" href="HCIDPO.html">HCIDPO - Human-Computer Interaction Design Process Ontology</a></li>
 
 
 	          </ul>
@@ -98,6 +119,19 @@
 	          </ul>
 	        </li>
 
+					<li class="nav-item dropdown">
+	          <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	            GORO
+	          </a>
+	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+	            <li><a class="dropdown-item" href="#ontologydescription" >Ontology Description</a></li>
+	            <li><a class="dropdown-item" href="#relatedontologies">Related Ontologies</a></li>
+	            <li><a class="dropdown-item" href="#ontologymodels">Ontology Models</a></li>
+	            <li><a class="dropdown-item" href="#conceptsdefinition">Concepts Definition</a></li>
+	            <li><a class="dropdown-item" href="#detailedconcepts">Detailed Concepts</a></li>
+	          </ul>
+	        </li>
+
 <!--	        <li class="nav-item">
 	          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
 	        </li>-->
@@ -107,33 +141,46 @@
 	    </div>
 	  </div>
 	</nav>	
+		
+	
+
+
 	
 		</header>
 
 		<!-- Begin page content -->
-    <main role="main" class="container">	
-				<h3 align="center">HCI-ON: Networked Ontology Specification</h3>
-				<h1 align="center">Goal-Oriented Requirements Ontology (GORO)</h1>
+    <main role="main" class="container-fluid">	
 
-				<h2>1. Ontology Description</h2>
-				<p align="justify">The Goal-Oriented Requirements Ontology (GORO) intends to represent the nature of the main concepts and relations surrounding Goal-Oriented Requeriments Engineering (GORE) approaches.</p>
+				<div class="bg-light p-5 rounded" id="ontologydescription">
+    			<h1 class="featurette-heading">The Goal-Oriented Requirements Ontology (GORO)</h1>
+					<p class="lead" align="justify"><span class="text-muted font-weight-bold font-italic">Ontology Description. </span>The Goal-Oriented Requirements Ontology (GORO) intends to represent the nature of the main concepts and relations surrounding Goal-Oriented Requeriments Engineering (GORE) approaches.</p>
+					<h6 class="lead text-right text-muted font-weight-bold font-italic">- domain ontology from SEON. </h6>
+    		</div>
 
-				<h2>2. Related Ontologies</h2>
-				<p>Networked ontologies used by GORO:</p>
-				<table border="1" style="width: 100%" cellpadding="6">
-					<tbody>
-						<tr style="background-color: #D8D8D8">
-							<td style="width: 20%"><b>Ontology</b></td>
-							<td style="width: 66%"><b>Relation</b></td>
-							<td style="width: 14%; text-align: center"><b>Integration Level</b></td>
-						</tr>
-						<tr><td><a href="RSRO.html">RSRO - Reference Software Requirements Ontology</a></td><td></td><td style="text-align:center"></td></tr>
+				<hr class="featurette-divider">
 
-					</tbody>
-				</table>
+				<div class="container" id="relatedontologies">
+					<h2 class="featurette-heading">2. Related Ontologies</h2>
+					<p class="lead">Networked ontologies used by GORO:</p>	
 
-				<h2>3. Ontology Models</h2>
-				<p>Figure 1 presents the conceptual model of the GORO.</p>
+					<table border="1" style="width: 100%" cellpadding="6">
+						<tbody>
+							<tr style="background-color: #D8D8D8">
+								<td style="width: 20%"><b>Ontology</b></td>
+								<td style="width: 66%"><b>Relation</b></td>
+								<td style="width: 14%; text-align: center"><b>Integration Level</b></td>
+							</tr>
+							GOROlogyDependencies
+						</tbody>
+					</table>
+
+				</div>	
+
+				<hr class="featurette-divider">
+    	
+				<div class="container" id="ontologymodels">
+					<h2 class="featurette-heading">3. Ontology Models</h2>
+					<p class="lead"><p>Figure 1 presents the conceptual model of the GORO.</p>
 <p align="center"><IMG src="images/GORO.png" width="1188" class="map" usemap="#GORO"><MAP NAME="GORO">
 <area shape="rect" coords="301,152,398,182" href="UFO.html#UFO_Goal" title="The propositional content of an Intention.">
 <area shape="rect" coords="278,267,417,297" href="RSRO.html#RSRO_Requirement" title="Goal to be achieved, representing a condition or capacity needed for the system users for solving a problem.">
@@ -158,19 +205,22 @@
 <area shape="rect" coords="835,151,939,181" href="UFO.html#UFO_Belief" title=""></MAP></p>
 <p align="center"><b>Figure 1. GORO conceptual model.</b></p>
 <p align="justify">In GORE, the domain characterization (and further identification of requirements and so on) is obtained initially by modeling the agents' goals. Agents bear intentional properties such as Beliefs and Intentions. These intentional properties are called Mental Moments. A Goal is a propositional content of an Intention. An Intention represents not only a will but also an internal commitment of the Agent to act towards the Goal, implying in a Plan to accomplish it. In that way, a Goal as an Intention should be associated with a Plan. Thus, Goals with associated Plans to accomplish them (Tasks) are propositional contents of Intentions.<br/><br/>In a Software Engineering process, a requirement does not refer necessarily to software. Hence, a Requirement is a Goal, in the scope of a specific problem, that describes environmental conditions to be achieved through a desired solution resulting in satisfaction of the underlying strategic goals.<br/><br/>Hardgoals are defined as propositions that are objectively satisfied by a given set of situations. In constrast, Softgoals refer to a vague quality region whose exact boundaries are unknown. <br/></p>
+</p>					
+				</div>
 
+				<hr class="featurette-divider">
 
-				<h2>4. Concepts Definition</h2>
-				<p align="justify">The following table shows the definitions for GORO concepts.
-			<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->
-				</p>
-				<table style="width: 100%" border="1" cellpadding="6">
-					<tbody>
-						<tr style="background-color: #D8D8D8">
-							<td style="width: 25%"><b>Concept</b></td>
-							<td style="width: 75%"><b>Definition</b></td>
-						</tr>
-						<tr>
+				<div class="container" id="conceptsdefinition">
+					<h2 class="featurette-heading">4. Concepts Definition</h2>
+					<p class="lead">The following table shows the definitions for GORO concepts.</p>		
+					<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->				
+					<table style="width: 100%" border="1" cellpadding="6">
+						<tbody>
+							<tr style="background-color: #D8D8D8">
+								<td style="width: 25%"><b>Concept</b></td>
+								<td style="width: 75%"><b>Definition</b></td>
+							</tr>
+							<tr>
 <td><a name="GORO_Atomic+Task"><b>Atomic Task</b></a>
 <a href=#GORO_Atomic+Task_detail><IMG src="images/plus-4-16.ico"></a></td>
 <td>An Atomic Task is a Task that is not decomposed in other tasks.
@@ -201,11 +251,16 @@
 <br/></td>
 </tr>
 
-					</tbody>
-				</table>
-				<br/>
-				<h2>Detailed Concepts</h2>
-				<a name="GORO_Atomic+Task_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+						</tbody>
+					</table>
+
+				</div>
+
+				<hr class="featurette-divider">		
+
+				<div class="container" id="detailedconcepts">
+					<h2 class="featurette-heading">5. Detailed Concepts</h2>
+					<p class="lead"><a name="GORO_Atomic+Task_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
 <tr><td style="text-align:center"><strong>Atomic Task<strong></td></tr>
 </table><br/>
 <b>GORO::Atomic Task</b><br/>
@@ -262,28 +317,40 @@ Softgoal is an initial and temporary vague expression of a goal not suficiently 
 <br/>
 <br/><br/>
 
-
-				<hr>
-				<br/>
-				<small><b>Goal-Oriented Requirements Ontology (GORO)</b></small><br/>
-				<small>Sat Nov 13 13:05:01 BRT 2021</small>
+</p>					
+				</div>
+				
 			</main>
 	
-			<div class="embed-responsive embed-responsive-21by9">
-				<iframe class="embed-responsive-item" src="footer.html" name="footer"></iframe>
-			</div>
-	    <!-- Bootstrap core JavaScript
-	    ================================================== -->
-	    <!-- Placed at the end of the document so the pages load faster -->
-	    <script src="./bootstrap-5.1.3-dist/js/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-	    <script src="./bootstrap-5.1.3-dist/js/popper.min.js"></script>
-	    <script src="./bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+    <footer class="footer">
+      <div class="container-fluid">
+        <span class="text-muted">Powered by NEMO.</span>
+        <span class="text-muted"><small><b>Goal-Oriented Requirements Ontology (GORO)</b></small></span>
+        <span class="text-muted"><small>Tue Nov 16 16:58:09 BRT 2021</small></span>		
+      </div>
+    </footer>
+	   
 	    
-	    
-	    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
-	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
 
+    <script src="../resources/static/bootstrap-5.1.3-dist/js/jquery-3.2.1.slim.min.js"></script>
+
+    <script src="../resources/static/bootstrap-5.1.3-dist/js/popper.min.js"></script>
+
+
+    <script src="../resources/static/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+
+    <script src="../resources/static/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript" src="maphilight.js"></script>
+		<script type="text/javascript">
+			$(function() {
+		        $('.map').maphilight();
+		    });
+		</script>
 
 	</body>
 	<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>

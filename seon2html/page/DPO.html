@@ -13,38 +13,59 @@
 	    <title>Design Process Ontology (DPO)</title>
 	
 	    <!-- Bootstrap core CSS -->
-	    <link href="../lib/Bootstrap_files/bootstrap.min.css" rel="stylesheet">
-	
-	    <!-- Custom styles for this template -->
-	    <link href="../lib/Bootstrap_files/sticky-footer-navbar.css" rel="stylesheet">    
-	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	    <link href="../resources/static/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
 	    
-	    <script type="text/javascript" src="jquery.min.js"></script>
-			<script type="text/javascript" src="maphilight.js"></script>
-			<script type="text/javascript">
-				$(function() {
-			        $('.map').maphilight();
-			    });
-			</script>
+	    <!-- Custom styles for this template -->
+	    <link href="../resources/static/bootstrap-5.1.3-dist/css/navbar-top-fixed.css" rel="stylesheet">
+	    <link href="../resources/static/bootstrap-5.1.3-dist/css/sticky-footer-navbar.css" rel="stylesheet">
+	       
+
+	    <style>
+	      .bd-placeholder-img {
+	        font-size: 1.125rem;
+	        text-anchor: middle;
+	        -webkit-user-select: none;
+	        -moz-user-select: none;
+	        -ms-user-select: none;
+	        user-select: none;
+	      }
+
+	      @media (min-width: 768px) {
+	        .bd-placeholder-img-lg {
+	          font-size: 3.5rem;
+	        }
+	      }
+
+	      .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+	      	margin-bottom: 2rem;
+	      }
+
+	    </style>
+
+	    
+	    
+<!--	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+	    
+	    
 
 
   </head>
 
   <body data-new-gr-c-s-check-loaded="14.1038.0" data-gr-ext-installed="">
 
-		<header>
-			
-	<!--Fixed navbar -->		
+	<header>
+	
+	<!--MAIN fixed navbar -->	
 	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
 	  <div class="container-fluid">
-	    <a class="navbar-brand" href="#">Navbar</a>
+	    <a class="navbar-brand" href="#">HCI-ON</a>
 	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
 	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 	        <li class="nav-item">
-	          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+	          <a class="nav-link" aria-current="page" href="index.html">Home</a>
 	        </li>
 
 	        <li class="nav-item dropdown">
@@ -65,8 +86,8 @@
 
 	            <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Domain Layer</a></li>
 	            <li><a class="dropdown-item" href="HCIDO.html">HCIDO - Human-Computer Interaction Design Ontology</a></li>
-<li><a class="dropdown-item" href="HCIEO.html">HCIEO - Human-Computer Interaction Evaluation Ontology</a></li>
-<li><a class="dropdown-item" href="HCIDPO.html">HCIDPO - Human-Computer Interaction Design Process Ontology</a></li>
+							<li><a class="dropdown-item" href="HCIEO.html">HCIEO - Human-Computer Interaction Evaluation Ontology</a></li>
+							<li><a class="dropdown-item" href="HCIDPO.html">HCIDPO - Human-Computer Interaction Design Process Ontology</a></li>
 
 
 	          </ul>
@@ -98,6 +119,19 @@
 	          </ul>
 	        </li>
 
+					<li class="nav-item dropdown">
+	          <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	            DPO
+	          </a>
+	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+	            <li><a class="dropdown-item" href="#ontologydescription" >Ontology Description</a></li>
+	            <li><a class="dropdown-item" href="#relatedontologies">Related Ontologies</a></li>
+	            <li><a class="dropdown-item" href="#ontologymodels">Ontology Models</a></li>
+	            <li><a class="dropdown-item" href="#conceptsdefinition">Concepts Definition</a></li>
+	            <li><a class="dropdown-item" href="#detailedconcepts">Detailed Concepts</a></li>
+	          </ul>
+	        </li>
+
 <!--	        <li class="nav-item">
 	          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
 	        </li>-->
@@ -107,34 +141,46 @@
 	    </div>
 	  </div>
 	</nav>	
+		
+	
+
+
 	
 		</header>
 
 		<!-- Begin page content -->
-    <main role="main" class="container">	
-				<h3 align="center">HCI-ON: Networked Ontology Specification</h3>
-				<h1 align="center">Design Process Ontology (DPO)</h1>
+    <main role="main" class="container-fluid">	
 
-				<h2>1. Ontology Description</h2>
-				<p align="justify">The Design Process Ontology (DPO) aims at representing the activities, artifacts and stakeholders involved in the software Design Process. DPO is in the core of the technical processes in software development, thus it reuses some concepts from other SEON networked ontologies, as well provides some concepts for reusing.</p>
+				<div class="bg-light p-5 rounded" id="ontologydescription">
+    			<h1 class="featurette-heading">The Design Process Ontology (DPO)</h1>
+					<p class="lead" align="justify"><span class="text-muted font-weight-bold font-italic">Ontology Description. </span>The Design Process Ontology (DPO) aims at representing the activities, artifacts and stakeholders involved in the software Design Process. DPO is in the core of the technical processes in software development, thus it reuses some concepts from other SEON networked ontologies, as well provides some concepts for reusing.</p>
+					<h6 class="lead text-right text-muted font-weight-bold font-italic">- domain ontology from SEON. </h6>
+    		</div>
 
-				<h2>2. Related Ontologies</h2>
-				<p>Networked ontologies used by DPO:</p>
-				<table border="1" style="width: 100%" cellpadding="6">
-					<tbody>
-						<tr style="background-color: #D8D8D8">
-							<td style="width: 20%"><b>Ontology</b></td>
-							<td style="width: 66%"><b>Relation</b></td>
-							<td style="width: 14%; text-align: center"><b>Integration Level</b></td>
-						</tr>
-						<tr><td><a href="SPO.html">SPO - Software Process Ontology</a></td><td>All DPO concepts extend concepts from SPO.</td><td style="text-align:center">High</td></tr>
-<tr><td><a href="RSRO.html">RSRO - Reference Software Requirements Ontology</a></td><td>DPO reuses an artifact from RDPO.</td><td style="text-align:center">Low</td></tr>
+				<hr class="featurette-divider">
 
-					</tbody>
-				</table>
+				<div class="container" id="relatedontologies">
+					<h2 class="featurette-heading">2. Related Ontologies</h2>
+					<p class="lead">Networked ontologies used by DPO:</p>	
 
-				<h2>3. Ontology Models</h2>
-				<p>Figure 1 presents the conceptual model of the DPO.</p>
+					<table border="1" style="width: 100%" cellpadding="6">
+						<tbody>
+							<tr style="background-color: #D8D8D8">
+								<td style="width: 20%"><b>Ontology</b></td>
+								<td style="width: 66%"><b>Relation</b></td>
+								<td style="width: 14%; text-align: center"><b>Integration Level</b></td>
+							</tr>
+							DPOlogyDependencies
+						</tbody>
+					</table>
+
+				</div>	
+
+				<hr class="featurette-divider">
+    	
+				<div class="container" id="ontologymodels">
+					<h2 class="featurette-heading">3. Ontology Models</h2>
+					<p class="lead"><p>Figure 1 presents the conceptual model of the DPO.</p>
 <p align="center"><IMG src="images/DPO.png" width="1182" class="map" usemap="#DPO"><MAP NAME="DPO">
 <area shape="rect" coords="740,193,866,240" href="SySwO.html#SySwO_Software+Artifact" title="Object intentionally made to serve a given purpose in the context of a software Project or Organization.">
 <area shape="rect" coords="559,335,706,365" href="SySwO.html#SySwO_Complex+Sw+Artifact" title="Artifact composed of other Artifacts.">
@@ -178,19 +224,22 @@
 <area shape="rect" coords="710,677,833,707" href="DPO.html#DPO_Data+Definitions" title="Information Item describing the high-level choices of how the software will manage data."></MAP></p>
 <p align="center"><b>Figure 1. DPO conceptual model.</b></p>
 <p align="justify">The Design Process is a Process with the purpose of defining the architecture, elements, interfaces, and other characteristics of a software, aiming at its implementation.<br/>Some notions are important for this process. Software Architecture is a model describing the fundamental structures of a software. It is composed of Architectural Elements, which can be a Component, describing a software module, or a Connector, connecting two or more components. Architectural Elements have Interfaces, which can be internal or external. The Design is a refinement process involving several design choices. It starts defining an architecture and follows by detailing each element to the extent it can be implemented.<br/>The Design Process is composed of four main Activities. (1) Architectural Design makes the high-level design choices, defining a Software Architecture and involved elements. Its three sub-activities are Architecture Development, for producing the architecture and specifying its components and connectors; Interface High-level Design, for specifying the interfaces between components and with external elements (users or other systems); and Data High-level Design, for establishing the high-level choices regarding the software data. (2) Detailed Design refines a preliminary software design to the extent that it is sufficiently complete to be implemented. It has four sub-activities: Component Design, for refining each architectural component; Component Interface Design, for detailing each software interface; User Interface Design, specifically for detailing the user interfaces; and Data Design, for producing a detailed Data Model for data storage and management. (3) Design Documentation registers the architectural and detailed design choices made, producing a Design Document. (4) Finally, Design Evaluation evaluates a Design Document, registering the identified issues.<br/>The process has two main Stakeholders, the Software Architect, responsible for making the high-level design choices, and establishing a software architecture; and the Designer, responsible for making the detailed design choices.</p>
+</p>					
+				</div>
 
+				<hr class="featurette-divider">
 
-				<h2>4. Concepts Definition</h2>
-				<p align="justify">The following table shows the definitions for DPO concepts.
-			<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->
-				</p>
-				<table style="width: 100%" border="1" cellpadding="6">
-					<tbody>
-						<tr style="background-color: #D8D8D8">
-							<td style="width: 25%"><b>Concept</b></td>
-							<td style="width: 75%"><b>Definition</b></td>
-						</tr>
-						<tr>
+				<div class="container" id="conceptsdefinition">
+					<h2 class="featurette-heading">4. Concepts Definition</h2>
+					<p class="lead">The following table shows the definitions for DPO concepts.</p>		
+					<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->				
+					<table style="width: 100%" border="1" cellpadding="6">
+						<tbody>
+							<tr style="background-color: #D8D8D8">
+								<td style="width: 25%"><b>Concept</b></td>
+								<td style="width: 75%"><b>Definition</b></td>
+							</tr>
+							<tr>
 <td><a name="DPO_Architectural+Component"><b>Architectural Component</b></a>
 <a href=#DPO_Architectural+Component_detail><IMG src="images/plus-4-16.ico"></a></td>
 <td>Architectural Element describing a software module as part of an Architecture.
@@ -335,11 +384,16 @@
 <br/></td>
 </tr>
 
-					</tbody>
-				</table>
-				<br/>
-				<h2>Detailed Concepts</h2>
-				<a name="DPO_Architectural+Component_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+						</tbody>
+					</table>
+
+				</div>
+
+				<hr class="featurette-divider">		
+
+				<div class="container" id="detailedconcepts">
+					<h2 class="featurette-heading">5. Detailed Concepts</h2>
+					<p class="lead"><a name="DPO_Architectural+Component_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
 <tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
 <strong>Architectural Component<strong></td></tr>
 </table><br/>
@@ -727,28 +781,40 @@ User Interface Design creates User Interface Specification<br/>
 </code><br/>
 <br/><br/>
 
-
-				<hr>
-				<br/>
-				<small><b>Design Process Ontology (DPO)</b></small><br/>
-				<small>Sat Nov 13 13:05:01 BRT 2021</small>
+</p>					
+				</div>
+				
 			</main>
 	
-			<div class="embed-responsive embed-responsive-21by9">
-				<iframe class="embed-responsive-item" src="footer.html" name="footer"></iframe>
-			</div>
-	    <!-- Bootstrap core JavaScript
-	    ================================================== -->
-	    <!-- Placed at the end of the document so the pages load faster -->
-	    <script src="./bootstrap-5.1.3-dist/js/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-	    <script src="./bootstrap-5.1.3-dist/js/popper.min.js"></script>
-	    <script src="./bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+    <footer class="footer">
+      <div class="container-fluid">
+        <span class="text-muted">Powered by NEMO.</span>
+        <span class="text-muted"><small><b>Design Process Ontology (DPO)</b></small></span>
+        <span class="text-muted"><small>Tue Nov 16 16:58:09 BRT 2021</small></span>		
+      </div>
+    </footer>
+	   
 	    
-	    
-	    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
-	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
 
+    <script src="../resources/static/bootstrap-5.1.3-dist/js/jquery-3.2.1.slim.min.js"></script>
+
+    <script src="../resources/static/bootstrap-5.1.3-dist/js/popper.min.js"></script>
+
+
+    <script src="../resources/static/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+
+    <script src="../resources/static/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript" src="maphilight.js"></script>
+		<script type="text/javascript">
+			$(function() {
+		        $('.map').maphilight();
+		    });
+		</script>
 
 	</body>
 	<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>

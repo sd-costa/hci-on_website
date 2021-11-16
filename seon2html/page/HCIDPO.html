@@ -13,38 +13,59 @@
 	    <title>Human-Computer Interaction Design Process Ontology (HCIDPO)</title>
 	
 	    <!-- Bootstrap core CSS -->
-	    <link href="../lib/Bootstrap_files/bootstrap.min.css" rel="stylesheet">
-	
-	    <!-- Custom styles for this template -->
-	    <link href="../lib/Bootstrap_files/sticky-footer-navbar.css" rel="stylesheet">    
-	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	    <link href="../resources/static/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
 	    
-	    <script type="text/javascript" src="jquery.min.js"></script>
-			<script type="text/javascript" src="maphilight.js"></script>
-			<script type="text/javascript">
-				$(function() {
-			        $('.map').maphilight();
-			    });
-			</script>
+	    <!-- Custom styles for this template -->
+	    <link href="../resources/static/bootstrap-5.1.3-dist/css/navbar-top-fixed.css" rel="stylesheet">
+	    <link href="../resources/static/bootstrap-5.1.3-dist/css/sticky-footer-navbar.css" rel="stylesheet">
+	       
+
+	    <style>
+	      .bd-placeholder-img {
+	        font-size: 1.125rem;
+	        text-anchor: middle;
+	        -webkit-user-select: none;
+	        -moz-user-select: none;
+	        -ms-user-select: none;
+	        user-select: none;
+	      }
+
+	      @media (min-width: 768px) {
+	        .bd-placeholder-img-lg {
+	          font-size: 3.5rem;
+	        }
+	      }
+
+	      .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+	      	margin-bottom: 2rem;
+	      }
+
+	    </style>
+
+	    
+	    
+<!--	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+	    
+	    
 
 
   </head>
 
   <body data-new-gr-c-s-check-loaded="14.1038.0" data-gr-ext-installed="">
 
-		<header>
-			
-	<!--Fixed navbar -->		
+	<header>
+	
+	<!--MAIN fixed navbar -->	
 	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
 	  <div class="container-fluid">
-	    <a class="navbar-brand" href="#">Navbar</a>
+	    <a class="navbar-brand" href="#">HCI-ON</a>
 	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
 	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 	        <li class="nav-item">
-	          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+	          <a class="nav-link" aria-current="page" href="index.html">Home</a>
 	        </li>
 
 	        <li class="nav-item dropdown">
@@ -65,8 +86,8 @@
 
 	            <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Domain Layer</a></li>
 	            <li><a class="dropdown-item" href="HCIDO.html">HCIDO - Human-Computer Interaction Design Ontology</a></li>
-<li><a class="dropdown-item" href="HCIEO.html">HCIEO - Human-Computer Interaction Evaluation Ontology</a></li>
-<li><a class="dropdown-item" href="HCIDPO.html">HCIDPO - Human-Computer Interaction Design Process Ontology</a></li>
+							<li><a class="dropdown-item" href="HCIEO.html">HCIEO - Human-Computer Interaction Evaluation Ontology</a></li>
+							<li><a class="dropdown-item" href="HCIDPO.html">HCIDPO - Human-Computer Interaction Design Process Ontology</a></li>
 
 
 	          </ul>
@@ -98,6 +119,19 @@
 	          </ul>
 	        </li>
 
+					<li class="nav-item dropdown">
+	          <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	            HCIDPO
+	          </a>
+	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+	            <li><a class="dropdown-item" href="#ontologydescription" >Ontology Description</a></li>
+	            <li><a class="dropdown-item" href="#relatedontologies">Related Ontologies</a></li>
+	            <li><a class="dropdown-item" href="#ontologymodels">Ontology Models</a></li>
+	            <li><a class="dropdown-item" href="#conceptsdefinition">Concepts Definition</a></li>
+	            <li><a class="dropdown-item" href="#detailedconcepts">Detailed Concepts</a></li>
+	          </ul>
+	        </li>
+
 <!--	        <li class="nav-item">
 	          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
 	        </li>-->
@@ -107,32 +141,46 @@
 	    </div>
 	  </div>
 	</nav>	
+		
+	
+
+
 	
 		</header>
 
 		<!-- Begin page content -->
-    <main role="main" class="container">	
-				<h3 align="center">HCI-ON: Networked Ontology Specification</h3>
-				<h1 align="center">Human-Computer Interaction Design Process Ontology (HCIDPO)</h1>
+    <main role="main" class="container-fluid">	
 
-				<h2>1. Ontology Description</h2>
-				<p align="justify"></p>
+				<div class="bg-light p-5 rounded" id="ontologydescription">
+    			<h1 class="featurette-heading">The Human-Computer Interaction Design Process Ontology (HCIDPO)</h1>
+					<p class="lead" align="justify"><span class="text-muted font-weight-bold font-italic">Ontology Description. </span></p>
+					<h6 class="lead text-right text-muted font-weight-bold font-italic">- domain ontology from HCI-ON. </h6>
+    		</div>
 
-				<h2>2. Related Ontologies</h2>
-				<p>Networked ontologies used by HCIDPO:</p>
-				<table border="1" style="width: 100%" cellpadding="6">
-					<tbody>
-						<tr style="background-color: #D8D8D8">
-							<td style="width: 20%"><b>Ontology</b></td>
-							<td style="width: 66%"><b>Relation</b></td>
-							<td style="width: 14%; text-align: center"><b>Integration Level</b></td>
-						</tr>
-						
-					</tbody>
-				</table>
+				<hr class="featurette-divider">
 
-				<h2>3. Ontology Models</h2>
-				<p>Figure 1 presents the conceptual model of the HCIDPO.</p>
+				<div class="container" id="relatedontologies">
+					<h2 class="featurette-heading">2. Related Ontologies</h2>
+					<p class="lead">Networked ontologies used by HCIDPO:</p>	
+
+					<table border="1" style="width: 100%" cellpadding="6">
+						<tbody>
+							<tr style="background-color: #D8D8D8">
+								<td style="width: 20%"><b>Ontology</b></td>
+								<td style="width: 66%"><b>Relation</b></td>
+								<td style="width: 14%; text-align: center"><b>Integration Level</b></td>
+							</tr>
+							HCIDPOlogyDependencies
+						</tbody>
+					</table>
+
+				</div>	
+
+				<hr class="featurette-divider">
+    	
+				<div class="container" id="ontologymodels">
+					<h2 class="featurette-heading">3. Ontology Models</h2>
+					<p class="lead"><p>Figure 1 presents the conceptual model of the HCIDPO.</p>
 <p align="center"><IMG src="images/HCIDPO.png" width="1544" class="map" usemap="#HCIDPO"><MAP NAME="HCIDPO">
 <area shape="rect" coords="337,285,474,315" href="SPO.html#SPO_Performed+Process" title="Complex Action, composed of other processes or activities, performed in a specific Time Interval, for reaching a goal in a Project or Organization.">
 <area shape="rect" coords="286,395,475,425" href="SPO.html#SPO_Performed+Specific+Process" title="Performed Process that is part of the General Performed Process of a Project or Organization, necessarily composed of at least two Performed Activities.">
@@ -177,19 +225,22 @@
 <area shape="rect" coords="1223,2365,1363,2395" href="HCIDPO.html#HCIDPO_User+Survey+Report" title=""></MAP></p>
 <p align="center"><b>Figure 1. HCIDPO conceptual model.</b></p>
 <p align="justify"></p>
+</p>					
+				</div>
 
+				<hr class="featurette-divider">
 
-				<h2>4. Concepts Definition</h2>
-				<p align="justify">The following table shows the definitions for HCIDPO concepts.
-			<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->
-				</p>
-				<table style="width: 100%" border="1" cellpadding="6">
-					<tbody>
-						<tr style="background-color: #D8D8D8">
-							<td style="width: 25%"><b>Concept</b></td>
-							<td style="width: 75%"><b>Definition</b></td>
-						</tr>
-						<tr>
+				<div class="container" id="conceptsdefinition">
+					<h2 class="featurette-heading">4. Concepts Definition</h2>
+					<p class="lead">The following table shows the definitions for HCIDPO concepts.</p>		
+					<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->				
+					<table style="width: 100%" border="1" cellpadding="6">
+						<tbody>
+							<tr style="background-color: #D8D8D8">
+								<td style="width: 25%"><b>Concept</b></td>
+								<td style="width: 75%"><b>Definition</b></td>
+							</tr>
+							<tr>
 <td><a name="HCIDPO_Conformance+Test+Results"><b>Conformance Test Results</b></a>
 <a href=#HCIDPO_Conformance+Test+Results_detail><IMG src="images/plus-4-16.ico"></a></td>
 <td>
@@ -352,11 +403,16 @@
 <br/></td>
 </tr>
 
-					</tbody>
-				</table>
-				<br/>
-				<h2>Detailed Concepts</h2>
-				<a name="HCIDPO_Conformance+Test+Results_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
+						</tbody>
+					</table>
+
+				</div>
+
+				<hr class="featurette-divider">		
+
+				<div class="container" id="detailedconcepts">
+					<h2 class="featurette-heading">5. Detailed Concepts</h2>
+					<p class="lead"><a name="HCIDPO_Conformance+Test+Results_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
 <tr><td style="text-align:center"><strong>Conformance Test Results<strong></td></tr>
 </table><br/>
 <b>HCIDPO::Conformance Test Results</b><br/>
@@ -722,28 +778,40 @@ Specializes HCIDPO::User Needs Description<br/><br/>
 <br/>
 <br/><br/>
 
-
-				<hr>
-				<br/>
-				<small><b>Human-Computer Interaction Design Process Ontology (HCIDPO)</b></small><br/>
-				<small>Sat Nov 13 13:05:01 BRT 2021</small>
+</p>					
+				</div>
+				
 			</main>
 	
-			<div class="embed-responsive embed-responsive-21by9">
-				<iframe class="embed-responsive-item" src="footer.html" name="footer"></iframe>
-			</div>
-	    <!-- Bootstrap core JavaScript
-	    ================================================== -->
-	    <!-- Placed at the end of the document so the pages load faster -->
-	    <script src="./bootstrap-5.1.3-dist/js/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-	    <script src="./bootstrap-5.1.3-dist/js/popper.min.js"></script>
-	    <script src="./bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+    <footer class="footer">
+      <div class="container-fluid">
+        <span class="text-muted">Powered by NEMO.</span>
+        <span class="text-muted"><small><b>Human-Computer Interaction Design Process Ontology (HCIDPO)</b></small></span>
+        <span class="text-muted"><small>Tue Nov 16 16:58:09 BRT 2021</small></span>		
+      </div>
+    </footer>
+	   
 	    
-	    
-	    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
-	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
 
+    <script src="../resources/static/bootstrap-5.1.3-dist/js/jquery-3.2.1.slim.min.js"></script>
+
+    <script src="../resources/static/bootstrap-5.1.3-dist/js/popper.min.js"></script>
+
+
+    <script src="../resources/static/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+
+    <script src="../resources/static/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript" src="maphilight.js"></script>
+		<script type="text/javascript">
+			$(function() {
+		        $('.map').maphilight();
+		    });
+		</script>
 
 	</body>
 	<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
