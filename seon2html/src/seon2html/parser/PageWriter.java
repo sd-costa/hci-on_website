@@ -684,7 +684,7 @@ public class PageWriter {
 			line = line.replace("@definition", concept.getDefinition().replaceAll("(\\r\\n|\\n\\r|\\r|\\n)", "<br/>"));
 			String example = "";
 			if (concept.getExample() != null) {
-				example = "Ex.:<i>" + concept.getExample() + "</i>";
+				example = "E.g.:<i>" + concept.getExample() + "</i>";
 			}
 			line = line.replace("@example", example);
 			conceptsTable += line + "\n";
@@ -715,7 +715,7 @@ public class PageWriter {
 			item = item.replace("@definition", concept.getDefinition().replaceAll("(\\r\\n|\\n\\r|\\r|\\n)", "<br/>"));
 			String example = "";
 			if (concept.getExample() != null) {
-				example = "Ex.:<i>" + concept.getExample() + "</i>";
+				example = "E.g.:<i>" + concept.getExample() + "</i>";
 			}
 			item = item.replace("@example", example);
 
