@@ -50,7 +50,7 @@ nodes: [
   {data: {id:'0', name:'UFO', dim:265, level:1, color:'#99ffff'}},
   {data: {id:'1', name:'HCIO', dim:130, level:2, color:'#99ff99'}},
   {data: {id:'2', name:'SPO', dim:178, level:2, color:'#99ff99'}},
-  {data: {id:'3', name:'SySwO', dim:137, level:2, color:'#99ff99'}},
+  {data: {id:'3', name:'SysSwO', dim:137, level:2, color:'#99ff99'}},
   {data: {id:'4', name:'COM', dim:136, level:2, color:'#99ff99'}},
   {data: {id:'5', name:'EO', dim:138, level:2, color:'#99ff99'}},
   {data: {id:'6', name:'HCIDO', dim:126, level:3, color:'#ffff99'}},

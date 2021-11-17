@@ -9,7 +9,6 @@ import com.change_vision.jude.api.inf.model.IPackage;
 public class Ontology extends Package {
 	private String			fullName;
 	private String			shortName;
-	private String			ontoNetwork;
 	private List<Concept>	concepts;
 
 	public static enum OntoLevel {
@@ -30,7 +29,6 @@ public class Ontology extends Package {
 		super(name, definition, type, order, astahPack, network);
 		this.fullName = fullName;
 		this.shortName = shortName;
-		this.ontoNetwork = network;
 		this.concepts = new ArrayList<Concept>();
 	}
 
@@ -40,10 +38,6 @@ public class Ontology extends Package {
 
 	public String getShortName() {
 		return this.shortName;
-	}
-
-	public String getOntoNetwork() {
-		return this.ontoNetwork;
 	}
 
 	public List<Concept> getConcepts() {

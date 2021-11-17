@@ -177,8 +177,8 @@
 								</tr>
 							</thead>
 							<tbody>
-								<tr><td><a href="SPO.html">SPO - Software Process Ontology</a></td><td>All DPO concepts extend concepts from SPO.</td><td style="text-align:center">High</td></tr>
-<tr><td><a href="RSRO.html">RSRO - Reference Software Requirements Ontology</a></td><td>DPO reuses an artifact from RDPO.</td><td style="text-align:center">Low</td></tr>
+								<tr><td><a href="http://dev.nemo.inf.ufes.br/seon/SPO.html" target="_blank">SPO - Software Process Ontology</a></td><td>All DPO concepts extend concepts from SPO.</td><td style="text-align:center">High</td></tr>
+<tr><td><a href="http://dev.nemo.inf.ufes.br/seon/RSRO.html" target="_blank">RSRO - Reference Software Requirements Ontology</a></td><td>DPO reuses an artifact from RDPO.</td><td style="text-align:center">Low</td></tr>
 
 							</tbody>
 						</table>
@@ -192,14 +192,14 @@
 					<h2 class="featurette-heading">3. Ontology Models</h2>
 					<p class="lead"><p>Figure 1 presents the conceptual model of the DPO.</p>
 <p align="center"><IMG src="images/DPO.png" width="1182" class="map" usemap="#DPO"><MAP NAME="DPO">
-<area shape="rect" coords="740,193,866,240" href="SySwO.html#SySwO_Software+Artifact" title="Object intentionally made to serve a given purpose in the context of a software Project or Organization.">
-<area shape="rect" coords="559,335,706,365" href="SySwO.html#SySwO_Complex+Sw+Artifact" title="Artifact composed of other Artifacts.">
-<area shape="rect" coords="637,299,773,329" href="SySwO.html#SySwO_Atomic+Sw+Artifact" title="Artifact that is not decomposed into other Artifacts.">
-<area shape="rect" coords="713,431,820,461" href="SySwO.html#SySwO_Software+Item" title="Piece of software, produced during the software process, not considered a complete Software Product, but an intermediary result.">
-<area shape="rect" coords="622,387,749,417" href="SySwO.html#SySwO_Software+Product" title="One or more computer programs together with any accompanying auxiliary items, such as documentation, delivered under a single name, ready for use.">
-<area shape="rect" coords="785,387,911,417" href="SySwO.html#SySwO_Information+Item" title="Relevant information for human use, produced or used by Performed Activity.">
-<area shape="rect" coords="944,387,1002,417" href="SySwO.html#SySwO_Model" title="A representation (abstraction) of a process or system from a particular perspective.">
-<area shape="rect" coords="1006,431,1090,461" href="SySwO.html#SySwO_Document" title="Any written or pictorial, uniquely identified, information related to the software development, usually presented in a predefined format.">
+<area shape="rect" coords="740,193,866,240" href="SysSwO.html#SysSwO_Software+Artifact" title="Object intentionally made to serve a given purpose in the context of a software Project or Organization.">
+<area shape="rect" coords="559,335,706,365" href="SysSwO.html#SysSwO_Complex+Sw+Artifact" title="Artifact composed of other Artifacts.">
+<area shape="rect" coords="637,299,773,329" href="SysSwO.html#SysSwO_Atomic+Sw+Artifact" title="Artifact that is not decomposed into other Artifacts.">
+<area shape="rect" coords="713,431,820,461" href="SysSwO.html#SysSwO_Software+Item" title="Piece of software, produced during the software process, not considered a complete Software Product, but an intermediary result.">
+<area shape="rect" coords="622,387,749,417" href="SysSwO.html#SysSwO_Software+Product" title="One or more computer programs together with any accompanying auxiliary items, such as documentation, delivered under a single name, ready for use.">
+<area shape="rect" coords="785,387,911,417" href="SysSwO.html#SysSwO_Information+Item" title="Relevant information for human use, produced or used by Performed Activity.">
+<area shape="rect" coords="944,387,1002,417" href="SysSwO.html#SysSwO_Model" title="A representation (abstraction) of a process or system from a particular perspective.">
+<area shape="rect" coords="1006,431,1090,461" href="SysSwO.html#SysSwO_Document" title="Any written or pictorial, uniquely identified, information related to the software development, usually presented in a predefined format.">
 <area shape="rect" coords="100,10,237,40" href="SPO.html#SPO_Performed+Process" title="Complex Action, composed of other processes or activities, performed in a specific Time Interval, for reaching a goal in a Project or Organization.">
 <area shape="rect" coords="240,327,447,357" href="SPO.html#SPO_Performed+Composite+Activity" title="Performed Activity composed of other Performed Activities.">
 <area shape="rect" coords="346,287,528,317" href="SPO.html#SPO_Performed+Simple+Activity" title="Performed Activity that is not further decomposed into other Performed Activities.">
@@ -517,7 +517,7 @@ Detailed Design <>-- Component Interface Design<br/>
 <strong>Data Definitions<strong></td></tr>
 </table><br/>
 <b>DPO::Data Definitions</b><br/>
-Specializes SySwO::Information Item<br/><br/>
+Specializes SysSwO::Information Item<br/><br/>
 Information Item describing the high-level choices of how the software will manage data.<br/>
 <br/>
 <br/>
@@ -563,7 +563,7 @@ Architectural Design <>-- Data High-level Design<br/>
 <strong>Data Model<strong></td></tr>
 </table><br/>
 <b>DPO::Data Model</b><br/>
-Specializes SySwO::Model<br/><br/>
+Specializes SysSwO::Model<br/><br/>
 Model containing the physical and logical decisions on how to manage and storage the software data.<br/>
 E.g.:<i> a database schema.</i><br/>
 <br/>
@@ -578,7 +578,7 @@ Design Document depicts Data Model<br/>
 <strong>Design Document<strong></td></tr>
 </table><br/>
 <b>DPO::Design Document</b><br/>
-Specializes SySwO::Complex Sw Artifact, SySwO::Document<br/><br/>
+Specializes SysSwO::Complex Sw Artifact, SysSwO::Document<br/><br/>
 Document specifying the design of a software, by depicting the software architecture, components, interfaces and data models, as well as other information regarding the design choices and decisions.<br/>
 <br/>
 <br/>
@@ -634,7 +634,7 @@ Designer participates in Design Evaluation<br/>
 <strong>Design Evaluation Document<strong></td></tr>
 </table><br/>
 <b>DPO::Design Evaluation Document</b><br/>
-Specializes SySwO::Document<br/><br/>
+Specializes SysSwO::Document<br/><br/>
 Document registering the issues identified in a Design Document evaluation.<br/>
 <br/>
 <br/>
@@ -717,7 +717,7 @@ Architectural Design <>-- Interface High-level Design<br/>
 <strong>Interface Specification<strong></td></tr>
 </table><br/>
 <b>DPO::Interface Specification</b><br/>
-Specializes SySwO::Information Item<br/><br/>
+Specializes SysSwO::Information Item<br/><br/>
 Information Item describing an internal or external interface of a software architecture.<br/>
 <br/>
 <br/>
@@ -749,7 +749,7 @@ Software Architect participates in Design Evaluation<br/>
 <strong>Software Architecture<strong></td></tr>
 </table><br/>
 <b>DPO::Software Architecture</b><br/>
-Specializes SySwO::Model<br/><br/>
+Specializes SysSwO::Model<br/><br/>
 Model describing the fundamental structures of a software, including its components, how they are connected, and its internal and external interfaces.<br/>
 <br/>
 <br/>
@@ -800,7 +800,7 @@ User Interface Design creates User Interface Specification<br/>
       <div class="container-fluid">
         <span class="text-muted">Powered by NEMO.</span>
         <span class="text-muted"><small><b>Design Process Ontology (DPO)</b></small></span>
-        <span class="text-muted"><small>Wed Nov 17 00:46:53 BRT 2021</small></span>		
+        <span class="text-muted"><small>Wed Nov 17 20:04:26 BRT 2021</small></span>		
       </div>
     </footer>
 	   

@@ -9,6 +9,7 @@ import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
 //import java.util.regex.Pattern;
+import java.util.Iterator;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.filefilter.TrueFileFilter;
@@ -350,61 +351,202 @@ public class PageWriter {
 		Utils.stringToFile("./page/NetworkStats.html", html);
 	}
 
+	/* Return SEON website URL */
+	/* Simone Dornelas */
+	private static String networkedOntoURL(String netOnto) {
+		String nourl = "";
+		if (netOnto != null) {
+			System.out.println("********ENTREI AQUII** " + netOnto + "\n");
+			switch (netOnto) {
+				case "HCI-ON":
+					nourl = "index.html";
+					break;
+				case "HCIO":
+					nourl = "HCIO.html";
+					break;
+				case "HCIEO":
+					nourl = "HCIEO.html";
+					break;
+				case "HCIDO":
+					nourl = "HCIDO.html";
+					break;
+				case "UFO":
+					nourl = "UFO.html";
+					break;
+				case "SEON":
+					nourl = "http://dev.nemo.inf.ufes.br/seon/SEON.html";
+					break;
+				case "SPO":
+					nourl = "http://dev.nemo.inf.ufes.br/seon/SPO.html";
+					break;
+				case "COM":
+					nourl = "http://dev.nemo.inf.ufes.br/seon/COM.html";
+					break;
+				case "EO":
+					nourl = "http://dev.nemo.inf.ufes.br/seon/EO.html";
+					break;
+				case "SwO":
+					nourl = "http://dev.nemo.inf.ufes.br/seon/SwO.html";
+					break;
+				case "SysSwO":
+					nourl = "http://dev.nemo.inf.ufes.br/seon/SwO.html";
+					break;
+				case "RSRO":
+					nourl = "http://dev.nemo.inf.ufes.br/seon/RSRO.html";
+					break;
+				case "RRO":
+					nourl = "http://dev.nemo.inf.ufes.br/seon/RRO.html";
+					break;
+				case "GORO":
+					nourl = "http://dev.nemo.inf.ufes.br/seon/GORO.html";
+					break;
+				case "RDPO":
+					nourl = "http://dev.nemo.inf.ufes.br/seon/RDPO.html";
+					break;
+				case "DPO":
+					nourl = "http://dev.nemo.inf.ufes.br/seon/DPO.html";
+					break;
+				case "CPO":
+					nourl = "http://dev.nemo.inf.ufes.br/seon/CPO.html";
+					break;
+				case "ROoST":
+					nourl = "http://dev.nemo.inf.ufes.br/seon/ROoST.html";
+					break;
+				case "QAPO":
+					nourl = "http://dev.nemo.inf.ufes.br/seon/QAPO.html";
+					break;
+				case "SPMO":
+					nourl = "http://dev.nemo.inf.ufes.br/seon/SPMO.html";
+					break;
+				case "CMPO":
+					nourl = "http://dev.nemo.inf.ufes.br/seon/CMPO.html";
+					break;
+				case "RSMO":
+					nourl = "http://dev.nemo.inf.ufes.br/seon/RSMO.html";
+					break;
+				//Essa ontologia ainda não existe no site atual de SEON	
+				case "SDRO":
+					nourl = "SDRO.html";
+					break;
+				default:
+       				nourl = "invalido";
+			}
+			
+		}
+		else {
+			return "vazio";
+		}
+		System.out.println(nourl);
+		return nourl;
+	}
+
+	/* Check Network and ontologies */
+	/* Simone Dornelas */
+	private static ArrayList<String> checkNetwork(Ontology onto) {
+
+		//Onto Level
+		// Replacing the tags for the actual values
+		String ufo = "UFO";
+		String hcion = "HCI-ON";
+		String seon = "SEON";
+		String o_level = "";
+		ArrayList<String> netOnto = new ArrayList<String>();
+
+		OntoLevel level = onto.getLevel();
+		if (o_level != null) {
+			if (level == OntoLevel.FOUNDATIONAL) {
+				//System.out.println("**FOUNDATIONAL LEVEL**");
+				//System.out.println(onto.getFullName());
+				//System.out.println(onto.getNetwork());
+				o_level = "foundational";
+				netOnto.add(o_level);
+				netOnto.add(ufo);
+				netOnto.add(ufo);
+			}
+			if (level == OntoLevel.CORE) {
+				//System.out.println("**CORE LEVEL**");
+				//System.out.println(onto.getFullName());
+				//System.out.println(onto.getNetwork());
+				o_level = "core";
+				netOnto.add(o_level);
+				if (onto.getNetwork().equals(hcion)) {
+					netOnto.add(hcion);
+					netOnto.add(onto.getShortName());
+				}
+				else if (onto.getNetwork().equals(seon)) {
+					netOnto.add(seon);
+					netOnto.add(onto.getShortName());
+				}
+				else {
+					System.out.println("Network not found: " + onto.getNetwork());
+				}
+				//System.out.println(onto.getNetwork() + onto.getShortName() + onto_level);
+			}
+			else if (level == OntoLevel.DOMAIN) {
+				//System.out.println("**DOMAIN LEVEL**");
+				//System.out.println(onto.getFullName());
+				//System.out.println(onto.getNetwork());
+				o_level = "domain";
+				netOnto.add(o_level);
+				if (onto.getNetwork().equals(hcion)) {
+					netOnto.add(hcion);
+					netOnto.add(onto.getShortName());
+				}
+				else if (onto.getNetwork().equals(seon)) {
+					netOnto.add(seon);
+					netOnto.add(onto.getShortName());
+				}
+				else {
+					System.out.println("Network not found:" + onto.getNetwork());
+				}
+				//System.out.println(onto.getNetwork() + onto.getShortName() + onto_level);
+			}
+			// other level: ignore
+			
+		}
+		return netOnto;
+	}
+
+
 	/* Prints the Ontologies' pages. */
 	private void generateOntologyPage(Ontology onto) {
 		// Reading the HTML template
 		String html = Utils.fileToString("./resources/Template.Page.html");
 
+		ArrayList<String> networkOnto = new ArrayList<String>();
+		
 		//Onto Level
 		// Replacing the tags for the actual values
 		String onto_level = "";
 		String hcion = "HCI-ON";
 		String seon = "SEON";
-		
-		//for (Ontology ontology : ontologies) {
-			OntoLevel level = onto.getLevel();
-			if (level != null) {
-				if (level == OntoLevel.FOUNDATIONAL) {
-					//System.out.println("**FOUNDATIONAL LEVEL**");
-					//System.out.println(onto.getFullName());
-					//System.out.println(onto.getNetwork());
-					if (onto.getNetwork().equals(hcion)) { onto_level = "- foundational ontology from HCI-ON. ";}
-					else if (onto.getNetwork().equals(seon)) { onto_level = "- foundational ontology from SEON. ";}
-					else {
-						System.out.println("Network not found:" + onto.getNetwork());
-					}
-					//System.out.println(onto.getNetwork() + onto.getShortName() + onto_level);
-				}
-				if (level == OntoLevel.CORE) {
-					//System.out.println("**CORE LEVEL**");
-					//System.out.println(onto.getFullName());
-					//System.out.println(onto.getNetwork());
-					if (onto.getNetwork().equals(hcion)) { onto_level = "- core ontology from HCI-ON. ";}
-					else if (onto.getNetwork().equals(seon)) { onto_level = "- core ontology from SEON. ";}
-					else {
-						System.out.println("Network not found: " + onto.getNetwork());
-					}
-					//System.out.println(onto.getNetwork() + onto.getShortName() + onto_level);
-				}
-				else if (level == OntoLevel.DOMAIN) {
-					//System.out.println("**DOMAIN LEVEL**");
-					//System.out.println(onto.getFullName());
-					//System.out.println(onto.getNetwork());
-					if (onto.getNetwork().equals(hcion)) { onto_level = "- domain ontology from HCI-ON. ";}
-					else if (onto.getNetwork().equals(seon)) { onto_level = "- domain ontology from SEON. ";}
-					else {
-						System.out.println("Network not found:" + onto.getNetwork());
-					}
-					//System.out.println(onto.getNetwork() + onto.getShortName() + onto_level);
-				}
-				// other level: ignore
+		String found = "foundational";
+		String core = "core";
+		String domain = "domain";
+
+		networkOnto = checkNetwork(onto);
+
+		if (networkOnto != null) {			
+			if (networkOnto.get(0).equals(found)) {
+				onto_level = "- foundational ontology";
 			}
-				
-		
+			if (networkOnto.get(0).equals(core)) {
+				if (networkOnto.get(1).equals(hcion)) { onto_level = "- core ontology from HCI-ON. ";}
+				else if (networkOnto.get(1).equals(seon)) { onto_level = "- core ontology from SEON. ";}
+				else {
+					System.out.println("Network not found: " + onto.getNetwork());
+				}
+			}
+			else if (networkOnto.get(0).equals(domain)) {
+				if (networkOnto.get(1).equals(hcion)) { onto_level = "- domain ontology from HCI-ON. ";}
+				else if (networkOnto.get(1).equals(seon)) { onto_level = "- domain ontology from SEON. ";}
+				else {
+					System.out.println("Network not found:" + onto.getNetwork());
+				}
+			}
+		}
 			
-		
-		html = html.replace("@onto_level", onto_level);
-		
+		html = html.replace("@onto_level", onto_level);	
 
 		///// Replacing the tags for the actual values /////
 		// Page Introduction
@@ -413,6 +555,8 @@ public class PageWriter {
 		html = html.replace("@description", formatDescription(onto.getDefinition()));
 
 		// Ontology Dependencies
+		System.out.println("QUAL Network ______:" + onto.getNetwork());
+		System.out.println("CHAMEI AQUI AGORA ______:" + generateDependenciesTable(onto));
 		html = html.replace("@myontologyDependencies", generateDependenciesTable(onto));
 
 		// Models Sections (subpackages/subontologies)
@@ -452,18 +596,34 @@ public class PageWriter {
 
 	/* Generates the lines of the dependencies table. */
 	private String generateDependenciesTable(Ontology onto) {
-		String DEPENDSLINE = "<tr><td><a href=\"@onto.html\">@ontology</a></td><td>@description</td><td style=\"text-align:center\">@level</td></tr>";
+
+		String on_url = "";
+		String DEPENDSLINE = "";		
 		String dependsTable = "";
+
 		for (Dependency depend : onto.getDependencies()) {
 
 			Ontology supplier = (Ontology) depend.getTarget();
+
+			//Simone Dornelas
+			on_url = networkedOntoURL(supplier.getShortName());
+
+			if (supplier.getNetwork().equals("SEON")){
+				DEPENDSLINE = "<tr><td><a href=\"" + on_url + "\" target=\"_blank\">@ontology</a></td><td>@description</td><td style=\"text-align:center\">@level</td></tr>";
+			} else {
+				DEPENDSLINE = "<tr><td><a href=\"" + on_url + "\">@ontology</a></td><td>@description</td><td style=\"text-align:center\">@level</td></tr>";				
+			}
+
 			String line = DEPENDSLINE;
 			line = line.replace("@ontology", supplier.getShortName() + " - " + supplier.getFullName());
-			line = line.replace("@onto", supplier.getShortName());
+
+			line = line.replace("@onto", on_url);
+
 			line = line.replace("@description", depend.getDescription().replaceAll("(\\r\\n|\\n\\r|\\r|\\n)", "<br/>"));
 			line = line.replace("@level", depend.getLevel());
 			dependsTable += line + "\n";
 		}
+		
 		return dependsTable;
 	}
 
