@@ -36,8 +36,12 @@
 	        }
 	      }
 
-	      .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-	      	margin-bottom: 2rem;
+	      .h1, h1 {
+	      	margin-bottom: 2.5rem;
+	      }
+
+	      .span {
+	      	font-size: 2rem;
 	      }
 
 	    </style>
@@ -154,25 +158,31 @@
 				<div class="bg-light p-5 rounded" id="ontologydescription">
     			<h1 class="featurette-heading">The Human-Computer Interaction Design Ontology (HCIDO)</h1>
 					<p class="lead" align="justify"><span class="text-muted font-weight-bold font-italic">Ontology Description. </span></p>
-					<h6 class="lead text-right text-muted font-weight-bold font-italic">- core ontology from HCI-ON. </h6>
+					<p class="lead text-right text-muted font-weight-bold font-italic">- domain ontology from HCI-ON. </p>
     		</div>
 
-				<hr class="featurette-divider">
+				<!--<hr class="featurette-divider">-->
 
 				<div class="container" id="relatedontologies">
 					<h2 class="featurette-heading">2. Related Ontologies</h2>
 					<p class="lead">Networked ontologies used by HCIDO:</p>	
+					
+					<div class="table-responsive">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th scope="col">Ontology</th>
+									<th scope="col">Relation</th>
+									<th scope="col">Integration Level</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td><a href="SDRO.html">SDRO - SDRO</a></td><td></td><td style="text-align:center"></td></tr>
+<tr><td><a href="SySwO.html">SySwO - System and Software Ontology</a></td><td></td><td style="text-align:center"></td></tr>
 
-					<table border="1" style="width: 100%" cellpadding="6">
-						<tbody>
-							<tr style="background-color: #D8D8D8">
-								<td style="width: 20%"><b>Ontology</b></td>
-								<td style="width: 66%"><b>Relation</b></td>
-								<td style="width: 14%; text-align: center"><b>Integration Level</b></td>
-							</tr>
-							HCIDOlogyDependencies
-						</tbody>
-					</table>
+							</tbody>
+						</table>
+  				</div>
 
 				</div>	
 
@@ -768,7 +778,7 @@ A HCI Design Specification that is a Document outlining the basic structure of t
       <div class="container-fluid">
         <span class="text-muted">Powered by NEMO.</span>
         <span class="text-muted"><small><b>Human-Computer Interaction Design Ontology (HCIDO)</b></small></span>
-        <span class="text-muted"><small>Tue Nov 16 16:58:09 BRT 2021</small></span>		
+        <span class="text-muted"><small>Tue Nov 16 21:47:14 BRT 2021</small></span>		
       </div>
     </footer>
 	   

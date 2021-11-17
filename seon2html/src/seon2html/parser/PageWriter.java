@@ -234,9 +234,9 @@ public class PageWriter {
 				line = line.replace("@onto", ontology.getShortName());
 				if (level == OntoLevel.FOUNDATIONAL) found += line + "\n";
 				else if (level == OntoLevel.CORE ) {
-					System.out.println("**CORE LEVEL**");
-					System.out.println(ontology.getFullName());
-					System.out.println(ontology.getNetwork());
+					//System.out.println("**CORE LEVEL**");
+					//System.out.println(ontology.getFullName());
+					//System.out.println(ontology.getNetwork());
 					if (ontology.getNetwork().equals(hcion)) {HCIONcore += line + "\n";}
 					else if(ontology.getNetwork().equals(seon)) {SEONcore += line + "\n";}
 					else {
@@ -244,7 +244,7 @@ public class PageWriter {
 					}
 				}
 				else if (level == OntoLevel.DOMAIN) {
-					System.out.println("**DOMAIN LEVEL**");
+					//System.out.println("**DOMAIN LEVEL**");
 					if (ontology.getNetwork().equals(hcion)) {HCIONdomain += line + "\n";}
 					else if (ontology.getNetwork().equals(seon)){SEONdomain += line + "\n";}
 					else {
@@ -361,32 +361,46 @@ public class PageWriter {
 		String hcion = "HCI-ON";
 		String seon = "SEON";
 		
-		for (Ontology ontology : ontologies) {
-			OntoLevel level = ontology.getLevel();
+		//for (Ontology ontology : ontologies) {
+			OntoLevel level = onto.getLevel();
 			if (level != null) {
-				//if (level == OntoLevel.FOUNDATIONAL) {onto_level = "Foundational Ontology";}
-				if (level == OntoLevel.CORE ) {
-					//System.out.println("**CORE LEVEL**");
-					//System.out.println(ontology.getFullName());
-					//System.out.println(ontology.getNetwork());
-					if (ontology.getNetwork().equals(hcion)) {onto_level = "- core ontology from HCI-ON. ";}
-					else if(ontology.getNetwork().equals(seon)) {onto_level = "- core ontology from SEON. ";}
+				if (level == OntoLevel.FOUNDATIONAL) {
+					//System.out.println("**FOUNDATIONAL LEVEL**");
+					//System.out.println(onto.getFullName());
+					//System.out.println(onto.getNetwork());
+					if (onto.getNetwork().equals(hcion)) { onto_level = "- foundational ontology from HCI-ON. ";}
+					else if (onto.getNetwork().equals(seon)) { onto_level = "- foundational ontology from SEON. ";}
 					else {
-						System.out.println("Network not found: " + ontology.getNetwork());
+						System.out.println("Network not found:" + onto.getNetwork());
 					}
+					//System.out.println(onto.getNetwork() + onto.getShortName() + onto_level);
+				}
+				if (level == OntoLevel.CORE) {
+					//System.out.println("**CORE LEVEL**");
+					//System.out.println(onto.getFullName());
+					//System.out.println(onto.getNetwork());
+					if (onto.getNetwork().equals(hcion)) { onto_level = "- core ontology from HCI-ON. ";}
+					else if (onto.getNetwork().equals(seon)) { onto_level = "- core ontology from SEON. ";}
+					else {
+						System.out.println("Network not found: " + onto.getNetwork());
+					}
+					//System.out.println(onto.getNetwork() + onto.getShortName() + onto_level);
 				}
 				else if (level == OntoLevel.DOMAIN) {
 					//System.out.println("**DOMAIN LEVEL**");
-					if (ontology.getNetwork().equals(hcion)) {onto_level = "- domain ontology from HCI-ON. ";}
-					else if (ontology.getNetwork().equals(seon)){onto_level = "- domain ontology from SEON. ";}
+					//System.out.println(onto.getFullName());
+					//System.out.println(onto.getNetwork());
+					if (onto.getNetwork().equals(hcion)) { onto_level = "- domain ontology from HCI-ON. ";}
+					else if (onto.getNetwork().equals(seon)) { onto_level = "- domain ontology from SEON. ";}
 					else {
-						System.out.println("Network not found:" + ontology.getNetwork());
+						System.out.println("Network not found:" + onto.getNetwork());
 					}
+					//System.out.println(onto.getNetwork() + onto.getShortName() + onto_level);
 				}
 				// other level: ignore
 			}
 				
-		}
+		
 			
 		
 		html = html.replace("@onto_level", onto_level);
@@ -399,7 +413,7 @@ public class PageWriter {
 		html = html.replace("@description", formatDescription(onto.getDefinition()));
 
 		// Ontology Dependencies
-		html = html.replace("@ontologyDependencies", generateDependenciesTable(onto));
+		html = html.replace("@myontologyDependencies", generateDependenciesTable(onto));
 
 		// Models Sections (subpackages/subontologies)
 		figCount = 1;
@@ -441,6 +455,7 @@ public class PageWriter {
 		String DEPENDSLINE = "<tr><td><a href=\"@onto.html\">@ontology</a></td><td>@description</td><td style=\"text-align:center\">@level</td></tr>";
 		String dependsTable = "";
 		for (Dependency depend : onto.getDependencies()) {
+
 			Ontology supplier = (Ontology) depend.getTarget();
 			String line = DEPENDSLINE;
 			line = line.replace("@ontology", supplier.getShortName() + " - " + supplier.getFullName());
