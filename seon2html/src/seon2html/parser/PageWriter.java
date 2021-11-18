@@ -249,9 +249,9 @@ public class PageWriter {
 					}
 				}
 				else if (level == OntoLevel.DOMAIN) {
-					System.out.println("**DOMAIN LEVEL**\n");
-					System.out.println(ontology.getFullName() + " " + ontology.getNetwork() + " " + ontology.getStatus() + " " + ontology.getVersion());
-					System.out.println();
+					//System.out.println("**DOMAIN LEVEL**\n");
+					//System.out.println(ontology.getFullName() + " " + ontology.getNetwork() + " " + ontology.getStatus() + " " + ontology.getVersion());
+					//System.out.println();
 					if (ontology.getNetwork().equals(hcion)) {
 						HCIONdomain += line + "\n";
 						System.out.println("\n??????? " + ontology.getShortName() + " HCIONdomain" + HCIONdomain);
@@ -287,8 +287,15 @@ public class PageWriter {
 
 		// Replacing the tags for the actual values
 		String found = "";
-		String core = "";
-		String domain = "";
+		//String core = "";
+		//String domain = "";
+		String SEONcore = "";
+		String HCIONcore = "";
+		String SEONdomain = "";
+		String HCIONdomain = "";
+		String hcion = "HCI-ON";
+		String seon = "SEON";
+		
 		int[] ontoDeps = new int[ontologies.size()];
 		int[] ontoGens = new int[ontologies.size()];
 		// Sorting the Ontologies by level and size.
@@ -298,6 +305,8 @@ public class PageWriter {
 			int relats = 0;
 			int depends = 0;
 			int generals = 0;
+			int countcore = 0;
+			int countdomain = 0;
 			Arrays.fill(ontoDeps, 0);
 			Arrays.fill(ontoGens, 0);
 			OntoLevel level = ontology.getLevel();
@@ -340,23 +349,61 @@ public class PageWriter {
 				}
 				allGens = allGens.substring(0, allGens.length() - 2) + ")";
 			}
-
-			String stats = "<div class=\"ontology\"><p style=\"margin:1px; font: bold 80% sans-serif\">" + ontology.getShortName() + " - " + ontology.getFullName() + "</p>\n";
-			stats += "<code>" + concepts.size() + " concepts<br/>\n";
-			stats += relats + " internal relations<br/>\n";
-			stats += generals + " external generalizations " + allGens + "<br/>\n";
-			stats += depends + " external dependencies " + allDeps + "</code>\n</div>\n";
+			String stats = "";
+			if (countdomain == 3) {
+				stats = "<div class=\"row\"><div class=\"p-3 col-md-6 border border-dark\"><p class=\"lead\" align=\"justify\">" + ontology.getShortName() + " - " + ontology.getFullName() + "</p>\n";
+				stats += "<code>" + concepts.size() + " concepts<br/>\n";
+				stats += relats + " internal relations<br/>\n";
+				stats += generals + " external generalizations " + allGens + "<br/>\n";
+				stats += depends + " external dependencies " + allDeps + "</code>\n</div></div>\n";
+				countdomain = 0;
+			} else {
+				stats = "<div class=\"p-3 col-md-6 border border-dark\"><p class=\"lead\" align=\"justify\">" + ontology.getShortName() + " - " + ontology.getFullName() + "</p>\n";
+				stats += "<code>" + concepts.size() + " concepts<br/>\n";
+				stats += relats + " internal relations<br/>\n";
+				stats += generals + " external generalizations " + allGens + "<br/>\n";
+				stats += depends + " external dependencies " + allDeps + "</code>\n</div>\n";	
+			}
 
 			if (level != null) {
 				if (level == OntoLevel.FOUNDATIONAL) found += stats;
-				else if (level == OntoLevel.CORE) core += stats;
-				else if (level == OntoLevel.DOMAIN) domain += stats;
+				else if (level == OntoLevel.CORE) {
+					if (ontology.getNetwork().equals(seon)){
+						SEONcore += stats;						
+					}
+					else if (ontology.getNetwork().equals(hcion)){
+						HCIONcore += stats;
+						countcore += 1;
+					}
+					//core += stats;		
+				} 
+				else if (level == OntoLevel.DOMAIN) {
+					if (ontology.getNetwork().equals(seon)){
+						SEONdomain += stats;						
+					}
+					else if (ontology.getNetwork().equals(hcion)){
+						HCIONdomain += stats;
+						countdomain += 1;
+					}
+				}
+				//domain += stats;
 				// other level: ignore
 			}
+
 		}
+		
+		System.out.println("********STATS AQUII** " + HCIONdomain + "\n");
+		//Simone Dornelas
+		//html = html.replace("@title", hcion);
 		html = html.replace("@foundOntology", found);
-		html = html.replace("@coreOntologies", core);
-		html = html.replace("@domainOntologies", domain);
+		//html = html.replace("@SEONcoreOntologies", SEONcore);
+		//html = html.replace("@SEONdomainOntologies", SEONdomain);
+		html = html.replace("@HCIONcoreOntologies", HCIONcore);
+		html = html.replace("@HCIONdomainOntologies", HCIONdomain);
+
+		//html = html.replace("@foundOntology", found);
+		//html = html.replace("@coreOntologies", core);
+		//html = html.replace("@domainOntologies", domain);
 		html = html.replace("@date", (new Date()).toString());
 
 		// Writing the HTML page
@@ -466,7 +513,7 @@ public class PageWriter {
 		else {
 			return "vazio";
 		}
-		System.out.println(nourl);
+		//System.out.println(nourl);
 		return nourl;
 	}
 
@@ -553,6 +600,7 @@ public class PageWriter {
 		String found = "foundational";
 		String core = "core";
 		String domain = "domain";
+		String ADDITIONALINFO = "";
 
 		networkOnto = checkNetwork(onto);
 
@@ -575,7 +623,15 @@ public class PageWriter {
 				}
 			}
 		}
-			
+
+		if (onto.getStatus().equals("Finished")){
+			ADDITIONALINFO = "<div class=\"container-fluid d-flex justify-content-end\"><span class=\"badge badge-primary\">Version "+ onto.getVersion() +"</span></div>";
+		}else {
+					ADDITIONALINFO = "<div class=\"container-fluid d-flex justify-content-end\"><span class=\"badge badge-danger\">"+ onto.getStatus() +"</span></div>";			
+		}
+
+		
+		html = html.replace("@additionalinfo", ADDITIONALINFO);		
 		html = html.replace("@onto_level", onto_level);	
 
 		///// Replacing the tags for the actual values /////

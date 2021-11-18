@@ -157,16 +157,23 @@
 
 		<!-- Begin page content -->
     <main role="main" class="container-fluid">	
+    		@additionalinfo
+				<!--<div class="bg-light p-5 rounded" id="ontologydescription">
+    			<h1 class="featurette-heading">The @title</h1>
+					<p class="lead" align="justify"><span class="text-muted font-weight-bold font-italic">Ontology Description. </span>@description</p>
+					<p class="lead text-right text-muted font-italic">@onto_level</p>
+    		</div>-->
 
 				<div class="bg-light p-5 rounded" id="ontologydescription">
     			<h1 class="featurette-heading">The @title</h1>
-					<p class="lead" align="justify"><span class="text-muted font-weight-bold font-italic">Ontology Description. </span>@description</p>
-					<p class="lead text-right text-muted font-weight-bold font-italic">@onto_level</p>
+    				<h2 class="featurette-heading d-inline font-italic">Ontology Description. </h2>
+    				<p class="lead d-inline" align="justify">@description</p>
+    				<p class="lead text-right text-muted font-italic">@onto_level</p>
     		</div>
 
-				<!--<hr class="featurette-divider">-->
+				<hr class="featurette-divider">
 
-				<div class="container" id="relatedontologies">
+				<div class="p-5 rounded" id="relatedontologies">
 					<h2 class="featurette-heading">2. Related Ontologies</h2>
 					<p class="lead">Networked ontologies used by @onto:</p>	
 					
@@ -189,14 +196,14 @@
 
 				<hr class="featurette-divider">
     	
-				<div class="container" id="ontologymodels">
+				<div class="p-5 rounded" id="ontologymodels">
 					<h2 class="featurette-heading">3. Ontology Models</h2>
 					<p class="lead">@sectionContent</p>					
 				</div>
 
 				<hr class="featurette-divider">
 
-				<div class="container" id="conceptsdefinition">
+				<div class="p-5 rounded" id="conceptsdefinition">
 					<h2 class="featurette-heading">4. Concepts Definition</h2>
 					<p class="lead">The following table shows the definitions for @onto concepts.</p>		
 					<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->				
@@ -214,7 +221,7 @@
 
 				<hr class="featurette-divider">		
 
-				<div class="container" id="detailedconcepts">
+				<div class="container p-5 rounded" id="detailedconcepts">
 					<h2 class="featurette-heading">5. Detailed Concepts</h2>
 					<p class="lead">@detailedConcepts</p>					
 				</div>

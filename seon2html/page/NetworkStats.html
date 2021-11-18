@@ -1,200 +1,204 @@
-<!DOCTYPE html>
-<HTML>
-<HEAD>
-<TITLE>SEON: The Software Engineering Ontology Network</TITLE>
-<BASE target="mainFrame">
-<STYLE>
-.ontology {
-   float: left;
-   margin: 10px;
-   padding: 10px;
-   width: 340px;
-   height: 110px;
-   border: 1px solid gray;
-}
-</STYLE>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-81695120-1', 'auto');
-  ga('send', 'pageview');
-</script>
-</HEAD>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>The HCI-ON Statistics</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="../resources/static/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">  
+    <!-- Custom styles for this template -->
+    <link href="../resources/static/bootstrap-5.1.3-dist/css/navbar-top-fixed.css" rel="stylesheet">
+    <link href="../resources/static/bootstrap-5.1.3-dist/css/sticky-footer-navbar.css" rel="stylesheet">
+    <link href="../resources/static/bootstrap-5.1.3-dist/css/carousel.css" rel="stylesheet">    
+    <!--<link href="../resources/static/mystyle.css" rel="stylesheet">-->
+    <style type="text/css">
+      .featurette-heading {
+        margin-top: 0;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <header>  
+      <!--MAIN fixed navbar -->  
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">HCI-ON</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
 
-<BODY style="font-family: sans-serif">
-	<h2 style="color: #005A9C"><b>Network Statistics</b></h2>
-	<hr>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  The Network
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item fst-italic" href="#" tabindex="-1" aria-disabled="true">Architecture</a></li>
+                  <li><a class="dropdown-item fst-italic" href="#" tabindex="-1" aria-disabled="true">Evolution Mechanisms</a></li>
+                  <li><a class="dropdown-item fst-italic" href="#" tabindex="-1" aria-disabled="true">Relationship with SEON</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Foundational Layer</a></li>
+                  <li><a class="dropdown-item" href="UFO.html">UFO - Unified Foundational Ontology</a></li>
+                  <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Core Layer</a></li>
+                  <li><a class="dropdown-item" href="HCIO.html">HCIO - Human-Computer Interaction Ontology</a></li>
+                  <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Domain Layer</a></li>
+                  <li><a class="dropdown-item" href="HCIDO.html">HCIDO - Human-Computer Interaction Design Ontology</a></li>
+                  <li><a class="dropdown-item" href="HCIEO.html">HCIEO - Human-Computer Interaction Evaluation Ontology</a></li>
+                  <li><a class="dropdown-item" href="HCIDPO.html">HCIDPO - Human-Computer Interaction Design Process Ontology</a></li>
+                  <li><a class="dropdown-item" href="UIT&EO.html">UIT&EO - UI Types and Elements Ontology</a></li>
+                  <li><a class="dropdown-item" href="HCIMO.html">HCIMO - HCI Modality Ontology</a></li>
+                  <li><a class="dropdown-item" href="CUO.html">CUO - Context of Use Ontology</a></li>
+                  <li><a class="dropdown-item" href="UCO.html">UCO - User Characterization Ontology</a></li>
+                  <li><a class="dropdown-item" href="HCIQCO.html">HCIQCO - HCI Quality Characteristics Ontology</a></li>
+                </ul>
+              </li>
 
-	<h3 style="color: #005A9C">Foundational Layer</h3>
-<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">UFO - Unified Foundational Ontology</p>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Features
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="SearchFrames.html">Concepts Searcher</a></li>
+                  <li><a class="dropdown-item" href="NetworkGraph.html">Graph</a></li>
+                  <li><a class="dropdown-item" href="NetworkStats.html">Stats</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="SeonFeedback.html">Feedback</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  More
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="SEON.owl" target="_blank">Operational Version (in OWL)</a></li>
+                  <li><a class="dropdown-item" href="#">Astah file</a></li>
+                  <li><a class="dropdown-item" href="#">Specifications</a></li>
+                  <li><a class="dropdown-item" href="#">Publications</a></li>
+                </ul>
+              </li>
+
+    <!--          <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>-->
+            
+            </ul>
+            
+          </div>
+        </div>
+      </nav>  
+    </header> 
+       
+    <main class="container-fluid">
+      <div class="bg-light p-5 rounded">
+        <h1 class="featurette-heading">The Human-Computer Interaction Ontology Network Statistics</h1>
+      </div>
+
+      <hr>
+
+      <div class="p-5 rounded">
+          <h3 class="featurette-heading">Foundational Layer</h3>
+          <div class="p-3 col-md-6 border border-dark"><p class="lead" align="justify">UFO - Unified Foundational Ontology</p>
 <code>132 concepts<br/>
 97 internal relations<br/>
 0 external generalizations <br/>
 0 external dependencies </code>
 </div>
 
-<br style="clear:both">
+      </div>
 
-	<h3 style="color: #005A9C">Core Layer</h3>
-<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">HCIO - Human-Computer Interaction Ontology</p>
+      <hr>
+
+      <div class="p-5 rounded">
+          <h3 class="featurette-heading">Core Layer</h3>
+          <div class="p-3 col-md-6 border border-dark"><p class="lead" align="justify">HCIO - Human-Computer Interaction Ontology</p>
 <code>24 concepts<br/>
 33 internal relations<br/>
 22 external generalizations (UFO:10, SysSwO:9, COM:3)<br/>
 13 external dependencies (SysSwO:7, HCIDO:2, HCIEO:3, RSRO:1)</code>
 </div>
-<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">SPO - Software Process Ontology</p>
-<code>63 concepts<br/>
-55 internal relations<br/>
-40 external generalizations (UFO:27, SysSwO:3, EO:3, RSMO:7)<br/>
-25 external dependencies (SysSwO:16, EO:7, SPMO:1, RSMO:1)</code>
-</div>
-<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">SysSwO - System and Software Ontology</p>
-<code>30 concepts<br/>
-32 internal relations<br/>
-13 external generalizations (UFO:12, RSMO:1)<br/>
-9 external dependencies (HCIO:2, SDRO:1, RSRO:6)</code>
-</div>
-<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">COM - Core Ontology on Measurement (external)</p>
-<code>29 concepts<br/>
-44 internal relations<br/>
-24 external generalizations (UFO:24)<br/>
-2 external dependencies (UFO:2)</code>
-</div>
-<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">EO - Enterprise Ontology (external)</p>
-<code>31 concepts<br/>
-34 internal relations<br/>
-12 external generalizations (UFO:11, SPO:1)<br/>
-1 external dependencies (QAPO:1)</code>
-</div>
 
-<br style="clear:both">
+      </div>
 
-	<h3 style="color: #005A9C">Domain Layer</h3>
-<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">HCIDO - Human-Computer Interaction Design Ontology</p>
+      <hr>
+
+      <div class="p-5 rounded">
+          <h3 class="featurette-heading">Domain Layer</h3>
+          <div class="p-3 col-md-6 border border-dark"><p class="lead" align="justify">HCIDO - Human-Computer Interaction Design Ontology</p>
 <code>21 concepts<br/>
 24 internal relations<br/>
 22 external generalizations (HCIO:3, SysSwO:3, SDRO:14, RSRO:2)<br/>
 1 external dependencies (HCIO:1)</code>
 </div>
-<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">SDRO - Software Design Reference Ontology</p>
-<code>14 concepts<br/>
-20 internal relations<br/>
-10 external generalizations (UFO:3, SPO:1, SysSwO:6)<br/>
-2 external dependencies (RSRO:2)</code>
-</div>
-<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">HCIEO - Human-Computer Interaction Evaluation Ontology</p>
+<div class="p-3 col-md-6 border border-dark"><p class="lead" align="justify">HCIEO - Human-Computer Interaction Evaluation Ontology</p>
 <code>9 concepts<br/>
 19 internal relations<br/>
 11 external generalizations (UFO:5, SPO:2, SysSwO:2, COM:1, RSRO:1)<br/>
 8 external dependencies (HCIO:5, COM:2, HCIDO:1)</code>
 </div>
-<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">RSRO - Reference Software Requirements Ontology</p>
-<code>13 concepts<br/>
-12 internal relations<br/>
-13 external generalizations (UFO:6, SPO:3, SysSwO:4)<br/>
-9 external dependencies (RDPO:9)</code>
-</div>
-<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">HCIDPO - Human-Computer Interaction Design Process Ontology</p>
+<div class="p-3 col-md-6 border border-dark"><p class="lead" align="justify">HCIDPO - Human-Computer Interaction Design Process Ontology</p>
 <code>27 concepts<br/>
 27 internal relations<br/>
 7 external generalizations (SPO:6, SysSwO:1)<br/>
 0 external dependencies </code>
 </div>
-<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">RRO - Runtime Requirements Ontology</p>
-<code>17 concepts<br/>
-18 internal relations<br/>
-9 external generalizations (SysSwO:7, RSRO:2)<br/>
-0 external dependencies </code>
-</div>
-<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">UIT&EO - UI Types and Elements Ontology</p>
+<div class="p-3 col-md-6 border border-dark"><p class="lead" align="justify">UIT&EO - UI Types and Elements Ontology</p>
 <code>0 concepts<br/>
 0 internal relations<br/>
 0 external generalizations <br/>
 0 external dependencies </code>
 </div>
-<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">GORO - Goal-Oriented Requirements Ontology</p>
-<code>5 concepts<br/>
-1 internal relations<br/>
-3 external generalizations (UFO:2, RSRO:1)<br/>
-0 external dependencies </code>
-</div>
-<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">HCIMO - HCI Modality Ontology</p>
+<div class="p-3 col-md-6 border border-dark"><p class="lead" align="justify">HCIMO - HCI Modality Ontology</p>
 <code>0 concepts<br/>
 0 internal relations<br/>
 0 external generalizations <br/>
 0 external dependencies </code>
 </div>
-<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">RDPO - Requirements Development Process Ontology</p>
-<code>10 concepts<br/>
-9 internal relations<br/>
-10 external generalizations (SPO:7, SysSwO:3)<br/>
-7 external dependencies (RSRO:7)</code>
-</div>
-<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">CUO - Context of Use Ontology</p>
+<div class="p-3 col-md-6 border border-dark"><p class="lead" align="justify">CUO - Context of Use Ontology</p>
 <code>0 concepts<br/>
 0 internal relations<br/>
 0 external generalizations <br/>
 0 external dependencies </code>
 </div>
-<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">DPO - Design Process Ontology</p>
-<code>24 concepts<br/>
-36 internal relations<br/>
-22 external generalizations (SPO:15, SysSwO:7)<br/>
-3 external dependencies (RSRO:3)</code>
-</div>
-<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">UCO - User Characterization Ontology</p>
+<div class="p-3 col-md-6 border border-dark"><p class="lead" align="justify">UCO - User Characterization Ontology</p>
 <code>0 concepts<br/>
 0 internal relations<br/>
 0 external generalizations <br/>
 0 external dependencies </code>
 </div>
-<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">CPO - Coding Process Ontology</p>
-<code>8 concepts<br/>
-7 internal relations<br/>
-8 external generalizations (SPO:7, SysSwO:1)<br/>
-7 external dependencies (SysSwO:3, RSRO:2, DPO:2)</code>
-</div>
-<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">HCIQCO - HCI Quality Characteristics Ontology</p>
+<div class="p-3 col-md-6 border border-dark"><p class="lead" align="justify">HCIQCO - HCI Quality Characteristics Ontology</p>
 <code>0 concepts<br/>
 0 internal relations<br/>
 0 external generalizations <br/>
 0 external dependencies </code>
-</div>
-<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">ROoST - Reference Ontology on Software Testing</p>
-<code>41 concepts<br/>
-45 internal relations<br/>
-27 external generalizations (SPO:13, SysSwO:14)<br/>
-1 external dependencies (SPO:1)</code>
-</div>
-<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">QAPO - Quality Assurance Process Ontology</p>
-<code>16 concepts<br/>
-17 internal relations<br/>
-17 external generalizations (SPO:13, SysSwO:4)<br/>
-3 external dependencies (SPMO:3)</code>
-</div>
-<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">SPMO - Software Project Management Ontology</p>
-<code>17 concepts<br/>
-7 internal relations<br/>
-16 external generalizations (SPO:14, SysSwO:2)<br/>
-1 external dependencies (QAPO:1)</code>
-</div>
-<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">CMPO - Configuration Management Process Ontology</p>
-<code>38 concepts<br/>
-57 internal relations<br/>
-31 external generalizations (UFO:2, SPO:21, SysSwO:7, QAPO:1)<br/>
-1 external dependencies (QAPO:1)</code>
-</div>
-<div class="ontology"><p style="margin:1px; font: bold 80% sans-serif">RSMO - Reference Software Measurement Ontology</p>
-<code>39 concepts<br/>
-63 internal relations<br/>
-33 external generalizations (UFO:4, SPO:13, SysSwO:8, COM:8)<br/>
-11 external dependencies (SPO:4, COM:6, EO:1)</code>
 </div>
 
-<br style="clear:both">
-	<br><br><br>
-	<small>Wed Nov 17 22:47:02 BRT 2021</small>
-</BODY>
-</HTML>
+      </div>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container-fluid">
+        <span class="text-muted">Powered by NEMO.</span>
+      </div>
+    </footer>
+
+   <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="../resources/static/bootstrap-5.1.3-dist/js/jquery-3.2.1.slim.min.js"></script>
+    <script src="../resources/static/bootstrap-5.1.3-dist/js/popper.min.js"></script>
+    <script src="../resources/static/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+    <script src="../resources/static/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
