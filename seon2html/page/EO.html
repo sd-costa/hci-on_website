@@ -92,8 +92,11 @@
 	            <li><a class="dropdown-item" href="HCIDO.html">HCIDO - Human-Computer Interaction Design Ontology</a></li>
 							<li><a class="dropdown-item" href="HCIEO.html">HCIEO - Human-Computer Interaction Evaluation Ontology</a></li>
 							<li><a class="dropdown-item" href="HCIDPO.html">HCIDPO - Human-Computer Interaction Design Process Ontology</a></li>
-
-
+							<li><a class="dropdown-item" href="UIT&EO.html">UIT&EO - UI Types and Elements Ontology</a></li>
+							<li><a class="dropdown-item" href="HCIMO.html">HCIMO - HCI Modality Ontology</a></li>
+							<li><a class="dropdown-item" href="CUO.html">CUO - Context of Use Ontology</a></li>
+							<li><a class="dropdown-item" href="UCO.html">UCO - User Characterization Ontology</a></li>
+							<li><a class="dropdown-item" href="HCIQCO.html">HCIQCO - HCI Quality Characteristics Ontology</a></li>
 	          </ul>
 	        </li>
 
@@ -190,7 +193,7 @@
 				<div class="container" id="ontologymodels">
 					<h2 class="featurette-heading">3. Ontology Models</h2>
 					<p class="lead"><p>Figure 1 presents the packages of the Teams.</p>
-<p align="center"><IMG src="images/Teams.png" width="1100" class="map" usemap="#Teams"><MAP NAME="Teams"></MAP></p>
+<p align="center"><IMG src="images/Teams.png" width="1101" class="map" usemap="#Teams"><MAP NAME="Teams"></MAP></p>
 <p align="center"><b>Figure 1. Teams.</b></p>
 <p align="justify">Project Team<br/>Organizational Team<br/>Team Membership</p>
 <p>Figure 2 presents the packages of the Job Plan and Roles.</p>
@@ -207,9 +210,9 @@
 A human Physical Agent.">
 <area shape="rect" coords="487,229,612,265" href="EO.html#EO_Human+Resource" title="">
 <area shape="rect" coords="1045,161,1193,197" href="EO.html#EO_Formal+Organization" title="">
-<area shape="rect" coords="1176,80,1288,116" href="EO.html#EO_Organization" title="Same as UFO::Organization.
+<area shape="rect" coords="1177,80,1289,116" href="EO.html#EO_Organization" title="Same as UFO::Organization.
 A Social Agent involving people and other agents and facilities with an arrangement of responsibilities, authorities and relationships.">
-<area shape="rect" coords="757,212,885,285" href="EO.html#EO_Employment" title="">
+<area shape="rect" coords="759,212,887,285" href="EO.html#EO_Employment" title="">
 <area shape="rect" coords="997,231,1208,267" href="EO.html#EO_Formal+Organization+Employer" title="">
 <area shape="rect" coords="1158,291,1300,327" href="EO.html#EO_Organizational+Unit" title="">
 <area shape="rect" coords="757,359,885,432" href="EO.html#EO_OU+Assignment" title="">
@@ -482,8 +485,8 @@ Specializes EO::Human Resource Role<br/><br/>
 Relations:<br/>
 <code>Business Role (0..*) covers (0..*) Business Role<br/>
 Business Role (1..*)  (0..*) OU Member  &lt&ltinstantiation&gt&gt<br/>
-OU Assignment Type (0..*) mediates business role (1..*) Business Role<br/>
 Formal Organization Member Type (1..*) covers (0..*) Business Role<br/>
+OU Assignment Type (0..*) mediates business role (1..*) Business Role<br/>
 </code><br/>
 <br/><br/>
 
@@ -619,9 +622,9 @@ Specializes UFO::Role, UFO::Person<br/><br/>
 <br/>
 <br/>
 Relations:<br/>
-<code>Formal Organization Employer <>-- Human Resource  &lt&ltmemberOf&gt&gt<br/>
+<code>Formal Organization Member Type (1..*)  (0..*) Human Resource  &lt&ltinstantiation&gt&gt<br/>
 Employment (1..*) employs (1..1) Human Resource  &lt&ltmediation&gt&gt<br/>
-Formal Organization Member Type (1..*)  (0..*) Human Resource  &lt&ltinstantiation&gt&gt<br/>
+Formal Organization Employer <>-- Human Resource  &lt&ltmemberOf&gt&gt<br/>
 </code><br/>
 <br/><br/>
 
@@ -709,8 +712,8 @@ Specializes EO::Human Resource<br/><br/>
 <br/>
 Relations:<br/>
 <code>Allocation Unit <>-- OU Member  &lt&ltmemberOf&gt&gt<br/>
-OU Assignment (1..*) assigns (1..1) OU Member  &lt&ltmediation&gt&gt<br/>
 Business Role (1..*)  (0..*) OU Member  &lt&ltinstantiation&gt&gt<br/>
+OU Assignment (1..*) assigns (1..1) OU Member  &lt&ltmediation&gt&gt<br/>
 </code><br/>
 <br/><br/>
 
@@ -726,8 +729,8 @@ E.g.:<i> A company, an enterprise, a software house.</i><br/>
 Relations:<br/>
 <code>Organization (1..1) has (0..*) Organizational Team<br/>
 Performed Organizational Process (0..*) performed in (1..1) Organization<br/>
-Organizational Intended Process (0..*) defined for (1..1) Organization<br/>
 Standard Process Definition Document (0..*) recognized by (1..*) Organization<br/>
+Organizational Intended Process (0..*) defined for (1..1) Organization<br/>
 Job Plan (0..*) recognized by (1..1) Organization<br/>
 </code><br/>
 <br/><br/>
@@ -742,14 +745,14 @@ A Social Role, recognized by the Organization, assigned to Agents when they are 
 E.g.:<i> System Analyst, Designer, Programmer, Client Organization.</i><br/>
 <br/>
 Relations:<br/>
-<code>Operational Definition of Measure (0..*) indicates (0..1) Organizational Role<br/>
+<code>Team Membership (0..*) is to play (1..1) Organizational Role  &lt&ltmediation&gt&gt<br/>
 Stakeholder Participation (0..*) acts as (1..1) Organizational Role<br/>
-Stakeholder Allocation (0..*) to act as (1..1) Organizational Role  &lt&ltmaterial&gt&gt<br/>
-Team Membership (0..*) is to play (1..1) Organizational Role  &lt&ltmediation&gt&gt<br/>
 Job Plan (1..1) defines (1..*) Organizational Role<br/>
-Employment (0..*) to act as (1..1) Organizational Role  &lt&ltmediation&gt&gt<br/>
 Intended Activity (0..*) is to be performed by (0..*) Organizational Role<br/>
+Employment (0..*) to act as (1..1) Organizational Role  &lt&ltmediation&gt&gt<br/>
+Operational Definition of Measure (0..*) indicates (0..1) Organizational Role<br/>
 Standard Activity (0..*) is to be performed by (0..*) Organizational Role<br/>
+Stakeholder Allocation (0..*) to act as (1..1) Organizational Role  &lt&ltmaterial&gt&gt<br/>
 </code><br/>
 <br/><br/>
 
@@ -777,8 +780,8 @@ Specializes EO::Organization<br/><br/>
 <br/>
 <br/>
 Relations:<br/>
-<code>Organizational Unit Type (1..*)  (0..*) Organizational Unit  &lt&ltinstantiation&gt&gt<br/>
-Complex Standalone Formal Organization (1..1) <>-- (2..*) Organizational Unit  &lt&ltmaterial&gt&gt<br/>
+<code>Complex Standalone Formal Organization (1..1) <>-- (2..*) Organizational Unit  &lt&ltmaterial&gt&gt<br/>
+Organizational Unit Type (1..*)  (0..*) Organizational Unit  &lt&ltinstantiation&gt&gt<br/>
 </code><br/>
 <br/><br/>
 
@@ -794,8 +797,8 @@ Specializes <br/><br/>
 Relations:<br/>
 <code>Organizational Unit Type (0..*) is compatible with subunit type (0..*) Organizational Unit Type<br/>
 Organizational Unit Type (1..*)  (0..*) Organizational Unit  &lt&ltinstantiation&gt&gt<br/>
-OU Assignment Type (0..*) mediates ou type (1..*) Organizational Unit Type<br/>
 Formal Organization Type (0..*) is compatible with unit type (0..*) Organizational Unit Type<br/>
+OU Assignment Type (0..*) mediates ou type (1..*) Organizational Unit Type<br/>
 </code><br/>
 <br/><br/>
 
@@ -933,7 +936,7 @@ Relations:<br/>
       <div class="container-fluid">
         <span class="text-muted">Powered by NEMO.</span>
         <span class="text-muted"><small><b>Enterprise Ontology (external) (EO)</b></small></span>
-        <span class="text-muted"><small>Wed Nov 17 20:04:26 BRT 2021</small></span>		
+        <span class="text-muted"><small>Wed Nov 17 22:47:01 BRT 2021</small></span>		
       </div>
     </footer>
 	   

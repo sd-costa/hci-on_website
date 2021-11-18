@@ -92,8 +92,11 @@
 	            <li><a class="dropdown-item" href="HCIDO.html">HCIDO - Human-Computer Interaction Design Ontology</a></li>
 							<li><a class="dropdown-item" href="HCIEO.html">HCIEO - Human-Computer Interaction Evaluation Ontology</a></li>
 							<li><a class="dropdown-item" href="HCIDPO.html">HCIDPO - Human-Computer Interaction Design Process Ontology</a></li>
-
-
+							<li><a class="dropdown-item" href="UIT&EO.html">UIT&EO - UI Types and Elements Ontology</a></li>
+							<li><a class="dropdown-item" href="HCIMO.html">HCIMO - HCI Modality Ontology</a></li>
+							<li><a class="dropdown-item" href="CUO.html">CUO - Context of Use Ontology</a></li>
+							<li><a class="dropdown-item" href="UCO.html">UCO - User Characterization Ontology</a></li>
+							<li><a class="dropdown-item" href="HCIQCO.html">HCIQCO - HCI Quality Characteristics Ontology</a></li>
 	          </ul>
 	        </li>
 
@@ -261,7 +264,7 @@
 <area shape="rect" coords="10,149,144,179" href="SPMO.html#SPMO_Estimated+Process" title="A Project Process with cost, duration and time estimated.">
 <area shape="rect" coords="678,635,800,708" href="SPMO.html#SPMO_Tracked+Activity" title="">
 <area shape="rect" coords="166,473,288,546" href="SPMO.html#SPMO_Tracked+Process" title="">
-<area shape="rect" coords="116,766,212,796" href="SPO.html#SPO_Stakeholder" title="Agent (Person, Team or Organization) interested or affected by the process activities or results.">
+<area shape="rect" coords="117,766,213,796" href="SPO.html#SPO_Stakeholder" title="Agent (Person, Team or Organization) interested or affected by the process activities or results.">
 <area shape="rect" coords="365,751,542,809" href="SPO.html#SPO_Stakeholder+Participation" title="The participation of a Stakeholder in a Performed Activity, playing an Organizational Role.">
 <area shape="rect" coords="373,905,534,935" href="SPO.html#SPO_Stakeholder+Allocation" title="Social Relator representing a Stakeholder allocated to perform a Scheduled Activity acting an Organizational Role.">
 <area shape="rect" coords="597,751,828,809" href="SPMO.html#SPMO_Tracked+Stakeholder+Participation" title="">
@@ -407,8 +410,8 @@ Information Item describing an action to eliminate the cause or reduce the likel
 E.g.:<i> an additional developer shall be allocated for Project X; a new agreement on the requirements change shall be obtained from the client.</i><br/>
 <br/>
 Relations:<br/>
-<code>Noncompliance Resolution creates Corrective Action Register<br/>
-Noncompliance Register (0..*) <>-- (0..*) Corrective Action Register<br/>
+<code>Noncompliance Register (0..*) <>-- (0..*) Corrective Action Register<br/>
+Noncompliance Resolution creates Corrective Action Register<br/>
 </code><br/>
 <br/><br/>
 
@@ -444,8 +447,8 @@ Specializes <br/><br/>
 <br/>
 <br/>
 Relations:<br/>
-<code>Practical Result (0..*) <>-- (2..*) Deliverable<br/>
-Software Project (1..1) has (0..*) Deliverable<br/>
+<code>Software Project (1..1) has (0..*) Deliverable<br/>
+Practical Result (0..*) <>-- (2..*) Deliverable<br/>
 </code><br/>
 <br/><br/>
 
@@ -480,8 +483,8 @@ A Project Activity with scope, cost, duration and time estimated.<br/>
 <br/>
 <br/>
 Relations:<br/>
-<code>Estimated Stakeholder Allocation (0..*) is to perform (1..1) Estimated Activity  &lt&ltmediation&gt&gt<br/>
-Tracked Activity (0..1) tracked in relation to (1..1) Estimated Activity<br/>
+<code>Tracked Activity (0..1) tracked in relation to (1..1) Estimated Activity<br/>
+Estimated Stakeholder Allocation (0..*) is to perform (1..1) Estimated Activity  &lt&ltmediation&gt&gt<br/>
 </code><br/>
 <br/><br/>
 
@@ -615,8 +618,8 @@ Specializes SPMO::Deliverable<br/><br/>
 <br/>
 <br/>
 Relations:<br/>
-<code>Scope Estimated Activity (1..*) is to produce (1..*) Work Package<br/>
-Tracked Activity (0..*) contributes to produce (1..*) Work Package<br/>
+<code>Tracked Activity (0..*) contributes to produce (1..*) Work Package<br/>
+Scope Estimated Activity (1..*) is to produce (1..*) Work Package<br/>
 </code><br/>
 <br/><br/>
 
@@ -629,7 +632,7 @@ Tracked Activity (0..*) contributes to produce (1..*) Work Package<br/>
       <div class="container-fluid">
         <span class="text-muted">Powered by NEMO.</span>
         <span class="text-muted"><small><b>Software Project Management Ontology (SPMO)</b></small></span>
-        <span class="text-muted"><small>Wed Nov 17 20:04:26 BRT 2021</small></span>		
+        <span class="text-muted"><small>Wed Nov 17 22:47:02 BRT 2021</small></span>		
       </div>
     </footer>
 	   

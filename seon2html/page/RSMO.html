@@ -92,8 +92,11 @@
 	            <li><a class="dropdown-item" href="HCIDO.html">HCIDO - Human-Computer Interaction Design Ontology</a></li>
 							<li><a class="dropdown-item" href="HCIEO.html">HCIEO - Human-Computer Interaction Evaluation Ontology</a></li>
 							<li><a class="dropdown-item" href="HCIDPO.html">HCIDPO - Human-Computer Interaction Design Process Ontology</a></li>
-
-
+							<li><a class="dropdown-item" href="UIT&EO.html">UIT&EO - UI Types and Elements Ontology</a></li>
+							<li><a class="dropdown-item" href="HCIMO.html">HCIMO - HCI Modality Ontology</a></li>
+							<li><a class="dropdown-item" href="CUO.html">CUO - Context of Use Ontology</a></li>
+							<li><a class="dropdown-item" href="UCO.html">UCO - User Characterization Ontology</a></li>
+							<li><a class="dropdown-item" href="HCIQCO.html">HCIQCO - HCI Quality Characteristics Ontology</a></li>
 	          </ul>
 	        </li>
 
@@ -218,7 +221,7 @@
 <area shape="rect" coords="204,243,449,273" href="RSMO.html#RSMO_Measurable+Software-Related+Entity" title="Measurable Entity related to software.">
 <area shape="rect" coords="626,342,763,372" href="SPO.html#SPO_Performed+Process" title="Complex Action, composed of other processes or activities, performed in a specific Time Interval, for reaching a goal in a Project or Organization.">
 <area shape="rect" coords="557,392,694,422" href="SPO.html#SPO_Performed+Activity" title="Action performed, in a specific Time Interval, by a Stakeholder, potentially producing and consuming Artifacts, as part of a Specific Performed Process.">
-<area shape="rect" coords="217,342,313,372" href="SPO.html#SPO_Stakeholder" title="Agent (Person, Team or Organization) interested or affected by the process activities or results.">
+<area shape="rect" coords="218,342,314,372" href="SPO.html#SPO_Stakeholder" title="Agent (Person, Team or Organization) interested or affected by the process activities or results.">
 <area shape="rect" coords="871,63,1017,93" href="COM.html#COM_Measurable+Element" title="Measurable property that characterizes a Measurable Entity Type.">
 <area shape="rect" coords="763,150,961,180" href="COM.html#COM_Directly+Measurable+Element" title="Measurable Element that does not depend on others to be measured.">
 <area shape="rect" coords="868,188,1077,218" href="COM.html#COM_Indirectly+Measurable+Element" title="Measurable Element that depends on others (its sub-elements) to be measured.">
@@ -320,7 +323,7 @@
 <area shape="rect" coords="332,228,541,258" href="UFO.html#UFO_Normative+Description" title="Normative Descriptions are Social Objects that define one or more rules/norms recognized by at least one Social Agent and that can define other Social objects (the crown of the king of Spain) or Social Roles (such as president, PhD candidate or pedestrian). @Examples of normative descriptions include the Brazilian Constitution, the Federal University of Espírito Santo PhD program regulation, but also a set of directives on how to perform some actions within an organization (a Plan Description).">
 <area shape="rect" coords="628,556,788,586" href="SPO.html#SPO_Software+Organization" title="">
 <area shape="rect" coords="1226,714,1353,744" href="SPO.html#SPO_Standard+Activity" title="Action Universal representing a generic activity institutionalized as part of a Standard Process in an Organization, establishing general information such as dependence on other activities, types of artifacts created, changed and used, required software and hardware resources, adopted procedures, and roles to perform it.">
-<area shape="rect" coords="1160,801,1303,831" href="EO.html#EO_Organizational+Role" title="A Social Role, recognized by the Organization, assigned to Agents when they are hired, included in a team, allocated or participating in activities.">
+<area shape="rect" coords="1160,801,1304,831" href="EO.html#EO_Organizational+Role" title="A Social Role, recognized by the Organization, assigned to Agents when they are hired, included in a team, allocated or participating in activities.">
 <area shape="rect" coords="716,780,802,810" href="RSMO.html#RSMO_Periodicity" title="">
 <area shape="rect" coords="1047,140,1179,170" href="COM.html#COM_Measurable+Entity" title="Anything that can be measured.">
 <area shape="rect" coords="1305,242,1471,272" href="COM.html#COM_Measurable+Entity+Type" title="Type of entities that can be measured.">
@@ -670,8 +673,8 @@ Goal that expresses the intention for which strategic actions are planned and pe
 E.g.:<i> Increase the client’s satisfaction degree. </i><br/>
 <br/>
 Relations:<br/>
-<code>Software Goal (0..*) based on (1..*) Business Goal<br/>
-Software Measurement Goal (0..*) based on (1..*) Business Goal<br/>
+<code>Software Measurement Goal (0..*) based on (1..*) Business Goal<br/>
+Software Goal (0..*) based on (1..*) Business Goal<br/>
 </code><br/>
 <br/><br/>
 
@@ -716,8 +719,8 @@ E.g.:<i> the record of the information need What is the delivered defects densit
 <br/>
 Relations:<br/>
 <code>Information Need Description (0..1) describes (1..1) Information Need<br/>
-Software Measurement Planning Item (0..*) <>-- (1..1) Information Need Description<br/>
 Information Needs Identification creates Information Need Description<br/>
+Software Measurement Planning Item (0..*) <>-- (1..1) Information Need Description<br/>
 </code><br/>
 <br/><br/>
 
@@ -759,8 +762,8 @@ Type of Measurable Entities related to software.<br/>
 E.g.:<i> the Requirements Engineering Standard Process is a measurable software-related entity of the Standard Process type.</i><br/>
 <br/>
 Relations:<br/>
-<code>Operational Definition of Measure (0..*) indicates (1..1) Measurable Software-Related Entity Type<br/>
-Measurable Software-Related Entity (0..*) instance of (1..1) Measurable Software-Related Entity Type<br/>
+<code>Measurable Software-Related Entity (0..*) instance of (1..1) Measurable Software-Related Entity Type<br/>
+Operational Definition of Measure (0..*) indicates (1..1) Measurable Software-Related Entity Type<br/>
 </code><br/>
 <br/><br/>
 
@@ -775,8 +778,8 @@ E.g.:<i> the record of the software-related measure   delivered defects density.
 <br/>
 Relations:<br/>
 <code>Measure Description (0..*) describes (1..1) Software-Related Measure<br/>
-Software Measurement Planning Item (0..*) <>-- (1..1) Measure Description<br/>
 Measures Identification creates Measure Description<br/>
+Software Measurement Planning Item (0..*) <>-- (1..1) Measure Description<br/>
 </code><br/>
 <br/><br/>
 
@@ -962,8 +965,8 @@ Operational Definition of Measure (0..*) indicates (0..1) Organizational Role<br
 Software Measurement Execution (0..*) /performed based on (1..1) Operational Definition of Measure<br/>
 Operational Definition of Measure Establishment creates Operational Definition of Measure<br/>
 Software Measurement Planning Item (0..*) <>-- (1..1) Operational Definition of Measure<br/>
-Software Organization (1..*) establishes (0..*) Operational Definition of Measure<br/>
 Software Measurement Analysis (0..*) is performed according to (0..*) Operational Definition of Measure<br/>
+Software Organization (1..*) establishes (0..*) Operational Definition of Measure<br/>
 </code><br/>
 <br/><br/>
 
@@ -1104,8 +1107,8 @@ Software Measurement Analysis (0..*) \uses (1..*) Measured Value Description<br/
 Software Measurement Analysis (0..*) considers (1..*) Software-Related Measure<br/>
 Software Measurement Analysis (0..*) performed based on (1..*) Software Measurement Planning Item<br/>
 Software Measurement Analysis (1..1) \creates (1..1) Analysis Result Description<br/>
-Software Measurement Process <>-- Software Measurement Analysis<br/>
 Measurement Analyst (1..1) in charge of (1..*) Software Measurement Analysis<br/>
+Software Measurement Process <>-- Software Measurement Analysis<br/>
 </code><br/>
 <br/><br/>
 
@@ -1131,8 +1134,8 @@ Software Measurement Execution (0..*) applies (1..1) Software-Related Measure<br
 Software Measurement Execution (0..*) performed based on (1..1) Software Measurement Planning Item<br/>
 Software Measurement Execution (0..*) /performed based on (1..1) Operational Definition of Measure<br/>
 Software Measurement Execution (1..1) \creates (1..1) Measured Value Description<br/>
-Software Measurement Process <>-- Software Measurement Execution<br/>
 Measurement Executor (1..1) in charge of (1..*) Software Measurement Execution<br/>
+Software Measurement Process <>-- Software Measurement Execution<br/>
 </code><br/>
 <br/><br/>
 
@@ -1179,11 +1182,11 @@ E.g.:<i> the Software Measurement Plan defined for the Organization O.</i><br/>
 Relations:<br/>
 <code>Software Measurement Plan (1..1) <>-- (0..*) Software Measurement Planning Item<br/>
 Software Measurement Plan (1..1) describes (0..*) Software Measurement Planning Item<br/>
-Measurement Planning Start creates Software Measurement Plan<br/>
-Planning Item Documentation changes Software Measurement Plan<br/>
 Software Measurement Execution uses Software Measurement Plan<br/>
 Software Measurement Planning (1..*) produces (1..1) Software Measurement Plan<br/>
+Measurement Planning Start creates Software Measurement Plan<br/>
 Software Measurement Analysis uses Software Measurement Plan<br/>
+Planning Item Documentation changes Software Measurement Plan<br/>
 </code><br/>
 <br/><br/>
 
@@ -1205,8 +1208,8 @@ Software Measurement Planning <>-- Measurement Planning Start<br/>
 Software Measurement Planning <>-- Planning Item Documentation<br/>
 Software Measurement Planning (1..1) produces (1..*) Software Measurement Planning Item<br/>
 Software Measurement Planning (1..*) produces (1..1) Software Measurement Plan<br/>
-Measurement Manager (1..1) in charge of (1..*) Software Measurement Planning<br/>
 Software Measurement Process <>-- Software Measurement Planning<br/>
+Measurement Manager (1..1) in charge of (1..*) Software Measurement Planning<br/>
 </code><br/>
 <br/><br/>
 
@@ -1224,12 +1227,12 @@ Relations:<br/>
 Software Measurement Planning Item (0..*) <>-- (1..1) Measure Description<br/>
 Software Measurement Planning Item (0..*) <>-- (1..1) Information Need Description<br/>
 Software Measurement Planning Item (0..*) <>-- (1..1) Software Measurement Goal Description<br/>
-Planning Item Documentation creates Software Measurement Planning Item<br/>
 Software Measurement Execution (0..*) performed based on (1..1) Software Measurement Planning Item<br/>
 Software Measurement Plan (1..1) <>-- (0..*) Software Measurement Planning Item<br/>
 Software Measurement Plan (1..1) describes (0..*) Software Measurement Planning Item<br/>
 Software Measurement Planning (1..1) produces (1..*) Software Measurement Planning Item<br/>
 Software Measurement Analysis (0..*) performed based on (1..*) Software Measurement Planning Item<br/>
+Planning Item Documentation creates Software Measurement Planning Item<br/>
 </code><br/>
 <br/><br/>
 
@@ -1270,9 +1273,9 @@ Measure used to quantify Measurable Elements of Measurable Software-Related Enti
 E.g.:<i> the software-related measure number of lines of code could be used to quantify the measurable element size of measurable-related entities of the Software type.</i><br/>
 <br/>
 Relations:<br/>
-<code>Operational Definition of Measure (0..*) defined for (1..1) Software-Related Measure<br/>
+<code>Measure Description (0..*) describes (1..1) Software-Related Measure<br/>
 Software Measurement Execution (0..*) applies (1..1) Software-Related Measure<br/>
-Measure Description (0..*) describes (1..1) Software-Related Measure<br/>
+Operational Definition of Measure (0..*) defined for (1..1) Software-Related Measure<br/>
 Software Measurement Analysis (0..*) considers (1..*) Software-Related Measure<br/>
 </code><br/>
 <br/><br/>
@@ -1286,7 +1289,7 @@ Software Measurement Analysis (0..*) considers (1..*) Software-Related Measure<b
       <div class="container-fluid">
         <span class="text-muted">Powered by NEMO.</span>
         <span class="text-muted"><small><b>Reference Software Measurement Ontology (RSMO)</b></small></span>
-        <span class="text-muted"><small>Wed Nov 17 20:04:26 BRT 2021</small></span>		
+        <span class="text-muted"><small>Wed Nov 17 22:47:02 BRT 2021</small></span>		
       </div>
     </footer>
 	   

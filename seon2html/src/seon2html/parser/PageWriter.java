@@ -238,16 +238,27 @@ public class PageWriter {
 					//System.out.println("**CORE LEVEL**");
 					//System.out.println(ontology.getFullName());
 					//System.out.println(ontology.getNetwork());
-					if (ontology.getNetwork().equals(hcion)) {HCIONcore += line + "\n";}
-					else if(ontology.getNetwork().equals(seon)) {SEONcore += line + "\n";}
+					if (ontology.getNetwork().equals(hcion)) {
+						HCIONcore += line + "\n";
+					}
+					else if(ontology.getNetwork().equals(seon)) {
+						SEONcore += line + "\n";
+					}
 					else {
 						System.out.println("Network not found: " + ontology.getNetwork());
 					}
 				}
 				else if (level == OntoLevel.DOMAIN) {
-					//System.out.println("**DOMAIN LEVEL**");
-					if (ontology.getNetwork().equals(hcion)) {HCIONdomain += line + "\n";}
-					else if (ontology.getNetwork().equals(seon)){SEONdomain += line + "\n";}
+					System.out.println("**DOMAIN LEVEL**\n");
+					System.out.println(ontology.getFullName() + " " + ontology.getNetwork() + " " + ontology.getStatus() + " " + ontology.getVersion());
+					System.out.println();
+					if (ontology.getNetwork().equals(hcion)) {
+						HCIONdomain += line + "\n";
+						System.out.println("\n??????? " + ontology.getShortName() + " HCIONdomain" + HCIONdomain);
+					}
+					else if (ontology.getNetwork().equals(seon)) {
+						SEONdomain += line + "\n";
+					}
 					else {
 						System.out.println("Network not found:" + ontology.getNetwork());
 					}
@@ -260,12 +271,13 @@ public class PageWriter {
 		html = html.replace("@SEONdomainOntologies", SEONdomain);
 		html = html.replace("@HCIONcoreOntologies", HCIONcore);
 		html = html.replace("@HCIONdomainOntologies", HCIONdomain);
-		html = html.replace("@version", "SEON Version " + SeonParser.VERSION);
+		html = html.replace("@version", "HCI-ON Version " + SeonParser.VERSION);
 		html = html.replace("@date", (new Date()).toString());
 
 		// Writing the HTML page
 		
 		Utils.stringToFile("./page/menu.html", html);
+		Utils.stringToFile("./page/testemenu.html", html);
 	}
 
 	/* Reads the Network and creates the Stats page. */
@@ -356,7 +368,7 @@ public class PageWriter {
 	private static String networkedOntoURL(String netOnto) {
 		String nourl = "";
 		if (netOnto != null) {
-			System.out.println("********ENTREI AQUII** " + netOnto + "\n");
+			//System.out.println("********ENTREI AQUII** " + netOnto + "\n");
 			switch (netOnto) {
 				case "HCI-ON":
 					nourl = "index.html";
@@ -369,6 +381,24 @@ public class PageWriter {
 					break;
 				case "HCIDO":
 					nourl = "HCIDO.html";
+					break;
+				case "HCIDPO":
+					nourl = "HCIDPO.html";
+					break;
+				case "UCO":
+					nourl = "UCO.html";
+					break;
+				case "CUO":
+					nourl = "CUO.html";
+					break;
+				case "UIT&EO":
+					nourl = "UIT&EO.html";
+					break;
+				case "HCIQCO":
+					nourl = "HCIQCO.html";
+					break;
+				case "HCIMO":
+					nourl = "HCIMO.html";
 					break;
 				case "UFO":
 					nourl = "UFO.html";
@@ -555,8 +585,8 @@ public class PageWriter {
 		html = html.replace("@description", formatDescription(onto.getDefinition()));
 
 		// Ontology Dependencies
-		System.out.println("QUAL Network ______:" + onto.getNetwork());
-		System.out.println("CHAMEI AQUI AGORA ______:" + generateDependenciesTable(onto));
+		//System.out.println("QUAL Network ______:" + onto.getNetwork());
+		//System.out.println("CHAMEI AQUI AGORA ______:" + generateDependenciesTable(onto));
 		html = html.replace("@myontologyDependencies", generateDependenciesTable(onto));
 
 		// Models Sections (subpackages/subontologies)

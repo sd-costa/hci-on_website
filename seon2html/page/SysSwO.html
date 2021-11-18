@@ -92,8 +92,11 @@
 	            <li><a class="dropdown-item" href="HCIDO.html">HCIDO - Human-Computer Interaction Design Ontology</a></li>
 							<li><a class="dropdown-item" href="HCIEO.html">HCIEO - Human-Computer Interaction Evaluation Ontology</a></li>
 							<li><a class="dropdown-item" href="HCIDPO.html">HCIDPO - Human-Computer Interaction Design Process Ontology</a></li>
-
-
+							<li><a class="dropdown-item" href="UIT&EO.html">UIT&EO - UI Types and Elements Ontology</a></li>
+							<li><a class="dropdown-item" href="HCIMO.html">HCIMO - HCI Modality Ontology</a></li>
+							<li><a class="dropdown-item" href="CUO.html">CUO - Context of Use Ontology</a></li>
+							<li><a class="dropdown-item" href="UCO.html">UCO - User Characterization Ontology</a></li>
+							<li><a class="dropdown-item" href="HCIQCO.html">HCIQCO - HCI Quality Characteristics Ontology</a></li>
 	          </ul>
 	        </li>
 
@@ -526,10 +529,10 @@ Software Item representing a set of computer instructions and data definitions e
 <br/>
 Relations:<br/>
 <code>Code (0..*) implements (0..1) Program Specification<br/>
-Code Development creates Code<br/>
-Code Documentation changes Code<br/>
 Program (0..1) constituted of (1..*) Code<br/>
 Code Review uses Code<br/>
+Code Development creates Code<br/>
+Code Documentation changes Code<br/>
 </code><br/>
 <br/><br/>
 
@@ -570,9 +573,9 @@ Hardware Equipment able to run programs, processing, transforming and storing da
 <br/>
 Relations:<br/>
 <code>Computer Machine (0..*) connected to (0..*) Hardware Equipment<br/>
+Loaded Software System Copy (0..*) inheres in (1..1) Computer Machine<br/>
 Computer System (0..*) <>-- (1..*) Computer Machine<br/>
 Loaded Program Copy (0..*) inheres in (1..1) Computer Machine<br/>
-Loaded Software System Copy (0..*) inheres in (1..1) Computer Machine<br/>
 </code><br/>
 <br/><br/>
 
@@ -646,8 +649,8 @@ Artifact Type which is the powertype of Document, classifying its specialization
 E.g.:<i> Requirements Document, Design Specification, Project Plan.</i><br/>
 <br/>
 Relations:<br/>
-<code>Document (0..*) instance of (1..1) Document Type<br/>
-Document Template (0..*) applies to (1..1) Document Type<br/>
+<code>Document Template (0..*) applies to (1..1) Document Type<br/>
+Document (0..*) instance of (1..1) Document Type<br/>
 </code><br/>
 <br/><br/>
 
@@ -662,9 +665,9 @@ E.g.:<i> Computer Dell I7, Laser Printer HP, Smartphone Galaxy 7, Router Linksys
 <br/>
 Relations:<br/>
 <code>Hardware Equipment (0..*) instance of (1..1) Hardware Type<br/>
+Computer System (0..*) <>-- (1..*) Hardware Equipment<br/>
 User Interface <>-- Hardware Equipment<br/>
 Interactive Computer System <>-- Hardware Equipment<br/>
-Computer System (0..*) <>-- (1..*) Hardware Equipment<br/>
 Computer Machine (0..*) connected to (0..*) Hardware Equipment<br/>
 </code><br/>
 <br/><br/>
@@ -710,8 +713,8 @@ Relations:<br/>
 Loaded Program Copy (1..1) constituted by (1..*) Software Function<br/>
 Loaded Program Copy (0..*) inheres in (1..1) Computer Machine<br/>
 Loaded Program Copy (1..*) handles (0..1) User Interface<br/>
-Program Copy Execution (0..*) execution of (1..1) Loaded Program Copy<br/>
 Loaded Software System Copy (1..1) includes (1..*) Loaded Program Copy<br/>
+Program Copy Execution (0..*) execution of (1..1) Loaded Program Copy<br/>
 </code><br/>
 <br/><br/>
 
@@ -790,10 +793,10 @@ Relations:<br/>
 Program Copy Execution (1..1) brings about (1..1) Computing Resulting State<br/>
 Program Copy Execution (1..1) /directly causes (0..*) User Interpretation<br/>
 Program Copy Execution (0..*) /directly causes (0..*) Program Copy Execution<br/>
-Controller (1..1) participates in (1..*) Program Copy Execution<br/>
-Computing Resulting State (0..1) triggers (0..*) Program Copy Execution<br/>
 User Initiated Participation (0..1) /directly causes (0..*) Program Copy Execution<br/>
 User Input Resulting State (0..1) triggers (0..*) Program Copy Execution<br/>
+Controller (1..1) participates in (1..*) Program Copy Execution<br/>
+Computing Resulting State (0..1) triggers (0..*) Program Copy Execution<br/>
 Interactive Computer System Participation (1..1) <>-- (0..*) Program Copy Execution<br/>
 </code><br/>
 <br/><br/>
@@ -811,8 +814,8 @@ Relations:<br/>
 <code>Program Specification (0..*) intends to satisfy (0..*) System Specification<br/>
 Program Specification (0..*) intends to satisfy (1..*) Requirement Artifact<br/>
 Program Specification (0..*) describes (1..*) Software Function Universal<br/>
-Code (0..*) implements (0..1) Program Specification<br/>
 Program (0..1) intends to implement (1..1) Program Specification<br/>
+Code (0..*) implements (0..1) Program Specification<br/>
 </code><br/>
 <br/><br/>
 
@@ -842,13 +845,13 @@ E.g.:<i> a document, a model, a library, an e-mail, a bug.</i><br/>
 Relations:<br/>
 <code>Software Artifact (0..*) instance of (1..1) Sw Artifact Type<br/>
 Software Artifact (0..*) depends on Software Artifact  &lt&ltmaterial&gt&gt<br/>
+Stakeholder (0..*) responsible for (0..*) Software Artifact  &lt&ltmaterial&gt&gt<br/>
 Complex Sw Artifact (0..*) <>-- (2..*) Software Artifact  &lt&ltcomponentOf&gt&gt<br/>
-Document (0..*) describes (0..*) Software Artifact<br/>
-Artifact Participation (0..*) participation of (1..1) Software Artifact<br/>
 Performed Activity (1..1) creates (0..*) Software Artifact  &lt&ltmaterial&gt&gt<br/>
 Performed Activity (0..*) changes (0..*) Software Artifact<br/>
 Performed Activity (0..*) uses (0..*) Software Artifact<br/>
-Stakeholder (0..*) responsible for (0..*) Software Artifact  &lt&ltmaterial&gt&gt<br/>
+Artifact Participation (0..*) participation of (1..1) Software Artifact<br/>
+Document (0..*) describes (0..*) Software Artifact<br/>
 </code><br/>
 <br/><br/>
 
@@ -922,8 +925,8 @@ Software Item that aims at satisfying a specification (System Specification), co
 Relations:<br/>
 <code>Software System (0..*) constituted of (1..*) Program<br/>
 Software System (0..1) intends to implement (1..1) System Specification<br/>
-Software Product (0..1) constituted of (1..*) Software System<br/>
 Loaded Software System Copy (0..*) materialization of (1..1) Software System<br/>
+Software Product (0..1) constituted of (1..*) Software System<br/>
 </code><br/>
 <br/><br/>
 
@@ -986,7 +989,7 @@ Program Specification (0..*) intends to satisfy (0..*) System Specification<br/>
       <div class="container-fluid">
         <span class="text-muted">Powered by NEMO.</span>
         <span class="text-muted"><small><b>System and Software Ontology (SysSwO)</b></small></span>
-        <span class="text-muted"><small>Wed Nov 17 20:04:26 BRT 2021</small></span>		
+        <span class="text-muted"><small>Wed Nov 17 22:47:01 BRT 2021</small></span>		
       </div>
     </footer>
 	   

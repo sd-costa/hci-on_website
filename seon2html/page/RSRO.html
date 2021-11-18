@@ -92,8 +92,11 @@
 	            <li><a class="dropdown-item" href="HCIDO.html">HCIDO - Human-Computer Interaction Design Ontology</a></li>
 							<li><a class="dropdown-item" href="HCIEO.html">HCIEO - Human-Computer Interaction Evaluation Ontology</a></li>
 							<li><a class="dropdown-item" href="HCIDPO.html">HCIDPO - Human-Computer Interaction Design Process Ontology</a></li>
-
-
+							<li><a class="dropdown-item" href="UIT&EO.html">UIT&EO - UI Types and Elements Ontology</a></li>
+							<li><a class="dropdown-item" href="HCIMO.html">HCIMO - HCI Modality Ontology</a></li>
+							<li><a class="dropdown-item" href="CUO.html">CUO - Context of Use Ontology</a></li>
+							<li><a class="dropdown-item" href="UCO.html">UCO - User Characterization Ontology</a></li>
+							<li><a class="dropdown-item" href="HCIQCO.html">HCIQCO - HCI Quality Characteristics Ontology</a></li>
 	          </ul>
 	        </li>
 
@@ -209,7 +212,7 @@
 <area shape="rect" coords="866,309,950,339" href="SysSwO.html#SysSwO_Document" title="Any written or pictorial, uniquely identified, information related to the software development, usually presented in a predefined format.">
 <area shape="rect" coords="441,309,588,339" href="SysSwO.html#SysSwO_Complex+Sw+Artifact" title="Artifact composed of other Artifacts.">
 <area shape="rect" coords="576,309,712,339" href="SysSwO.html#SysSwO_Atomic+Sw+Artifact" title="Artifact that is not decomposed into other Artifacts.">
-<area shape="rect" coords="1078,231,1174,261" href="SPO.html#SPO_Stakeholder" title="Agent (Person, Team or Organization) interested or affected by the process activities or results.">
+<area shape="rect" coords="1079,231,1175,261" href="SPO.html#SPO_Stakeholder" title="Agent (Person, Team or Organization) interested or affected by the process activities or results.">
 <area shape="rect" coords="833,615,1007,645" href="RSRO.html#RSRO_Requirements+Document" title="Document composed of Documented Requirements and related information, as a basis for other technical software processes, including maintenance.">
 <area shape="rect" coords="716,530,867,560" href="RSRO.html#RSRO_Requirement+Artifact" title="Information Item describing a Requirement.">
 <area shape="rect" coords="1072,479,1237,509" href="RSRO.html#RSRO_Requirements+Engineer" title="Stakeholder responsible for conducting the requirements development activities.">
@@ -392,9 +395,9 @@ Quality Universal denoting the types of quality characteristics expected in a so
 E.g.:<i> reliability, usability, efficiency, maintainability, portability.</i><br/>
 <br/>
 Relations:<br/>
-<code>Product Quality Requirement (0..*) refers to (1..1) Quality Characteristic<br/>
+<code>Program (0..*) implements (0..*) Quality Characteristic<br/>
 User Interface Program (0..*) implements (1..*) Quality Characteristic<br/>
-Program (0..*) implements (0..*) Quality Characteristic<br/>
+Product Quality Requirement (0..*) refers to (1..1) Quality Characteristic<br/>
 </code><br/>
 <br/><br/>
 
@@ -426,15 +429,15 @@ E.g.:<i> "The system shall provide a product register.", "The system shall contr
 <br/>
 Relations:<br/>
 <code>Requirement Artifact (0..*) describes (1..1) Requirement<br/>
-Software Design Choice (0..*) /motivated by (0..*) Requirement Artifact<br/>
-Requirements Negotiation and Prioritization changes Requirement Artifact<br/>
-Requirements Elicitation creates Requirement Artifact<br/>
-Conceptual Modeling uses Requirement Artifact<br/>
-Requirements Documentation uses Requirement Artifact<br/>
 Program (0..*) \intends to satisfy (1..*) Requirement Artifact<br/>
 Requirements Document (0..1) <>-- (1..*) Requirement Artifact<br/>
-Requirements Stakeholder (1..*) interested in (1..*) Requirement Artifact  &lt&ltmaterial&gt&gt<br/>
 Program Specification (0..*) intends to satisfy (1..*) Requirement Artifact<br/>
+Conceptual Modeling uses Requirement Artifact<br/>
+Requirements Elicitation creates Requirement Artifact<br/>
+Requirements Stakeholder (1..*) interested in (1..*) Requirement Artifact  &lt&ltmaterial&gt&gt<br/>
+Requirements Negotiation and Prioritization changes Requirement Artifact<br/>
+Requirements Documentation uses Requirement Artifact<br/>
+Software Design Choice (0..*) /motivated by (0..*) Requirement Artifact<br/>
 </code><br/>
 <br/><br/>
 
@@ -450,15 +453,15 @@ E.g.:<i> the Requirements Document of the Alfa Project.</i><br/>
 Relations:<br/>
 <code>Requirements Document (0..1) <>-- (1..*) Requirement Artifact<br/>
 Requirements Document describes Conceptual Model<br/>
-Requirements Engineer (1..*) responsible for (0..*) Requirements Document<br/>
-Requirements Negotiation and Prioritization changes Requirements Document<br/>
-Requirements Verification and Validation uses Requirements Document<br/>
+Coding uses Requirements Document<br/>
 Architectural Design uses Requirements Document<br/>
 Design Evaluation uses Requirements Document<br/>
-Requirements Documentation creates Requirements Document<br/>
 Code Review uses Requirements Document<br/>
 Detailed Design uses Requirements Document<br/>
-Coding uses Requirements Document<br/>
+Requirements Negotiation and Prioritization changes Requirements Document<br/>
+Requirements Verification and Validation uses Requirements Document<br/>
+Requirements Engineer (1..*) responsible for (0..*) Requirements Document<br/>
+Requirements Documentation creates Requirements Document<br/>
 </code><br/>
 <br/><br/>
 
@@ -495,10 +498,10 @@ Relations:<br/>
 Requirements Stakeholder participates in Requirements Negotiation and Prioritization<br/>
 Requirements Stakeholder participates in Requirements Verification and Validation<br/>
 Requirements Stakeholder (1..*) interested in (1..*) Requirement Artifact  &lt&ltmaterial&gt&gt<br/>
-Requirement (0..*) /elicited from (1..*) Requirements Stakeholder<br/>
-Assumption (1..1) /elicited from (1..*) Requirements Stakeholder<br/>
 Stakeholder Belief (0..*) inheres in (1..*) Requirements Stakeholder<br/>
+Assumption (1..1) /elicited from (1..*) Requirements Stakeholder<br/>
 Stakeholder Intention (0..*) inheres in (1..*) Requirements Stakeholder<br/>
+Requirement (0..*) /elicited from (1..*) Requirements Stakeholder<br/>
 </code><br/>
 <br/><br/>
 
@@ -512,10 +515,10 @@ Function Universal denoting the types of functions expected in a software.<br/>
 E.g.:<i> Controlling client orders.</i><br/>
 <br/>
 Relations:<br/>
-<code>Functional Requirement (0..*) refers to (1..1) Software Function Universal<br/>
-Program (0..*) implements (1..*) Software Function Universal<br/>
+<code>Program (0..*) implements (1..*) Software Function Universal<br/>
 Software Function (0..*) instance of (1..*) Software Function Universal<br/>
 Program Specification (0..*) describes (1..*) Software Function Universal<br/>
+Functional Requirement (0..*) refers to (1..1) Software Function Universal<br/>
 </code><br/>
 <br/><br/>
 
@@ -556,7 +559,7 @@ Requirement (1..*) propositional content of (1..*) Stakeholder Intention<br/>
       <div class="container-fluid">
         <span class="text-muted">Powered by NEMO.</span>
         <span class="text-muted"><small><b>Reference Software Requirements Ontology (RSRO)</b></small></span>
-        <span class="text-muted"><small>Wed Nov 17 20:04:26 BRT 2021</small></span>		
+        <span class="text-muted"><small>Wed Nov 17 22:47:02 BRT 2021</small></span>		
       </div>
     </footer>
 	   

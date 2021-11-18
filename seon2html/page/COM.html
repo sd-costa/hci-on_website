@@ -92,8 +92,11 @@
 	            <li><a class="dropdown-item" href="HCIDO.html">HCIDO - Human-Computer Interaction Design Ontology</a></li>
 							<li><a class="dropdown-item" href="HCIEO.html">HCIEO - Human-Computer Interaction Evaluation Ontology</a></li>
 							<li><a class="dropdown-item" href="HCIDPO.html">HCIDPO - Human-Computer Interaction Design Process Ontology</a></li>
-
-
+							<li><a class="dropdown-item" href="UIT&EO.html">UIT&EO - UI Types and Elements Ontology</a></li>
+							<li><a class="dropdown-item" href="HCIMO.html">HCIMO - HCI Modality Ontology</a></li>
+							<li><a class="dropdown-item" href="CUO.html">CUO - Context of Use Ontology</a></li>
+							<li><a class="dropdown-item" href="UCO.html">UCO - User Characterization Ontology</a></li>
+							<li><a class="dropdown-item" href="HCIQCO.html">HCIQCO - HCI Quality Characteristics Ontology</a></li>
 	          </ul>
 	        </li>
 
@@ -651,10 +654,10 @@ E.g.:<i> the information need What is the patient body mass index? could be iden
 <br/>
 Relations:<br/>
 <code>Information Need (1..1) specifies (0..*) Measurement Planning Item<br/>
+Measurable Entity Type (1..1) refers to (0..*) Information Need<br/>
 Measurable Element (1..1) refers to (0..*) Information Need<br/>
 Measure (0..*) meets (0..*) Information Need<br/>
 Information Need Description (0..1) describes (1..1) Information Need<br/>
-Measurable Entity Type (1..1) refers to (0..*) Information Need<br/>
 Measurement Goal (1..*) is identified from (0..*) Information Need<br/>
 </code><br/>
 <br/><br/>
@@ -681,11 +684,11 @@ E.g.:<i> height is a measurable element that characterizes measurable entities o
 Relations:<br/>
 <code>Measurable Element (1..*) characterized by (1..*) Measurable Entity Type<br/>
 Measurable Element (1..1) refers to (0..*) Information Need<br/>
-Operational Definition of Measure (0..*) indicates (1..1) Measurable Element<br/>
-Measure (1..*) used to quantify (1..1) Measurable Element<br/>
-Indirectly Measurable Element (0..*) <>-- (2..*) Measurable Element<br/>
 Measurable Entity (1..*) characterized by (1..*) Measurable Element<br/>
 Measurement (0..*) /measures (1..1) Measurable Element<br/>
+Indirectly Measurable Element (0..*) <>-- (2..*) Measurable Element<br/>
+Operational Definition of Measure (0..*) indicates (1..1) Measurable Element<br/>
+Measure (1..*) used to quantify (1..1) Measurable Element<br/>
 </code><br/>
 <br/><br/>
 
@@ -700,9 +703,9 @@ E.g.:<i> a person, a project, an organization.</i><br/>
 Relations:<br/>
 <code>Measurable Entity (1..*) characterized by (1..*) Measurable Element<br/>
 Measurable Entity (0..*) instance of (1..*) Measurable Entity Type<br/>
-Analysis Result (0..*) characterizes (1..1) Measurable Entity<br/>
 Measurement (0..*) measures (1..1) Measurable Entity<br/>
 Measurement Analysis (0..*) characterizes (1..1) Measurable Entity<br/>
+Analysis Result (0..*) characterizes (1..1) Measurable Entity<br/>
 </code><br/>
 <br/><br/>
 
@@ -716,9 +719,9 @@ E.g.:<i> John is a measurable entity of the type Person.</i><br/>
 <br/>
 Relations:<br/>
 <code>Measurable Entity Type (1..1) refers to (0..*) Information Need<br/>
+Measurable Entity (0..*) instance of (1..*) Measurable Entity Type<br/>
 Measurable Element (1..*) characterized by (1..*) Measurable Entity Type<br/>
 Measure (1..*) used to characterize (1..*) Measurable Entity Type<br/>
-Measurable Entity (0..*) instance of (1..*) Measurable Entity Type<br/>
 </code><br/>
 <br/><br/>
 
@@ -738,13 +741,13 @@ Measure (1..*) used to characterize (1..*) Measurable Entity Type<br/>
 Measure (0..*) correlated to (0..*) Measure<br/>
 Measure (0..*) meets (0..*) Information Need<br/>
 Measure (1..1) specifies (0..*) Measurement Planning Item<br/>
+Derived Measure (0..*) derived from (1..*) Measure<br/>
+Measurement Formula (0..*) uses (1..*) Measure<br/>
+Measurement (0..*) /applies (1..1) Measure<br/>
 Measurement Procedure (1..*) applies to (1..*) Measure<br/>
 HCI Evaluation Criteria (0..*) refers to (0..*) Measure<br/>
-Measurement Analysis Procedure (0..*) applies to (1..*) Measure<br/>
-Measurement (0..*) /applies (1..1) Measure<br/>
-Derived Measure (0..*) derived from (1..*) Measure<br/>
 Measurement Analysis (0..*) considers (1..*) Measure<br/>
-Measurement Formula (0..*) uses (1..*) Measure<br/>
+Measurement Analysis Procedure (0..*) applies to (1..*) Measure<br/>
 </code><br/>
 <br/><br/>
 
@@ -771,10 +774,10 @@ Value obtained in a Measurement.<br/>
 E.g.:<i> the measured value 75 obtained in the measurement of the measurable element weight of the measurable entity John by applying the measure weight in kilos.</i><br/>
 <br/>
 Relations:<br/>
-<code>Measured Value Description (0..1) describes (1..1) Measured Value<br/>
-Measurement (1..1) determines (1..1) Measured Value<br/>
+<code>Measurement (1..1) determines (1..1) Measured Value<br/>
 Measurement Analysis (0..*) analyzes (1..*) Measured Value<br/>
 HCI Evaluation Report (0..*) reports (0..*) Measured Value<br/>
+Measured Value Description (0..1) describes (1..1) Measured Value<br/>
 </code><br/>
 <br/><br/>
 
@@ -809,8 +812,8 @@ Relations:<br/>
 Measurement Analysis (0..*) analyzes (1..*) Measured Value<br/>
 Measurement Analysis (0..*) characterizes (1..1) Measurable Entity<br/>
 Measurement Analysis (0..*) considers (1..1) Measurement Goal<br/>
-Analysis Result (1..1) produces (1..1) Measurement Analysis<br/>
 Measurement Planning Item (1..*) performed based on (0..*) Measurement Analysis<br/>
+Analysis Result (1..1) produces (1..1) Measurement Analysis<br/>
 </code><br/>
 <br/><br/>
 
@@ -824,8 +827,8 @@ E.g.:<i> the measure body mass index in kilos and meters (BMI) can be calculated
 <br/>
 Relations:<br/>
 <code>Measurement Formula (0..*) uses (1..*) Measure<br/>
-Derivative Measurement Procedure (1..*) includes (1..1) Measurement Formula<br/>
 Derived Measure (1..1) calculated by (1..*) Measurement Formula<br/>
+Derivative Measurement Procedure (1..*) includes (1..1) Measurement Formula<br/>
 </code><br/>
 <br/><br/>
 
@@ -842,8 +845,8 @@ Relations:<br/>
 Measurement Goal (1..1) specifies (0..*) Measurement Planning Item<br/>
 Measurement Goal (0..*) based on (1..*) Goal<br/>
 Indicator (1..*) indicates achievement of (1..*) Measurement Goal<br/>
-Analysis Result (0..*) /provides information to monitor (1..1) Measurement Goal<br/>
 Measurement Analysis (0..*) considers (1..1) Measurement Goal<br/>
+Analysis Result (0..*) /provides information to monitor (1..1) Measurement Goal<br/>
 </code><br/>
 <br/><br/>
 
@@ -872,10 +875,10 @@ Relations:<br/>
 <code>Measurement Planning Item (0..*) specifies (1..1) Measurement Procedure<br/>
 Measurement Planning Item (1..1) performed based on (0..*) Measurement<br/>
 Measurement Planning Item (1..*) performed based on (0..*) Measurement Analysis<br/>
-Measure (1..1) specifies (0..*) Measurement Planning Item<br/>
 Measurement Planning (1..1) produces (1..*) Measurement Planning Item<br/>
-Measurement Goal (1..1) specifies (0..*) Measurement Planning Item<br/>
 Information Need (1..1) specifies (0..*) Measurement Planning Item<br/>
+Measure (1..1) specifies (0..*) Measurement Planning Item<br/>
+Measurement Goal (1..1) specifies (0..*) Measurement Planning Item<br/>
 </code><br/>
 <br/><br/>
 
@@ -889,9 +892,9 @@ E.g.:<i> Measurement procedure to collect data for the measure weight in kilos: 
 <br/>
 Relations:<br/>
 <code>Measurement Procedure (1..*) applies to (1..*) Measure<br/>
-Operational Definition of Measure (0..*) indicates (1..1) Measurement Procedure<br/>
-Measurement (0..*) /adopts (1..1) Measurement Procedure<br/>
 Measurement Planning Item (0..*) specifies (1..1) Measurement Procedure<br/>
+Measurement (0..*) /adopts (1..1) Measurement Procedure<br/>
+Operational Definition of Measure (0..*) indicates (1..1) Measurement Procedure<br/>
 </code><br/>
 <br/><br/>
 
@@ -965,7 +968,7 @@ E.g.:<i>  Monitor the patient’s blood pressure.</i><br/>
       <div class="container-fluid">
         <span class="text-muted">Powered by NEMO.</span>
         <span class="text-muted"><small><b>Core Ontology on Measurement (external) (COM)</b></small></span>
-        <span class="text-muted"><small>Wed Nov 17 20:04:26 BRT 2021</small></span>		
+        <span class="text-muted"><small>Wed Nov 17 22:47:01 BRT 2021</small></span>		
       </div>
     </footer>
 	   

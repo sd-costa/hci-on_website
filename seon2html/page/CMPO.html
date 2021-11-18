@@ -92,8 +92,11 @@
 	            <li><a class="dropdown-item" href="HCIDO.html">HCIDO - Human-Computer Interaction Design Ontology</a></li>
 							<li><a class="dropdown-item" href="HCIEO.html">HCIEO - Human-Computer Interaction Evaluation Ontology</a></li>
 							<li><a class="dropdown-item" href="HCIDPO.html">HCIDPO - Human-Computer Interaction Design Process Ontology</a></li>
-
-
+							<li><a class="dropdown-item" href="UIT&EO.html">UIT&EO - UI Types and Elements Ontology</a></li>
+							<li><a class="dropdown-item" href="HCIMO.html">HCIMO - HCI Modality Ontology</a></li>
+							<li><a class="dropdown-item" href="CUO.html">CUO - Context of Use Ontology</a></li>
+							<li><a class="dropdown-item" href="UCO.html">UCO - User Characterization Ontology</a></li>
+							<li><a class="dropdown-item" href="HCIQCO.html">HCIQCO - HCI Quality Characteristics Ontology</a></li>
 	          </ul>
 	        </li>
 
@@ -207,7 +210,7 @@
 <area shape="rect" coords="125,76,314,106" href="SPO.html#SPO_Performed+General+Process" title="The overall Performed Process executed in a specific Project or Organization, which is necessarily composed of Specific Performed Processes.">
 <area shape="rect" coords="229,122,418,152" href="SPO.html#SPO_Performed+Specific+Process" title="Performed Process that is part of the General Performed Process of a Project or Organization, necessarily composed of at least two Performed Activities.">
 <area shape="rect" coords="409,194,546,240" href="SPO.html#SPO_Performed+Activity" title="Action performed, in a specific Time Interval, by a Stakeholder, potentially producing and consuming Artifacts, as part of a Specific Performed Process.">
-<area shape="rect" coords="127,210,223,240" href="SPO.html#SPO_Stakeholder" title="Agent (Person, Team or Organization) interested or affected by the process activities or results.">
+<area shape="rect" coords="128,210,224,240" href="SPO.html#SPO_Stakeholder" title="Agent (Person, Team or Organization) interested or affected by the process activities or results.">
 <area shape="rect" coords="208,463,450,493" href="CMPO.html#CMPO_Configuration+Management+Process" title="Process for conducting the activities related to software configuration management, ensuring the completeness and correctness of software Configuration Items.">
 <area shape="rect" coords="415,671,556,701" href="CMPO.html#CMPO_Change+Requesting" title="Activity for requesting the modification of a set of Configuration Items.">
 <area shape="rect" coords="362,504,611,534" href="CMPO.html#CMPO_Configuration+Management+Planning" title="Activity for planning the Configuration Management Process, including, among others, the Configuration Management System Establishment and the Configuration Items Identification.">
@@ -513,10 +516,10 @@ Artifact whose configuration is being managed.<br/>
 E.g.:<i> Documents, Models, Software Products under Configuration Management.</i><br/>
 <br/>
 Relations:<br/>
-<code>Change Request (CR) (0..*) addresses (1..*) Artifact CI<br/>
-Change Review uses Artifact CI<br/>
-Checkin changes Artifact CI<br/>
+<code>Checkin changes Artifact CI<br/>
 Checkin creates Artifact CI<br/>
+Change Review uses Artifact CI<br/>
+Change Request (CR) (0..*) addresses (1..*) Artifact CI<br/>
 </code><br/>
 <br/><br/>
 
@@ -531,9 +534,9 @@ Copy of an Artifact that is under version control.<br/>
 <br/>
 Relations:<br/>
 <code>Artifact Copy (0..*) based on (1..1) Version<br/>
+Checkin uses Artifact Copy<br/>
 Change Implementation changes Artifact Copy<br/>
 Checkout creates Artifact Copy<br/>
-Checkin uses Artifact Copy<br/>
 </code><br/>
 <br/><br/>
 
@@ -548,9 +551,9 @@ E.g.:<i> Release 01 Baseline, established for the first delivered product for th
 <br/>
 Relations:<br/>
 <code>Baseline (0..*) packages (1..*) Version<br/>
-Release Management and Delivery uses Baseline<br/>
 Configuration Auditing uses Baseline<br/>
 Baseline Establishment creates Baseline<br/>
+Release Management and Delivery uses Baseline<br/>
 </code><br/>
 <br/><br/>
 
@@ -565,10 +568,10 @@ Activity for establishing a Baseline embracing a planned set of Configuration It
 <br/>
 Relations:<br/>
 <code>Baseline Establishment creates Baseline<br/>
+Configuration Manager is in charge of Baseline Establishment<br/>
+Configuration Auditing depends on Baseline Establishment<br/>
 Configuration Management Process <>-- Baseline Establishment<br/>
 Release Management and Delivery depends on Baseline Establishment<br/>
-Configuration Auditing depends on Baseline Establishment<br/>
-Configuration Manager is in charge of Baseline Establishment<br/>
 </code><br/>
 <br/><br/>
 
@@ -600,8 +603,8 @@ Change Accomplishment <>-- Checkin<br/>
 Change Accomplishment depends on Request Evaluation<br/>
 Change Accomplishment uses Evaluated CR<br/>
 Change Accomplishment changes Solved CR<br/>
-Change Control <>-- Change Accomplishment<br/>
 Change Implementer is in charge of Change Accomplishment<br/>
+Change Control <>-- Change Accomplishment<br/>
 Change Review depends on Change Accomplishment<br/>
 </code><br/>
 <br/><br/>
@@ -622,8 +625,8 @@ Change Control <>-- Change Accomplishment<br/>
 Change Control <>-- Change Review<br/>
 Change Control depends on Configuration Management Planning<br/>
 Change Control <>-- Change Request Closing<br/>
-Configuration Management Process <>-- Change Control<br/>
 Configuration Manager participates in Change Control<br/>
+Configuration Management Process <>-- Change Control<br/>
 </code><br/>
 <br/><br/>
 
@@ -639,8 +642,8 @@ Activity for implementing the changes requested and approved for a Configuration
 Relations:<br/>
 <code>Change Implementation changes Artifact Copy<br/>
 Change Implementation depends on Checkout<br/>
-Change Accomplishment <>-- Change Implementation<br/>
 Checkin depends on Change Implementation<br/>
+Change Accomplishment <>-- Change Implementation<br/>
 </code><br/>
 <br/><br/>
 
@@ -728,8 +731,8 @@ Activity for requesting the modification of a set of Configuration Items.<br/>
 Relations:<br/>
 <code>Change Requesting creates Communicated CR<br/>
 Change Control <>-- Change Requesting<br/>
-Change Requester is in charge of Change Requesting<br/>
 Request Evaluation depends on Change Requesting<br/>
+Change Requester is in charge of Change Requesting<br/>
 </code><br/>
 <br/><br/>
 
@@ -746,8 +749,8 @@ Relations:<br/>
 <code>Change Review depends on Change Accomplishment<br/>
 Change Review changes Reviewed CR<br/>
 Change Review uses Artifact CI<br/>
-Change Control <>-- Change Review<br/>
 Change Request Closing depends on Change Review<br/>
+Change Control <>-- Change Review<br/>
 Change Reviewer is in charge of Change Review<br/>
 </code><br/>
 <br/><br/>
@@ -857,9 +860,9 @@ Relations:<br/>
 Configuration Auditing uses Baseline<br/>
 Configuration Auditing uses Deliverable Product<br/>
 Configuration Auditing depends on Baseline Establishment<br/>
-Configuration Management Process <>-- Configuration Auditing<br/>
-Configuration Auditor is in charge of Configuration Auditing<br/>
 Configuration Manager participates in Configuration Auditing<br/>
+Configuration Auditor is in charge of Configuration Auditing<br/>
+Configuration Management Process <>-- Configuration Auditing<br/>
 </code><br/>
 <br/><br/>
 
@@ -933,8 +936,8 @@ Relations:<br/>
 Configuration Management Planning <>-- Configuration Management System Establishment<br/>
 Configuration Management Planning <>-- Configuration Items Identification<br/>
 Change Control depends on Configuration Management Planning<br/>
-Configuration Management Process <>-- Configuration Management Planning<br/>
 Configuration Manager is in charge of Configuration Management Planning<br/>
+Configuration Management Process <>-- Configuration Management Planning<br/>
 </code><br/>
 <br/><br/>
 
@@ -998,8 +1001,8 @@ Software Product ready to be delivered to the client.<br/>
 <br/>
 <br/>
 Relations:<br/>
-<code>Release Management and Delivery creates Deliverable Product<br/>
-Configuration Auditing uses Deliverable Product<br/>
+<code>Configuration Auditing uses Deliverable Product<br/>
+Release Management and Delivery creates Deliverable Product<br/>
 </code><br/>
 <br/><br/>
 
@@ -1013,8 +1016,8 @@ Change Request evaluated and set as authorized or rejected.<br/>
 <br/>
 <br/>
 Relations:<br/>
-<code>Change Accomplishment uses Evaluated CR<br/>
-Request Evaluation changes Evaluated CR<br/>
+<code>Request Evaluation changes Evaluated CR<br/>
+Change Accomplishment uses Evaluated CR<br/>
 </code><br/>
 <br/><br/>
 
@@ -1043,8 +1046,8 @@ Relations:<br/>
 <code>Release Management and Delivery creates Deliverable Product<br/>
 Release Management and Delivery uses Baseline<br/>
 Release Management and Delivery depends on Baseline Establishment<br/>
-Configuration Management Process <>-- Release Management and Delivery<br/>
 Configuration Manager is in charge of Release Management and Delivery<br/>
+Configuration Management Process <>-- Release Management and Delivery<br/>
 </code><br/>
 <br/><br/>
 
@@ -1060,8 +1063,8 @@ Activity for evaluating the Change Request for a set of Configuration Items, aut
 Relations:<br/>
 <code>Request Evaluation changes Evaluated CR<br/>
 Request Evaluation depends on Change Requesting<br/>
-Change Control <>-- Request Evaluation<br/>
 Change Request Evaluator is in charge of Request Evaluation<br/>
+Change Control <>-- Request Evaluation<br/>
 Change Accomplishment depends on Request Evaluation<br/>
 </code><br/>
 <br/><br/>
@@ -1104,8 +1107,8 @@ Each identified release of a Configuration Item submitted to a version control r
 E.g.:<i> Project Plan of Project Alfa, version 01; Requirements Document of Project Alfa, version 03.</i><br/>
 <br/>
 Relations:<br/>
-<code>Configuration Item (CI) (1..1) has (1..*) Version<br/>
-Baseline (0..*) packages (1..*) Version<br/>
+<code>Baseline (0..*) packages (1..*) Version<br/>
+Configuration Item (CI) (1..1) has (1..*) Version<br/>
 Artifact Copy (0..*) based on (1..1) Version<br/>
 </code><br/>
 <br/><br/>
@@ -1119,7 +1122,7 @@ Artifact Copy (0..*) based on (1..1) Version<br/>
       <div class="container-fluid">
         <span class="text-muted">Powered by NEMO.</span>
         <span class="text-muted"><small><b>Configuration Management Process Ontology (CMPO)</b></small></span>
-        <span class="text-muted"><small>Wed Nov 17 20:04:26 BRT 2021</small></span>		
+        <span class="text-muted"><small>Wed Nov 17 22:47:02 BRT 2021</small></span>		
       </div>
     </footer>
 	   

@@ -92,8 +92,11 @@
 	            <li><a class="dropdown-item" href="HCIDO.html">HCIDO - Human-Computer Interaction Design Ontology</a></li>
 							<li><a class="dropdown-item" href="HCIEO.html">HCIEO - Human-Computer Interaction Evaluation Ontology</a></li>
 							<li><a class="dropdown-item" href="HCIDPO.html">HCIDPO - Human-Computer Interaction Design Process Ontology</a></li>
-
-
+							<li><a class="dropdown-item" href="UIT&EO.html">UIT&EO - UI Types and Elements Ontology</a></li>
+							<li><a class="dropdown-item" href="HCIMO.html">HCIMO - HCI Modality Ontology</a></li>
+							<li><a class="dropdown-item" href="CUO.html">CUO - Context of Use Ontology</a></li>
+							<li><a class="dropdown-item" href="UCO.html">UCO - User Characterization Ontology</a></li>
+							<li><a class="dropdown-item" href="HCIQCO.html">HCIQCO - HCI Quality Characteristics Ontology</a></li>
 	          </ul>
 	        </li>
 
@@ -546,8 +549,8 @@ An RRT Program is a Program that is built intending to satisfy at least one Runt
 <br/>
 Relations:<br/>
 <code>RRT Program (0..*) \intends to satisfy (1..*) Runtime Requirement Artifact<br/>
-Target Program (0..*) is target of (1..*) RRT Program<br/>
 Loaded RRT Program Copy (0..*) materialization of (1..1) RRT Program<br/>
+Target Program (0..*) is target of (1..*) RRT Program<br/>
 </code><br/>
 <br/><br/>
 
@@ -588,8 +591,8 @@ Execution State is the Observable State resulting from the Target Program Copy E
 <br/>
 <br/>
 Relations:<br/>
-<code>Target Program Copy Execution (1..1) brings about (1..1) Target Execution State<br/>
-Compliance Program Copy Execution (1..*) monitors (1..*) Target Execution State<br/>
+<code>Compliance Program Copy Execution (1..*) monitors (1..*) Target Execution State<br/>
+Target Program Copy Execution (1..1) brings about (1..1) Target Execution State<br/>
 </code><br/>
 <br/><br/>
 
@@ -630,7 +633,7 @@ Target Program Copy Execution (0..*) execution of (1..1) Loaded Target Program C
       <div class="container-fluid">
         <span class="text-muted">Powered by NEMO.</span>
         <span class="text-muted"><small><b>Runtime Requirements Ontology (RRO)</b></small></span>
-        <span class="text-muted"><small>Wed Nov 17 20:04:26 BRT 2021</small></span>		
+        <span class="text-muted"><small>Wed Nov 17 22:47:02 BRT 2021</small></span>		
       </div>
     </footer>
 	   

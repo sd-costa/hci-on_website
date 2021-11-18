@@ -9,7 +9,9 @@ import com.change_vision.jude.api.inf.model.IPackage;
 public class Ontology extends Package {
 	private String			fullName;
 	private String			shortName;
-	private String			ontoNetwork;
+	/*private String			ontoNetwork;
+	private String			ontoStatus;
+	private String			ontoVersion;*/
 	private List<Concept>	concepts;
 
 	public static enum OntoLevel {
@@ -26,11 +28,13 @@ public class Ontology extends Package {
 		}
 	}
 
-	public Ontology(String name, String fullName, String shortName, String definition, PackType type, int order, IPackage astahPack, String network) {
-		super(name, definition, type, order, astahPack, network);
+	public Ontology(String name, String fullName, String shortName, String definition, PackType type, int order, IPackage astahPack, String network, String status, String version) {
+		super(name, definition, type, order, astahPack, network, status, version);
 		this.fullName = fullName;
 		this.shortName = shortName;
-		this.ontoNetwork = network;
+		/*this.ontoNetwork = network;
+		this.ontoStatus = status;
+		this.ontoVersion = version;*/
 		this.concepts = new ArrayList<Concept>();
 	}
 
@@ -40,10 +44,6 @@ public class Ontology extends Package {
 
 	public String getShortName() {
 		return this.shortName;
-	}
-
-	public String getOntoNetwork() {
-		return this.ontoNetwork;
 	}
 
 	public List<Concept> getConcepts() {

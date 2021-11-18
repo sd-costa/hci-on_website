@@ -22,12 +22,14 @@ public class Package implements Comparable<Package> {
 	private List<Diagram>					diagrams;
 	private IPackage						astahPack;
 	private String 							network;
+	private String 							status;
+	private String 							version;
 
 	public static enum PackType {
 		NETWORK, SUBNETWORK, LEVEL, PACKAGE, ONTOLOGY, SUBONTOLOGY, IGNORE
 	}
 
-	public Package(String name, String definition, PackType type, int order, IPackage astahPack, String network) {
+	public Package(String name, String definition, PackType type, int order, IPackage astahPack, String network, String status, String version) {
 		this.name = name;
 		this.definition = definition;
 		this.type = type;
@@ -37,6 +39,8 @@ public class Package implements Comparable<Package> {
 		this.diagrams = new ArrayList<Diagram>();
 		this.astahPack = astahPack;	
 		this.network = network;
+		this.status = status;
+		this.version = version;
 		
 		packageMap.put(astahPack, this);
 	}
@@ -109,6 +113,14 @@ public class Package implements Comparable<Package> {
 		return this.network;
 	}
 	
+	public String getStatus() {
+		return this.status;
+	}
+
+	public String getVersion() {
+		return this.version;
+	}
+
 	public List<Package> getPacks() {
 		return this.subpacks;
 	}

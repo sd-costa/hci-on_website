@@ -92,8 +92,11 @@
 	            <li><a class="dropdown-item" href="HCIDO.html">HCIDO - Human-Computer Interaction Design Ontology</a></li>
 							<li><a class="dropdown-item" href="HCIEO.html">HCIEO - Human-Computer Interaction Evaluation Ontology</a></li>
 							<li><a class="dropdown-item" href="HCIDPO.html">HCIDPO - Human-Computer Interaction Design Process Ontology</a></li>
-
-
+							<li><a class="dropdown-item" href="UIT&EO.html">UIT&EO - UI Types and Elements Ontology</a></li>
+							<li><a class="dropdown-item" href="HCIMO.html">HCIMO - HCI Modality Ontology</a></li>
+							<li><a class="dropdown-item" href="CUO.html">CUO - Context of Use Ontology</a></li>
+							<li><a class="dropdown-item" href="UCO.html">UCO - User Characterization Ontology</a></li>
+							<li><a class="dropdown-item" href="HCIQCO.html">HCIQCO - HCI Quality Characteristics Ontology</a></li>
 	          </ul>
 	        </li>
 
@@ -206,7 +209,7 @@
 <area shape="rect" coords="20,76,209,106" href="SPO.html#SPO_Performed+General+Process" title="The overall Performed Process executed in a specific Project or Organization, which is necessarily composed of Specific Performed Processes.">
 <area shape="rect" coords="124,122,313,152" href="SPO.html#SPO_Performed+Specific+Process" title="Performed Process that is part of the General Performed Process of a Project or Organization, necessarily composed of at least two Performed Activities.">
 <area shape="rect" coords="303,194,440,240" href="SPO.html#SPO_Performed+Activity" title="Action performed, in a specific Time Interval, by a Stakeholder, potentially producing and consuming Artifacts, as part of a Specific Performed Process.">
-<area shape="rect" coords="21,210,117,240" href="SPO.html#SPO_Stakeholder" title="Agent (Person, Team or Organization) interested or affected by the process activities or results.">
+<area shape="rect" coords="22,210,118,240" href="SPO.html#SPO_Stakeholder" title="Agent (Person, Team or Organization) interested or affected by the process activities or results.">
 <area shape="rect" coords="160,486,275,516" href="DPO.html#DPO_Design+Process" title="Process for defining and specifying a solution to be implemented for a software product, considering the requirements for it. It is a refinement process starting with the software architecture, and going down to the design of its elements, interfaces, and other characteristics of a software, until achieving the design of implementation units.">
 <area shape="rect" coords="252,546,400,576" href="DPO.html#DPO_Architectural+Design" title="Activity for making the high-level design choices, defining the Software Architecture and involved elements.">
 <area shape="rect" coords="252,720,372,750" href="DPO.html#DPO_Detailed+Design" title="Activity for refining a preliminary software design to the extent that it is sufficiently complete to be implemented. [ISO/IEC/IEEE 24765]">
@@ -414,8 +417,8 @@ Architectural Element describing a software module as part of an Architecture.<b
 <br/>
 Relations:<br/>
 <code>Architectural Component (0..1) <>-- (0..*) Architectural Component<br/>
-Architectural Connector (1..*) conects (2..*) Architectural Component<br/>
 Component Design changes Architectural Component<br/>
+Architectural Connector (1..*) conects (2..*) Architectural Component<br/>
 </code><br/>
 <br/><br/>
 
@@ -522,8 +525,8 @@ Information Item describing the high-level choices of how the software will mana
 <br/>
 <br/>
 Relations:<br/>
-<code>Data Design uses Data Definitions<br/>
-Data High-level Design creates Data Definitions<br/>
+<code>Data High-level Design creates Data Definitions<br/>
+Data Design uses Data Definitions<br/>
 </code><br/>
 <br/><br/>
 
@@ -568,8 +571,8 @@ Model containing the physical and logical decisions on how to manage and storage
 E.g.:<i> a database schema.</i><br/>
 <br/>
 Relations:<br/>
-<code>Data Design creates Data Model<br/>
-Design Document depicts Data Model<br/>
+<code>Design Document depicts Data Model<br/>
+Data Design creates Data Model<br/>
 </code><br/>
 <br/><br/>
 
@@ -587,9 +590,9 @@ Relations:<br/>
 Design Document depicts User Interface Specification<br/>
 Design Document depicts Data Model<br/>
 Design Documentation creates Design Document<br/>
+Coding uses Design Document<br/>
 Design Evaluation uses Design Document<br/>
 Code Review uses Design Document<br/>
-Coding uses Design Document<br/>
 </code><br/>
 <br/><br/>
 
@@ -604,9 +607,9 @@ Activity for registering the architectural and detailed design choices and decis
 <br/>
 Relations:<br/>
 <code>Design Documentation creates Design Document<br/>
+Designer participates in Design Documentation<br/>
 Design Process <>-- Design Documentation<br/>
 Software Architect participates in Design Documentation<br/>
-Designer participates in Design Documentation<br/>
 </code><br/>
 <br/><br/>
 
@@ -623,9 +626,9 @@ Relations:<br/>
 <code>Design Evaluation creates Design Evaluation Document<br/>
 Design Evaluation uses Design Document<br/>
 Design Evaluation uses Requirements Document<br/>
+Designer participates in Design Evaluation<br/>
 Design Process <>-- Design Evaluation<br/>
 Software Architect participates in Design Evaluation<br/>
-Designer participates in Design Evaluation<br/>
 </code><br/>
 <br/><br/>
 
@@ -692,8 +695,8 @@ Detailed Design <>-- Data Design<br/>
 Detailed Design <>-- User Interface Design<br/>
 Detailed Design uses Requirements Document<br/>
 Detailed Design uses Software Architecture<br/>
-Design Process <>-- Detailed Design<br/>
 Designer is in charge of Detailed Design<br/>
+Design Process <>-- Detailed Design<br/>
 </code><br/>
 <br/><br/>
 
@@ -722,8 +725,8 @@ Information Item describing an internal or external interface of a software arch
 <br/>
 <br/>
 Relations:<br/>
-<code>Architectural Element (1..1) has (1..*) Interface Specification<br/>
-Component Interface Design changes Interface Specification<br/>
+<code>Component Interface Design changes Interface Specification<br/>
+Architectural Element (1..1) has (1..*) Interface Specification<br/>
 Interface High-level Design creates Interface Specification<br/>
 </code><br/>
 <br/><br/>
@@ -800,7 +803,7 @@ User Interface Design creates User Interface Specification<br/>
       <div class="container-fluid">
         <span class="text-muted">Powered by NEMO.</span>
         <span class="text-muted"><small><b>Design Process Ontology (DPO)</b></small></span>
-        <span class="text-muted"><small>Wed Nov 17 20:04:26 BRT 2021</small></span>		
+        <span class="text-muted"><small>Wed Nov 17 22:47:02 BRT 2021</small></span>		
       </div>
     </footer>
 	   

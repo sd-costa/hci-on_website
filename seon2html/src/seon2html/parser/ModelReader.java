@@ -30,7 +30,8 @@ public class ModelReader {
 			IModel model = accessor.getProject();
 
 			// Creating the network main package (seon).
-			seon = new Package(model.getName(), model.getDefinition(), PackType.PACKAGE, 0, (IPackage) model,"\0");
+			//seon = new Package(model.getName(), model.getDefinition(), PackType.PACKAGE, 0, (IPackage) model,"\0");
+			seon = new Package(model.getName(), model.getDefinition(), PackType.PACKAGE, 0, (IPackage) model, "\0", "\0", "\0");
 
 			// Reading the model information (Packages and Concepts, Depencencies, Generalizations, Relations)
 			System.out.println("\n# Parsing the Network Packages and Concepts");
@@ -67,16 +68,20 @@ public class ModelReader {
 					String definition = elem.getDefinition();
 					String sorder = elem.getTaggedValue("Order");
 					String network = elem.getTaggedValue("Network");
+					String status = elem.getTaggedValue("Status");
+					String version = elem.getTaggedValue("Version");
 					System.out.println("name:["+ packName+"]");
-					System.out.println("Network:["+network+"]");
+					System.out.println(" Network:["+network+"]");
+					System.out.println(" Status:["+status+"]");
+					System.out.println(" Version:["+version+"]");
 					int order = 100;
 					if (!sorder.isEmpty()) order = Integer.valueOf(sorder);
 
 					// Creates a Package or a Ontology
 					if (type == PackType.LEVEL || type == PackType.PACKAGE || type == PackType.SUBNETWORK || type == PackType.NETWORK ) {
-						pack = new Package(packName, definition, type, order, (IPackage) elem, network);
+						pack = new Package(packName, definition, type, order, (IPackage) elem, network, status, version);
 					} else if (type == PackType.ONTOLOGY || type == PackType.SUBONTOLOGY) {
-						pack = new Ontology(packName, fullName, shortName, definition, type, order, (IPackage) elem, network);
+						pack = new Ontology(packName, fullName, shortName, definition, type, order, (IPackage) elem, network, status, version);
 					}
 
 
