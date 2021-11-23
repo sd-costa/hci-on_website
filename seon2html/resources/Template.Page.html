@@ -18,7 +18,7 @@
 	    <!-- Custom styles for this template -->
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/navbar-top-fixed.css" rel="stylesheet">
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/sticky-footer-navbar.css" rel="stylesheet">
-	       
+	    <link href="../resources/static/bootstrap-5.1.3-dist/css/carousel.css" rel="stylesheet">
 
 	    <style>
 	      .bd-placeholder-img {
@@ -36,7 +36,7 @@
 	        }
 	      }
 
-	      .h1, h1 {
+	      .h2, .h3, h2, h3 {
 	      	margin-bottom: 2.5rem;
 	      }
 
@@ -44,6 +44,9 @@
 	      	font-size: 2rem;
 	      }
 
+	      .featurette-heading {
+	        margin-top: 0;
+	      }
 	    </style>
 
 	    
@@ -131,7 +134,7 @@
 	            @onto
 	          </a>
 	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item" href="#ontologydescription" >Ontology Description</a></li>
+	            <li><a class="dropdown-item" href="#ontologydescription">Ontology Description</a></li>
 	            <li><a class="dropdown-item" href="#relatedontologies">Related Ontologies</a></li>
 	            <li><a class="dropdown-item" href="#ontologymodels">Ontology Models</a></li>
 	            <li><a class="dropdown-item" href="#conceptsdefinition">Concepts Definition</a></li>
@@ -157,21 +160,27 @@
 
 		<!-- Begin page content -->
     <main role="main" class="container-fluid">	
-    		@additionalinfo
+    		
 				<!--<div class="bg-light p-5 rounded" id="ontologydescription">
     			<h1 class="featurette-heading">The @title</h1>
 					<p class="lead" align="justify"><span class="text-muted font-weight-bold font-italic">Ontology Description. </span>@description</p>
 					<p class="lead text-right text-muted font-italic">@onto_level</p>
     		</div>-->
 
-				<div class="bg-light p-5 rounded" id="ontologydescription">
+				<div class="bg-light p-5 rounded">
+					@additionalinfo
     			<h1 class="featurette-heading">The @title</h1>
-    				<h2 class="featurette-heading d-inline font-italic">Ontology Description. </h2>
-    				<p class="lead d-inline" align="justify">@description</p>
-    				<p class="lead text-right text-muted font-italic">@onto_level</p>
+    			<p class="lead text-right text-muted font-italic">@onto_level</p>
+    		</div>
+	
+				<hr> 
+				   		
+    		<div class="p-5 rounded" id="ontologydescription">
+  				<h2 class="featurette-heading">1. Ontology Description</h2>
+  				<p class="lead" align="justify">@description</p>
     		</div>
 
-				<hr class="featurette-divider">
+				<hr>
 
 				<div class="p-5 rounded" id="relatedontologies">
 					<h2 class="featurette-heading">2. Related Ontologies</h2>
@@ -194,20 +203,36 @@
 
 				</div>	
 
-				<hr class="featurette-divider">
+				<hr>
     	
 				<div class="p-5 rounded" id="ontologymodels">
 					<h2 class="featurette-heading">3. Ontology Models</h2>
 					<p class="lead">@sectionContent</p>					
 				</div>
 
-				<hr class="featurette-divider">
+				<hr>
 
 				<div class="p-5 rounded" id="conceptsdefinition">
 					<h2 class="featurette-heading">4. Concepts Definition</h2>
 					<p class="lead">The following table shows the definitions for @onto concepts.</p>		
 					<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->				
-					<table style="width: 100%" border="1" cellpadding="6">
+					<div class="table-responsive">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th scope="col">Concept</th>
+									<th scope="col">Definition</th>
+								</tr>
+							</thead>
+							<tbody>
+								@conceptDefinitions
+							</tbody>
+						</table>
+  				</div>
+
+
+
+				<!--	<table style="width: 100%" border="1" cellpadding="6">
 						<tbody>
 							<tr style="background-color: #D8D8D8">
 								<td style="width: 25%"><b>Concept</b></td>
@@ -215,24 +240,31 @@
 							</tr>
 							@conceptDefinitions
 						</tbody>
-					</table>
+					</table>-->
 
 				</div>
 
-				<hr class="featurette-divider">		
+				<hr>		
 
-				<div class="container p-5 rounded" id="detailedconcepts">
+				<div class="p-5 rounded" id="detailedconcepts">
 					<h2 class="featurette-heading">5. Detailed Concepts</h2>
-					<p class="lead">@detailedConcepts</p>					
+					<p class="lead">@title detailed concepts.</p>					
+					@detailedConcepts
 				</div>
 				
 			</main>
 	
-    <footer class="footer">
-      <div class="container-fluid">
-        <span class="text-muted">Powered by NEMO.</span>
-        <span class="text-muted"><small><b>@title</b></small></span>
-        <span class="text-muted"><small>@date</small></span>		
+    <footer class="p-5 rounded border-top">
+      <div class="row justify-content-md-center">
+      	<div class="col-md-auto">
+      		  <h5>Powered by NEMO.</h5>
+      	</div>
+      	<div class="col-md-auto">
+      		<h5>@title</h5>
+      	</div>
+      	<div class="col-md-auto">
+      		<span class="text-muted"><small>@date</small></span>	
+      	</div>
       </div>
     </footer>
 	   

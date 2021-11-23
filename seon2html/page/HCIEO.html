@@ -18,7 +18,7 @@
 	    <!-- Custom styles for this template -->
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/navbar-top-fixed.css" rel="stylesheet">
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/sticky-footer-navbar.css" rel="stylesheet">
-	       
+	    <link href="../resources/static/bootstrap-5.1.3-dist/css/carousel.css" rel="stylesheet">
 
 	    <style>
 	      .bd-placeholder-img {
@@ -36,7 +36,7 @@
 	        }
 	      }
 
-	      .h1, h1 {
+	      .h2, .h3, h2, h3 {
 	      	margin-bottom: 2.5rem;
 	      }
 
@@ -44,6 +44,9 @@
 	      	font-size: 2rem;
 	      }
 
+	      .featurette-heading {
+	        margin-top: 0;
+	      }
 	    </style>
 
 	    
@@ -131,7 +134,7 @@
 	            HCIEO
 	          </a>
 	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item" href="#ontologydescription" >Ontology Description</a></li>
+	            <li><a class="dropdown-item" href="#ontologydescription">Ontology Description</a></li>
 	            <li><a class="dropdown-item" href="#relatedontologies">Related Ontologies</a></li>
 	            <li><a class="dropdown-item" href="#ontologymodels">Ontology Models</a></li>
 	            <li><a class="dropdown-item" href="#conceptsdefinition">Concepts Definition</a></li>
@@ -157,21 +160,27 @@
 
 		<!-- Begin page content -->
     <main role="main" class="container-fluid">	
-    		<div class="container-fluid d-flex justify-content-end"><span class="badge badge-primary">Version 1.0</span></div>
+    		
 				<!--<div class="bg-light p-5 rounded" id="ontologydescription">
     			<h1 class="featurette-heading">The Human-Computer Interaction Evaluation Ontology (HCIEO)</h1>
 					<p class="lead" align="justify"><span class="text-muted font-weight-bold font-italic">Ontology Description. </span>The Human-Computer Interaction Evaluation Ontology (HCIEO), a reference ontology that aims to provide a common conceptualization of HCI Evaluation and is a domain ontology of HCI-ON.<br/><br/>The purpose of the HCI Evaluation Ontology (HCIEO) is to establish an explicit and shared conceptualization of HCI evaluation by means of a human-centred design view, describing the main concepts involved in this context.<br/><br/>HCIEO covers relevant aspects of the HCI evaluation, such as the main involved artifacts, considered evaluation criteria, evaluated characteristics, involved agents and measures that can be used to evaluate an interactive computer system.</p>
-					<p class="lead text-right text-muted font-italic">- domain ontology from HCI-ON. </p>
+					<p class="lead text-right text-muted font-italic"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"><path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg> domain ontology from HCI-ON</p>
     		</div>-->
 
-				<div class="bg-light p-5 rounded" id="ontologydescription">
+				<div class="bg-light p-5 rounded">
+					<div class="container-fluid d-flex justify-content-end"><span class="badge badge-dark">version 1.0</span></div>
     			<h1 class="featurette-heading">The Human-Computer Interaction Evaluation Ontology (HCIEO)</h1>
-    				<h2 class="featurette-heading d-inline font-italic">Ontology Description. </h2>
-    				<p class="lead d-inline" align="justify">The Human-Computer Interaction Evaluation Ontology (HCIEO), a reference ontology that aims to provide a common conceptualization of HCI Evaluation and is a domain ontology of HCI-ON.<br/><br/>The purpose of the HCI Evaluation Ontology (HCIEO) is to establish an explicit and shared conceptualization of HCI evaluation by means of a human-centred design view, describing the main concepts involved in this context.<br/><br/>HCIEO covers relevant aspects of the HCI evaluation, such as the main involved artifacts, considered evaluation criteria, evaluated characteristics, involved agents and measures that can be used to evaluate an interactive computer system.</p>
-    				<p class="lead text-right text-muted font-italic">- domain ontology from HCI-ON. </p>
+    			<p class="lead text-right text-muted font-italic"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"><path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg> domain ontology from HCI-ON</p>
+    		</div>
+	
+				<hr> 
+				   		
+    		<div class="p-5 rounded" id="ontologydescription">
+  				<h2 class="featurette-heading">1. Ontology Description</h2>
+  				<p class="lead" align="justify">The Human-Computer Interaction Evaluation Ontology (HCIEO), a reference ontology that aims to provide a common conceptualization of HCI Evaluation and is a domain ontology of HCI-ON.<br/><br/>The purpose of the HCI Evaluation Ontology (HCIEO) is to establish an explicit and shared conceptualization of HCI evaluation by means of a human-centred design view, describing the main concepts involved in this context.<br/><br/>HCIEO covers relevant aspects of the HCI evaluation, such as the main involved artifacts, considered evaluation criteria, evaluated characteristics, involved agents and measures that can be used to evaluate an interactive computer system.</p>
     		</div>
 
-				<hr class="featurette-divider">
+				<hr>
 
 				<div class="p-5 rounded" id="relatedontologies">
 					<h2 class="featurette-heading">2. Related Ontologies</h2>
@@ -202,7 +211,7 @@
 
 				</div>	
 
-				<hr class="featurette-divider">
+				<hr>
     	
 				<div class="p-5 rounded" id="ontologymodels">
 					<h2 class="featurette-heading">3. Ontology Models</h2>
@@ -464,13 +473,83 @@ Summative evaluation: evaluation designed to present conclusions about the merit
 </p>					
 				</div>
 
-				<hr class="featurette-divider">
+				<hr>
 
 				<div class="p-5 rounded" id="conceptsdefinition">
 					<h2 class="featurette-heading">4. Concepts Definition</h2>
 					<p class="lead">The following table shows the definitions for HCIEO concepts.</p>		
 					<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->				
-					<table style="width: 100%" border="1" cellpadding="6">
+					<div class="table-responsive">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th scope="col">Concept</th>
+									<th scope="col">Definition</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+<td><a name="HCIEO_HCI+Evaluation"><b>HCI Evaluation</b></a>
+<a href=#HCIEO_HCI+Evaluation_detail><img src="images/plus-4-16.ico"></a></td>
+<td>HCI Evaluation: Intentional Event (Complex Action) caused by the HCI Evaluator Intention. Systematic determination of the extent to which an Human-Computer Interaction meets its HCI Evaluation criteria<br/>________________________<br/>ISO 9241-220: 2019<br/>Evaluation: systematic determination of the extent to which an entity meets its specified criteria<br/><br/>ISO 9241-220: 2019<br/>Inspection-based evaluation: evaluation based on the judgment of one or more evaluator(s) who examine or use a system to identify potential usability problemas and/or deviations from established criteria<br/><br/>Note: inspection-based evaluation is a generic ter for methods that include, but are not limited to, heuristic evaluation, cognitive walkthroughs, standards inspection, pluralistic walkthroughs, and consistency inspections<br/><br/>ISO 25066:2019<br/>Inspection-based evaluation: evaluation based on the judgment of one or more evaluator(s) who examine or use a system to identify potential usability problems (including deviations from established criteria).<br/><br/>Note: The evaluators making the inspections typically are usability specialists but can also include end users and members of the design team.<br/><br/>ISO 9241-220: 2019<br/>User-based evaluation: evaluation that involves representative users performing tasks with the system to enable identification of human-centred quality problems and/or measurements of efficiency, effectiveness, user satisfaction or other user experiences<br/><br/>ISO 25066:2019<br/>User-based evaluation: evaluation that involves representative users performing tasks with the system to enable identification of usability problems and/or measurements of efficiency, effectiveness, user satisfaction or other user experiences<br/><br/>ISO 25066:2019<br/>Usability problem: situation during use resulting in poor effectiveness, efficiency or satisfaction<br/><br/>ISO 25066:2019<br/>Usability defect: product attribute(s) that lead(s) to a mismatch between user intentions and/or user actions and the system attributes and behavior<br/><br/>Note 1: typical usability defects include the following: additional unnecessary steps not required as part of completing a task; misleading information; insufficient and/or poor information on the user interface; unexpected system responses; limitations in navigation; inefficient use error recovery mechanism; physical characteristics of the user interface that are not suitable for the physical characteristics of the user.<br/><br/>Note 2: Deviations of product attributes of the object of evaluation from established criteria are also usability defects.<br/><br/>ISO 9241-220: 2019<br/>Human-centred quality: extent to which requirements for usability, accessibility, user experience and avoidance of harm from user are met.<br/><br/>Note 1: Human-centred quality is a collective term for the intended outcomes of interaction of the user with the system<br/><br/>ISO 25060: 2010<br/>Usability objective: stated level of usability expressed in terms of effectiveness, efficiency and satisfaction in a specified context of use which can be verified<br/><br/>Note: usability objectives can be stated as user requirements, in which case the level to be achieved is a usability requirement, or they can be stated as desired "target levels" depending on their use in design and evaluation<br/><br/>ISO 25060: 2010<br/>Usability inspection: evaluation based on the considered judgment of evaluators who examine the usability-related aspects of an interface with respect to specified criteria<br/><br/>Note: usability inspection is the generic term for several methods, including but not limited to heuristic evaluation, cognitive walkthroughs, standards inspection, pluralistic walkthroughs, and consistency inspections.<br/><br/>ISO 25060: 2010<br/>usability testing: evaluation that involves representative users performing specific tasks with the system to enable the measurement of efficiency, effectiveness, and/or user satisfaction<br/><br/>ISO 25060: 2010<br/>usability-walkthrough: usability evaluation in which one or more evaluators step through a scenario playing the role of a user and identifying usability problems associated with successful completion of the scenario.<br/><br/>ISO/IEC 14598-5:1998<br/>Evaluation method: a procedure describing the action to be performed by the evaluator in order to obtain the result for the specified measurement or verification applied on the specified product components or on the product as a whole<br/><br/>ISO/TR 16982: 2002<br/>usability method: method supporting human-centred design used for the purpose of increasing the usability of a product or a system<br/><br/>ISO/TS 18152:2010<br/>Formative evaluation: evaluation designed and used to improve the object of evaluation, especially when it is still being developed<br/><br/>ISO/TS 18152:2010<br/>Summative evaluation: evaluation designed to present conclusions about the merit or worth of the object of evaluation and recommendations about whether it should be retained, altered or eliminated<br/>
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIEO_HCI+Evaluation+Artifact"><b>HCI Evaluation Artifact</b></a>
+<a href=#HCIEO_HCI+Evaluation+Artifact_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIEO_HCI+Evaluation+Criteria"><b>HCI Evaluation Criteria</b></a>
+<a href=#HCIEO_HCI+Evaluation+Criteria_detail><img src="images/plus-4-16.ico"></a></td>
+<td>HCI Evaluation Criteria: Evaluation criteria specified according to the HCI Evaluation Goal of a certain HCI Evaluation.<br/>____________<br/>ISO 9241-220:2019<br/>Typically include user requirements, usability guidelines in standards, design conventions contained in manufacturer guidelines and style guides, task models to be supported as well as standardized principles (ISO 9241-220:2019). Could be related to software or hardware evaluation.<br/>The evaluative criteria can include good practice and/or documented principles, guidelines, requirements or standards (ISO/TR 25060:2010).
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIEO_HCI+Evaluation+Method"><b>HCI Evaluation Method</b></a>
+<a href=#HCIEO_HCI+Evaluation+Method_detail><img src="images/plus-4-16.ico"></a></td>
+<td>HCI Evaluation Methods: a procedure describing the actions to be perfomed by the evaluator in an HCI Evaluation.<br/><br/>______<br/>ISO/IEC 14598-5:1998<br/>Evaluation method: a procedure describing the action to be performed by the evaluator in order to obtain the result for the specified measurement or verification applied on the specified product components or on the product as a whole<br/><br/>ISO/TR 16982: 2002<br/>usability method: method supporting human-centred design used for the purpose of increasing the usability of a product or a system<br/>
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIEO_HCI+Evaluation+Report"><b>HCI Evaluation Report</b></a>
+<a href=#HCIEO_HCI+Evaluation+Report_detail><img src="images/plus-4-16.ico"></a></td>
+<td>HCI Evaluation Report: Document that presents evaluation results and other information relevant to an evaluation<br/>_____________<br/>ISO/IEC 14698-5:1998<br/>Evaluation report: Document that presents evaluation results and other information relevant to an evaluation<br/>The content of evaluation reports can vary based on the objectives of the evaluation (ISO/IEC TR 25060:2010).
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIEO_HCI+Evaluator"><b>HCI Evaluator</b></a>
+<a href=#HCIEO_HCI+Evaluator_detail><img src="images/plus-4-16.ico"></a></td>
+<td>HCI Evaluator: individual or organization (Stakeholder) that performs an evaluation (ISO/IEC 25040:2011).<br/>______________<br/>Can include usability specialists, developers, end users or other types of professionals (ISO/TR 25060:2010)
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIEO_HCI+Evaluator+Goal"><b>HCI Evaluator Goal</b></a>
+<a href=#HCIEO_HCI+Evaluator+Goal_detail><img src="images/plus-4-16.ico"></a></td>
+<td>The propositional content of something the HCI Evaluator wants to achieve (HCI Evaluator Intention) by perfoming an HCI Evaluation. E.g., measure the usability of an User Interface being used by the users.
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIEO_HCI+Evaluator+Intention"><b>HCI Evaluator Intention</b></a>
+<a href=#HCIEO_HCI+Evaluator+Intention_detail><img src="images/plus-4-16.ico"></a></td>
+<td>An Intention that inheres in a HCI Evaluator, causing him to perform intentional HCI Evaluation. E.g., the intention to evaluate an interactive computer system.  
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIEO_HCI+Quality+Characteristic"><b>HCI Quality Characteristic</b></a>
+<a href=#HCIEO_HCI+Quality+Characteristic_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Quality Characteristics: are qualities that inheres in Human-Computer Interaction. Ex.: the UI usability, the user performance.<br/>Quality Characteristics inheres in both interactive computer software and hardware that constitutes the Interactive Computer System. Ex: usability of a interactive software system (software), screen size of a smart watch (hardware), among others.<br/>The Quality Characteristic can be considered for the whole Interactive Computer System or part of it, e.g., its User Interface, Input Equipment.<br/>____________<br/>Usability can be considered at various levels of scope and complexity (from an entire complex system to individual components of a system, product, service or environment) (ISO 9241-11:2018).<br/>For complex products, usability can be considered for the whole product or part of the product (ISO 9241-11:2018).
+<br/></td>
+</tr>
+
+							</tbody>
+						</table>
+  				</div>
+
+
+
+				<!--	<table style="width: 100%" border="1" cellpadding="6">
 						<tbody>
 							<tr style="background-color: #D8D8D8">
 								<td style="width: 25%"><b>Concept</b></td>
@@ -478,77 +557,70 @@ Summative evaluation: evaluation designed to present conclusions about the merit
 							</tr>
 							<tr>
 <td><a name="HCIEO_HCI+Evaluation"><b>HCI Evaluation</b></a>
-<a href=#HCIEO_HCI+Evaluation_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIEO_HCI+Evaluation_detail><img src="images/plus-4-16.ico"></a></td>
 <td>HCI Evaluation: Intentional Event (Complex Action) caused by the HCI Evaluator Intention. Systematic determination of the extent to which an Human-Computer Interaction meets its HCI Evaluation criteria<br/>________________________<br/>ISO 9241-220: 2019<br/>Evaluation: systematic determination of the extent to which an entity meets its specified criteria<br/><br/>ISO 9241-220: 2019<br/>Inspection-based evaluation: evaluation based on the judgment of one or more evaluator(s) who examine or use a system to identify potential usability problemas and/or deviations from established criteria<br/><br/>Note: inspection-based evaluation is a generic ter for methods that include, but are not limited to, heuristic evaluation, cognitive walkthroughs, standards inspection, pluralistic walkthroughs, and consistency inspections<br/><br/>ISO 25066:2019<br/>Inspection-based evaluation: evaluation based on the judgment of one or more evaluator(s) who examine or use a system to identify potential usability problems (including deviations from established criteria).<br/><br/>Note: The evaluators making the inspections typically are usability specialists but can also include end users and members of the design team.<br/><br/>ISO 9241-220: 2019<br/>User-based evaluation: evaluation that involves representative users performing tasks with the system to enable identification of human-centred quality problems and/or measurements of efficiency, effectiveness, user satisfaction or other user experiences<br/><br/>ISO 25066:2019<br/>User-based evaluation: evaluation that involves representative users performing tasks with the system to enable identification of usability problems and/or measurements of efficiency, effectiveness, user satisfaction or other user experiences<br/><br/>ISO 25066:2019<br/>Usability problem: situation during use resulting in poor effectiveness, efficiency or satisfaction<br/><br/>ISO 25066:2019<br/>Usability defect: product attribute(s) that lead(s) to a mismatch between user intentions and/or user actions and the system attributes and behavior<br/><br/>Note 1: typical usability defects include the following: additional unnecessary steps not required as part of completing a task; misleading information; insufficient and/or poor information on the user interface; unexpected system responses; limitations in navigation; inefficient use error recovery mechanism; physical characteristics of the user interface that are not suitable for the physical characteristics of the user.<br/><br/>Note 2: Deviations of product attributes of the object of evaluation from established criteria are also usability defects.<br/><br/>ISO 9241-220: 2019<br/>Human-centred quality: extent to which requirements for usability, accessibility, user experience and avoidance of harm from user are met.<br/><br/>Note 1: Human-centred quality is a collective term for the intended outcomes of interaction of the user with the system<br/><br/>ISO 25060: 2010<br/>Usability objective: stated level of usability expressed in terms of effectiveness, efficiency and satisfaction in a specified context of use which can be verified<br/><br/>Note: usability objectives can be stated as user requirements, in which case the level to be achieved is a usability requirement, or they can be stated as desired "target levels" depending on their use in design and evaluation<br/><br/>ISO 25060: 2010<br/>Usability inspection: evaluation based on the considered judgment of evaluators who examine the usability-related aspects of an interface with respect to specified criteria<br/><br/>Note: usability inspection is the generic term for several methods, including but not limited to heuristic evaluation, cognitive walkthroughs, standards inspection, pluralistic walkthroughs, and consistency inspections.<br/><br/>ISO 25060: 2010<br/>usability testing: evaluation that involves representative users performing specific tasks with the system to enable the measurement of efficiency, effectiveness, and/or user satisfaction<br/><br/>ISO 25060: 2010<br/>usability-walkthrough: usability evaluation in which one or more evaluators step through a scenario playing the role of a user and identifying usability problems associated with successful completion of the scenario.<br/><br/>ISO/IEC 14598-5:1998<br/>Evaluation method: a procedure describing the action to be performed by the evaluator in order to obtain the result for the specified measurement or verification applied on the specified product components or on the product as a whole<br/><br/>ISO/TR 16982: 2002<br/>usability method: method supporting human-centred design used for the purpose of increasing the usability of a product or a system<br/><br/>ISO/TS 18152:2010<br/>Formative evaluation: evaluation designed and used to improve the object of evaluation, especially when it is still being developed<br/><br/>ISO/TS 18152:2010<br/>Summative evaluation: evaluation designed to present conclusions about the merit or worth of the object of evaluation and recommendations about whether it should be retained, altered or eliminated<br/>
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIEO_HCI+Evaluation+Artifact"><b>HCI Evaluation Artifact</b></a>
-<a href=#HCIEO_HCI+Evaluation+Artifact_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIEO_HCI+Evaluation+Artifact_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIEO_HCI+Evaluation+Criteria"><b>HCI Evaluation Criteria</b></a>
-<a href=#HCIEO_HCI+Evaluation+Criteria_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIEO_HCI+Evaluation+Criteria_detail><img src="images/plus-4-16.ico"></a></td>
 <td>HCI Evaluation Criteria: Evaluation criteria specified according to the HCI Evaluation Goal of a certain HCI Evaluation.<br/>____________<br/>ISO 9241-220:2019<br/>Typically include user requirements, usability guidelines in standards, design conventions contained in manufacturer guidelines and style guides, task models to be supported as well as standardized principles (ISO 9241-220:2019). Could be related to software or hardware evaluation.<br/>The evaluative criteria can include good practice and/or documented principles, guidelines, requirements or standards (ISO/TR 25060:2010).
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIEO_HCI+Evaluation+Method"><b>HCI Evaluation Method</b></a>
-<a href=#HCIEO_HCI+Evaluation+Method_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIEO_HCI+Evaluation+Method_detail><img src="images/plus-4-16.ico"></a></td>
 <td>HCI Evaluation Methods: a procedure describing the actions to be perfomed by the evaluator in an HCI Evaluation.<br/><br/>______<br/>ISO/IEC 14598-5:1998<br/>Evaluation method: a procedure describing the action to be performed by the evaluator in order to obtain the result for the specified measurement or verification applied on the specified product components or on the product as a whole<br/><br/>ISO/TR 16982: 2002<br/>usability method: method supporting human-centred design used for the purpose of increasing the usability of a product or a system<br/>
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIEO_HCI+Evaluation+Report"><b>HCI Evaluation Report</b></a>
-<a href=#HCIEO_HCI+Evaluation+Report_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIEO_HCI+Evaluation+Report_detail><img src="images/plus-4-16.ico"></a></td>
 <td>HCI Evaluation Report: Document that presents evaluation results and other information relevant to an evaluation<br/>_____________<br/>ISO/IEC 14698-5:1998<br/>Evaluation report: Document that presents evaluation results and other information relevant to an evaluation<br/>The content of evaluation reports can vary based on the objectives of the evaluation (ISO/IEC TR 25060:2010).
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIEO_HCI+Evaluator"><b>HCI Evaluator</b></a>
-<a href=#HCIEO_HCI+Evaluator_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIEO_HCI+Evaluator_detail><img src="images/plus-4-16.ico"></a></td>
 <td>HCI Evaluator: individual or organization (Stakeholder) that performs an evaluation (ISO/IEC 25040:2011).<br/>______________<br/>Can include usability specialists, developers, end users or other types of professionals (ISO/TR 25060:2010)
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIEO_HCI+Evaluator+Goal"><b>HCI Evaluator Goal</b></a>
-<a href=#HCIEO_HCI+Evaluator+Goal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIEO_HCI+Evaluator+Goal_detail><img src="images/plus-4-16.ico"></a></td>
 <td>The propositional content of something the HCI Evaluator wants to achieve (HCI Evaluator Intention) by perfoming an HCI Evaluation. E.g., measure the usability of an User Interface being used by the users.
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIEO_HCI+Evaluator+Intention"><b>HCI Evaluator Intention</b></a>
-<a href=#HCIEO_HCI+Evaluator+Intention_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIEO_HCI+Evaluator+Intention_detail><img src="images/plus-4-16.ico"></a></td>
 <td>An Intention that inheres in a HCI Evaluator, causing him to perform intentional HCI Evaluation. E.g., the intention to evaluate an interactive computer system.  
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIEO_HCI+Quality+Characteristic"><b>HCI Quality Characteristic</b></a>
-<a href=#HCIEO_HCI+Quality+Characteristic_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIEO_HCI+Quality+Characteristic_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Quality Characteristics: are qualities that inheres in Human-Computer Interaction. Ex.: the UI usability, the user performance.<br/>Quality Characteristics inheres in both interactive computer software and hardware that constitutes the Interactive Computer System. Ex: usability of a interactive software system (software), screen size of a smart watch (hardware), among others.<br/>The Quality Characteristic can be considered for the whole Interactive Computer System or part of it, e.g., its User Interface, Input Equipment.<br/>____________<br/>Usability can be considered at various levels of scope and complexity (from an entire complex system to individual components of a system, product, service or environment) (ISO 9241-11:2018).<br/>For complex products, usability can be considered for the whole product or part of the product (ISO 9241-11:2018).
 <br/></td>
 </tr>
 
 						</tbody>
-					</table>
+					</table>-->
 
 				</div>
 
-				<hr class="featurette-divider">		
+				<hr>		
 
-				<div class="container p-5 rounded" id="detailedconcepts">
+				<div class="p-5 rounded" id="detailedconcepts">
 					<h2 class="featurette-heading">5. Detailed Concepts</h2>
-					<p class="lead"><a name="HCIEO_HCI+Evaluation_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>HCI Evaluation<strong></td></tr>
-</table><br/>
-<b>HCIEO::HCI Evaluation</b><br/>
-Specializes UFO::Complex Action<br/><br/>
-HCI Evaluation: Intentional Event (Complex Action) caused by the HCI Evaluator Intention. Systematic determination of the extent to which an Human-Computer Interaction meets its HCI Evaluation criteria<br/>________________________<br/>ISO 9241-220: 2019<br/>Evaluation: systematic determination of the extent to which an entity meets its specified criteria<br/><br/>ISO 9241-220: 2019<br/>Inspection-based evaluation: evaluation based on the judgment of one or more evaluator(s) who examine or use a system to identify potential usability problemas and/or deviations from established criteria<br/><br/>Note: inspection-based evaluation is a generic ter for methods that include, but are not limited to, heuristic evaluation, cognitive walkthroughs, standards inspection, pluralistic walkthroughs, and consistency inspections<br/><br/>ISO 25066:2019<br/>Inspection-based evaluation: evaluation based on the judgment of one or more evaluator(s) who examine or use a system to identify potential usability problems (including deviations from established criteria).<br/><br/>Note: The evaluators making the inspections typically are usability specialists but can also include end users and members of the design team.<br/><br/>ISO 9241-220: 2019<br/>User-based evaluation: evaluation that involves representative users performing tasks with the system to enable identification of human-centred quality problems and/or measurements of efficiency, effectiveness, user satisfaction or other user experiences<br/><br/>ISO 25066:2019<br/>User-based evaluation: evaluation that involves representative users performing tasks with the system to enable identification of usability problems and/or measurements of efficiency, effectiveness, user satisfaction or other user experiences<br/><br/>ISO 25066:2019<br/>Usability problem: situation during use resulting in poor effectiveness, efficiency or satisfaction<br/><br/>ISO 25066:2019<br/>Usability defect: product attribute(s) that lead(s) to a mismatch between user intentions and/or user actions and the system attributes and behavior<br/><br/>Note 1: typical usability defects include the following: additional unnecessary steps not required as part of completing a task; misleading information; insufficient and/or poor information on the user interface; unexpected system responses; limitations in navigation; inefficient use error recovery mechanism; physical characteristics of the user interface that are not suitable for the physical characteristics of the user.<br/><br/>Note 2: Deviations of product attributes of the object of evaluation from established criteria are also usability defects.<br/><br/>ISO 9241-220: 2019<br/>Human-centred quality: extent to which requirements for usability, accessibility, user experience and avoidance of harm from user are met.<br/><br/>Note 1: Human-centred quality is a collective term for the intended outcomes of interaction of the user with the system<br/><br/>ISO 25060: 2010<br/>Usability objective: stated level of usability expressed in terms of effectiveness, efficiency and satisfaction in a specified context of use which can be verified<br/><br/>Note: usability objectives can be stated as user requirements, in which case the level to be achieved is a usability requirement, or they can be stated as desired "target levels" depending on their use in design and evaluation<br/><br/>ISO 25060: 2010<br/>Usability inspection: evaluation based on the considered judgment of evaluators who examine the usability-related aspects of an interface with respect to specified criteria<br/><br/>Note: usability inspection is the generic term for several methods, including but not limited to heuristic evaluation, cognitive walkthroughs, standards inspection, pluralistic walkthroughs, and consistency inspections.<br/><br/>ISO 25060: 2010<br/>usability testing: evaluation that involves representative users performing specific tasks with the system to enable the measurement of efficiency, effectiveness, and/or user satisfaction<br/><br/>ISO 25060: 2010<br/>usability-walkthrough: usability evaluation in which one or more evaluators step through a scenario playing the role of a user and identifying usability problems associated with successful completion of the scenario.<br/><br/>ISO/IEC 14598-5:1998<br/>Evaluation method: a procedure describing the action to be performed by the evaluator in order to obtain the result for the specified measurement or verification applied on the specified product components or on the product as a whole<br/><br/>ISO/TR 16982: 2002<br/>usability method: method supporting human-centred design used for the purpose of increasing the usability of a product or a system<br/><br/>ISO/TS 18152:2010<br/>Formative evaluation: evaluation designed and used to improve the object of evaluation, especially when it is still being developed<br/><br/>ISO/TS 18152:2010<br/>Summative evaluation: evaluation designed to present conclusions about the merit or worth of the object of evaluation and recommendations about whether it should be retained, altered or eliminated<br/><br/>
-<br/>
-<br/>
-Relations:<br/>
+					<p class="lead">Human-Computer Interaction Evaluation Ontology (HCIEO) detailed concepts.</p>					
+					<hr><div class="container-fluid" id="HCIEO_HCI+Evaluation_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">HCI Evaluation</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIEO::HCI Evaluation</span><br/>Specializes UFO::Complex Action</p><p>HCI Evaluation: Intentional Event (Complex Action) caused by the HCI Evaluator Intention. Systematic determination of the extent to which an Human-Computer Interaction meets its HCI Evaluation criteria<br/>________________________<br/>ISO 9241-220: 2019<br/>Evaluation: systematic determination of the extent to which an entity meets its specified criteria<br/><br/>ISO 9241-220: 2019<br/>Inspection-based evaluation: evaluation based on the judgment of one or more evaluator(s) who examine or use a system to identify potential usability problemas and/or deviations from established criteria<br/><br/>Note: inspection-based evaluation is a generic ter for methods that include, but are not limited to, heuristic evaluation, cognitive walkthroughs, standards inspection, pluralistic walkthroughs, and consistency inspections<br/><br/>ISO 25066:2019<br/>Inspection-based evaluation: evaluation based on the judgment of one or more evaluator(s) who examine or use a system to identify potential usability problems (including deviations from established criteria).<br/><br/>Note: The evaluators making the inspections typically are usability specialists but can also include end users and members of the design team.<br/><br/>ISO 9241-220: 2019<br/>User-based evaluation: evaluation that involves representative users performing tasks with the system to enable identification of human-centred quality problems and/or measurements of efficiency, effectiveness, user satisfaction or other user experiences<br/><br/>ISO 25066:2019<br/>User-based evaluation: evaluation that involves representative users performing tasks with the system to enable identification of usability problems and/or measurements of efficiency, effectiveness, user satisfaction or other user experiences<br/><br/>ISO 25066:2019<br/>Usability problem: situation during use resulting in poor effectiveness, efficiency or satisfaction<br/><br/>ISO 25066:2019<br/>Usability defect: product attribute(s) that lead(s) to a mismatch between user intentions and/or user actions and the system attributes and behavior<br/><br/>Note 1: typical usability defects include the following: additional unnecessary steps not required as part of completing a task; misleading information; insufficient and/or poor information on the user interface; unexpected system responses; limitations in navigation; inefficient use error recovery mechanism; physical characteristics of the user interface that are not suitable for the physical characteristics of the user.<br/><br/>Note 2: Deviations of product attributes of the object of evaluation from established criteria are also usability defects.<br/><br/>ISO 9241-220: 2019<br/>Human-centred quality: extent to which requirements for usability, accessibility, user experience and avoidance of harm from user are met.<br/><br/>Note 1: Human-centred quality is a collective term for the intended outcomes of interaction of the user with the system<br/><br/>ISO 25060: 2010<br/>Usability objective: stated level of usability expressed in terms of effectiveness, efficiency and satisfaction in a specified context of use which can be verified<br/><br/>Note: usability objectives can be stated as user requirements, in which case the level to be achieved is a usability requirement, or they can be stated as desired "target levels" depending on their use in design and evaluation<br/><br/>ISO 25060: 2010<br/>Usability inspection: evaluation based on the considered judgment of evaluators who examine the usability-related aspects of an interface with respect to specified criteria<br/><br/>Note: usability inspection is the generic term for several methods, including but not limited to heuristic evaluation, cognitive walkthroughs, standards inspection, pluralistic walkthroughs, and consistency inspections.<br/><br/>ISO 25060: 2010<br/>usability testing: evaluation that involves representative users performing specific tasks with the system to enable the measurement of efficiency, effectiveness, and/or user satisfaction<br/><br/>ISO 25060: 2010<br/>usability-walkthrough: usability evaluation in which one or more evaluators step through a scenario playing the role of a user and identifying usability problems associated with successful completion of the scenario.<br/><br/>ISO/IEC 14598-5:1998<br/>Evaluation method: a procedure describing the action to be performed by the evaluator in order to obtain the result for the specified measurement or verification applied on the specified product components or on the product as a whole<br/><br/>ISO/TR 16982: 2002<br/>usability method: method supporting human-centred design used for the purpose of increasing the usability of a product or a system<br/><br/>ISO/TS 18152:2010<br/>Formative evaluation: evaluation designed and used to improve the object of evaluation, especially when it is still being developed<br/><br/>ISO/TS 18152:2010<br/>Summative evaluation: evaluation designed to present conclusions about the merit or worth of the object of evaluation and recommendations about whether it should be retained, altered or eliminated<br/><br/></p><p>Relations:<br/>
 <code>HCI Evaluation (0..*) follows (1..*) HCI Evaluation Method<br/>
 HCI Evaluation (1..1) creates (1..1) HCI Evaluation Report<br/>
 HCI Evaluation (0..*) caused by (1..1) HCI Evaluator Intention<br/>
@@ -561,32 +633,14 @@ HCI Evaluation (0..*) evaluates (1..1) Interactive Computer System<br/>
 HCI Evaluation (0..*) evaluates (1..1) User Interface<br/>
 HCI Evaluator (1..*) performs (1..*) HCI Evaluation<br/>
 User (0..*) participates in (0..*) HCI Evaluation<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="HCIEO_HCI+Evaluation+Artifact_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>HCI Evaluation Artifact<strong></td></tr>
-</table><br/>
-<b>HCIEO::HCI Evaluation Artifact</b><br/>
-Specializes SysSwO::Software Artifact<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="HCIEO_HCI+Evaluation+Artifact_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">HCI Evaluation Artifact</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIEO::HCI Evaluation Artifact</span><br/>Specializes SysSwO::Software Artifact</p><p><br/></p><p>Relations:<br/>
 <code>HCI Evaluation Artifact (0..*) specifies (1..*) HCI Evaluation Criteria<br/>
 HCI Evaluation (1..1) uses (0..*) HCI Evaluation Artifact<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="HCIEO_HCI+Evaluation+Criteria_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>HCI Evaluation Criteria<strong></td></tr>
-</table><br/>
-<b>HCIEO::HCI Evaluation Criteria</b><br/>
-Specializes RSRO::Requirement<br/><br/>
-HCI Evaluation Criteria: Evaluation criteria specified according to the HCI Evaluation Goal of a certain HCI Evaluation.<br/>____________<br/>ISO 9241-220:2019<br/>Typically include user requirements, usability guidelines in standards, design conventions contained in manufacturer guidelines and style guides, task models to be supported as well as standardized principles (ISO 9241-220:2019). Could be related to software or hardware evaluation.<br/>The evaluative criteria can include good practice and/or documented principles, guidelines, requirements or standards (ISO/TR 25060:2010).<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="HCIEO_HCI+Evaluation+Criteria_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">HCI Evaluation Criteria</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIEO::HCI Evaluation Criteria</span><br/>Specializes RSRO::Requirement</p><p>HCI Evaluation Criteria: Evaluation criteria specified according to the HCI Evaluation Goal of a certain HCI Evaluation.<br/>____________<br/>ISO 9241-220:2019<br/>Typically include user requirements, usability guidelines in standards, design conventions contained in manufacturer guidelines and style guides, task models to be supported as well as standardized principles (ISO 9241-220:2019). Could be related to software or hardware evaluation.<br/>The evaluative criteria can include good practice and/or documented principles, guidelines, requirements or standards (ISO/TR 25060:2010).<br/></p><p>Relations:<br/>
 <code>HCI Evaluation Criteria (0..*) used to evaluate (1..*) HCI Quality Characteristic<br/>
 HCI Evaluation Criteria specified according to HCI Evaluator Goal<br/>
 HCI Evaluation Criteria (0..*) refers to (0..*) Measure<br/>
@@ -596,117 +650,68 @@ HCI Evaluation Method (0..*) can determine (0..*) HCI Evaluation Criteria<br/>
 HCI Evaluator Goal (0..*) helps to determine (1..*) HCI Evaluation Criteria<br/>
 HCI Evaluation (0..*) applies (1..*) HCI Evaluation Criteria<br/>
 HCI Evaluation Report (1..*) reports (1..*) HCI Evaluation Criteria<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="HCIEO_HCI+Evaluation+Method_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>HCI Evaluation Method<strong></td></tr>
-</table><br/>
-<b>HCIEO::HCI Evaluation Method</b><br/>
-Specializes SPO::Procedure<br/><br/>
-HCI Evaluation Methods: a procedure describing the actions to be perfomed by the evaluator in an HCI Evaluation.<br/><br/>______<br/>ISO/IEC 14598-5:1998<br/>Evaluation method: a procedure describing the action to be performed by the evaluator in order to obtain the result for the specified measurement or verification applied on the specified product components or on the product as a whole<br/><br/>ISO/TR 16982: 2002<br/>usability method: method supporting human-centred design used for the purpose of increasing the usability of a product or a system<br/><br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="HCIEO_HCI+Evaluation+Method_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">HCI Evaluation Method</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIEO::HCI Evaluation Method</span><br/>Specializes SPO::Procedure</p><p>HCI Evaluation Methods: a procedure describing the actions to be perfomed by the evaluator in an HCI Evaluation.<br/><br/>______<br/>ISO/IEC 14598-5:1998<br/>Evaluation method: a procedure describing the action to be performed by the evaluator in order to obtain the result for the specified measurement or verification applied on the specified product components or on the product as a whole<br/><br/>ISO/TR 16982: 2002<br/>usability method: method supporting human-centred design used for the purpose of increasing the usability of a product or a system<br/><br/></p><p>Relations:<br/>
 <code>HCI Evaluation Method (0..*) can determine (0..*) HCI Evaluation Criteria<br/>
 HCI Evaluation Method (1..*) chosen according to (0..*) HCI Evaluator Goal<br/>
 HCI Evaluator Goal (1..1) helps to choose (1..*) HCI Evaluation Method<br/>
 HCI Evaluation (0..*) follows (1..*) HCI Evaluation Method<br/>
 HCI Evaluator (1..*) choose (1..*) HCI Evaluation Method<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="HCIEO_HCI+Evaluation+Report_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>HCI Evaluation Report<strong></td></tr>
-</table><br/>
-<b>HCIEO::HCI Evaluation Report</b><br/>
-Specializes SysSwO::Document<br/><br/>
-HCI Evaluation Report: Document that presents evaluation results and other information relevant to an evaluation<br/>_____________<br/>ISO/IEC 14698-5:1998<br/>Evaluation report: Document that presents evaluation results and other information relevant to an evaluation<br/>The content of evaluation reports can vary based on the objectives of the evaluation (ISO/IEC TR 25060:2010).<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="HCIEO_HCI+Evaluation+Report_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">HCI Evaluation Report</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIEO::HCI Evaluation Report</span><br/>Specializes SysSwO::Document</p><p>HCI Evaluation Report: Document that presents evaluation results and other information relevant to an evaluation<br/>_____________<br/>ISO/IEC 14698-5:1998<br/>Evaluation report: Document that presents evaluation results and other information relevant to an evaluation<br/>The content of evaluation reports can vary based on the objectives of the evaluation (ISO/IEC TR 25060:2010).<br/></p><p>Relations:<br/>
 <code>HCI Evaluation Report (1..*) reports (1..*) HCI Evaluation Criteria<br/>
 HCI Evaluation Report (0..*) reports (0..*) Measured Value<br/>
 HCI Evaluation (1..1) creates (1..1) HCI Evaluation Report<br/>
 HCI Evaluator (1..*) / responsible for (1..*) HCI Evaluation Report<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="HCIEO_HCI+Evaluator_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>HCI Evaluator<strong></td></tr>
-</table><br/>
-<b>HCIEO::HCI Evaluator</b><br/>
-Specializes SPO::Stakeholder<br/><br/>
-HCI Evaluator: individual or organization (Stakeholder) that performs an evaluation (ISO/IEC 25040:2011).<br/>______________<br/>Can include usability specialists, developers, end users or other types of professionals (ISO/TR 25060:2010)<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="HCIEO_HCI+Evaluator_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">HCI Evaluator</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIEO::HCI Evaluator</span><br/>Specializes SPO::Stakeholder</p><p>HCI Evaluator: individual or organization (Stakeholder) that performs an evaluation (ISO/IEC 25040:2011).<br/>______________<br/>Can include usability specialists, developers, end users or other types of professionals (ISO/TR 25060:2010)<br/></p><p>Relations:<br/>
 <code>HCI Evaluator (1..*) performs (1..*) HCI Evaluation<br/>
 HCI Evaluator (1..*) / responsible for (1..*) HCI Evaluation Report<br/>
 HCI Evaluator (1..*) choose (1..*) HCI Evaluation Method<br/>
 HCI Evaluator Intention (1..*) inheres in (1..1) HCI Evaluator<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="HCIEO_HCI+Evaluator+Goal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>HCI Evaluator Goal<strong></td></tr>
-</table><br/>
-<b>HCIEO::HCI Evaluator Goal</b><br/>
-Specializes UFO::Goal<br/><br/>
-The propositional content of something the HCI Evaluator wants to achieve (HCI Evaluator Intention) by perfoming an HCI Evaluation. E.g., measure the usability of an User Interface being used by the users.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="HCIEO_HCI+Evaluator+Goal_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">HCI Evaluator Goal</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIEO::HCI Evaluator Goal</span><br/>Specializes UFO::Goal</p><p>The propositional content of something the HCI Evaluator wants to achieve (HCI Evaluator Intention) by perfoming an HCI Evaluation. E.g., measure the usability of an User Interface being used by the users.<br/></p><p>Relations:<br/>
 <code>HCI Evaluator Goal (1..1) propositional content of (1..*) HCI Evaluator Intention<br/>
 HCI Evaluator Goal (0..*) helps to determine (1..*) HCI Evaluation Criteria<br/>
 HCI Evaluator Goal (1..1) helps to choose (1..*) HCI Evaluation Method<br/>
 HCI Evaluation Method (1..*) chosen according to (0..*) HCI Evaluator Goal<br/>
 HCI Evaluation Criteria specified according to HCI Evaluator Goal<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="HCIEO_HCI+Evaluator+Intention_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>HCI Evaluator Intention<strong></td></tr>
-</table><br/>
-<b>HCIEO::HCI Evaluator Intention</b><br/>
-Specializes UFO::Intention<br/><br/>
-An Intention that inheres in a HCI Evaluator, causing him to perform intentional HCI Evaluation. E.g., the intention to evaluate an interactive computer system.  <br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="HCIEO_HCI+Evaluator+Intention_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">HCI Evaluator Intention</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIEO::HCI Evaluator Intention</span><br/>Specializes UFO::Intention</p><p>An Intention that inheres in a HCI Evaluator, causing him to perform intentional HCI Evaluation. E.g., the intention to evaluate an interactive computer system.  <br/></p><p>Relations:<br/>
 <code>HCI Evaluator Intention (1..*) inheres in (1..1) HCI Evaluator<br/>
 HCI Evaluator Goal (1..1) propositional content of (1..*) HCI Evaluator Intention<br/>
 HCI Evaluation (0..*) caused by (1..1) HCI Evaluator Intention<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="HCIEO_HCI+Quality+Characteristic_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>HCI Quality Characteristic<strong></td></tr>
-</table><br/>
-<b>HCIEO::HCI Quality Characteristic</b><br/>
-Specializes UFO::Quality, UFO::Quality Universal, COM::Measurable Element<br/><br/>
-Quality Characteristics: are qualities that inheres in Human-Computer Interaction. Ex.: the UI usability, the user performance.<br/>Quality Characteristics inheres in both interactive computer software and hardware that constitutes the Interactive Computer System. Ex: usability of a interactive software system (software), screen size of a smart watch (hardware), among others.<br/>The Quality Characteristic can be considered for the whole Interactive Computer System or part of it, e.g., its User Interface, Input Equipment.<br/>____________<br/>Usability can be considered at various levels of scope and complexity (from an entire complex system to individual components of a system, product, service or environment) (ISO 9241-11:2018).<br/>For complex products, usability can be considered for the whole product or part of the product (ISO 9241-11:2018).<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="HCIEO_HCI+Quality+Characteristic_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">HCI Quality Characteristic</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIEO::HCI Quality Characteristic</span><br/>Specializes UFO::Quality, UFO::Quality Universal, COM::Measurable Element</p><p>Quality Characteristics: are qualities that inheres in Human-Computer Interaction. Ex.: the UI usability, the user performance.<br/>Quality Characteristics inheres in both interactive computer software and hardware that constitutes the Interactive Computer System. Ex: usability of a interactive software system (software), screen size of a smart watch (hardware), among others.<br/>The Quality Characteristic can be considered for the whole Interactive Computer System or part of it, e.g., its User Interface, Input Equipment.<br/>____________<br/>Usability can be considered at various levels of scope and complexity (from an entire complex system to individual components of a system, product, service or environment) (ISO 9241-11:2018).<br/>For complex products, usability can be considered for the whole product or part of the product (ISO 9241-11:2018).<br/></p><p>Relations:<br/>
 <code>HCI Quality Characteristic (1..*) inheres in (1..*) Human-Computer Interaction<br/>
 HCI Evaluation (0..*) evaluates (1..*) HCI Quality Characteristic<br/>
 HCI Evaluation Criteria (0..*) used to evaluate (1..*) HCI Quality Characteristic<br/>
 User Interface (1..*) /has (0..*) HCI Quality Characteristic<br/>
 Interactive Computer System (1..*) has (0..*) HCI Quality Characteristic<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-</p>					
+
 				</div>
 				
 			</main>
 	
-    <footer class="footer">
-      <div class="container-fluid">
-        <span class="text-muted">Powered by NEMO.</span>
-        <span class="text-muted"><small><b>Human-Computer Interaction Evaluation Ontology (HCIEO)</b></small></span>
-        <span class="text-muted"><small>Thu Nov 18 16:11:32 BRT 2021</small></span>		
+    <footer class="p-5 rounded border-top">
+      <div class="row">
+      	<div class="col">
+      		  <span class="text-muted">Powered by NEMO.</span>
+      	</div>
+      	<div class="col">
+      		<span><small><b>Human-Computer Interaction Evaluation Ontology (HCIEO)</b></small></span>
+      	</div>
+      	<div class="col">
+      		<span class="text-muted"><small>Mon Nov 22 22:03:45 BRT 2021</small></span>	
+      	</div>
       </div>
     </footer>
 	   

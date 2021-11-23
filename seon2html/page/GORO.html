@@ -18,7 +18,7 @@
 	    <!-- Custom styles for this template -->
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/navbar-top-fixed.css" rel="stylesheet">
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/sticky-footer-navbar.css" rel="stylesheet">
-	       
+	    <link href="../resources/static/bootstrap-5.1.3-dist/css/carousel.css" rel="stylesheet">
 
 	    <style>
 	      .bd-placeholder-img {
@@ -36,7 +36,7 @@
 	        }
 	      }
 
-	      .h1, h1 {
+	      .h2, .h3, h2, h3 {
 	      	margin-bottom: 2.5rem;
 	      }
 
@@ -44,6 +44,9 @@
 	      	font-size: 2rem;
 	      }
 
+	      .featurette-heading {
+	        margin-top: 0;
+	      }
 	    </style>
 
 	    
@@ -131,7 +134,7 @@
 	            GORO
 	          </a>
 	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item" href="#ontologydescription" >Ontology Description</a></li>
+	            <li><a class="dropdown-item" href="#ontologydescription">Ontology Description</a></li>
 	            <li><a class="dropdown-item" href="#relatedontologies">Related Ontologies</a></li>
 	            <li><a class="dropdown-item" href="#ontologymodels">Ontology Models</a></li>
 	            <li><a class="dropdown-item" href="#conceptsdefinition">Concepts Definition</a></li>
@@ -157,21 +160,27 @@
 
 		<!-- Begin page content -->
     <main role="main" class="container-fluid">	
-    		<div class="container-fluid d-flex justify-content-end"><span class="badge badge-danger"></span></div>
+    		
 				<!--<div class="bg-light p-5 rounded" id="ontologydescription">
     			<h1 class="featurette-heading">The Goal-Oriented Requirements Ontology (GORO)</h1>
 					<p class="lead" align="justify"><span class="text-muted font-weight-bold font-italic">Ontology Description. </span>The Goal-Oriented Requirements Ontology (GORO) intends to represent the nature of the main concepts and relations surrounding Goal-Oriented Requeriments Engineering (GORE) approaches.</p>
-					<p class="lead text-right text-muted font-italic">- domain ontology from SEON. </p>
+					<p class="lead text-right text-muted font-italic"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"><path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg> domain ontology from SEON</p>
     		</div>-->
 
-				<div class="bg-light p-5 rounded" id="ontologydescription">
+				<div class="bg-light p-5 rounded">
+					<div class="container-fluid d-flex justify-content-end"><span class="badge badge-danger text-lowercase"></span></div>
     			<h1 class="featurette-heading">The Goal-Oriented Requirements Ontology (GORO)</h1>
-    				<h2 class="featurette-heading d-inline font-italic">Ontology Description. </h2>
-    				<p class="lead d-inline" align="justify">The Goal-Oriented Requirements Ontology (GORO) intends to represent the nature of the main concepts and relations surrounding Goal-Oriented Requeriments Engineering (GORE) approaches.</p>
-    				<p class="lead text-right text-muted font-italic">- domain ontology from SEON. </p>
+    			<p class="lead text-right text-muted font-italic"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"><path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg> domain ontology from SEON</p>
+    		</div>
+	
+				<hr> 
+				   		
+    		<div class="p-5 rounded" id="ontologydescription">
+  				<h2 class="featurette-heading">1. Ontology Description</h2>
+  				<p class="lead" align="justify">The Goal-Oriented Requirements Ontology (GORO) intends to represent the nature of the main concepts and relations surrounding Goal-Oriented Requeriments Engineering (GORE) approaches.</p>
     		</div>
 
-				<hr class="featurette-divider">
+				<hr>
 
 				<div class="p-5 rounded" id="relatedontologies">
 					<h2 class="featurette-heading">2. Related Ontologies</h2>
@@ -195,7 +204,7 @@
 
 				</div>	
 
-				<hr class="featurette-divider">
+				<hr>
     	
 				<div class="p-5 rounded" id="ontologymodels">
 					<h2 class="featurette-heading">3. Ontology Models</h2>
@@ -227,13 +236,59 @@
 </p>					
 				</div>
 
-				<hr class="featurette-divider">
+				<hr>
 
 				<div class="p-5 rounded" id="conceptsdefinition">
 					<h2 class="featurette-heading">4. Concepts Definition</h2>
 					<p class="lead">The following table shows the definitions for GORO concepts.</p>		
 					<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->				
-					<table style="width: 100%" border="1" cellpadding="6">
+					<div class="table-responsive">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th scope="col">Concept</th>
+									<th scope="col">Definition</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+<td><a name="GORO_Atomic+Task"><b>Atomic Task</b></a>
+<a href=#GORO_Atomic+Task_detail><img src="images/plus-4-16.ico"></a></td>
+<td>An Atomic Task is a Task that is not decomposed in other tasks.
+<br/></td>
+</tr>
+<tr>
+<td><a name="GORO_Complex+Task"><b>Complex Task</b></a>
+<a href=#GORO_Complex+Task_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A Complex Task is a Task that is composed in other tasks.
+<br/></td>
+</tr>
+<tr>
+<td><a name="GORO_Hardgoal"><b>Hardgoal</b></a>
+<a href=#GORO_Hardgoal_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Hardgoal is a proposition that is objectively satisfied by a given set of situations.
+<br/></td>
+</tr>
+<tr>
+<td><a name="GORO_Requirement"><b>Requirement</b></a>
+<a href=#GORO_Requirement_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A Goal in the scope of a specific problem, that describes environmental conditions to be achieved through a desired solution resulting in satisfaction of the underlying strategic goals. In GORE, these goals can be refined by decomposing them into sub-goals, as well as by defining them by means of alternative goals.
+<br/></td>
+</tr>
+<tr>
+<td><a name="GORO_Softgoal"><b>Softgoal</b></a>
+<a href=#GORO_Softgoal_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Softgoal is an initial and temporary vague expression of a goal not suficiently defined yet. It refers to a vague quality region whose exact boundaries are unknown. Thus it is not  possible to determine a priori the set of situations that satisfies the softgoal. Its satisfiability is usually related to an agent's judgement.
+<br/></td>
+</tr>
+
+							</tbody>
+						</table>
+  				</div>
+
+
+
+				<!--	<table style="width: 100%" border="1" cellpadding="6">
 						<tbody>
 							<tr style="background-color: #D8D8D8">
 								<td style="width: 25%"><b>Concept</b></td>
@@ -241,111 +296,73 @@
 							</tr>
 							<tr>
 <td><a name="GORO_Atomic+Task"><b>Atomic Task</b></a>
-<a href=#GORO_Atomic+Task_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#GORO_Atomic+Task_detail><img src="images/plus-4-16.ico"></a></td>
 <td>An Atomic Task is a Task that is not decomposed in other tasks.
 <br/></td>
 </tr>
 <tr>
 <td><a name="GORO_Complex+Task"><b>Complex Task</b></a>
-<a href=#GORO_Complex+Task_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#GORO_Complex+Task_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A Complex Task is a Task that is composed in other tasks.
 <br/></td>
 </tr>
 <tr>
 <td><a name="GORO_Hardgoal"><b>Hardgoal</b></a>
-<a href=#GORO_Hardgoal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#GORO_Hardgoal_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Hardgoal is a proposition that is objectively satisfied by a given set of situations.
 <br/></td>
 </tr>
 <tr>
 <td><a name="GORO_Requirement"><b>Requirement</b></a>
-<a href=#GORO_Requirement_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#GORO_Requirement_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A Goal in the scope of a specific problem, that describes environmental conditions to be achieved through a desired solution resulting in satisfaction of the underlying strategic goals. In GORE, these goals can be refined by decomposing them into sub-goals, as well as by defining them by means of alternative goals.
 <br/></td>
 </tr>
 <tr>
 <td><a name="GORO_Softgoal"><b>Softgoal</b></a>
-<a href=#GORO_Softgoal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#GORO_Softgoal_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Softgoal is an initial and temporary vague expression of a goal not suficiently defined yet. It refers to a vague quality region whose exact boundaries are unknown. Thus it is not  possible to determine a priori the set of situations that satisfies the softgoal. Its satisfiability is usually related to an agent's judgement.
 <br/></td>
 </tr>
 
 						</tbody>
-					</table>
+					</table>-->
 
 				</div>
 
-				<hr class="featurette-divider">		
+				<hr>		
 
-				<div class="container p-5 rounded" id="detailedconcepts">
+				<div class="p-5 rounded" id="detailedconcepts">
 					<h2 class="featurette-heading">5. Detailed Concepts</h2>
-					<p class="lead"><a name="GORO_Atomic+Task_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Atomic Task<strong></td></tr>
-</table><br/>
-<b>GORO::Atomic Task</b><br/>
-Specializes <br/><br/>
-An Atomic Task is a Task that is not decomposed in other tasks.<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+					<p class="lead">Goal-Oriented Requirements Ontology (GORO) detailed concepts.</p>					
+					<hr><div class="container-fluid" id="GORO_Atomic+Task_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Atomic Task</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">GORO::Atomic Task</span><br/>Specializes </p><p>An Atomic Task is a Task that is not decomposed in other tasks.<br/></p><p></p></div></div>
 
-<a name="GORO_Complex+Task_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Complex Task<strong></td></tr>
-</table><br/>
-<b>GORO::Complex Task</b><br/>
-Specializes <br/><br/>
-A Complex Task is a Task that is composed in other tasks.<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="GORO_Complex+Task_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Complex Task</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">GORO::Complex Task</span><br/>Specializes </p><p>A Complex Task is a Task that is composed in other tasks.<br/></p><p></p></div></div>
 
-<a name="GORO_Hardgoal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Hardgoal<strong></td></tr>
-</table><br/>
-<b>GORO::Hardgoal</b><br/>
-Specializes UFO::Goal<br/><br/>
-Hardgoal is a proposition that is objectively satisfied by a given set of situations.<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="GORO_Hardgoal_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Hardgoal</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">GORO::Hardgoal</span><br/>Specializes UFO::Goal</p><p>Hardgoal is a proposition that is objectively satisfied by a given set of situations.<br/></p><p></p></div></div>
 
-<a name="GORO_Requirement_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Requirement<strong></td></tr>
-</table><br/>
-<b>GORO::Requirement</b><br/>
-Specializes RSRO::Requirement<br/><br/>
-A Goal in the scope of a specific problem, that describes environmental conditions to be achieved through a desired solution resulting in satisfaction of the underlying strategic goals. In GORE, these goals can be refined by decomposing them into sub-goals, as well as by defining them by means of alternative goals.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="GORO_Requirement_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Requirement</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">GORO::Requirement</span><br/>Specializes RSRO::Requirement</p><p>A Goal in the scope of a specific problem, that describes environmental conditions to be achieved through a desired solution resulting in satisfaction of the underlying strategic goals. In GORE, these goals can be refined by decomposing them into sub-goals, as well as by defining them by means of alternative goals.<br/></p><p>Relations:<br/>
 <code>Requirement (0..1)  (0..*) Requirement<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="GORO_Softgoal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Softgoal<strong></td></tr>
-</table><br/>
-<b>GORO::Softgoal</b><br/>
-Specializes UFO::Goal<br/><br/>
-Softgoal is an initial and temporary vague expression of a goal not suficiently defined yet. It refers to a vague quality region whose exact boundaries are unknown. Thus it is not  possible to determine a priori the set of situations that satisfies the softgoal. Its satisfiability is usually related to an agent's judgement.<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="GORO_Softgoal_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Softgoal</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">GORO::Softgoal</span><br/>Specializes UFO::Goal</p><p>Softgoal is an initial and temporary vague expression of a goal not suficiently defined yet. It refers to a vague quality region whose exact boundaries are unknown. Thus it is not  possible to determine a priori the set of situations that satisfies the softgoal. Its satisfiability is usually related to an agent's judgement.<br/></p><p></p></div></div>
 
-</p>					
+
 				</div>
 				
 			</main>
 	
-    <footer class="footer">
-      <div class="container-fluid">
-        <span class="text-muted">Powered by NEMO.</span>
-        <span class="text-muted"><small><b>Goal-Oriented Requirements Ontology (GORO)</b></small></span>
-        <span class="text-muted"><small>Thu Nov 18 16:11:33 BRT 2021</small></span>		
+    <footer class="p-5 rounded border-top">
+      <div class="row">
+      	<div class="col">
+      		  <span class="text-muted">Powered by NEMO.</span>
+      	</div>
+      	<div class="col">
+      		<span><small><b>Goal-Oriented Requirements Ontology (GORO)</b></small></span>
+      	</div>
+      	<div class="col">
+      		<span class="text-muted"><small>Mon Nov 22 22:03:46 BRT 2021</small></span>	
+      	</div>
       </div>
     </footer>
 	   

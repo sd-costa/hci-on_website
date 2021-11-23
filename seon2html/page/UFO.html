@@ -18,7 +18,7 @@
 	    <!-- Custom styles for this template -->
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/navbar-top-fixed.css" rel="stylesheet">
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/sticky-footer-navbar.css" rel="stylesheet">
-	       
+	    <link href="../resources/static/bootstrap-5.1.3-dist/css/carousel.css" rel="stylesheet">
 
 	    <style>
 	      .bd-placeholder-img {
@@ -36,7 +36,7 @@
 	        }
 	      }
 
-	      .h1, h1 {
+	      .h2, .h3, h2, h3 {
 	      	margin-bottom: 2.5rem;
 	      }
 
@@ -44,6 +44,9 @@
 	      	font-size: 2rem;
 	      }
 
+	      .featurette-heading {
+	        margin-top: 0;
+	      }
 	    </style>
 
 	    
@@ -131,7 +134,7 @@
 	            UFO
 	          </a>
 	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item" href="#ontologydescription" >Ontology Description</a></li>
+	            <li><a class="dropdown-item" href="#ontologydescription">Ontology Description</a></li>
 	            <li><a class="dropdown-item" href="#relatedontologies">Related Ontologies</a></li>
 	            <li><a class="dropdown-item" href="#ontologymodels">Ontology Models</a></li>
 	            <li><a class="dropdown-item" href="#conceptsdefinition">Concepts Definition</a></li>
@@ -157,21 +160,27 @@
 
 		<!-- Begin page content -->
     <main role="main" class="container-fluid">	
-    		<div class="container-fluid d-flex justify-content-end"><span class="badge badge-danger"></span></div>
+    		
 				<!--<div class="bg-light p-5 rounded" id="ontologydescription">
     			<h1 class="featurette-heading">The Unified Foundational Ontology (UFO)</h1>
 					<p class="lead" align="justify"><span class="text-muted font-weight-bold font-italic">Ontology Description. </span>The Unified Foundational Ontology (UFO) is developed based on a number of theories from Formal Ontology, Philosophical Logics, Philosophy of Language, Linguistics and Cognitive Psychology. UFO is divided in three parts: an ontology of endurants (objects), an ontology of perdurants (events), and an ontology of social entities. UFO's ontological distinctions are used for classifying SEON concepts, e.g., as objects, actions, co mmitments, agents, roles, goals and so on. UFO provides the necessary grounding for the concepts and relations of all networked ontologies.<br/>This specification is being documented. For further details on UFO, see doc.utwente.nl/50826/1/thesis_Guizzardi.pdf.</p>
-					<p class="lead text-right text-muted font-italic">- foundational ontology</p>
+					<p class="lead text-right text-muted font-italic"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg> foundational ontology</p>
     		</div>-->
 
-				<div class="bg-light p-5 rounded" id="ontologydescription">
+				<div class="bg-light p-5 rounded">
+					<div class="container-fluid d-flex justify-content-end"><span class="badge badge-danger text-lowercase"></span></div>
     			<h1 class="featurette-heading">The Unified Foundational Ontology (UFO)</h1>
-    				<h2 class="featurette-heading d-inline font-italic">Ontology Description. </h2>
-    				<p class="lead d-inline" align="justify">The Unified Foundational Ontology (UFO) is developed based on a number of theories from Formal Ontology, Philosophical Logics, Philosophy of Language, Linguistics and Cognitive Psychology. UFO is divided in three parts: an ontology of endurants (objects), an ontology of perdurants (events), and an ontology of social entities. UFO's ontological distinctions are used for classifying SEON concepts, e.g., as objects, actions, co mmitments, agents, roles, goals and so on. UFO provides the necessary grounding for the concepts and relations of all networked ontologies.<br/>This specification is being documented. For further details on UFO, see doc.utwente.nl/50826/1/thesis_Guizzardi.pdf.</p>
-    				<p class="lead text-right text-muted font-italic">- foundational ontology</p>
+    			<p class="lead text-right text-muted font-italic"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg> foundational ontology</p>
+    		</div>
+	
+				<hr> 
+				   		
+    		<div class="p-5 rounded" id="ontologydescription">
+  				<h2 class="featurette-heading">1. Ontology Description</h2>
+  				<p class="lead" align="justify">The Unified Foundational Ontology (UFO) is developed based on a number of theories from Formal Ontology, Philosophical Logics, Philosophy of Language, Linguistics and Cognitive Psychology. UFO is divided in three parts: an ontology of endurants (objects), an ontology of perdurants (events), and an ontology of social entities. UFO's ontological distinctions are used for classifying SEON concepts, e.g., as objects, actions, co mmitments, agents, roles, goals and so on. UFO provides the necessary grounding for the concepts and relations of all networked ontologies.<br/>This specification is being documented. For further details on UFO, see doc.utwente.nl/50826/1/thesis_Guizzardi.pdf.</p>
     		</div>
 
-				<hr class="featurette-divider">
+				<hr>
 
 				<div class="p-5 rounded" id="relatedontologies">
 					<h2 class="featurette-heading">2. Related Ontologies</h2>
@@ -194,7 +203,7 @@
 
 				</div>	
 
-				<hr class="featurette-divider">
+				<hr>
     	
 				<div class="p-5 rounded" id="ontologymodels">
 					<h2 class="featurette-heading">3. Ontology Models</h2>
@@ -321,13 +330,821 @@
 </p>					
 				</div>
 
-				<hr class="featurette-divider">
+				<hr>
 
 				<div class="p-5 rounded" id="conceptsdefinition">
 					<h2 class="featurette-heading">4. Concepts Definition</h2>
 					<p class="lead">The following table shows the definitions for UFO concepts.</p>		
 					<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->				
-					<table style="width: 100%" border="1" cellpadding="6">
+					<div class="table-responsive">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th scope="col">Concept</th>
+									<th scope="col">Definition</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+<td><a name="UFO_2ndOT"><i>2ndOT</i></a>
+<a href=#UFO_2ndOT_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_3rdOT"><i>3rdOT</i></a>
+<a href=#UFO_3rdOT_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Abstract+Particular"><i>Abstract Particular</i></a>
+<a href=#UFO_Abstract+Particular_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Abstract+Thing"><i>Abstract Thing</i></a>
+<a href=#UFO_Abstract+Thing_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Action"><i>Action</i></a>
+<a href=#UFO_Action_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Actions are intentional events, i.e. they are caused by Intentions. Actions are events which instantiate a Plan (Action Universal) with the specific purpose of satisfying (the propositional content of) some Intention.
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Action+Contribution"><i>Action Contribution</i></a>
+<a href=#UFO_Action+Contribution_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Action Contribution is a participation that are intentional.
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Action+Universal"><i>Action Universal</i></a>
+<a href=#UFO_Action+Universal_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Agent"><i>Agent</i></a>
+<a href=#UFO_Agent_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Agents are Substantials (Functional Complexes or Collectives) that can bear special kinds of Intrinsic Moments named Intentional Moments.
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Agent+Participation"><i>Agent Participation</i></a>
+<a href=#UFO_Agent+Participation_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Anti-Rigid+Mixin+Universal"><i>Anti-Rigid Mixin Universal</i></a>
+<a href=#UFO_Anti-Rigid+Mixin+Universal_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Anti-Rigid+Sortal+Universal"><i>Anti-Rigid Sortal Universal</i></a>
+<a href=#UFO_Anti-Rigid+Sortal+Universal_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Appointment"><i>Appointment</i></a>
+<a href=#UFO_Appointment_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Appointment+Goal"><i>Appointment Goal</i></a>
+<a href=#UFO_Appointment+Goal_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Atomic+Action"><i>Atomic Action</i></a>
+<a href=#UFO_Atomic+Action_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Atomic+Action+Universal"><i>Atomic Action Universal</i></a>
+<a href=#UFO_Atomic+Action+Universal_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Atomic+Event"><i>Atomic Event</i></a>
+<a href=#UFO_Atomic+Event_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Atomic Events are those events which have no proper parts, i.e., events which cannot be further decomposed.
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Belief"><i>Belief</i></a>
+<a href=#UFO_Belief_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Category"><i>Category</i></a>
+<a href=#UFO_Category_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Change"><i>Change</i></a>
+<a href=#UFO_Change_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Closed+Appointment"><i>Closed Appointment</i></a>
+<a href=#UFO_Closed+Appointment_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Closed+Commitment"><i>Closed Commitment</i></a>
+<a href=#UFO_Closed+Commitment_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Closed+Commitment+Universal"><i>Closed Commitment Universal</i></a>
+<a href=#UFO_Closed+Commitment+Universal_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Collective+Social+Agent"><i>Collective Social Agent</i></a>
+<a href=#UFO_Collective+Social+Agent_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Commitment"><i>Commitment</i></a>
+<a href=#UFO_Commitment_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Commitment+Universal"><i>Commitment Universal</i></a>
+<a href=#UFO_Commitment+Universal_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Complex+Action"><i>Complex Action</i></a>
+<a href=#UFO_Complex+Action_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A Complex Action is composed of two or more Participations. These participations can themselves be intentional (i.e., be themselves actions) or unintentional events. For @ex, the stabbing of Caesar by Brutus includes the intentional participation of Brutus and the unintentional. participation of Caesar and the knife. In a complex action, at least one participation should be intentional, i.e., an action contribution
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Complex+Action+Universal"><i>Complex Action Universal</i></a>
+<a href=#UFO_Complex+Action+Universal_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Complex+Closed+Appointment"><i>Complex Closed Appointment</i></a>
+<a href=#UFO_Complex+Closed+Appointment_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Complex+Closed+Commitment"><i>Complex Closed Commitment</i></a>
+<a href=#UFO_Complex+Closed+Commitment_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Complex+Commitment"><i>Complex Commitment</i></a>
+<a href=#UFO_Complex+Commitment_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Complex+Event"><i>Complex Event</i></a>
+<a href=#UFO_Complex+Event_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Complex events are aggregations of at least two disjoint events. A Complex Event is existentially dependent on all its proper parts and, indirectly, to the objects these proper parts depend on.
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Composed+Quality+Universal"><i>Composed Quality Universal</i></a>
+<a href=#UFO_Composed+Quality+Universal_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Concrete+Particular"><i>Concrete Particular</i></a>
+<a href=#UFO_Concrete+Particular_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Creation"><i>Creation</i></a>
+<a href=#UFO_Creation_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Delegation"><i>Delegation</i></a>
+<a href=#UFO_Delegation_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Delegatum"><i>Delegatum</i></a>
+<a href=#UFO_Delegatum_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Desire"><i>Desire</i></a>
+<a href=#UFO_Desire_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Disposition"><i>Disposition</i></a>
+<a href=#UFO_Disposition_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Dispositions are properties (moments) that are only manifested in particular situations and that can also fail to be manifested. When manifested, they are manifested through the occurrence of events. Take for example the disposition of a magnet m to attract metallic material. The object m has this disposition even if it is never manifested, for example, because it is never close to any magnetic material. Nonetheless, m can certainly be said to possess that intrinsic moment, which it shares with other magnets.
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Disposition"><i>Disposition</i></a>
+<a href=#UFO_Disposition_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Endurant"><i>Endurant</i></a>
+<a href=#UFO_Endurant_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Endurants are said to be wholly present whenever they are present, i.e., they are in time. They can be understood in contrast with the category of Perdurants (Processes, Events). Examples of endurants are a house, a person, the Moon, an amount of sand. For instance, we can say that an individual John weights 80kg at in circumstance c1 but 68kg at in circumstance c2. Nonetheless, we are in these two cases referring to the same individual.
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Endurant+Universal"><i>Endurant Universal</i></a>
+<a href=#UFO_Endurant+Universal_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Entity"><i>Entity</i></a>
+<a href=#UFO_Entity_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Entity is the topmost category of UFO, representing anything, concrete or abstract, and both types and individuals.
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Event+(Perdurant)"><i>Event (Perdurant)</i></a>
+<a href=#UFO_Event+(Perdurant)_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Events (also called perdurants) are individuals composed of temporal parts. They happen in time in the sense that they extend in time accumulating temporal parts. @Examples of events are a conversation, a football game, a symphony execution, a birthday party, or a particular business process.
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Event+Universal"><i>Event Universal</i></a>
+<a href=#UFO_Event+Universal_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Expression"><i>Expression</i></a>
+<a href=#UFO_Expression_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Externally+Dependent+Moment"><i>Externally Dependent Moment</i></a>
+<a href=#UFO_Externally+Dependent+Moment_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Fact"><i>Fact</i></a>
+<a href=#UFO_Fact_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Formal+Relation"><i>Formal Relation</i></a>
+<a href=#UFO_Formal+Relation_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Fulfilled"><i>Fulfilled</i></a>
+<a href=#UFO_Fulfilled_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Function"><i>Function</i></a>
+<a href=#UFO_Function_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Function is a specialization of Set that maps instances of a Quality Universal to points in a Quality Structure.
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Function"><i>Function</i></a>
+<a href=#UFO_Function_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Function+Universal"><i>Function Universal</i></a>
+<a href=#UFO_Function+Universal_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Goal"><i>Goal</i></a>
+<a href=#UFO_Goal_detail><img src="images/plus-4-16.ico"></a></td>
+<td>The propositional content of an Intention.
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_High+Order+Universal"><i>High Order Universal</i></a>
+<a href=#UFO_High+Order+Universal_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Higher-Order+Object+Kind"><i>Higher-Order Object Kind</i></a>
+<a href=#UFO_Higher-Order+Object+Kind_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Individual"><i>Individual</i></a>
+<a href=#UFO_Individual_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Intention"><i>Intention</i></a>
+<a href=#UFO_Intention_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Intentions are desired state of affairs (situations) for which the agent commits at pursuing (@e.g., the Intention of going to a beach resort for the next summer break).
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Intentional+Moment"><i>Intentional Moment</i></a>
+<a href=#UFO_Intentional+Moment_detail><img src="images/plus-4-16.ico"></a></td>
+<td>The capacity of some properties of certain individuals to refer to possible Situations of reality. Every intentional moment has a propositional content (Proposition), which is an abstract representation of a class of situations referred by that intentional moment.
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Interaction"><i>Interaction</i></a>
+<a href=#UFO_Interaction_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Internal+Closed+Commitment+Universal"><i>Internal Closed Commitment Universal</i></a>
+<a href=#UFO_Internal+Closed+Commitment+Universal_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Internal+Commitment+Universal"><i>Internal Commitment Universal</i></a>
+<a href=#UFO_Internal+Commitment+Universal_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Interval+MeaRefDimension"><i>Interval MeaRefDimension</i></a>
+<a href=#UFO_Interval+MeaRefDimension_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Intrinsic+Moment"><i>Intrinsic Moment</i></a>
+<a href=#UFO_Intrinsic+Moment_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Intrinsic Moments are moments that inhere in one single individual (e.g., an apple’s color). An example of an intrinsic moment is a Mode (@e.g., John’s desires, intentions, perceptions, symptoms, skills).
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Intrisic+Moment+Universal"><i>Intrisic Moment Universal</i></a>
+<a href=#UFO_Intrisic+Moment+Universal_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Kind"><i>Kind</i></a>
+<a href=#UFO_Kind_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Linear+Temporal+Structure"><i>Linear Temporal Structure</i></a>
+<a href=#UFO_Linear+Temporal+Structure_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Material+Relation"><i>Material Relation</i></a>
+<a href=#UFO_Material+Relation_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Measurable+Quality+Universal"><i>Measurable Quality Universal</i></a>
+<a href=#UFO_Measurable+Quality+Universal_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Measurable Quality Universals are quality universals that can be objectively measured by cognitive agents or measurement devices, and it is possible to establish distances among their quality regions (@e.g., Weight and Height).
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Measurement+Quality+Domain"><i>Measurement Quality Domain</i></a>
+<a href=#UFO_Measurement+Quality+Domain_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Measurement+Quality+Region"><i>Measurement Quality Region</i></a>
+<a href=#UFO_Measurement+Quality+Region_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Measurement+Quality+Structure"><i>Measurement Quality Structure</i></a>
+<a href=#UFO_Measurement+Quality+Structure_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Measurement+Reference+Dimension"><i>Measurement Reference Dimension</i></a>
+<a href=#UFO_Measurement+Reference+Dimension_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Measurement+Reference+Region"><i>Measurement Reference Region</i></a>
+<a href=#UFO_Measurement+Reference+Region_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Measurement+Reference+Structure"><i>Measurement Reference Structure</i></a>
+<a href=#UFO_Measurement+Reference+Structure_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Measurement Reference Structures act as scales based on quality structures. They are composed of Measurement Reference Regions. Measurement Reference Structures can be partitioned into spaces of the same magnitude according to a Unit.
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Mental+Moment"><i>Mental Moment</i></a>
+<a href=#UFO_Mental+Moment_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Mixin+Universal"><i>Mixin Universal</i></a>
+<a href=#UFO_Mixin+Universal_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Mode"><i>Mode</i></a>
+<a href=#UFO_Mode_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Mode+Universal"><i>Mode Universal</i></a>
+<a href=#UFO_Mode+Universal_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Moment"><i>Moment</i></a>
+<a href=#UFO_Moment_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Moments are individuals that can only exist by inhering in other individuals. In other words, moments are individuals that are existentially-dependent on their bearers (@e.g., a person’s headache, a covalent bond between atoms).
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Moment+Universal"><i>Moment Universal</i></a>
+<a href=#UFO_Moment+Universal_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Normative+Description"><i>Normative Description</i></a>
+<a href=#UFO_Normative+Description_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Normative Descriptions are Social Objects that define one or more rules/norms recognized by at least one Social Agent and that can define other Social objects (the crown of the king of Spain) or Social Roles (such as president, PhD candidate or pedestrian). @Examples of normative descriptions include the Brazilian Constitution, the Federal University of Espírito Santo PhD program regulation, but also a set of directives on how to perform some actions within an organization (a Plan Description).
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Object"><i>Object</i></a>
+<a href=#UFO_Object_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Non-agentive substantial individuals. Objects can be Physical or Social.
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Object+Kind"><i>Object Kind</i></a>
+<a href=#UFO_Object+Kind_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Object+Participation"><i>Object Participation</i></a>
+<a href=#UFO_Object+Participation_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Object Participation is a set of different ways than an object can participate in actions. There are four different types of Object Participation, namely: Creation, Termination, Change and Usage.
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Ordinal+MeaRefDimension"><i>Ordinal MeaRefDimension</i></a>
+<a href=#UFO_Ordinal+MeaRefDimension_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Participation"><i>Participation</i></a>
+<a href=#UFO_Participation_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A participation is the portion of an event which depends exclusively on a single object. Each of participations is itself an event that can be complex or atomic but which existentially depends on a single substantial. Take for instance the event e: the stabbing of Caesar by Brutus. In this event we have the participation of Caesar himself, of Brutus and of the knife. In this case, e is composed of the individual participation of each of these entities.
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Participation+Universal"><i>Participation Universal</i></a>
+<a href=#UFO_Participation+Universal_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Person"><i>Person</i></a>
+<a href=#UFO_Person_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Same as UFO::Human Agent<br/>A human Physical Agent.
+<br/>E.g.:<i> Tim Berners Lee, Dennis Ritchie, Donald Knuth.</i></td>
+</tr>
+<tr>
+<td><a name="UFO_Phase"><i>Phase</i></a>
+<a href=#UFO_Phase_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Phasemixin"><i>Phasemixin</i></a>
+<a href=#UFO_Phasemixin_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Physical+Agent"><i>Physical Agent</i></a>
+<a href=#UFO_Physical+Agent_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Physical+Object"><i>Physical Object</i></a>
+<a href=#UFO_Physical+Object_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Plan+Description"><i>Plan Description</i></a>
+<a href=#UFO_Plan+Description_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Processual+Role"><i>Processual Role</i></a>
+<a href=#UFO_Processual+Role_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Proposition"><i>Proposition</i></a>
+<a href=#UFO_Proposition_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A Proposition is a sentence that is either true or false. The truth of a proposition is determined by its correspondence to the existence of an entity or fact in reality, the so-called truthmaker of a proposition.
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Quale"><i>Quale</i></a>
+<a href=#UFO_Quale_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Quality"><i>Quality</i></a>
+<a href=#UFO_Quality_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Quality+Region"><i>Quality Region</i></a>
+<a href=#UFO_Quality+Region_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Quality+Structure"><i>Quality Structure</i></a>
+<a href=#UFO_Quality+Structure_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Quality+Universal"><i>Quality Universal</i></a>
+<a href=#UFO_Quality+Universal_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Quality Universals are those universals whose instances are Qualities.
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Rational+MeaRefDimension"><i>Rational MeaRefDimension</i></a>
+<a href=#UFO_Rational+MeaRefDimension_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Reference+Structure"><i>Reference Structure</i></a>
+<a href=#UFO_Reference+Structure_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Relation"><i>Relation</i></a>
+<a href=#UFO_Relation_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Relational+Role"><i>Relational Role</i></a>
+<a href=#UFO_Relational+Role_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Relator"><i>Relator</i></a>
+<a href=#UFO_Relator_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Relator+Universal"><i>Relator Universal</i></a>
+<a href=#UFO_Relator+Universal_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Rigid+Mixin+Universal"><i>Rigid Mixin Universal</i></a>
+<a href=#UFO_Rigid+Mixin+Universal_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Rigid+Sortal+Universal"><i>Rigid Sortal Universal</i></a>
+<a href=#UFO_Rigid+Sortal+Universal_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Role"><i>Role</i></a>
+<a href=#UFO_Role_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Rolemixin"><i>Rolemixin</i></a>
+<a href=#UFO_Rolemixin_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Scientific+Measurement+Domain"><i>Scientific Measurement Domain</i></a>
+<a href=#UFO_Scientific+Measurement+Domain_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Self+Appointment"><i>Self Appointment</i></a>
+<a href=#UFO_Self+Appointment_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Set"><i>Set</i></a>
+<a href=#UFO_Set_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Simple+Quality+Universal"><i>Simple Quality Universal</i></a>
+<a href=#UFO_Simple+Quality+Universal_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Situation"><i>Situation</i></a>
+<a href=#UFO_Situation_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A situation is a particular configuration of a part of reality which can be understood as a whole. Situations can be factual or counterfactual (@e.g., the situation in which “Al Gore is the president of the USA”).
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Social+Agent"><i>Social Agent</i></a>
+<a href=#UFO_Social+Agent_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Social+Appointment"><i>Social Appointment</i></a>
+<a href=#UFO_Social+Appointment_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Social+Commitment"><i>Social Commitment</i></a>
+<a href=#UFO_Social+Commitment_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Social+Moment"><i>Social Moment</i></a>
+<a href=#UFO_Social+Moment_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Social+Object"><i>Social Object</i></a>
+<a href=#UFO_Social+Object_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Social+Relator"><i>Social Relator</i></a>
+<a href=#UFO_Social+Relator_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Social+Role"><i>Social Role</i></a>
+<a href=#UFO_Social+Role_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Sortal+Universal"><i>Sortal Universal</i></a>
+<a href=#UFO_Sortal+Universal_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Subkind"><i>Subkind</i></a>
+<a href=#UFO_Subkind_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Substantial"><i>Substantial</i></a>
+<a href=#UFO_Substantial_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Substantials (objects) are existentially-independent Endurants (@e.g., a person, a car).
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Substantial+Universal"><i>Substantial Universal</i></a>
+<a href=#UFO_Substantial+Universal_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Time+Point"><i>Time Point</i></a>
+<a href=#UFO_Time+Point_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Unfulfilled"><i>Unfulfilled</i></a>
+<a href=#UFO_Unfulfilled_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Unit"><i>Unit</i></a>
+<a href=#UFO_Unit_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Universal"><i>Universal</i></a>
+<a href=#UFO_Universal_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_Usage"><i>Usage</i></a>
+<a href=#UFO_Usage_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="UFO_xOrganization"><i>xOrganization</i></a>
+<a href=#UFO_xOrganization_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+
+							</tbody>
+						</table>
+  				</div>
+
+
+
+				<!--	<table style="width: 100%" border="1" cellpadding="6">
 						<tbody>
 							<tr style="background-color: #D8D8D8">
 								<td style="width: 25%"><b>Concept</b></td>
@@ -335,815 +1152,808 @@
 							</tr>
 							<tr>
 <td><a name="UFO_2ndOT"><i>2ndOT</i></a>
-<a href=#UFO_2ndOT_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_2ndOT_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_3rdOT"><i>3rdOT</i></a>
-<a href=#UFO_3rdOT_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_3rdOT_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Abstract+Particular"><i>Abstract Particular</i></a>
-<a href=#UFO_Abstract+Particular_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Abstract+Particular_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Abstract+Thing"><i>Abstract Thing</i></a>
-<a href=#UFO_Abstract+Thing_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Abstract+Thing_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Action"><i>Action</i></a>
-<a href=#UFO_Action_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Action_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Actions are intentional events, i.e. they are caused by Intentions. Actions are events which instantiate a Plan (Action Universal) with the specific purpose of satisfying (the propositional content of) some Intention.
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Action+Contribution"><i>Action Contribution</i></a>
-<a href=#UFO_Action+Contribution_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Action+Contribution_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Action Contribution is a participation that are intentional.
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Action+Universal"><i>Action Universal</i></a>
-<a href=#UFO_Action+Universal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Action+Universal_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Agent"><i>Agent</i></a>
-<a href=#UFO_Agent_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Agent_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Agents are Substantials (Functional Complexes or Collectives) that can bear special kinds of Intrinsic Moments named Intentional Moments.
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Agent+Participation"><i>Agent Participation</i></a>
-<a href=#UFO_Agent+Participation_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Agent+Participation_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Anti-Rigid+Mixin+Universal"><i>Anti-Rigid Mixin Universal</i></a>
-<a href=#UFO_Anti-Rigid+Mixin+Universal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Anti-Rigid+Mixin+Universal_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Anti-Rigid+Sortal+Universal"><i>Anti-Rigid Sortal Universal</i></a>
-<a href=#UFO_Anti-Rigid+Sortal+Universal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Anti-Rigid+Sortal+Universal_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Appointment"><i>Appointment</i></a>
-<a href=#UFO_Appointment_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Appointment_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Appointment+Goal"><i>Appointment Goal</i></a>
-<a href=#UFO_Appointment+Goal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Appointment+Goal_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Atomic+Action"><i>Atomic Action</i></a>
-<a href=#UFO_Atomic+Action_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Atomic+Action_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Atomic+Action+Universal"><i>Atomic Action Universal</i></a>
-<a href=#UFO_Atomic+Action+Universal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Atomic+Action+Universal_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Atomic+Event"><i>Atomic Event</i></a>
-<a href=#UFO_Atomic+Event_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Atomic+Event_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Atomic Events are those events which have no proper parts, i.e., events which cannot be further decomposed.
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Belief"><i>Belief</i></a>
-<a href=#UFO_Belief_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Belief_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Category"><i>Category</i></a>
-<a href=#UFO_Category_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Category_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Change"><i>Change</i></a>
-<a href=#UFO_Change_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Change_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Closed+Appointment"><i>Closed Appointment</i></a>
-<a href=#UFO_Closed+Appointment_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Closed+Appointment_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Closed+Commitment"><i>Closed Commitment</i></a>
-<a href=#UFO_Closed+Commitment_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Closed+Commitment_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Closed+Commitment+Universal"><i>Closed Commitment Universal</i></a>
-<a href=#UFO_Closed+Commitment+Universal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Closed+Commitment+Universal_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Collective+Social+Agent"><i>Collective Social Agent</i></a>
-<a href=#UFO_Collective+Social+Agent_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Collective+Social+Agent_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Commitment"><i>Commitment</i></a>
-<a href=#UFO_Commitment_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Commitment_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Commitment+Universal"><i>Commitment Universal</i></a>
-<a href=#UFO_Commitment+Universal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Commitment+Universal_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Complex+Action"><i>Complex Action</i></a>
-<a href=#UFO_Complex+Action_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Complex+Action_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A Complex Action is composed of two or more Participations. These participations can themselves be intentional (i.e., be themselves actions) or unintentional events. For @ex, the stabbing of Caesar by Brutus includes the intentional participation of Brutus and the unintentional. participation of Caesar and the knife. In a complex action, at least one participation should be intentional, i.e., an action contribution
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Complex+Action+Universal"><i>Complex Action Universal</i></a>
-<a href=#UFO_Complex+Action+Universal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Complex+Action+Universal_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Complex+Closed+Appointment"><i>Complex Closed Appointment</i></a>
-<a href=#UFO_Complex+Closed+Appointment_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Complex+Closed+Appointment_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Complex+Closed+Commitment"><i>Complex Closed Commitment</i></a>
-<a href=#UFO_Complex+Closed+Commitment_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Complex+Closed+Commitment_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Complex+Commitment"><i>Complex Commitment</i></a>
-<a href=#UFO_Complex+Commitment_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Complex+Commitment_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Complex+Event"><i>Complex Event</i></a>
-<a href=#UFO_Complex+Event_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Complex+Event_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Complex events are aggregations of at least two disjoint events. A Complex Event is existentially dependent on all its proper parts and, indirectly, to the objects these proper parts depend on.
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Composed+Quality+Universal"><i>Composed Quality Universal</i></a>
-<a href=#UFO_Composed+Quality+Universal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Composed+Quality+Universal_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Concrete+Particular"><i>Concrete Particular</i></a>
-<a href=#UFO_Concrete+Particular_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Concrete+Particular_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Creation"><i>Creation</i></a>
-<a href=#UFO_Creation_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Creation_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Delegation"><i>Delegation</i></a>
-<a href=#UFO_Delegation_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Delegation_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Delegatum"><i>Delegatum</i></a>
-<a href=#UFO_Delegatum_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Delegatum_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Desire"><i>Desire</i></a>
-<a href=#UFO_Desire_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Desire_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Disposition"><i>Disposition</i></a>
-<a href=#UFO_Disposition_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Disposition_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Dispositions are properties (moments) that are only manifested in particular situations and that can also fail to be manifested. When manifested, they are manifested through the occurrence of events. Take for example the disposition of a magnet m to attract metallic material. The object m has this disposition even if it is never manifested, for example, because it is never close to any magnetic material. Nonetheless, m can certainly be said to possess that intrinsic moment, which it shares with other magnets.
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Disposition"><i>Disposition</i></a>
-<a href=#UFO_Disposition_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Disposition_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Endurant"><i>Endurant</i></a>
-<a href=#UFO_Endurant_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Endurant_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Endurants are said to be wholly present whenever they are present, i.e., they are in time. They can be understood in contrast with the category of Perdurants (Processes, Events). Examples of endurants are a house, a person, the Moon, an amount of sand. For instance, we can say that an individual John weights 80kg at in circumstance c1 but 68kg at in circumstance c2. Nonetheless, we are in these two cases referring to the same individual.
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Endurant+Universal"><i>Endurant Universal</i></a>
-<a href=#UFO_Endurant+Universal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Endurant+Universal_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Entity"><i>Entity</i></a>
-<a href=#UFO_Entity_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Entity_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Entity is the topmost category of UFO, representing anything, concrete or abstract, and both types and individuals.
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Event+(Perdurant)"><i>Event (Perdurant)</i></a>
-<a href=#UFO_Event+(Perdurant)_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Event+(Perdurant)_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Events (also called perdurants) are individuals composed of temporal parts. They happen in time in the sense that they extend in time accumulating temporal parts. @Examples of events are a conversation, a football game, a symphony execution, a birthday party, or a particular business process.
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Event+Universal"><i>Event Universal</i></a>
-<a href=#UFO_Event+Universal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Event+Universal_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Expression"><i>Expression</i></a>
-<a href=#UFO_Expression_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Expression_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Externally+Dependent+Moment"><i>Externally Dependent Moment</i></a>
-<a href=#UFO_Externally+Dependent+Moment_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Externally+Dependent+Moment_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Fact"><i>Fact</i></a>
-<a href=#UFO_Fact_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Fact_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Formal+Relation"><i>Formal Relation</i></a>
-<a href=#UFO_Formal+Relation_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Formal+Relation_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Fulfilled"><i>Fulfilled</i></a>
-<a href=#UFO_Fulfilled_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Fulfilled_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Function"><i>Function</i></a>
-<a href=#UFO_Function_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Function_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Function is a specialization of Set that maps instances of a Quality Universal to points in a Quality Structure.
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Function"><i>Function</i></a>
-<a href=#UFO_Function_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Function_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Function+Universal"><i>Function Universal</i></a>
-<a href=#UFO_Function+Universal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Function+Universal_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Goal"><i>Goal</i></a>
-<a href=#UFO_Goal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Goal_detail><img src="images/plus-4-16.ico"></a></td>
 <td>The propositional content of an Intention.
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_High+Order+Universal"><i>High Order Universal</i></a>
-<a href=#UFO_High+Order+Universal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_High+Order+Universal_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Higher-Order+Object+Kind"><i>Higher-Order Object Kind</i></a>
-<a href=#UFO_Higher-Order+Object+Kind_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Higher-Order+Object+Kind_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Individual"><i>Individual</i></a>
-<a href=#UFO_Individual_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Individual_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Intention"><i>Intention</i></a>
-<a href=#UFO_Intention_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Intention_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Intentions are desired state of affairs (situations) for which the agent commits at pursuing (@e.g., the Intention of going to a beach resort for the next summer break).
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Intentional+Moment"><i>Intentional Moment</i></a>
-<a href=#UFO_Intentional+Moment_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Intentional+Moment_detail><img src="images/plus-4-16.ico"></a></td>
 <td>The capacity of some properties of certain individuals to refer to possible Situations of reality. Every intentional moment has a propositional content (Proposition), which is an abstract representation of a class of situations referred by that intentional moment.
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Interaction"><i>Interaction</i></a>
-<a href=#UFO_Interaction_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Interaction_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Internal+Closed+Commitment+Universal"><i>Internal Closed Commitment Universal</i></a>
-<a href=#UFO_Internal+Closed+Commitment+Universal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Internal+Closed+Commitment+Universal_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Internal+Commitment+Universal"><i>Internal Commitment Universal</i></a>
-<a href=#UFO_Internal+Commitment+Universal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Internal+Commitment+Universal_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Interval+MeaRefDimension"><i>Interval MeaRefDimension</i></a>
-<a href=#UFO_Interval+MeaRefDimension_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Interval+MeaRefDimension_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Intrinsic+Moment"><i>Intrinsic Moment</i></a>
-<a href=#UFO_Intrinsic+Moment_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Intrinsic+Moment_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Intrinsic Moments are moments that inhere in one single individual (e.g., an apple’s color). An example of an intrinsic moment is a Mode (@e.g., John’s desires, intentions, perceptions, symptoms, skills).
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Intrisic+Moment+Universal"><i>Intrisic Moment Universal</i></a>
-<a href=#UFO_Intrisic+Moment+Universal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Intrisic+Moment+Universal_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Kind"><i>Kind</i></a>
-<a href=#UFO_Kind_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Kind_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Linear+Temporal+Structure"><i>Linear Temporal Structure</i></a>
-<a href=#UFO_Linear+Temporal+Structure_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Linear+Temporal+Structure_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Material+Relation"><i>Material Relation</i></a>
-<a href=#UFO_Material+Relation_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Material+Relation_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Measurable+Quality+Universal"><i>Measurable Quality Universal</i></a>
-<a href=#UFO_Measurable+Quality+Universal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Measurable+Quality+Universal_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Measurable Quality Universals are quality universals that can be objectively measured by cognitive agents or measurement devices, and it is possible to establish distances among their quality regions (@e.g., Weight and Height).
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Measurement+Quality+Domain"><i>Measurement Quality Domain</i></a>
-<a href=#UFO_Measurement+Quality+Domain_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Measurement+Quality+Domain_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Measurement+Quality+Region"><i>Measurement Quality Region</i></a>
-<a href=#UFO_Measurement+Quality+Region_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Measurement+Quality+Region_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Measurement+Quality+Structure"><i>Measurement Quality Structure</i></a>
-<a href=#UFO_Measurement+Quality+Structure_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Measurement+Quality+Structure_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Measurement+Reference+Dimension"><i>Measurement Reference Dimension</i></a>
-<a href=#UFO_Measurement+Reference+Dimension_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Measurement+Reference+Dimension_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Measurement+Reference+Region"><i>Measurement Reference Region</i></a>
-<a href=#UFO_Measurement+Reference+Region_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Measurement+Reference+Region_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Measurement+Reference+Structure"><i>Measurement Reference Structure</i></a>
-<a href=#UFO_Measurement+Reference+Structure_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Measurement+Reference+Structure_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Measurement Reference Structures act as scales based on quality structures. They are composed of Measurement Reference Regions. Measurement Reference Structures can be partitioned into spaces of the same magnitude according to a Unit.
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Mental+Moment"><i>Mental Moment</i></a>
-<a href=#UFO_Mental+Moment_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Mental+Moment_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Mixin+Universal"><i>Mixin Universal</i></a>
-<a href=#UFO_Mixin+Universal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Mixin+Universal_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Mode"><i>Mode</i></a>
-<a href=#UFO_Mode_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Mode_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Mode+Universal"><i>Mode Universal</i></a>
-<a href=#UFO_Mode+Universal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Mode+Universal_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Moment"><i>Moment</i></a>
-<a href=#UFO_Moment_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Moment_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Moments are individuals that can only exist by inhering in other individuals. In other words, moments are individuals that are existentially-dependent on their bearers (@e.g., a person’s headache, a covalent bond between atoms).
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Moment+Universal"><i>Moment Universal</i></a>
-<a href=#UFO_Moment+Universal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Moment+Universal_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Normative+Description"><i>Normative Description</i></a>
-<a href=#UFO_Normative+Description_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Normative+Description_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Normative Descriptions are Social Objects that define one or more rules/norms recognized by at least one Social Agent and that can define other Social objects (the crown of the king of Spain) or Social Roles (such as president, PhD candidate or pedestrian). @Examples of normative descriptions include the Brazilian Constitution, the Federal University of Espírito Santo PhD program regulation, but also a set of directives on how to perform some actions within an organization (a Plan Description).
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Object"><i>Object</i></a>
-<a href=#UFO_Object_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Object_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Non-agentive substantial individuals. Objects can be Physical or Social.
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Object+Kind"><i>Object Kind</i></a>
-<a href=#UFO_Object+Kind_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Object+Kind_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Object+Participation"><i>Object Participation</i></a>
-<a href=#UFO_Object+Participation_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Object+Participation_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Object Participation is a set of different ways than an object can participate in actions. There are four different types of Object Participation, namely: Creation, Termination, Change and Usage.
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Ordinal+MeaRefDimension"><i>Ordinal MeaRefDimension</i></a>
-<a href=#UFO_Ordinal+MeaRefDimension_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Ordinal+MeaRefDimension_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Participation"><i>Participation</i></a>
-<a href=#UFO_Participation_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Participation_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A participation is the portion of an event which depends exclusively on a single object. Each of participations is itself an event that can be complex or atomic but which existentially depends on a single substantial. Take for instance the event e: the stabbing of Caesar by Brutus. In this event we have the participation of Caesar himself, of Brutus and of the knife. In this case, e is composed of the individual participation of each of these entities.
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Participation+Universal"><i>Participation Universal</i></a>
-<a href=#UFO_Participation+Universal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Participation+Universal_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Person"><i>Person</i></a>
-<a href=#UFO_Person_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Person_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Same as UFO::Human Agent<br/>A human Physical Agent.
 <br/>E.g.:<i> Tim Berners Lee, Dennis Ritchie, Donald Knuth.</i></td>
 </tr>
 <tr>
 <td><a name="UFO_Phase"><i>Phase</i></a>
-<a href=#UFO_Phase_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Phase_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Phasemixin"><i>Phasemixin</i></a>
-<a href=#UFO_Phasemixin_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Phasemixin_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Physical+Agent"><i>Physical Agent</i></a>
-<a href=#UFO_Physical+Agent_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Physical+Agent_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Physical+Object"><i>Physical Object</i></a>
-<a href=#UFO_Physical+Object_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Physical+Object_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Plan+Description"><i>Plan Description</i></a>
-<a href=#UFO_Plan+Description_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Plan+Description_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Processual+Role"><i>Processual Role</i></a>
-<a href=#UFO_Processual+Role_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Processual+Role_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Proposition"><i>Proposition</i></a>
-<a href=#UFO_Proposition_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Proposition_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A Proposition is a sentence that is either true or false. The truth of a proposition is determined by its correspondence to the existence of an entity or fact in reality, the so-called truthmaker of a proposition.
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Quale"><i>Quale</i></a>
-<a href=#UFO_Quale_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Quale_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Quality"><i>Quality</i></a>
-<a href=#UFO_Quality_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Quality_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Quality+Region"><i>Quality Region</i></a>
-<a href=#UFO_Quality+Region_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Quality+Region_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Quality+Structure"><i>Quality Structure</i></a>
-<a href=#UFO_Quality+Structure_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Quality+Structure_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Quality+Universal"><i>Quality Universal</i></a>
-<a href=#UFO_Quality+Universal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Quality+Universal_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Quality Universals are those universals whose instances are Qualities.
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Rational+MeaRefDimension"><i>Rational MeaRefDimension</i></a>
-<a href=#UFO_Rational+MeaRefDimension_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Rational+MeaRefDimension_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Reference+Structure"><i>Reference Structure</i></a>
-<a href=#UFO_Reference+Structure_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Reference+Structure_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Relation"><i>Relation</i></a>
-<a href=#UFO_Relation_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Relation_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Relational+Role"><i>Relational Role</i></a>
-<a href=#UFO_Relational+Role_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Relational+Role_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Relator"><i>Relator</i></a>
-<a href=#UFO_Relator_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Relator_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Relator+Universal"><i>Relator Universal</i></a>
-<a href=#UFO_Relator+Universal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Relator+Universal_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Rigid+Mixin+Universal"><i>Rigid Mixin Universal</i></a>
-<a href=#UFO_Rigid+Mixin+Universal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Rigid+Mixin+Universal_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Rigid+Sortal+Universal"><i>Rigid Sortal Universal</i></a>
-<a href=#UFO_Rigid+Sortal+Universal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Rigid+Sortal+Universal_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Role"><i>Role</i></a>
-<a href=#UFO_Role_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Role_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Rolemixin"><i>Rolemixin</i></a>
-<a href=#UFO_Rolemixin_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Rolemixin_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Scientific+Measurement+Domain"><i>Scientific Measurement Domain</i></a>
-<a href=#UFO_Scientific+Measurement+Domain_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Scientific+Measurement+Domain_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Self+Appointment"><i>Self Appointment</i></a>
-<a href=#UFO_Self+Appointment_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Self+Appointment_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Set"><i>Set</i></a>
-<a href=#UFO_Set_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Set_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Simple+Quality+Universal"><i>Simple Quality Universal</i></a>
-<a href=#UFO_Simple+Quality+Universal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Simple+Quality+Universal_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Situation"><i>Situation</i></a>
-<a href=#UFO_Situation_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Situation_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A situation is a particular configuration of a part of reality which can be understood as a whole. Situations can be factual or counterfactual (@e.g., the situation in which “Al Gore is the president of the USA”).
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Social+Agent"><i>Social Agent</i></a>
-<a href=#UFO_Social+Agent_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Social+Agent_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Social+Appointment"><i>Social Appointment</i></a>
-<a href=#UFO_Social+Appointment_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Social+Appointment_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Social+Commitment"><i>Social Commitment</i></a>
-<a href=#UFO_Social+Commitment_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Social+Commitment_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Social+Moment"><i>Social Moment</i></a>
-<a href=#UFO_Social+Moment_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Social+Moment_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Social+Object"><i>Social Object</i></a>
-<a href=#UFO_Social+Object_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Social+Object_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Social+Relator"><i>Social Relator</i></a>
-<a href=#UFO_Social+Relator_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Social+Relator_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Social+Role"><i>Social Role</i></a>
-<a href=#UFO_Social+Role_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Social+Role_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Sortal+Universal"><i>Sortal Universal</i></a>
-<a href=#UFO_Sortal+Universal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Sortal+Universal_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Subkind"><i>Subkind</i></a>
-<a href=#UFO_Subkind_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Subkind_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Substantial"><i>Substantial</i></a>
-<a href=#UFO_Substantial_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Substantial_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Substantials (objects) are existentially-independent Endurants (@e.g., a person, a car).
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Substantial+Universal"><i>Substantial Universal</i></a>
-<a href=#UFO_Substantial+Universal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Substantial+Universal_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Time+Point"><i>Time Point</i></a>
-<a href=#UFO_Time+Point_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Time+Point_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Unfulfilled"><i>Unfulfilled</i></a>
-<a href=#UFO_Unfulfilled_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Unfulfilled_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Unit"><i>Unit</i></a>
-<a href=#UFO_Unit_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Unit_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Universal"><i>Universal</i></a>
-<a href=#UFO_Universal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Universal_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_Usage"><i>Usage</i></a>
-<a href=#UFO_Usage_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_Usage_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="UFO_xOrganization"><i>xOrganization</i></a>
-<a href=#UFO_xOrganization_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#UFO_xOrganization_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 
 						</tbody>
-					</table>
+					</table>-->
 
 				</div>
 
-				<hr class="featurette-divider">		
+				<hr>		
 
-				<div class="container p-5 rounded" id="detailedconcepts">
+				<div class="p-5 rounded" id="detailedconcepts">
 					<h2 class="featurette-heading">5. Detailed Concepts</h2>
-					<p class="lead"><a name="UFO_2ndOT_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>2ndOT<strong></td></tr>
-</table><br/>
-<b>UFO::2ndOT</b><br/>
-Specializes UFO::Entity<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+					<p class="lead">Unified Foundational Ontology (UFO) detailed concepts.</p>					
+					<hr><div class="container-fluid" id="UFO_2ndOT_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">2ndOT</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::2ndOT</span><br/>Specializes UFO::Entity</p><p><br/></p><p>Relations:<br/>
 <code>2ndOT (1..*) iof (1..*) 3rdOT<br/>
 2ndOT (0..*) is subordinate to (0..*) 2ndOT<br/>
 2ndOT (0..*) proper specializes (0..*) 2ndOT<br/>
@@ -1152,556 +1962,178 @@ Relations:<br/>
 Universal (1..*) iof (1..*) 2ndOT<br/>
 3rdOT (1..1) is powertype of (0..1) 2ndOT<br/>
 3rdOT (0..*) categorizes (0..*) 2ndOT<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_3rdOT_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>3rdOT<strong></td></tr>
-</table><br/>
-<b>UFO::3rdOT</b><br/>
-Specializes UFO::Entity<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_3rdOT_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">3rdOT</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::3rdOT</span><br/>Specializes UFO::Entity</p><p><br/></p><p>Relations:<br/>
 <code>3rdOT (0..*) is subordinate to (0..*) 3rdOT<br/>
 3rdOT (0..*) proper specializes (0..*) 3rdOT<br/>
 3rdOT (1..1) is powertype of (0..1) 2ndOT<br/>
 3rdOT (0..*) categorizes (0..*) 2ndOT<br/>
 2ndOT (1..*) iof (1..*) 3rdOT<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Abstract+Particular_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Abstract Particular<strong></td></tr>
-</table><br/>
-<b>UFO::Abstract Particular</b><br/>
-Specializes UFO::Individual<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Abstract+Particular_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Abstract Particular</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Abstract Particular</span><br/>Specializes UFO::Individual</p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Abstract+Thing_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Abstract Thing<strong></td></tr>
-</table><br/>
-<b>UFO::Abstract Thing</b><br/>
-Specializes <br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Abstract+Thing_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Abstract Thing</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Abstract Thing</span><br/>Specializes </p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Action_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Action<strong></td></tr>
-</table><br/>
-<b>UFO::Action</b><br/>
-Specializes UFO::Event (Perdurant)<br/><br/>
-Actions are intentional events, i.e. they are caused by Intentions. Actions are events which instantiate a Plan (Action Universal) with the specific purpose of satisfying (the propositional content of) some Intention.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Action_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Action</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Action</span><br/>Specializes UFO::Event (Perdurant)</p><p>Actions are intentional events, i.e. they are caused by Intentions. Actions are events which instantiate a Plan (Action Universal) with the specific purpose of satisfying (the propositional content of) some Intention.<br/></p><p>Relations:<br/>
 <code>Action (0..*) caused by (1..1) Intention<br/>
 Action (0..*) instance of (1..1) Action Universal<br/>
 Social Commitment causes Action<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Action+Contribution_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Action Contribution<strong></td></tr>
-</table><br/>
-<b>UFO::Action Contribution</b><br/>
-Specializes UFO::Action, UFO::Agent Participation<br/><br/>
-Action Contribution is a participation that are intentional.<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Action+Contribution_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Action Contribution</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Action Contribution</span><br/>Specializes UFO::Action, UFO::Agent Participation</p><p>Action Contribution is a participation that are intentional.<br/></p><p></p></div></div>
 
-<a name="UFO_Action+Universal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Action Universal<strong></td></tr>
-</table><br/>
-<b>UFO::Action Universal</b><br/>
-Specializes UFO::Event Universal<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Action+Universal_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Action Universal</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Action Universal</span><br/>Specializes UFO::Event Universal</p><p><br/></p><p>Relations:<br/>
 <code>Action (0..*) instance of (1..1) Action Universal<br/>
 Complex Action Universal (0..*) <>-- (2..*) Action Universal<br/>
 Closed Commitment Universal based on (1..1) Action Universal<br/>
 Closed Commitment (0..*) based on (1..1) Action Universal<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Agent_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Agent<strong></td></tr>
-</table><br/>
-<b>UFO::Agent</b><br/>
-Specializes UFO::Substantial<br/><br/>
-Agents are Substantials (Functional Complexes or Collectives) that can bear special kinds of Intrinsic Moments named Intentional Moments.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Agent_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Agent</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Agent</span><br/>Specializes UFO::Substantial</p><p>Agents are Substantials (Functional Complexes or Collectives) that can bear special kinds of Intrinsic Moments named Intentional Moments.<br/></p><p>Relations:<br/>
 <code>Social Commitment (0..*) external dependence (1..*) Agent<br/>
 Intentional Moment (1..*) inheres in (1..1) Agent<br/>
 Mental Moment (0..*) inheres in (1..1) Agent<br/>
 Agent Participation (0..*) participation of (1..1) Agent<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Agent+Participation_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Agent Participation<strong></td></tr>
-</table><br/>
-<b>UFO::Agent Participation</b><br/>
-Specializes UFO::Participation<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Agent+Participation_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Agent Participation</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Agent Participation</span><br/>Specializes UFO::Participation</p><p><br/></p><p>Relations:<br/>
 <code>Agent Participation (0..*) participation of (1..1) Agent<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Anti-Rigid+Mixin+Universal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Anti-Rigid Mixin Universal<strong></td></tr>
-</table><br/>
-<b>UFO::Anti-Rigid Mixin Universal</b><br/>
-Specializes UFO::Mixin Universal<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Anti-Rigid+Mixin+Universal_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Anti-Rigid Mixin Universal</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Anti-Rigid Mixin Universal</span><br/>Specializes UFO::Mixin Universal</p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Anti-Rigid+Sortal+Universal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Anti-Rigid Sortal Universal<strong></td></tr>
-</table><br/>
-<b>UFO::Anti-Rigid Sortal Universal</b><br/>
-Specializes UFO::Sortal Universal<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Anti-Rigid+Sortal+Universal_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Anti-Rigid Sortal Universal</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Anti-Rigid Sortal Universal</span><br/>Specializes UFO::Sortal Universal</p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Appointment_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Appointment<strong></td></tr>
-</table><br/>
-<b>UFO::Appointment</b><br/>
-Specializes UFO::Commitment<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Appointment_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Appointment</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Appointment</span><br/>Specializes UFO::Commitment</p><p><br/></p><p>Relations:<br/>
 <code>Appointment Goal (1..1) propositional content of (1..*) Appointment<br/>
 Complex Closed Appointment <>-- (2..*) Appointment<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Appointment+Goal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Appointment Goal<strong></td></tr>
-</table><br/>
-<b>UFO::Appointment Goal</b><br/>
-Specializes UFO::Goal<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Appointment+Goal_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Appointment Goal</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Appointment Goal</span><br/>Specializes UFO::Goal</p><p><br/></p><p>Relations:<br/>
 <code>Appointment Goal (1..1) propositional content of (1..*) Appointment<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Atomic+Action_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Atomic Action<strong></td></tr>
-</table><br/>
-<b>UFO::Atomic Action</b><br/>
-Specializes UFO::Atomic Event, UFO::Action<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Atomic+Action_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Atomic Action</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Atomic Action</span><br/>Specializes UFO::Atomic Event, UFO::Action</p><p><br/></p><p>Relations:<br/>
 <code>Atomic Action instance of (1..1) Atomic Action Universal<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Atomic+Action+Universal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Atomic Action Universal<strong></td></tr>
-</table><br/>
-<b>UFO::Atomic Action Universal</b><br/>
-Specializes UFO::Action Universal<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Atomic+Action+Universal_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Atomic Action Universal</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Atomic Action Universal</span><br/>Specializes UFO::Action Universal</p><p><br/></p><p>Relations:<br/>
 <code>Atomic Action instance of (1..1) Atomic Action Universal<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Atomic+Event_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Atomic Event<strong></td></tr>
-</table><br/>
-<b>UFO::Atomic Event</b><br/>
-Specializes UFO::Event (Perdurant)<br/><br/>
-Atomic Events are those events which have no proper parts, i.e., events which cannot be further decomposed.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Atomic+Event_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Atomic Event</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Atomic Event</span><br/>Specializes UFO::Event (Perdurant)</p><p>Atomic Events are those events which have no proper parts, i.e., events which cannot be further decomposed.<br/></p><p>Relations:<br/>
 <code>Atomic Event (0..*) depends on (1..1) Substantial<br/>
 Disposition (1..1) manifested by (0..*) Atomic Event<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Belief_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Belief<strong></td></tr>
-</table><br/>
-<b>UFO::Belief</b><br/>
-Specializes UFO::Mental Moment<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Belief_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Belief</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Belief</span><br/>Specializes UFO::Mental Moment</p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Category_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Category<strong></td></tr>
-</table><br/>
-<b>UFO::Category</b><br/>
-Specializes UFO::Rigid Mixin Universal<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Category_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Category</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Category</span><br/>Specializes UFO::Rigid Mixin Universal</p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Change_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Change<strong></td></tr>
-</table><br/>
-<b>UFO::Change</b><br/>
-Specializes UFO::Object Participation<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Change_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Change</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Change</span><br/>Specializes UFO::Object Participation</p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Closed+Appointment_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Closed Appointment<strong></td></tr>
-</table><br/>
-<b>UFO::Closed Appointment</b><br/>
-Specializes UFO::Closed Commitment, UFO::Appointment<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Closed+Appointment_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Closed Appointment</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Closed Appointment</span><br/>Specializes UFO::Closed Commitment, UFO::Appointment</p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Closed+Commitment_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Closed Commitment<strong></td></tr>
-</table><br/>
-<b>UFO::Closed Commitment</b><br/>
-Specializes UFO::Commitment<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Closed+Commitment_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Closed Commitment</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Closed Commitment</span><br/>Specializes UFO::Commitment</p><p><br/></p><p>Relations:<br/>
 <code>Closed Commitment (0..*) based on (1..1) Action Universal<br/>
 Closed Commitment instance of Closed Commitment Universal<br/>
 Complex Closed Commitment <>-- (2..*) Closed Commitment<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Closed+Commitment+Universal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Closed Commitment Universal<strong></td></tr>
-</table><br/>
-<b>UFO::Closed Commitment Universal</b><br/>
-Specializes UFO::Commitment Universal<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Closed+Commitment+Universal_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Closed Commitment Universal</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Closed Commitment Universal</span><br/>Specializes UFO::Commitment Universal</p><p><br/></p><p>Relations:<br/>
 <code>Closed Commitment Universal based on (1..1) Action Universal<br/>
 Normative Description (1..1) defines (0..*) Closed Commitment Universal<br/>
 Closed Commitment instance of Closed Commitment Universal<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Collective+Social+Agent_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Collective Social Agent<strong></td></tr>
-</table><br/>
-<b>UFO::Collective Social Agent</b><br/>
-Specializes UFO::Social Agent<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Collective+Social+Agent_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Collective Social Agent</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Collective Social Agent</span><br/>Specializes UFO::Social Agent</p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Commitment_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Commitment<strong></td></tr>
-</table><br/>
-<b>UFO::Commitment</b><br/>
-Specializes <br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Commitment_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Commitment</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Commitment</span><br/>Specializes </p><p><br/></p><p>Relations:<br/>
 <code>Commitment instance of Commitment Universal<br/>
 Complex Commitment (0..*) <>-- (2..*) Commitment<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Commitment+Universal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Commitment Universal<strong></td></tr>
-</table><br/>
-<b>UFO::Commitment Universal</b><br/>
-Specializes <br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Commitment+Universal_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Commitment Universal</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Commitment Universal</span><br/>Specializes </p><p><br/></p><p>Relations:<br/>
 <code>Commitment instance of Commitment Universal<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Complex+Action_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Complex Action<strong></td></tr>
-</table><br/>
-<b>UFO::Complex Action</b><br/>
-Specializes UFO::Entity, UFO::Action, UFO::Complex Event<br/><br/>
-A Complex Action is composed of two or more Participations. These participations can themselves be intentional (i.e., be themselves actions) or unintentional events. For @ex, the stabbing of Caesar by Brutus includes the intentional participation of Brutus and the unintentional. participation of Caesar and the knife. In a complex action, at least one participation should be intentional, i.e., an action contribution<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Complex+Action_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Complex Action</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Complex Action</span><br/>Specializes UFO::Entity, UFO::Action, UFO::Complex Event</p><p>A Complex Action is composed of two or more Participations. These participations can themselves be intentional (i.e., be themselves actions) or unintentional events. For @ex, the stabbing of Caesar by Brutus includes the intentional participation of Brutus and the unintentional. participation of Caesar and the knife. In a complex action, at least one participation should be intentional, i.e., an action contribution<br/></p><p>Relations:<br/>
 <code>Complex Action instance of (0..1) Complex Action Universal<br/>
 Complex Action (0..*) <>-- (2..*) Participation<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Complex+Action+Universal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Complex Action Universal<strong></td></tr>
-</table><br/>
-<b>UFO::Complex Action Universal</b><br/>
-Specializes UFO::Action Universal<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Complex+Action+Universal_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Complex Action Universal</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Complex Action Universal</span><br/>Specializes UFO::Action Universal</p><p><br/></p><p>Relations:<br/>
 <code>Complex Action Universal (0..*) <>-- (2..*) Action Universal<br/>
 Complex Closed Commitment based on Complex Action Universal<br/>
 Plan Description (0..1) describes (1..*) Complex Action Universal<br/>
 Complex Action instance of (0..1) Complex Action Universal<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Complex+Closed+Appointment_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Complex Closed Appointment<strong></td></tr>
-</table><br/>
-<b>UFO::Complex Closed Appointment</b><br/>
-Specializes UFO::Closed Appointment, UFO::Complex Closed Commitment<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Complex+Closed+Appointment_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Complex Closed Appointment</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Complex Closed Appointment</span><br/>Specializes UFO::Closed Appointment, UFO::Complex Closed Commitment</p><p><br/></p><p>Relations:<br/>
 <code>Complex Closed Appointment <>-- (2..*) Appointment<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Complex+Closed+Commitment_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Complex Closed Commitment<strong></td></tr>
-</table><br/>
-<b>UFO::Complex Closed Commitment</b><br/>
-Specializes UFO::Closed Commitment<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Complex+Closed+Commitment_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Complex Closed Commitment</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Complex Closed Commitment</span><br/>Specializes UFO::Closed Commitment</p><p><br/></p><p>Relations:<br/>
 <code>Complex Closed Commitment based on Complex Action Universal<br/>
 Complex Closed Commitment <>-- (2..*) Closed Commitment<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Complex+Commitment_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Complex Commitment<strong></td></tr>
-</table><br/>
-<b>UFO::Complex Commitment</b><br/>
-Specializes UFO::Commitment<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Complex+Commitment_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Complex Commitment</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Complex Commitment</span><br/>Specializes UFO::Commitment</p><p><br/></p><p>Relations:<br/>
 <code>Complex Commitment (0..*) <>-- (2..*) Commitment<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Complex+Event_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Complex Event<strong></td></tr>
-</table><br/>
-<b>UFO::Complex Event</b><br/>
-Specializes UFO::Event (Perdurant)<br/><br/>
-Complex events are aggregations of at least two disjoint events. A Complex Event is existentially dependent on all its proper parts and, indirectly, to the objects these proper parts depend on.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Complex+Event_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Complex Event</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Complex Event</span><br/>Specializes UFO::Event (Perdurant)</p><p>Complex events are aggregations of at least two disjoint events. A Complex Event is existentially dependent on all its proper parts and, indirectly, to the objects these proper parts depend on.<br/></p><p>Relations:<br/>
 <code>Complex Event (0..*) <>-- (2..*) Event (Perdurant)<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Composed+Quality+Universal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Composed Quality Universal<strong></td></tr>
-</table><br/>
-<b>UFO::Composed Quality Universal</b><br/>
-Specializes UFO::Quality Universal<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Composed+Quality+Universal_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Composed Quality Universal</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Composed Quality Universal</span><br/>Specializes UFO::Quality Universal</p><p><br/></p><p>Relations:<br/>
 <code>Composed Quality Universal (0..*) <>-- (2..*) Quality Universal<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Concrete+Particular_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Concrete Particular<strong></td></tr>
-</table><br/>
-<b>UFO::Concrete Particular</b><br/>
-Specializes UFO::Individual<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Concrete+Particular_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Concrete Particular</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Concrete Particular</span><br/>Specializes UFO::Individual</p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Creation_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Creation<strong></td></tr>
-</table><br/>
-<b>UFO::Creation</b><br/>
-Specializes UFO::Object Participation<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Creation_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Creation</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Creation</span><br/>Specializes UFO::Object Participation</p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Delegation_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Delegation<strong></td></tr>
-</table><br/>
-<b>UFO::Delegation</b><br/>
-Specializes UFO::Material Relation<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Delegation_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Delegation</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Delegation</span><br/>Specializes UFO::Material Relation</p><p><br/></p><p>Relations:<br/>
 <code>Delegation (0..*) derived from (1..1) Delegatum<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Delegatum_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Delegatum<strong></td></tr>
-</table><br/>
-<b>UFO::Delegatum</b><br/>
-Specializes UFO::Social Relator<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Delegatum_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Delegatum</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Delegatum</span><br/>Specializes UFO::Social Relator</p><p><br/></p><p>Relations:<br/>
 <code>Delegation (0..*) derived from (1..1) Delegatum<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Desire_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Desire<strong></td></tr>
-</table><br/>
-<b>UFO::Desire</b><br/>
-Specializes UFO::Mental Moment<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Desire_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Desire</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Desire</span><br/>Specializes UFO::Mental Moment</p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Disposition_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Disposition<strong></td></tr>
-</table><br/>
-<b>UFO::Disposition</b><br/>
-Specializes UFO::Intrinsic Moment<br/><br/>
-Dispositions are properties (moments) that are only manifested in particular situations and that can also fail to be manifested. When manifested, they are manifested through the occurrence of events. Take for example the disposition of a magnet m to attract metallic material. The object m has this disposition even if it is never manifested, for example, because it is never close to any magnetic material. Nonetheless, m can certainly be said to possess that intrinsic moment, which it shares with other magnets.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Disposition_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Disposition</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Disposition</span><br/>Specializes UFO::Intrinsic Moment</p><p>Dispositions are properties (moments) that are only manifested in particular situations and that can also fail to be manifested. When manifested, they are manifested through the occurrence of events. Take for example the disposition of a magnet m to attract metallic material. The object m has this disposition even if it is never manifested, for example, because it is never close to any magnetic material. Nonetheless, m can certainly be said to possess that intrinsic moment, which it shares with other magnets.<br/></p><p>Relations:<br/>
 <code>Disposition (1..1) manifested by (0..*) Atomic Event<br/>
 Disposition (1..*) manifested by (*) Event (Perdurant)<br/>
 Situation (*) activates (*) Disposition<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Disposition_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Disposition<strong></td></tr>
-</table><br/>
-<b>UFO::Disposition</b><br/>
-Specializes <br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Disposition_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Disposition</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Disposition</span><br/>Specializes </p><p><br/></p><p>Relations:<br/>
 <code>Disposition (1..1) manifested by (0..*) Atomic Event<br/>
 Disposition (1..*) manifested by (*) Event (Perdurant)<br/>
 Situation (*) activates (*) Disposition<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Endurant_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Endurant<strong></td></tr>
-</table><br/>
-<b>UFO::Endurant</b><br/>
-Specializes UFO::Concrete Particular, UFO::Individual<br/><br/>
-Endurants are said to be wholly present whenever they are present, i.e., they are in time. They can be understood in contrast with the category of Perdurants (Processes, Events). Examples of endurants are a house, a person, the Moon, an amount of sand. For instance, we can say that an individual John weights 80kg at in circumstance c1 but 68kg at in circumstance c2. Nonetheless, we are in these two cases referring to the same individual.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Endurant_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Endurant</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Endurant</span><br/>Specializes UFO::Concrete Particular, UFO::Individual</p><p>Endurants are said to be wholly present whenever they are present, i.e., they are in time. They can be understood in contrast with the category of Perdurants (Processes, Events). Examples of endurants are a house, a person, the Moon, an amount of sand. For instance, we can say that an individual John weights 80kg at in circumstance c1 but 68kg at in circumstance c2. Nonetheless, we are in these two cases referring to the same individual.<br/></p><p>Relations:<br/>
 <code>Endurant (0..*) instance of (1..*) Endurant Universal<br/>
 Endurant (1..*) present at (0..*) Situation<br/>
 Moment (0..*) inheres in (1..1) Endurant<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Endurant+Universal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Endurant Universal<strong></td></tr>
-</table><br/>
-<b>UFO::Endurant Universal</b><br/>
-Specializes UFO::Universal<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Endurant+Universal_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Endurant Universal</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Endurant Universal</span><br/>Specializes UFO::Universal</p><p><br/></p><p>Relations:<br/>
 <code>Endurant (0..*) instance of (1..*) Endurant Universal<br/>
 Intrisic Moment Universal (0..*) characterizes (1..*) Endurant Universal<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Entity_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Entity<strong></td></tr>
-</table><br/>
-<b>UFO::Entity</b><br/>
-Specializes <br/><br/>
-Entity is the topmost category of UFO, representing anything, concrete or abstract, and both types and individuals.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Entity_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Entity</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Entity</span><br/>Specializes </p><p>Entity is the topmost category of UFO, representing anything, concrete or abstract, and both types and individuals.<br/></p><p>Relations:<br/>
 <code>Entity (1..*) characterized by (0..*) Moment Universal<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Event+(Perdurant)_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Event (Perdurant)<strong></td></tr>
-</table><br/>
-<b>UFO::Event (Perdurant)</b><br/>
-Specializes UFO::Concrete Particular, UFO::Individual<br/><br/>
-Events (also called perdurants) are individuals composed of temporal parts. They happen in time in the sense that they extend in time accumulating temporal parts. @Examples of events are a conversation, a football game, a symphony execution, a birthday party, or a particular business process.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Event+(Perdurant)_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Event (Perdurant)</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Event (Perdurant)</span><br/>Specializes UFO::Concrete Particular, UFO::Individual</p><p>Events (also called perdurants) are individuals composed of temporal parts. They happen in time in the sense that they extend in time accumulating temporal parts. @Examples of events are a conversation, a football game, a symphony execution, a birthday party, or a particular business process.<br/></p><p>Relations:<br/>
 <code>Event (Perdurant) (0..*) instance of (1..1) Event Universal<br/>
 Event (Perdurant) (0..*) brings about (1..1) Situation<br/>
 Event (Perdurant) (0..*) /directly causes (0..*) Event (Perdurant)<br/>
@@ -1711,922 +2143,274 @@ Event (Perdurant) (0..*) /causes (0..*) Event (Perdurant)<br/>
 Complex Event (0..*) <>-- (2..*) Event (Perdurant)<br/>
 Situation (1..1) triggers (0..*) Event (Perdurant)<br/>
 Disposition (1..*) manifested by (*) Event (Perdurant)<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Event+Universal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Event Universal<strong></td></tr>
-</table><br/>
-<b>UFO::Event Universal</b><br/>
-Specializes UFO::Universal<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Event+Universal_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Event Universal</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Event Universal</span><br/>Specializes UFO::Universal</p><p><br/></p><p>Relations:<br/>
 <code>Event (Perdurant) (0..*) instance of (1..1) Event Universal<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Expression_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Expression<strong></td></tr>
-</table><br/>
-<b>UFO::Expression</b><br/>
-Specializes <br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Expression_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Expression</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Expression</span><br/>Specializes </p><p><br/></p><p>Relations:<br/>
 <code>Scientific Measurement Domain (1..1) has (1..1) Expression<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Externally+Dependent+Moment_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Externally Dependent Moment<strong></td></tr>
-</table><br/>
-<b>UFO::Externally Dependent Moment</b><br/>
-Specializes UFO::Intrinsic Moment<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Externally+Dependent+Moment_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Externally Dependent Moment</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Externally Dependent Moment</span><br/>Specializes UFO::Intrinsic Moment</p><p><br/></p><p>Relations:<br/>
 <code>Relator (1..1) <>-- (2..*) Externally Dependent Moment<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Fact_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Fact<strong></td></tr>
-</table><br/>
-<b>UFO::Fact</b><br/>
-Specializes UFO::Situation<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Fact_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Fact</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Fact</span><br/>Specializes UFO::Situation</p><p><br/></p><p>Relations:<br/>
 <code>Fact (0..*) obtains in (1..1) Time Point<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Formal+Relation_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Formal Relation<strong></td></tr>
-</table><br/>
-<b>UFO::Formal Relation</b><br/>
-Specializes UFO::Relation<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Formal+Relation_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Formal Relation</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Formal Relation</span><br/>Specializes UFO::Relation</p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Fulfilled_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Fulfilled<strong></td></tr>
-</table><br/>
-<b>UFO::Fulfilled</b><br/>
-Specializes <br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Fulfilled_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Fulfilled</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Fulfilled</span><br/>Specializes </p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Function_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Function<strong></td></tr>
-</table><br/>
-<b>UFO::Function</b><br/>
-Specializes UFO::Set, UFO::Disposition<br/><br/>
-Function is a specialization of Set that maps instances of a Quality Universal to points in a Quality Structure.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Function_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Function</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Function</span><br/>Specializes UFO::Set, UFO::Disposition</p><p>Function is a specialization of Set that maps instances of a Quality Universal to points in a Quality Structure.<br/></p><p>Relations:<br/>
 <code>Function (0..*) instance of (1..*) Function Universal<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Function_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Function<strong></td></tr>
-</table><br/>
-<b>UFO::Function</b><br/>
-Specializes UFO::Disposition<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Function_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Function</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Function</span><br/>Specializes UFO::Disposition</p><p><br/></p><p>Relations:<br/>
 <code>Function (0..*) instance of (1..*) Function Universal<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Function+Universal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Function Universal<strong></td></tr>
-</table><br/>
-<b>UFO::Function Universal</b><br/>
-Specializes <br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Function+Universal_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Function Universal</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Function Universal</span><br/>Specializes </p><p><br/></p><p>Relations:<br/>
 <code>Function (0..*) instance of (1..*) Function Universal<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Goal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Goal<strong></td></tr>
-</table><br/>
-<b>UFO::Goal</b><br/>
-Specializes UFO::Proposition<br/><br/>
-The propositional content of an Intention.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Goal_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Goal</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Goal</span><br/>Specializes UFO::Proposition</p><p>The propositional content of an Intention.<br/></p><p>Relations:<br/>
 <code>Goal (1..1) propositional content of (1..*) Intention<br/>
 Complex Goal (0..*) <>-- (1..*) Goal<br/>
 Situation (*) satisfies (*) Goal<br/>
 Measurement Goal (0..*) based on (1..*) Goal<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_High+Order+Universal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>High Order Universal<strong></td></tr>
-</table><br/>
-<b>UFO::High Order Universal</b><br/>
-Specializes <br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_High+Order+Universal_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">High Order Universal</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::High Order Universal</span><br/>Specializes </p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Higher-Order+Object+Kind_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Higher-Order Object Kind<strong></td></tr>
-</table><br/>
-<b>UFO::Higher-Order Object Kind</b><br/>
-Specializes <br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Higher-Order+Object+Kind_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Higher-Order Object Kind</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Higher-Order Object Kind</span><br/>Specializes </p><p><br/></p><p>Relations:<br/>
 <code>Object Kind instance of Higher-Order Object Kind<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Individual_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Individual<strong></td></tr>
-</table><br/>
-<b>UFO::Individual</b><br/>
-Specializes UFO::Entity<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Individual_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Individual</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Individual</span><br/>Specializes UFO::Entity</p><p><br/></p><p>Relations:<br/>
 <code>Individual (0..*) instance of (1..*) Universal<br/>
 Individual (1..*) instantiates (1..1) Universal<br/>
 Intrinsic Moment (1..*) inheres in (1..1) Individual<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Intention_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Intention<strong></td></tr>
-</table><br/>
-<b>UFO::Intention</b><br/>
-Specializes UFO::Commitment, UFO::Mental Moment, UFO::Intentional Moment<br/><br/>
-Intentions are desired state of affairs (situations) for which the agent commits at pursuing (@e.g., the Intention of going to a beach resort for the next summer break).<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Intention_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Intention</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Intention</span><br/>Specializes UFO::Commitment, UFO::Mental Moment, UFO::Intentional Moment</p><p>Intentions are desired state of affairs (situations) for which the agent commits at pursuing (@e.g., the Intention of going to a beach resort for the next summer break).<br/></p><p>Relations:<br/>
 <code>Intention instance of Internal Commitment Universal<br/>
 Intention (0..*) inheres in (1..1) Physical Agent<br/>
 Action (0..*) caused by (1..1) Intention<br/>
 Goal (1..1) propositional content of (1..*) Intention<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Intentional+Moment_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Intentional Moment<strong></td></tr>
-</table><br/>
-<b>UFO::Intentional Moment</b><br/>
-Specializes UFO::Intrinsic Moment<br/><br/>
-The capacity of some properties of certain individuals to refer to possible Situations of reality. Every intentional moment has a propositional content (Proposition), which is an abstract representation of a class of situations referred by that intentional moment.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Intentional+Moment_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Intentional Moment</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Intentional Moment</span><br/>Specializes UFO::Intrinsic Moment</p><p>The capacity of some properties of certain individuals to refer to possible Situations of reality. Every intentional moment has a propositional content (Proposition), which is an abstract representation of a class of situations referred by that intentional moment.<br/></p><p>Relations:<br/>
 <code>Intentional Moment (1..*) inheres in (1..1) Agent<br/>
 Proposition (1..1) propositional content of (0..*) Intentional Moment<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Interaction_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Interaction<strong></td></tr>
-</table><br/>
-<b>UFO::Interaction</b><br/>
-Specializes UFO::Complex Action<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Interaction_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Interaction</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Interaction</span><br/>Specializes UFO::Complex Action</p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Internal+Closed+Commitment+Universal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Internal Closed Commitment Universal<strong></td></tr>
-</table><br/>
-<b>UFO::Internal Closed Commitment Universal</b><br/>
-Specializes UFO::Internal Commitment Universal, UFO::Closed Commitment Universal<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Internal+Closed+Commitment+Universal_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Internal Closed Commitment Universal</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Internal Closed Commitment Universal</span><br/>Specializes UFO::Internal Commitment Universal, UFO::Closed Commitment Universal</p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Internal+Commitment+Universal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Internal Commitment Universal<strong></td></tr>
-</table><br/>
-<b>UFO::Internal Commitment Universal</b><br/>
-Specializes UFO::Commitment Universal<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Internal+Commitment+Universal_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Internal Commitment Universal</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Internal Commitment Universal</span><br/>Specializes UFO::Commitment Universal</p><p><br/></p><p>Relations:<br/>
 <code>Intention instance of Internal Commitment Universal<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Interval+MeaRefDimension_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Interval MeaRefDimension<strong></td></tr>
-</table><br/>
-<b>UFO::Interval MeaRefDimension</b><br/>
-Specializes UFO::Measurement Reference Dimension<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Interval+MeaRefDimension_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Interval MeaRefDimension</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Interval MeaRefDimension</span><br/>Specializes UFO::Measurement Reference Dimension</p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Intrinsic+Moment_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Intrinsic Moment<strong></td></tr>
-</table><br/>
-<b>UFO::Intrinsic Moment</b><br/>
-Specializes UFO::Moment<br/><br/>
-Intrinsic Moments are moments that inhere in one single individual (e.g., an apple’s color). An example of an intrinsic moment is a Mode (@e.g., John’s desires, intentions, perceptions, symptoms, skills).<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Intrinsic+Moment_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Intrinsic Moment</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Intrinsic Moment</span><br/>Specializes UFO::Moment</p><p>Intrinsic Moments are moments that inhere in one single individual (e.g., an apple’s color). An example of an intrinsic moment is a Mode (@e.g., John’s desires, intentions, perceptions, symptoms, skills).<br/></p><p>Relations:<br/>
 <code>Intrinsic Moment (1..*) inheres in (1..1) Individual<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Intrisic+Moment+Universal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Intrisic Moment Universal<strong></td></tr>
-</table><br/>
-<b>UFO::Intrisic Moment Universal</b><br/>
-Specializes UFO::Moment Universal<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Intrisic+Moment+Universal_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Intrisic Moment Universal</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Intrisic Moment Universal</span><br/>Specializes UFO::Moment Universal</p><p><br/></p><p>Relations:<br/>
 <code>Intrisic Moment Universal (0..*) characterizes (1..*) Endurant Universal<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Kind_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Kind<strong></td></tr>
-</table><br/>
-<b>UFO::Kind</b><br/>
-Specializes UFO::Rigid Sortal Universal<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Kind_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Kind</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Kind</span><br/>Specializes UFO::Rigid Sortal Universal</p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Linear+Temporal+Structure_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Linear Temporal Structure<strong></td></tr>
-</table><br/>
-<b>UFO::Linear Temporal Structure</b><br/>
-Specializes UFO::Quality Structure<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Linear+Temporal+Structure_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Linear Temporal Structure</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Linear Temporal Structure</span><br/>Specializes UFO::Quality Structure</p><p><br/></p><p>Relations:<br/>
 <code>Time Point (1..*) member of (1..1) Linear Temporal Structure<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Material+Relation_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Material Relation<strong></td></tr>
-</table><br/>
-<b>UFO::Material Relation</b><br/>
-Specializes UFO::Relation<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Material+Relation_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Material Relation</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Material Relation</span><br/>Specializes UFO::Relation</p><p><br/></p><p>Relations:<br/>
 <code>Material Relation (0..*) derived from (1..1) Relator<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Measurable+Quality+Universal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Measurable Quality Universal<strong></td></tr>
-</table><br/>
-<b>UFO::Measurable Quality Universal</b><br/>
-Specializes UFO::Quality Universal<br/><br/>
-Measurable Quality Universals are quality universals that can be objectively measured by cognitive agents or measurement devices, and it is possible to establish distances among their quality regions (@e.g., Weight and Height).<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Measurable+Quality+Universal_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Measurable Quality Universal</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Measurable Quality Universal</span><br/>Specializes UFO::Quality Universal</p><p>Measurable Quality Universals are quality universals that can be objectively measured by cognitive agents or measurement devices, and it is possible to establish distances among their quality regions (@e.g., Weight and Height).<br/></p><p></p></div></div>
 
-<a name="UFO_Measurement+Quality+Domain_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Measurement Quality Domain<strong></td></tr>
-</table><br/>
-<b>UFO::Measurement Quality Domain</b><br/>
-Specializes UFO::Measurement Quality Structure<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Measurement+Quality+Domain_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Measurement Quality Domain</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Measurement Quality Domain</span><br/>Specializes UFO::Measurement Quality Structure</p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Measurement+Quality+Region_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Measurement Quality Region<strong></td></tr>
-</table><br/>
-<b>UFO::Measurement Quality Region</b><br/>
-Specializes UFO::Quality Region<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Measurement+Quality+Region_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Measurement Quality Region</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Measurement Quality Region</span><br/>Specializes UFO::Quality Region</p><p><br/></p><p>Relations:<br/>
 <code>Measurement Quality Structure (1..1) <>-- (2..*) Measurement Quality Region<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Measurement+Quality+Structure_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Measurement Quality Structure<strong></td></tr>
-</table><br/>
-<b>UFO::Measurement Quality Structure</b><br/>
-Specializes UFO::Quality Structure<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Measurement+Quality+Structure_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Measurement Quality Structure</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Measurement Quality Structure</span><br/>Specializes UFO::Quality Structure</p><p><br/></p><p>Relations:<br/>
 <code>Measurement Quality Structure (1..1) <>-- (2..*) Measurement Quality Region<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Measurement+Reference+Dimension_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Measurement Reference Dimension<strong></td></tr>
-</table><br/>
-<b>UFO::Measurement Reference Dimension</b><br/>
-Specializes UFO::Measurement Reference Structure<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Measurement+Reference+Dimension_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Measurement Reference Dimension</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Measurement Reference Dimension</span><br/>Specializes UFO::Measurement Reference Structure</p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Measurement+Reference+Region_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Measurement Reference Region<strong></td></tr>
-</table><br/>
-<b>UFO::Measurement Reference Region</b><br/>
-Specializes <br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Measurement+Reference+Region_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Measurement Reference Region</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Measurement Reference Region</span><br/>Specializes </p><p><br/></p><p>Relations:<br/>
 <code>Measurement Reference Structure (1..1) <>-- (2..*) Measurement Reference Region<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Measurement+Reference+Structure_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Measurement Reference Structure<strong></td></tr>
-</table><br/>
-<b>UFO::Measurement Reference Structure</b><br/>
-Specializes UFO::Reference Structure<br/><br/>
-Measurement Reference Structures act as scales based on quality structures. They are composed of Measurement Reference Regions. Measurement Reference Structures can be partitioned into spaces of the same magnitude according to a Unit.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Measurement+Reference+Structure_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Measurement Reference Structure</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Measurement Reference Structure</span><br/>Specializes UFO::Reference Structure</p><p>Measurement Reference Structures act as scales based on quality structures. They are composed of Measurement Reference Regions. Measurement Reference Structures can be partitioned into spaces of the same magnitude according to a Unit.<br/></p><p>Relations:<br/>
 <code>Measurement Reference Structure (1..1) <>-- (2..*) Measurement Reference Region<br/>
 Measurement Reference Structure (1..*) partitioned according to (0..1) Unit<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Mental+Moment_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Mental Moment<strong></td></tr>
-</table><br/>
-<b>UFO::Mental Moment</b><br/>
-Specializes UFO::Intentional Moment<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Mental+Moment_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Mental Moment</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Mental Moment</span><br/>Specializes UFO::Intentional Moment</p><p><br/></p><p>Relations:<br/>
 <code>Mental Moment (0..*) inheres in (1..1) Agent<br/>
 Mental Moment (0..*) inheres in (1..1) Physical Agent<br/>
 Proposition (1..1) propositional content of (0..*) Mental Moment<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Mixin+Universal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Mixin Universal<strong></td></tr>
-</table><br/>
-<b>UFO::Mixin Universal</b><br/>
-Specializes UFO::Substantial Universal<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Mixin+Universal_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Mixin Universal</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Mixin Universal</span><br/>Specializes UFO::Substantial Universal</p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Mode_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Mode<strong></td></tr>
-</table><br/>
-<b>UFO::Mode</b><br/>
-Specializes UFO::Intrinsic Moment<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Mode_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Mode</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Mode</span><br/>Specializes UFO::Intrinsic Moment</p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Mode+Universal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Mode Universal<strong></td></tr>
-</table><br/>
-<b>UFO::Mode Universal</b><br/>
-Specializes UFO::Intrisic Moment Universal<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Mode+Universal_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Mode Universal</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Mode Universal</span><br/>Specializes UFO::Intrisic Moment Universal</p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Moment_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Moment<strong></td></tr>
-</table><br/>
-<b>UFO::Moment</b><br/>
-Specializes UFO::Endurant<br/><br/>
-Moments are individuals that can only exist by inhering in other individuals. In other words, moments are individuals that are existentially-dependent on their bearers (@e.g., a person’s headache, a covalent bond between atoms).<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Moment_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Moment</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Moment</span><br/>Specializes UFO::Endurant</p><p>Moments are individuals that can only exist by inhering in other individuals. In other words, moments are individuals that are existentially-dependent on their bearers (@e.g., a person’s headache, a covalent bond between atoms).<br/></p><p>Relations:<br/>
 <code>Moment (0..*) inheres in (1..1) Endurant<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Moment+Universal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Moment Universal<strong></td></tr>
-</table><br/>
-<b>UFO::Moment Universal</b><br/>
-Specializes UFO::Endurant Universal<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Moment+Universal_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Moment Universal</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Moment Universal</span><br/>Specializes UFO::Endurant Universal</p><p><br/></p><p>Relations:<br/>
 <code>Entity (1..*) characterized by (0..*) Moment Universal<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Normative+Description_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Normative Description<strong></td></tr>
-</table><br/>
-<b>UFO::Normative Description</b><br/>
-Specializes UFO::Social Object<br/><br/>
-Normative Descriptions are Social Objects that define one or more rules/norms recognized by at least one Social Agent and that can define other Social objects (the crown of the king of Spain) or Social Roles (such as president, PhD candidate or pedestrian). @Examples of normative descriptions include the Brazilian Constitution, the Federal University of Espírito Santo PhD program regulation, but also a set of directives on how to perform some actions within an organization (a Plan Description).<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Normative+Description_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Normative Description</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Normative Description</span><br/>Specializes UFO::Social Object</p><p>Normative Descriptions are Social Objects that define one or more rules/norms recognized by at least one Social Agent and that can define other Social objects (the crown of the king of Spain) or Social Roles (such as president, PhD candidate or pedestrian). @Examples of normative descriptions include the Brazilian Constitution, the Federal University of Espírito Santo PhD program regulation, but also a set of directives on how to perform some actions within an organization (a Plan Description).<br/></p><p>Relations:<br/>
 <code>Normative Description (0..*) recognized by (1..*) Social Agent<br/>
 Normative Description (0..1) defines (0..*) Social Role<br/>
 Normative Description (1..1) defines (0..*) Closed Commitment Universal<br/>
 Normative Description (0..1) defines (0..*) Social Object<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Object_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Object<strong></td></tr>
-</table><br/>
-<b>UFO::Object</b><br/>
-Specializes UFO::Substantial<br/><br/>
-Non-agentive substantial individuals. Objects can be Physical or Social.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Object_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Object</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Object</span><br/>Specializes UFO::Substantial</p><p>Non-agentive substantial individuals. Objects can be Physical or Social.<br/></p><p>Relations:<br/>
 <code>Object instance of Object Kind<br/>
 Object Participation (0..*) participation of (1..1) Object<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Object+Kind_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Object Kind<strong></td></tr>
-</table><br/>
-<b>UFO::Object Kind</b><br/>
-Specializes UFO::Kind<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Object+Kind_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Object Kind</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Object Kind</span><br/>Specializes UFO::Kind</p><p><br/></p><p>Relations:<br/>
 <code>Object Kind instance of Higher-Order Object Kind<br/>
 Object instance of Object Kind<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Object+Participation_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Object Participation<strong></td></tr>
-</table><br/>
-<b>UFO::Object Participation</b><br/>
-Specializes UFO::Participation<br/><br/>
-Object Participation is a set of different ways than an object can participate in actions. There are four different types of Object Participation, namely: Creation, Termination, Change and Usage.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Object+Participation_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Object Participation</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Object Participation</span><br/>Specializes UFO::Participation</p><p>Object Participation is a set of different ways than an object can participate in actions. There are four different types of Object Participation, namely: Creation, Termination, Change and Usage.<br/></p><p>Relations:<br/>
 <code>Object Participation (0..*) participation of (1..1) Object<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Ordinal+MeaRefDimension_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Ordinal MeaRefDimension<strong></td></tr>
-</table><br/>
-<b>UFO::Ordinal MeaRefDimension</b><br/>
-Specializes UFO::Measurement Reference Dimension<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Ordinal+MeaRefDimension_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Ordinal MeaRefDimension</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Ordinal MeaRefDimension</span><br/>Specializes UFO::Measurement Reference Dimension</p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Participation_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Participation<strong></td></tr>
-</table><br/>
-<b>UFO::Participation</b><br/>
-Specializes UFO::Event (Perdurant)<br/><br/>
-A participation is the portion of an event which depends exclusively on a single object. Each of participations is itself an event that can be complex or atomic but which existentially depends on a single substantial. Take for instance the event e: the stabbing of Caesar by Brutus. In this event we have the participation of Caesar himself, of Brutus and of the knife. In this case, e is composed of the individual participation of each of these entities.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Participation_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Participation</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Participation</span><br/>Specializes UFO::Event (Perdurant)</p><p>A participation is the portion of an event which depends exclusively on a single object. Each of participations is itself an event that can be complex or atomic but which existentially depends on a single substantial. Take for instance the event e: the stabbing of Caesar by Brutus. In this event we have the participation of Caesar himself, of Brutus and of the knife. In this case, e is composed of the individual participation of each of these entities.<br/></p><p>Relations:<br/>
 <code>Participation (0..*) participation of (1..1) Substantial<br/>
 Participation (0..*) instance of (1..1) Participation Universal<br/>
 Participation (0..*) /exclusively depends on (1..1) Substantial<br/>
 Complex Action (0..*) <>-- (2..*) Participation<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Participation+Universal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Participation Universal<strong></td></tr>
-</table><br/>
-<b>UFO::Participation Universal</b><br/>
-Specializes UFO::Event Universal<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Participation+Universal_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Participation Universal</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Participation Universal</span><br/>Specializes UFO::Event Universal</p><p><br/></p><p>Relations:<br/>
 <code>Participation Universal (1..1) induces (1..1) Processual Role<br/>
 Participation (0..*) instance of (1..1) Participation Universal<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Person_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltkind&gt&gt</code><br/>
-<strong>Person<strong></td></tr>
-</table><br/>
-<b>UFO::Person</b><br/>
-Specializes UFO::Physical Agent<br/><br/>
-Same as UFO::Human Agent<br/>A human Physical Agent.<br/>
-E.g.:<i> Tim Berners Lee, Dennis Ritchie, Donald Knuth.</i><br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Person_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Person</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Person</span><br/>Specializes UFO::Physical Agent</p><p>Same as UFO::Human Agent<br/>A human Physical Agent.<br/>E.g.:<span class="font-italic"> Tim Berners Lee, Dennis Ritchie, Donald Knuth.</span></p><p></p></div></div>
 
-<a name="UFO_Phase_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Phase<strong></td></tr>
-</table><br/>
-<b>UFO::Phase</b><br/>
-Specializes UFO::Anti-Rigid Sortal Universal<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Phase_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Phase</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Phase</span><br/>Specializes UFO::Anti-Rigid Sortal Universal</p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Phasemixin_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Phasemixin<strong></td></tr>
-</table><br/>
-<b>UFO::Phasemixin</b><br/>
-Specializes UFO::Anti-Rigid Mixin Universal<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Phasemixin_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Phasemixin</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Phasemixin</span><br/>Specializes UFO::Anti-Rigid Mixin Universal</p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Physical+Agent_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltcategory&gt&gt</code><br/>
-<strong>Physical Agent<strong></td></tr>
-</table><br/>
-<b>UFO::Physical Agent</b><br/>
-Specializes UFO::Agent<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Physical+Agent_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltcategory&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Physical Agent</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Physical Agent</span><br/>Specializes UFO::Agent</p><p><br/></p><p>Relations:<br/>
 <code>Mental Moment (0..*) inheres in (1..1) Physical Agent<br/>
 Intention (0..*) inheres in (1..1) Physical Agent<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Physical+Object_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Physical Object<strong></td></tr>
-</table><br/>
-<b>UFO::Physical Object</b><br/>
-Specializes UFO::Object<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Physical+Object_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Physical Object</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Physical Object</span><br/>Specializes UFO::Object</p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Plan+Description_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Plan Description<strong></td></tr>
-</table><br/>
-<b>UFO::Plan Description</b><br/>
-Specializes UFO::Normative Description<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Plan+Description_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Plan Description</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Plan Description</span><br/>Specializes UFO::Normative Description</p><p><br/></p><p>Relations:<br/>
 <code>Plan Description (0..1) describes (1..*) Complex Action Universal<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Processual+Role_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Processual Role<strong></td></tr>
-</table><br/>
-<b>UFO::Processual Role</b><br/>
-Specializes <br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Processual+Role_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Processual Role</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Processual Role</span><br/>Specializes </p><p><br/></p><p>Relations:<br/>
 <code>Participation Universal (1..1) induces (1..1) Processual Role<br/>
 Substantial (0..*)  (0..*) Processual Role<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Proposition_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Proposition<strong></td></tr>
-</table><br/>
-<b>UFO::Proposition</b><br/>
-Specializes UFO::Abstract Particular<br/><br/>
-A Proposition is a sentence that is either true or false. The truth of a proposition is determined by its correspondence to the existence of an entity or fact in reality, the so-called truthmaker of a proposition.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Proposition_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Proposition</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Proposition</span><br/>Specializes UFO::Abstract Particular</p><p>A Proposition is a sentence that is either true or false. The truth of a proposition is determined by its correspondence to the existence of an entity or fact in reality, the so-called truthmaker of a proposition.<br/></p><p>Relations:<br/>
 <code>Proposition (1..1) propositional content of (0..*) Intentional Moment<br/>
 Proposition (1..1) propositional content of (0..*) Mental Moment<br/>
 Situation (0..*) satisfies (0..*) Proposition<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Quale_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Quale<strong></td></tr>
-</table><br/>
-<b>UFO::Quale</b><br/>
-Specializes UFO::Abstract Particular<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Quale_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Quale</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Quale</span><br/>Specializes UFO::Abstract Particular</p><p><br/></p><p>Relations:<br/>
 <code>Quale (1..*) member of (1..1) Quality Structure<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Quality_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Quality<strong></td></tr>
-</table><br/>
-<b>UFO::Quality</b><br/>
-Specializes UFO::Intrinsic Moment<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Quality_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Quality</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Quality</span><br/>Specializes UFO::Intrinsic Moment</p><p><br/></p><p>Relations:<br/>
 <code>Quality (0..*) instance of (1..1) Quality Universal<br/>
 Quality (1..*) instantiates (1..1) Quality Universal<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Quality+Region_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Quality Region<strong></td></tr>
-</table><br/>
-<b>UFO::Quality Region</b><br/>
-Specializes UFO::Abstract Particular<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Quality+Region_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Quality Region</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Quality Region</span><br/>Specializes UFO::Abstract Particular</p><p><br/></p><p>Relations:<br/>
 <code>Quality Structure (1..1) <>-- (2..*) Quality Region<br/>
 Quality Structure (1..1) constituted by (1..*) Quality Region<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Quality+Structure_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Quality Structure<strong></td></tr>
-</table><br/>
-<b>UFO::Quality Structure</b><br/>
-Specializes UFO::Set, UFO::Abstract Particular<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Quality+Structure_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Quality Structure</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Quality Structure</span><br/>Specializes UFO::Set, UFO::Abstract Particular</p><p><br/></p><p>Relations:<br/>
 <code>Quality Structure (1..1) <>-- (2..*) Quality Region<br/>
 Quality Structure (1..*) associated with (1..1) Quality Universal<br/>
 Quality Structure (1..1) constituted by (1..*) Quality Region<br/>
 Reference Structure (0..*) associated to (1..1) Quality Structure<br/>
 Quale (1..*) member of (1..1) Quality Structure<br/>
 Quality Universal (1..1) associated with > (1..1) Quality Structure<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Quality+Universal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Quality Universal<strong></td></tr>
-</table><br/>
-<b>UFO::Quality Universal</b><br/>
-Specializes UFO::Intrisic Moment Universal, UFO::Universal<br/><br/>
-Quality Universals are those universals whose instances are Qualities.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Quality+Universal_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Quality Universal</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Quality Universal</span><br/>Specializes UFO::Intrisic Moment Universal, UFO::Universal</p><p>Quality Universals are those universals whose instances are Qualities.<br/></p><p>Relations:<br/>
 <code>Quality Universal (1..1) associated with > (1..1) Quality Structure<br/>
 Quality Structure (1..*) associated with (1..1) Quality Universal<br/>
 Composed Quality Universal (0..*) <>-- (2..*) Quality Universal<br/>
 Quality (0..*) instance of (1..1) Quality Universal<br/>
 Quality (1..*) instantiates (1..1) Quality Universal<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Rational+MeaRefDimension_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Rational MeaRefDimension<strong></td></tr>
-</table><br/>
-<b>UFO::Rational MeaRefDimension</b><br/>
-Specializes UFO::Measurement Reference Dimension<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Rational+MeaRefDimension_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Rational MeaRefDimension</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Rational MeaRefDimension</span><br/>Specializes UFO::Measurement Reference Dimension</p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Reference+Structure_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Reference Structure<strong></td></tr>
-</table><br/>
-<b>UFO::Reference Structure</b><br/>
-Specializes UFO::Set<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Reference+Structure_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Reference Structure</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Reference Structure</span><br/>Specializes UFO::Set</p><p><br/></p><p>Relations:<br/>
 <code>Reference Structure (0..*) associated to (1..1) Quality Structure<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Relation_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Relation<strong></td></tr>
-</table><br/>
-<b>UFO::Relation</b><br/>
-Specializes UFO::Universal<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Relation_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Relation</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Relation</span><br/>Specializes UFO::Universal</p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Relational+Role_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Relational Role<strong></td></tr>
-</table><br/>
-<b>UFO::Relational Role</b><br/>
-Specializes UFO::Role<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Relational+Role_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Relational Role</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Relational Role</span><br/>Specializes UFO::Role</p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Relator_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Relator<strong></td></tr>
-</table><br/>
-<b>UFO::Relator</b><br/>
-Specializes UFO::Moment<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Relator_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Relator</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Relator</span><br/>Specializes UFO::Moment</p><p><br/></p><p>Relations:<br/>
 <code>Relator (1..1) <>-- (2..*) Externally Dependent Moment<br/>
 Material Relation (0..*) derived from (1..1) Relator<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Relator+Universal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Relator Universal<strong></td></tr>
-</table><br/>
-<b>UFO::Relator Universal</b><br/>
-Specializes UFO::Moment Universal<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Relator+Universal_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Relator Universal</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Relator Universal</span><br/>Specializes UFO::Moment Universal</p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Rigid+Mixin+Universal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Rigid Mixin Universal<strong></td></tr>
-</table><br/>
-<b>UFO::Rigid Mixin Universal</b><br/>
-Specializes UFO::Mixin Universal<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Rigid+Mixin+Universal_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Rigid Mixin Universal</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Rigid Mixin Universal</span><br/>Specializes UFO::Mixin Universal</p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Rigid+Sortal+Universal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Rigid Sortal Universal<strong></td></tr>
-</table><br/>
-<b>UFO::Rigid Sortal Universal</b><br/>
-Specializes UFO::Sortal Universal<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Rigid+Sortal+Universal_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Rigid Sortal Universal</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Rigid Sortal Universal</span><br/>Specializes UFO::Sortal Universal</p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Role_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Role<strong></td></tr>
-</table><br/>
-<b>UFO::Role</b><br/>
-Specializes UFO::Anti-Rigid Sortal Universal<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Role_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Role</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Role</span><br/>Specializes UFO::Anti-Rigid Sortal Universal</p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Rolemixin_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Rolemixin<strong></td></tr>
-</table><br/>
-<b>UFO::Rolemixin</b><br/>
-Specializes UFO::Anti-Rigid Mixin Universal<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Rolemixin_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Rolemixin</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Rolemixin</span><br/>Specializes UFO::Anti-Rigid Mixin Universal</p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Scientific+Measurement+Domain_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Scientific Measurement Domain<strong></td></tr>
-</table><br/>
-<b>UFO::Scientific Measurement Domain</b><br/>
-Specializes UFO::Measurement Quality Domain<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Scientific+Measurement+Domain_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Scientific Measurement Domain</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Scientific Measurement Domain</span><br/>Specializes UFO::Measurement Quality Domain</p><p><br/></p><p>Relations:<br/>
 <code>Scientific Measurement Domain (1..1) has (1..1) Expression<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Self+Appointment_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Self Appointment<strong></td></tr>
-</table><br/>
-<b>UFO::Self Appointment</b><br/>
-Specializes UFO::Intention, UFO::Appointment<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Self+Appointment_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Self Appointment</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Self Appointment</span><br/>Specializes UFO::Intention, UFO::Appointment</p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Set_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Set<strong></td></tr>
-</table><br/>
-<b>UFO::Set</b><br/>
-Specializes UFO::Abstract Thing<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Set_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Set</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Set</span><br/>Specializes UFO::Abstract Thing</p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Simple+Quality+Universal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Simple Quality Universal<strong></td></tr>
-</table><br/>
-<b>UFO::Simple Quality Universal</b><br/>
-Specializes UFO::Quality Universal<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Simple+Quality+Universal_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Simple Quality Universal</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Simple Quality Universal</span><br/>Specializes UFO::Quality Universal</p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Situation_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Situation<strong></td></tr>
-</table><br/>
-<b>UFO::Situation</b><br/>
-Specializes UFO::Individual, UFO::Endurant<br/><br/>
-A situation is a particular configuration of a part of reality which can be understood as a whole. Situations can be factual or counterfactual (@e.g., the situation in which “Al Gore is the president of the USA”).<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Situation_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Situation</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Situation</span><br/>Specializes UFO::Individual, UFO::Endurant</p><p>A situation is a particular configuration of a part of reality which can be understood as a whole. Situations can be factual or counterfactual (@e.g., the situation in which “Al Gore is the president of the USA”).<br/></p><p>Relations:<br/>
 <code>Situation (1..1) triggers (0..*) Event (Perdurant)<br/>
 Situation (0..*) obtained at Time Point<br/>
 Situation (*) activates (*) Disposition<br/>
@@ -2634,241 +2418,93 @@ Situation (0..*) satisfies (0..*) Proposition<br/>
 Situation (*) satisfies (*) Goal<br/>
 Endurant (1..*) present at (0..*) Situation<br/>
 Event (Perdurant) (0..*) brings about (1..1) Situation<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Social+Agent_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltcategory&gt&gt</code><br/>
-<strong>Social Agent<strong></td></tr>
-</table><br/>
-<b>UFO::Social Agent</b><br/>
-Specializes UFO::Agent<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Social+Agent_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltcategory&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Social Agent</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Social Agent</span><br/>Specializes UFO::Agent</p><p><br/></p><p>Relations:<br/>
 <code>Normative Description (0..*) recognized by (1..*) Social Agent<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Social+Appointment_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Social Appointment<strong></td></tr>
-</table><br/>
-<b>UFO::Social Appointment</b><br/>
-Specializes UFO::Appointment, UFO::Social Commitment<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Social+Appointment_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Social Appointment</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Social Appointment</span><br/>Specializes UFO::Appointment, UFO::Social Commitment</p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Social+Commitment_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Social Commitment<strong></td></tr>
-</table><br/>
-<b>UFO::Social Commitment</b><br/>
-Specializes UFO::Commitment, UFO::Social Moment<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Social+Commitment_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Social Commitment</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Social Commitment</span><br/>Specializes UFO::Commitment, UFO::Social Moment</p><p><br/></p><p>Relations:<br/>
 <code>Social Commitment causes Action<br/>
 Social Commitment (0..*) external dependence (1..*) Agent<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Social+Moment_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Social Moment<strong></td></tr>
-</table><br/>
-<b>UFO::Social Moment</b><br/>
-Specializes UFO::Intentional Moment, UFO::Externally Dependent Moment<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Social+Moment_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Social Moment</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Social Moment</span><br/>Specializes UFO::Intentional Moment, UFO::Externally Dependent Moment</p><p><br/></p><p>Relations:<br/>
 <code>Social Relator <>-- (2..*) Social Moment<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Social+Object_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Social Object<strong></td></tr>
-</table><br/>
-<b>UFO::Social Object</b><br/>
-Specializes UFO::Object<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Social+Object_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Social Object</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Social Object</span><br/>Specializes UFO::Object</p><p><br/></p><p>Relations:<br/>
 <code>Normative Description (0..1) defines (0..*) Social Object<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Social+Relator_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Social Relator<strong></td></tr>
-</table><br/>
-<b>UFO::Social Relator</b><br/>
-Specializes UFO::Relator<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Social+Relator_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Social Relator</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Social Relator</span><br/>Specializes UFO::Relator</p><p><br/></p><p>Relations:<br/>
 <code>Social Relator <>-- (2..*) Social Moment<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Social+Role_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Social Role<strong></td></tr>
-</table><br/>
-<b>UFO::Social Role</b><br/>
-Specializes UFO::Role<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Social+Role_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Social Role</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Social Role</span><br/>Specializes UFO::Role</p><p><br/></p><p>Relations:<br/>
 <code>Normative Description (0..1) defines (0..*) Social Role<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Sortal+Universal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Sortal Universal<strong></td></tr>
-</table><br/>
-<b>UFO::Sortal Universal</b><br/>
-Specializes UFO::Substantial Universal<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Sortal+Universal_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Sortal Universal</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Sortal Universal</span><br/>Specializes UFO::Substantial Universal</p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Subkind_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Subkind<strong></td></tr>
-</table><br/>
-<b>UFO::Subkind</b><br/>
-Specializes UFO::Rigid Sortal Universal<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Subkind_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Subkind</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Subkind</span><br/>Specializes UFO::Rigid Sortal Universal</p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Substantial_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Substantial<strong></td></tr>
-</table><br/>
-<b>UFO::Substantial</b><br/>
-Specializes UFO::Endurant<br/><br/>
-Substantials (objects) are existentially-independent Endurants (@e.g., a person, a car).<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Substantial_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Substantial</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Substantial</span><br/>Specializes UFO::Endurant</p><p>Substantials (objects) are existentially-independent Endurants (@e.g., a person, a car).<br/></p><p>Relations:<br/>
 <code>Substantial (0..*)  (0..*) Processual Role<br/>
 Atomic Event (0..*) depends on (1..1) Substantial<br/>
 Participation (0..*) participation of (1..1) Substantial<br/>
 Participation (0..*) /exclusively depends on (1..1) Substantial<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Substantial+Universal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Substantial Universal<strong></td></tr>
-</table><br/>
-<b>UFO::Substantial Universal</b><br/>
-Specializes UFO::Endurant Universal<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Substantial+Universal_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Substantial Universal</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Substantial Universal</span><br/>Specializes UFO::Endurant Universal</p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Time+Point_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Time Point<strong></td></tr>
-</table><br/>
-<b>UFO::Time Point</b><br/>
-Specializes UFO::Quale<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Time+Point_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Time Point</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Time Point</span><br/>Specializes UFO::Quale</p><p><br/></p><p>Relations:<br/>
 <code>Time Point (1..*) member of (1..1) Linear Temporal Structure<br/>
 Time Point (0..*) precedes (0..*) Time Point<br/>
 Fact (0..*) obtains in (1..1) Time Point<br/>
 Situation (0..*) obtained at Time Point<br/>
 Event (Perdurant) (0..*) begins at (1..1) Time Point<br/>
 Event (Perdurant) ends at (1..1) Time Point<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Unfulfilled_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Unfulfilled<strong></td></tr>
-</table><br/>
-<b>UFO::Unfulfilled</b><br/>
-Specializes <br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Unfulfilled_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Unfulfilled</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Unfulfilled</span><br/>Specializes </p><p><br/></p><p></p></div></div>
 
-<a name="UFO_Unit_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Unit<strong></td></tr>
-</table><br/>
-<b>UFO::Unit</b><br/>
-Specializes UFO::Measurement Quality Region<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Unit_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Unit</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Unit</span><br/>Specializes UFO::Measurement Quality Region</p><p><br/></p><p>Relations:<br/>
 <code>Measurement Reference Structure (1..*) partitioned according to (0..1) Unit<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Universal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Universal<strong></td></tr>
-</table><br/>
-<b>UFO::Universal</b><br/>
-Specializes UFO::Entity<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="UFO_Universal_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Universal</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Universal</span><br/>Specializes UFO::Entity</p><p><br/></p><p>Relations:<br/>
 <code>Universal (1..*) iof (1..*) 2ndOT<br/>
 Universal proper specializes (0..*) Universal<br/>
 Individual (0..*) instance of (1..*) Universal<br/>
 Individual (1..*) instantiates (1..1) Universal<br/>
 2ndOT (1..1) is powertype of (0..1) Universal<br/>
 2ndOT (0..*) categorizes (0..*) Universal<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="UFO_Usage_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Usage<strong></td></tr>
-</table><br/>
-<b>UFO::Usage</b><br/>
-Specializes UFO::Object Participation<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_Usage_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Usage</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::Usage</span><br/>Specializes UFO::Object Participation</p><p><br/></p><p></p></div></div>
 
-<a name="UFO_xOrganization_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>xOrganization<strong></td></tr>
-</table><br/>
-<b>UFO::xOrganization</b><br/>
-Specializes UFO::Social Agent<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="UFO_xOrganization_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">xOrganization</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">UFO::xOrganization</span><br/>Specializes UFO::Social Agent</p><p><br/></p><p></p></div></div>
 
-</p>					
+
 				</div>
 				
 			</main>
 	
-    <footer class="footer">
-      <div class="container-fluid">
-        <span class="text-muted">Powered by NEMO.</span>
-        <span class="text-muted"><small><b>Unified Foundational Ontology (UFO)</b></small></span>
-        <span class="text-muted"><small>Thu Nov 18 16:11:32 BRT 2021</small></span>		
+    <footer class="p-5 rounded border-top">
+      <div class="row">
+      	<div class="col">
+      		  <span class="text-muted">Powered by NEMO.</span>
+      	</div>
+      	<div class="col">
+      		<span><small><b>Unified Foundational Ontology (UFO)</b></small></span>
+      	</div>
+      	<div class="col">
+      		<span class="text-muted"><small>Mon Nov 22 22:03:45 BRT 2021</small></span>	
+      	</div>
       </div>
     </footer>
 	   

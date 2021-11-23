@@ -18,7 +18,7 @@
 	    <!-- Custom styles for this template -->
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/navbar-top-fixed.css" rel="stylesheet">
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/sticky-footer-navbar.css" rel="stylesheet">
-	       
+	    <link href="../resources/static/bootstrap-5.1.3-dist/css/carousel.css" rel="stylesheet">
 
 	    <style>
 	      .bd-placeholder-img {
@@ -36,7 +36,7 @@
 	        }
 	      }
 
-	      .h1, h1 {
+	      .h2, .h3, h2, h3 {
 	      	margin-bottom: 2.5rem;
 	      }
 
@@ -44,6 +44,9 @@
 	      	font-size: 2rem;
 	      }
 
+	      .featurette-heading {
+	        margin-top: 0;
+	      }
 	    </style>
 
 	    
@@ -131,7 +134,7 @@
 	            SysSwO
 	          </a>
 	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item" href="#ontologydescription" >Ontology Description</a></li>
+	            <li><a class="dropdown-item" href="#ontologydescription">Ontology Description</a></li>
 	            <li><a class="dropdown-item" href="#relatedontologies">Related Ontologies</a></li>
 	            <li><a class="dropdown-item" href="#ontologymodels">Ontology Models</a></li>
 	            <li><a class="dropdown-item" href="#conceptsdefinition">Concepts Definition</a></li>
@@ -157,21 +160,27 @@
 
 		<!-- Begin page content -->
     <main role="main" class="container-fluid">	
-    		<div class="container-fluid d-flex justify-content-end"><span class="badge badge-danger"></span></div>
+    		
 				<!--<div class="bg-light p-5 rounded" id="ontologydescription">
     			<h1 class="featurette-heading">The System and Software Ontology (SysSwO)</h1>
 					<p class="lead" align="justify"><span class="text-muted font-weight-bold font-italic">Ontology Description. </span>System and Software Ontology</p>
-					<p class="lead text-right text-muted font-italic">- core ontology from SEON. </p>
+					<p class="lead text-right text-muted font-italic"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16"><path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/></svg> core ontology from SEON</p>
     		</div>-->
 
-				<div class="bg-light p-5 rounded" id="ontologydescription">
+				<div class="bg-light p-5 rounded">
+					<div class="container-fluid d-flex justify-content-end"><span class="badge badge-danger text-lowercase"></span></div>
     			<h1 class="featurette-heading">The System and Software Ontology (SysSwO)</h1>
-    				<h2 class="featurette-heading d-inline font-italic">Ontology Description. </h2>
-    				<p class="lead d-inline" align="justify">System and Software Ontology</p>
-    				<p class="lead text-right text-muted font-italic">- core ontology from SEON. </p>
+    			<p class="lead text-right text-muted font-italic"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16"><path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/></svg> core ontology from SEON</p>
+    		</div>
+	
+				<hr> 
+				   		
+    		<div class="p-5 rounded" id="ontologydescription">
+  				<h2 class="featurette-heading">1. Ontology Description</h2>
+  				<p class="lead" align="justify">System and Software Ontology</p>
     		</div>
 
-				<hr class="featurette-divider">
+				<hr>
 
 				<div class="p-5 rounded" id="relatedontologies">
 					<h2 class="featurette-heading">2. Related Ontologies</h2>
@@ -198,7 +207,7 @@
 
 				</div>	
 
-				<hr class="featurette-divider">
+				<hr>
     	
 				<div class="p-5 rounded" id="ontologymodels">
 					<h2 class="featurette-heading">3. Ontology Models</h2>
@@ -311,13 +320,209 @@ or other translator.">
 </p>					
 				</div>
 
-				<hr class="featurette-divider">
+				<hr>
 
 				<div class="p-5 rounded" id="conceptsdefinition">
 					<h2 class="featurette-heading">4. Concepts Definition</h2>
 					<p class="lead">The following table shows the definitions for SysSwO concepts.</p>		
 					<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->				
-					<table style="width: 100%" border="1" cellpadding="6">
+					<div class="table-responsive">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th scope="col">Concept</th>
+									<th scope="col">Definition</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+<td><a name="SysSwO_Atomic+Sw+Artifact"><b><i>Atomic Sw Artifact</i></b></a>
+<a href=#SysSwO_Atomic+Sw+Artifact_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Artifact that is not decomposed into other Artifacts.
+<br/></td>
+</tr>
+<tr>
+<td><a name="SysSwO_Code"><b><i>Code</i></b></a>
+<a href=#SysSwO_Code_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Software Item representing a set of computer instructions and data definitions expressed in a programming language or in a form output by an assembler, compiler, or other translator (SEVOCAB).
+<br/></td>
+</tr>
+<tr>
+<td><a name="SysSwO_Complex+Computer+System"><b><i>Complex Computer System</i></b></a>
+<a href=#SysSwO_Complex+Computer+System_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="SysSwO_Complex+Sw+Artifact"><b><i>Complex Sw Artifact</i></b></a>
+<a href=#SysSwO_Complex+Sw+Artifact_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Artifact composed of other Artifacts.
+<br/></td>
+</tr>
+<tr>
+<td><a name="SysSwO_Computer+Machine"><b><i>Computer Machine</i></b></a>
+<a href=#SysSwO_Computer+Machine_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Hardware Equipment able to run programs, processing, transforming and storing data<br/><br/>_____________<br/><br/>Computer Machine is a hardware equipament able to run programs, processing, transforming and storing data and information.<br/><br/>Definição ANTIGA: Machine is a hardware equipament able to run programs.
+<br/></td>
+</tr>
+<tr>
+<td><a name="SysSwO_Computer+System"><b><i>Computer System</i></b></a>
+<a href=#SysSwO_Computer+System_detail><img src="images/plus-4-16.ico"></a></td>
+<td>System containing one or more Computer Machines, and other Hardware Equipments connected to them, and associated software systems that are installed/loaded in these Machines (adapted from ISO/IEC/IEEE 24765:2017).
+<br/></td>
+</tr>
+<tr>
+<td><a name="SysSwO_Computing+Resulting+State"><b><i>Computing Resulting State</i></b></a>
+<a href=#SysSwO_Computing+Resulting+State_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Observable State is a situation resulting from the execution of a program copy. It involves qualities and quality values (qualia) of the Machine in which the Loaded Program Copy inheres, as well as of entities residing in that Machine (including the Loaded Program Copy itself).
+<br/></td>
+</tr>
+<tr>
+<td><a name="SysSwO_Controller"><b><i>Controller</i></b></a>
+<a href=#SysSwO_Controller_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A Machine where a Loaded Program Copy is running (Program Copy Execution) plays the role of Controller.
+<br/></td>
+</tr>
+<tr>
+<td><a name="SysSwO_Document"><b><i>Document</i></b></a>
+<a href=#SysSwO_Document_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Any written or pictorial, uniquely identified, information related to the software development, usually presented in a predefined format.
+<br/>E.g.:<i> a Requirements Document, a specification, a report.</i></td>
+</tr>
+<tr>
+<td><a name="SysSwO_Document+Type"><b><i>Document Type</i></b></a>
+<a href=#SysSwO_Document+Type_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Artifact Type which is the powertype of Document, classifying its specializations.
+<br/>E.g.:<i> Requirements Document, Design Specification, Project Plan.</i></td>
+</tr>
+<tr>
+<td><a name="SysSwO_Hardware+Equipment"><b><i>Hardware Equipment</i></b></a>
+<a href=#SysSwO_Hardware+Equipment_detail><img src="images/plus-4-16.ico"></a></td>
+<td>DEFINIÇÃO NOVA: Physical Object used to process, transform, store, display or transmit information or data<br/><br/><br/>DEFINIÇÃO ANTIGA: Physical Object used for running software programs or to support some related action.
+<br/>E.g.:<i> Computer Dell I7, Laser Printer HP, Smartphone Galaxy 7, Router Linksys Wi-fi.</i></td>
+</tr>
+<tr>
+<td><a name="SysSwO_Hardware+Type"><b><i>Hardware Type</i></b></a>
+<a href=#SysSwO_Hardware+Type_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Object Kind which is the powertype of Hardware Equipment, classifying its specializations.
+<br/>E.g.:<i> Computer, Printer, Router, Keyboard.</i></td>
+</tr>
+<tr>
+<td><a name="SysSwO_Information+Item"><b><i>Information Item</i></b></a>
+<a href=#SysSwO_Information+Item_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Relevant information for human use, produced or used by Performed Activity.
+<br/>E.g.:<i> a documented requirement, a bug reported, an agreement e-mail, a component description.</i></td>
+</tr>
+<tr>
+<td><a name="SysSwO_Loaded+Program+Copy"><b><i>Loaded Program Copy</i></b></a>
+<a href=#SysSwO_Loaded+Program+Copy_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Loaded Program Copy is the materialization of a Program, inhering in a Computer Machine.
+<br/>E.g.:<i> a copy of a program loaded in primary memory of my computer.</i></td>
+</tr>
+<tr>
+<td><a name="SysSwO_Loaded+Software+System+Copy"><b><i>Loaded Software System Copy</i></b></a>
+<a href=#SysSwO_Loaded+Software+System+Copy_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Loaded Software System Copy is the materialization of a Software System, inhering in a Computer Machine.
+<br/>E.g.:<i> a copy of a software system loaded in the primary memory of my computer.</i></td>
+</tr>
+<tr>
+<td><a name="SysSwO_Machine+Code"><b><i>Machine Code</i></b></a>
+<a href=#SysSwO_Machine+Code_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Computer instructions and data definitions expressed in a form output by an assembler, compiler, or other translator, which can be recognized by the processing unit of a computer machine.
+<br/></td>
+</tr>
+<tr>
+<td><a name="SysSwO_Model"><b><i>Model</i></b></a>
+<a href=#SysSwO_Model_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A representation (abstraction) of a process or system from a particular perspective.
+<br/>E.g.:<i> a use case model, a class model, a component model.</i></td>
+</tr>
+<tr>
+<td><a name="SysSwO_Program"><b><i>Program</i></b></a>
+<a href=#SysSwO_Program_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Software Item which aims at producing a certain result through execution on a computer, in a particular way, given by the Program Specification. A Program is constituted by code, but it is not identical to code. Code can be changed without altering the identity of its program, which is anchored to the program's essential property: its intended specification (Program Specification).
+<br/></td>
+</tr>
+<tr>
+<td><a name="SysSwO_Program+Copy+Execution"><b><i>Program Copy Execution</i></b></a>
+<a href=#SysSwO_Program+Copy+Execution_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Program Copy Execution is an Event representing the execution of the Loaded Program Copy running in a Machine. In other words, the Program Copy Execution is the event of the physical manifestation of the dispositions (represented as the complex disposition Loaded Program Copy) that inhere in the Machine.
+<br/></td>
+</tr>
+<tr>
+<td><a name="SysSwO_Program+Specification"><b><i>Program Specification</i></b></a>
+<a href=#SysSwO_Program+Specification_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A document that describes the purpose (structure and functions) of a program in sufficient detail to permit coding and to facilitate maintenance.
+<br/></td>
+</tr>
+<tr>
+<td><a name="SysSwO_Programming+Language"><b><i>Programming Language</i></b></a>
+<a href=#SysSwO_Programming+Language_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A language used to express computer programs.
+<br/></td>
+</tr>
+<tr>
+<td><a name="SysSwO_Software+Artifact"><b><i>Software Artifact</i></b></a>
+<a href=#SysSwO_Software+Artifact_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Object intentionally made to serve a given purpose in the context of a software Project or Organization.
+<br/>E.g.:<i> a document, a model, a library, an e-mail, a bug.</i></td>
+</tr>
+<tr>
+<td><a name="SysSwO_Software+Function"><b><i>Software Function</i></b></a>
+<a href=#SysSwO_Software+Function_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Software Functions are functional dispositions that constitute the complex disposition Loaded Program Copy. Each Software Function is an instance of a Software Function Universal. When the software development process is accomplished correctly, the Software Functions that constitute the Loaded Program Copy are instances of the exact Software Function Universals described by the Program Specification and successfully implemented by the Program.
+<br/></td>
+</tr>
+<tr>
+<td><a name="SysSwO_Software+Item"><b><i>Software Item</i></b></a>
+<a href=#SysSwO_Software+Item_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Piece of software, produced during the software process, not considered a complete Software Product, but an intermediary result.
+<br/>E.g.:<i> a component, database schema, a script.</i></td>
+</tr>
+<tr>
+<td><a name="SysSwO_Software+Product"><b><i>Software Product</i></b></a>
+<a href=#SysSwO_Software+Product_detail><img src="images/plus-4-16.ico"></a></td>
+<td>One or more computer programs together with any accompanying auxiliary items, such as documentation, delivered under a single name, ready for use.
+<br/>E.g.:<i> Astah modeling tool, Microsoft Word, Eclipse IDE.</i></td>
+</tr>
+<tr>
+<td><a name="SysSwO_Software+Product+Type"><b><i>Software Product Type</i></b></a>
+<a href=#SysSwO_Software+Product+Type_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Artifact Type which is the powertype of Software Product, classifying its specializations.
+<br/>E.g.:<i> Modeling Tool, Text Editor, IDE, Compiler.</i></td>
+</tr>
+<tr>
+<td><a name="SysSwO_Software+System"><b><i>Software System</i></b></a>
+<a href=#SysSwO_Software+System_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Software Item that aims at satisfying a specification (System Specification), concerning a desired change in a data structure inside a computer, abstracting away from the behavior.
+<br/></td>
+</tr>
+<tr>
+<td><a name="SysSwO_Source+Code"><b><i>Source Code</i></b></a>
+<a href=#SysSwO_Source+Code_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A well-formed sequence of computer instructions and data definitions expressed in a programming language, in a form suitable for input to an assembler, compiler,<br/>or other translator.
+<br/></td>
+</tr>
+<tr>
+<td><a name="SysSwO_Sw+Artifact+Type"><b><i>Sw Artifact Type</i></b></a>
+<a href=#SysSwO_Sw+Artifact+Type_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Object Kind which is the powertype of Artifact, classifying its specializations.
+<br/>E.g.:<i> Document, Model, Software Product, Information Item, Software Item.</i></td>
+</tr>
+<tr>
+<td><a name="SysSwO_System+Specification"><b><i>System Specification</i></b></a>
+<a href=#SysSwO_System+Specification_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+
+							</tbody>
+						</table>
+  				</div>
+
+
+
+				<!--	<table style="width: 100%" border="1" cellpadding="6">
 						<tbody>
 							<tr style="background-color: #D8D8D8">
 								<td style="width: 25%"><b>Concept</b></td>
@@ -325,458 +530,298 @@ or other translator.">
 							</tr>
 							<tr>
 <td><a name="SysSwO_Atomic+Sw+Artifact"><b><i>Atomic Sw Artifact</i></b></a>
-<a href=#SysSwO_Atomic+Sw+Artifact_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SysSwO_Atomic+Sw+Artifact_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Artifact that is not decomposed into other Artifacts.
 <br/></td>
 </tr>
 <tr>
 <td><a name="SysSwO_Code"><b><i>Code</i></b></a>
-<a href=#SysSwO_Code_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SysSwO_Code_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Software Item representing a set of computer instructions and data definitions expressed in a programming language or in a form output by an assembler, compiler, or other translator (SEVOCAB).
 <br/></td>
 </tr>
 <tr>
 <td><a name="SysSwO_Complex+Computer+System"><b><i>Complex Computer System</i></b></a>
-<a href=#SysSwO_Complex+Computer+System_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SysSwO_Complex+Computer+System_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="SysSwO_Complex+Sw+Artifact"><b><i>Complex Sw Artifact</i></b></a>
-<a href=#SysSwO_Complex+Sw+Artifact_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SysSwO_Complex+Sw+Artifact_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Artifact composed of other Artifacts.
 <br/></td>
 </tr>
 <tr>
 <td><a name="SysSwO_Computer+Machine"><b><i>Computer Machine</i></b></a>
-<a href=#SysSwO_Computer+Machine_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SysSwO_Computer+Machine_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Hardware Equipment able to run programs, processing, transforming and storing data<br/><br/>_____________<br/><br/>Computer Machine is a hardware equipament able to run programs, processing, transforming and storing data and information.<br/><br/>Definição ANTIGA: Machine is a hardware equipament able to run programs.
 <br/></td>
 </tr>
 <tr>
 <td><a name="SysSwO_Computer+System"><b><i>Computer System</i></b></a>
-<a href=#SysSwO_Computer+System_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SysSwO_Computer+System_detail><img src="images/plus-4-16.ico"></a></td>
 <td>System containing one or more Computer Machines, and other Hardware Equipments connected to them, and associated software systems that are installed/loaded in these Machines (adapted from ISO/IEC/IEEE 24765:2017).
 <br/></td>
 </tr>
 <tr>
 <td><a name="SysSwO_Computing+Resulting+State"><b><i>Computing Resulting State</i></b></a>
-<a href=#SysSwO_Computing+Resulting+State_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SysSwO_Computing+Resulting+State_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Observable State is a situation resulting from the execution of a program copy. It involves qualities and quality values (qualia) of the Machine in which the Loaded Program Copy inheres, as well as of entities residing in that Machine (including the Loaded Program Copy itself).
 <br/></td>
 </tr>
 <tr>
 <td><a name="SysSwO_Controller"><b><i>Controller</i></b></a>
-<a href=#SysSwO_Controller_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SysSwO_Controller_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A Machine where a Loaded Program Copy is running (Program Copy Execution) plays the role of Controller.
 <br/></td>
 </tr>
 <tr>
 <td><a name="SysSwO_Document"><b><i>Document</i></b></a>
-<a href=#SysSwO_Document_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SysSwO_Document_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Any written or pictorial, uniquely identified, information related to the software development, usually presented in a predefined format.
 <br/>E.g.:<i> a Requirements Document, a specification, a report.</i></td>
 </tr>
 <tr>
 <td><a name="SysSwO_Document+Type"><b><i>Document Type</i></b></a>
-<a href=#SysSwO_Document+Type_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SysSwO_Document+Type_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Artifact Type which is the powertype of Document, classifying its specializations.
 <br/>E.g.:<i> Requirements Document, Design Specification, Project Plan.</i></td>
 </tr>
 <tr>
 <td><a name="SysSwO_Hardware+Equipment"><b><i>Hardware Equipment</i></b></a>
-<a href=#SysSwO_Hardware+Equipment_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SysSwO_Hardware+Equipment_detail><img src="images/plus-4-16.ico"></a></td>
 <td>DEFINIÇÃO NOVA: Physical Object used to process, transform, store, display or transmit information or data<br/><br/><br/>DEFINIÇÃO ANTIGA: Physical Object used for running software programs or to support some related action.
 <br/>E.g.:<i> Computer Dell I7, Laser Printer HP, Smartphone Galaxy 7, Router Linksys Wi-fi.</i></td>
 </tr>
 <tr>
 <td><a name="SysSwO_Hardware+Type"><b><i>Hardware Type</i></b></a>
-<a href=#SysSwO_Hardware+Type_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SysSwO_Hardware+Type_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Object Kind which is the powertype of Hardware Equipment, classifying its specializations.
 <br/>E.g.:<i> Computer, Printer, Router, Keyboard.</i></td>
 </tr>
 <tr>
 <td><a name="SysSwO_Information+Item"><b><i>Information Item</i></b></a>
-<a href=#SysSwO_Information+Item_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SysSwO_Information+Item_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Relevant information for human use, produced or used by Performed Activity.
 <br/>E.g.:<i> a documented requirement, a bug reported, an agreement e-mail, a component description.</i></td>
 </tr>
 <tr>
 <td><a name="SysSwO_Loaded+Program+Copy"><b><i>Loaded Program Copy</i></b></a>
-<a href=#SysSwO_Loaded+Program+Copy_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SysSwO_Loaded+Program+Copy_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Loaded Program Copy is the materialization of a Program, inhering in a Computer Machine.
 <br/>E.g.:<i> a copy of a program loaded in primary memory of my computer.</i></td>
 </tr>
 <tr>
 <td><a name="SysSwO_Loaded+Software+System+Copy"><b><i>Loaded Software System Copy</i></b></a>
-<a href=#SysSwO_Loaded+Software+System+Copy_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SysSwO_Loaded+Software+System+Copy_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Loaded Software System Copy is the materialization of a Software System, inhering in a Computer Machine.
 <br/>E.g.:<i> a copy of a software system loaded in the primary memory of my computer.</i></td>
 </tr>
 <tr>
 <td><a name="SysSwO_Machine+Code"><b><i>Machine Code</i></b></a>
-<a href=#SysSwO_Machine+Code_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SysSwO_Machine+Code_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Computer instructions and data definitions expressed in a form output by an assembler, compiler, or other translator, which can be recognized by the processing unit of a computer machine.
 <br/></td>
 </tr>
 <tr>
 <td><a name="SysSwO_Model"><b><i>Model</i></b></a>
-<a href=#SysSwO_Model_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SysSwO_Model_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A representation (abstraction) of a process or system from a particular perspective.
 <br/>E.g.:<i> a use case model, a class model, a component model.</i></td>
 </tr>
 <tr>
 <td><a name="SysSwO_Program"><b><i>Program</i></b></a>
-<a href=#SysSwO_Program_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SysSwO_Program_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Software Item which aims at producing a certain result through execution on a computer, in a particular way, given by the Program Specification. A Program is constituted by code, but it is not identical to code. Code can be changed without altering the identity of its program, which is anchored to the program's essential property: its intended specification (Program Specification).
 <br/></td>
 </tr>
 <tr>
 <td><a name="SysSwO_Program+Copy+Execution"><b><i>Program Copy Execution</i></b></a>
-<a href=#SysSwO_Program+Copy+Execution_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SysSwO_Program+Copy+Execution_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Program Copy Execution is an Event representing the execution of the Loaded Program Copy running in a Machine. In other words, the Program Copy Execution is the event of the physical manifestation of the dispositions (represented as the complex disposition Loaded Program Copy) that inhere in the Machine.
 <br/></td>
 </tr>
 <tr>
 <td><a name="SysSwO_Program+Specification"><b><i>Program Specification</i></b></a>
-<a href=#SysSwO_Program+Specification_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SysSwO_Program+Specification_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A document that describes the purpose (structure and functions) of a program in sufficient detail to permit coding and to facilitate maintenance.
 <br/></td>
 </tr>
 <tr>
 <td><a name="SysSwO_Programming+Language"><b><i>Programming Language</i></b></a>
-<a href=#SysSwO_Programming+Language_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SysSwO_Programming+Language_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A language used to express computer programs.
 <br/></td>
 </tr>
 <tr>
 <td><a name="SysSwO_Software+Artifact"><b><i>Software Artifact</i></b></a>
-<a href=#SysSwO_Software+Artifact_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SysSwO_Software+Artifact_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Object intentionally made to serve a given purpose in the context of a software Project or Organization.
 <br/>E.g.:<i> a document, a model, a library, an e-mail, a bug.</i></td>
 </tr>
 <tr>
 <td><a name="SysSwO_Software+Function"><b><i>Software Function</i></b></a>
-<a href=#SysSwO_Software+Function_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SysSwO_Software+Function_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Software Functions are functional dispositions that constitute the complex disposition Loaded Program Copy. Each Software Function is an instance of a Software Function Universal. When the software development process is accomplished correctly, the Software Functions that constitute the Loaded Program Copy are instances of the exact Software Function Universals described by the Program Specification and successfully implemented by the Program.
 <br/></td>
 </tr>
 <tr>
 <td><a name="SysSwO_Software+Item"><b><i>Software Item</i></b></a>
-<a href=#SysSwO_Software+Item_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SysSwO_Software+Item_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Piece of software, produced during the software process, not considered a complete Software Product, but an intermediary result.
 <br/>E.g.:<i> a component, database schema, a script.</i></td>
 </tr>
 <tr>
 <td><a name="SysSwO_Software+Product"><b><i>Software Product</i></b></a>
-<a href=#SysSwO_Software+Product_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SysSwO_Software+Product_detail><img src="images/plus-4-16.ico"></a></td>
 <td>One or more computer programs together with any accompanying auxiliary items, such as documentation, delivered under a single name, ready for use.
 <br/>E.g.:<i> Astah modeling tool, Microsoft Word, Eclipse IDE.</i></td>
 </tr>
 <tr>
 <td><a name="SysSwO_Software+Product+Type"><b><i>Software Product Type</i></b></a>
-<a href=#SysSwO_Software+Product+Type_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SysSwO_Software+Product+Type_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Artifact Type which is the powertype of Software Product, classifying its specializations.
 <br/>E.g.:<i> Modeling Tool, Text Editor, IDE, Compiler.</i></td>
 </tr>
 <tr>
 <td><a name="SysSwO_Software+System"><b><i>Software System</i></b></a>
-<a href=#SysSwO_Software+System_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SysSwO_Software+System_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Software Item that aims at satisfying a specification (System Specification), concerning a desired change in a data structure inside a computer, abstracting away from the behavior.
 <br/></td>
 </tr>
 <tr>
 <td><a name="SysSwO_Source+Code"><b><i>Source Code</i></b></a>
-<a href=#SysSwO_Source+Code_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SysSwO_Source+Code_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A well-formed sequence of computer instructions and data definitions expressed in a programming language, in a form suitable for input to an assembler, compiler,<br/>or other translator.
 <br/></td>
 </tr>
 <tr>
 <td><a name="SysSwO_Sw+Artifact+Type"><b><i>Sw Artifact Type</i></b></a>
-<a href=#SysSwO_Sw+Artifact+Type_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SysSwO_Sw+Artifact+Type_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Object Kind which is the powertype of Artifact, classifying its specializations.
 <br/>E.g.:<i> Document, Model, Software Product, Information Item, Software Item.</i></td>
 </tr>
 <tr>
 <td><a name="SysSwO_System+Specification"><b><i>System Specification</i></b></a>
-<a href=#SysSwO_System+Specification_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SysSwO_System+Specification_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 
 						</tbody>
-					</table>
+					</table>-->
 
 				</div>
 
-				<hr class="featurette-divider">		
+				<hr>		
 
-				<div class="container p-5 rounded" id="detailedconcepts">
+				<div class="p-5 rounded" id="detailedconcepts">
 					<h2 class="featurette-heading">5. Detailed Concepts</h2>
-					<p class="lead"><a name="SysSwO_Atomic+Sw+Artifact_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltcategory&gt&gt</code><br/>
-<strong>Atomic Sw Artifact<strong></td></tr>
-</table><br/>
-<b>SysSwO::Atomic Sw Artifact</b><br/>
-Specializes SysSwO::Software Artifact<br/><br/>
-Artifact that is not decomposed into other Artifacts.<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+					<p class="lead">System and Software Ontology (SysSwO) detailed concepts.</p>					
+					<hr><div class="container-fluid" id="SysSwO_Atomic+Sw+Artifact_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltcategory&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Atomic Sw Artifact</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SysSwO::Atomic Sw Artifact</span><br/>Specializes SysSwO::Software Artifact</p><p>Artifact that is not decomposed into other Artifacts.<br/></p><p></p></div></div>
 
-<a name="SysSwO_Code_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Code<strong></td></tr>
-</table><br/>
-<b>SysSwO::Code</b><br/>
-Specializes SysSwO::Software Item<br/><br/>
-Software Item representing a set of computer instructions and data definitions expressed in a programming language or in a form output by an assembler, compiler, or other translator (SEVOCAB).<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SysSwO_Code_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Code</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SysSwO::Code</span><br/>Specializes SysSwO::Software Item</p><p>Software Item representing a set of computer instructions and data definitions expressed in a programming language or in a form output by an assembler, compiler, or other translator (SEVOCAB).<br/></p><p>Relations:<br/>
 <code>Code (0..*) implements (0..1) Program Specification<br/>
 Program (0..1) constituted of (1..*) Code<br/>
 Code Review uses Code<br/>
 Code Development creates Code<br/>
 Code Documentation changes Code<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SysSwO_Complex+Computer+System_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Complex Computer System<strong></td></tr>
-</table><br/>
-<b>SysSwO::Complex Computer System</b><br/>
-Specializes SysSwO::Computer System<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SysSwO_Complex+Computer+System_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Complex Computer System</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SysSwO::Complex Computer System</span><br/>Specializes SysSwO::Computer System</p><p><br/></p><p>Relations:<br/>
 <code>Complex Computer System (0..*) <>-- (2..*) Computer System<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SysSwO_Complex+Sw+Artifact_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltcategory&gt&gt</code><br/>
-<strong>Complex Sw Artifact<strong></td></tr>
-</table><br/>
-<b>SysSwO::Complex Sw Artifact</b><br/>
-Specializes SysSwO::Software Artifact<br/><br/>
-Artifact composed of other Artifacts.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SysSwO_Complex+Sw+Artifact_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltcategory&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Complex Sw Artifact</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SysSwO::Complex Sw Artifact</span><br/>Specializes SysSwO::Software Artifact</p><p>Artifact composed of other Artifacts.<br/></p><p>Relations:<br/>
 <code>Complex Sw Artifact (0..*) <>-- (2..*) Software Artifact  &lt&ltcomponentOf&gt&gt<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SysSwO_Computer+Machine_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Computer Machine<strong></td></tr>
-</table><br/>
-<b>SysSwO::Computer Machine</b><br/>
-Specializes SysSwO::Hardware Equipment<br/><br/>
-Hardware Equipment able to run programs, processing, transforming and storing data<br/><br/>_____________<br/><br/>Computer Machine is a hardware equipament able to run programs, processing, transforming and storing data and information.<br/><br/>Definição ANTIGA: Machine is a hardware equipament able to run programs.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SysSwO_Computer+Machine_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Computer Machine</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SysSwO::Computer Machine</span><br/>Specializes SysSwO::Hardware Equipment</p><p>Hardware Equipment able to run programs, processing, transforming and storing data<br/><br/>_____________<br/><br/>Computer Machine is a hardware equipament able to run programs, processing, transforming and storing data and information.<br/><br/>Definição ANTIGA: Machine is a hardware equipament able to run programs.<br/></p><p>Relations:<br/>
 <code>Computer Machine (0..*) connected to (0..*) Hardware Equipment<br/>
 Loaded Software System Copy (0..*) inheres in (1..1) Computer Machine<br/>
 Computer System (0..*) <>-- (1..*) Computer Machine<br/>
 Loaded Program Copy (0..*) inheres in (1..1) Computer Machine<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SysSwO_Computer+System_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Computer System<strong></td></tr>
-</table><br/>
-<b>SysSwO::Computer System</b><br/>
-Specializes UFO::Object<br/><br/>
-System containing one or more Computer Machines, and other Hardware Equipments connected to them, and associated software systems that are installed/loaded in these Machines (adapted from ISO/IEC/IEEE 24765:2017).<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SysSwO_Computer+System_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Computer System</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SysSwO::Computer System</span><br/>Specializes UFO::Object</p><p>System containing one or more Computer Machines, and other Hardware Equipments connected to them, and associated software systems that are installed/loaded in these Machines (adapted from ISO/IEC/IEEE 24765:2017).<br/></p><p>Relations:<br/>
 <code>Computer System (0..*) <>-- (1..*) Computer Machine<br/>
 Computer System (0..*) <>-- (1..*) Hardware Equipment<br/>
 Computer System (1..*) has (1..*) Loaded Software System Copy<br/>
 Complex Computer System (0..*) <>-- (2..*) Computer System<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SysSwO_Computing+Resulting+State_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Computing Resulting State<strong></td></tr>
-</table><br/>
-<b>SysSwO::Computing Resulting State</b><br/>
-Specializes UFO::Situation<br/><br/>
-Observable State is a situation resulting from the execution of a program copy. It involves qualities and quality values (qualia) of the Machine in which the Loaded Program Copy inheres, as well as of entities residing in that Machine (including the Loaded Program Copy itself).<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SysSwO_Computing+Resulting+State_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Computing Resulting State</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SysSwO::Computing Resulting State</span><br/>Specializes UFO::Situation</p><p>Observable State is a situation resulting from the execution of a program copy. It involves qualities and quality values (qualia) of the Machine in which the Loaded Program Copy inheres, as well as of entities residing in that Machine (including the Loaded Program Copy itself).<br/></p><p>Relations:<br/>
 <code>Computing Resulting State (0..1) triggers (0..*) Program Copy Execution<br/>
 Computing Resulting State (0..*) satisfies (0..*) Mental Computing Resulting State<br/>
 User Interface shows Computing Resulting State<br/>
 Program Copy Execution (1..1) brings about (1..1) Computing Resulting State<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SysSwO_Controller_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Controller<strong></td></tr>
-</table><br/>
-<b>SysSwO::Controller</b><br/>
-Specializes SysSwO::Computer Machine<br/><br/>
-A Machine where a Loaded Program Copy is running (Program Copy Execution) plays the role of Controller.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SysSwO_Controller_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Controller</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SysSwO::Controller</span><br/>Specializes SysSwO::Computer Machine</p><p>A Machine where a Loaded Program Copy is running (Program Copy Execution) plays the role of Controller.<br/></p><p>Relations:<br/>
 <code>Controller (1..1) participates in (1..*) Program Copy Execution<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SysSwO_Document_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltkind&gt&gt</code><br/>
-<strong>Document<strong></td></tr>
-</table><br/>
-<b>SysSwO::Document</b><br/>
-Specializes SysSwO::Software Artifact<br/><br/>
-Any written or pictorial, uniquely identified, information related to the software development, usually presented in a predefined format.<br/>
-E.g.:<i> a Requirements Document, a specification, a report.</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SysSwO_Document_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Document</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SysSwO::Document</span><br/>Specializes SysSwO::Software Artifact</p><p>Any written or pictorial, uniquely identified, information related to the software development, usually presented in a predefined format.<br/>E.g.:<span class="font-italic"> a Requirements Document, a specification, a report.</span></p><p>Relations:<br/>
 <code>Document (0..*) describes (0..*) Software Artifact<br/>
 Document (0..*) instance of (1..1) Document Type<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SysSwO_Document+Type_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&lt2ndOT&gt&gt</code><br/>
-<strong>Document Type<strong></td></tr>
-</table><br/>
-<b>SysSwO::Document Type</b><br/>
-Specializes SysSwO::Sw Artifact Type<br/><br/>
-Artifact Type which is the powertype of Document, classifying its specializations.<br/>
-E.g.:<i> Requirements Document, Design Specification, Project Plan.</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SysSwO_Document+Type_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&lt2ndOT&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Document Type</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SysSwO::Document Type</span><br/>Specializes SysSwO::Sw Artifact Type</p><p>Artifact Type which is the powertype of Document, classifying its specializations.<br/>E.g.:<span class="font-italic"> Requirements Document, Design Specification, Project Plan.</span></p><p>Relations:<br/>
 <code>Document Template (0..*) applies to (1..1) Document Type<br/>
 Document (0..*) instance of (1..1) Document Type<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SysSwO_Hardware+Equipment_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltkind&gt&gt</code><br/>
-<strong>Hardware Equipment<strong></td></tr>
-</table><br/>
-<b>SysSwO::Hardware Equipment</b><br/>
-Specializes UFO::Object<br/><br/>
-DEFINIÇÃO NOVA: Physical Object used to process, transform, store, display or transmit information or data<br/><br/><br/>DEFINIÇÃO ANTIGA: Physical Object used for running software programs or to support some related action.<br/>
-E.g.:<i> Computer Dell I7, Laser Printer HP, Smartphone Galaxy 7, Router Linksys Wi-fi.</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SysSwO_Hardware+Equipment_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Hardware Equipment</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SysSwO::Hardware Equipment</span><br/>Specializes UFO::Object</p><p>DEFINIÇÃO NOVA: Physical Object used to process, transform, store, display or transmit information or data<br/><br/><br/>DEFINIÇÃO ANTIGA: Physical Object used for running software programs or to support some related action.<br/>E.g.:<span class="font-italic"> Computer Dell I7, Laser Printer HP, Smartphone Galaxy 7, Router Linksys Wi-fi.</span></p><p>Relations:<br/>
 <code>Hardware Equipment (0..*) instance of (1..1) Hardware Type<br/>
 Computer System (0..*) <>-- (1..*) Hardware Equipment<br/>
 User Interface <>-- Hardware Equipment<br/>
 Interactive Computer System <>-- Hardware Equipment<br/>
 Computer Machine (0..*) connected to (0..*) Hardware Equipment<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SysSwO_Hardware+Type_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&lt2ndOT&gt&gt</code><br/>
-<strong>Hardware Type<strong></td></tr>
-</table><br/>
-<b>SysSwO::Hardware Type</b><br/>
-Specializes UFO::Object Kind<br/><br/>
-Object Kind which is the powertype of Hardware Equipment, classifying its specializations.<br/>
-E.g.:<i> Computer, Printer, Router, Keyboard.</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SysSwO_Hardware+Type_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&lt2ndOT&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Hardware Type</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SysSwO::Hardware Type</span><br/>Specializes UFO::Object Kind</p><p>Object Kind which is the powertype of Hardware Equipment, classifying its specializations.<br/>E.g.:<span class="font-italic"> Computer, Printer, Router, Keyboard.</span></p><p>Relations:<br/>
 <code>Hardware Equipment (0..*) instance of (1..1) Hardware Type<br/>
 Intended Activity (0..*) requires (0..*) Hardware Type<br/>
 Standard Activity (0..*) requires (0..*) Hardware Type<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SysSwO_Information+Item_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltkind&gt&gt</code><br/>
-<strong>Information Item<strong></td></tr>
-</table><br/>
-<b>SysSwO::Information Item</b><br/>
-Specializes SysSwO::Software Artifact<br/><br/>
-Relevant information for human use, produced or used by Performed Activity.<br/>
-E.g.:<i> a documented requirement, a bug reported, an agreement e-mail, a component description.</i><br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="SysSwO_Information+Item_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Information Item</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SysSwO::Information Item</span><br/>Specializes SysSwO::Software Artifact</p><p>Relevant information for human use, produced or used by Performed Activity.<br/>E.g.:<span class="font-italic"> a documented requirement, a bug reported, an agreement e-mail, a component description.</span></p><p></p></div></div>
 
-<a name="SysSwO_Loaded+Program+Copy_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Loaded Program Copy<strong></td></tr>
-</table><br/>
-<b>SysSwO::Loaded Program Copy</b><br/>
-Specializes UFO::Disposition<br/><br/>
-Loaded Program Copy is the materialization of a Program, inhering in a Computer Machine.<br/>
-E.g.:<i> a copy of a program loaded in primary memory of my computer.</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SysSwO_Loaded+Program+Copy_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Loaded Program Copy</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SysSwO::Loaded Program Copy</span><br/>Specializes UFO::Disposition</p><p>Loaded Program Copy is the materialization of a Program, inhering in a Computer Machine.<br/>E.g.:<span class="font-italic"> a copy of a program loaded in primary memory of my computer.</span></p><p>Relations:<br/>
 <code>Loaded Program Copy (0..*) materialization of (1..1) Program<br/>
 Loaded Program Copy (1..1) constituted by (1..*) Software Function<br/>
 Loaded Program Copy (0..*) inheres in (1..1) Computer Machine<br/>
 Loaded Program Copy (1..*) handles (0..1) User Interface<br/>
 Loaded Software System Copy (1..1) includes (1..*) Loaded Program Copy<br/>
 Program Copy Execution (0..*) execution of (1..1) Loaded Program Copy<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SysSwO_Loaded+Software+System+Copy_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Loaded Software System Copy<strong></td></tr>
-</table><br/>
-<b>SysSwO::Loaded Software System Copy</b><br/>
-Specializes UFO::Disposition<br/><br/>
-Loaded Software System Copy is the materialization of a Software System, inhering in a Computer Machine.<br/>
-E.g.:<i> a copy of a software system loaded in the primary memory of my computer.</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SysSwO_Loaded+Software+System+Copy_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Loaded Software System Copy</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SysSwO::Loaded Software System Copy</span><br/>Specializes UFO::Disposition</p><p>Loaded Software System Copy is the materialization of a Software System, inhering in a Computer Machine.<br/>E.g.:<span class="font-italic"> a copy of a software system loaded in the primary memory of my computer.</span></p><p>Relations:<br/>
 <code>Loaded Software System Copy (0..*) materialization of (1..1) Software System<br/>
 Loaded Software System Copy (0..*) inheres in (1..1) Computer Machine<br/>
 Loaded Software System Copy (1..1) includes (1..*) Loaded Program Copy<br/>
 Computer System (1..*) has (1..*) Loaded Software System Copy<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SysSwO_Machine+Code_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Machine Code<strong></td></tr>
-</table><br/>
-<b>SysSwO::Machine Code</b><br/>
-Specializes SysSwO::Code<br/><br/>
-Computer instructions and data definitions expressed in a form output by an assembler, compiler, or other translator, which can be recognized by the processing unit of a computer machine.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SysSwO_Machine+Code_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Machine Code</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SysSwO::Machine Code</span><br/>Specializes SysSwO::Code</p><p>Computer instructions and data definitions expressed in a form output by an assembler, compiler, or other translator, which can be recognized by the processing unit of a computer machine.<br/></p><p>Relations:<br/>
 <code>Machine Code (0..*) generated from (1..1) Source Code<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SysSwO_Model_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltkind&gt&gt</code><br/>
-<strong>Model<strong></td></tr>
-</table><br/>
-<b>SysSwO::Model</b><br/>
-Specializes SysSwO::Software Artifact<br/><br/>
-A representation (abstraction) of a process or system from a particular perspective.<br/>
-E.g.:<i> a use case model, a class model, a component model.</i><br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="SysSwO_Model_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Model</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SysSwO::Model</span><br/>Specializes SysSwO::Software Artifact</p><p>A representation (abstraction) of a process or system from a particular perspective.<br/>E.g.:<span class="font-italic"> a use case model, a class model, a component model.</span></p><p></p></div></div>
 
-<a name="SysSwO_Program_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Program<strong></td></tr>
-</table><br/>
-<b>SysSwO::Program</b><br/>
-Specializes SysSwO::Software Item<br/><br/>
-Software Item which aims at producing a certain result through execution on a computer, in a particular way, given by the Program Specification. A Program is constituted by code, but it is not identical to code. Code can be changed without altering the identity of its program, which is anchored to the program's essential property: its intended specification (Program Specification).<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SysSwO_Program_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Program</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SysSwO::Program</span><br/>Specializes SysSwO::Software Item</p><p>Software Item which aims at producing a certain result through execution on a computer, in a particular way, given by the Program Specification. A Program is constituted by code, but it is not identical to code. Code can be changed without altering the identity of its program, which is anchored to the program's essential property: its intended specification (Program Specification).<br/></p><p>Relations:<br/>
 <code>Program (0..1) constituted of (1..*) Code<br/>
 Program (0..1) intends to implement (1..1) Program Specification<br/>
 Program (0..*) implements (1..*) Software Function Universal<br/>
@@ -784,18 +829,9 @@ Program (0..*) \intends to satisfy (1..*) Requirement Artifact<br/>
 Program (0..*) implements (0..*) Quality Characteristic<br/>
 Software System (0..*) constituted of (1..*) Program<br/>
 Loaded Program Copy (0..*) materialization of (1..1) Program<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SysSwO_Program+Copy+Execution_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Program Copy Execution<strong></td></tr>
-</table><br/>
-<b>SysSwO::Program Copy Execution</b><br/>
-Specializes UFO::Event (Perdurant)<br/><br/>
-Program Copy Execution is an Event representing the execution of the Loaded Program Copy running in a Machine. In other words, the Program Copy Execution is the event of the physical manifestation of the dispositions (represented as the complex disposition Loaded Program Copy) that inhere in the Machine.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SysSwO_Program+Copy+Execution_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Program Copy Execution</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SysSwO::Program Copy Execution</span><br/>Specializes UFO::Event (Perdurant)</p><p>Program Copy Execution is an Event representing the execution of the Loaded Program Copy running in a Machine. In other words, the Program Copy Execution is the event of the physical manifestation of the dispositions (represented as the complex disposition Loaded Program Copy) that inhere in the Machine.<br/></p><p>Relations:<br/>
 <code>Program Copy Execution (0..*) execution of (1..1) Loaded Program Copy<br/>
 Program Copy Execution (1..1) brings about (1..1) Computing Resulting State<br/>
 Program Copy Execution (1..1) /directly causes (0..*) User Interpretation<br/>
@@ -805,51 +841,24 @@ User Input Resulting State (0..1) triggers (0..*) Program Copy Execution<br/>
 Controller (1..1) participates in (1..*) Program Copy Execution<br/>
 Computing Resulting State (0..1) triggers (0..*) Program Copy Execution<br/>
 Interactive Computer System Participation (1..1) <>-- (0..*) Program Copy Execution<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SysSwO_Program+Specification_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Program Specification<strong></td></tr>
-</table><br/>
-<b>SysSwO::Program Specification</b><br/>
-Specializes SysSwO::Document<br/><br/>
-A document that describes the purpose (structure and functions) of a program in sufficient detail to permit coding and to facilitate maintenance.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SysSwO_Program+Specification_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Program Specification</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SysSwO::Program Specification</span><br/>Specializes SysSwO::Document</p><p>A document that describes the purpose (structure and functions) of a program in sufficient detail to permit coding and to facilitate maintenance.<br/></p><p>Relations:<br/>
 <code>Program Specification (0..*) intends to satisfy (0..*) System Specification<br/>
 Program Specification (0..*) intends to satisfy (1..*) Requirement Artifact<br/>
 Program Specification (0..*) describes (1..*) Software Function Universal<br/>
 Program (0..1) intends to implement (1..1) Program Specification<br/>
 Code (0..*) implements (0..1) Program Specification<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SysSwO_Programming+Language_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltkind&gt&gt</code><br/>
-<strong>Programming Language<strong></td></tr>
-</table><br/>
-<b>SysSwO::Programming Language</b><br/>
-Specializes UFO::Social Object<br/><br/>
-A language used to express computer programs.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SysSwO_Programming+Language_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Programming Language</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SysSwO::Programming Language</span><br/>Specializes UFO::Social Object</p><p>A language used to express computer programs.<br/></p><p>Relations:<br/>
 <code>Source Code (0..*) written in (1..*) Programming Language<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SysSwO_Software+Artifact_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltcategory&gt&gt</code><br/>
-<strong>Software Artifact<strong></td></tr>
-</table><br/>
-<b>SysSwO::Software Artifact</b><br/>
-Specializes RSMO::Measurable Software-Related Entity, UFO::Object<br/><br/>
-Object intentionally made to serve a given purpose in the context of a software Project or Organization.<br/>
-E.g.:<i> a document, a model, a library, an e-mail, a bug.</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SysSwO_Software+Artifact_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltcategory&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Software Artifact</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SysSwO::Software Artifact</span><br/>Specializes RSMO::Measurable Software-Related Entity, UFO::Object</p><p>Object intentionally made to serve a given purpose in the context of a software Project or Organization.<br/>E.g.:<span class="font-italic"> a document, a model, a library, an e-mail, a bug.</span></p><p>Relations:<br/>
 <code>Software Artifact (0..*) instance of (1..1) Sw Artifact Type<br/>
 Software Artifact (0..*) depends on Software Artifact  &lt&ltmaterial&gt&gt<br/>
 Stakeholder (0..*) responsible for (0..*) Software Artifact  &lt&ltmaterial&gt&gt<br/>
@@ -859,109 +868,46 @@ Performed Activity (0..*) changes (0..*) Software Artifact<br/>
 Performed Activity (0..*) uses (0..*) Software Artifact<br/>
 Artifact Participation (0..*) participation of (1..1) Software Artifact<br/>
 Document (0..*) describes (0..*) Software Artifact<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SysSwO_Software+Function_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Software Function<strong></td></tr>
-</table><br/>
-<b>SysSwO::Software Function</b><br/>
-Specializes UFO::Function<br/><br/>
-Software Functions are functional dispositions that constitute the complex disposition Loaded Program Copy. Each Software Function is an instance of a Software Function Universal. When the software development process is accomplished correctly, the Software Functions that constitute the Loaded Program Copy are instances of the exact Software Function Universals described by the Program Specification and successfully implemented by the Program.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SysSwO_Software+Function_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Software Function</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SysSwO::Software Function</span><br/>Specializes UFO::Function</p><p>Software Functions are functional dispositions that constitute the complex disposition Loaded Program Copy. Each Software Function is an instance of a Software Function Universal. When the software development process is accomplished correctly, the Software Functions that constitute the Loaded Program Copy are instances of the exact Software Function Universals described by the Program Specification and successfully implemented by the Program.<br/></p><p>Relations:<br/>
 <code>Software Function (0..*) instance of (1..*) Software Function Universal<br/>
 Loaded Program Copy (1..1) constituted by (1..*) Software Function<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SysSwO_Software+Item_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltkind&gt&gt</code><br/>
-<strong>Software Item<strong></td></tr>
-</table><br/>
-<b>SysSwO::Software Item</b><br/>
-Specializes SysSwO::Software Artifact, UFO::Object<br/><br/>
-Piece of software, produced during the software process, not considered a complete Software Product, but an intermediary result.<br/>
-E.g.:<i> a component, database schema, a script.</i><br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="SysSwO_Software+Item_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Software Item</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SysSwO::Software Item</span><br/>Specializes SysSwO::Software Artifact, UFO::Object</p><p>Piece of software, produced during the software process, not considered a complete Software Product, but an intermediary result.<br/>E.g.:<span class="font-italic"> a component, database schema, a script.</span></p><p></p></div></div>
 
-<a name="SysSwO_Software+Product_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltkind&gt&gt</code><br/>
-<strong>Software Product<strong></td></tr>
-</table><br/>
-<b>SysSwO::Software Product</b><br/>
-Specializes SysSwO::Software Artifact, SysSwO::Complex Sw Artifact<br/><br/>
-One or more computer programs together with any accompanying auxiliary items, such as documentation, delivered under a single name, ready for use.<br/>
-E.g.:<i> Astah modeling tool, Microsoft Word, Eclipse IDE.</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SysSwO_Software+Product_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Software Product</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SysSwO::Software Product</span><br/>Specializes SysSwO::Software Artifact, SysSwO::Complex Sw Artifact</p><p>One or more computer programs together with any accompanying auxiliary items, such as documentation, delivered under a single name, ready for use.<br/>E.g.:<span class="font-italic"> Astah modeling tool, Microsoft Word, Eclipse IDE.</span></p><p>Relations:<br/>
 <code>Software Product (0..*) instance of (1..1) Software Product Type<br/>
 Software Product (0..1) constituted of (1..*) Software System<br/>
 User Interface <>-- Software Product<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SysSwO_Software+Product+Type_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&lt2ndOT&gt&gt</code><br/>
-<strong>Software Product Type<strong></td></tr>
-</table><br/>
-<b>SysSwO::Software Product Type</b><br/>
-Specializes SysSwO::Sw Artifact Type<br/><br/>
-Artifact Type which is the powertype of Software Product, classifying its specializations.<br/>
-E.g.:<i> Modeling Tool, Text Editor, IDE, Compiler.</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SysSwO_Software+Product+Type_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&lt2ndOT&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Software Product Type</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SysSwO::Software Product Type</span><br/>Specializes SysSwO::Sw Artifact Type</p><p>Artifact Type which is the powertype of Software Product, classifying its specializations.<br/>E.g.:<span class="font-italic"> Modeling Tool, Text Editor, IDE, Compiler.</span></p><p>Relations:<br/>
 <code>Software Product (0..*) instance of (1..1) Software Product Type<br/>
 Intended Activity (0..*) requires (0..*) Software Product Type<br/>
 Standard Activity (0..*) requires (0..*) Software Product Type<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SysSwO_Software+System_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Software System<strong></td></tr>
-</table><br/>
-<b>SysSwO::Software System</b><br/>
-Specializes SysSwO::Software Item<br/><br/>
-Software Item that aims at satisfying a specification (System Specification), concerning a desired change in a data structure inside a computer, abstracting away from the behavior.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SysSwO_Software+System_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Software System</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SysSwO::Software System</span><br/>Specializes SysSwO::Software Item</p><p>Software Item that aims at satisfying a specification (System Specification), concerning a desired change in a data structure inside a computer, abstracting away from the behavior.<br/></p><p>Relations:<br/>
 <code>Software System (0..*) constituted of (1..*) Program<br/>
 Software System (0..1) intends to implement (1..1) System Specification<br/>
 Loaded Software System Copy (0..*) materialization of (1..1) Software System<br/>
 Software Product (0..1) constituted of (1..*) Software System<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SysSwO_Source+Code_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Source Code<strong></td></tr>
-</table><br/>
-<b>SysSwO::Source Code</b><br/>
-Specializes SysSwO::Code<br/><br/>
-A well-formed sequence of computer instructions and data definitions expressed in a programming language, in a form suitable for input to an assembler, compiler,<br/>or other translator.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SysSwO_Source+Code_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Source Code</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SysSwO::Source Code</span><br/>Specializes SysSwO::Code</p><p>A well-formed sequence of computer instructions and data definitions expressed in a programming language, in a form suitable for input to an assembler, compiler,<br/>or other translator.<br/></p><p>Relations:<br/>
 <code>Source Code (0..*) written in (1..*) Programming Language<br/>
 Machine Code (0..*) generated from (1..1) Source Code<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SysSwO_Sw+Artifact+Type_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&lt2ndOT&gt&gt</code><br/>
-<strong>Sw Artifact Type<strong></td></tr>
-</table><br/>
-<b>SysSwO::Sw Artifact Type</b><br/>
-Specializes UFO::Object Kind<br/><br/>
-Object Kind which is the powertype of Artifact, classifying its specializations.<br/>
-E.g.:<i> Document, Model, Software Product, Information Item, Software Item.</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SysSwO_Sw+Artifact+Type_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&lt2ndOT&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Sw Artifact Type</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SysSwO::Sw Artifact Type</span><br/>Specializes UFO::Object Kind</p><p>Object Kind which is the powertype of Artifact, classifying its specializations.<br/>E.g.:<span class="font-italic"> Document, Model, Software Product, Information Item, Software Item.</span></p><p>Relations:<br/>
 <code>Software Artifact (0..*) instance of (1..1) Sw Artifact Type<br/>
 Intended Activity (0..*) creates (0..*) Sw Artifact Type<br/>
 Intended Activity (0..*) changes (0..*) Sw Artifact Type<br/>
@@ -969,34 +915,30 @@ Intended Activity (0..*) uses (0..*) Sw Artifact Type<br/>
 Standard Activity (0..*) uses (0..*) Sw Artifact Type<br/>
 Standard Activity (0..*) changes (0..*) Sw Artifact Type<br/>
 Standard Activity (0..*) creates (0..*) Sw Artifact Type<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SysSwO_System+Specification_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>System Specification<strong></td></tr>
-</table><br/>
-<b>SysSwO::System Specification</b><br/>
-Specializes SysSwO::Document<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SysSwO_System+Specification_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">System Specification</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SysSwO::System Specification</span><br/>Specializes SysSwO::Document</p><p><br/></p><p>Relations:<br/>
 <code>Software System (0..1) intends to implement (1..1) System Specification<br/>
 Program Specification (0..*) intends to satisfy (0..*) System Specification<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-</p>					
+
 				</div>
 				
 			</main>
 	
-    <footer class="footer">
-      <div class="container-fluid">
-        <span class="text-muted">Powered by NEMO.</span>
-        <span class="text-muted"><small><b>System and Software Ontology (SysSwO)</b></small></span>
-        <span class="text-muted"><small>Thu Nov 18 16:11:32 BRT 2021</small></span>		
+    <footer class="p-5 rounded border-top">
+      <div class="row">
+      	<div class="col">
+      		  <span class="text-muted">Powered by NEMO.</span>
+      	</div>
+      	<div class="col">
+      		<span><small><b>System and Software Ontology (SysSwO)</b></small></span>
+      	</div>
+      	<div class="col">
+      		<span class="text-muted"><small>Mon Nov 22 22:03:46 BRT 2021</small></span>	
+      	</div>
       </div>
     </footer>
 	   

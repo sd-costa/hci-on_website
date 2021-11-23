@@ -18,7 +18,7 @@
 	    <!-- Custom styles for this template -->
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/navbar-top-fixed.css" rel="stylesheet">
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/sticky-footer-navbar.css" rel="stylesheet">
-	       
+	    <link href="../resources/static/bootstrap-5.1.3-dist/css/carousel.css" rel="stylesheet">
 
 	    <style>
 	      .bd-placeholder-img {
@@ -36,7 +36,7 @@
 	        }
 	      }
 
-	      .h1, h1 {
+	      .h2, .h3, h2, h3 {
 	      	margin-bottom: 2.5rem;
 	      }
 
@@ -44,6 +44,9 @@
 	      	font-size: 2rem;
 	      }
 
+	      .featurette-heading {
+	        margin-top: 0;
+	      }
 	    </style>
 
 	    
@@ -131,7 +134,7 @@
 	            ROoST
 	          </a>
 	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item" href="#ontologydescription" >Ontology Description</a></li>
+	            <li><a class="dropdown-item" href="#ontologydescription">Ontology Description</a></li>
 	            <li><a class="dropdown-item" href="#relatedontologies">Related Ontologies</a></li>
 	            <li><a class="dropdown-item" href="#ontologymodels">Ontology Models</a></li>
 	            <li><a class="dropdown-item" href="#conceptsdefinition">Concepts Definition</a></li>
@@ -157,21 +160,27 @@
 
 		<!-- Begin page content -->
     <main role="main" class="container-fluid">	
-    		<div class="container-fluid d-flex justify-content-end"><span class="badge badge-danger"></span></div>
+    		
 				<!--<div class="bg-light p-5 rounded" id="ontologydescription">
     			<h1 class="featurette-heading">The Reference Ontology on Software Testing (ROoST)</h1>
 					<p class="lead" align="justify"><span class="text-muted font-weight-bold font-italic">Ontology Description. </span>The Reference Ontology on Software Testing (ROoST) is partially integrated to SEON, representing the activities, artifacts and stakeholders involved in the Software Testing Process, considering only dynamic tests. Since the testing process is a technical process in the software development, ROoST shares concepts with other SEON networked ontologies. </p>
-					<p class="lead text-right text-muted font-italic">- domain ontology from SEON. </p>
+					<p class="lead text-right text-muted font-italic"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"><path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg> domain ontology from SEON</p>
     		</div>-->
 
-				<div class="bg-light p-5 rounded" id="ontologydescription">
+				<div class="bg-light p-5 rounded">
+					<div class="container-fluid d-flex justify-content-end"><span class="badge badge-danger text-lowercase"></span></div>
     			<h1 class="featurette-heading">The Reference Ontology on Software Testing (ROoST)</h1>
-    				<h2 class="featurette-heading d-inline font-italic">Ontology Description. </h2>
-    				<p class="lead d-inline" align="justify">The Reference Ontology on Software Testing (ROoST) is partially integrated to SEON, representing the activities, artifacts and stakeholders involved in the Software Testing Process, considering only dynamic tests. Since the testing process is a technical process in the software development, ROoST shares concepts with other SEON networked ontologies. </p>
-    				<p class="lead text-right text-muted font-italic">- domain ontology from SEON. </p>
+    			<p class="lead text-right text-muted font-italic"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"><path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg> domain ontology from SEON</p>
+    		</div>
+	
+				<hr> 
+				   		
+    		<div class="p-5 rounded" id="ontologydescription">
+  				<h2 class="featurette-heading">1. Ontology Description</h2>
+  				<p class="lead" align="justify">The Reference Ontology on Software Testing (ROoST) is partially integrated to SEON, representing the activities, artifacts and stakeholders involved in the Software Testing Process, considering only dynamic tests. Since the testing process is a technical process in the software development, ROoST shares concepts with other SEON networked ontologies. </p>
     		</div>
 
-				<hr class="featurette-divider">
+				<hr>
 
 				<div class="p-5 rounded" id="relatedontologies">
 					<h2 class="featurette-heading">2. Related Ontologies</h2>
@@ -195,7 +204,7 @@
 
 				</div>	
 
-				<hr class="featurette-divider">
+				<hr>
     	
 				<div class="p-5 rounded" id="ontologymodels">
 					<h2 class="featurette-heading">3. Ontology Models</h2>
@@ -334,13 +343,275 @@ DEFINIÇÃO ANTIGA: Physical Object used for running software programs or to sup
 </p>					
 				</div>
 
-				<hr class="featurette-divider">
+				<hr>
 
 				<div class="p-5 rounded" id="conceptsdefinition">
 					<h2 class="featurette-heading">4. Concepts Definition</h2>
 					<p class="lead">The following table shows the definitions for ROoST concepts.</p>		
 					<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->				
-					<table style="width: 100%" border="1" cellpadding="6">
+					<div class="table-responsive">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th scope="col">Concept</th>
+									<th scope="col">Definition</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+<td><a name="ROoST_Black-box+Testing+Technique"><b>Black-box Testing Technique</b></a>
+<a href=#ROoST_Black-box+Testing+Technique_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Testing technique that ignores the internal mechanism of a system or component and focuses solely on the outputs generated in response to selected inputs and execution conditions (adapted from ISO/IEC/IEEE 24765:2017 Systems and software engineering-Vocabulary)
+<br/></td>
+</tr>
+<tr>
+<td><a name="ROoST_Code+To+Be+Tested"><b>Code To Be Tested</b></a>
+<a href=#ROoST_Code+To+Be+Tested_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Portion of Code (software module) to be tested by a Test Case.
+<br/></td>
+</tr>
+<tr>
+<td><a name="ROoST_Incident+Management+Tool"><b>Incident Management Tool</b></a>
+<a href=#ROoST_Incident+Management+Tool_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Software product that manages and maintains lists of issues as needed by an organization (adapted from Wikipedia).
+<br/></td>
+</tr>
+<tr>
+<td><a name="ROoST_Incident+Report"><b>Incident Report</b></a>
+<a href=#ROoST_Incident+Report_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Report describing the occurrence, nature, and status of an incident (adapted from ISO/IEC/IEEE 29119-1:2013 Software and systems engineering--Software testing--Part 1: Concepts and definitions, 4.18).
+<br/></td>
+</tr>
+<tr>
+<td><a name="ROoST_Integration+Testing"><b>Integration Testing</b></a>
+<a href=#ROoST_Integration+Testing_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Level-based Testing focusing on larger components, ensuring that a collection of units functions as desired.
+<br/></td>
+</tr>
+<tr>
+<td><a name="ROoST_Level-based+Testing"><b>Level-based Testing</b></a>
+<a href=#ROoST_Level-based+Testing_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Composite Performed Activity consisting of testing activities and classified by the different levels they can be performed.
+<br/></td>
+</tr>
+<tr>
+<td><a name="ROoST_Model-based+Testing+Technique"><b>Model-based Testing Technique</b></a>
+<a href=#ROoST_Model-based+Testing+Technique_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Testing technique in which the test cases are derived from a model that describes the system under test.
+<br/></td>
+</tr>
+<tr>
+<td><a name="ROoST_Mutation+Testing+Technique"><b>Mutation Testing Technique</b></a>
+<a href=#ROoST_Mutation+Testing+Technique_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Testing technique in which two or more program mutations are executed using the same test cases to evaluate the ability of the test cases to detect differences in the mutations (ISO/IEC/IEEE 24765:2017 Systems and software engineering-Vocabulary)
+<br/></td>
+</tr>
+<tr>
+<td><a name="ROoST_Stub"><b>Stub</b></a>
+<a href=#ROoST_Stub_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Skeletal or special-purpose test code substituting a software module, used to test a module that calls or is otherwise dependent on it (adapted from ISO/IEC/IEEE 24765:2017 Systems and software engineering - Vocabulary)
+<br/></td>
+</tr>
+<tr>
+<td><a name="ROoST_System+Testing"><b>System Testing</b></a>
+<a href=#ROoST_System+Testing_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Level-based Testing focusing on the behavior of the entire system, ensuring that it is in conformance with its requirements.
+<br/></td>
+</tr>
+<tr>
+<td><a name="ROoST_Test+Analysis+Report"><b>Test Analysis Report</b></a>
+<a href=#ROoST_Test+Analysis+Report_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Document containing the analysis of Test Results and how they succeed.
+<br/></td>
+</tr>
+<tr>
+<td><a name="ROoST_Test+Case"><b>Test Case</b></a>
+<a href=#ROoST_Test+Case_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Document containing the input data, expected results, steps and general conditions for testing some situation regarding a Code To Be Tested.
+<br/></td>
+</tr>
+<tr>
+<td><a name="ROoST_Test+Case+Actual+Result"><b>Test Case Actual Result</b></a>
+<a href=#ROoST_Test+Case+Actual+Result_detail><img src="images/plus-4-16.ico"></a></td>
+<td>The actual result obtained from the execution of a test case.
+<br/></td>
+</tr>
+<tr>
+<td><a name="ROoST_Test+Case+Design"><b>Test Case Design</b></a>
+<a href=#ROoST_Test+Case+Design_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Simple Performed Activity for designing the Test Cases to be executed, supported by input artifacts.
+<br/></td>
+</tr>
+<tr>
+<td><a name="ROoST_Test+Case+Design+Input"><b>Test Case Design Input</b></a>
+<a href=#ROoST_Test+Case+Design+Input_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Some Artifact defined as an input for the Test Case Design.
+<br/>E.g.:<i> Requirements Document, Design Document, Code.</i></td>
+</tr>
+<tr>
+<td><a name="ROoST_Test+Case+Designer"><b>Test Case Designer</b></a>
+<a href=#ROoST_Test+Case+Designer_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Stakeholder responsible for designing test cases and analysing test results.
+<br/></td>
+</tr>
+<tr>
+<td><a name="ROoST_Test+Case+Expected+Result"><b>Test Case Expected Result</b></a>
+<a href=#ROoST_Test+Case+Expected+Result_detail><img src="images/plus-4-16.ico"></a></td>
+<td>The result expected from the execution of a test case.
+<br/></td>
+</tr>
+<tr>
+<td><a name="ROoST_Test+Code"><b>Test Code</b></a>
+<a href=#ROoST_Test+Code_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Code produced for implementing a Test Case.
+<br/></td>
+</tr>
+<tr>
+<td><a name="ROoST_Test+Coding"><b>Test Coding</b></a>
+<a href=#ROoST_Test+Coding_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Simple Performed Activity for implementing the Test Cases as Code artifacts (Test Code) to be used during Test Execution.
+<br/></td>
+</tr>
+<tr>
+<td><a name="ROoST_Test+Driver"><b>Test Driver</b></a>
+<a href=#ROoST_Test+Driver_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Software item used to invoke a module under test and, often, provide test inputs, control and monitor execution, and report test results (adapted from ISO/IEC/IEEE 24765:2017 Systems and software engineering-Vocabulary).
+<br/></td>
+</tr>
+<tr>
+<td><a name="ROoST_Test+Execution"><b>Test Execution</b></a>
+<a href=#ROoST_Test+Execution_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Simple Performed Activity for effectively executing the Test Cases, by running the Test Code and producing the Test Results.
+<br/></td>
+</tr>
+<tr>
+<td><a name="ROoST_Test+Hardware+Resource"><b>Test Hardware Resource</b></a>
+<a href=#ROoST_Test+Hardware+Resource_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Hardware Resource that comprises the Testing Environment of a Project.
+<br/></td>
+</tr>
+<tr>
+<td><a name="ROoST_Test+Incident+Report"><b>Test Incident Report</b></a>
+<a href=#ROoST_Test+Incident+Report_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Report describing any event that occurs during the testing process which requires investigation (adapted from ISO/IEC/IEEE 24765:2017 Systems and software engineering-Vocabulary)
+<br/></td>
+</tr>
+<tr>
+<td><a name="ROoST_Test+Input"><b>Test Input</b></a>
+<a href=#ROoST_Test+Input_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Descriptions of the parameters and values to be used in a test case, in order to produce an expected result.
+<br/></td>
+</tr>
+<tr>
+<td><a name="ROoST_Test+Management+Tool"><b>Test Management Tool</b></a>
+<a href=#ROoST_Test+Management+Tool_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Software Product used to store information on how testing is to be done, plan testing activities and report the status of testing activities (adpated from Wikipedia).
+<br/></td>
+</tr>
+<tr>
+<td><a name="ROoST_Test+Manager"><b>Test Manager</b></a>
+<a href=#ROoST_Test+Manager_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Stakeholder responsible for planning and managing the testing activities.
+<br/></td>
+</tr>
+<tr>
+<td><a name="ROoST_Test+Plan"><b>Test Plan</b></a>
+<a href=#ROoST_Test+Plan_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Document describing how the tests should be performed, providing a roadmap for the testing activities.
+<br/></td>
+</tr>
+<tr>
+<td><a name="ROoST_Test+Planning"><b>Test Planning</b></a>
+<a href=#ROoST_Test+Planning_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Composite Performed Activity for planning how the testing activities should be performed, and documenting it in a Test Plan.
+<br/></td>
+</tr>
+<tr>
+<td><a name="ROoST_Test+Result"><b>Test Result</b></a>
+<a href=#ROoST_Test+Result_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Document containing the actual results and identified issues relative to a Test Case execution.
+<br/></td>
+</tr>
+<tr>
+<td><a name="ROoST_Test+Result+Analysis"><b>Test Result Analysis</b></a>
+<a href=#ROoST_Test+Result+Analysis_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Simple Performed Activity for analyzing Test Results to determine whether or not tests have been successful in identifying defects.
+<br/></td>
+</tr>
+<tr>
+<td><a name="ROoST_Test+Script"><b>Test Script</b></a>
+<a href=#ROoST_Test+Script_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Short program written in a programming language used to test part of the functionality of a software system. Test scripts written as a short program can either be written using a special automated functional GUI test tool or in a well-known programming language (Wikipedia).
+<br/></td>
+</tr>
+<tr>
+<td><a name="ROoST_Test+Software+Resource"><b>Test Software Resource</b></a>
+<a href=#ROoST_Test+Software+Resource_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Software Resource that comprises the Testing Environment of a Project.
+<br/></td>
+</tr>
+<tr>
+<td><a name="ROoST_Test+Suite"><b>Test Suite</b></a>
+<a href=#ROoST_Test+Suite_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A collection of test cases that are intended to be used to test a software program to show that it has some specified set of behaviours (Wikipedia).
+<br/></td>
+</tr>
+<tr>
+<td><a name="ROoST_Tester"><b>Tester</b></a>
+<a href=#ROoST_Tester_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Stakeholder responsible for coding and executing test cases.
+<br/></td>
+</tr>
+<tr>
+<td><a name="ROoST_Testing+Environment"><b>Testing Environment</b></a>
+<a href=#ROoST_Testing+Environment_detail><img src="images/plus-4-16.ico"></a></td>
+<td>The set of resources (Hardware and Software Resources) that are used to perform testing activities of a Project.
+<br/></td>
+</tr>
+<tr>
+<td><a name="ROoST_Testing+Level"><b>Testing Level</b></a>
+<a href=#ROoST_Testing+Level_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Levels in which testing activities are performed, such as Unit, Integration and System testing.
+<br/></td>
+</tr>
+<tr>
+<td><a name="ROoST_Testing+Process"><b>Testing Process</b></a>
+<a href=#ROoST_Testing+Process_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Specific Performed Process for planning and executing the dynamic testing activities for the software in development.
+<br/></td>
+</tr>
+<tr>
+<td><a name="ROoST_Testing+Technique"><b>Testing Technique</b></a>
+<a href=#ROoST_Testing+Technique_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Technique for designing test cases. It can be Black-box, White-box, Model-based or Mutation testing techniques, among others.
+<br/></td>
+</tr>
+<tr>
+<td><a name="ROoST_Testing+Technique+Type"><b>Testing Technique Type</b></a>
+<a href=#ROoST_Testing+Technique+Type_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Major types of testing techniques such as black-box, white-box, model-based and mutation testing techniques.
+<br/></td>
+</tr>
+<tr>
+<td><a name="ROoST_Unit+Testing"><b>Unit Testing</b></a>
+<a href=#ROoST_Unit+Testing_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Level-based Testing focusing on the unit or the individual components that have been developed, ensuring that the unit functions correctly in isolation.
+<br/></td>
+</tr>
+<tr>
+<td><a name="ROoST_White-box+Testing+Technique"><b>White-box Testing Technique</b></a>
+<a href=#ROoST_White-box+Testing+Technique_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Testing Technique in which the tests are derived from an examination of the structure of the code to be tested (adapted from ISO/IEC/IEEE 29119-1:2013 Software and systems engineering--Software testing--Part 1: Concepts and definitions)
+<br/></td>
+</tr>
+
+							</tbody>
+						</table>
+  				</div>
+
+
+
+				<!--	<table style="width: 100%" border="1" cellpadding="6">
 						<tbody>
 							<tr style="background-color: #D8D8D8">
 								<td style="width: 25%"><b>Concept</b></td>
@@ -348,333 +619,281 @@ DEFINIÇÃO ANTIGA: Physical Object used for running software programs or to sup
 							</tr>
 							<tr>
 <td><a name="ROoST_Black-box+Testing+Technique"><b>Black-box Testing Technique</b></a>
-<a href=#ROoST_Black-box+Testing+Technique_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#ROoST_Black-box+Testing+Technique_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Testing technique that ignores the internal mechanism of a system or component and focuses solely on the outputs generated in response to selected inputs and execution conditions (adapted from ISO/IEC/IEEE 24765:2017 Systems and software engineering-Vocabulary)
 <br/></td>
 </tr>
 <tr>
 <td><a name="ROoST_Code+To+Be+Tested"><b>Code To Be Tested</b></a>
-<a href=#ROoST_Code+To+Be+Tested_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#ROoST_Code+To+Be+Tested_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Portion of Code (software module) to be tested by a Test Case.
 <br/></td>
 </tr>
 <tr>
 <td><a name="ROoST_Incident+Management+Tool"><b>Incident Management Tool</b></a>
-<a href=#ROoST_Incident+Management+Tool_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#ROoST_Incident+Management+Tool_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Software product that manages and maintains lists of issues as needed by an organization (adapted from Wikipedia).
 <br/></td>
 </tr>
 <tr>
 <td><a name="ROoST_Incident+Report"><b>Incident Report</b></a>
-<a href=#ROoST_Incident+Report_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#ROoST_Incident+Report_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Report describing the occurrence, nature, and status of an incident (adapted from ISO/IEC/IEEE 29119-1:2013 Software and systems engineering--Software testing--Part 1: Concepts and definitions, 4.18).
 <br/></td>
 </tr>
 <tr>
 <td><a name="ROoST_Integration+Testing"><b>Integration Testing</b></a>
-<a href=#ROoST_Integration+Testing_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#ROoST_Integration+Testing_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Level-based Testing focusing on larger components, ensuring that a collection of units functions as desired.
 <br/></td>
 </tr>
 <tr>
 <td><a name="ROoST_Level-based+Testing"><b>Level-based Testing</b></a>
-<a href=#ROoST_Level-based+Testing_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#ROoST_Level-based+Testing_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Composite Performed Activity consisting of testing activities and classified by the different levels they can be performed.
 <br/></td>
 </tr>
 <tr>
 <td><a name="ROoST_Model-based+Testing+Technique"><b>Model-based Testing Technique</b></a>
-<a href=#ROoST_Model-based+Testing+Technique_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#ROoST_Model-based+Testing+Technique_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Testing technique in which the test cases are derived from a model that describes the system under test.
 <br/></td>
 </tr>
 <tr>
 <td><a name="ROoST_Mutation+Testing+Technique"><b>Mutation Testing Technique</b></a>
-<a href=#ROoST_Mutation+Testing+Technique_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#ROoST_Mutation+Testing+Technique_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Testing technique in which two or more program mutations are executed using the same test cases to evaluate the ability of the test cases to detect differences in the mutations (ISO/IEC/IEEE 24765:2017 Systems and software engineering-Vocabulary)
 <br/></td>
 </tr>
 <tr>
 <td><a name="ROoST_Stub"><b>Stub</b></a>
-<a href=#ROoST_Stub_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#ROoST_Stub_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Skeletal or special-purpose test code substituting a software module, used to test a module that calls or is otherwise dependent on it (adapted from ISO/IEC/IEEE 24765:2017 Systems and software engineering - Vocabulary)
 <br/></td>
 </tr>
 <tr>
 <td><a name="ROoST_System+Testing"><b>System Testing</b></a>
-<a href=#ROoST_System+Testing_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#ROoST_System+Testing_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Level-based Testing focusing on the behavior of the entire system, ensuring that it is in conformance with its requirements.
 <br/></td>
 </tr>
 <tr>
 <td><a name="ROoST_Test+Analysis+Report"><b>Test Analysis Report</b></a>
-<a href=#ROoST_Test+Analysis+Report_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#ROoST_Test+Analysis+Report_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Document containing the analysis of Test Results and how they succeed.
 <br/></td>
 </tr>
 <tr>
 <td><a name="ROoST_Test+Case"><b>Test Case</b></a>
-<a href=#ROoST_Test+Case_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#ROoST_Test+Case_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Document containing the input data, expected results, steps and general conditions for testing some situation regarding a Code To Be Tested.
 <br/></td>
 </tr>
 <tr>
 <td><a name="ROoST_Test+Case+Actual+Result"><b>Test Case Actual Result</b></a>
-<a href=#ROoST_Test+Case+Actual+Result_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#ROoST_Test+Case+Actual+Result_detail><img src="images/plus-4-16.ico"></a></td>
 <td>The actual result obtained from the execution of a test case.
 <br/></td>
 </tr>
 <tr>
 <td><a name="ROoST_Test+Case+Design"><b>Test Case Design</b></a>
-<a href=#ROoST_Test+Case+Design_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#ROoST_Test+Case+Design_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Simple Performed Activity for designing the Test Cases to be executed, supported by input artifacts.
 <br/></td>
 </tr>
 <tr>
 <td><a name="ROoST_Test+Case+Design+Input"><b>Test Case Design Input</b></a>
-<a href=#ROoST_Test+Case+Design+Input_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#ROoST_Test+Case+Design+Input_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Some Artifact defined as an input for the Test Case Design.
 <br/>E.g.:<i> Requirements Document, Design Document, Code.</i></td>
 </tr>
 <tr>
 <td><a name="ROoST_Test+Case+Designer"><b>Test Case Designer</b></a>
-<a href=#ROoST_Test+Case+Designer_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#ROoST_Test+Case+Designer_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Stakeholder responsible for designing test cases and analysing test results.
 <br/></td>
 </tr>
 <tr>
 <td><a name="ROoST_Test+Case+Expected+Result"><b>Test Case Expected Result</b></a>
-<a href=#ROoST_Test+Case+Expected+Result_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#ROoST_Test+Case+Expected+Result_detail><img src="images/plus-4-16.ico"></a></td>
 <td>The result expected from the execution of a test case.
 <br/></td>
 </tr>
 <tr>
 <td><a name="ROoST_Test+Code"><b>Test Code</b></a>
-<a href=#ROoST_Test+Code_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#ROoST_Test+Code_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Code produced for implementing a Test Case.
 <br/></td>
 </tr>
 <tr>
 <td><a name="ROoST_Test+Coding"><b>Test Coding</b></a>
-<a href=#ROoST_Test+Coding_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#ROoST_Test+Coding_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Simple Performed Activity for implementing the Test Cases as Code artifacts (Test Code) to be used during Test Execution.
 <br/></td>
 </tr>
 <tr>
 <td><a name="ROoST_Test+Driver"><b>Test Driver</b></a>
-<a href=#ROoST_Test+Driver_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#ROoST_Test+Driver_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Software item used to invoke a module under test and, often, provide test inputs, control and monitor execution, and report test results (adapted from ISO/IEC/IEEE 24765:2017 Systems and software engineering-Vocabulary).
 <br/></td>
 </tr>
 <tr>
 <td><a name="ROoST_Test+Execution"><b>Test Execution</b></a>
-<a href=#ROoST_Test+Execution_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#ROoST_Test+Execution_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Simple Performed Activity for effectively executing the Test Cases, by running the Test Code and producing the Test Results.
 <br/></td>
 </tr>
 <tr>
 <td><a name="ROoST_Test+Hardware+Resource"><b>Test Hardware Resource</b></a>
-<a href=#ROoST_Test+Hardware+Resource_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#ROoST_Test+Hardware+Resource_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Hardware Resource that comprises the Testing Environment of a Project.
 <br/></td>
 </tr>
 <tr>
 <td><a name="ROoST_Test+Incident+Report"><b>Test Incident Report</b></a>
-<a href=#ROoST_Test+Incident+Report_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#ROoST_Test+Incident+Report_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Report describing any event that occurs during the testing process which requires investigation (adapted from ISO/IEC/IEEE 24765:2017 Systems and software engineering-Vocabulary)
 <br/></td>
 </tr>
 <tr>
 <td><a name="ROoST_Test+Input"><b>Test Input</b></a>
-<a href=#ROoST_Test+Input_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#ROoST_Test+Input_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Descriptions of the parameters and values to be used in a test case, in order to produce an expected result.
 <br/></td>
 </tr>
 <tr>
 <td><a name="ROoST_Test+Management+Tool"><b>Test Management Tool</b></a>
-<a href=#ROoST_Test+Management+Tool_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#ROoST_Test+Management+Tool_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Software Product used to store information on how testing is to be done, plan testing activities and report the status of testing activities (adpated from Wikipedia).
 <br/></td>
 </tr>
 <tr>
 <td><a name="ROoST_Test+Manager"><b>Test Manager</b></a>
-<a href=#ROoST_Test+Manager_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#ROoST_Test+Manager_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Stakeholder responsible for planning and managing the testing activities.
 <br/></td>
 </tr>
 <tr>
 <td><a name="ROoST_Test+Plan"><b>Test Plan</b></a>
-<a href=#ROoST_Test+Plan_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#ROoST_Test+Plan_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Document describing how the tests should be performed, providing a roadmap for the testing activities.
 <br/></td>
 </tr>
 <tr>
 <td><a name="ROoST_Test+Planning"><b>Test Planning</b></a>
-<a href=#ROoST_Test+Planning_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#ROoST_Test+Planning_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Composite Performed Activity for planning how the testing activities should be performed, and documenting it in a Test Plan.
 <br/></td>
 </tr>
 <tr>
 <td><a name="ROoST_Test+Result"><b>Test Result</b></a>
-<a href=#ROoST_Test+Result_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#ROoST_Test+Result_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Document containing the actual results and identified issues relative to a Test Case execution.
 <br/></td>
 </tr>
 <tr>
 <td><a name="ROoST_Test+Result+Analysis"><b>Test Result Analysis</b></a>
-<a href=#ROoST_Test+Result+Analysis_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#ROoST_Test+Result+Analysis_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Simple Performed Activity for analyzing Test Results to determine whether or not tests have been successful in identifying defects.
 <br/></td>
 </tr>
 <tr>
 <td><a name="ROoST_Test+Script"><b>Test Script</b></a>
-<a href=#ROoST_Test+Script_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#ROoST_Test+Script_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Short program written in a programming language used to test part of the functionality of a software system. Test scripts written as a short program can either be written using a special automated functional GUI test tool or in a well-known programming language (Wikipedia).
 <br/></td>
 </tr>
 <tr>
 <td><a name="ROoST_Test+Software+Resource"><b>Test Software Resource</b></a>
-<a href=#ROoST_Test+Software+Resource_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#ROoST_Test+Software+Resource_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Software Resource that comprises the Testing Environment of a Project.
 <br/></td>
 </tr>
 <tr>
 <td><a name="ROoST_Test+Suite"><b>Test Suite</b></a>
-<a href=#ROoST_Test+Suite_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#ROoST_Test+Suite_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A collection of test cases that are intended to be used to test a software program to show that it has some specified set of behaviours (Wikipedia).
 <br/></td>
 </tr>
 <tr>
 <td><a name="ROoST_Tester"><b>Tester</b></a>
-<a href=#ROoST_Tester_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#ROoST_Tester_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Stakeholder responsible for coding and executing test cases.
 <br/></td>
 </tr>
 <tr>
 <td><a name="ROoST_Testing+Environment"><b>Testing Environment</b></a>
-<a href=#ROoST_Testing+Environment_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#ROoST_Testing+Environment_detail><img src="images/plus-4-16.ico"></a></td>
 <td>The set of resources (Hardware and Software Resources) that are used to perform testing activities of a Project.
 <br/></td>
 </tr>
 <tr>
 <td><a name="ROoST_Testing+Level"><b>Testing Level</b></a>
-<a href=#ROoST_Testing+Level_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#ROoST_Testing+Level_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Levels in which testing activities are performed, such as Unit, Integration and System testing.
 <br/></td>
 </tr>
 <tr>
 <td><a name="ROoST_Testing+Process"><b>Testing Process</b></a>
-<a href=#ROoST_Testing+Process_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#ROoST_Testing+Process_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Specific Performed Process for planning and executing the dynamic testing activities for the software in development.
 <br/></td>
 </tr>
 <tr>
 <td><a name="ROoST_Testing+Technique"><b>Testing Technique</b></a>
-<a href=#ROoST_Testing+Technique_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#ROoST_Testing+Technique_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Technique for designing test cases. It can be Black-box, White-box, Model-based or Mutation testing techniques, among others.
 <br/></td>
 </tr>
 <tr>
 <td><a name="ROoST_Testing+Technique+Type"><b>Testing Technique Type</b></a>
-<a href=#ROoST_Testing+Technique+Type_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#ROoST_Testing+Technique+Type_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Major types of testing techniques such as black-box, white-box, model-based and mutation testing techniques.
 <br/></td>
 </tr>
 <tr>
 <td><a name="ROoST_Unit+Testing"><b>Unit Testing</b></a>
-<a href=#ROoST_Unit+Testing_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#ROoST_Unit+Testing_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Level-based Testing focusing on the unit or the individual components that have been developed, ensuring that the unit functions correctly in isolation.
 <br/></td>
 </tr>
 <tr>
 <td><a name="ROoST_White-box+Testing+Technique"><b>White-box Testing Technique</b></a>
-<a href=#ROoST_White-box+Testing+Technique_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#ROoST_White-box+Testing+Technique_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Testing Technique in which the tests are derived from an examination of the structure of the code to be tested (adapted from ISO/IEC/IEEE 29119-1:2013 Software and systems engineering--Software testing--Part 1: Concepts and definitions)
 <br/></td>
 </tr>
 
 						</tbody>
-					</table>
+					</table>-->
 
 				</div>
 
-				<hr class="featurette-divider">		
+				<hr>		
 
-				<div class="container p-5 rounded" id="detailedconcepts">
+				<div class="p-5 rounded" id="detailedconcepts">
 					<h2 class="featurette-heading">5. Detailed Concepts</h2>
-					<p class="lead"><a name="ROoST_Black-box+Testing+Technique_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Black-box Testing Technique<strong></td></tr>
-</table><br/>
-<b>ROoST::Black-box Testing Technique</b><br/>
-Specializes ROoST::Testing Technique<br/><br/>
-Testing technique that ignores the internal mechanism of a system or component and focuses solely on the outputs generated in response to selected inputs and execution conditions (adapted from ISO/IEC/IEEE 24765:2017 Systems and software engineering-Vocabulary)<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+					<p class="lead">Reference Ontology on Software Testing (ROoST) detailed concepts.</p>					
+					<hr><div class="container-fluid" id="ROoST_Black-box+Testing+Technique_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Black-box Testing Technique</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">ROoST::Black-box Testing Technique</span><br/>Specializes ROoST::Testing Technique</p><p>Testing technique that ignores the internal mechanism of a system or component and focuses solely on the outputs generated in response to selected inputs and execution conditions (adapted from ISO/IEC/IEEE 24765:2017 Systems and software engineering-Vocabulary)<br/></p><p></p></div></div>
 
-<a name="ROoST_Code+To+Be+Tested_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltrole&gt&gt</code><br/>
-<strong>Code To Be Tested<strong></td></tr>
-</table><br/>
-<b>ROoST::Code To Be Tested</b><br/>
-Specializes SysSwO::Code<br/><br/>
-Portion of Code (software module) to be tested by a Test Case.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="ROoST_Code+To+Be+Tested_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltrole&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Code To Be Tested</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">ROoST::Code To Be Tested</span><br/>Specializes SysSwO::Code</p><p>Portion of Code (software module) to be tested by a Test Case.<br/></p><p>Relations:<br/>
 <code>Test Execution (0..*) uses (1..*) Code To Be Tested<br/>
 Test Case (1..*) tests (1..1) Code To Be Tested<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="ROoST_Incident+Management+Tool_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Incident Management Tool<strong></td></tr>
-</table><br/>
-<b>ROoST::Incident Management Tool</b><br/>
-Specializes SysSwO::Software Product<br/><br/>
-Software product that manages and maintains lists of issues as needed by an organization (adapted from Wikipedia).<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="ROoST_Incident+Management+Tool_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Incident Management Tool</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">ROoST::Incident Management Tool</span><br/>Specializes SysSwO::Software Product</p><p>Software product that manages and maintains lists of issues as needed by an organization (adapted from Wikipedia).<br/></p><p></p></div></div>
 
-<a name="ROoST_Incident+Report_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Incident Report<strong></td></tr>
-</table><br/>
-<b>ROoST::Incident Report</b><br/>
-Specializes SysSwO::Information Item<br/><br/>
-Report describing the occurrence, nature, and status of an incident (adapted from ISO/IEC/IEEE 29119-1:2013 Software and systems engineering--Software testing--Part 1: Concepts and definitions, 4.18).<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="ROoST_Incident+Report_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Incident Report</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">ROoST::Incident Report</span><br/>Specializes SysSwO::Information Item</p><p>Report describing the occurrence, nature, and status of an incident (adapted from ISO/IEC/IEEE 29119-1:2013 Software and systems engineering--Software testing--Part 1: Concepts and definitions, 4.18).<br/></p><p></p></div></div>
 
-<a name="ROoST_Integration+Testing_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Integration Testing<strong></td></tr>
-</table><br/>
-<b>ROoST::Integration Testing</b><br/>
-Specializes ROoST::Level-based Testing<br/><br/>
-Level-based Testing focusing on larger components, ensuring that a collection of units functions as desired.<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="ROoST_Integration+Testing_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Integration Testing</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">ROoST::Integration Testing</span><br/>Specializes ROoST::Level-based Testing</p><p>Level-based Testing focusing on larger components, ensuring that a collection of units functions as desired.<br/></p><p></p></div></div>
 
-<a name="ROoST_Level-based+Testing_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Level-based Testing<strong></td></tr>
-</table><br/>
-<b>ROoST::Level-based Testing</b><br/>
-Specializes SPO::Performed Composite Activity<br/><br/>
-Composite Performed Activity consisting of testing activities and classified by the different levels they can be performed.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="ROoST_Level-based+Testing_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Level-based Testing</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">ROoST::Level-based Testing</span><br/>Specializes SPO::Performed Composite Activity</p><p>Composite Performed Activity consisting of testing activities and classified by the different levels they can be performed.<br/></p><p>Relations:<br/>
 <code>Level-based Testing <>-- Test Case Design<br/>
 Level-based Testing <>-- Test Coding<br/>
 Level-based Testing <>-- Test Execution<br/>
@@ -684,82 +903,28 @@ Level-based Testing uses Test Hardware Resource<br/>
 Level-based Testing uses Test Software Resource<br/>
 Level-based Testing (0..*) instanceOf (1..1) Testing Level<br/>
 Testing Process <>-- Level-based Testing<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="ROoST_Model-based+Testing+Technique_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Model-based Testing Technique<strong></td></tr>
-</table><br/>
-<b>ROoST::Model-based Testing Technique</b><br/>
-Specializes ROoST::Testing Technique<br/><br/>
-Testing technique in which the test cases are derived from a model that describes the system under test.<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="ROoST_Model-based+Testing+Technique_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Model-based Testing Technique</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">ROoST::Model-based Testing Technique</span><br/>Specializes ROoST::Testing Technique</p><p>Testing technique in which the test cases are derived from a model that describes the system under test.<br/></p><p></p></div></div>
 
-<a name="ROoST_Mutation+Testing+Technique_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Mutation Testing Technique<strong></td></tr>
-</table><br/>
-<b>ROoST::Mutation Testing Technique</b><br/>
-Specializes ROoST::Testing Technique<br/><br/>
-Testing technique in which two or more program mutations are executed using the same test cases to evaluate the ability of the test cases to detect differences in the mutations (ISO/IEC/IEEE 24765:2017 Systems and software engineering-Vocabulary)<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="ROoST_Mutation+Testing+Technique_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Mutation Testing Technique</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">ROoST::Mutation Testing Technique</span><br/>Specializes ROoST::Testing Technique</p><p>Testing technique in which two or more program mutations are executed using the same test cases to evaluate the ability of the test cases to detect differences in the mutations (ISO/IEC/IEEE 24765:2017 Systems and software engineering-Vocabulary)<br/></p><p></p></div></div>
 
-<a name="ROoST_Stub_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Stub<strong></td></tr>
-</table><br/>
-<b>ROoST::Stub</b><br/>
-Specializes ROoST::Test Code<br/><br/>
-Skeletal or special-purpose test code substituting a software module, used to test a module that calls or is otherwise dependent on it (adapted from ISO/IEC/IEEE 24765:2017 Systems and software engineering - Vocabulary)<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="ROoST_Stub_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Stub</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">ROoST::Stub</span><br/>Specializes ROoST::Test Code</p><p>Skeletal or special-purpose test code substituting a software module, used to test a module that calls or is otherwise dependent on it (adapted from ISO/IEC/IEEE 24765:2017 Systems and software engineering - Vocabulary)<br/></p><p></p></div></div>
 
-<a name="ROoST_System+Testing_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>System Testing<strong></td></tr>
-</table><br/>
-<b>ROoST::System Testing</b><br/>
-Specializes ROoST::Level-based Testing<br/><br/>
-Level-based Testing focusing on the behavior of the entire system, ensuring that it is in conformance with its requirements.<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="ROoST_System+Testing_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">System Testing</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">ROoST::System Testing</span><br/>Specializes ROoST::Level-based Testing</p><p>Level-based Testing focusing on the behavior of the entire system, ensuring that it is in conformance with its requirements.<br/></p><p></p></div></div>
 
-<a name="ROoST_Test+Analysis+Report_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Test Analysis Report<strong></td></tr>
-</table><br/>
-<b>ROoST::Test Analysis Report</b><br/>
-Specializes SysSwO::Document<br/><br/>
-Document containing the analysis of Test Results and how they succeed.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="ROoST_Test+Analysis+Report_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Test Analysis Report</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">ROoST::Test Analysis Report</span><br/>Specializes SysSwO::Document</p><p>Document containing the analysis of Test Results and how they succeed.<br/></p><p>Relations:<br/>
 <code>Test Analysis Report (0..*) analyzes (1..*) Test Result<br/>
 Test Result Analysis (1..*) creates (1..1) Test Analysis Report<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="ROoST_Test+Case_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Test Case<strong></td></tr>
-</table><br/>
-<b>ROoST::Test Case</b><br/>
-Specializes SysSwO::Document<br/><br/>
-Document containing the input data, expected results, steps and general conditions for testing some situation regarding a Code To Be Tested.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="ROoST_Test+Case_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Test Case</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">ROoST::Test Case</span><br/>Specializes SysSwO::Document</p><p>Document containing the input data, expected results, steps and general conditions for testing some situation regarding a Code To Be Tested.<br/></p><p>Relations:<br/>
 <code>Test Case (1..*) tests (1..1) Code To Be Tested<br/>
 Test Case (1..*) <>-- (1..*) Test Case Expected Result<br/>
 Test Case (1..*) <>-- (1..*) Test Input<br/>
@@ -770,459 +935,203 @@ Test Case Design (1..1) creates (1..*) Test Case<br/>
 Test Result (0..*) relative to (1..1) Test Case<br/>
 Test Coding (0..*) uses (1..*) Test Case<br/>
 Test Code (0..*) implements (1..*) Test Case<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="ROoST_Test+Case+Actual+Result_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Test Case Actual Result<strong></td></tr>
-</table><br/>
-<b>ROoST::Test Case Actual Result</b><br/>
-Specializes SysSwO::Information Item<br/><br/>
-The actual result obtained from the execution of a test case.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="ROoST_Test+Case+Actual+Result_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Test Case Actual Result</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">ROoST::Test Case Actual Result</span><br/>Specializes SysSwO::Information Item</p><p>The actual result obtained from the execution of a test case.<br/></p><p>Relations:<br/>
 <code>Test Case Actual Result (0..*) compared to (1..1) Test Case Expected Result<br/>
 Test Result (1..*) <>-- (1..*) Test Case Actual Result<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="ROoST_Test+Case+Design_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Test Case Design<strong></td></tr>
-</table><br/>
-<b>ROoST::Test Case Design</b><br/>
-Specializes SPO::Performed Simple Activity<br/><br/>
-Simple Performed Activity for designing the Test Cases to be executed, supported by input artifacts.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="ROoST_Test+Case+Design_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Test Case Design</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">ROoST::Test Case Design</span><br/>Specializes SPO::Performed Simple Activity</p><p>Simple Performed Activity for designing the Test Cases to be executed, supported by input artifacts.<br/></p><p>Relations:<br/>
 <code>Test Case Design (1..1) creates (1..*) Test Case<br/>
 Test Case Design (1..*) uses (1..*) Test Case Design Input<br/>
 Test Case Design adopts Testing Technique<br/>
 Level-based Testing <>-- Test Case Design<br/>
 Test Case Designer is in charge of Test Case Design<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="ROoST_Test+Case+Design+Input_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltrolemixin&gt&gt</code><br/>
-<strong>Test Case Design Input<strong></td></tr>
-</table><br/>
-<b>ROoST::Test Case Design Input</b><br/>
-Specializes SysSwO::Software Artifact<br/><br/>
-Some Artifact defined as an input for the Test Case Design.<br/>
-E.g.:<i> Requirements Document, Design Document, Code.</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="ROoST_Test+Case+Design+Input_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltrolemixin&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Test Case Design Input</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">ROoST::Test Case Design Input</span><br/>Specializes SysSwO::Software Artifact</p><p>Some Artifact defined as an input for the Test Case Design.<br/>E.g.:<span class="font-italic"> Requirements Document, Design Document, Code.</span></p><p>Relations:<br/>
 <code>Test Case Design (1..*) uses (1..*) Test Case Design Input<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="ROoST_Test+Case+Designer_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltrole&gt&gt</code><br/>
-<strong>Test Case Designer<strong></td></tr>
-</table><br/>
-<b>ROoST::Test Case Designer</b><br/>
-Specializes SPO::Stakeholder<br/><br/>
-Stakeholder responsible for designing test cases and analysing test results.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="ROoST_Test+Case+Designer_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltrole&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Test Case Designer</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">ROoST::Test Case Designer</span><br/>Specializes SPO::Stakeholder</p><p>Stakeholder responsible for designing test cases and analysing test results.<br/></p><p>Relations:<br/>
 <code>Test Case Designer participates in Test Planning<br/>
 Test Case Designer is in charge of Test Case Design<br/>
 Test Case Designer is in charge of Test Result Analysis<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="ROoST_Test+Case+Expected+Result_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Test Case Expected Result<strong></td></tr>
-</table><br/>
-<b>ROoST::Test Case Expected Result</b><br/>
-Specializes SysSwO::Information Item<br/><br/>
-The result expected from the execution of a test case.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="ROoST_Test+Case+Expected+Result_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Test Case Expected Result</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">ROoST::Test Case Expected Result</span><br/>Specializes SysSwO::Information Item</p><p>The result expected from the execution of a test case.<br/></p><p>Relations:<br/>
 <code>Test Case Actual Result (0..*) compared to (1..1) Test Case Expected Result<br/>
 Test Input (1..*) is expected to produce (1..1) Test Case Expected Result<br/>
 Test Case (1..*) <>-- (1..*) Test Case Expected Result<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="ROoST_Test+Code_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Test Code<strong></td></tr>
-</table><br/>
-<b>ROoST::Test Code</b><br/>
-Specializes SysSwO::Code<br/><br/>
-Code produced for implementing a Test Case.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="ROoST_Test+Code_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Test Code</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">ROoST::Test Code</span><br/>Specializes SysSwO::Code</p><p>Code produced for implementing a Test Case.<br/></p><p>Relations:<br/>
 <code>Test Code (0..*) implements (1..*) Test Case<br/>
 Test Execution (0..*) uses (1..*) Test Code<br/>
 Test Coding (1..1) creates (1..*) Test Code<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="ROoST_Test+Coding_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Test Coding<strong></td></tr>
-</table><br/>
-<b>ROoST::Test Coding</b><br/>
-Specializes SPO::Performed Simple Activity<br/><br/>
-Simple Performed Activity for implementing the Test Cases as Code artifacts (Test Code) to be used during Test Execution.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="ROoST_Test+Coding_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Test Coding</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">ROoST::Test Coding</span><br/>Specializes SPO::Performed Simple Activity</p><p>Simple Performed Activity for implementing the Test Cases as Code artifacts (Test Code) to be used during Test Execution.<br/></p><p>Relations:<br/>
 <code>Test Coding (1..1) creates (1..*) Test Code<br/>
 Test Coding (0..*) uses (1..*) Test Case<br/>
 Level-based Testing <>-- Test Coding<br/>
 Tester is in charge of Test Coding<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="ROoST_Test+Driver_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Test Driver<strong></td></tr>
-</table><br/>
-<b>ROoST::Test Driver</b><br/>
-Specializes ROoST::Test Code<br/><br/>
-Software item used to invoke a module under test and, often, provide test inputs, control and monitor execution, and report test results (adapted from ISO/IEC/IEEE 24765:2017 Systems and software engineering-Vocabulary).<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="ROoST_Test+Driver_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Test Driver</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">ROoST::Test Driver</span><br/>Specializes ROoST::Test Code</p><p>Software item used to invoke a module under test and, often, provide test inputs, control and monitor execution, and report test results (adapted from ISO/IEC/IEEE 24765:2017 Systems and software engineering-Vocabulary).<br/></p><p></p></div></div>
 
-<a name="ROoST_Test+Execution_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Test Execution<strong></td></tr>
-</table><br/>
-<b>ROoST::Test Execution</b><br/>
-Specializes SPO::Performed Simple Activity<br/><br/>
-Simple Performed Activity for effectively executing the Test Cases, by running the Test Code and producing the Test Results.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="ROoST_Test+Execution_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Test Execution</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">ROoST::Test Execution</span><br/>Specializes SPO::Performed Simple Activity</p><p>Simple Performed Activity for effectively executing the Test Cases, by running the Test Code and producing the Test Results.<br/></p><p>Relations:<br/>
 <code>Test Execution (1..1) creates (1..*) Test Result<br/>
 Test Execution (0..*) uses (1..*) Test Code<br/>
 Test Execution (0..*) executes (1..*) Test Case<br/>
 Test Execution (0..*) uses (1..*) Code To Be Tested<br/>
 Level-based Testing <>-- Test Execution<br/>
 Tester is in charge of Test Execution<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="ROoST_Test+Hardware+Resource_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltrole&gt&gt</code><br/>
-<strong>Test Hardware Resource<strong></td></tr>
-</table><br/>
-<b>ROoST::Test Hardware Resource</b><br/>
-Specializes SPO::Hardware Resource<br/><br/>
-Hardware Resource that comprises the Testing Environment of a Project.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="ROoST_Test+Hardware+Resource_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltrole&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Test Hardware Resource</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">ROoST::Test Hardware Resource</span><br/>Specializes SPO::Hardware Resource</p><p>Hardware Resource that comprises the Testing Environment of a Project.<br/></p><p>Relations:<br/>
 <code>Level-based Testing uses Test Hardware Resource<br/>
 Testing Environment (1..*) <>-- (1..*) Test Hardware Resource<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="ROoST_Test+Incident+Report_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Test Incident Report<strong></td></tr>
-</table><br/>
-<b>ROoST::Test Incident Report</b><br/>
-Specializes ROoST::Incident Report<br/><br/>
-Report describing any event that occurs during the testing process which requires investigation (adapted from ISO/IEC/IEEE 24765:2017 Systems and software engineering-Vocabulary)<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="ROoST_Test+Incident+Report_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Test Incident Report</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">ROoST::Test Incident Report</span><br/>Specializes ROoST::Incident Report</p><p>Report describing any event that occurs during the testing process which requires investigation (adapted from ISO/IEC/IEEE 24765:2017 Systems and software engineering-Vocabulary)<br/></p><p>Relations:<br/>
 <code>Test Result (0..*) <>-- (0..*) Test Incident Report<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="ROoST_Test+Input_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Test Input<strong></td></tr>
-</table><br/>
-<b>ROoST::Test Input</b><br/>
-Specializes SysSwO::Information Item<br/><br/>
-Descriptions of the parameters and values to be used in a test case, in order to produce an expected result.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="ROoST_Test+Input_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Test Input</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">ROoST::Test Input</span><br/>Specializes SysSwO::Information Item</p><p>Descriptions of the parameters and values to be used in a test case, in order to produce an expected result.<br/></p><p>Relations:<br/>
 <code>Test Input (1..*) is expected to produce (1..1) Test Case Expected Result<br/>
 Test Case (1..*) <>-- (1..*) Test Input<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="ROoST_Test+Management+Tool_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Test Management Tool<strong></td></tr>
-</table><br/>
-<b>ROoST::Test Management Tool</b><br/>
-Specializes SysSwO::Software Product<br/><br/>
-Software Product used to store information on how testing is to be done, plan testing activities and report the status of testing activities (adpated from Wikipedia).<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="ROoST_Test+Management+Tool_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Test Management Tool</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">ROoST::Test Management Tool</span><br/>Specializes SysSwO::Software Product</p><p>Software Product used to store information on how testing is to be done, plan testing activities and report the status of testing activities (adpated from Wikipedia).<br/></p><p></p></div></div>
 
-<a name="ROoST_Test+Manager_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltrole&gt&gt</code><br/>
-<strong>Test Manager<strong></td></tr>
-</table><br/>
-<b>ROoST::Test Manager</b><br/>
-Specializes SPO::Stakeholder<br/><br/>
-Stakeholder responsible for planning and managing the testing activities.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="ROoST_Test+Manager_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltrole&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Test Manager</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">ROoST::Test Manager</span><br/>Specializes SPO::Stakeholder</p><p>Stakeholder responsible for planning and managing the testing activities.<br/></p><p>Relations:<br/>
 <code>Test Manager is in charge of Test Planning<br/>
 Test Manager participates in Test Result Analysis<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="ROoST_Test+Plan_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Test Plan<strong></td></tr>
-</table><br/>
-<b>ROoST::Test Plan</b><br/>
-Specializes SysSwO::Document<br/><br/>
-Document describing how the tests should be performed, providing a roadmap for the testing activities.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="ROoST_Test+Plan_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Test Plan</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">ROoST::Test Plan</span><br/>Specializes SysSwO::Document</p><p>Document describing how the tests should be performed, providing a roadmap for the testing activities.<br/></p><p>Relations:<br/>
 <code>Level-based Testing (1..*) uses (1..1) Test Plan<br/>
 Test Planning (1..*) creates (1..1) Test Plan<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="ROoST_Test+Planning_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Test Planning<strong></td></tr>
-</table><br/>
-<b>ROoST::Test Planning</b><br/>
-Specializes SPO::Performed Composite Activity<br/><br/>
-Composite Performed Activity for planning how the testing activities should be performed, and documenting it in a Test Plan.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="ROoST_Test+Planning_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Test Planning</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">ROoST::Test Planning</span><br/>Specializes SPO::Performed Composite Activity</p><p>Composite Performed Activity for planning how the testing activities should be performed, and documenting it in a Test Plan.<br/></p><p>Relations:<br/>
 <code>Test Planning (1..*) creates (1..1) Test Plan<br/>
 Testing Process <>-- Test Planning<br/>
 Test Manager is in charge of Test Planning<br/>
 Test Case Designer participates in Test Planning<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="ROoST_Test+Result_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Test Result<strong></td></tr>
-</table><br/>
-<b>ROoST::Test Result</b><br/>
-Specializes SysSwO::Document<br/><br/>
-Document containing the actual results and identified issues relative to a Test Case execution.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="ROoST_Test+Result_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Test Result</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">ROoST::Test Result</span><br/>Specializes SysSwO::Document</p><p>Document containing the actual results and identified issues relative to a Test Case execution.<br/></p><p>Relations:<br/>
 <code>Test Result (0..*) relative to (1..1) Test Case<br/>
 Test Result (0..*) <>-- (0..*) Test Incident Report<br/>
 Test Result (1..*) <>-- (1..*) Test Case Actual Result<br/>
 Test Execution (1..1) creates (1..*) Test Result<br/>
 Test Analysis Report (0..*) analyzes (1..*) Test Result<br/>
 Test Result Analysis (0..*) uses (1..*) Test Result<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="ROoST_Test+Result+Analysis_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Test Result Analysis<strong></td></tr>
-</table><br/>
-<b>ROoST::Test Result Analysis</b><br/>
-Specializes SPO::Performed Simple Activity<br/><br/>
-Simple Performed Activity for analyzing Test Results to determine whether or not tests have been successful in identifying defects.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="ROoST_Test+Result+Analysis_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Test Result Analysis</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">ROoST::Test Result Analysis</span><br/>Specializes SPO::Performed Simple Activity</p><p>Simple Performed Activity for analyzing Test Results to determine whether or not tests have been successful in identifying defects.<br/></p><p>Relations:<br/>
 <code>Test Result Analysis (0..*) uses (1..*) Test Result<br/>
 Test Result Analysis (1..*) creates (1..1) Test Analysis Report<br/>
 Level-based Testing <>-- Test Result Analysis<br/>
 Test Manager participates in Test Result Analysis<br/>
 Test Case Designer is in charge of Test Result Analysis<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="ROoST_Test+Script_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Test Script<strong></td></tr>
-</table><br/>
-<b>ROoST::Test Script</b><br/>
-Specializes ROoST::Test Code<br/><br/>
-Short program written in a programming language used to test part of the functionality of a software system. Test scripts written as a short program can either be written using a special automated functional GUI test tool or in a well-known programming language (Wikipedia).<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="ROoST_Test+Script_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Test Script</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">ROoST::Test Script</span><br/>Specializes ROoST::Test Code</p><p>Short program written in a programming language used to test part of the functionality of a software system. Test scripts written as a short program can either be written using a special automated functional GUI test tool or in a well-known programming language (Wikipedia).<br/></p><p></p></div></div>
 
-<a name="ROoST_Test+Software+Resource_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltrole&gt&gt</code><br/>
-<strong>Test Software Resource<strong></td></tr>
-</table><br/>
-<b>ROoST::Test Software Resource</b><br/>
-Specializes SPO::Software Resource<br/><br/>
-Software Resource that comprises the Testing Environment of a Project.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="ROoST_Test+Software+Resource_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltrole&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Test Software Resource</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">ROoST::Test Software Resource</span><br/>Specializes SPO::Software Resource</p><p>Software Resource that comprises the Testing Environment of a Project.<br/></p><p>Relations:<br/>
 <code>Level-based Testing uses Test Software Resource<br/>
 Testing Environment (1..*) <>-- (1..*) Test Software Resource<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="ROoST_Test+Suite_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Test Suite<strong></td></tr>
-</table><br/>
-<b>ROoST::Test Suite</b><br/>
-Specializes SysSwO::Document<br/><br/>
-A collection of test cases that are intended to be used to test a software program to show that it has some specified set of behaviours (Wikipedia).<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="ROoST_Test+Suite_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Test Suite</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">ROoST::Test Suite</span><br/>Specializes SysSwO::Document</p><p>A collection of test cases that are intended to be used to test a software program to show that it has some specified set of behaviours (Wikipedia).<br/></p><p>Relations:<br/>
 <code>Test Suite (0..*) <>-- (2..*) Test Case<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="ROoST_Tester_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltrole&gt&gt</code><br/>
-<strong>Tester<strong></td></tr>
-</table><br/>
-<b>ROoST::Tester</b><br/>
-Specializes SPO::Stakeholder<br/><br/>
-Stakeholder responsible for coding and executing test cases.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="ROoST_Tester_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltrole&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Tester</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">ROoST::Tester</span><br/>Specializes SPO::Stakeholder</p><p>Stakeholder responsible for coding and executing test cases.<br/></p><p>Relations:<br/>
 <code>Tester is in charge of Test Execution<br/>
 Tester is in charge of Test Coding<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="ROoST_Testing+Environment_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltcollective&gt&gt</code><br/>
-<strong>Testing Environment<strong></td></tr>
-</table><br/>
-<b>ROoST::Testing Environment</b><br/>
-Specializes <br/><br/>
-The set of resources (Hardware and Software Resources) that are used to perform testing activities of a Project.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="ROoST_Testing+Environment_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltcollective&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Testing Environment</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">ROoST::Testing Environment</span><br/>Specializes </p><p>The set of resources (Hardware and Software Resources) that are used to perform testing activities of a Project.<br/></p><p>Relations:<br/>
 <code>Testing Environment (1..*) <>-- (1..*) Test Hardware Resource<br/>
 Testing Environment (1..*) <>-- (1..*) Test Software Resource<br/>
 Testing Environment (0..1) defined for (1..1) Software Project<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="ROoST_Testing+Level_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&lt2ndOT&gt&gt</code><br/>
-<strong>Testing Level<strong></td></tr>
-</table><br/>
-<b>ROoST::Testing Level</b><br/>
-Specializes <br/><br/>
-Levels in which testing activities are performed, such as Unit, Integration and System testing.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="ROoST_Testing+Level_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&lt2ndOT&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Testing Level</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">ROoST::Testing Level</span><br/>Specializes </p><p>Levels in which testing activities are performed, such as Unit, Integration and System testing.<br/></p><p>Relations:<br/>
 <code>Level-based Testing (0..*) instanceOf (1..1) Testing Level<br/>
 Testing Technique Type (0..*) applies to (0..*) Testing Level<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="ROoST_Testing+Process_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Testing Process<strong></td></tr>
-</table><br/>
-<b>ROoST::Testing Process</b><br/>
-Specializes SPO::Performed Specific Process<br/><br/>
-Specific Performed Process for planning and executing the dynamic testing activities for the software in development.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="ROoST_Testing+Process_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Testing Process</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">ROoST::Testing Process</span><br/>Specializes SPO::Performed Specific Process</p><p>Specific Performed Process for planning and executing the dynamic testing activities for the software in development.<br/></p><p>Relations:<br/>
 <code>Testing Process <>-- Test Planning<br/>
 Testing Process <>-- Level-based Testing<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="ROoST_Testing+Technique_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Testing Technique<strong></td></tr>
-</table><br/>
-<b>ROoST::Testing Technique</b><br/>
-Specializes SPO::Technique<br/><br/>
-Technique for designing test cases. It can be Black-box, White-box, Model-based or Mutation testing techniques, among others.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="ROoST_Testing+Technique_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Testing Technique</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">ROoST::Testing Technique</span><br/>Specializes SPO::Technique</p><p>Technique for designing test cases. It can be Black-box, White-box, Model-based or Mutation testing techniques, among others.<br/></p><p>Relations:<br/>
 <code>Testing Technique (0..*) instanceOf (1..1) Testing Technique Type<br/>
 Test Case Design adopts Testing Technique<br/>
 Test Case (0..*) built applying (0..1) Testing Technique<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="ROoST_Testing+Technique+Type_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&lt2ndOT&gt&gt</code><br/>
-<strong>Testing Technique Type<strong></td></tr>
-</table><br/>
-<b>ROoST::Testing Technique Type</b><br/>
-Specializes <br/><br/>
-Major types of testing techniques such as black-box, white-box, model-based and mutation testing techniques.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="ROoST_Testing+Technique+Type_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&lt2ndOT&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Testing Technique Type</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">ROoST::Testing Technique Type</span><br/>Specializes </p><p>Major types of testing techniques such as black-box, white-box, model-based and mutation testing techniques.<br/></p><p>Relations:<br/>
 <code>Testing Technique Type (0..*) applies to (0..*) Testing Level<br/>
 Testing Technique (0..*) instanceOf (1..1) Testing Technique Type<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="ROoST_Unit+Testing_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Unit Testing<strong></td></tr>
-</table><br/>
-<b>ROoST::Unit Testing</b><br/>
-Specializes ROoST::Level-based Testing<br/><br/>
-Level-based Testing focusing on the unit or the individual components that have been developed, ensuring that the unit functions correctly in isolation.<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="ROoST_Unit+Testing_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Unit Testing</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">ROoST::Unit Testing</span><br/>Specializes ROoST::Level-based Testing</p><p>Level-based Testing focusing on the unit or the individual components that have been developed, ensuring that the unit functions correctly in isolation.<br/></p><p></p></div></div>
 
-<a name="ROoST_White-box+Testing+Technique_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>White-box Testing Technique<strong></td></tr>
-</table><br/>
-<b>ROoST::White-box Testing Technique</b><br/>
-Specializes ROoST::Testing Technique<br/><br/>
-Testing Technique in which the tests are derived from an examination of the structure of the code to be tested (adapted from ISO/IEC/IEEE 29119-1:2013 Software and systems engineering--Software testing--Part 1: Concepts and definitions)<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="ROoST_White-box+Testing+Technique_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">White-box Testing Technique</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">ROoST::White-box Testing Technique</span><br/>Specializes ROoST::Testing Technique</p><p>Testing Technique in which the tests are derived from an examination of the structure of the code to be tested (adapted from ISO/IEC/IEEE 29119-1:2013 Software and systems engineering--Software testing--Part 1: Concepts and definitions)<br/></p><p></p></div></div>
 
-</p>					
+
 				</div>
 				
 			</main>
 	
-    <footer class="footer">
-      <div class="container-fluid">
-        <span class="text-muted">Powered by NEMO.</span>
-        <span class="text-muted"><small><b>Reference Ontology on Software Testing (ROoST)</b></small></span>
-        <span class="text-muted"><small>Thu Nov 18 16:11:32 BRT 2021</small></span>		
+    <footer class="p-5 rounded border-top">
+      <div class="row">
+      	<div class="col">
+      		  <span class="text-muted">Powered by NEMO.</span>
+      	</div>
+      	<div class="col">
+      		<span><small><b>Reference Ontology on Software Testing (ROoST)</b></small></span>
+      	</div>
+      	<div class="col">
+      		<span class="text-muted"><small>Mon Nov 22 22:03:46 BRT 2021</small></span>	
+      	</div>
       </div>
     </footer>
 	   

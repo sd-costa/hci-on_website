@@ -18,7 +18,7 @@
 	    <!-- Custom styles for this template -->
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/navbar-top-fixed.css" rel="stylesheet">
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/sticky-footer-navbar.css" rel="stylesheet">
-	       
+	    <link href="../resources/static/bootstrap-5.1.3-dist/css/carousel.css" rel="stylesheet">
 
 	    <style>
 	      .bd-placeholder-img {
@@ -36,7 +36,7 @@
 	        }
 	      }
 
-	      .h1, h1 {
+	      .h2, .h3, h2, h3 {
 	      	margin-bottom: 2.5rem;
 	      }
 
@@ -44,6 +44,9 @@
 	      	font-size: 2rem;
 	      }
 
+	      .featurette-heading {
+	        margin-top: 0;
+	      }
 	    </style>
 
 	    
@@ -131,7 +134,7 @@
 	            RSMO
 	          </a>
 	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item" href="#ontologydescription" >Ontology Description</a></li>
+	            <li><a class="dropdown-item" href="#ontologydescription">Ontology Description</a></li>
 	            <li><a class="dropdown-item" href="#relatedontologies">Related Ontologies</a></li>
 	            <li><a class="dropdown-item" href="#ontologymodels">Ontology Models</a></li>
 	            <li><a class="dropdown-item" href="#conceptsdefinition">Concepts Definition</a></li>
@@ -157,21 +160,27 @@
 
 		<!-- Begin page content -->
     <main role="main" class="container-fluid">	
-    		<div class="container-fluid d-flex justify-content-end"><span class="badge badge-danger"></span></div>
+    		
 				<!--<div class="bg-light p-5 rounded" id="ontologydescription">
     			<h1 class="featurette-heading">The Reference Software Measurement Ontology (RSMO)</h1>
 					<p class="lead" align="justify"><span class="text-muted font-weight-bold font-italic">Ontology Description. </span>Reference Software Measurement Ontology</p>
-					<p class="lead text-right text-muted font-italic">- domain ontology from SEON. </p>
+					<p class="lead text-right text-muted font-italic"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"><path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg> domain ontology from SEON</p>
     		</div>-->
 
-				<div class="bg-light p-5 rounded" id="ontologydescription">
+				<div class="bg-light p-5 rounded">
+					<div class="container-fluid d-flex justify-content-end"><span class="badge badge-danger text-lowercase"></span></div>
     			<h1 class="featurette-heading">The Reference Software Measurement Ontology (RSMO)</h1>
-    				<h2 class="featurette-heading d-inline font-italic">Ontology Description. </h2>
-    				<p class="lead d-inline" align="justify">Reference Software Measurement Ontology</p>
-    				<p class="lead text-right text-muted font-italic">- domain ontology from SEON. </p>
+    			<p class="lead text-right text-muted font-italic"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"><path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg> domain ontology from SEON</p>
+    		</div>
+	
+				<hr> 
+				   		
+    		<div class="p-5 rounded" id="ontologydescription">
+  				<h2 class="featurette-heading">1. Ontology Description</h2>
+  				<p class="lead" align="justify">Reference Software Measurement Ontology</p>
     		</div>
 
-				<hr class="featurette-divider">
+				<hr>
 
 				<div class="p-5 rounded" id="relatedontologies">
 					<h2 class="featurette-heading">2. Related Ontologies</h2>
@@ -196,7 +205,7 @@
 
 				</div>	
 
-				<hr class="featurette-divider">
+				<hr>
     	
 				<div class="p-5 rounded" id="ontologymodels">
 					<h2 class="featurette-heading">3. Ontology Models</h2>
@@ -399,13 +408,263 @@
 </p>					
 				</div>
 
-				<hr class="featurette-divider">
+				<hr>
 
 				<div class="p-5 rounded" id="conceptsdefinition">
 					<h2 class="featurette-heading">4. Concepts Definition</h2>
 					<p class="lead">The following table shows the definitions for RSMO concepts.</p>		
 					<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->				
-					<table style="width: 100%" border="1" cellpadding="6">
+					<div class="table-responsive">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th scope="col">Concept</th>
+									<th scope="col">Definition</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+<td><a name="RSMO_Analysis+Result+Description"><b>Analysis Result Description</b></a>
+<a href=#RSMO_Analysis+Result+Description_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Information Item that records the Analysis Result produced in a Software Measurement Analysis.  
+<br/>E.g.:<i> the record of the analysis result: the schedule performance index of the Project P has improved in the last three months and the project is now adherent to the agreed schedule.    </i></td>
+</tr>
+<tr>
+<td><a name="RSMO_Business+Goal"><b>Business Goal</b></a>
+<a href=#RSMO_Business+Goal_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Goal that expresses the intention for which strategic actions are planned and performed.
+<br/>E.g.:<i> Increase the client’s satisfaction degree. </i></td>
+</tr>
+<tr>
+<td><a name="RSMO_Data+Analysis"><b>Data Analysis</b></a>
+<a href=#RSMO_Data+Analysis_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity for analyzing the selected Measured Values and producing the Analysis Result Description that records the Analysis Result.
+<br/></td>
+</tr>
+<tr>
+<td><a name="RSMO_Data+Collection"><b>Data Collection</b></a>
+<a href=#RSMO_Data+Collection_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity for collecting and storing data for the Software-Related Measure indicated in the selected Software Measurement Plan Item.<br/>
+<br/></td>
+</tr>
+<tr>
+<td><a name="RSMO_Information+Need+Description"><b>Information Need Description</b></a>
+<a href=#RSMO_Information+Need+Description_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Information Item that documents the description of an Information Need.
+<br/>E.g.:<i> the record of the information need What is the delivered defects density?.</i></td>
+</tr>
+<tr>
+<td><a name="RSMO_Information+Needs+Identification"><b>Information Needs Identification</b></a>
+<a href=#RSMO_Information+Needs+Identification_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity for identifying and recording the Information Needs to be included in the Software Measurement Plan. Information Needs are identified from the established Software Measurement Goals.
+<br/></td>
+</tr>
+<tr>
+<td><a name="RSMO_Measurable+Software-Related+Entity"><b>Measurable Software-Related Entity</b></a>
+<a href=#RSMO_Measurable+Software-Related+Entity_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Measurable Entity related to software.
+<br/>E.g.:<i> a software project,  a standard process.</i></td>
+</tr>
+<tr>
+<td><a name="RSMO_Measurable+Software-Related+Entity+Type"><b>Measurable Software-Related Entity Type</b></a>
+<a href=#RSMO_Measurable+Software-Related+Entity+Type_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Type of Measurable Entities related to software.
+<br/>E.g.:<i> the Requirements Engineering Standard Process is a measurable software-related entity of the Standard Process type.</i></td>
+</tr>
+<tr>
+<td><a name="RSMO_Measure+Description"><b>Measure Description</b></a>
+<a href=#RSMO_Measure+Description_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Information Item that documents the description of  a Software-Related Measure.
+<br/>E.g.:<i> the record of the software-related measure   delivered defects density.</i></td>
+</tr>
+<tr>
+<td><a name="RSMO_Measured+Value+Description"><b>Measured Value Description</b></a>
+<a href=#RSMO_Measured+Value+Description_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Information Item that records a Measured Value.
+<br/>E.g.:<i> the record of the measured value 0.75.</i></td>
+</tr>
+<tr>
+<td><a name="RSMO_Measurement+Analysis+Procedure"><b>Measurement Analysis Procedure</b></a>
+<a href=#RSMO_Measurement+Analysis+Procedure_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Procedure applied to analyze Measured Values obtained for a Software-Related Measure. 
+<br/></td>
+</tr>
+<tr>
+<td><a name="RSMO_Measurement+Analyst"><b>Measurement Analyst</b></a>
+<a href=#RSMO_Measurement+Analyst_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Role played by the Stakeholder in charge of Software Measurement Analysis.
+<br/>E.g.:<i> If John (a Person Stakeholder) was in charge of a software measurement analysis, then he played the role of measurement analyst.</i></td>
+</tr>
+<tr>
+<td><a name="RSMO_Measurement+Context"><b>Measurement Context</b></a>
+<a href=#RSMO_Measurement+Context_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Situation in which a Software Measurement Execution was performed.
+<br/>E.g.:<i> an example of measurement context for a software measurement execution that obtained the measured value 0.75 for the software-related measure schedule performance index to the Project P could be: measurement performed one month after substituting two of the team members with two members less experienced.   </i></td>
+</tr>
+<tr>
+<td><a name="RSMO_Measurement+Executor"><b>Measurement Executor</b></a>
+<a href=#RSMO_Measurement+Executor_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Role played by the Stakeholder in charge of Software Measurement Execution. It does not include automated measurement (by tools).
+<br/>E.g.:<i> If Mary (a Person Stakeholder) was in charge of a software measurement execution, then she played the role of measurement executor.</i></td>
+</tr>
+<tr>
+<td><a name="RSMO_Measurement+Goals+Establishment"><b>Measurement Goals Establishment</b></a>
+<a href=#RSMO_Measurement+Goals+Establishment_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity for establishing and recording the Software Measurement Goals to be included in the Software Measurement Plan.<br/>
+<br/></td>
+</tr>
+<tr>
+<td><a name="RSMO_Measurement+Manager"><b>Measurement Manager</b></a>
+<a href=#RSMO_Measurement+Manager_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Role played by the Stakeholder in charge of Software Measurement Planning.
+<br/>E.g.:<i> If John (a Person Stakeholder) was in charge of a software measurement planning, then he played the role of measurement manager. </i></td>
+</tr>
+<tr>
+<td><a name="RSMO_Measurement+Plan+Item+Selection"><b>Measurement Plan Item Selection</b></a>
+<a href=#RSMO_Measurement+Plan+Item+Selection_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity for selecting the Software Measurement Plan Item to be used to guide the Software Measurement Execution. The selected Software Measurement Plan Item indicates the Software-Related Measured to be applied in the Software Measurement Execution and the Operational Definition of Measure to be considered.<br/>
+<br/></td>
+</tr>
+<tr>
+<td><a name="RSMO_Measurement+Planning+Start"><b>Measurement Planning Start</b></a>
+<a href=#RSMO_Measurement+Planning+Start_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity for defining the Software Measurement Plan structure, its initial information (e.g., organization to which it was defined and elaboration date) and starting its elaboration.<br/>
+<br/></td>
+</tr>
+<tr>
+<td><a name="RSMO_Measurement+Result+Reporting"><b>Measurement Result Reporting</b></a>
+<a href=#RSMO_Measurement+Result+Reporting_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity for communicating the Analysis Result Description to the relevant Stakeholders.<br/>
+<br/></td>
+</tr>
+<tr>
+<td><a name="RSMO_Measures+Identification"><b>Measures Identification</b></a>
+<a href=#RSMO_Measures+Identification_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity for identifying and recording the Software-Related Measures to be included in the Software Measurement Plan. Software-Related Measures are identified from Information Needs in the sense that Measures must meet the identified Information Needs.
+<br/></td>
+</tr>
+<tr>
+<td><a name="RSMO_Operational+Definition+of+Measure"><b>Operational Definition of Measure</b></a>
+<a href=#RSMO_Operational+Definition+of+Measure_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Information Item that specifies information regarding data collection and analysis of a Software-Related Measure. An Operational Definition of Measure indicates: Measurement Procedure, Measurement Periodicity, Measurement Moment, Measurement Responsible, Measurement Analysis Procedure, Measurement Analysis Periodicity, Measurement Analysis Moment, and Measurement Analysis Responsible.<br/>
+<br/></td>
+</tr>
+<tr>
+<td><a name="RSMO_Operational+Definition+of+Measure+Establishment"><b>Operational Definition of Measure Establishment</b></a>
+<a href=#RSMO_Operational+Definition+of+Measure+Establishment_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity for establishing the Operational Definitions of Measures for the identified Software-Related Measures.<br/>
+<br/></td>
+</tr>
+<tr>
+<td><a name="RSMO_Periodicity"><b>Periodicity</b></a>
+<a href=#RSMO_Periodicity_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="RSMO_Planning+Item+Documentation"><b>Planning Item Documentation</b></a>
+<a href=#RSMO_Planning+Item+Documentation_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity for documenting Measurement Planning Items. Each Measurement Planning Item includes a Software Measurement Goal Description, an Information Need Description, a Software-Related Measure and an Operational Definition of Measure. Measurement Planning Items produced during the Software Measurement Analysis are part of the Software Measurement Plan produced in that activity.<br/>
+<br/></td>
+</tr>
+<tr>
+<td><a name="RSMO_Selection+of+Data+for+Analysis"><b>Selection of Data for Analysis</b></a>
+<a href=#RSMO_Selection+of+Data+for+Analysis_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity for selecting the Measured Values of the selected Software-Related Measures to be analyzed in the Software Measurement Analysis.<br/>
+<br/></td>
+</tr>
+<tr>
+<td><a name="RSMO_Selection+of+Entity+for+Measurement"><b>Selection of Entity for Measurement</b></a>
+<a href=#RSMO_Selection+of+Entity+for+Measurement_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity for selecting the Software-Related Measurable Entity to be measured in the Software Measurement Execution. The selected entity type must be the Software-Related Measurable Entity Type indicated in the Operational Definition of Measure defined in the selected Software Measurement Plan Item.<br/>
+<br/></td>
+</tr>
+<tr>
+<td><a name="RSMO_Selection+of+Measurement+Goals+for+Analysis"><b>Selection of Measurement Goals for Analysis</b></a>
+<a href=#RSMO_Selection+of+Measurement+Goals+for+Analysis_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity for selecting the Software Measurement Goal to be monitored by using information provided by the Software Measurement Analysis.  <br/>
+<br/></td>
+</tr>
+<tr>
+<td><a name="RSMO_Selection+of+Measures+for+Analysis"><b>Selection of Measures for Analysis</b></a>
+<a href=#RSMO_Selection+of+Measures+for+Analysis_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity for selecting, among the Software-Related Measures related to the selected Software Measurement Goal the ones to be analyzed in the Software Measurement Analysis.<br/>
+<br/></td>
+</tr>
+<tr>
+<td><a name="RSMO_Software+Goal"><b>Software Goal</b></a>
+<a href=#RSMO_Software+Goal_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Goal that expresses the intention for which software-related actions are planned and performed. Software Goals are based on Business Goals.
+<br/>E.g.:<i> the software goal Improve software products quality could be defined based on the business goal Increase the client’s satisfaction degree. </i></td>
+</tr>
+<tr>
+<td><a name="RSMO_Software+Measurement+Analysis"><b>Software Measurement Analysis</b></a>
+<a href=#RSMO_Software+Measurement+Analysis_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity for analyzing Measured Values collected for Software-Related Measures aiming to characterize a Software-Related Measurable Entity and provide information related to a Software Measurement Goal. 
+<br/>E.g.:<i> a software measurement analysis that analyzed the measured values 0.75, 0.9 e 1, collected for the measure schedule performance index to characterize the software-related measurable entity Project P.    </i></td>
+</tr>
+<tr>
+<td><a name="RSMO_Software+Measurement+Execution"><b>Software Measurement Execution</b></a>
+<a href=#RSMO_Software+Measurement+Execution_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity for measuring a Software-Related Measurable Entity by applying a Software-Related Measure and obtaining a Measured Value.
+<br/>E.g.:<i> the software measurement execution that applied the software-related measure schedule performance index to measure the Project P and obtained the measured value 0.75.</i></td>
+</tr>
+<tr>
+<td><a name="RSMO_Software+Measurement+Goal"><b>Software Measurement Goal</b></a>
+<a href=#RSMO_Software+Measurement+Goal_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Measurement Goal related to software. Software Measurement Goals are based on Business Goals or Software Goals.
+<br/>E.g.:<i> the measurement goal Decrease defects in delivered products could be defined based on the software goal Improve software products quality.</i></td>
+</tr>
+<tr>
+<td><a name="RSMO_Software+Measurement+Goal+Description"><b>Software Measurement Goal Description</b></a>
+<a href=#RSMO_Software+Measurement+Goal+Description_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Information Item that documents the description of a Software Measurement Goal.
+<br/>E.g.:<i> the record of the software measurement goal Decrease defects in delivered products. </i></td>
+</tr>
+<tr>
+<td><a name="RSMO_Software+Measurement+Plan"><b>Software Measurement Plan</b></a>
+<a href=#RSMO_Software+Measurement+Plan_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Document produced during Software Measurement Planning. It is composed of Software Measurement Planning Items.
+<br/>E.g.:<i> the Software Measurement Plan defined for the Organization O.</i></td>
+</tr>
+<tr>
+<td><a name="RSMO_Software+Measurement+Planning"><b>Software Measurement Planning</b></a>
+<a href=#RSMO_Software+Measurement+Planning_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity for planning the software measurement, i.e., for determining the Software Measurement Goals to be monitored, the Information Needs to be considered, the Software-Related Measures to be collected to meet the Information Needs and the Operational Definition of Measure to be considered. 
+<br/></td>
+</tr>
+<tr>
+<td><a name="RSMO_Software+Measurement+Planning+Item"><b>Software Measurement Planning Item</b></a>
+<a href=#RSMO_Software+Measurement+Planning+Item_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Measurement Planning Item related to software. It is an Information Item produced during Software Measurement Planning and it is composed of a Software Measurement Goal Description, an Information Need Description, a Measure Description and an Operational Definition of Measure.
+<br/>E.g.:<i> the software measurement planning item composed of the software measurement goal description Decrease defects in delivered products, the information need description What is the delivered defects density?, the measure description delivered defects density and an operational definition of measure established to the software-related measure delivered defects density.</i></td>
+</tr>
+<tr>
+<td><a name="RSMO_Software+Measurement+Process"><b>Software Measurement Process</b></a>
+<a href=#RSMO_Software+Measurement+Process_detail><img src="images/plus-4-16.ico"></a></td>
+<td>The Software Measurement Process is a Process with the purpose of collecting, analyzing, and reporting data relating to the products developed and the processes used to develop them, aiming to support effective processes management and objectively demonstrate products quality.
+<br/></td>
+</tr>
+<tr>
+<td><a name="RSMO_Software+Project+Measurement+Plan"><b>Software Project Measurement Plan</b></a>
+<a href=#RSMO_Software+Project+Measurement+Plan_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A Software Measurement Plan defined for a Project.
+<br/>E.g.:<i> the Software Project Measurement Plan defined for the Project P.</i></td>
+</tr>
+<tr>
+<td><a name="RSMO_Software-Related+Measure"><b>Software-Related Measure</b></a>
+<a href=#RSMO_Software-Related+Measure_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Measure used to quantify Measurable Elements of Measurable Software-Related Entities.
+<br/>E.g.:<i> the software-related measure number of lines of code could be used to quantify the measurable element size of measurable-related entities of the Software type.</i></td>
+</tr>
+
+							</tbody>
+						</table>
+  				</div>
+
+
+
+				<!--	<table style="width: 100%" border="1" cellpadding="6">
 						<tbody>
 							<tr style="background-color: #D8D8D8">
 								<td style="width: 25%"><b>Concept</b></td>
@@ -413,554 +672,367 @@
 							</tr>
 							<tr>
 <td><a name="RSMO_Analysis+Result+Description"><b>Analysis Result Description</b></a>
-<a href=#RSMO_Analysis+Result+Description_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSMO_Analysis+Result+Description_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Information Item that records the Analysis Result produced in a Software Measurement Analysis.  
 <br/>E.g.:<i> the record of the analysis result: the schedule performance index of the Project P has improved in the last three months and the project is now adherent to the agreed schedule.    </i></td>
 </tr>
 <tr>
 <td><a name="RSMO_Business+Goal"><b>Business Goal</b></a>
-<a href=#RSMO_Business+Goal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSMO_Business+Goal_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Goal that expresses the intention for which strategic actions are planned and performed.
 <br/>E.g.:<i> Increase the client’s satisfaction degree. </i></td>
 </tr>
 <tr>
 <td><a name="RSMO_Data+Analysis"><b>Data Analysis</b></a>
-<a href=#RSMO_Data+Analysis_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSMO_Data+Analysis_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity for analyzing the selected Measured Values and producing the Analysis Result Description that records the Analysis Result.
 <br/></td>
 </tr>
 <tr>
 <td><a name="RSMO_Data+Collection"><b>Data Collection</b></a>
-<a href=#RSMO_Data+Collection_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSMO_Data+Collection_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity for collecting and storing data for the Software-Related Measure indicated in the selected Software Measurement Plan Item.<br/>
 <br/></td>
 </tr>
 <tr>
 <td><a name="RSMO_Information+Need+Description"><b>Information Need Description</b></a>
-<a href=#RSMO_Information+Need+Description_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSMO_Information+Need+Description_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Information Item that documents the description of an Information Need.
 <br/>E.g.:<i> the record of the information need What is the delivered defects density?.</i></td>
 </tr>
 <tr>
 <td><a name="RSMO_Information+Needs+Identification"><b>Information Needs Identification</b></a>
-<a href=#RSMO_Information+Needs+Identification_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSMO_Information+Needs+Identification_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity for identifying and recording the Information Needs to be included in the Software Measurement Plan. Information Needs are identified from the established Software Measurement Goals.
 <br/></td>
 </tr>
 <tr>
 <td><a name="RSMO_Measurable+Software-Related+Entity"><b>Measurable Software-Related Entity</b></a>
-<a href=#RSMO_Measurable+Software-Related+Entity_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSMO_Measurable+Software-Related+Entity_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Measurable Entity related to software.
 <br/>E.g.:<i> a software project,  a standard process.</i></td>
 </tr>
 <tr>
 <td><a name="RSMO_Measurable+Software-Related+Entity+Type"><b>Measurable Software-Related Entity Type</b></a>
-<a href=#RSMO_Measurable+Software-Related+Entity+Type_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSMO_Measurable+Software-Related+Entity+Type_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Type of Measurable Entities related to software.
 <br/>E.g.:<i> the Requirements Engineering Standard Process is a measurable software-related entity of the Standard Process type.</i></td>
 </tr>
 <tr>
 <td><a name="RSMO_Measure+Description"><b>Measure Description</b></a>
-<a href=#RSMO_Measure+Description_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSMO_Measure+Description_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Information Item that documents the description of  a Software-Related Measure.
 <br/>E.g.:<i> the record of the software-related measure   delivered defects density.</i></td>
 </tr>
 <tr>
 <td><a name="RSMO_Measured+Value+Description"><b>Measured Value Description</b></a>
-<a href=#RSMO_Measured+Value+Description_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSMO_Measured+Value+Description_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Information Item that records a Measured Value.
 <br/>E.g.:<i> the record of the measured value 0.75.</i></td>
 </tr>
 <tr>
 <td><a name="RSMO_Measurement+Analysis+Procedure"><b>Measurement Analysis Procedure</b></a>
-<a href=#RSMO_Measurement+Analysis+Procedure_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSMO_Measurement+Analysis+Procedure_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Procedure applied to analyze Measured Values obtained for a Software-Related Measure. 
 <br/></td>
 </tr>
 <tr>
 <td><a name="RSMO_Measurement+Analyst"><b>Measurement Analyst</b></a>
-<a href=#RSMO_Measurement+Analyst_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSMO_Measurement+Analyst_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Role played by the Stakeholder in charge of Software Measurement Analysis.
 <br/>E.g.:<i> If John (a Person Stakeholder) was in charge of a software measurement analysis, then he played the role of measurement analyst.</i></td>
 </tr>
 <tr>
 <td><a name="RSMO_Measurement+Context"><b>Measurement Context</b></a>
-<a href=#RSMO_Measurement+Context_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSMO_Measurement+Context_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Situation in which a Software Measurement Execution was performed.
 <br/>E.g.:<i> an example of measurement context for a software measurement execution that obtained the measured value 0.75 for the software-related measure schedule performance index to the Project P could be: measurement performed one month after substituting two of the team members with two members less experienced.   </i></td>
 </tr>
 <tr>
 <td><a name="RSMO_Measurement+Executor"><b>Measurement Executor</b></a>
-<a href=#RSMO_Measurement+Executor_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSMO_Measurement+Executor_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Role played by the Stakeholder in charge of Software Measurement Execution. It does not include automated measurement (by tools).
 <br/>E.g.:<i> If Mary (a Person Stakeholder) was in charge of a software measurement execution, then she played the role of measurement executor.</i></td>
 </tr>
 <tr>
 <td><a name="RSMO_Measurement+Goals+Establishment"><b>Measurement Goals Establishment</b></a>
-<a href=#RSMO_Measurement+Goals+Establishment_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSMO_Measurement+Goals+Establishment_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity for establishing and recording the Software Measurement Goals to be included in the Software Measurement Plan.<br/>
 <br/></td>
 </tr>
 <tr>
 <td><a name="RSMO_Measurement+Manager"><b>Measurement Manager</b></a>
-<a href=#RSMO_Measurement+Manager_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSMO_Measurement+Manager_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Role played by the Stakeholder in charge of Software Measurement Planning.
 <br/>E.g.:<i> If John (a Person Stakeholder) was in charge of a software measurement planning, then he played the role of measurement manager. </i></td>
 </tr>
 <tr>
 <td><a name="RSMO_Measurement+Plan+Item+Selection"><b>Measurement Plan Item Selection</b></a>
-<a href=#RSMO_Measurement+Plan+Item+Selection_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSMO_Measurement+Plan+Item+Selection_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity for selecting the Software Measurement Plan Item to be used to guide the Software Measurement Execution. The selected Software Measurement Plan Item indicates the Software-Related Measured to be applied in the Software Measurement Execution and the Operational Definition of Measure to be considered.<br/>
 <br/></td>
 </tr>
 <tr>
 <td><a name="RSMO_Measurement+Planning+Start"><b>Measurement Planning Start</b></a>
-<a href=#RSMO_Measurement+Planning+Start_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSMO_Measurement+Planning+Start_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity for defining the Software Measurement Plan structure, its initial information (e.g., organization to which it was defined and elaboration date) and starting its elaboration.<br/>
 <br/></td>
 </tr>
 <tr>
 <td><a name="RSMO_Measurement+Result+Reporting"><b>Measurement Result Reporting</b></a>
-<a href=#RSMO_Measurement+Result+Reporting_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSMO_Measurement+Result+Reporting_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity for communicating the Analysis Result Description to the relevant Stakeholders.<br/>
 <br/></td>
 </tr>
 <tr>
 <td><a name="RSMO_Measures+Identification"><b>Measures Identification</b></a>
-<a href=#RSMO_Measures+Identification_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSMO_Measures+Identification_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity for identifying and recording the Software-Related Measures to be included in the Software Measurement Plan. Software-Related Measures are identified from Information Needs in the sense that Measures must meet the identified Information Needs.
 <br/></td>
 </tr>
 <tr>
 <td><a name="RSMO_Operational+Definition+of+Measure"><b>Operational Definition of Measure</b></a>
-<a href=#RSMO_Operational+Definition+of+Measure_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSMO_Operational+Definition+of+Measure_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Information Item that specifies information regarding data collection and analysis of a Software-Related Measure. An Operational Definition of Measure indicates: Measurement Procedure, Measurement Periodicity, Measurement Moment, Measurement Responsible, Measurement Analysis Procedure, Measurement Analysis Periodicity, Measurement Analysis Moment, and Measurement Analysis Responsible.<br/>
 <br/></td>
 </tr>
 <tr>
 <td><a name="RSMO_Operational+Definition+of+Measure+Establishment"><b>Operational Definition of Measure Establishment</b></a>
-<a href=#RSMO_Operational+Definition+of+Measure+Establishment_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSMO_Operational+Definition+of+Measure+Establishment_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity for establishing the Operational Definitions of Measures for the identified Software-Related Measures.<br/>
 <br/></td>
 </tr>
 <tr>
 <td><a name="RSMO_Periodicity"><b>Periodicity</b></a>
-<a href=#RSMO_Periodicity_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSMO_Periodicity_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="RSMO_Planning+Item+Documentation"><b>Planning Item Documentation</b></a>
-<a href=#RSMO_Planning+Item+Documentation_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSMO_Planning+Item+Documentation_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity for documenting Measurement Planning Items. Each Measurement Planning Item includes a Software Measurement Goal Description, an Information Need Description, a Software-Related Measure and an Operational Definition of Measure. Measurement Planning Items produced during the Software Measurement Analysis are part of the Software Measurement Plan produced in that activity.<br/>
 <br/></td>
 </tr>
 <tr>
 <td><a name="RSMO_Selection+of+Data+for+Analysis"><b>Selection of Data for Analysis</b></a>
-<a href=#RSMO_Selection+of+Data+for+Analysis_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSMO_Selection+of+Data+for+Analysis_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity for selecting the Measured Values of the selected Software-Related Measures to be analyzed in the Software Measurement Analysis.<br/>
 <br/></td>
 </tr>
 <tr>
 <td><a name="RSMO_Selection+of+Entity+for+Measurement"><b>Selection of Entity for Measurement</b></a>
-<a href=#RSMO_Selection+of+Entity+for+Measurement_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSMO_Selection+of+Entity+for+Measurement_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity for selecting the Software-Related Measurable Entity to be measured in the Software Measurement Execution. The selected entity type must be the Software-Related Measurable Entity Type indicated in the Operational Definition of Measure defined in the selected Software Measurement Plan Item.<br/>
 <br/></td>
 </tr>
 <tr>
 <td><a name="RSMO_Selection+of+Measurement+Goals+for+Analysis"><b>Selection of Measurement Goals for Analysis</b></a>
-<a href=#RSMO_Selection+of+Measurement+Goals+for+Analysis_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSMO_Selection+of+Measurement+Goals+for+Analysis_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity for selecting the Software Measurement Goal to be monitored by using information provided by the Software Measurement Analysis.  <br/>
 <br/></td>
 </tr>
 <tr>
 <td><a name="RSMO_Selection+of+Measures+for+Analysis"><b>Selection of Measures for Analysis</b></a>
-<a href=#RSMO_Selection+of+Measures+for+Analysis_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSMO_Selection+of+Measures+for+Analysis_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity for selecting, among the Software-Related Measures related to the selected Software Measurement Goal the ones to be analyzed in the Software Measurement Analysis.<br/>
 <br/></td>
 </tr>
 <tr>
 <td><a name="RSMO_Software+Goal"><b>Software Goal</b></a>
-<a href=#RSMO_Software+Goal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSMO_Software+Goal_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Goal that expresses the intention for which software-related actions are planned and performed. Software Goals are based on Business Goals.
 <br/>E.g.:<i> the software goal Improve software products quality could be defined based on the business goal Increase the client’s satisfaction degree. </i></td>
 </tr>
 <tr>
 <td><a name="RSMO_Software+Measurement+Analysis"><b>Software Measurement Analysis</b></a>
-<a href=#RSMO_Software+Measurement+Analysis_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSMO_Software+Measurement+Analysis_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity for analyzing Measured Values collected for Software-Related Measures aiming to characterize a Software-Related Measurable Entity and provide information related to a Software Measurement Goal. 
 <br/>E.g.:<i> a software measurement analysis that analyzed the measured values 0.75, 0.9 e 1, collected for the measure schedule performance index to characterize the software-related measurable entity Project P.    </i></td>
 </tr>
 <tr>
 <td><a name="RSMO_Software+Measurement+Execution"><b>Software Measurement Execution</b></a>
-<a href=#RSMO_Software+Measurement+Execution_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSMO_Software+Measurement+Execution_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity for measuring a Software-Related Measurable Entity by applying a Software-Related Measure and obtaining a Measured Value.
 <br/>E.g.:<i> the software measurement execution that applied the software-related measure schedule performance index to measure the Project P and obtained the measured value 0.75.</i></td>
 </tr>
 <tr>
 <td><a name="RSMO_Software+Measurement+Goal"><b>Software Measurement Goal</b></a>
-<a href=#RSMO_Software+Measurement+Goal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSMO_Software+Measurement+Goal_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Measurement Goal related to software. Software Measurement Goals are based on Business Goals or Software Goals.
 <br/>E.g.:<i> the measurement goal Decrease defects in delivered products could be defined based on the software goal Improve software products quality.</i></td>
 </tr>
 <tr>
 <td><a name="RSMO_Software+Measurement+Goal+Description"><b>Software Measurement Goal Description</b></a>
-<a href=#RSMO_Software+Measurement+Goal+Description_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSMO_Software+Measurement+Goal+Description_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Information Item that documents the description of a Software Measurement Goal.
 <br/>E.g.:<i> the record of the software measurement goal Decrease defects in delivered products. </i></td>
 </tr>
 <tr>
 <td><a name="RSMO_Software+Measurement+Plan"><b>Software Measurement Plan</b></a>
-<a href=#RSMO_Software+Measurement+Plan_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSMO_Software+Measurement+Plan_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Document produced during Software Measurement Planning. It is composed of Software Measurement Planning Items.
 <br/>E.g.:<i> the Software Measurement Plan defined for the Organization O.</i></td>
 </tr>
 <tr>
 <td><a name="RSMO_Software+Measurement+Planning"><b>Software Measurement Planning</b></a>
-<a href=#RSMO_Software+Measurement+Planning_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSMO_Software+Measurement+Planning_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity for planning the software measurement, i.e., for determining the Software Measurement Goals to be monitored, the Information Needs to be considered, the Software-Related Measures to be collected to meet the Information Needs and the Operational Definition of Measure to be considered. 
 <br/></td>
 </tr>
 <tr>
 <td><a name="RSMO_Software+Measurement+Planning+Item"><b>Software Measurement Planning Item</b></a>
-<a href=#RSMO_Software+Measurement+Planning+Item_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSMO_Software+Measurement+Planning+Item_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Measurement Planning Item related to software. It is an Information Item produced during Software Measurement Planning and it is composed of a Software Measurement Goal Description, an Information Need Description, a Measure Description and an Operational Definition of Measure.
 <br/>E.g.:<i> the software measurement planning item composed of the software measurement goal description Decrease defects in delivered products, the information need description What is the delivered defects density?, the measure description delivered defects density and an operational definition of measure established to the software-related measure delivered defects density.</i></td>
 </tr>
 <tr>
 <td><a name="RSMO_Software+Measurement+Process"><b>Software Measurement Process</b></a>
-<a href=#RSMO_Software+Measurement+Process_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSMO_Software+Measurement+Process_detail><img src="images/plus-4-16.ico"></a></td>
 <td>The Software Measurement Process is a Process with the purpose of collecting, analyzing, and reporting data relating to the products developed and the processes used to develop them, aiming to support effective processes management and objectively demonstrate products quality.
 <br/></td>
 </tr>
 <tr>
 <td><a name="RSMO_Software+Project+Measurement+Plan"><b>Software Project Measurement Plan</b></a>
-<a href=#RSMO_Software+Project+Measurement+Plan_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSMO_Software+Project+Measurement+Plan_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A Software Measurement Plan defined for a Project.
 <br/>E.g.:<i> the Software Project Measurement Plan defined for the Project P.</i></td>
 </tr>
 <tr>
 <td><a name="RSMO_Software-Related+Measure"><b>Software-Related Measure</b></a>
-<a href=#RSMO_Software-Related+Measure_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSMO_Software-Related+Measure_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Measure used to quantify Measurable Elements of Measurable Software-Related Entities.
 <br/>E.g.:<i> the software-related measure number of lines of code could be used to quantify the measurable element size of measurable-related entities of the Software type.</i></td>
 </tr>
 
 						</tbody>
-					</table>
+					</table>-->
 
 				</div>
 
-				<hr class="featurette-divider">		
+				<hr>		
 
-				<div class="container p-5 rounded" id="detailedconcepts">
+				<div class="p-5 rounded" id="detailedconcepts">
 					<h2 class="featurette-heading">5. Detailed Concepts</h2>
-					<p class="lead"><a name="RSMO_Analysis+Result+Description_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Analysis Result Description<strong></td></tr>
-</table><br/>
-<b>RSMO::Analysis Result Description</b><br/>
-Specializes SysSwO::Information Item<br/><br/>
-Information Item that records the Analysis Result produced in a Software Measurement Analysis.  <br/>
-E.g.:<i> the record of the analysis result: the schedule performance index of the Project P has improved in the last three months and the project is now adherent to the agreed schedule.    </i><br/>
-<br/>
-Relations:<br/>
+					<p class="lead">Reference Software Measurement Ontology (RSMO) detailed concepts.</p>					
+					<hr><div class="container-fluid" id="RSMO_Analysis+Result+Description_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Analysis Result Description</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSMO::Analysis Result Description</span><br/>Specializes SysSwO::Information Item</p><p>Information Item that records the Analysis Result produced in a Software Measurement Analysis.  <br/>E.g.:<span class="font-italic"> the record of the analysis result: the schedule performance index of the Project P has improved in the last three months and the project is now adherent to the agreed schedule.    </span></p><p>Relations:<br/>
 <code>Analysis Result Description (0..1) describes (1..1) Analysis Result<br/>
 Data Analysis creates Analysis Result Description<br/>
 Measurement Result Reporting uses Analysis Result Description<br/>
 Software Measurement Analysis (1..1) \creates (1..1) Analysis Result Description<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSMO_Business+Goal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Business Goal<strong></td></tr>
-</table><br/>
-<b>RSMO::Business Goal</b><br/>
-Specializes UFO::Goal<br/><br/>
-Goal that expresses the intention for which strategic actions are planned and performed.<br/>
-E.g.:<i> Increase the client’s satisfaction degree. </i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSMO_Business+Goal_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Business Goal</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSMO::Business Goal</span><br/>Specializes UFO::Goal</p><p>Goal that expresses the intention for which strategic actions are planned and performed.<br/>E.g.:<span class="font-italic"> Increase the client’s satisfaction degree. </span></p><p>Relations:<br/>
 <code>Software Measurement Goal (0..*) based on (1..*) Business Goal<br/>
 Software Goal (0..*) based on (1..*) Business Goal<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSMO_Data+Analysis_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Data Analysis<strong></td></tr>
-</table><br/>
-<b>RSMO::Data Analysis</b><br/>
-Specializes <br/><br/>
-Activity for analyzing the selected Measured Values and producing the Analysis Result Description that records the Analysis Result.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSMO_Data+Analysis_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Data Analysis</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSMO::Data Analysis</span><br/>Specializes </p><p>Activity for analyzing the selected Measured Values and producing the Analysis Result Description that records the Analysis Result.<br/></p><p>Relations:<br/>
 <code>Data Analysis creates Analysis Result Description<br/>
 Software Measurement Analysis <>-- Data Analysis<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSMO_Data+Collection_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Data Collection<strong></td></tr>
-</table><br/>
-<b>RSMO::Data Collection</b><br/>
-Specializes <br/><br/>
-Activity for collecting and storing data for the Software-Related Measure indicated in the selected Software Measurement Plan Item.<br/><br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSMO_Data+Collection_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Data Collection</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSMO::Data Collection</span><br/>Specializes </p><p>Activity for collecting and storing data for the Software-Related Measure indicated in the selected Software Measurement Plan Item.<br/><br/></p><p>Relations:<br/>
 <code>Data Collection creates Measured Value Description<br/>
 Software Measurement Execution <>-- Data Collection<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSMO_Information+Need+Description_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Information Need Description<strong></td></tr>
-</table><br/>
-<b>RSMO::Information Need Description</b><br/>
-Specializes SysSwO::Information Item<br/><br/>
-Information Item that documents the description of an Information Need.<br/>
-E.g.:<i> the record of the information need What is the delivered defects density?.</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSMO_Information+Need+Description_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Information Need Description</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSMO::Information Need Description</span><br/>Specializes SysSwO::Information Item</p><p>Information Item that documents the description of an Information Need.<br/>E.g.:<span class="font-italic"> the record of the information need What is the delivered defects density?.</span></p><p>Relations:<br/>
 <code>Information Need Description (0..1) describes (1..1) Information Need<br/>
 Information Needs Identification creates Information Need Description<br/>
 Software Measurement Planning Item (0..*) <>-- (1..1) Information Need Description<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSMO_Information+Needs+Identification_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Information Needs Identification<strong></td></tr>
-</table><br/>
-<b>RSMO::Information Needs Identification</b><br/>
-Specializes SPO::Performed Simple Activity<br/><br/>
-Activity for identifying and recording the Information Needs to be included in the Software Measurement Plan. Information Needs are identified from the established Software Measurement Goals.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSMO_Information+Needs+Identification_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Information Needs Identification</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSMO::Information Needs Identification</span><br/>Specializes SPO::Performed Simple Activity</p><p>Activity for identifying and recording the Information Needs to be included in the Software Measurement Plan. Information Needs are identified from the established Software Measurement Goals.<br/></p><p>Relations:<br/>
 <code>Information Needs Identification creates Information Need Description<br/>
 Software Measurement Planning <>-- Information Needs Identification<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSMO_Measurable+Software-Related+Entity_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Measurable Software-Related Entity<strong></td></tr>
-</table><br/>
-<b>RSMO::Measurable Software-Related Entity</b><br/>
-Specializes COM::Measurable Entity<br/><br/>
-Measurable Entity related to software.<br/>
-E.g.:<i> a software project,  a standard process.</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSMO_Measurable+Software-Related+Entity_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Measurable Software-Related Entity</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSMO::Measurable Software-Related Entity</span><br/>Specializes COM::Measurable Entity</p><p>Measurable Entity related to software.<br/>E.g.:<span class="font-italic"> a software project,  a standard process.</span></p><p>Relations:<br/>
 <code>Measurable Software-Related Entity (0..*) instance of (1..1) Measurable Software-Related Entity Type<br/>
 Software Measurement Execution (0..*) measures (1..1) Measurable Software-Related Entity<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSMO_Measurable+Software-Related+Entity+Type_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Measurable Software-Related Entity Type<strong></td></tr>
-</table><br/>
-<b>RSMO::Measurable Software-Related Entity Type</b><br/>
-Specializes COM::Measurable Entity Type<br/><br/>
-Type of Measurable Entities related to software.<br/>
-E.g.:<i> the Requirements Engineering Standard Process is a measurable software-related entity of the Standard Process type.</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSMO_Measurable+Software-Related+Entity+Type_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Measurable Software-Related Entity Type</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSMO::Measurable Software-Related Entity Type</span><br/>Specializes COM::Measurable Entity Type</p><p>Type of Measurable Entities related to software.<br/>E.g.:<span class="font-italic"> the Requirements Engineering Standard Process is a measurable software-related entity of the Standard Process type.</span></p><p>Relations:<br/>
 <code>Measurable Software-Related Entity (0..*) instance of (1..1) Measurable Software-Related Entity Type<br/>
 Operational Definition of Measure (0..*) indicates (1..1) Measurable Software-Related Entity Type<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSMO_Measure+Description_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Measure Description<strong></td></tr>
-</table><br/>
-<b>RSMO::Measure Description</b><br/>
-Specializes SysSwO::Information Item<br/><br/>
-Information Item that documents the description of  a Software-Related Measure.<br/>
-E.g.:<i> the record of the software-related measure   delivered defects density.</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSMO_Measure+Description_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Measure Description</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSMO::Measure Description</span><br/>Specializes SysSwO::Information Item</p><p>Information Item that documents the description of  a Software-Related Measure.<br/>E.g.:<span class="font-italic"> the record of the software-related measure   delivered defects density.</span></p><p>Relations:<br/>
 <code>Measure Description (0..*) describes (1..1) Software-Related Measure<br/>
 Measures Identification creates Measure Description<br/>
 Software Measurement Planning Item (0..*) <>-- (1..1) Measure Description<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSMO_Measured+Value+Description_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Measured Value Description<strong></td></tr>
-</table><br/>
-<b>RSMO::Measured Value Description</b><br/>
-Specializes SysSwO::Information Item<br/><br/>
-Information Item that records a Measured Value.<br/>
-E.g.:<i> the record of the measured value 0.75.</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSMO_Measured+Value+Description_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Measured Value Description</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSMO::Measured Value Description</span><br/>Specializes SysSwO::Information Item</p><p>Information Item that records a Measured Value.<br/>E.g.:<span class="font-italic"> the record of the measured value 0.75.</span></p><p>Relations:<br/>
 <code>Measured Value Description (0..1) describes (1..1) Measured Value<br/>
 Software Measurement Execution (1..1) \creates (1..1) Measured Value Description<br/>
 Data Collection creates Measured Value Description<br/>
 Software Measurement Analysis (0..*) \uses (1..*) Measured Value Description<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSMO_Measurement+Analysis+Procedure_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Measurement Analysis Procedure<strong></td></tr>
-</table><br/>
-<b>RSMO::Measurement Analysis Procedure</b><br/>
-Specializes UFO::Normative Description<br/><br/>
-Procedure applied to analyze Measured Values obtained for a Software-Related Measure. <br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSMO_Measurement+Analysis+Procedure_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Measurement Analysis Procedure</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSMO::Measurement Analysis Procedure</span><br/>Specializes UFO::Normative Description</p><p>Procedure applied to analyze Measured Values obtained for a Software-Related Measure. <br/></p><p>Relations:<br/>
 <code>Measurement Analysis Procedure (0..*) applies to (1..*) Measure<br/>
 Operational Definition of Measure (0..*) indicates (0..1) Measurement Analysis Procedure<br/>
 Software Measurement Analysis (0..*) adopts (1..1) Measurement Analysis Procedure<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSMO_Measurement+Analyst_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltrole&gt&gt</code><br/>
-<strong>Measurement Analyst<strong></td></tr>
-</table><br/>
-<b>RSMO::Measurement Analyst</b><br/>
-Specializes SPO::Stakeholder<br/><br/>
-Role played by the Stakeholder in charge of Software Measurement Analysis.<br/>
-E.g.:<i> If John (a Person Stakeholder) was in charge of a software measurement analysis, then he played the role of measurement analyst.</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSMO_Measurement+Analyst_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltrole&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Measurement Analyst</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSMO::Measurement Analyst</span><br/>Specializes SPO::Stakeholder</p><p>Role played by the Stakeholder in charge of Software Measurement Analysis.<br/>E.g.:<span class="font-italic"> If John (a Person Stakeholder) was in charge of a software measurement analysis, then he played the role of measurement analyst.</span></p><p>Relations:<br/>
 <code>Measurement Analyst (1..1) in charge of (1..*) Software Measurement Analysis<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSMO_Measurement+Context_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Measurement Context<strong></td></tr>
-</table><br/>
-<b>RSMO::Measurement Context</b><br/>
-Specializes UFO::Situation<br/><br/>
-Situation in which a Software Measurement Execution was performed.<br/>
-E.g.:<i> an example of measurement context for a software measurement execution that obtained the measured value 0.75 for the software-related measure schedule performance index to the Project P could be: measurement performed one month after substituting two of the team members with two members less experienced.   </i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSMO_Measurement+Context_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Measurement Context</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSMO::Measurement Context</span><br/>Specializes UFO::Situation</p><p>Situation in which a Software Measurement Execution was performed.<br/>E.g.:<span class="font-italic"> an example of measurement context for a software measurement execution that obtained the measured value 0.75 for the software-related measure schedule performance index to the Project P could be: measurement performed one month after substituting two of the team members with two members less experienced.   </span></p><p>Relations:<br/>
 <code>Software Measurement Execution (1..*) occurs in (1..1) Measurement Context<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSMO_Measurement+Executor_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltrole&gt&gt</code><br/>
-<strong>Measurement Executor<strong></td></tr>
-</table><br/>
-<b>RSMO::Measurement Executor</b><br/>
-Specializes SPO::Stakeholder<br/><br/>
-Role played by the Stakeholder in charge of Software Measurement Execution. It does not include automated measurement (by tools).<br/>
-E.g.:<i> If Mary (a Person Stakeholder) was in charge of a software measurement execution, then she played the role of measurement executor.</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSMO_Measurement+Executor_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltrole&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Measurement Executor</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSMO::Measurement Executor</span><br/>Specializes SPO::Stakeholder</p><p>Role played by the Stakeholder in charge of Software Measurement Execution. It does not include automated measurement (by tools).<br/>E.g.:<span class="font-italic"> If Mary (a Person Stakeholder) was in charge of a software measurement execution, then she played the role of measurement executor.</span></p><p>Relations:<br/>
 <code>Measurement Executor (1..1) in charge of (1..*) Software Measurement Execution<br/>
 Software Measurement Execution (0..*) performed by (1..1) Measurement Executor<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSMO_Measurement+Goals+Establishment_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Measurement Goals Establishment<strong></td></tr>
-</table><br/>
-<b>RSMO::Measurement Goals Establishment</b><br/>
-Specializes SPO::Performed Simple Activity<br/><br/>
-Activity for establishing and recording the Software Measurement Goals to be included in the Software Measurement Plan.<br/><br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSMO_Measurement+Goals+Establishment_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Measurement Goals Establishment</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSMO::Measurement Goals Establishment</span><br/>Specializes SPO::Performed Simple Activity</p><p>Activity for establishing and recording the Software Measurement Goals to be included in the Software Measurement Plan.<br/><br/></p><p>Relations:<br/>
 <code>Measurement Goals Establishment creates Software Measurement Goal Description<br/>
 Software Measurement Planning <>-- Measurement Goals Establishment<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSMO_Measurement+Manager_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltrole&gt&gt</code><br/>
-<strong>Measurement Manager<strong></td></tr>
-</table><br/>
-<b>RSMO::Measurement Manager</b><br/>
-Specializes SPO::Stakeholder<br/><br/>
-Role played by the Stakeholder in charge of Software Measurement Planning.<br/>
-E.g.:<i> If John (a Person Stakeholder) was in charge of a software measurement planning, then he played the role of measurement manager. </i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSMO_Measurement+Manager_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltrole&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Measurement Manager</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSMO::Measurement Manager</span><br/>Specializes SPO::Stakeholder</p><p>Role played by the Stakeholder in charge of Software Measurement Planning.<br/>E.g.:<span class="font-italic"> If John (a Person Stakeholder) was in charge of a software measurement planning, then he played the role of measurement manager. </span></p><p>Relations:<br/>
 <code>Measurement Manager (1..1) in charge of (1..*) Software Measurement Planning<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSMO_Measurement+Plan+Item+Selection_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Measurement Plan Item Selection<strong></td></tr>
-</table><br/>
-<b>RSMO::Measurement Plan Item Selection</b><br/>
-Specializes <br/><br/>
-Activity for selecting the Software Measurement Plan Item to be used to guide the Software Measurement Execution. The selected Software Measurement Plan Item indicates the Software-Related Measured to be applied in the Software Measurement Execution and the Operational Definition of Measure to be considered.<br/><br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSMO_Measurement+Plan+Item+Selection_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Measurement Plan Item Selection</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSMO::Measurement Plan Item Selection</span><br/>Specializes </p><p>Activity for selecting the Software Measurement Plan Item to be used to guide the Software Measurement Execution. The selected Software Measurement Plan Item indicates the Software-Related Measured to be applied in the Software Measurement Execution and the Operational Definition of Measure to be considered.<br/><br/></p><p>Relations:<br/>
 <code>Software Measurement Execution <>-- Measurement Plan Item Selection<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSMO_Measurement+Planning+Start_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Measurement Planning Start<strong></td></tr>
-</table><br/>
-<b>RSMO::Measurement Planning Start</b><br/>
-Specializes SPO::Performed Simple Activity<br/><br/>
-Activity for defining the Software Measurement Plan structure, its initial information (e.g., organization to which it was defined and elaboration date) and starting its elaboration.<br/><br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSMO_Measurement+Planning+Start_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Measurement Planning Start</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSMO::Measurement Planning Start</span><br/>Specializes SPO::Performed Simple Activity</p><p>Activity for defining the Software Measurement Plan structure, its initial information (e.g., organization to which it was defined and elaboration date) and starting its elaboration.<br/><br/></p><p>Relations:<br/>
 <code>Measurement Planning Start creates Software Measurement Plan<br/>
 Software Measurement Planning <>-- Measurement Planning Start<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSMO_Measurement+Result+Reporting_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Measurement Result Reporting<strong></td></tr>
-</table><br/>
-<b>RSMO::Measurement Result Reporting</b><br/>
-Specializes <br/><br/>
-Activity for communicating the Analysis Result Description to the relevant Stakeholders.<br/><br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSMO_Measurement+Result+Reporting_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Measurement Result Reporting</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSMO::Measurement Result Reporting</span><br/>Specializes </p><p>Activity for communicating the Analysis Result Description to the relevant Stakeholders.<br/><br/></p><p>Relations:<br/>
 <code>Measurement Result Reporting uses Analysis Result Description<br/>
 Software Measurement Analysis <>-- Measurement Result Reporting<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSMO_Measures+Identification_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Measures Identification<strong></td></tr>
-</table><br/>
-<b>RSMO::Measures Identification</b><br/>
-Specializes SPO::Performed Simple Activity<br/><br/>
-Activity for identifying and recording the Software-Related Measures to be included in the Software Measurement Plan. Software-Related Measures are identified from Information Needs in the sense that Measures must meet the identified Information Needs.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSMO_Measures+Identification_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Measures Identification</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSMO::Measures Identification</span><br/>Specializes SPO::Performed Simple Activity</p><p>Activity for identifying and recording the Software-Related Measures to be included in the Software Measurement Plan. Software-Related Measures are identified from Information Needs in the sense that Measures must meet the identified Information Needs.<br/></p><p>Relations:<br/>
 <code>Measures Identification creates Measure Description<br/>
 Software Measurement Planning <>-- Measures Identification<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSMO_Operational+Definition+of+Measure_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Operational Definition of Measure<strong></td></tr>
-</table><br/>
-<b>RSMO::Operational Definition of Measure</b><br/>
-Specializes SysSwO::Information Item<br/><br/>
-Information Item that specifies information regarding data collection and analysis of a Software-Related Measure. An Operational Definition of Measure indicates: Measurement Procedure, Measurement Periodicity, Measurement Moment, Measurement Responsible, Measurement Analysis Procedure, Measurement Analysis Periodicity, Measurement Analysis Moment, and Measurement Analysis Responsible.<br/><br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSMO_Operational+Definition+of+Measure_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Operational Definition of Measure</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSMO::Operational Definition of Measure</span><br/>Specializes SysSwO::Information Item</p><p>Information Item that specifies information regarding data collection and analysis of a Software-Related Measure. An Operational Definition of Measure indicates: Measurement Procedure, Measurement Periodicity, Measurement Moment, Measurement Responsible, Measurement Analysis Procedure, Measurement Analysis Periodicity, Measurement Analysis Moment, and Measurement Analysis Responsible.<br/><br/></p><p>Relations:<br/>
 <code>Operational Definition of Measure (0..*) indicates (1..1) Measurable Software-Related Entity Type<br/>
 Operational Definition of Measure (0..*) indicates (1..1) Measurable Element<br/>
 Operational Definition of Measure (0..*) defined for (1..1) Software-Related Measure<br/>
@@ -974,133 +1046,52 @@ Operational Definition of Measure Establishment creates Operational Definition o
 Software Measurement Planning Item (0..*) <>-- (1..1) Operational Definition of Measure<br/>
 Software Measurement Analysis (0..*) is performed according to (0..*) Operational Definition of Measure<br/>
 Software Organization (1..*) establishes (0..*) Operational Definition of Measure<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSMO_Operational+Definition+of+Measure+Establishment_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Operational Definition of Measure Establishment<strong></td></tr>
-</table><br/>
-<b>RSMO::Operational Definition of Measure Establishment</b><br/>
-Specializes SPO::Performed Simple Activity<br/><br/>
-Activity for establishing the Operational Definitions of Measures for the identified Software-Related Measures.<br/><br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSMO_Operational+Definition+of+Measure+Establishment_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Operational Definition of Measure Establishment</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSMO::Operational Definition of Measure Establishment</span><br/>Specializes SPO::Performed Simple Activity</p><p>Activity for establishing the Operational Definitions of Measures for the identified Software-Related Measures.<br/><br/></p><p>Relations:<br/>
 <code>Operational Definition of Measure Establishment creates Operational Definition of Measure<br/>
 Software Measurement Planning <>-- Operational Definition of Measure Establishment<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSMO_Periodicity_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Periodicity<strong></td></tr>
-</table><br/>
-<b>RSMO::Periodicity</b><br/>
-Specializes <br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSMO_Periodicity_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Periodicity</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSMO::Periodicity</span><br/>Specializes </p><p><br/></p><p>Relations:<br/>
 <code>Operational Definition of Measure (0..*) indicates (0..1) Periodicity<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSMO_Planning+Item+Documentation_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Planning Item Documentation<strong></td></tr>
-</table><br/>
-<b>RSMO::Planning Item Documentation</b><br/>
-Specializes SPO::Performed Simple Activity<br/><br/>
-Activity for documenting Measurement Planning Items. Each Measurement Planning Item includes a Software Measurement Goal Description, an Information Need Description, a Software-Related Measure and an Operational Definition of Measure. Measurement Planning Items produced during the Software Measurement Analysis are part of the Software Measurement Plan produced in that activity.<br/><br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSMO_Planning+Item+Documentation_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Planning Item Documentation</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSMO::Planning Item Documentation</span><br/>Specializes SPO::Performed Simple Activity</p><p>Activity for documenting Measurement Planning Items. Each Measurement Planning Item includes a Software Measurement Goal Description, an Information Need Description, a Software-Related Measure and an Operational Definition of Measure. Measurement Planning Items produced during the Software Measurement Analysis are part of the Software Measurement Plan produced in that activity.<br/><br/></p><p>Relations:<br/>
 <code>Planning Item Documentation creates Software Measurement Planning Item<br/>
 Planning Item Documentation changes Software Measurement Plan<br/>
 Software Measurement Planning <>-- Planning Item Documentation<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSMO_Selection+of+Data+for+Analysis_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Selection of Data for Analysis<strong></td></tr>
-</table><br/>
-<b>RSMO::Selection of Data for Analysis</b><br/>
-Specializes <br/><br/>
-Activity for selecting the Measured Values of the selected Software-Related Measures to be analyzed in the Software Measurement Analysis.<br/><br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSMO_Selection+of+Data+for+Analysis_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Selection of Data for Analysis</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSMO::Selection of Data for Analysis</span><br/>Specializes </p><p>Activity for selecting the Measured Values of the selected Software-Related Measures to be analyzed in the Software Measurement Analysis.<br/><br/></p><p>Relations:<br/>
 <code>Software Measurement Analysis <>-- Selection of Data for Analysis<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSMO_Selection+of+Entity+for+Measurement_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Selection of Entity for Measurement<strong></td></tr>
-</table><br/>
-<b>RSMO::Selection of Entity for Measurement</b><br/>
-Specializes <br/><br/>
-Activity for selecting the Software-Related Measurable Entity to be measured in the Software Measurement Execution. The selected entity type must be the Software-Related Measurable Entity Type indicated in the Operational Definition of Measure defined in the selected Software Measurement Plan Item.<br/><br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSMO_Selection+of+Entity+for+Measurement_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Selection of Entity for Measurement</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSMO::Selection of Entity for Measurement</span><br/>Specializes </p><p>Activity for selecting the Software-Related Measurable Entity to be measured in the Software Measurement Execution. The selected entity type must be the Software-Related Measurable Entity Type indicated in the Operational Definition of Measure defined in the selected Software Measurement Plan Item.<br/><br/></p><p>Relations:<br/>
 <code>Software Measurement Execution <>-- Selection of Entity for Measurement<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSMO_Selection+of+Measurement+Goals+for+Analysis_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Selection of Measurement Goals for Analysis<strong></td></tr>
-</table><br/>
-<b>RSMO::Selection of Measurement Goals for Analysis</b><br/>
-Specializes <br/><br/>
-Activity for selecting the Software Measurement Goal to be monitored by using information provided by the Software Measurement Analysis.  <br/><br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSMO_Selection+of+Measurement+Goals+for+Analysis_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Selection of Measurement Goals for Analysis</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSMO::Selection of Measurement Goals for Analysis</span><br/>Specializes </p><p>Activity for selecting the Software Measurement Goal to be monitored by using information provided by the Software Measurement Analysis.  <br/><br/></p><p>Relations:<br/>
 <code>Software Measurement Analysis <>-- Selection of Measurement Goals for Analysis<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSMO_Selection+of+Measures+for+Analysis_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Selection of Measures for Analysis<strong></td></tr>
-</table><br/>
-<b>RSMO::Selection of Measures for Analysis</b><br/>
-Specializes <br/><br/>
-Activity for selecting, among the Software-Related Measures related to the selected Software Measurement Goal the ones to be analyzed in the Software Measurement Analysis.<br/><br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSMO_Selection+of+Measures+for+Analysis_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Selection of Measures for Analysis</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSMO::Selection of Measures for Analysis</span><br/>Specializes </p><p>Activity for selecting, among the Software-Related Measures related to the selected Software Measurement Goal the ones to be analyzed in the Software Measurement Analysis.<br/><br/></p><p>Relations:<br/>
 <code>Software Measurement Analysis <>-- Selection of Measures for Analysis<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSMO_Software+Goal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Software Goal<strong></td></tr>
-</table><br/>
-<b>RSMO::Software Goal</b><br/>
-Specializes UFO::Goal<br/><br/>
-Goal that expresses the intention for which software-related actions are planned and performed. Software Goals are based on Business Goals.<br/>
-E.g.:<i> the software goal Improve software products quality could be defined based on the business goal Increase the client’s satisfaction degree. </i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSMO_Software+Goal_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Software Goal</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSMO::Software Goal</span><br/>Specializes UFO::Goal</p><p>Goal that expresses the intention for which software-related actions are planned and performed. Software Goals are based on Business Goals.<br/>E.g.:<span class="font-italic"> the software goal Improve software products quality could be defined based on the business goal Increase the client’s satisfaction degree. </span></p><p>Relations:<br/>
 <code>Software Goal (0..*) based on (1..*) Business Goal<br/>
 Software Measurement Goal (0..*) based on (1..*) Software Goal<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSMO_Software+Measurement+Analysis_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Software Measurement Analysis<strong></td></tr>
-</table><br/>
-<b>RSMO::Software Measurement Analysis</b><br/>
-Specializes SPO::Performed Composite Activity, COM::Measurement Analysis<br/><br/>
-Activity for analyzing Measured Values collected for Software-Related Measures aiming to characterize a Software-Related Measurable Entity and provide information related to a Software Measurement Goal. <br/>
-E.g.:<i> a software measurement analysis that analyzed the measured values 0.75, 0.9 e 1, collected for the measure schedule performance index to characterize the software-related measurable entity Project P.    </i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSMO_Software+Measurement+Analysis_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Software Measurement Analysis</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSMO::Software Measurement Analysis</span><br/>Specializes SPO::Performed Composite Activity, COM::Measurement Analysis</p><p>Activity for analyzing Measured Values collected for Software-Related Measures aiming to characterize a Software-Related Measurable Entity and provide information related to a Software Measurement Goal. <br/>E.g.:<span class="font-italic"> a software measurement analysis that analyzed the measured values 0.75, 0.9 e 1, collected for the measure schedule performance index to characterize the software-related measurable entity Project P.    </span></p><p>Relations:<br/>
 <code>Software Measurement Analysis <>-- Selection of Measurement Goals for Analysis<br/>
 Software Measurement Analysis <>-- Selection of Measures for Analysis<br/>
 Software Measurement Analysis <>-- Selection of Data for Analysis<br/>
@@ -1116,19 +1107,10 @@ Software Measurement Analysis (0..*) performed based on (1..*) Software Measurem
 Software Measurement Analysis (1..1) \creates (1..1) Analysis Result Description<br/>
 Measurement Analyst (1..1) in charge of (1..*) Software Measurement Analysis<br/>
 Software Measurement Process <>-- Software Measurement Analysis<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSMO_Software+Measurement+Execution_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Software Measurement Execution<strong></td></tr>
-</table><br/>
-<b>RSMO::Software Measurement Execution</b><br/>
-Specializes SPO::Performed Composite Activity, COM::Measurement<br/><br/>
-Activity for measuring a Software-Related Measurable Entity by applying a Software-Related Measure and obtaining a Measured Value.<br/>
-E.g.:<i> the software measurement execution that applied the software-related measure schedule performance index to measure the Project P and obtained the measured value 0.75.</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSMO_Software+Measurement+Execution_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Software Measurement Execution</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSMO::Software Measurement Execution</span><br/>Specializes SPO::Performed Composite Activity, COM::Measurement</p><p>Activity for measuring a Software-Related Measurable Entity by applying a Software-Related Measure and obtaining a Measured Value.<br/>E.g.:<span class="font-italic"> the software measurement execution that applied the software-related measure schedule performance index to measure the Project P and obtained the measured value 0.75.</span></p><p>Relations:<br/>
 <code>Software Measurement Execution <>-- Measurement Plan Item Selection<br/>
 Software Measurement Execution <>-- Selection of Entity for Measurement<br/>
 Software Measurement Execution <>-- Data Collection<br/>
@@ -1143,50 +1125,23 @@ Software Measurement Execution (0..*) /performed based on (1..1) Operational Def
 Software Measurement Execution (1..1) \creates (1..1) Measured Value Description<br/>
 Measurement Executor (1..1) in charge of (1..*) Software Measurement Execution<br/>
 Software Measurement Process <>-- Software Measurement Execution<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSMO_Software+Measurement+Goal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Software Measurement Goal<strong></td></tr>
-</table><br/>
-<b>RSMO::Software Measurement Goal</b><br/>
-Specializes COM::Measurement Goal<br/><br/>
-Measurement Goal related to software. Software Measurement Goals are based on Business Goals or Software Goals.<br/>
-E.g.:<i> the measurement goal Decrease defects in delivered products could be defined based on the software goal Improve software products quality.</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSMO_Software+Measurement+Goal_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Software Measurement Goal</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSMO::Software Measurement Goal</span><br/>Specializes COM::Measurement Goal</p><p>Measurement Goal related to software. Software Measurement Goals are based on Business Goals or Software Goals.<br/>E.g.:<span class="font-italic"> the measurement goal Decrease defects in delivered products could be defined based on the software goal Improve software products quality.</span></p><p>Relations:<br/>
 <code>Software Measurement Goal (0..*) based on (1..*) Software Goal<br/>
 Software Measurement Goal (0..*) based on (1..*) Business Goal<br/>
 Software Measurement Goal Description (0..1) describes (1..1) Software Measurement Goal<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSMO_Software+Measurement+Goal+Description_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Software Measurement Goal Description<strong></td></tr>
-</table><br/>
-<b>RSMO::Software Measurement Goal Description</b><br/>
-Specializes SysSwO::Information Item<br/><br/>
-Information Item that documents the description of a Software Measurement Goal.<br/>
-E.g.:<i> the record of the software measurement goal Decrease defects in delivered products. </i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSMO_Software+Measurement+Goal+Description_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Software Measurement Goal Description</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSMO::Software Measurement Goal Description</span><br/>Specializes SysSwO::Information Item</p><p>Information Item that documents the description of a Software Measurement Goal.<br/>E.g.:<span class="font-italic"> the record of the software measurement goal Decrease defects in delivered products. </span></p><p>Relations:<br/>
 <code>Software Measurement Goal Description (0..1) describes (1..1) Software Measurement Goal<br/>
 Measurement Goals Establishment creates Software Measurement Goal Description<br/>
 Software Measurement Planning Item (0..*) <>-- (1..1) Software Measurement Goal Description<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSMO_Software+Measurement+Plan_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Software Measurement Plan<strong></td></tr>
-</table><br/>
-<b>RSMO::Software Measurement Plan</b><br/>
-Specializes SysSwO::Document<br/><br/>
-Document produced during Software Measurement Planning. It is composed of Software Measurement Planning Items.<br/>
-E.g.:<i> the Software Measurement Plan defined for the Organization O.</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSMO_Software+Measurement+Plan_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Software Measurement Plan</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSMO::Software Measurement Plan</span><br/>Specializes SysSwO::Document</p><p>Document produced during Software Measurement Planning. It is composed of Software Measurement Planning Items.<br/>E.g.:<span class="font-italic"> the Software Measurement Plan defined for the Organization O.</span></p><p>Relations:<br/>
 <code>Software Measurement Plan (1..1) <>-- (0..*) Software Measurement Planning Item<br/>
 Software Measurement Plan (1..1) describes (0..*) Software Measurement Planning Item<br/>
 Software Measurement Execution uses Software Measurement Plan<br/>
@@ -1194,19 +1149,10 @@ Software Measurement Planning (1..*) produces (1..1) Software Measurement Plan<b
 Measurement Planning Start creates Software Measurement Plan<br/>
 Software Measurement Analysis uses Software Measurement Plan<br/>
 Planning Item Documentation changes Software Measurement Plan<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSMO_Software+Measurement+Planning_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Software Measurement Planning<strong></td></tr>
-</table><br/>
-<b>RSMO::Software Measurement Planning</b><br/>
-Specializes SPO::Performed Composite Activity, COM::Measurement Planning<br/><br/>
-Activity for planning the software measurement, i.e., for determining the Software Measurement Goals to be monitored, the Information Needs to be considered, the Software-Related Measures to be collected to meet the Information Needs and the Operational Definition of Measure to be considered. <br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSMO_Software+Measurement+Planning_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Software Measurement Planning</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSMO::Software Measurement Planning</span><br/>Specializes SPO::Performed Composite Activity, COM::Measurement Planning</p><p>Activity for planning the software measurement, i.e., for determining the Software Measurement Goals to be monitored, the Information Needs to be considered, the Software-Related Measures to be collected to meet the Information Needs and the Operational Definition of Measure to be considered. <br/></p><p>Relations:<br/>
 <code>Software Measurement Planning <>-- Measurement Goals Establishment<br/>
 Software Measurement Planning <>-- Information Needs Identification<br/>
 Software Measurement Planning <>-- Measures Identification<br/>
@@ -1217,19 +1163,10 @@ Software Measurement Planning (1..1) produces (1..*) Software Measurement Planni
 Software Measurement Planning (1..*) produces (1..1) Software Measurement Plan<br/>
 Software Measurement Process <>-- Software Measurement Planning<br/>
 Measurement Manager (1..1) in charge of (1..*) Software Measurement Planning<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSMO_Software+Measurement+Planning+Item_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Software Measurement Planning Item<strong></td></tr>
-</table><br/>
-<b>RSMO::Software Measurement Planning Item</b><br/>
-Specializes SysSwO::Information Item, COM::Measurement Planning Item<br/><br/>
-Measurement Planning Item related to software. It is an Information Item produced during Software Measurement Planning and it is composed of a Software Measurement Goal Description, an Information Need Description, a Measure Description and an Operational Definition of Measure.<br/>
-E.g.:<i> the software measurement planning item composed of the software measurement goal description Decrease defects in delivered products, the information need description What is the delivered defects density?, the measure description delivered defects density and an operational definition of measure established to the software-related measure delivered defects density.</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSMO_Software+Measurement+Planning+Item_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Software Measurement Planning Item</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSMO::Software Measurement Planning Item</span><br/>Specializes SysSwO::Information Item, COM::Measurement Planning Item</p><p>Measurement Planning Item related to software. It is an Information Item produced during Software Measurement Planning and it is composed of a Software Measurement Goal Description, an Information Need Description, a Measure Description and an Operational Definition of Measure.<br/>E.g.:<span class="font-italic"> the software measurement planning item composed of the software measurement goal description Decrease defects in delivered products, the information need description What is the delivered defects density?, the measure description delivered defects density and an operational definition of measure established to the software-related measure delivered defects density.</span></p><p>Relations:<br/>
 <code>Software Measurement Planning Item (0..*) <>-- (1..1) Operational Definition of Measure<br/>
 Software Measurement Planning Item (0..*) <>-- (1..1) Measure Description<br/>
 Software Measurement Planning Item (0..*) <>-- (1..1) Information Need Description<br/>
@@ -1240,63 +1177,41 @@ Software Measurement Plan (1..1) describes (0..*) Software Measurement Planning 
 Software Measurement Planning (1..1) produces (1..*) Software Measurement Planning Item<br/>
 Software Measurement Analysis (0..*) performed based on (1..*) Software Measurement Planning Item<br/>
 Planning Item Documentation creates Software Measurement Planning Item<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSMO_Software+Measurement+Process_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Software Measurement Process<strong></td></tr>
-</table><br/>
-<b>RSMO::Software Measurement Process</b><br/>
-Specializes SPO::Performed Specific Process<br/><br/>
-The Software Measurement Process is a Process with the purpose of collecting, analyzing, and reporting data relating to the products developed and the processes used to develop them, aiming to support effective processes management and objectively demonstrate products quality.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSMO_Software+Measurement+Process_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Software Measurement Process</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSMO::Software Measurement Process</span><br/>Specializes SPO::Performed Specific Process</p><p>The Software Measurement Process is a Process with the purpose of collecting, analyzing, and reporting data relating to the products developed and the processes used to develop them, aiming to support effective processes management and objectively demonstrate products quality.<br/></p><p>Relations:<br/>
 <code>Software Measurement Process <>-- Software Measurement Planning<br/>
 Software Measurement Process <>-- Software Measurement Execution<br/>
 Software Measurement Process <>-- Software Measurement Analysis<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSMO_Software+Project+Measurement+Plan_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Software Project Measurement Plan<strong></td></tr>
-</table><br/>
-<b>RSMO::Software Project Measurement Plan</b><br/>
-Specializes RSMO::Software Measurement Plan<br/><br/>
-A Software Measurement Plan defined for a Project.<br/>
-E.g.:<i> the Software Project Measurement Plan defined for the Project P.</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSMO_Software+Project+Measurement+Plan_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Software Project Measurement Plan</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSMO::Software Project Measurement Plan</span><br/>Specializes RSMO::Software Measurement Plan</p><p>A Software Measurement Plan defined for a Project.<br/>E.g.:<span class="font-italic"> the Software Project Measurement Plan defined for the Project P.</span></p><p>Relations:<br/>
 <code>Software Project Measurement Plan (0..*) defined for (1..1) Software Project<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSMO_Software-Related+Measure_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Software-Related Measure<strong></td></tr>
-</table><br/>
-<b>RSMO::Software-Related Measure</b><br/>
-Specializes COM::Measure<br/><br/>
-Measure used to quantify Measurable Elements of Measurable Software-Related Entities.<br/>
-E.g.:<i> the software-related measure number of lines of code could be used to quantify the measurable element size of measurable-related entities of the Software type.</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSMO_Software-Related+Measure_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Software-Related Measure</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSMO::Software-Related Measure</span><br/>Specializes COM::Measure</p><p>Measure used to quantify Measurable Elements of Measurable Software-Related Entities.<br/>E.g.:<span class="font-italic"> the software-related measure number of lines of code could be used to quantify the measurable element size of measurable-related entities of the Software type.</span></p><p>Relations:<br/>
 <code>Measure Description (0..*) describes (1..1) Software-Related Measure<br/>
 Software Measurement Execution (0..*) applies (1..1) Software-Related Measure<br/>
 Operational Definition of Measure (0..*) defined for (1..1) Software-Related Measure<br/>
 Software Measurement Analysis (0..*) considers (1..*) Software-Related Measure<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-</p>					
+
 				</div>
 				
 			</main>
 	
-    <footer class="footer">
-      <div class="container-fluid">
-        <span class="text-muted">Powered by NEMO.</span>
-        <span class="text-muted"><small><b>Reference Software Measurement Ontology (RSMO)</b></small></span>
-        <span class="text-muted"><small>Thu Nov 18 16:11:33 BRT 2021</small></span>		
+    <footer class="p-5 rounded border-top">
+      <div class="row">
+      	<div class="col">
+      		  <span class="text-muted">Powered by NEMO.</span>
+      	</div>
+      	<div class="col">
+      		<span><small><b>Reference Software Measurement Ontology (RSMO)</b></small></span>
+      	</div>
+      	<div class="col">
+      		<span class="text-muted"><small>Mon Nov 22 22:03:46 BRT 2021</small></span>	
+      	</div>
       </div>
     </footer>
 	   

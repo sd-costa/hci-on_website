@@ -18,7 +18,7 @@
 	    <!-- Custom styles for this template -->
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/navbar-top-fixed.css" rel="stylesheet">
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/sticky-footer-navbar.css" rel="stylesheet">
-	       
+	    <link href="../resources/static/bootstrap-5.1.3-dist/css/carousel.css" rel="stylesheet">
 
 	    <style>
 	      .bd-placeholder-img {
@@ -36,7 +36,7 @@
 	        }
 	      }
 
-	      .h1, h1 {
+	      .h2, .h3, h2, h3 {
 	      	margin-bottom: 2.5rem;
 	      }
 
@@ -44,6 +44,9 @@
 	      	font-size: 2rem;
 	      }
 
+	      .featurette-heading {
+	        margin-top: 0;
+	      }
 	    </style>
 
 	    
@@ -131,7 +134,7 @@
 	            RSRO
 	          </a>
 	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item" href="#ontologydescription" >Ontology Description</a></li>
+	            <li><a class="dropdown-item" href="#ontologydescription">Ontology Description</a></li>
 	            <li><a class="dropdown-item" href="#relatedontologies">Related Ontologies</a></li>
 	            <li><a class="dropdown-item" href="#ontologymodels">Ontology Models</a></li>
 	            <li><a class="dropdown-item" href="#conceptsdefinition">Concepts Definition</a></li>
@@ -157,21 +160,27 @@
 
 		<!-- Begin page content -->
     <main role="main" class="container-fluid">	
-    		<div class="container-fluid d-flex justify-content-end"><span class="badge badge-danger"></span></div>
+    		
 				<!--<div class="bg-light p-5 rounded" id="ontologydescription">
     			<h1 class="featurette-heading">The Reference Software Requirements Ontology (RSRO)</h1>
 					<p class="lead" align="justify"><span class="text-muted font-weight-bold font-italic">Ontology Description. </span>The Reference Software Requirements Ontology (RSRO) aims at being a reference for software requirements notions. RSRO is centered in the conception of requirement as a goal to be achieved, and addresses the distinction between functional and non-functional requirements, how requirements are documented in proper artifacts, among others. Since RSRO provides the technical concepts for requirements, it is reused in other SEON networked ontologies.</p>
-					<p class="lead text-right text-muted font-italic">- domain ontology from SEON. </p>
+					<p class="lead text-right text-muted font-italic"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"><path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg> domain ontology from SEON</p>
     		</div>-->
 
-				<div class="bg-light p-5 rounded" id="ontologydescription">
+				<div class="bg-light p-5 rounded">
+					<div class="container-fluid d-flex justify-content-end"><span class="badge badge-danger text-lowercase"></span></div>
     			<h1 class="featurette-heading">The Reference Software Requirements Ontology (RSRO)</h1>
-    				<h2 class="featurette-heading d-inline font-italic">Ontology Description. </h2>
-    				<p class="lead d-inline" align="justify">The Reference Software Requirements Ontology (RSRO) aims at being a reference for software requirements notions. RSRO is centered in the conception of requirement as a goal to be achieved, and addresses the distinction between functional and non-functional requirements, how requirements are documented in proper artifacts, among others. Since RSRO provides the technical concepts for requirements, it is reused in other SEON networked ontologies.</p>
-    				<p class="lead text-right text-muted font-italic">- domain ontology from SEON. </p>
+    			<p class="lead text-right text-muted font-italic"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"><path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg> domain ontology from SEON</p>
+    		</div>
+	
+				<hr> 
+				   		
+    		<div class="p-5 rounded" id="ontologydescription">
+  				<h2 class="featurette-heading">1. Ontology Description</h2>
+  				<p class="lead" align="justify">The Reference Software Requirements Ontology (RSRO) aims at being a reference for software requirements notions. RSRO is centered in the conception of requirement as a goal to be achieved, and addresses the distinction between functional and non-functional requirements, how requirements are documented in proper artifacts, among others. Since RSRO provides the technical concepts for requirements, it is reused in other SEON networked ontologies.</p>
     		</div>
 
-				<hr class="featurette-divider">
+				<hr>
 
 				<div class="p-5 rounded" id="relatedontologies">
 					<h2 class="featurette-heading">2. Related Ontologies</h2>
@@ -199,7 +208,7 @@
 
 				</div>	
 
-				<hr class="featurette-divider">
+				<hr>
     	
 				<div class="p-5 rounded" id="ontologymodels">
 					<h2 class="featurette-heading">3. Ontology Models</h2>
@@ -238,13 +247,107 @@
 </p>					
 				</div>
 
-				<hr class="featurette-divider">
+				<hr>
 
 				<div class="p-5 rounded" id="conceptsdefinition">
 					<h2 class="featurette-heading">4. Concepts Definition</h2>
 					<p class="lead">The following table shows the definitions for RSRO concepts.</p>		
 					<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->				
-					<table style="width: 100%" border="1" cellpadding="6">
+					<div class="table-responsive">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th scope="col">Concept</th>
+									<th scope="col">Definition</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+<td><a name="RSRO_Assumption"><b>Assumption</b></a>
+<a href=#RSRO_Assumption_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Assumptions describe states-of-affairs in the environment of interest that the Stakeholders believe to be true, i.e., they are the propositional content of Stakeholders' Beliefs. They express the belief that a specific situation exists in the environment.
+<br/></td>
+</tr>
+<tr>
+<td><a name="RSRO_Functional+Requirement"><b>Functional Requirement</b></a>
+<a href=#RSRO_Functional+Requirement_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Requirement defining a function to be available in the product being built.
+<br/>E.g.:<i> The need for the system to control client orders.</i></td>
+</tr>
+<tr>
+<td><a name="RSRO_Non-Functional+Requirement"><b>Non-Functional Requirement</b></a>
+<a href=#RSRO_Non-Functional+Requirement_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Requirement defining criteria or capabilities for the product.
+<br/>E.g.:<i> Being accessible from some specific browsers, Being in conformance with a standard, Performing a function in an established time.</i></td>
+</tr>
+<tr>
+<td><a name="RSRO_Product+Quality+Requirement"><b>Product Quality Requirement</b></a>
+<a href=#RSRO_Product+Quality+Requirement_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Non-Functional Requirement referring to a Quality Characteristic of the software product.
+<br/>E.g.:<i> Being accessible from some specific browsers, Performing a function in an established time.</i></td>
+</tr>
+<tr>
+<td><a name="RSRO_Quality+Characteristic"><b>Quality Characteristic</b></a>
+<a href=#RSRO_Quality+Characteristic_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Quality Universal denoting the types of quality characteristics expected in a software.
+<br/>E.g.:<i> reliability, usability, efficiency, maintainability, portability.</i></td>
+</tr>
+<tr>
+<td><a name="RSRO_Requirement"><b>Requirement</b></a>
+<a href=#RSRO_Requirement_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Goal to be achieved, representing a condition or capacity needed for the system users for solving a problem.
+<br/>E.g.:<i> Providing a product register; Performing a function in an established time.</i></td>
+</tr>
+<tr>
+<td><a name="RSRO_Requirement+Artifact"><b>Requirement Artifact</b></a>
+<a href=#RSRO_Requirement+Artifact_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Information Item describing a Requirement.
+<br/>E.g.:<i> "The system shall provide a product register.", "The system shall control the client orders.", "The system shall be operable from Google Chrome version 32+."</i></td>
+</tr>
+<tr>
+<td><a name="RSRO_Requirements+Document"><b>Requirements Document</b></a>
+<a href=#RSRO_Requirements+Document_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Document composed of Documented Requirements and related information, as a basis for other technical software processes, including maintenance.
+<br/>E.g.:<i> the Requirements Document of the Alfa Project.</i></td>
+</tr>
+<tr>
+<td><a name="RSRO_Requirements+Engineer"><b>Requirements Engineer</b></a>
+<a href=#RSRO_Requirements+Engineer_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Stakeholder responsible for conducting the requirements development activities.
+<br/>E.g.:<i> an organization employee assigned as Requirements Engineer in the requirements development activities.</i></td>
+</tr>
+<tr>
+<td><a name="RSRO_Requirements+Stakeholder"><b>Requirements Stakeholder</b></a>
+<a href=#RSRO_Requirements+Stakeholder_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Stakeholder that provides needs and expectations for the product.
+<br/>E.g.:<i> users, operators, customers, suppliers.</i></td>
+</tr>
+<tr>
+<td><a name="RSRO_Software+Function+Universal"><b>Software Function Universal</b></a>
+<a href=#RSRO_Software+Function+Universal_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Function Universal denoting the types of functions expected in a software.
+<br/>E.g.:<i> Controlling client orders.</i></td>
+</tr>
+<tr>
+<td><a name="RSRO_Stakeholder+Belief"><b>Stakeholder Belief</b></a>
+<a href=#RSRO_Stakeholder+Belief_detail><img src="images/plus-4-16.ico"></a></td>
+<td>The belief of Requirements Stakeholders regarding the environment of interest that are described in terms of Assumptions.
+<br/></td>
+</tr>
+<tr>
+<td><a name="RSRO_Stakeholder+Intention"><b>Stakeholder Intention</b></a>
+<a href=#RSRO_Stakeholder+Intention_detail><img src="images/plus-4-16.ico"></a></td>
+<td>The intention of Requirements Stakeholders that defines requirements to be achieved.
+<br/></td>
+</tr>
+
+							</tbody>
+						</table>
+  				</div>
+
+
+
+				<!--	<table style="width: 100%" border="1" cellpadding="6">
 						<tbody>
 							<tr style="background-color: #D8D8D8">
 								<td style="width: 25%"><b>Concept</b></td>
@@ -252,189 +355,128 @@
 							</tr>
 							<tr>
 <td><a name="RSRO_Assumption"><b>Assumption</b></a>
-<a href=#RSRO_Assumption_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSRO_Assumption_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Assumptions describe states-of-affairs in the environment of interest that the Stakeholders believe to be true, i.e., they are the propositional content of Stakeholders' Beliefs. They express the belief that a specific situation exists in the environment.
 <br/></td>
 </tr>
 <tr>
 <td><a name="RSRO_Functional+Requirement"><b>Functional Requirement</b></a>
-<a href=#RSRO_Functional+Requirement_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSRO_Functional+Requirement_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Requirement defining a function to be available in the product being built.
 <br/>E.g.:<i> The need for the system to control client orders.</i></td>
 </tr>
 <tr>
 <td><a name="RSRO_Non-Functional+Requirement"><b>Non-Functional Requirement</b></a>
-<a href=#RSRO_Non-Functional+Requirement_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSRO_Non-Functional+Requirement_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Requirement defining criteria or capabilities for the product.
 <br/>E.g.:<i> Being accessible from some specific browsers, Being in conformance with a standard, Performing a function in an established time.</i></td>
 </tr>
 <tr>
 <td><a name="RSRO_Product+Quality+Requirement"><b>Product Quality Requirement</b></a>
-<a href=#RSRO_Product+Quality+Requirement_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSRO_Product+Quality+Requirement_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Non-Functional Requirement referring to a Quality Characteristic of the software product.
 <br/>E.g.:<i> Being accessible from some specific browsers, Performing a function in an established time.</i></td>
 </tr>
 <tr>
 <td><a name="RSRO_Quality+Characteristic"><b>Quality Characteristic</b></a>
-<a href=#RSRO_Quality+Characteristic_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSRO_Quality+Characteristic_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Quality Universal denoting the types of quality characteristics expected in a software.
 <br/>E.g.:<i> reliability, usability, efficiency, maintainability, portability.</i></td>
 </tr>
 <tr>
 <td><a name="RSRO_Requirement"><b>Requirement</b></a>
-<a href=#RSRO_Requirement_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSRO_Requirement_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Goal to be achieved, representing a condition or capacity needed for the system users for solving a problem.
 <br/>E.g.:<i> Providing a product register; Performing a function in an established time.</i></td>
 </tr>
 <tr>
 <td><a name="RSRO_Requirement+Artifact"><b>Requirement Artifact</b></a>
-<a href=#RSRO_Requirement+Artifact_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSRO_Requirement+Artifact_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Information Item describing a Requirement.
 <br/>E.g.:<i> "The system shall provide a product register.", "The system shall control the client orders.", "The system shall be operable from Google Chrome version 32+."</i></td>
 </tr>
 <tr>
 <td><a name="RSRO_Requirements+Document"><b>Requirements Document</b></a>
-<a href=#RSRO_Requirements+Document_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSRO_Requirements+Document_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Document composed of Documented Requirements and related information, as a basis for other technical software processes, including maintenance.
 <br/>E.g.:<i> the Requirements Document of the Alfa Project.</i></td>
 </tr>
 <tr>
 <td><a name="RSRO_Requirements+Engineer"><b>Requirements Engineer</b></a>
-<a href=#RSRO_Requirements+Engineer_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSRO_Requirements+Engineer_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Stakeholder responsible for conducting the requirements development activities.
 <br/>E.g.:<i> an organization employee assigned as Requirements Engineer in the requirements development activities.</i></td>
 </tr>
 <tr>
 <td><a name="RSRO_Requirements+Stakeholder"><b>Requirements Stakeholder</b></a>
-<a href=#RSRO_Requirements+Stakeholder_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSRO_Requirements+Stakeholder_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Stakeholder that provides needs and expectations for the product.
 <br/>E.g.:<i> users, operators, customers, suppliers.</i></td>
 </tr>
 <tr>
 <td><a name="RSRO_Software+Function+Universal"><b>Software Function Universal</b></a>
-<a href=#RSRO_Software+Function+Universal_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSRO_Software+Function+Universal_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Function Universal denoting the types of functions expected in a software.
 <br/>E.g.:<i> Controlling client orders.</i></td>
 </tr>
 <tr>
 <td><a name="RSRO_Stakeholder+Belief"><b>Stakeholder Belief</b></a>
-<a href=#RSRO_Stakeholder+Belief_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSRO_Stakeholder+Belief_detail><img src="images/plus-4-16.ico"></a></td>
 <td>The belief of Requirements Stakeholders regarding the environment of interest that are described in terms of Assumptions.
 <br/></td>
 </tr>
 <tr>
 <td><a name="RSRO_Stakeholder+Intention"><b>Stakeholder Intention</b></a>
-<a href=#RSRO_Stakeholder+Intention_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RSRO_Stakeholder+Intention_detail><img src="images/plus-4-16.ico"></a></td>
 <td>The intention of Requirements Stakeholders that defines requirements to be achieved.
 <br/></td>
 </tr>
 
 						</tbody>
-					</table>
+					</table>-->
 
 				</div>
 
-				<hr class="featurette-divider">		
+				<hr>		
 
-				<div class="container p-5 rounded" id="detailedconcepts">
+				<div class="p-5 rounded" id="detailedconcepts">
 					<h2 class="featurette-heading">5. Detailed Concepts</h2>
-					<p class="lead"><a name="RSRO_Assumption_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Assumption<strong></td></tr>
-</table><br/>
-<b>RSRO::Assumption</b><br/>
-Specializes UFO::Proposition<br/><br/>
-Assumptions describe states-of-affairs in the environment of interest that the Stakeholders believe to be true, i.e., they are the propositional content of Stakeholders' Beliefs. They express the belief that a specific situation exists in the environment.<br/>
-<br/>
-<br/>
-Relations:<br/>
+					<p class="lead">Reference Software Requirements Ontology (RSRO) detailed concepts.</p>					
+					<hr><div class="container-fluid" id="RSRO_Assumption_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Assumption</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSRO::Assumption</span><br/>Specializes UFO::Proposition</p><p>Assumptions describe states-of-affairs in the environment of interest that the Stakeholders believe to be true, i.e., they are the propositional content of Stakeholders' Beliefs. They express the belief that a specific situation exists in the environment.<br/></p><p>Relations:<br/>
 <code>Assumption (1..1) propostional content of (1..*) Stakeholder Belief<br/>
 Assumption (1..1) /elicited from (1..*) Requirements Stakeholder<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSRO_Functional+Requirement_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltmode&gt&gt</code><br/>
-<strong>Functional Requirement<strong></td></tr>
-</table><br/>
-<b>RSRO::Functional Requirement</b><br/>
-Specializes RSRO::Requirement<br/><br/>
-Requirement defining a function to be available in the product being built.<br/>
-E.g.:<i> The need for the system to control client orders.</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSRO_Functional+Requirement_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltmode&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Functional Requirement</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSRO::Functional Requirement</span><br/>Specializes RSRO::Requirement</p><p>Requirement defining a function to be available in the product being built.<br/>E.g.:<span class="font-italic"> The need for the system to control client orders.</span></p><p>Relations:<br/>
 <code>Functional Requirement (0..*) refers to (1..1) Software Function Universal<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSRO_Non-Functional+Requirement_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltmode&gt&gt</code><br/>
-<strong>Non-Functional Requirement<strong></td></tr>
-</table><br/>
-<b>RSRO::Non-Functional Requirement</b><br/>
-Specializes RSRO::Requirement<br/><br/>
-Requirement defining criteria or capabilities for the product.<br/>
-E.g.:<i> Being accessible from some specific browsers, Being in conformance with a standard, Performing a function in an established time.</i><br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="RSRO_Non-Functional+Requirement_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltmode&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Non-Functional Requirement</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSRO::Non-Functional Requirement</span><br/>Specializes RSRO::Requirement</p><p>Requirement defining criteria or capabilities for the product.<br/>E.g.:<span class="font-italic"> Being accessible from some specific browsers, Being in conformance with a standard, Performing a function in an established time.</span></p><p></p></div></div>
 
-<a name="RSRO_Product+Quality+Requirement_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltmode&gt&gt</code><br/>
-<strong>Product Quality Requirement<strong></td></tr>
-</table><br/>
-<b>RSRO::Product Quality Requirement</b><br/>
-Specializes RSRO::Non-Functional Requirement<br/><br/>
-Non-Functional Requirement referring to a Quality Characteristic of the software product.<br/>
-E.g.:<i> Being accessible from some specific browsers, Performing a function in an established time.</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSRO_Product+Quality+Requirement_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltmode&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Product Quality Requirement</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSRO::Product Quality Requirement</span><br/>Specializes RSRO::Non-Functional Requirement</p><p>Non-Functional Requirement referring to a Quality Characteristic of the software product.<br/>E.g.:<span class="font-italic"> Being accessible from some specific browsers, Performing a function in an established time.</span></p><p>Relations:<br/>
 <code>Product Quality Requirement (0..*) refers to (1..1) Quality Characteristic<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSRO_Quality+Characteristic_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&lt2ndOT&gt&gt</code><br/>
-<strong>Quality Characteristic<strong></td></tr>
-</table><br/>
-<b>RSRO::Quality Characteristic</b><br/>
-Specializes UFO::Quality Universal<br/><br/>
-Quality Universal denoting the types of quality characteristics expected in a software.<br/>
-E.g.:<i> reliability, usability, efficiency, maintainability, portability.</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSRO_Quality+Characteristic_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&lt2ndOT&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Quality Characteristic</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSRO::Quality Characteristic</span><br/>Specializes UFO::Quality Universal</p><p>Quality Universal denoting the types of quality characteristics expected in a software.<br/>E.g.:<span class="font-italic"> reliability, usability, efficiency, maintainability, portability.</span></p><p>Relations:<br/>
 <code>Program (0..*) implements (0..*) Quality Characteristic<br/>
 User Interface Program (0..*) implements (1..*) Quality Characteristic<br/>
 Product Quality Requirement (0..*) refers to (1..1) Quality Characteristic<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSRO_Requirement_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltmode&gt&gt</code><br/>
-<strong>Requirement<strong></td></tr>
-</table><br/>
-<b>RSRO::Requirement</b><br/>
-Specializes UFO::Goal<br/><br/>
-Goal to be achieved, representing a condition or capacity needed for the system users for solving a problem.<br/>
-E.g.:<i> Providing a product register; Performing a function in an established time.</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSRO_Requirement_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltmode&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Requirement</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSRO::Requirement</span><br/>Specializes UFO::Goal</p><p>Goal to be achieved, representing a condition or capacity needed for the system users for solving a problem.<br/>E.g.:<span class="font-italic"> Providing a product register; Performing a function in an established time.</span></p><p>Relations:<br/>
 <code>Requirement (0..*) /elicited from (1..*) Requirements Stakeholder<br/>
 Requirement (1..*) propositional content of (1..*) Stakeholder Intention<br/>
 Mental Software Design Choice (0..*) motivated by (0..*) Requirement<br/>
 Requirement Artifact (0..*) describes (1..1) Requirement<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSRO_Requirement+Artifact_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Requirement Artifact<strong></td></tr>
-</table><br/>
-<b>RSRO::Requirement Artifact</b><br/>
-Specializes SysSwO::Atomic Sw Artifact, SysSwO::Information Item<br/><br/>
-Information Item describing a Requirement.<br/>
-E.g.:<i> "The system shall provide a product register.", "The system shall control the client orders.", "The system shall be operable from Google Chrome version 32+."</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSRO_Requirement+Artifact_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Requirement Artifact</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSRO::Requirement Artifact</span><br/>Specializes SysSwO::Atomic Sw Artifact, SysSwO::Information Item</p><p>Information Item describing a Requirement.<br/>E.g.:<span class="font-italic"> "The system shall provide a product register.", "The system shall control the client orders.", "The system shall be operable from Google Chrome version 32+."</span></p><p>Relations:<br/>
 <code>Requirement Artifact (0..*) describes (1..1) Requirement<br/>
 Program (0..*) \intends to satisfy (1..*) Requirement Artifact<br/>
 Requirements Document (0..1) <>-- (1..*) Requirement Artifact<br/>
@@ -445,19 +487,10 @@ Requirements Stakeholder (1..*) interested in (1..*) Requirement Artifact  &lt&l
 Requirements Negotiation and Prioritization changes Requirement Artifact<br/>
 Requirements Documentation uses Requirement Artifact<br/>
 Software Design Choice (0..*) /motivated by (0..*) Requirement Artifact<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSRO_Requirements+Document_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Requirements Document<strong></td></tr>
-</table><br/>
-<b>RSRO::Requirements Document</b><br/>
-Specializes SysSwO::Document, SysSwO::Complex Sw Artifact<br/><br/>
-Document composed of Documented Requirements and related information, as a basis for other technical software processes, including maintenance.<br/>
-E.g.:<i> the Requirements Document of the Alfa Project.</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSRO_Requirements+Document_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Requirements Document</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSRO::Requirements Document</span><br/>Specializes SysSwO::Document, SysSwO::Complex Sw Artifact</p><p>Document composed of Documented Requirements and related information, as a basis for other technical software processes, including maintenance.<br/>E.g.:<span class="font-italic"> the Requirements Document of the Alfa Project.</span></p><p>Relations:<br/>
 <code>Requirements Document (0..1) <>-- (1..*) Requirement Artifact<br/>
 Requirements Document describes Conceptual Model<br/>
 Coding uses Requirements Document<br/>
@@ -469,38 +502,20 @@ Requirements Negotiation and Prioritization changes Requirements Document<br/>
 Requirements Verification and Validation uses Requirements Document<br/>
 Requirements Engineer (1..*) responsible for (0..*) Requirements Document<br/>
 Requirements Documentation creates Requirements Document<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSRO_Requirements+Engineer_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltrole&gt&gt</code><br/>
-<strong>Requirements Engineer<strong></td></tr>
-</table><br/>
-<b>RSRO::Requirements Engineer</b><br/>
-Specializes SPO::Stakeholder<br/><br/>
-Stakeholder responsible for conducting the requirements development activities.<br/>
-E.g.:<i> an organization employee assigned as Requirements Engineer in the requirements development activities.</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSRO_Requirements+Engineer_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltrole&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Requirements Engineer</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSRO::Requirements Engineer</span><br/>Specializes SPO::Stakeholder</p><p>Stakeholder responsible for conducting the requirements development activities.<br/>E.g.:<span class="font-italic"> an organization employee assigned as Requirements Engineer in the requirements development activities.</span></p><p>Relations:<br/>
 <code>Requirements Engineer is in charge of Requirements Elicitation<br/>
 Requirements Engineer is in charge of Conceptual Modeling<br/>
 Requirements Engineer participates in Requirements Verification and Validation<br/>
 Requirements Engineer is in charge of Requirements Negotiation and Prioritization<br/>
 Requirements Engineer (1..*) responsible for (0..*) Requirements Document<br/>
 Requirements Engineer is in charge of Requirements Documentation<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSRO_Requirements+Stakeholder_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltrole&gt&gt</code><br/>
-<strong>Requirements Stakeholder<strong></td></tr>
-</table><br/>
-<b>RSRO::Requirements Stakeholder</b><br/>
-Specializes SPO::Stakeholder, SPO::Person Stakeholder<br/><br/>
-Stakeholder that provides needs and expectations for the product.<br/>
-E.g.:<i> users, operators, customers, suppliers.</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSRO_Requirements+Stakeholder_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltrole&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Requirements Stakeholder</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSRO::Requirements Stakeholder</span><br/>Specializes SPO::Stakeholder, SPO::Person Stakeholder</p><p>Stakeholder that provides needs and expectations for the product.<br/>E.g.:<span class="font-italic"> users, operators, customers, suppliers.</span></p><p>Relations:<br/>
 <code>Requirements Stakeholder participates in Requirements Elicitation<br/>
 Requirements Stakeholder participates in Requirements Negotiation and Prioritization<br/>
 Requirements Stakeholder participates in Requirements Verification and Validation<br/>
@@ -509,64 +524,42 @@ Stakeholder Belief (0..*) inheres in (1..*) Requirements Stakeholder<br/>
 Assumption (1..1) /elicited from (1..*) Requirements Stakeholder<br/>
 Stakeholder Intention (0..*) inheres in (1..*) Requirements Stakeholder<br/>
 Requirement (0..*) /elicited from (1..*) Requirements Stakeholder<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSRO_Software+Function+Universal_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&lt2ndOT&gt&gt</code><br/>
-<strong>Software Function Universal<strong></td></tr>
-</table><br/>
-<b>RSRO::Software Function Universal</b><br/>
-Specializes UFO::Function Universal<br/><br/>
-Function Universal denoting the types of functions expected in a software.<br/>
-E.g.:<i> Controlling client orders.</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSRO_Software+Function+Universal_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&lt2ndOT&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Software Function Universal</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSRO::Software Function Universal</span><br/>Specializes UFO::Function Universal</p><p>Function Universal denoting the types of functions expected in a software.<br/>E.g.:<span class="font-italic"> Controlling client orders.</span></p><p>Relations:<br/>
 <code>Program (0..*) implements (1..*) Software Function Universal<br/>
 Software Function (0..*) instance of (1..*) Software Function Universal<br/>
 Program Specification (0..*) describes (1..*) Software Function Universal<br/>
 Functional Requirement (0..*) refers to (1..1) Software Function Universal<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSRO_Stakeholder+Belief_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Stakeholder Belief<strong></td></tr>
-</table><br/>
-<b>RSRO::Stakeholder Belief</b><br/>
-Specializes UFO::Belief<br/><br/>
-The belief of Requirements Stakeholders regarding the environment of interest that are described in terms of Assumptions.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSRO_Stakeholder+Belief_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Stakeholder Belief</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSRO::Stakeholder Belief</span><br/>Specializes UFO::Belief</p><p>The belief of Requirements Stakeholders regarding the environment of interest that are described in terms of Assumptions.<br/></p><p>Relations:<br/>
 <code>Stakeholder Belief (0..*) inheres in (1..*) Requirements Stakeholder<br/>
 Assumption (1..1) propostional content of (1..*) Stakeholder Belief<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RSRO_Stakeholder+Intention_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Stakeholder Intention<strong></td></tr>
-</table><br/>
-<b>RSRO::Stakeholder Intention</b><br/>
-Specializes UFO::Intention<br/><br/>
-The intention of Requirements Stakeholders that defines requirements to be achieved.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RSRO_Stakeholder+Intention_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Stakeholder Intention</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RSRO::Stakeholder Intention</span><br/>Specializes UFO::Intention</p><p>The intention of Requirements Stakeholders that defines requirements to be achieved.<br/></p><p>Relations:<br/>
 <code>Stakeholder Intention (0..*) inheres in (1..*) Requirements Stakeholder<br/>
 Requirement (1..*) propositional content of (1..*) Stakeholder Intention<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-</p>					
+
 				</div>
 				
 			</main>
 	
-    <footer class="footer">
-      <div class="container-fluid">
-        <span class="text-muted">Powered by NEMO.</span>
-        <span class="text-muted"><small><b>Reference Software Requirements Ontology (RSRO)</b></small></span>
-        <span class="text-muted"><small>Thu Nov 18 16:11:33 BRT 2021</small></span>		
+    <footer class="p-5 rounded border-top">
+      <div class="row">
+      	<div class="col">
+      		  <span class="text-muted">Powered by NEMO.</span>
+      	</div>
+      	<div class="col">
+      		<span><small><b>Reference Software Requirements Ontology (RSRO)</b></small></span>
+      	</div>
+      	<div class="col">
+      		<span class="text-muted"><small>Mon Nov 22 22:03:46 BRT 2021</small></span>	
+      	</div>
       </div>
     </footer>
 	   

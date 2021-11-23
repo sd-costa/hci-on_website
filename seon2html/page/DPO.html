@@ -18,7 +18,7 @@
 	    <!-- Custom styles for this template -->
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/navbar-top-fixed.css" rel="stylesheet">
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/sticky-footer-navbar.css" rel="stylesheet">
-	       
+	    <link href="../resources/static/bootstrap-5.1.3-dist/css/carousel.css" rel="stylesheet">
 
 	    <style>
 	      .bd-placeholder-img {
@@ -36,7 +36,7 @@
 	        }
 	      }
 
-	      .h1, h1 {
+	      .h2, .h3, h2, h3 {
 	      	margin-bottom: 2.5rem;
 	      }
 
@@ -44,6 +44,9 @@
 	      	font-size: 2rem;
 	      }
 
+	      .featurette-heading {
+	        margin-top: 0;
+	      }
 	    </style>
 
 	    
@@ -131,7 +134,7 @@
 	            DPO
 	          </a>
 	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item" href="#ontologydescription" >Ontology Description</a></li>
+	            <li><a class="dropdown-item" href="#ontologydescription">Ontology Description</a></li>
 	            <li><a class="dropdown-item" href="#relatedontologies">Related Ontologies</a></li>
 	            <li><a class="dropdown-item" href="#ontologymodels">Ontology Models</a></li>
 	            <li><a class="dropdown-item" href="#conceptsdefinition">Concepts Definition</a></li>
@@ -157,21 +160,27 @@
 
 		<!-- Begin page content -->
     <main role="main" class="container-fluid">	
-    		<div class="container-fluid d-flex justify-content-end"><span class="badge badge-danger"></span></div>
+    		
 				<!--<div class="bg-light p-5 rounded" id="ontologydescription">
     			<h1 class="featurette-heading">The Design Process Ontology (DPO)</h1>
 					<p class="lead" align="justify"><span class="text-muted font-weight-bold font-italic">Ontology Description. </span>The Design Process Ontology (DPO) aims at representing the activities, artifacts and stakeholders involved in the software Design Process. DPO is in the core of the technical processes in software development, thus it reuses some concepts from other SEON networked ontologies, as well provides some concepts for reusing.</p>
-					<p class="lead text-right text-muted font-italic">- domain ontology from SEON. </p>
+					<p class="lead text-right text-muted font-italic"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"><path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg> domain ontology from SEON</p>
     		</div>-->
 
-				<div class="bg-light p-5 rounded" id="ontologydescription">
+				<div class="bg-light p-5 rounded">
+					<div class="container-fluid d-flex justify-content-end"><span class="badge badge-danger text-lowercase"></span></div>
     			<h1 class="featurette-heading">The Design Process Ontology (DPO)</h1>
-    				<h2 class="featurette-heading d-inline font-italic">Ontology Description. </h2>
-    				<p class="lead d-inline" align="justify">The Design Process Ontology (DPO) aims at representing the activities, artifacts and stakeholders involved in the software Design Process. DPO is in the core of the technical processes in software development, thus it reuses some concepts from other SEON networked ontologies, as well provides some concepts for reusing.</p>
-    				<p class="lead text-right text-muted font-italic">- domain ontology from SEON. </p>
+    			<p class="lead text-right text-muted font-italic"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"><path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg> domain ontology from SEON</p>
+    		</div>
+	
+				<hr> 
+				   		
+    		<div class="p-5 rounded" id="ontologydescription">
+  				<h2 class="featurette-heading">1. Ontology Description</h2>
+  				<p class="lead" align="justify">The Design Process Ontology (DPO) aims at representing the activities, artifacts and stakeholders involved in the software Design Process. DPO is in the core of the technical processes in software development, thus it reuses some concepts from other SEON networked ontologies, as well provides some concepts for reusing.</p>
     		</div>
 
-				<hr class="featurette-divider">
+				<hr>
 
 				<div class="p-5 rounded" id="relatedontologies">
 					<h2 class="featurette-heading">2. Related Ontologies</h2>
@@ -196,7 +205,7 @@
 
 				</div>	
 
-				<hr class="featurette-divider">
+				<hr>
     	
 				<div class="p-5 rounded" id="ontologymodels">
 					<h2 class="featurette-heading">3. Ontology Models</h2>
@@ -247,13 +256,173 @@
 </p>					
 				</div>
 
-				<hr class="featurette-divider">
+				<hr>
 
 				<div class="p-5 rounded" id="conceptsdefinition">
 					<h2 class="featurette-heading">4. Concepts Definition</h2>
 					<p class="lead">The following table shows the definitions for DPO concepts.</p>		
 					<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->				
-					<table style="width: 100%" border="1" cellpadding="6">
+					<div class="table-responsive">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th scope="col">Concept</th>
+									<th scope="col">Definition</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+<td><a name="DPO_Architectural+Component"><b>Architectural Component</b></a>
+<a href=#DPO_Architectural+Component_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Architectural Element describing a software module as part of an Architecture.
+<br/></td>
+</tr>
+<tr>
+<td><a name="DPO_Architectural+Connector"><b>Architectural Connector</b></a>
+<a href=#DPO_Architectural+Connector_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Architectural Element connecting two or more Components in an Architecture.
+<br/></td>
+</tr>
+<tr>
+<td><a name="DPO_Architectural+Design"><b>Architectural Design</b></a>
+<a href=#DPO_Architectural+Design_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity for making the high-level design choices, defining the Software Architecture and involved elements.
+<br/></td>
+</tr>
+<tr>
+<td><a name="DPO_Architectural+Element"><b>Architectural Element</b></a>
+<a href=#DPO_Architectural+Element_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Model Element referring to an Architectural Component or Connector, and its Interfaces.
+<br/></td>
+</tr>
+<tr>
+<td><a name="DPO_Architecture+Development"><b>Architecture Development</b></a>
+<a href=#DPO_Architecture+Development_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity aiming to produce the Software Architecture and specifying its Architectural Components and Connectors.
+<br/></td>
+</tr>
+<tr>
+<td><a name="DPO_Component+Design"><b>Component Design</b></a>
+<a href=#DPO_Component+Design_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity for refining each Architectural Component of a software.
+<br/></td>
+</tr>
+<tr>
+<td><a name="DPO_Component+Interface+Design"><b>Component Interface Design</b></a>
+<a href=#DPO_Component+Interface+Design_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity for refining each Interface Specification of a software.
+<br/></td>
+</tr>
+<tr>
+<td><a name="DPO_Data+Definitions"><b>Data Definitions</b></a>
+<a href=#DPO_Data+Definitions_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Information Item describing the high-level choices of how the software will manage data.
+<br/></td>
+</tr>
+<tr>
+<td><a name="DPO_Data+Design"><b>Data Design</b></a>
+<a href=#DPO_Data+Design_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity for producing a detailed Data Model for data storage and management.
+<br/></td>
+</tr>
+<tr>
+<td><a name="DPO_Data+High-level+Design"><b>Data High-level Design</b></a>
+<a href=#DPO_Data+High-level+Design_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity for establish the high-level choices regarding the software data.
+<br/>E.g.:<i> data management mechanisms, data distribution.</i></td>
+</tr>
+<tr>
+<td><a name="DPO_Data+Model"><b>Data Model</b></a>
+<a href=#DPO_Data+Model_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Model containing the physical and logical decisions on how to manage and storage the software data.
+<br/>E.g.:<i> a database schema.</i></td>
+</tr>
+<tr>
+<td><a name="DPO_Design+Document"><b>Design Document</b></a>
+<a href=#DPO_Design+Document_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Document specifying the design of a software, by depicting the software architecture, components, interfaces and data models, as well as other information regarding the design choices and decisions.
+<br/></td>
+</tr>
+<tr>
+<td><a name="DPO_Design+Documentation"><b>Design Documentation</b></a>
+<a href=#DPO_Design+Documentation_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity for registering the architectural and detailed design choices and decisions, producing a Design Document.
+<br/></td>
+</tr>
+<tr>
+<td><a name="DPO_Design+Evaluation"><b>Design Evaluation</b></a>
+<a href=#DPO_Design+Evaluation_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity for evaluating a Design Document, registering the identified issues.
+<br/></td>
+</tr>
+<tr>
+<td><a name="DPO_Design+Evaluation+Document"><b>Design Evaluation Document</b></a>
+<a href=#DPO_Design+Evaluation+Document_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Document registering the issues identified in a Design Document evaluation.
+<br/></td>
+</tr>
+<tr>
+<td><a name="DPO_Design+Process"><b>Design Process</b></a>
+<a href=#DPO_Design+Process_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Process for defining and specifying a solution to be implemented for a software product, considering the requirements for it. It is a refinement process starting with the software architecture, and going down to the design of its elements, interfaces, and other characteristics of a software, until achieving the design of implementation units.
+<br/></td>
+</tr>
+<tr>
+<td><a name="DPO_Designer"><b>Designer</b></a>
+<a href=#DPO_Designer_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Stakeholder responsible for making the Detailed Design choices for a software.
+<br/></td>
+</tr>
+<tr>
+<td><a name="DPO_Detailed+Design"><b>Detailed Design</b></a>
+<a href=#DPO_Detailed+Design_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity for refining a preliminary software design to the extent that it is sufficiently complete to be implemented. [ISO/IEC/IEEE 24765]
+<br/></td>
+</tr>
+<tr>
+<td><a name="DPO_Interface+High-level+Design"><b>Interface High-level Design</b></a>
+<a href=#DPO_Interface+High-level+Design_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity for specifying the Interfaces between Architectural Components and with external elements (users or other systems).
+<br/></td>
+</tr>
+<tr>
+<td><a name="DPO_Interface+Specification"><b>Interface Specification</b></a>
+<a href=#DPO_Interface+Specification_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Information Item describing an internal or external interface of a software architecture.
+<br/></td>
+</tr>
+<tr>
+<td><a name="DPO_Software+Architect"><b>Software Architect</b></a>
+<a href=#DPO_Software+Architect_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Stakeholder responsible for designing the Software Architecture.
+<br/></td>
+</tr>
+<tr>
+<td><a name="DPO_Software+Architecture"><b>Software Architecture</b></a>
+<a href=#DPO_Software+Architecture_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Model describing the fundamental structures of a software, including its components, how they are connected, and its internal and external interfaces.
+<br/></td>
+</tr>
+<tr>
+<td><a name="DPO_User+Interface+Design"><b>User Interface Design</b></a>
+<a href=#DPO_User+Interface+Design_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity for specifying the User Interfaces in detail.
+<br/></td>
+</tr>
+<tr>
+<td><a name="DPO_User+Interface+Specification"><b>User Interface Specification</b></a>
+<a href=#DPO_User+Interface+Specification_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Interface Specification focusing on the human-computer interaction.
+<br/></td>
+</tr>
+
+							</tbody>
+						</table>
+  				</div>
+
+
+
+				<!--	<table style="width: 100%" border="1" cellpadding="6">
 						<tbody>
 							<tr style="background-color: #D8D8D8">
 								<td style="width: 25%"><b>Concept</b></td>
@@ -261,338 +430,232 @@
 							</tr>
 							<tr>
 <td><a name="DPO_Architectural+Component"><b>Architectural Component</b></a>
-<a href=#DPO_Architectural+Component_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#DPO_Architectural+Component_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Architectural Element describing a software module as part of an Architecture.
 <br/></td>
 </tr>
 <tr>
 <td><a name="DPO_Architectural+Connector"><b>Architectural Connector</b></a>
-<a href=#DPO_Architectural+Connector_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#DPO_Architectural+Connector_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Architectural Element connecting two or more Components in an Architecture.
 <br/></td>
 </tr>
 <tr>
 <td><a name="DPO_Architectural+Design"><b>Architectural Design</b></a>
-<a href=#DPO_Architectural+Design_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#DPO_Architectural+Design_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity for making the high-level design choices, defining the Software Architecture and involved elements.
 <br/></td>
 </tr>
 <tr>
 <td><a name="DPO_Architectural+Element"><b>Architectural Element</b></a>
-<a href=#DPO_Architectural+Element_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#DPO_Architectural+Element_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Model Element referring to an Architectural Component or Connector, and its Interfaces.
 <br/></td>
 </tr>
 <tr>
 <td><a name="DPO_Architecture+Development"><b>Architecture Development</b></a>
-<a href=#DPO_Architecture+Development_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#DPO_Architecture+Development_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity aiming to produce the Software Architecture and specifying its Architectural Components and Connectors.
 <br/></td>
 </tr>
 <tr>
 <td><a name="DPO_Component+Design"><b>Component Design</b></a>
-<a href=#DPO_Component+Design_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#DPO_Component+Design_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity for refining each Architectural Component of a software.
 <br/></td>
 </tr>
 <tr>
 <td><a name="DPO_Component+Interface+Design"><b>Component Interface Design</b></a>
-<a href=#DPO_Component+Interface+Design_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#DPO_Component+Interface+Design_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity for refining each Interface Specification of a software.
 <br/></td>
 </tr>
 <tr>
 <td><a name="DPO_Data+Definitions"><b>Data Definitions</b></a>
-<a href=#DPO_Data+Definitions_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#DPO_Data+Definitions_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Information Item describing the high-level choices of how the software will manage data.
 <br/></td>
 </tr>
 <tr>
 <td><a name="DPO_Data+Design"><b>Data Design</b></a>
-<a href=#DPO_Data+Design_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#DPO_Data+Design_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity for producing a detailed Data Model for data storage and management.
 <br/></td>
 </tr>
 <tr>
 <td><a name="DPO_Data+High-level+Design"><b>Data High-level Design</b></a>
-<a href=#DPO_Data+High-level+Design_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#DPO_Data+High-level+Design_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity for establish the high-level choices regarding the software data.
 <br/>E.g.:<i> data management mechanisms, data distribution.</i></td>
 </tr>
 <tr>
 <td><a name="DPO_Data+Model"><b>Data Model</b></a>
-<a href=#DPO_Data+Model_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#DPO_Data+Model_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Model containing the physical and logical decisions on how to manage and storage the software data.
 <br/>E.g.:<i> a database schema.</i></td>
 </tr>
 <tr>
 <td><a name="DPO_Design+Document"><b>Design Document</b></a>
-<a href=#DPO_Design+Document_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#DPO_Design+Document_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Document specifying the design of a software, by depicting the software architecture, components, interfaces and data models, as well as other information regarding the design choices and decisions.
 <br/></td>
 </tr>
 <tr>
 <td><a name="DPO_Design+Documentation"><b>Design Documentation</b></a>
-<a href=#DPO_Design+Documentation_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#DPO_Design+Documentation_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity for registering the architectural and detailed design choices and decisions, producing a Design Document.
 <br/></td>
 </tr>
 <tr>
 <td><a name="DPO_Design+Evaluation"><b>Design Evaluation</b></a>
-<a href=#DPO_Design+Evaluation_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#DPO_Design+Evaluation_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity for evaluating a Design Document, registering the identified issues.
 <br/></td>
 </tr>
 <tr>
 <td><a name="DPO_Design+Evaluation+Document"><b>Design Evaluation Document</b></a>
-<a href=#DPO_Design+Evaluation+Document_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#DPO_Design+Evaluation+Document_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Document registering the issues identified in a Design Document evaluation.
 <br/></td>
 </tr>
 <tr>
 <td><a name="DPO_Design+Process"><b>Design Process</b></a>
-<a href=#DPO_Design+Process_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#DPO_Design+Process_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Process for defining and specifying a solution to be implemented for a software product, considering the requirements for it. It is a refinement process starting with the software architecture, and going down to the design of its elements, interfaces, and other characteristics of a software, until achieving the design of implementation units.
 <br/></td>
 </tr>
 <tr>
 <td><a name="DPO_Designer"><b>Designer</b></a>
-<a href=#DPO_Designer_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#DPO_Designer_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Stakeholder responsible for making the Detailed Design choices for a software.
 <br/></td>
 </tr>
 <tr>
 <td><a name="DPO_Detailed+Design"><b>Detailed Design</b></a>
-<a href=#DPO_Detailed+Design_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#DPO_Detailed+Design_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity for refining a preliminary software design to the extent that it is sufficiently complete to be implemented. [ISO/IEC/IEEE 24765]
 <br/></td>
 </tr>
 <tr>
 <td><a name="DPO_Interface+High-level+Design"><b>Interface High-level Design</b></a>
-<a href=#DPO_Interface+High-level+Design_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#DPO_Interface+High-level+Design_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity for specifying the Interfaces between Architectural Components and with external elements (users or other systems).
 <br/></td>
 </tr>
 <tr>
 <td><a name="DPO_Interface+Specification"><b>Interface Specification</b></a>
-<a href=#DPO_Interface+Specification_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#DPO_Interface+Specification_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Information Item describing an internal or external interface of a software architecture.
 <br/></td>
 </tr>
 <tr>
 <td><a name="DPO_Software+Architect"><b>Software Architect</b></a>
-<a href=#DPO_Software+Architect_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#DPO_Software+Architect_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Stakeholder responsible for designing the Software Architecture.
 <br/></td>
 </tr>
 <tr>
 <td><a name="DPO_Software+Architecture"><b>Software Architecture</b></a>
-<a href=#DPO_Software+Architecture_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#DPO_Software+Architecture_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Model describing the fundamental structures of a software, including its components, how they are connected, and its internal and external interfaces.
 <br/></td>
 </tr>
 <tr>
 <td><a name="DPO_User+Interface+Design"><b>User Interface Design</b></a>
-<a href=#DPO_User+Interface+Design_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#DPO_User+Interface+Design_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity for specifying the User Interfaces in detail.
 <br/></td>
 </tr>
 <tr>
 <td><a name="DPO_User+Interface+Specification"><b>User Interface Specification</b></a>
-<a href=#DPO_User+Interface+Specification_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#DPO_User+Interface+Specification_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Interface Specification focusing on the human-computer interaction.
 <br/></td>
 </tr>
 
 						</tbody>
-					</table>
+					</table>-->
 
 				</div>
 
-				<hr class="featurette-divider">		
+				<hr>		
 
-				<div class="container p-5 rounded" id="detailedconcepts">
+				<div class="p-5 rounded" id="detailedconcepts">
 					<h2 class="featurette-heading">5. Detailed Concepts</h2>
-					<p class="lead"><a name="DPO_Architectural+Component_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Architectural Component<strong></td></tr>
-</table><br/>
-<b>DPO::Architectural Component</b><br/>
-Specializes DPO::Architectural Element<br/><br/>
-Architectural Element describing a software module as part of an Architecture.<br/>
-<br/>
-<br/>
-Relations:<br/>
+					<p class="lead">Design Process Ontology (DPO) detailed concepts.</p>					
+					<hr><div class="container-fluid" id="DPO_Architectural+Component_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Architectural Component</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">DPO::Architectural Component</span><br/>Specializes DPO::Architectural Element</p><p>Architectural Element describing a software module as part of an Architecture.<br/></p><p>Relations:<br/>
 <code>Architectural Component (0..1) <>-- (0..*) Architectural Component<br/>
 Component Design changes Architectural Component<br/>
 Architectural Connector (1..*) conects (2..*) Architectural Component<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="DPO_Architectural+Connector_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Architectural Connector<strong></td></tr>
-</table><br/>
-<b>DPO::Architectural Connector</b><br/>
-Specializes DPO::Architectural Element<br/><br/>
-Architectural Element connecting two or more Components in an Architecture.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="DPO_Architectural+Connector_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Architectural Connector</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">DPO::Architectural Connector</span><br/>Specializes DPO::Architectural Element</p><p>Architectural Element connecting two or more Components in an Architecture.<br/></p><p>Relations:<br/>
 <code>Architectural Connector (1..*) conects (2..*) Architectural Component<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="DPO_Architectural+Design_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Architectural Design<strong></td></tr>
-</table><br/>
-<b>DPO::Architectural Design</b><br/>
-Specializes SPO::Performed Composite Activity<br/><br/>
-Activity for making the high-level design choices, defining the Software Architecture and involved elements.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="DPO_Architectural+Design_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Architectural Design</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">DPO::Architectural Design</span><br/>Specializes SPO::Performed Composite Activity</p><p>Activity for making the high-level design choices, defining the Software Architecture and involved elements.<br/></p><p>Relations:<br/>
 <code>Architectural Design uses Requirements Document<br/>
 Architectural Design <>-- Architecture Development<br/>
 Architectural Design <>-- Data High-level Design<br/>
 Architectural Design <>-- Interface High-level Design<br/>
 Design Process <>-- Architectural Design<br/>
 Software Architect is in charge of Architectural Design<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="DPO_Architectural+Element_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Architectural Element<strong></td></tr>
-</table><br/>
-<b>DPO::Architectural Element</b><br/>
-Specializes <br/><br/>
-Model Element referring to an Architectural Component or Connector, and its Interfaces.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="DPO_Architectural+Element_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Architectural Element</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">DPO::Architectural Element</span><br/>Specializes </p><p>Model Element referring to an Architectural Component or Connector, and its Interfaces.<br/></p><p>Relations:<br/>
 <code>Architectural Element (1..1) has (1..*) Interface Specification<br/>
 Software Architecture (1..1) <>-- (2..*) Architectural Element<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="DPO_Architecture+Development_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Architecture Development<strong></td></tr>
-</table><br/>
-<b>DPO::Architecture Development</b><br/>
-Specializes SPO::Performed Composite Activity, SPO::Performed Simple Activity<br/><br/>
-Activity aiming to produce the Software Architecture and specifying its Architectural Components and Connectors.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="DPO_Architecture+Development_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Architecture Development</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">DPO::Architecture Development</span><br/>Specializes SPO::Performed Composite Activity, SPO::Performed Simple Activity</p><p>Activity aiming to produce the Software Architecture and specifying its Architectural Components and Connectors.<br/></p><p>Relations:<br/>
 <code>Architecture Development creates Software Architecture<br/>
 Architectural Design <>-- Architecture Development<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="DPO_Component+Design_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Component Design<strong></td></tr>
-</table><br/>
-<b>DPO::Component Design</b><br/>
-Specializes SPO::Performed Simple Activity<br/><br/>
-Activity for refining each Architectural Component of a software.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="DPO_Component+Design_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Component Design</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">DPO::Component Design</span><br/>Specializes SPO::Performed Simple Activity</p><p>Activity for refining each Architectural Component of a software.<br/></p><p>Relations:<br/>
 <code>Component Design changes Architectural Component<br/>
 Detailed Design <>-- Component Design<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="DPO_Component+Interface+Design_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Component Interface Design<strong></td></tr>
-</table><br/>
-<b>DPO::Component Interface Design</b><br/>
-Specializes SPO::Performed Simple Activity<br/><br/>
-Activity for refining each Interface Specification of a software.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="DPO_Component+Interface+Design_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Component Interface Design</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">DPO::Component Interface Design</span><br/>Specializes SPO::Performed Simple Activity</p><p>Activity for refining each Interface Specification of a software.<br/></p><p>Relations:<br/>
 <code>Component Interface Design changes Interface Specification<br/>
 Detailed Design <>-- Component Interface Design<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="DPO_Data+Definitions_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Data Definitions<strong></td></tr>
-</table><br/>
-<b>DPO::Data Definitions</b><br/>
-Specializes SysSwO::Information Item<br/><br/>
-Information Item describing the high-level choices of how the software will manage data.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="DPO_Data+Definitions_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Data Definitions</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">DPO::Data Definitions</span><br/>Specializes SysSwO::Information Item</p><p>Information Item describing the high-level choices of how the software will manage data.<br/></p><p>Relations:<br/>
 <code>Data High-level Design creates Data Definitions<br/>
 Data Design uses Data Definitions<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="DPO_Data+Design_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Data Design<strong></td></tr>
-</table><br/>
-<b>DPO::Data Design</b><br/>
-Specializes SPO::Performed Simple Activity<br/><br/>
-Activity for producing a detailed Data Model for data storage and management.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="DPO_Data+Design_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Data Design</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">DPO::Data Design</span><br/>Specializes SPO::Performed Simple Activity</p><p>Activity for producing a detailed Data Model for data storage and management.<br/></p><p>Relations:<br/>
 <code>Data Design creates Data Model<br/>
 Data Design uses Data Definitions<br/>
 Detailed Design <>-- Data Design<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="DPO_Data+High-level+Design_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Data High-level Design<strong></td></tr>
-</table><br/>
-<b>DPO::Data High-level Design</b><br/>
-Specializes SPO::Performed Simple Activity<br/><br/>
-Activity for establish the high-level choices regarding the software data.<br/>
-E.g.:<i> data management mechanisms, data distribution.</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="DPO_Data+High-level+Design_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Data High-level Design</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">DPO::Data High-level Design</span><br/>Specializes SPO::Performed Simple Activity</p><p>Activity for establish the high-level choices regarding the software data.<br/>E.g.:<span class="font-italic"> data management mechanisms, data distribution.</span></p><p>Relations:<br/>
 <code>Data High-level Design creates Data Definitions<br/>
 Architectural Design <>-- Data High-level Design<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="DPO_Data+Model_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Data Model<strong></td></tr>
-</table><br/>
-<b>DPO::Data Model</b><br/>
-Specializes SysSwO::Model<br/><br/>
-Model containing the physical and logical decisions on how to manage and storage the software data.<br/>
-E.g.:<i> a database schema.</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="DPO_Data+Model_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Data Model</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">DPO::Data Model</span><br/>Specializes SysSwO::Model</p><p>Model containing the physical and logical decisions on how to manage and storage the software data.<br/>E.g.:<span class="font-italic"> a database schema.</span></p><p>Relations:<br/>
 <code>Design Document depicts Data Model<br/>
 Data Design creates Data Model<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="DPO_Design+Document_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Design Document<strong></td></tr>
-</table><br/>
-<b>DPO::Design Document</b><br/>
-Specializes SysSwO::Complex Sw Artifact, SysSwO::Document<br/><br/>
-Document specifying the design of a software, by depicting the software architecture, components, interfaces and data models, as well as other information regarding the design choices and decisions.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="DPO_Design+Document_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Design Document</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">DPO::Design Document</span><br/>Specializes SysSwO::Complex Sw Artifact, SysSwO::Document</p><p>Document specifying the design of a software, by depicting the software architecture, components, interfaces and data models, as well as other information regarding the design choices and decisions.<br/></p><p>Relations:<br/>
 <code>Design Document depicts Software Architecture<br/>
 Design Document depicts User Interface Specification<br/>
 Design Document depicts Data Model<br/>
@@ -600,102 +663,48 @@ Design Documentation creates Design Document<br/>
 Coding uses Design Document<br/>
 Design Evaluation uses Design Document<br/>
 Code Review uses Design Document<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="DPO_Design+Documentation_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Design Documentation<strong></td></tr>
-</table><br/>
-<b>DPO::Design Documentation</b><br/>
-Specializes SPO::Performed Composite Activity<br/><br/>
-Activity for registering the architectural and detailed design choices and decisions, producing a Design Document.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="DPO_Design+Documentation_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Design Documentation</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">DPO::Design Documentation</span><br/>Specializes SPO::Performed Composite Activity</p><p>Activity for registering the architectural and detailed design choices and decisions, producing a Design Document.<br/></p><p>Relations:<br/>
 <code>Design Documentation creates Design Document<br/>
 Designer participates in Design Documentation<br/>
 Design Process <>-- Design Documentation<br/>
 Software Architect participates in Design Documentation<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="DPO_Design+Evaluation_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Design Evaluation<strong></td></tr>
-</table><br/>
-<b>DPO::Design Evaluation</b><br/>
-Specializes SPO::Performed Composite Activity<br/><br/>
-Activity for evaluating a Design Document, registering the identified issues.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="DPO_Design+Evaluation_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Design Evaluation</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">DPO::Design Evaluation</span><br/>Specializes SPO::Performed Composite Activity</p><p>Activity for evaluating a Design Document, registering the identified issues.<br/></p><p>Relations:<br/>
 <code>Design Evaluation creates Design Evaluation Document<br/>
 Design Evaluation uses Design Document<br/>
 Design Evaluation uses Requirements Document<br/>
 Designer participates in Design Evaluation<br/>
 Design Process <>-- Design Evaluation<br/>
 Software Architect participates in Design Evaluation<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="DPO_Design+Evaluation+Document_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Design Evaluation Document<strong></td></tr>
-</table><br/>
-<b>DPO::Design Evaluation Document</b><br/>
-Specializes SysSwO::Document<br/><br/>
-Document registering the issues identified in a Design Document evaluation.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="DPO_Design+Evaluation+Document_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Design Evaluation Document</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">DPO::Design Evaluation Document</span><br/>Specializes SysSwO::Document</p><p>Document registering the issues identified in a Design Document evaluation.<br/></p><p>Relations:<br/>
 <code>Design Evaluation creates Design Evaluation Document<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="DPO_Design+Process_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Design Process<strong></td></tr>
-</table><br/>
-<b>DPO::Design Process</b><br/>
-Specializes SPO::Performed Specific Process<br/><br/>
-Process for defining and specifying a solution to be implemented for a software product, considering the requirements for it. It is a refinement process starting with the software architecture, and going down to the design of its elements, interfaces, and other characteristics of a software, until achieving the design of implementation units.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="DPO_Design+Process_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Design Process</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">DPO::Design Process</span><br/>Specializes SPO::Performed Specific Process</p><p>Process for defining and specifying a solution to be implemented for a software product, considering the requirements for it. It is a refinement process starting with the software architecture, and going down to the design of its elements, interfaces, and other characteristics of a software, until achieving the design of implementation units.<br/></p><p>Relations:<br/>
 <code>Design Process <>-- Architectural Design<br/>
 Design Process <>-- Detailed Design<br/>
 Design Process <>-- Design Documentation<br/>
 Design Process <>-- Design Evaluation<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="DPO_Designer_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltrole&gt&gt</code><br/>
-<strong>Designer<strong></td></tr>
-</table><br/>
-<b>DPO::Designer</b><br/>
-Specializes SPO::Stakeholder<br/><br/>
-Stakeholder responsible for making the Detailed Design choices for a software.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="DPO_Designer_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltrole&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Designer</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">DPO::Designer</span><br/>Specializes SPO::Stakeholder</p><p>Stakeholder responsible for making the Detailed Design choices for a software.<br/></p><p>Relations:<br/>
 <code>Designer is in charge of Detailed Design<br/>
 Designer participates in Design Documentation<br/>
 Designer participates in Design Evaluation<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="DPO_Detailed+Design_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Detailed Design<strong></td></tr>
-</table><br/>
-<b>DPO::Detailed Design</b><br/>
-Specializes SPO::Performed Composite Activity<br/><br/>
-Activity for refining a preliminary software design to the extent that it is sufficiently complete to be implemented. [ISO/IEC/IEEE 24765]<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="DPO_Detailed+Design_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Detailed Design</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">DPO::Detailed Design</span><br/>Specializes SPO::Performed Composite Activity</p><p>Activity for refining a preliminary software design to the extent that it is sufficiently complete to be implemented. [ISO/IEC/IEEE 24765]<br/></p><p>Relations:<br/>
 <code>Detailed Design <>-- Component Design<br/>
 Detailed Design <>-- Component Interface Design<br/>
 Detailed Design <>-- Data Design<br/>
@@ -704,113 +713,64 @@ Detailed Design uses Requirements Document<br/>
 Detailed Design uses Software Architecture<br/>
 Designer is in charge of Detailed Design<br/>
 Design Process <>-- Detailed Design<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="DPO_Interface+High-level+Design_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Interface High-level Design<strong></td></tr>
-</table><br/>
-<b>DPO::Interface High-level Design</b><br/>
-Specializes SPO::Performed Simple Activity<br/><br/>
-Activity for specifying the Interfaces between Architectural Components and with external elements (users or other systems).<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="DPO_Interface+High-level+Design_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Interface High-level Design</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">DPO::Interface High-level Design</span><br/>Specializes SPO::Performed Simple Activity</p><p>Activity for specifying the Interfaces between Architectural Components and with external elements (users or other systems).<br/></p><p>Relations:<br/>
 <code>Interface High-level Design creates Interface Specification<br/>
 Architectural Design <>-- Interface High-level Design<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="DPO_Interface+Specification_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Interface Specification<strong></td></tr>
-</table><br/>
-<b>DPO::Interface Specification</b><br/>
-Specializes SysSwO::Information Item<br/><br/>
-Information Item describing an internal or external interface of a software architecture.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="DPO_Interface+Specification_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Interface Specification</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">DPO::Interface Specification</span><br/>Specializes SysSwO::Information Item</p><p>Information Item describing an internal or external interface of a software architecture.<br/></p><p>Relations:<br/>
 <code>Component Interface Design changes Interface Specification<br/>
 Architectural Element (1..1) has (1..*) Interface Specification<br/>
 Interface High-level Design creates Interface Specification<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="DPO_Software+Architect_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltrole&gt&gt</code><br/>
-<strong>Software Architect<strong></td></tr>
-</table><br/>
-<b>DPO::Software Architect</b><br/>
-Specializes SPO::Stakeholder<br/><br/>
-Stakeholder responsible for designing the Software Architecture.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="DPO_Software+Architect_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltrole&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Software Architect</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">DPO::Software Architect</span><br/>Specializes SPO::Stakeholder</p><p>Stakeholder responsible for designing the Software Architecture.<br/></p><p>Relations:<br/>
 <code>Software Architect is in charge of Architectural Design<br/>
 Software Architect participates in Design Documentation<br/>
 Software Architect participates in Design Evaluation<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="DPO_Software+Architecture_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Software Architecture<strong></td></tr>
-</table><br/>
-<b>DPO::Software Architecture</b><br/>
-Specializes SysSwO::Model<br/><br/>
-Model describing the fundamental structures of a software, including its components, how they are connected, and its internal and external interfaces.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="DPO_Software+Architecture_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Software Architecture</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">DPO::Software Architecture</span><br/>Specializes SysSwO::Model</p><p>Model describing the fundamental structures of a software, including its components, how they are connected, and its internal and external interfaces.<br/></p><p>Relations:<br/>
 <code>Software Architecture (1..1) <>-- (2..*) Architectural Element<br/>
 Design Document depicts Software Architecture<br/>
 Architecture Development creates Software Architecture<br/>
 Detailed Design uses Software Architecture<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="DPO_User+Interface+Design_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>User Interface Design<strong></td></tr>
-</table><br/>
-<b>DPO::User Interface Design</b><br/>
-Specializes SPO::Performed Simple Activity<br/><br/>
-Activity for specifying the User Interfaces in detail.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="DPO_User+Interface+Design_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">User Interface Design</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">DPO::User Interface Design</span><br/>Specializes SPO::Performed Simple Activity</p><p>Activity for specifying the User Interfaces in detail.<br/></p><p>Relations:<br/>
 <code>User Interface Design creates User Interface Specification<br/>
 Detailed Design <>-- User Interface Design<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="DPO_User+Interface+Specification_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>User Interface Specification<strong></td></tr>
-</table><br/>
-<b>DPO::User Interface Specification</b><br/>
-Specializes DPO::Interface Specification<br/><br/>
-Interface Specification focusing on the human-computer interaction.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="DPO_User+Interface+Specification_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">User Interface Specification</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">DPO::User Interface Specification</span><br/>Specializes DPO::Interface Specification</p><p>Interface Specification focusing on the human-computer interaction.<br/></p><p>Relations:<br/>
 <code>Design Document depicts User Interface Specification<br/>
 User Interface Design creates User Interface Specification<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-</p>					
+
 				</div>
 				
 			</main>
 	
-    <footer class="footer">
-      <div class="container-fluid">
-        <span class="text-muted">Powered by NEMO.</span>
-        <span class="text-muted"><small><b>Design Process Ontology (DPO)</b></small></span>
-        <span class="text-muted"><small>Thu Nov 18 16:11:32 BRT 2021</small></span>		
+    <footer class="p-5 rounded border-top">
+      <div class="row">
+      	<div class="col">
+      		  <span class="text-muted">Powered by NEMO.</span>
+      	</div>
+      	<div class="col">
+      		<span><small><b>Design Process Ontology (DPO)</b></small></span>
+      	</div>
+      	<div class="col">
+      		<span class="text-muted"><small>Mon Nov 22 22:03:46 BRT 2021</small></span>	
+      	</div>
       </div>
     </footer>
 	   

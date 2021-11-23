@@ -18,7 +18,7 @@
 	    <!-- Custom styles for this template -->
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/navbar-top-fixed.css" rel="stylesheet">
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/sticky-footer-navbar.css" rel="stylesheet">
-	       
+	    <link href="../resources/static/bootstrap-5.1.3-dist/css/carousel.css" rel="stylesheet">
 
 	    <style>
 	      .bd-placeholder-img {
@@ -36,7 +36,7 @@
 	        }
 	      }
 
-	      .h1, h1 {
+	      .h2, .h3, h2, h3 {
 	      	margin-bottom: 2.5rem;
 	      }
 
@@ -44,6 +44,9 @@
 	      	font-size: 2rem;
 	      }
 
+	      .featurette-heading {
+	        margin-top: 0;
+	      }
 	    </style>
 
 	    
@@ -131,7 +134,7 @@
 	            SDRO
 	          </a>
 	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item" href="#ontologydescription" >Ontology Description</a></li>
+	            <li><a class="dropdown-item" href="#ontologydescription">Ontology Description</a></li>
 	            <li><a class="dropdown-item" href="#relatedontologies">Related Ontologies</a></li>
 	            <li><a class="dropdown-item" href="#ontologymodels">Ontology Models</a></li>
 	            <li><a class="dropdown-item" href="#conceptsdefinition">Concepts Definition</a></li>
@@ -157,21 +160,27 @@
 
 		<!-- Begin page content -->
     <main role="main" class="container-fluid">	
-    		<div class="container-fluid d-flex justify-content-end"><span class="badge badge-primary">Version 1.0</span></div>
+    		
 				<!--<div class="bg-light p-5 rounded" id="ontologydescription">
     			<h1 class="featurette-heading">The Software Design Reference Ontology (SDRO)</h1>
 					<p class="lead" align="justify"><span class="text-muted font-weight-bold font-italic">Ontology Description. </span></p>
-					<p class="lead text-right text-muted font-italic">- domain ontology from SEON. </p>
+					<p class="lead text-right text-muted font-italic"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"><path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg> domain ontology from SEON</p>
     		</div>-->
 
-				<div class="bg-light p-5 rounded" id="ontologydescription">
+				<div class="bg-light p-5 rounded">
+					<div class="container-fluid d-flex justify-content-end"><span class="badge badge-dark">version 1.0</span></div>
     			<h1 class="featurette-heading">The Software Design Reference Ontology (SDRO)</h1>
-    				<h2 class="featurette-heading d-inline font-italic">Ontology Description. </h2>
-    				<p class="lead d-inline" align="justify"></p>
-    				<p class="lead text-right text-muted font-italic">- domain ontology from SEON. </p>
+    			<p class="lead text-right text-muted font-italic"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"><path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg> domain ontology from SEON</p>
+    		</div>
+	
+				<hr> 
+				   		
+    		<div class="p-5 rounded" id="ontologydescription">
+  				<h2 class="featurette-heading">1. Ontology Description</h2>
+  				<p class="lead" align="justify"></p>
     		</div>
 
-				<hr class="featurette-divider">
+				<hr>
 
 				<div class="p-5 rounded" id="relatedontologies">
 					<h2 class="featurette-heading">2. Related Ontologies</h2>
@@ -195,7 +204,7 @@
 
 				</div>	
 
-				<hr class="featurette-divider">
+				<hr>
     	
 				<div class="p-5 rounded" id="ontologymodels">
 					<h2 class="featurette-heading">3. Ontology Models</h2>
@@ -311,45 +320,48 @@ DEFINIÇÃO ANTIGA: Physical Object used for running software programs or to sup
 </p>					
 				</div>
 
-				<hr class="featurette-divider">
+				<hr>
 
 				<div class="p-5 rounded" id="conceptsdefinition">
 					<h2 class="featurette-heading">4. Concepts Definition</h2>
 					<p class="lead">The following table shows the definitions for SDRO concepts.</p>		
 					<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->				
-					<table style="width: 100%" border="1" cellpadding="6">
-						<tbody>
-							<tr style="background-color: #D8D8D8">
-								<td style="width: 25%"><b>Concept</b></td>
-								<td style="width: 75%"><b>Definition</b></td>
-							</tr>
-							<tr>
+					<div class="table-responsive">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th scope="col">Concept</th>
+									<th scope="col">Definition</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
 <td><a name="SDRO_Loaded+Software+Design+Component"><b>Loaded Software Design Component</b></a>
-<a href=#SDRO_Loaded+Software+Design+Component_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SDRO_Loaded+Software+Design+Component_detail><img src="images/plus-4-16.ico"></a></td>
 <td>The materialization of a Software Design Component (i.e., the resulting designed program loaded in the computer memory)
 <br/></td>
 </tr>
 <tr>
 <td><a name="SDRO_Loaded+Software+Design+Object"><b>Loaded Software Design Object</b></a>
-<a href=#SDRO_Loaded+Software+Design+Object_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SDRO_Loaded+Software+Design+Object_detail><img src="images/plus-4-16.ico"></a></td>
 <td>The materialization of a Software Design Object (i.e., the resulting designed software loaded in the computer memory)
 <br/></td>
 </tr>
 <tr>
 <td><a name="SDRO_Mental+Computing+Resulting+State"><b>Mental Computing Resulting State</b></a>
-<a href=#SDRO_Mental+Computing+Resulting+State_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SDRO_Mental+Computing+Resulting+State_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A Software Design Proposition that represents an expected result of a Mental Software Design Choice that can only be assessed in runtime. 
 <br/></td>
 </tr>
 <tr>
 <td><a name="SDRO_Mental+Software+Design+Choice"><b>Mental Software Design Choice</b></a>
-<a href=#SDRO_Mental+Software+Design+Choice_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SDRO_Mental+Software+Design+Choice_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A Software Design Proposition concerning a choice in the mind of a designer about how certain requirements of the system will be realized. It involves defining which components are part of the system and how they are connected to each other.<br/><br/>Adapted from [Guarino, N. (2014)]
 <br/></td>
 </tr>
 <tr>
 <td><a name="SDRO_Mental+Software+Design+Component"><b>Mental Software Design Component</b></a>
-<a href=#SDRO_Mental+Software+Design+Component_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SDRO_Mental+Software+Design+Component_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A Software Design Proposition describing parts, or components, of the software system being designed. It represents what the designer has in mind about how components of system should be implemented. Thus, these components have specific properties, play specific roles and are expected to exist in particular places in the software system.<br/>
 <br/>E.g.:<i> System modules, UI elements.
 
@@ -358,289 +370,270 @@ Adapted from [Guarino, N., & Melone, M. R. S. (2015)]
 </tr>
 <tr>
 <td><a name="SDRO_Mental+Software+Design+Object"><b>Mental Software Design Object</b></a>
-<a href=#SDRO_Mental+Software+Design+Object_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SDRO_Mental+Software+Design+Object_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A Software Design Proposition concerning the software system being designed, i.e., the picture the designer has in mind about the system he/she is designing.
 <br/></td>
 </tr>
 <tr>
 <td><a name="SDRO_Mental+Software+Design+Specification"><b>Mental Software Design Specification</b></a>
-<a href=#SDRO_Mental+Software+Design+Specification_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SDRO_Mental+Software+Design+Specification_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A complex Software Design Proposition consisting in design choices about the designed system. It represents the ideas in the designer’s mind that form a detailed description of the system in terms of its structure.<br/><br/>Adapted from [Ralph, P., & Wand, Y. (2009)]  and  [Guarino, N. (2014)]
 <br/></td>
 </tr>
 <tr>
 <td><a name="SDRO_Software+Design+Choice"><b>Software Design Choice</b></a>
-<a href=#SDRO_Software+Design+Choice_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SDRO_Software+Design+Choice_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Information Item describing a Mental Software Design Choice, i.e. a physical representation of design choices that can be used for communication and evaluation purposes.<br/>
 <br/>E.g.:<i> A sentence like “The system will be implemented in Java”; Further details added in a class diagram that indicates how entities or relations should be represented on the database.</i></td>
 </tr>
 <tr>
 <td><a name="SDRO_Software+Design+Component"><b>Software Design Component</b></a>
-<a href=#SDRO_Software+Design+Component_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SDRO_Software+Design+Component_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A Program that plays a specific role in a Software System, implementing a Mental Software Design Component.<br/><br/>Adapted from [Guarino, N., & Melone, M. R. S. (2015)]
 <br/></td>
 </tr>
 <tr>
 <td><a name="SDRO_Software+Design+Object"><b>Software Design Object</b></a>
-<a href=#SDRO_Software+Design+Object_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SDRO_Software+Design+Object_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A Software System which is the concrete realization of some Software Design Specification, implementing Mental Software Design Objects.
 <br/></td>
 </tr>
 <tr>
 <td><a name="SDRO_Software+Design+Proposition"><b>Software Design Proposition</b></a>
-<a href=#SDRO_Software+Design+Proposition_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SDRO_Software+Design+Proposition_detail><img src="images/plus-4-16.ico"></a></td>
 <td>The propositional content of Software Designer Mental Moments.
 <br/></td>
 </tr>
 <tr>
 <td><a name="SDRO_Software+Design+Specification"><b>Software Design Specification</b></a>
-<a href=#SDRO_Software+Design+Specification_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SDRO_Software+Design+Specification_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A Software Artifact that provides a physical representation of a mental specification. It can be presented as a Model, a Document or a Software Item.<br/>
 <br/>E.g.:<i> a class diagram; a detailed textual description; a functional prototype</i></td>
 </tr>
 <tr>
 <td><a name="SDRO_Software+Designer"><b>Software Designer</b></a>
-<a href=#SDRO_Software+Designer_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SDRO_Software+Designer_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A Stakeholder that uses his or her skills to directly contribute to the creation of a specification containing design choices about the software system being designed.  <br/><br/>Adapted from [Ralph, P., & Wand, Y. (2009)]
 <br/></td>
 </tr>
 <tr>
 <td><a name="SDRO_Software+Designer+Mental+Moment"><b>Software Designer Mental Moment</b></a>
-<a href=#SDRO_Software+Designer+Mental+Moment_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SDRO_Software+Designer+Mental+Moment_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A mental moment inhering in a Software Designer.
+<br/></td>
+</tr>
+
+							</tbody>
+						</table>
+  				</div>
+
+
+
+				<!--	<table style="width: 100%" border="1" cellpadding="6">
+						<tbody>
+							<tr style="background-color: #D8D8D8">
+								<td style="width: 25%"><b>Concept</b></td>
+								<td style="width: 75%"><b>Definition</b></td>
+							</tr>
+							<tr>
+<td><a name="SDRO_Loaded+Software+Design+Component"><b>Loaded Software Design Component</b></a>
+<a href=#SDRO_Loaded+Software+Design+Component_detail><img src="images/plus-4-16.ico"></a></td>
+<td>The materialization of a Software Design Component (i.e., the resulting designed program loaded in the computer memory)
+<br/></td>
+</tr>
+<tr>
+<td><a name="SDRO_Loaded+Software+Design+Object"><b>Loaded Software Design Object</b></a>
+<a href=#SDRO_Loaded+Software+Design+Object_detail><img src="images/plus-4-16.ico"></a></td>
+<td>The materialization of a Software Design Object (i.e., the resulting designed software loaded in the computer memory)
+<br/></td>
+</tr>
+<tr>
+<td><a name="SDRO_Mental+Computing+Resulting+State"><b>Mental Computing Resulting State</b></a>
+<a href=#SDRO_Mental+Computing+Resulting+State_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A Software Design Proposition that represents an expected result of a Mental Software Design Choice that can only be assessed in runtime. 
+<br/></td>
+</tr>
+<tr>
+<td><a name="SDRO_Mental+Software+Design+Choice"><b>Mental Software Design Choice</b></a>
+<a href=#SDRO_Mental+Software+Design+Choice_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A Software Design Proposition concerning a choice in the mind of a designer about how certain requirements of the system will be realized. It involves defining which components are part of the system and how they are connected to each other.<br/><br/>Adapted from [Guarino, N. (2014)]
+<br/></td>
+</tr>
+<tr>
+<td><a name="SDRO_Mental+Software+Design+Component"><b>Mental Software Design Component</b></a>
+<a href=#SDRO_Mental+Software+Design+Component_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A Software Design Proposition describing parts, or components, of the software system being designed. It represents what the designer has in mind about how components of system should be implemented. Thus, these components have specific properties, play specific roles and are expected to exist in particular places in the software system.<br/>
+<br/>E.g.:<i> System modules, UI elements.
+
+Adapted from [Guarino, N., & Melone, M. R. S. (2015)]
+</i></td>
+</tr>
+<tr>
+<td><a name="SDRO_Mental+Software+Design+Object"><b>Mental Software Design Object</b></a>
+<a href=#SDRO_Mental+Software+Design+Object_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A Software Design Proposition concerning the software system being designed, i.e., the picture the designer has in mind about the system he/she is designing.
+<br/></td>
+</tr>
+<tr>
+<td><a name="SDRO_Mental+Software+Design+Specification"><b>Mental Software Design Specification</b></a>
+<a href=#SDRO_Mental+Software+Design+Specification_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A complex Software Design Proposition consisting in design choices about the designed system. It represents the ideas in the designer’s mind that form a detailed description of the system in terms of its structure.<br/><br/>Adapted from [Ralph, P., & Wand, Y. (2009)]  and  [Guarino, N. (2014)]
+<br/></td>
+</tr>
+<tr>
+<td><a name="SDRO_Software+Design+Choice"><b>Software Design Choice</b></a>
+<a href=#SDRO_Software+Design+Choice_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Information Item describing a Mental Software Design Choice, i.e. a physical representation of design choices that can be used for communication and evaluation purposes.<br/>
+<br/>E.g.:<i> A sentence like “The system will be implemented in Java”; Further details added in a class diagram that indicates how entities or relations should be represented on the database.</i></td>
+</tr>
+<tr>
+<td><a name="SDRO_Software+Design+Component"><b>Software Design Component</b></a>
+<a href=#SDRO_Software+Design+Component_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A Program that plays a specific role in a Software System, implementing a Mental Software Design Component.<br/><br/>Adapted from [Guarino, N., & Melone, M. R. S. (2015)]
+<br/></td>
+</tr>
+<tr>
+<td><a name="SDRO_Software+Design+Object"><b>Software Design Object</b></a>
+<a href=#SDRO_Software+Design+Object_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A Software System which is the concrete realization of some Software Design Specification, implementing Mental Software Design Objects.
+<br/></td>
+</tr>
+<tr>
+<td><a name="SDRO_Software+Design+Proposition"><b>Software Design Proposition</b></a>
+<a href=#SDRO_Software+Design+Proposition_detail><img src="images/plus-4-16.ico"></a></td>
+<td>The propositional content of Software Designer Mental Moments.
+<br/></td>
+</tr>
+<tr>
+<td><a name="SDRO_Software+Design+Specification"><b>Software Design Specification</b></a>
+<a href=#SDRO_Software+Design+Specification_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A Software Artifact that provides a physical representation of a mental specification. It can be presented as a Model, a Document or a Software Item.<br/>
+<br/>E.g.:<i> a class diagram; a detailed textual description; a functional prototype</i></td>
+</tr>
+<tr>
+<td><a name="SDRO_Software+Designer"><b>Software Designer</b></a>
+<a href=#SDRO_Software+Designer_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A Stakeholder that uses his or her skills to directly contribute to the creation of a specification containing design choices about the software system being designed.  <br/><br/>Adapted from [Ralph, P., & Wand, Y. (2009)]
+<br/></td>
+</tr>
+<tr>
+<td><a name="SDRO_Software+Designer+Mental+Moment"><b>Software Designer Mental Moment</b></a>
+<a href=#SDRO_Software+Designer+Mental+Moment_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A mental moment inhering in a Software Designer.
 <br/></td>
 </tr>
 
 						</tbody>
-					</table>
+					</table>-->
 
 				</div>
 
-				<hr class="featurette-divider">		
+				<hr>		
 
-				<div class="container p-5 rounded" id="detailedconcepts">
+				<div class="p-5 rounded" id="detailedconcepts">
 					<h2 class="featurette-heading">5. Detailed Concepts</h2>
-					<p class="lead"><a name="SDRO_Loaded+Software+Design+Component_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Loaded Software Design Component<strong></td></tr>
-</table><br/>
-<b>SDRO::Loaded Software Design Component</b><br/>
-Specializes SysSwO::Loaded Program Copy<br/><br/>
-The materialization of a Software Design Component (i.e., the resulting designed program loaded in the computer memory)<br/>
-<br/>
-<br/>
-Relations:<br/>
+					<p class="lead">Software Design Reference Ontology (SDRO) detailed concepts.</p>					
+					<hr><div class="container-fluid" id="SDRO_Loaded+Software+Design+Component_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Loaded Software Design Component</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SDRO::Loaded Software Design Component</span><br/>Specializes SysSwO::Loaded Program Copy</p><p>The materialization of a Software Design Component (i.e., the resulting designed program loaded in the computer memory)<br/></p><p>Relations:<br/>
 <code>Loaded Software Design Component (0..*) materialization of (1..1) Software Design Component<br/>
 Loaded Software Design Object (1..1) <>-- (1..*) Loaded Software Design Component<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SDRO_Loaded+Software+Design+Object_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Loaded Software Design Object<strong></td></tr>
-</table><br/>
-<b>SDRO::Loaded Software Design Object</b><br/>
-Specializes SysSwO::Loaded Software System Copy<br/><br/>
-The materialization of a Software Design Object (i.e., the resulting designed software loaded in the computer memory)<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SDRO_Loaded+Software+Design+Object_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Loaded Software Design Object</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SDRO::Loaded Software Design Object</span><br/>Specializes SysSwO::Loaded Software System Copy</p><p>The materialization of a Software Design Object (i.e., the resulting designed software loaded in the computer memory)<br/></p><p>Relations:<br/>
 <code>Loaded Software Design Object (0..*) materialization of (1..1) Software Design Object<br/>
 Loaded Software Design Object (1..1) <>-- (1..*) Loaded Software Design Component<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SDRO_Mental+Computing+Resulting+State_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Mental Computing Resulting State<strong></td></tr>
-</table><br/>
-<b>SDRO::Mental Computing Resulting State</b><br/>
-Specializes SDRO::Software Design Proposition<br/><br/>
-A Software Design Proposition that represents an expected result of a Mental Software Design Choice that can only be assessed in runtime. <br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SDRO_Mental+Computing+Resulting+State_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Mental Computing Resulting State</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SDRO::Mental Computing Resulting State</span><br/>Specializes SDRO::Software Design Proposition</p><p>A Software Design Proposition that represents an expected result of a Mental Software Design Choice that can only be assessed in runtime. <br/></p><p>Relations:<br/>
 <code>Mental Software Design Choice (1..*) concerns (0..*) Mental Computing Resulting State<br/>
 Computing Resulting State (0..*) satisfies (0..*) Mental Computing Resulting State<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SDRO_Mental+Software+Design+Choice_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Mental Software Design Choice<strong></td></tr>
-</table><br/>
-<b>SDRO::Mental Software Design Choice</b><br/>
-Specializes SDRO::Software Design Proposition<br/><br/>
-A Software Design Proposition concerning a choice in the mind of a designer about how certain requirements of the system will be realized. It involves defining which components are part of the system and how they are connected to each other.<br/><br/>Adapted from [Guarino, N. (2014)]<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SDRO_Mental+Software+Design+Choice_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Mental Software Design Choice</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SDRO::Mental Software Design Choice</span><br/>Specializes SDRO::Software Design Proposition</p><p>A Software Design Proposition concerning a choice in the mind of a designer about how certain requirements of the system will be realized. It involves defining which components are part of the system and how they are connected to each other.<br/><br/>Adapted from [Guarino, N. (2014)]<br/></p><p>Relations:<br/>
 <code>Mental Software Design Choice (1..*) concerns (0..*) Mental Software Design Component<br/>
 Mental Software Design Choice (1..*) concerns (0..*) Mental Computing Resulting State<br/>
 Mental Software Design Choice (0..*) motivated by (0..*) Requirement<br/>
 Mental Software Design Choice (0..*) motivated by (0..*) Mental Software Design Choice<br/>
 Mental Software Design Specification (1..*) <>-- (1..*) Mental Software Design Choice<br/>
 Software Design Choice (0..*) describes (1..*) Mental Software Design Choice<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SDRO_Mental+Software+Design+Component_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Mental Software Design Component<strong></td></tr>
-</table><br/>
-<b>SDRO::Mental Software Design Component</b><br/>
-Specializes SDRO::Software Design Proposition<br/><br/>
-A Software Design Proposition describing parts, or components, of the software system being designed. It represents what the designer has in mind about how components of system should be implemented. Thus, these components have specific properties, play specific roles and are expected to exist in particular places in the software system.<br/><br/>
-E.g.:<i> System modules, UI elements.
+<hr><div class="container-fluid" id="SDRO_Mental+Software+Design+Component_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Mental Software Design Component</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SDRO::Mental Software Design Component</span><br/>Specializes SDRO::Software Design Proposition</p><p>A Software Design Proposition describing parts, or components, of the software system being designed. It represents what the designer has in mind about how components of system should be implemented. Thus, these components have specific properties, play specific roles and are expected to exist in particular places in the software system.<br/><br/>E.g.:<span class="font-italic"> System modules, UI elements.
 
 Adapted from [Guarino, N., & Melone, M. R. S. (2015)]
-</i><br/>
-<br/>
-Relations:<br/>
+</span></p><p>Relations:<br/>
 <code>Mental Software Design Choice (1..*) concerns (0..*) Mental Software Design Component<br/>
 Software Design Component (0..*) implements (1..*) Mental Software Design Component<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SDRO_Mental+Software+Design+Object_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Mental Software Design Object<strong></td></tr>
-</table><br/>
-<b>SDRO::Mental Software Design Object</b><br/>
-Specializes SDRO::Software Design Proposition<br/><br/>
-A Software Design Proposition concerning the software system being designed, i.e., the picture the designer has in mind about the system he/she is designing.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SDRO_Mental+Software+Design+Object_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Mental Software Design Object</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SDRO::Mental Software Design Object</span><br/>Specializes SDRO::Software Design Proposition</p><p>A Software Design Proposition concerning the software system being designed, i.e., the picture the designer has in mind about the system he/she is designing.<br/></p><p>Relations:<br/>
 <code>Software Design Object (0..*) implements (1..*) Mental Software Design Object<br/>
 Mental Software Design Specification (1..*) specifies (1..*) Mental Software Design Object<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SDRO_Mental+Software+Design+Specification_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Mental Software Design Specification<strong></td></tr>
-</table><br/>
-<b>SDRO::Mental Software Design Specification</b><br/>
-Specializes SDRO::Software Design Proposition<br/><br/>
-A complex Software Design Proposition consisting in design choices about the designed system. It represents the ideas in the designer’s mind that form a detailed description of the system in terms of its structure.<br/><br/>Adapted from [Ralph, P., & Wand, Y. (2009)]  and  [Guarino, N. (2014)]<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SDRO_Mental+Software+Design+Specification_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Mental Software Design Specification</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SDRO::Mental Software Design Specification</span><br/>Specializes SDRO::Software Design Proposition</p><p>A complex Software Design Proposition consisting in design choices about the designed system. It represents the ideas in the designer’s mind that form a detailed description of the system in terms of its structure.<br/><br/>Adapted from [Ralph, P., & Wand, Y. (2009)]  and  [Guarino, N. (2014)]<br/></p><p>Relations:<br/>
 <code>Mental Software Design Specification (1..*) specifies (1..*) Mental Software Design Object<br/>
 Mental Software Design Specification (1..*) <>-- (1..*) Mental Software Design Choice<br/>
 Software Design Specification (0..*) describes (1..*) Mental Software Design Specification<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SDRO_Software+Design+Choice_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Software Design Choice<strong></td></tr>
-</table><br/>
-<b>SDRO::Software Design Choice</b><br/>
-Specializes SysSwO::Information Item<br/><br/>
-Information Item describing a Mental Software Design Choice, i.e. a physical representation of design choices that can be used for communication and evaluation purposes.<br/><br/>
-E.g.:<i> A sentence like “The system will be implemented in Java”; Further details added in a class diagram that indicates how entities or relations should be represented on the database.</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SDRO_Software+Design+Choice_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Software Design Choice</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SDRO::Software Design Choice</span><br/>Specializes SysSwO::Information Item</p><p>Information Item describing a Mental Software Design Choice, i.e. a physical representation of design choices that can be used for communication and evaluation purposes.<br/><br/>E.g.:<span class="font-italic"> A sentence like “The system will be implemented in Java”; Further details added in a class diagram that indicates how entities or relations should be represented on the database.</span></p><p>Relations:<br/>
 <code>Software Design Choice (0..*) describes (1..*) Mental Software Design Choice<br/>
 Software Design Choice (0..*) /motivated by (0..*) Requirement Artifact<br/>
 Software Design Choice (0..*) /motivated by (0..*) Software Design Choice<br/>
 Software Design Specification (1..*) <>-- (1..*) Software Design Choice<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SDRO_Software+Design+Component_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Software Design Component<strong></td></tr>
-</table><br/>
-<b>SDRO::Software Design Component</b><br/>
-Specializes UFO::Role, SysSwO::Program<br/><br/>
-A Program that plays a specific role in a Software System, implementing a Mental Software Design Component.<br/><br/>Adapted from [Guarino, N., & Melone, M. R. S. (2015)]<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SDRO_Software+Design+Component_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Software Design Component</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SDRO::Software Design Component</span><br/>Specializes UFO::Role, SysSwO::Program</p><p>A Program that plays a specific role in a Software System, implementing a Mental Software Design Component.<br/><br/>Adapted from [Guarino, N., & Melone, M. R. S. (2015)]<br/></p><p>Relations:<br/>
 <code>Software Design Component (0..*) <>-- (0..*) Software Design Component<br/>
 Software Design Component (0..*) implements (1..*) Mental Software Design Component<br/>
 Software Design Object (1..1) <>-- (1..*) Software Design Component<br/>
 Loaded Software Design Component (0..*) materialization of (1..1) Software Design Component<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SDRO_Software+Design+Object_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Software Design Object<strong></td></tr>
-</table><br/>
-<b>SDRO::Software Design Object</b><br/>
-Specializes SysSwO::Software System<br/><br/>
-A Software System which is the concrete realization of some Software Design Specification, implementing Mental Software Design Objects.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SDRO_Software+Design+Object_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Software Design Object</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SDRO::Software Design Object</span><br/>Specializes SysSwO::Software System</p><p>A Software System which is the concrete realization of some Software Design Specification, implementing Mental Software Design Objects.<br/></p><p>Relations:<br/>
 <code>Software Design Object (0..*) implements (1..*) Mental Software Design Object<br/>
 Software Design Object (0..*) realizes (0..*) Software Design Specification<br/>
 Software Design Object (1..1) <>-- (1..*) Software Design Component<br/>
 Loaded Software Design Object (0..*) materialization of (1..1) Software Design Object<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SDRO_Software+Design+Proposition_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Software Design Proposition<strong></td></tr>
-</table><br/>
-<b>SDRO::Software Design Proposition</b><br/>
-Specializes UFO::Proposition<br/><br/>
-The propositional content of Software Designer Mental Moments.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SDRO_Software+Design+Proposition_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Software Design Proposition</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SDRO::Software Design Proposition</span><br/>Specializes UFO::Proposition</p><p>The propositional content of Software Designer Mental Moments.<br/></p><p>Relations:<br/>
 <code>Software Design Proposition (1..1) propositional content of (1..*) Software Designer Mental Moment<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SDRO_Software+Design+Specification_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Software Design Specification<strong></td></tr>
-</table><br/>
-<b>SDRO::Software Design Specification</b><br/>
-Specializes SysSwO::Software Artifact<br/><br/>
-A Software Artifact that provides a physical representation of a mental specification. It can be presented as a Model, a Document or a Software Item.<br/><br/>
-E.g.:<i> a class diagram; a detailed textual description; a functional prototype</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SDRO_Software+Design+Specification_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Software Design Specification</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SDRO::Software Design Specification</span><br/>Specializes SysSwO::Software Artifact</p><p>A Software Artifact that provides a physical representation of a mental specification. It can be presented as a Model, a Document or a Software Item.<br/><br/>E.g.:<span class="font-italic"> a class diagram; a detailed textual description; a functional prototype</span></p><p>Relations:<br/>
 <code>Software Design Specification (0..*) describes (1..*) Mental Software Design Specification<br/>
 Software Design Specification (1..*) <>-- (1..*) Software Design Choice<br/>
 Software Design Object (0..*) realizes (0..*) Software Design Specification<br/>
 Software Designer (1..*) responsible for (0..*) Software Design Specification<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SDRO_Software+Designer_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Software Designer<strong></td></tr>
-</table><br/>
-<b>SDRO::Software Designer</b><br/>
-Specializes SPO::Person Stakeholder<br/><br/>
-A Stakeholder that uses his or her skills to directly contribute to the creation of a specification containing design choices about the software system being designed.  <br/><br/>Adapted from [Ralph, P., & Wand, Y. (2009)]<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SDRO_Software+Designer_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Software Designer</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SDRO::Software Designer</span><br/>Specializes SPO::Person Stakeholder</p><p>A Stakeholder that uses his or her skills to directly contribute to the creation of a specification containing design choices about the software system being designed.  <br/><br/>Adapted from [Ralph, P., & Wand, Y. (2009)]<br/></p><p>Relations:<br/>
 <code>Software Designer (1..*) responsible for (0..*) Software Design Specification<br/>
 Software Designer Mental Moment (0..*) inheres in (1..1) Software Designer<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SDRO_Software+Designer+Mental+Moment_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Software Designer Mental Moment<strong></td></tr>
-</table><br/>
-<b>SDRO::Software Designer Mental Moment</b><br/>
-Specializes UFO::Mental Moment<br/><br/>
-A mental moment inhering in a Software Designer.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SDRO_Software+Designer+Mental+Moment_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Software Designer Mental Moment</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SDRO::Software Designer Mental Moment</span><br/>Specializes UFO::Mental Moment</p><p>A mental moment inhering in a Software Designer.<br/></p><p>Relations:<br/>
 <code>Software Designer Mental Moment (0..*) inheres in (1..1) Software Designer<br/>
 Software Design Proposition (1..1) propositional content of (1..*) Software Designer Mental Moment<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-</p>					
+
 				</div>
 				
 			</main>
 	
-    <footer class="footer">
-      <div class="container-fluid">
-        <span class="text-muted">Powered by NEMO.</span>
-        <span class="text-muted"><small><b>Software Design Reference Ontology (SDRO)</b></small></span>
-        <span class="text-muted"><small>Thu Nov 18 16:11:33 BRT 2021</small></span>		
+    <footer class="p-5 rounded border-top">
+      <div class="row">
+      	<div class="col">
+      		  <span class="text-muted">Powered by NEMO.</span>
+      	</div>
+      	<div class="col">
+      		<span><small><b>Software Design Reference Ontology (SDRO)</b></small></span>
+      	</div>
+      	<div class="col">
+      		<span class="text-muted"><small>Mon Nov 22 22:03:46 BRT 2021</small></span>	
+      	</div>
       </div>
     </footer>
 	   

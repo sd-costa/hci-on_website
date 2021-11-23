@@ -18,7 +18,7 @@
 	    <!-- Custom styles for this template -->
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/navbar-top-fixed.css" rel="stylesheet">
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/sticky-footer-navbar.css" rel="stylesheet">
-	       
+	    <link href="../resources/static/bootstrap-5.1.3-dist/css/carousel.css" rel="stylesheet">
 
 	    <style>
 	      .bd-placeholder-img {
@@ -36,7 +36,7 @@
 	        }
 	      }
 
-	      .h1, h1 {
+	      .h2, .h3, h2, h3 {
 	      	margin-bottom: 2.5rem;
 	      }
 
@@ -44,6 +44,9 @@
 	      	font-size: 2rem;
 	      }
 
+	      .featurette-heading {
+	        margin-top: 0;
+	      }
 	    </style>
 
 	    
@@ -131,7 +134,7 @@
 	            CMPO
 	          </a>
 	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item" href="#ontologydescription" >Ontology Description</a></li>
+	            <li><a class="dropdown-item" href="#ontologydescription">Ontology Description</a></li>
 	            <li><a class="dropdown-item" href="#relatedontologies">Related Ontologies</a></li>
 	            <li><a class="dropdown-item" href="#ontologymodels">Ontology Models</a></li>
 	            <li><a class="dropdown-item" href="#conceptsdefinition">Concepts Definition</a></li>
@@ -157,21 +160,27 @@
 
 		<!-- Begin page content -->
     <main role="main" class="container-fluid">	
-    		<div class="container-fluid d-flex justify-content-end"><span class="badge badge-danger"></span></div>
+    		
 				<!--<div class="bg-light p-5 rounded" id="ontologydescription">
     			<h1 class="featurette-heading">The Configuration Management Process Ontology (CMPO)</h1>
 					<p class="lead" align="justify"><span class="text-muted font-weight-bold font-italic">Ontology Description. </span>The Configuration Management Process Ontology (CMPO) aims at representing the activities, artifacts and stakeholders involved in the software Configuration Management Process. Since CMPO can be applied in the context of several SE subdomains, it describes some general notions applicable for diverse SEON concepts.</p>
-					<p class="lead text-right text-muted font-italic">- domain ontology from SEON. </p>
+					<p class="lead text-right text-muted font-italic"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"><path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg> domain ontology from SEON</p>
     		</div>-->
 
-				<div class="bg-light p-5 rounded" id="ontologydescription">
+				<div class="bg-light p-5 rounded">
+					<div class="container-fluid d-flex justify-content-end"><span class="badge badge-danger text-lowercase"></span></div>
     			<h1 class="featurette-heading">The Configuration Management Process Ontology (CMPO)</h1>
-    				<h2 class="featurette-heading d-inline font-italic">Ontology Description. </h2>
-    				<p class="lead d-inline" align="justify">The Configuration Management Process Ontology (CMPO) aims at representing the activities, artifacts and stakeholders involved in the software Configuration Management Process. Since CMPO can be applied in the context of several SE subdomains, it describes some general notions applicable for diverse SEON concepts.</p>
-    				<p class="lead text-right text-muted font-italic">- domain ontology from SEON. </p>
+    			<p class="lead text-right text-muted font-italic"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"><path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg> domain ontology from SEON</p>
+    		</div>
+	
+				<hr> 
+				   		
+    		<div class="p-5 rounded" id="ontologydescription">
+  				<h2 class="featurette-heading">1. Ontology Description</h2>
+  				<p class="lead" align="justify">The Configuration Management Process Ontology (CMPO) aims at representing the activities, artifacts and stakeholders involved in the software Configuration Management Process. Since CMPO can be applied in the context of several SE subdomains, it describes some general notions applicable for diverse SEON concepts.</p>
     		</div>
 
-				<hr class="featurette-divider">
+				<hr>
 
 				<div class="p-5 rounded" id="relatedontologies">
 					<h2 class="featurette-heading">2. Related Ontologies</h2>
@@ -197,7 +206,7 @@
 
 				</div>	
 
-				<hr class="featurette-divider">
+				<hr>
     	
 				<div class="p-5 rounded" id="ontologymodels">
 					<h2 class="featurette-heading">3. Ontology Models</h2>
@@ -263,13 +272,257 @@
 </p>					
 				</div>
 
-				<hr class="featurette-divider">
+				<hr>
 
 				<div class="p-5 rounded" id="conceptsdefinition">
 					<h2 class="featurette-heading">4. Concepts Definition</h2>
 					<p class="lead">The following table shows the definitions for CMPO concepts.</p>		
 					<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->				
-					<table style="width: 100%" border="1" cellpadding="6">
+					<div class="table-responsive">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th scope="col">Concept</th>
+									<th scope="col">Definition</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+<td><a name="CMPO_Artifact+CI"><b>Artifact CI</b></a>
+<a href=#CMPO_Artifact+CI_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Artifact whose configuration is being managed.
+<br/>E.g.:<i> Documents, Models, Software Products under Configuration Management.</i></td>
+</tr>
+<tr>
+<td><a name="CMPO_Artifact+Copy"><b>Artifact Copy</b></a>
+<a href=#CMPO_Artifact+Copy_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Copy of an Artifact that is under version control.
+<br/></td>
+</tr>
+<tr>
+<td><a name="CMPO_Baseline"><b>Baseline</b></a>
+<a href=#CMPO_Baseline_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Information Item packaging a set of Configuration Items' Versions at a specific time in the product's life (for a product delivery or to establish a relevant point in the Project).
+<br/>E.g.:<i> Release 01 Baseline, established for the first delivered product for the client; Planning baseline, established after project planning is established and agreed.</i></td>
+</tr>
+<tr>
+<td><a name="CMPO_Baseline+Establishment"><b>Baseline Establishment</b></a>
+<a href=#CMPO_Baseline+Establishment_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity for establishing a Baseline embracing a planned set of Configuration Items' Versions.
+<br/></td>
+</tr>
+<tr>
+<td><a name="CMPO_CR+Being+Solved"><b>CR Being Solved</b></a>
+<a href=#CMPO_CR+Being+Solved_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Change Request being solved after authorization.
+<br/></td>
+</tr>
+<tr>
+<td><a name="CMPO_Change+Accomplishment"><b>Change Accomplishment</b></a>
+<a href=#CMPO_Change+Accomplishment_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity for performing the authorized changes in a set of Configuration Items under version control.
+<br/></td>
+</tr>
+<tr>
+<td><a name="CMPO_Change+Control"><b>Change Control</b></a>
+<a href=#CMPO_Change+Control_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity for formally controlling the modification of Configuration Items, in a process of requesting, evaluating, changing and reviewing.
+<br/></td>
+</tr>
+<tr>
+<td><a name="CMPO_Change+Implementation"><b>Change Implementation</b></a>
+<a href=#CMPO_Change+Implementation_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity for implementing the changes requested and approved for a Configuration Item.
+<br/></td>
+</tr>
+<tr>
+<td><a name="CMPO_Change+Implementer"><b>Change Implementer</b></a>
+<a href=#CMPO_Change+Implementer_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Stakeholder responsible for implementing a change in Configuration Items.
+<br/></td>
+</tr>
+<tr>
+<td><a name="CMPO_Change+Request+(CR)"><b>Change Request (CR)</b></a>
+<a href=#CMPO_Change+Request+(CR)_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Information Item describing a request for modification on a set of Configuration Items.
+<br/>E.g.:<i> a request for changing the project planning replacing a developer, which affects the Project Plan and the Project Schedule.</i></td>
+</tr>
+<tr>
+<td><a name="CMPO_Change+Request+Closing"><b>Change Request Closing</b></a>
+<a href=#CMPO_Change+Request+Closing_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity for closing a reviewed and approved Change Request.
+<br/></td>
+</tr>
+<tr>
+<td><a name="CMPO_Change+Request+Evaluator"><b>Change Request Evaluator</b></a>
+<a href=#CMPO_Change+Request+Evaluator_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Stakeholder responsible for evaluating if a Change Request should be implemented or not.
+<br/></td>
+</tr>
+<tr>
+<td><a name="CMPO_Change+Requester"><b>Change Requester</b></a>
+<a href=#CMPO_Change+Requester_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Stakeholder responsible for requesting a change in Configuration Items.
+<br/></td>
+</tr>
+<tr>
+<td><a name="CMPO_Change+Requesting"><b>Change Requesting</b></a>
+<a href=#CMPO_Change+Requesting_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity for requesting the modification of a set of Configuration Items.
+<br/></td>
+</tr>
+<tr>
+<td><a name="CMPO_Change+Review"><b>Change Review</b></a>
+<a href=#CMPO_Change+Review_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity for reviewing an accomplished change assuring that the modifications were made as planned.
+<br/></td>
+</tr>
+<tr>
+<td><a name="CMPO_Change+Reviewer"><b>Change Reviewer</b></a>
+<a href=#CMPO_Change+Reviewer_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Stakeholder responsible for reviewing the changes in Configuration Items regarding a Change Request.
+<br/></td>
+</tr>
+<tr>
+<td><a name="CMPO_Checkin"><b>Checkin</b></a>
+<a href=#CMPO_Checkin_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity for including new Versions of Configuration Items into a version control repository.
+<br/></td>
+</tr>
+<tr>
+<td><a name="CMPO_Checkout"><b>Checkout</b></a>
+<a href=#CMPO_Checkout_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity for accessing defined versions of Configuration Items from a version control repository, usually for changing purposes.
+<br/></td>
+</tr>
+<tr>
+<td><a name="CMPO_Closed+CR"><b>Closed CR</b></a>
+<a href=#CMPO_Closed+CR_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Change Request closed after solved, reviewed and approved.
+<br/></td>
+</tr>
+<tr>
+<td><a name="CMPO_Communicated+CR"><b>Communicated CR</b></a>
+<a href=#CMPO_Communicated+CR_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Change Request in the first phase, communicated.
+<br/></td>
+</tr>
+<tr>
+<td><a name="CMPO_Configuration+Audit+Report"><b>Configuration Audit Report</b></a>
+<a href=#CMPO_Configuration+Audit+Report_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Document reporting the results of a Quality Audit Performing, including Noncompliance and Corrective Action Registers.
+<br/></td>
+</tr>
+<tr>
+<td><a name="CMPO_Configuration+Auditing"><b>Configuration Auditing</b></a>
+<a href=#CMPO_Configuration+Auditing_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity for verifying that a Baseline or a Deliverable Product is complete, consistent and in conformity with the specified requirements.
+<br/></td>
+</tr>
+<tr>
+<td><a name="CMPO_Configuration+Auditor"><b>Configuration Auditor</b></a>
+<a href=#CMPO_Configuration+Auditor_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Stakeholder responsible for auditing the Configuration Management related results.
+<br/></td>
+</tr>
+<tr>
+<td><a name="CMPO_Configuration+Item+(CI)"><b>Configuration Item (CI)</b></a>
+<a href=#CMPO_Configuration+Item+(CI)_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Object whose configuration is being managed.
+<br/>E.g.:<i> Artifacts, Process descriptions, Tools under Configuration Management.</i></td>
+</tr>
+<tr>
+<td><a name="CMPO_Configuration+Items+Identification"><b>Configuration Items Identification</b></a>
+<a href=#CMPO_Configuration+Items+Identification_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity for identifying the Configuration Items of a Project.
+<br/></td>
+</tr>
+<tr>
+<td><a name="CMPO_Configuration+Management+Plan"><b>Configuration Management Plan</b></a>
+<a href=#CMPO_Configuration+Management+Plan_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Document describing the configuration management parameters for conducting the process, including the identified Configuration Items types, the configuration systems and the planned Baselines, Configuration Audits, and Products Deliveries.
+<br/></td>
+</tr>
+<tr>
+<td><a name="CMPO_Configuration+Management+Planning"><b>Configuration Management Planning</b></a>
+<a href=#CMPO_Configuration+Management+Planning_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity for planning the Configuration Management Process, including, among others, the Configuration Management System Establishment and the Configuration Items Identification.
+<br/></td>
+</tr>
+<tr>
+<td><a name="CMPO_Configuration+Management+Process"><b>Configuration Management Process</b></a>
+<a href=#CMPO_Configuration+Management+Process_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Process for conducting the activities related to software configuration management, ensuring the completeness and correctness of software Configuration Items.
+<br/></td>
+</tr>
+<tr>
+<td><a name="CMPO_Configuration+Management+System+Establishment"><b>Configuration Management System Establishment</b></a>
+<a href=#CMPO_Configuration+Management+System+Establishment_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity for establishing the configuration management system, usually composed of version control system, a change control system and a product building system.
+<br/></td>
+</tr>
+<tr>
+<td><a name="CMPO_Configuration+Manager"><b>Configuration Manager</b></a>
+<a href=#CMPO_Configuration+Manager_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Stakeholder responsible for planning and managing the Configuration Management Process.
+<br/></td>
+</tr>
+<tr>
+<td><a name="CMPO_Deliverable+Product"><b>Deliverable Product</b></a>
+<a href=#CMPO_Deliverable+Product_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Software Product ready to be delivered to the client.
+<br/></td>
+</tr>
+<tr>
+<td><a name="CMPO_Evaluated+CR"><b>Evaluated CR</b></a>
+<a href=#CMPO_Evaluated+CR_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Change Request evaluated and set as authorized or rejected.
+<br/></td>
+</tr>
+<tr>
+<td><a name="CMPO_Item"><b>Item</b></a>
+<a href=#CMPO_Item_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Object whose configuration may be managed.
+<br/>E.g.:<i> Artifacts, Process descriptions, Tools.</i></td>
+</tr>
+<tr>
+<td><a name="CMPO_Release+Management+and+Delivery"><b>Release Management and Delivery</b></a>
+<a href=#CMPO_Release+Management+and+Delivery_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity for managing the building, releasing and delivering of the products to be delivered to clients.
+<br/></td>
+</tr>
+<tr>
+<td><a name="CMPO_Request+Evaluation"><b>Request Evaluation</b></a>
+<a href=#CMPO_Request+Evaluation_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Activity for evaluating the Change Request for a set of Configuration Items, authorizing or rejecting it.
+<br/></td>
+</tr>
+<tr>
+<td><a name="CMPO_Reviewed+CR"><b>Reviewed CR</b></a>
+<a href=#CMPO_Reviewed+CR_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Change Request reviewed to check if the modifications done are correct.
+<br/></td>
+</tr>
+<tr>
+<td><a name="CMPO_Solved+CR"><b>Solved CR</b></a>
+<a href=#CMPO_Solved+CR_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Change Request solved through the Change Implementation.
+<br/></td>
+</tr>
+<tr>
+<td><a name="CMPO_Version"><b>Version</b></a>
+<a href=#CMPO_Version_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Each identified release of a Configuration Item submitted to a version control repository.
+<br/>E.g.:<i> Project Plan of Project Alfa, version 01; Requirements Document of Project Alfa, version 03.</i></td>
+</tr>
+
+							</tbody>
+						</table>
+  				</div>
+
+
+
+				<!--	<table style="width: 100%" border="1" cellpadding="6">
 						<tbody>
 							<tr style="background-color: #D8D8D8">
 								<td style="width: 25%"><b>Concept</b></td>
@@ -277,333 +530,281 @@
 							</tr>
 							<tr>
 <td><a name="CMPO_Artifact+CI"><b>Artifact CI</b></a>
-<a href=#CMPO_Artifact+CI_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#CMPO_Artifact+CI_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Artifact whose configuration is being managed.
 <br/>E.g.:<i> Documents, Models, Software Products under Configuration Management.</i></td>
 </tr>
 <tr>
 <td><a name="CMPO_Artifact+Copy"><b>Artifact Copy</b></a>
-<a href=#CMPO_Artifact+Copy_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#CMPO_Artifact+Copy_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Copy of an Artifact that is under version control.
 <br/></td>
 </tr>
 <tr>
 <td><a name="CMPO_Baseline"><b>Baseline</b></a>
-<a href=#CMPO_Baseline_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#CMPO_Baseline_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Information Item packaging a set of Configuration Items' Versions at a specific time in the product's life (for a product delivery or to establish a relevant point in the Project).
 <br/>E.g.:<i> Release 01 Baseline, established for the first delivered product for the client; Planning baseline, established after project planning is established and agreed.</i></td>
 </tr>
 <tr>
 <td><a name="CMPO_Baseline+Establishment"><b>Baseline Establishment</b></a>
-<a href=#CMPO_Baseline+Establishment_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#CMPO_Baseline+Establishment_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity for establishing a Baseline embracing a planned set of Configuration Items' Versions.
 <br/></td>
 </tr>
 <tr>
 <td><a name="CMPO_CR+Being+Solved"><b>CR Being Solved</b></a>
-<a href=#CMPO_CR+Being+Solved_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#CMPO_CR+Being+Solved_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Change Request being solved after authorization.
 <br/></td>
 </tr>
 <tr>
 <td><a name="CMPO_Change+Accomplishment"><b>Change Accomplishment</b></a>
-<a href=#CMPO_Change+Accomplishment_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#CMPO_Change+Accomplishment_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity for performing the authorized changes in a set of Configuration Items under version control.
 <br/></td>
 </tr>
 <tr>
 <td><a name="CMPO_Change+Control"><b>Change Control</b></a>
-<a href=#CMPO_Change+Control_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#CMPO_Change+Control_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity for formally controlling the modification of Configuration Items, in a process of requesting, evaluating, changing and reviewing.
 <br/></td>
 </tr>
 <tr>
 <td><a name="CMPO_Change+Implementation"><b>Change Implementation</b></a>
-<a href=#CMPO_Change+Implementation_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#CMPO_Change+Implementation_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity for implementing the changes requested and approved for a Configuration Item.
 <br/></td>
 </tr>
 <tr>
 <td><a name="CMPO_Change+Implementer"><b>Change Implementer</b></a>
-<a href=#CMPO_Change+Implementer_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#CMPO_Change+Implementer_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Stakeholder responsible for implementing a change in Configuration Items.
 <br/></td>
 </tr>
 <tr>
 <td><a name="CMPO_Change+Request+(CR)"><b>Change Request (CR)</b></a>
-<a href=#CMPO_Change+Request+(CR)_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#CMPO_Change+Request+(CR)_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Information Item describing a request for modification on a set of Configuration Items.
 <br/>E.g.:<i> a request for changing the project planning replacing a developer, which affects the Project Plan and the Project Schedule.</i></td>
 </tr>
 <tr>
 <td><a name="CMPO_Change+Request+Closing"><b>Change Request Closing</b></a>
-<a href=#CMPO_Change+Request+Closing_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#CMPO_Change+Request+Closing_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity for closing a reviewed and approved Change Request.
 <br/></td>
 </tr>
 <tr>
 <td><a name="CMPO_Change+Request+Evaluator"><b>Change Request Evaluator</b></a>
-<a href=#CMPO_Change+Request+Evaluator_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#CMPO_Change+Request+Evaluator_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Stakeholder responsible for evaluating if a Change Request should be implemented or not.
 <br/></td>
 </tr>
 <tr>
 <td><a name="CMPO_Change+Requester"><b>Change Requester</b></a>
-<a href=#CMPO_Change+Requester_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#CMPO_Change+Requester_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Stakeholder responsible for requesting a change in Configuration Items.
 <br/></td>
 </tr>
 <tr>
 <td><a name="CMPO_Change+Requesting"><b>Change Requesting</b></a>
-<a href=#CMPO_Change+Requesting_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#CMPO_Change+Requesting_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity for requesting the modification of a set of Configuration Items.
 <br/></td>
 </tr>
 <tr>
 <td><a name="CMPO_Change+Review"><b>Change Review</b></a>
-<a href=#CMPO_Change+Review_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#CMPO_Change+Review_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity for reviewing an accomplished change assuring that the modifications were made as planned.
 <br/></td>
 </tr>
 <tr>
 <td><a name="CMPO_Change+Reviewer"><b>Change Reviewer</b></a>
-<a href=#CMPO_Change+Reviewer_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#CMPO_Change+Reviewer_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Stakeholder responsible for reviewing the changes in Configuration Items regarding a Change Request.
 <br/></td>
 </tr>
 <tr>
 <td><a name="CMPO_Checkin"><b>Checkin</b></a>
-<a href=#CMPO_Checkin_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#CMPO_Checkin_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity for including new Versions of Configuration Items into a version control repository.
 <br/></td>
 </tr>
 <tr>
 <td><a name="CMPO_Checkout"><b>Checkout</b></a>
-<a href=#CMPO_Checkout_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#CMPO_Checkout_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity for accessing defined versions of Configuration Items from a version control repository, usually for changing purposes.
 <br/></td>
 </tr>
 <tr>
 <td><a name="CMPO_Closed+CR"><b>Closed CR</b></a>
-<a href=#CMPO_Closed+CR_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#CMPO_Closed+CR_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Change Request closed after solved, reviewed and approved.
 <br/></td>
 </tr>
 <tr>
 <td><a name="CMPO_Communicated+CR"><b>Communicated CR</b></a>
-<a href=#CMPO_Communicated+CR_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#CMPO_Communicated+CR_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Change Request in the first phase, communicated.
 <br/></td>
 </tr>
 <tr>
 <td><a name="CMPO_Configuration+Audit+Report"><b>Configuration Audit Report</b></a>
-<a href=#CMPO_Configuration+Audit+Report_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#CMPO_Configuration+Audit+Report_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Document reporting the results of a Quality Audit Performing, including Noncompliance and Corrective Action Registers.
 <br/></td>
 </tr>
 <tr>
 <td><a name="CMPO_Configuration+Auditing"><b>Configuration Auditing</b></a>
-<a href=#CMPO_Configuration+Auditing_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#CMPO_Configuration+Auditing_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity for verifying that a Baseline or a Deliverable Product is complete, consistent and in conformity with the specified requirements.
 <br/></td>
 </tr>
 <tr>
 <td><a name="CMPO_Configuration+Auditor"><b>Configuration Auditor</b></a>
-<a href=#CMPO_Configuration+Auditor_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#CMPO_Configuration+Auditor_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Stakeholder responsible for auditing the Configuration Management related results.
 <br/></td>
 </tr>
 <tr>
 <td><a name="CMPO_Configuration+Item+(CI)"><b>Configuration Item (CI)</b></a>
-<a href=#CMPO_Configuration+Item+(CI)_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#CMPO_Configuration+Item+(CI)_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Object whose configuration is being managed.
 <br/>E.g.:<i> Artifacts, Process descriptions, Tools under Configuration Management.</i></td>
 </tr>
 <tr>
 <td><a name="CMPO_Configuration+Items+Identification"><b>Configuration Items Identification</b></a>
-<a href=#CMPO_Configuration+Items+Identification_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#CMPO_Configuration+Items+Identification_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity for identifying the Configuration Items of a Project.
 <br/></td>
 </tr>
 <tr>
 <td><a name="CMPO_Configuration+Management+Plan"><b>Configuration Management Plan</b></a>
-<a href=#CMPO_Configuration+Management+Plan_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#CMPO_Configuration+Management+Plan_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Document describing the configuration management parameters for conducting the process, including the identified Configuration Items types, the configuration systems and the planned Baselines, Configuration Audits, and Products Deliveries.
 <br/></td>
 </tr>
 <tr>
 <td><a name="CMPO_Configuration+Management+Planning"><b>Configuration Management Planning</b></a>
-<a href=#CMPO_Configuration+Management+Planning_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#CMPO_Configuration+Management+Planning_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity for planning the Configuration Management Process, including, among others, the Configuration Management System Establishment and the Configuration Items Identification.
 <br/></td>
 </tr>
 <tr>
 <td><a name="CMPO_Configuration+Management+Process"><b>Configuration Management Process</b></a>
-<a href=#CMPO_Configuration+Management+Process_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#CMPO_Configuration+Management+Process_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Process for conducting the activities related to software configuration management, ensuring the completeness and correctness of software Configuration Items.
 <br/></td>
 </tr>
 <tr>
 <td><a name="CMPO_Configuration+Management+System+Establishment"><b>Configuration Management System Establishment</b></a>
-<a href=#CMPO_Configuration+Management+System+Establishment_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#CMPO_Configuration+Management+System+Establishment_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity for establishing the configuration management system, usually composed of version control system, a change control system and a product building system.
 <br/></td>
 </tr>
 <tr>
 <td><a name="CMPO_Configuration+Manager"><b>Configuration Manager</b></a>
-<a href=#CMPO_Configuration+Manager_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#CMPO_Configuration+Manager_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Stakeholder responsible for planning and managing the Configuration Management Process.
 <br/></td>
 </tr>
 <tr>
 <td><a name="CMPO_Deliverable+Product"><b>Deliverable Product</b></a>
-<a href=#CMPO_Deliverable+Product_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#CMPO_Deliverable+Product_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Software Product ready to be delivered to the client.
 <br/></td>
 </tr>
 <tr>
 <td><a name="CMPO_Evaluated+CR"><b>Evaluated CR</b></a>
-<a href=#CMPO_Evaluated+CR_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#CMPO_Evaluated+CR_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Change Request evaluated and set as authorized or rejected.
 <br/></td>
 </tr>
 <tr>
 <td><a name="CMPO_Item"><b>Item</b></a>
-<a href=#CMPO_Item_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#CMPO_Item_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Object whose configuration may be managed.
 <br/>E.g.:<i> Artifacts, Process descriptions, Tools.</i></td>
 </tr>
 <tr>
 <td><a name="CMPO_Release+Management+and+Delivery"><b>Release Management and Delivery</b></a>
-<a href=#CMPO_Release+Management+and+Delivery_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#CMPO_Release+Management+and+Delivery_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity for managing the building, releasing and delivering of the products to be delivered to clients.
 <br/></td>
 </tr>
 <tr>
 <td><a name="CMPO_Request+Evaluation"><b>Request Evaluation</b></a>
-<a href=#CMPO_Request+Evaluation_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#CMPO_Request+Evaluation_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Activity for evaluating the Change Request for a set of Configuration Items, authorizing or rejecting it.
 <br/></td>
 </tr>
 <tr>
 <td><a name="CMPO_Reviewed+CR"><b>Reviewed CR</b></a>
-<a href=#CMPO_Reviewed+CR_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#CMPO_Reviewed+CR_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Change Request reviewed to check if the modifications done are correct.
 <br/></td>
 </tr>
 <tr>
 <td><a name="CMPO_Solved+CR"><b>Solved CR</b></a>
-<a href=#CMPO_Solved+CR_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#CMPO_Solved+CR_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Change Request solved through the Change Implementation.
 <br/></td>
 </tr>
 <tr>
 <td><a name="CMPO_Version"><b>Version</b></a>
-<a href=#CMPO_Version_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#CMPO_Version_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Each identified release of a Configuration Item submitted to a version control repository.
 <br/>E.g.:<i> Project Plan of Project Alfa, version 01; Requirements Document of Project Alfa, version 03.</i></td>
 </tr>
 
 						</tbody>
-					</table>
+					</table>-->
 
 				</div>
 
-				<hr class="featurette-divider">		
+				<hr>		
 
-				<div class="container p-5 rounded" id="detailedconcepts">
+				<div class="p-5 rounded" id="detailedconcepts">
 					<h2 class="featurette-heading">5. Detailed Concepts</h2>
-					<p class="lead"><a name="CMPO_Artifact+CI_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltrole&gt&gt</code><br/>
-<strong>Artifact CI<strong></td></tr>
-</table><br/>
-<b>CMPO::Artifact CI</b><br/>
-Specializes CMPO::Configuration Item (CI), SysSwO::Software Artifact<br/><br/>
-Artifact whose configuration is being managed.<br/>
-E.g.:<i> Documents, Models, Software Products under Configuration Management.</i><br/>
-<br/>
-Relations:<br/>
+					<p class="lead">Configuration Management Process Ontology (CMPO) detailed concepts.</p>					
+					<hr><div class="container-fluid" id="CMPO_Artifact+CI_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltrole&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Artifact CI</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CMPO::Artifact CI</span><br/>Specializes CMPO::Configuration Item (CI), SysSwO::Software Artifact</p><p>Artifact whose configuration is being managed.<br/>E.g.:<span class="font-italic"> Documents, Models, Software Products under Configuration Management.</span></p><p>Relations:<br/>
 <code>Checkin changes Artifact CI<br/>
 Checkin creates Artifact CI<br/>
 Change Review uses Artifact CI<br/>
 Change Request (CR) (0..*) addresses (1..*) Artifact CI<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="CMPO_Artifact+Copy_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltcategory&gt&gt</code><br/>
-<strong>Artifact Copy<strong></td></tr>
-</table><br/>
-<b>CMPO::Artifact Copy</b><br/>
-Specializes SysSwO::Software Artifact<br/><br/>
-Copy of an Artifact that is under version control.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="CMPO_Artifact+Copy_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltcategory&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Artifact Copy</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CMPO::Artifact Copy</span><br/>Specializes SysSwO::Software Artifact</p><p>Copy of an Artifact that is under version control.<br/></p><p>Relations:<br/>
 <code>Artifact Copy (0..*) based on (1..1) Version<br/>
 Checkin uses Artifact Copy<br/>
 Change Implementation changes Artifact Copy<br/>
 Checkout creates Artifact Copy<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="CMPO_Baseline_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Baseline<strong></td></tr>
-</table><br/>
-<b>CMPO::Baseline</b><br/>
-Specializes SysSwO::Information Item<br/><br/>
-Information Item packaging a set of Configuration Items' Versions at a specific time in the product's life (for a product delivery or to establish a relevant point in the Project).<br/>
-E.g.:<i> Release 01 Baseline, established for the first delivered product for the client; Planning baseline, established after project planning is established and agreed.</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="CMPO_Baseline_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Baseline</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CMPO::Baseline</span><br/>Specializes SysSwO::Information Item</p><p>Information Item packaging a set of Configuration Items' Versions at a specific time in the product's life (for a product delivery or to establish a relevant point in the Project).<br/>E.g.:<span class="font-italic"> Release 01 Baseline, established for the first delivered product for the client; Planning baseline, established after project planning is established and agreed.</span></p><p>Relations:<br/>
 <code>Baseline (0..*) packages (1..*) Version<br/>
 Configuration Auditing uses Baseline<br/>
 Baseline Establishment creates Baseline<br/>
 Release Management and Delivery uses Baseline<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="CMPO_Baseline+Establishment_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Baseline Establishment<strong></td></tr>
-</table><br/>
-<b>CMPO::Baseline Establishment</b><br/>
-Specializes SPO::Performed Composite Activity<br/><br/>
-Activity for establishing a Baseline embracing a planned set of Configuration Items' Versions.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="CMPO_Baseline+Establishment_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Baseline Establishment</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CMPO::Baseline Establishment</span><br/>Specializes SPO::Performed Composite Activity</p><p>Activity for establishing a Baseline embracing a planned set of Configuration Items' Versions.<br/></p><p>Relations:<br/>
 <code>Baseline Establishment creates Baseline<br/>
 Configuration Manager is in charge of Baseline Establishment<br/>
 Configuration Auditing depends on Baseline Establishment<br/>
 Configuration Management Process <>-- Baseline Establishment<br/>
 Release Management and Delivery depends on Baseline Establishment<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="CMPO_CR+Being+Solved_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltphase&gt&gt</code><br/>
-<strong>CR Being Solved<strong></td></tr>
-</table><br/>
-<b>CMPO::CR Being Solved</b><br/>
-Specializes CMPO::Change Request (CR)<br/><br/>
-Change Request being solved after authorization.<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="CMPO_CR+Being+Solved_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltphase&gt&gt</code>
+<br/><span class="font-weight-bold text-center">CR Being Solved</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CMPO::CR Being Solved</span><br/>Specializes CMPO::Change Request (CR)</p><p>Change Request being solved after authorization.<br/></p><p></p></div></div>
 
-<a name="CMPO_Change+Accomplishment_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Change Accomplishment<strong></td></tr>
-</table><br/>
-<b>CMPO::Change Accomplishment</b><br/>
-Specializes SPO::Performed Composite Activity<br/><br/>
-Activity for performing the authorized changes in a set of Configuration Items under version control.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="CMPO_Change+Accomplishment_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Change Accomplishment</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CMPO::Change Accomplishment</span><br/>Specializes SPO::Performed Composite Activity</p><p>Activity for performing the authorized changes in a set of Configuration Items under version control.<br/></p><p>Relations:<br/>
 <code>Change Accomplishment <>-- Checkout<br/>
 Change Accomplishment <>-- Change Implementation<br/>
 Change Accomplishment <>-- Checkin<br/>
@@ -613,19 +814,10 @@ Change Accomplishment changes Solved CR<br/>
 Change Implementer is in charge of Change Accomplishment<br/>
 Change Control <>-- Change Accomplishment<br/>
 Change Review depends on Change Accomplishment<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="CMPO_Change+Control_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Change Control<strong></td></tr>
-</table><br/>
-<b>CMPO::Change Control</b><br/>
-Specializes SPO::Performed Composite Activity<br/><br/>
-Activity for formally controlling the modification of Configuration Items, in a process of requesting, evaluating, changing and reviewing.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="CMPO_Change+Control_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Change Control</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CMPO::Change Control</span><br/>Specializes SPO::Performed Composite Activity</p><p>Activity for formally controlling the modification of Configuration Items, in a process of requesting, evaluating, changing and reviewing.<br/></p><p>Relations:<br/>
 <code>Change Control <>-- Change Requesting<br/>
 Change Control <>-- Request Evaluation<br/>
 Change Control <>-- Change Accomplishment<br/>
@@ -634,235 +826,100 @@ Change Control depends on Configuration Management Planning<br/>
 Change Control <>-- Change Request Closing<br/>
 Configuration Manager participates in Change Control<br/>
 Configuration Management Process <>-- Change Control<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="CMPO_Change+Implementation_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Change Implementation<strong></td></tr>
-</table><br/>
-<b>CMPO::Change Implementation</b><br/>
-Specializes SPO::Performed Composite Activity<br/><br/>
-Activity for implementing the changes requested and approved for a Configuration Item.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="CMPO_Change+Implementation_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Change Implementation</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CMPO::Change Implementation</span><br/>Specializes SPO::Performed Composite Activity</p><p>Activity for implementing the changes requested and approved for a Configuration Item.<br/></p><p>Relations:<br/>
 <code>Change Implementation changes Artifact Copy<br/>
 Change Implementation depends on Checkout<br/>
 Checkin depends on Change Implementation<br/>
 Change Accomplishment <>-- Change Implementation<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="CMPO_Change+Implementer_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltrole&gt&gt</code><br/>
-<strong>Change Implementer<strong></td></tr>
-</table><br/>
-<b>CMPO::Change Implementer</b><br/>
-Specializes SPO::Stakeholder<br/><br/>
-Stakeholder responsible for implementing a change in Configuration Items.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="CMPO_Change+Implementer_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltrole&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Change Implementer</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CMPO::Change Implementer</span><br/>Specializes SPO::Stakeholder</p><p>Stakeholder responsible for implementing a change in Configuration Items.<br/></p><p>Relations:<br/>
 <code>Change Implementer is in charge of Change Accomplishment<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="CMPO_Change+Request+(CR)_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Change Request (CR)<strong></td></tr>
-</table><br/>
-<b>CMPO::Change Request (CR)</b><br/>
-Specializes SysSwO::Information Item<br/><br/>
-Information Item describing a request for modification on a set of Configuration Items.<br/>
-E.g.:<i> a request for changing the project planning replacing a developer, which affects the Project Plan and the Project Schedule.</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="CMPO_Change+Request+(CR)_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Change Request (CR)</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CMPO::Change Request (CR)</span><br/>Specializes SysSwO::Information Item</p><p>Information Item describing a request for modification on a set of Configuration Items.<br/>E.g.:<span class="font-italic"> a request for changing the project planning replacing a developer, which affects the Project Plan and the Project Schedule.</span></p><p>Relations:<br/>
 <code>Change Request (CR) (0..*) addresses (1..*) Artifact CI<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="CMPO_Change+Request+Closing_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Change Request Closing<strong></td></tr>
-</table><br/>
-<b>CMPO::Change Request Closing</b><br/>
-Specializes <br/><br/>
-Activity for closing a reviewed and approved Change Request.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="CMPO_Change+Request+Closing_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Change Request Closing</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CMPO::Change Request Closing</span><br/>Specializes </p><p>Activity for closing a reviewed and approved Change Request.<br/></p><p>Relations:<br/>
 <code>Change Request Closing depends on Change Review<br/>
 Change Request Closing changes Closed CR<br/>
 Change Control <>-- Change Request Closing<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="CMPO_Change+Request+Evaluator_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltrole&gt&gt</code><br/>
-<strong>Change Request Evaluator<strong></td></tr>
-</table><br/>
-<b>CMPO::Change Request Evaluator</b><br/>
-Specializes SPO::Stakeholder<br/><br/>
-Stakeholder responsible for evaluating if a Change Request should be implemented or not.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="CMPO_Change+Request+Evaluator_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltrole&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Change Request Evaluator</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CMPO::Change Request Evaluator</span><br/>Specializes SPO::Stakeholder</p><p>Stakeholder responsible for evaluating if a Change Request should be implemented or not.<br/></p><p>Relations:<br/>
 <code>Change Request Evaluator is in charge of Request Evaluation<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="CMPO_Change+Requester_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltrole&gt&gt</code><br/>
-<strong>Change Requester<strong></td></tr>
-</table><br/>
-<b>CMPO::Change Requester</b><br/>
-Specializes SPO::Stakeholder<br/><br/>
-Stakeholder responsible for requesting a change in Configuration Items.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="CMPO_Change+Requester_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltrole&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Change Requester</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CMPO::Change Requester</span><br/>Specializes SPO::Stakeholder</p><p>Stakeholder responsible for requesting a change in Configuration Items.<br/></p><p>Relations:<br/>
 <code>Change Requester is in charge of Change Requesting<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="CMPO_Change+Requesting_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Change Requesting<strong></td></tr>
-</table><br/>
-<b>CMPO::Change Requesting</b><br/>
-Specializes SPO::Performed Simple Activity<br/><br/>
-Activity for requesting the modification of a set of Configuration Items.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="CMPO_Change+Requesting_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Change Requesting</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CMPO::Change Requesting</span><br/>Specializes SPO::Performed Simple Activity</p><p>Activity for requesting the modification of a set of Configuration Items.<br/></p><p>Relations:<br/>
 <code>Change Requesting creates Communicated CR<br/>
 Change Control <>-- Change Requesting<br/>
 Request Evaluation depends on Change Requesting<br/>
 Change Requester is in charge of Change Requesting<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="CMPO_Change+Review_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Change Review<strong></td></tr>
-</table><br/>
-<b>CMPO::Change Review</b><br/>
-Specializes SPO::Performed Simple Activity<br/><br/>
-Activity for reviewing an accomplished change assuring that the modifications were made as planned.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="CMPO_Change+Review_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Change Review</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CMPO::Change Review</span><br/>Specializes SPO::Performed Simple Activity</p><p>Activity for reviewing an accomplished change assuring that the modifications were made as planned.<br/></p><p>Relations:<br/>
 <code>Change Review depends on Change Accomplishment<br/>
 Change Review changes Reviewed CR<br/>
 Change Review uses Artifact CI<br/>
 Change Request Closing depends on Change Review<br/>
 Change Control <>-- Change Review<br/>
 Change Reviewer is in charge of Change Review<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="CMPO_Change+Reviewer_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltrole&gt&gt</code><br/>
-<strong>Change Reviewer<strong></td></tr>
-</table><br/>
-<b>CMPO::Change Reviewer</b><br/>
-Specializes SPO::Stakeholder<br/><br/>
-Stakeholder responsible for reviewing the changes in Configuration Items regarding a Change Request.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="CMPO_Change+Reviewer_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltrole&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Change Reviewer</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CMPO::Change Reviewer</span><br/>Specializes SPO::Stakeholder</p><p>Stakeholder responsible for reviewing the changes in Configuration Items regarding a Change Request.<br/></p><p>Relations:<br/>
 <code>Change Reviewer is in charge of Change Review<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="CMPO_Checkin_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Checkin<strong></td></tr>
-</table><br/>
-<b>CMPO::Checkin</b><br/>
-Specializes SPO::Performed Simple Activity<br/><br/>
-Activity for including new Versions of Configuration Items into a version control repository.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="CMPO_Checkin_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Checkin</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CMPO::Checkin</span><br/>Specializes SPO::Performed Simple Activity</p><p>Activity for including new Versions of Configuration Items into a version control repository.<br/></p><p>Relations:<br/>
 <code>Checkin uses Artifact Copy<br/>
 Checkin depends on Change Implementation<br/>
 Checkin changes Artifact CI<br/>
 Checkin creates Artifact CI<br/>
 Change Accomplishment <>-- Checkin<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="CMPO_Checkout_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Checkout<strong></td></tr>
-</table><br/>
-<b>CMPO::Checkout</b><br/>
-Specializes SPO::Performed Simple Activity<br/><br/>
-Activity for accessing defined versions of Configuration Items from a version control repository, usually for changing purposes.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="CMPO_Checkout_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Checkout</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CMPO::Checkout</span><br/>Specializes SPO::Performed Simple Activity</p><p>Activity for accessing defined versions of Configuration Items from a version control repository, usually for changing purposes.<br/></p><p>Relations:<br/>
 <code>Checkout creates Artifact Copy<br/>
 Change Implementation depends on Checkout<br/>
 Change Accomplishment <>-- Checkout<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="CMPO_Closed+CR_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltphase&gt&gt</code><br/>
-<strong>Closed CR<strong></td></tr>
-</table><br/>
-<b>CMPO::Closed CR</b><br/>
-Specializes CMPO::Change Request (CR)<br/><br/>
-Change Request closed after solved, reviewed and approved.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="CMPO_Closed+CR_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltphase&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Closed CR</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CMPO::Closed CR</span><br/>Specializes CMPO::Change Request (CR)</p><p>Change Request closed after solved, reviewed and approved.<br/></p><p>Relations:<br/>
 <code>Change Request Closing changes Closed CR<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="CMPO_Communicated+CR_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltphase&gt&gt</code><br/>
-<strong>Communicated CR<strong></td></tr>
-</table><br/>
-<b>CMPO::Communicated CR</b><br/>
-Specializes CMPO::Change Request (CR)<br/><br/>
-Change Request in the first phase, communicated.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="CMPO_Communicated+CR_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltphase&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Communicated CR</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CMPO::Communicated CR</span><br/>Specializes CMPO::Change Request (CR)</p><p>Change Request in the first phase, communicated.<br/></p><p>Relations:<br/>
 <code>Change Requesting creates Communicated CR<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="CMPO_Configuration+Audit+Report_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Configuration Audit Report<strong></td></tr>
-</table><br/>
-<b>CMPO::Configuration Audit Report</b><br/>
-Specializes QAPO::Evaluation Report, SysSwO::Document<br/><br/>
-Document reporting the results of a Quality Audit Performing, including Noncompliance and Corrective Action Registers.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="CMPO_Configuration+Audit+Report_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Configuration Audit Report</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CMPO::Configuration Audit Report</span><br/>Specializes QAPO::Evaluation Report, SysSwO::Document</p><p>Document reporting the results of a Quality Audit Performing, including Noncompliance and Corrective Action Registers.<br/></p><p>Relations:<br/>
 <code>Configuration Audit Report depicts Noncompliance Register<br/>
 Configuration Auditing creates Configuration Audit Report<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="CMPO_Configuration+Auditing_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Configuration Auditing<strong></td></tr>
-</table><br/>
-<b>CMPO::Configuration Auditing</b><br/>
-Specializes SPO::Performed Composite Activity<br/><br/>
-Activity for verifying that a Baseline or a Deliverable Product is complete, consistent and in conformity with the specified requirements.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="CMPO_Configuration+Auditing_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Configuration Auditing</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CMPO::Configuration Auditing</span><br/>Specializes SPO::Performed Composite Activity</p><p>Activity for verifying that a Baseline or a Deliverable Product is complete, consistent and in conformity with the specified requirements.<br/></p><p>Relations:<br/>
 <code>Configuration Auditing creates Configuration Audit Report<br/>
 Configuration Auditing uses Baseline<br/>
 Configuration Auditing uses Deliverable Product<br/>
@@ -870,266 +927,127 @@ Configuration Auditing depends on Baseline Establishment<br/>
 Configuration Manager participates in Configuration Auditing<br/>
 Configuration Auditor is in charge of Configuration Auditing<br/>
 Configuration Management Process <>-- Configuration Auditing<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="CMPO_Configuration+Auditor_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltrole&gt&gt</code><br/>
-<strong>Configuration Auditor<strong></td></tr>
-</table><br/>
-<b>CMPO::Configuration Auditor</b><br/>
-Specializes SPO::Stakeholder<br/><br/>
-Stakeholder responsible for auditing the Configuration Management related results.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="CMPO_Configuration+Auditor_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltrole&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Configuration Auditor</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CMPO::Configuration Auditor</span><br/>Specializes SPO::Stakeholder</p><p>Stakeholder responsible for auditing the Configuration Management related results.<br/></p><p>Relations:<br/>
 <code>Configuration Auditor is in charge of Configuration Auditing<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="CMPO_Configuration+Item+(CI)_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltrolemixin&gt&gt</code><br/>
-<strong>Configuration Item (CI)<strong></td></tr>
-</table><br/>
-<b>CMPO::Configuration Item (CI)</b><br/>
-Specializes CMPO::Item<br/><br/>
-Object whose configuration is being managed.<br/>
-E.g.:<i> Artifacts, Process descriptions, Tools under Configuration Management.</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="CMPO_Configuration+Item+(CI)_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltrolemixin&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Configuration Item (CI)</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CMPO::Configuration Item (CI)</span><br/>Specializes CMPO::Item</p><p>Object whose configuration is being managed.<br/>E.g.:<span class="font-italic"> Artifacts, Process descriptions, Tools under Configuration Management.</span></p><p>Relations:<br/>
 <code>Configuration Item (CI) (1..1) has (1..*) Version<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="CMPO_Configuration+Items+Identification_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Configuration Items Identification<strong></td></tr>
-</table><br/>
-<b>CMPO::Configuration Items Identification</b><br/>
-Specializes SPO::Performed Composite Activity<br/><br/>
-Activity for identifying the Configuration Items of a Project.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="CMPO_Configuration+Items+Identification_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Configuration Items Identification</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CMPO::Configuration Items Identification</span><br/>Specializes SPO::Performed Composite Activity</p><p>Activity for identifying the Configuration Items of a Project.<br/></p><p>Relations:<br/>
 <code>Configuration Management Planning <>-- Configuration Items Identification<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="CMPO_Configuration+Management+Plan_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Configuration Management Plan<strong></td></tr>
-</table><br/>
-<b>CMPO::Configuration Management Plan</b><br/>
-Specializes SysSwO::Document<br/><br/>
-Document describing the configuration management parameters for conducting the process, including the identified Configuration Items types, the configuration systems and the planned Baselines, Configuration Audits, and Products Deliveries.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="CMPO_Configuration+Management+Plan_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Configuration Management Plan</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CMPO::Configuration Management Plan</span><br/>Specializes SysSwO::Document</p><p>Document describing the configuration management parameters for conducting the process, including the identified Configuration Items types, the configuration systems and the planned Baselines, Configuration Audits, and Products Deliveries.<br/></p><p>Relations:<br/>
 <code>Configuration Management Planning creates Configuration Management Plan<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="CMPO_Configuration+Management+Planning_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Configuration Management Planning<strong></td></tr>
-</table><br/>
-<b>CMPO::Configuration Management Planning</b><br/>
-Specializes SPO::Performed Composite Activity<br/><br/>
-Activity for planning the Configuration Management Process, including, among others, the Configuration Management System Establishment and the Configuration Items Identification.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="CMPO_Configuration+Management+Planning_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Configuration Management Planning</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CMPO::Configuration Management Planning</span><br/>Specializes SPO::Performed Composite Activity</p><p>Activity for planning the Configuration Management Process, including, among others, the Configuration Management System Establishment and the Configuration Items Identification.<br/></p><p>Relations:<br/>
 <code>Configuration Management Planning creates Configuration Management Plan<br/>
 Configuration Management Planning <>-- Configuration Management System Establishment<br/>
 Configuration Management Planning <>-- Configuration Items Identification<br/>
 Change Control depends on Configuration Management Planning<br/>
 Configuration Manager is in charge of Configuration Management Planning<br/>
 Configuration Management Process <>-- Configuration Management Planning<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="CMPO_Configuration+Management+Process_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Configuration Management Process<strong></td></tr>
-</table><br/>
-<b>CMPO::Configuration Management Process</b><br/>
-Specializes SPO::Performed Specific Process<br/><br/>
-Process for conducting the activities related to software configuration management, ensuring the completeness and correctness of software Configuration Items.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="CMPO_Configuration+Management+Process_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Configuration Management Process</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CMPO::Configuration Management Process</span><br/>Specializes SPO::Performed Specific Process</p><p>Process for conducting the activities related to software configuration management, ensuring the completeness and correctness of software Configuration Items.<br/></p><p>Relations:<br/>
 <code>Configuration Management Process <>-- Configuration Management Planning<br/>
 Configuration Management Process <>-- Change Control<br/>
 Configuration Management Process <>-- Baseline Establishment<br/>
 Configuration Management Process <>-- Configuration Auditing<br/>
 Configuration Management Process <>-- Release Management and Delivery<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="CMPO_Configuration+Management+System+Establishment_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Configuration Management System Establishment<strong></td></tr>
-</table><br/>
-<b>CMPO::Configuration Management System Establishment</b><br/>
-Specializes SPO::Performed Composite Activity<br/><br/>
-Activity for establishing the configuration management system, usually composed of version control system, a change control system and a product building system.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="CMPO_Configuration+Management+System+Establishment_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Configuration Management System Establishment</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CMPO::Configuration Management System Establishment</span><br/>Specializes SPO::Performed Composite Activity</p><p>Activity for establishing the configuration management system, usually composed of version control system, a change control system and a product building system.<br/></p><p>Relations:<br/>
 <code>Configuration Management Planning <>-- Configuration Management System Establishment<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="CMPO_Configuration+Manager_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltrole&gt&gt</code><br/>
-<strong>Configuration Manager<strong></td></tr>
-</table><br/>
-<b>CMPO::Configuration Manager</b><br/>
-Specializes SPO::Stakeholder<br/><br/>
-Stakeholder responsible for planning and managing the Configuration Management Process.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="CMPO_Configuration+Manager_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltrole&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Configuration Manager</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CMPO::Configuration Manager</span><br/>Specializes SPO::Stakeholder</p><p>Stakeholder responsible for planning and managing the Configuration Management Process.<br/></p><p>Relations:<br/>
 <code>Configuration Manager is in charge of Configuration Management Planning<br/>
 Configuration Manager is in charge of Baseline Establishment<br/>
 Configuration Manager is in charge of Release Management and Delivery<br/>
 Configuration Manager participates in Configuration Auditing<br/>
 Configuration Manager participates in Change Control<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="CMPO_Deliverable+Product_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Deliverable Product<strong></td></tr>
-</table><br/>
-<b>CMPO::Deliverable Product</b><br/>
-Specializes SysSwO::Software Product<br/><br/>
-Software Product ready to be delivered to the client.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="CMPO_Deliverable+Product_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Deliverable Product</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CMPO::Deliverable Product</span><br/>Specializes SysSwO::Software Product</p><p>Software Product ready to be delivered to the client.<br/></p><p>Relations:<br/>
 <code>Configuration Auditing uses Deliverable Product<br/>
 Release Management and Delivery creates Deliverable Product<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="CMPO_Evaluated+CR_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltphase&gt&gt</code><br/>
-<strong>Evaluated CR<strong></td></tr>
-</table><br/>
-<b>CMPO::Evaluated CR</b><br/>
-Specializes CMPO::Change Request (CR)<br/><br/>
-Change Request evaluated and set as authorized or rejected.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="CMPO_Evaluated+CR_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltphase&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Evaluated CR</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CMPO::Evaluated CR</span><br/>Specializes CMPO::Change Request (CR)</p><p>Change Request evaluated and set as authorized or rejected.<br/></p><p>Relations:<br/>
 <code>Request Evaluation changes Evaluated CR<br/>
 Change Accomplishment uses Evaluated CR<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="CMPO_Item_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltmixin&gt&gt</code><br/>
-<strong>Item<strong></td></tr>
-</table><br/>
-<b>CMPO::Item</b><br/>
-Specializes UFO::Object<br/><br/>
-Object whose configuration may be managed.<br/>
-E.g.:<i> Artifacts, Process descriptions, Tools.</i><br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="CMPO_Item_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltmixin&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Item</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CMPO::Item</span><br/>Specializes UFO::Object</p><p>Object whose configuration may be managed.<br/>E.g.:<span class="font-italic"> Artifacts, Process descriptions, Tools.</span></p><p></p></div></div>
 
-<a name="CMPO_Release+Management+and+Delivery_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Release Management and Delivery<strong></td></tr>
-</table><br/>
-<b>CMPO::Release Management and Delivery</b><br/>
-Specializes SPO::Performed Composite Activity<br/><br/>
-Activity for managing the building, releasing and delivering of the products to be delivered to clients.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="CMPO_Release+Management+and+Delivery_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Release Management and Delivery</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CMPO::Release Management and Delivery</span><br/>Specializes SPO::Performed Composite Activity</p><p>Activity for managing the building, releasing and delivering of the products to be delivered to clients.<br/></p><p>Relations:<br/>
 <code>Release Management and Delivery creates Deliverable Product<br/>
 Release Management and Delivery uses Baseline<br/>
 Release Management and Delivery depends on Baseline Establishment<br/>
 Configuration Manager is in charge of Release Management and Delivery<br/>
 Configuration Management Process <>-- Release Management and Delivery<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="CMPO_Request+Evaluation_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Request Evaluation<strong></td></tr>
-</table><br/>
-<b>CMPO::Request Evaluation</b><br/>
-Specializes SPO::Performed Simple Activity<br/><br/>
-Activity for evaluating the Change Request for a set of Configuration Items, authorizing or rejecting it.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="CMPO_Request+Evaluation_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Request Evaluation</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CMPO::Request Evaluation</span><br/>Specializes SPO::Performed Simple Activity</p><p>Activity for evaluating the Change Request for a set of Configuration Items, authorizing or rejecting it.<br/></p><p>Relations:<br/>
 <code>Request Evaluation changes Evaluated CR<br/>
 Request Evaluation depends on Change Requesting<br/>
 Change Request Evaluator is in charge of Request Evaluation<br/>
 Change Control <>-- Request Evaluation<br/>
 Change Accomplishment depends on Request Evaluation<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="CMPO_Reviewed+CR_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltphase&gt&gt</code><br/>
-<strong>Reviewed CR<strong></td></tr>
-</table><br/>
-<b>CMPO::Reviewed CR</b><br/>
-Specializes CMPO::Change Request (CR)<br/><br/>
-Change Request reviewed to check if the modifications done are correct.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="CMPO_Reviewed+CR_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltphase&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Reviewed CR</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CMPO::Reviewed CR</span><br/>Specializes CMPO::Change Request (CR)</p><p>Change Request reviewed to check if the modifications done are correct.<br/></p><p>Relations:<br/>
 <code>Change Review changes Reviewed CR<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="CMPO_Solved+CR_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltphase&gt&gt</code><br/>
-<strong>Solved CR<strong></td></tr>
-</table><br/>
-<b>CMPO::Solved CR</b><br/>
-Specializes CMPO::Change Request (CR)<br/><br/>
-Change Request solved through the Change Implementation.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="CMPO_Solved+CR_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltphase&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Solved CR</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CMPO::Solved CR</span><br/>Specializes CMPO::Change Request (CR)</p><p>Change Request solved through the Change Implementation.<br/></p><p>Relations:<br/>
 <code>Change Accomplishment changes Solved CR<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="CMPO_Version_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltmode&gt&gt</code><br/>
-<strong>Version<strong></td></tr>
-</table><br/>
-<b>CMPO::Version</b><br/>
-Specializes UFO::Moment<br/><br/>
-Each identified release of a Configuration Item submitted to a version control repository.<br/>
-E.g.:<i> Project Plan of Project Alfa, version 01; Requirements Document of Project Alfa, version 03.</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="CMPO_Version_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltmode&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Version</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CMPO::Version</span><br/>Specializes UFO::Moment</p><p>Each identified release of a Configuration Item submitted to a version control repository.<br/>E.g.:<span class="font-italic"> Project Plan of Project Alfa, version 01; Requirements Document of Project Alfa, version 03.</span></p><p>Relations:<br/>
 <code>Baseline (0..*) packages (1..*) Version<br/>
 Configuration Item (CI) (1..1) has (1..*) Version<br/>
 Artifact Copy (0..*) based on (1..1) Version<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-</p>					
+
 				</div>
 				
 			</main>
 	
-    <footer class="footer">
-      <div class="container-fluid">
-        <span class="text-muted">Powered by NEMO.</span>
-        <span class="text-muted"><small><b>Configuration Management Process Ontology (CMPO)</b></small></span>
-        <span class="text-muted"><small>Thu Nov 18 16:11:32 BRT 2021</small></span>		
+    <footer class="p-5 rounded border-top">
+      <div class="row">
+      	<div class="col">
+      		  <span class="text-muted">Powered by NEMO.</span>
+      	</div>
+      	<div class="col">
+      		<span><small><b>Configuration Management Process Ontology (CMPO)</b></small></span>
+      	</div>
+      	<div class="col">
+      		<span class="text-muted"><small>Mon Nov 22 22:03:46 BRT 2021</small></span>	
+      	</div>
       </div>
     </footer>
 	   

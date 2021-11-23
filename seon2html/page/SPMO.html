@@ -18,7 +18,7 @@
 	    <!-- Custom styles for this template -->
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/navbar-top-fixed.css" rel="stylesheet">
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/sticky-footer-navbar.css" rel="stylesheet">
-	       
+	    <link href="../resources/static/bootstrap-5.1.3-dist/css/carousel.css" rel="stylesheet">
 
 	    <style>
 	      .bd-placeholder-img {
@@ -36,7 +36,7 @@
 	        }
 	      }
 
-	      .h1, h1 {
+	      .h2, .h3, h2, h3 {
 	      	margin-bottom: 2.5rem;
 	      }
 
@@ -44,6 +44,9 @@
 	      	font-size: 2rem;
 	      }
 
+	      .featurette-heading {
+	        margin-top: 0;
+	      }
 	    </style>
 
 	    
@@ -131,7 +134,7 @@
 	            SPMO
 	          </a>
 	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item" href="#ontologydescription" >Ontology Description</a></li>
+	            <li><a class="dropdown-item" href="#ontologydescription">Ontology Description</a></li>
 	            <li><a class="dropdown-item" href="#relatedontologies">Related Ontologies</a></li>
 	            <li><a class="dropdown-item" href="#ontologymodels">Ontology Models</a></li>
 	            <li><a class="dropdown-item" href="#conceptsdefinition">Concepts Definition</a></li>
@@ -157,21 +160,27 @@
 
 		<!-- Begin page content -->
     <main role="main" class="container-fluid">	
-    		<div class="container-fluid d-flex justify-content-end"><span class="badge badge-danger"></span></div>
+    		
 				<!--<div class="bg-light p-5 rounded" id="ontologydescription">
     			<h1 class="featurette-heading">The Software Project Management Ontology (SPMO)</h1>
 					<p class="lead" align="justify"><span class="text-muted font-weight-bold font-italic">Ontology Description. </span></p>
-					<p class="lead text-right text-muted font-italic">- domain ontology from SEON. </p>
+					<p class="lead text-right text-muted font-italic"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"><path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg> domain ontology from SEON</p>
     		</div>-->
 
-				<div class="bg-light p-5 rounded" id="ontologydescription">
+				<div class="bg-light p-5 rounded">
+					<div class="container-fluid d-flex justify-content-end"><span class="badge badge-danger text-lowercase"></span></div>
     			<h1 class="featurette-heading">The Software Project Management Ontology (SPMO)</h1>
-    				<h2 class="featurette-heading d-inline font-italic">Ontology Description. </h2>
-    				<p class="lead d-inline" align="justify"></p>
-    				<p class="lead text-right text-muted font-italic">- domain ontology from SEON. </p>
+    			<p class="lead text-right text-muted font-italic"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"><path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg> domain ontology from SEON</p>
+    		</div>
+	
+				<hr> 
+				   		
+    		<div class="p-5 rounded" id="ontologydescription">
+  				<h2 class="featurette-heading">1. Ontology Description</h2>
+  				<p class="lead" align="justify"></p>
     		</div>
 
-				<hr class="featurette-divider">
+				<hr>
 
 				<div class="p-5 rounded" id="relatedontologies">
 					<h2 class="featurette-heading">2. Related Ontologies</h2>
@@ -195,7 +204,7 @@
 
 				</div>	
 
-				<hr class="featurette-divider">
+				<hr>
     	
 				<div class="p-5 rounded" id="ontologymodels">
 					<h2 class="featurette-heading">3. Ontology Models</h2>
@@ -283,13 +292,131 @@
 </p>					
 				</div>
 
-				<hr class="featurette-divider">
+				<hr>
 
 				<div class="p-5 rounded" id="conceptsdefinition">
 					<h2 class="featurette-heading">4. Concepts Definition</h2>
 					<p class="lead">The following table shows the definitions for SPMO concepts.</p>		
 					<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->				
-					<table style="width: 100%" border="1" cellpadding="6">
+					<div class="table-responsive">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th scope="col">Concept</th>
+									<th scope="col">Definition</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+<td><a name="SPMO_Corrective+Action+Register"><b>Corrective Action Register</b></a>
+<a href=#SPMO_Corrective+Action+Register_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Information Item describing an action to eliminate the cause or reduce the likelihood of recurrence of a detected nonconformity or other undesirable situation. [ISO/IEC/IEEE 24765]
+<br/>E.g.:<i> an additional developer shall be allocated for Project X; a new agreement on the requirements change shall be obtained from the client.</i></td>
+</tr>
+<tr>
+<td><a name="SPMO_Cost+Estimated+Activity"><b>Cost Estimated Activity</b></a>
+<a href=#SPMO_Cost+Estimated+Activity_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A Project Activity with cost estimated.
+<br/></td>
+</tr>
+<tr>
+<td><a name="SPMO_Cost+Estimated+Process"><b>Cost Estimated Process</b></a>
+<a href=#SPMO_Cost+Estimated+Process_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A Project Process with cost estimated.<br/>
+<br/></td>
+</tr>
+<tr>
+<td><a name="SPMO_Deliverable"><b>Deliverable</b></a>
+<a href=#SPMO_Deliverable_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="SPMO_Duration+Estimated+Activity"><b>Duration Estimated Activity</b></a>
+<a href=#SPMO_Duration+Estimated+Activity_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A Project Process with duration estimated.
+<br/></td>
+</tr>
+<tr>
+<td><a name="SPMO_Duration+Estimated+Process"><b>Duration Estimated Process</b></a>
+<a href=#SPMO_Duration+Estimated+Process_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A Project Process with duration estimated.
+<br/></td>
+</tr>
+<tr>
+<td><a name="SPMO_Estimated+Activity"><b>Estimated Activity</b></a>
+<a href=#SPMO_Estimated+Activity_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A Project Activity with scope, cost, duration and time estimated.
+<br/></td>
+</tr>
+<tr>
+<td><a name="SPMO_Estimated+Process"><b>Estimated Process</b></a>
+<a href=#SPMO_Estimated+Process_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A Project Process with cost, duration and time estimated.
+<br/></td>
+</tr>
+<tr>
+<td><a name="SPMO_Estimated+Stakeholder+Allocation"><b>Estimated Stakeholder Allocation</b></a>
+<a href=#SPMO_Estimated+Stakeholder+Allocation_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="SPMO_Practical+Result"><b>Practical Result</b></a>
+<a href=#SPMO_Practical+Result_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="SPMO_Project+Manager"><b>Project Manager</b></a>
+<a href=#SPMO_Project+Manager_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Stakeholder responsible for managing a Project.
+<br/></td>
+</tr>
+<tr>
+<td><a name="SPMO_Project+Plan"><b>Project Plan</b></a>
+<a href=#SPMO_Project+Plan_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Document describing the planning of a Project, to be used as the basis for project management.
+<br/></td>
+</tr>
+<tr>
+<td><a name="SPMO_Scope+Estimated+Activity"><b>Scope Estimated Activity</b></a>
+<a href=#SPMO_Scope+Estimated+Activity_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A Project Activity with its scope in the project defined in terms of the work packages that it shall produce.
+<br/></td>
+</tr>
+<tr>
+<td><a name="SPMO_Tracked+Activity"><b>Tracked Activity</b></a>
+<a href=#SPMO_Tracked+Activity_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="SPMO_Tracked+Process"><b>Tracked Process</b></a>
+<a href=#SPMO_Tracked+Process_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="SPMO_Tracked+Stakeholder+Participation"><b>Tracked Stakeholder Participation</b></a>
+<a href=#SPMO_Tracked+Stakeholder+Participation_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="SPMO_Work+Package"><b>Work Package</b></a>
+<a href=#SPMO_Work+Package_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+
+							</tbody>
+						</table>
+  				</div>
+
+
+
+				<!--	<table style="width: 100%" border="1" cellpadding="6">
 						<tbody>
 							<tr style="background-color: #D8D8D8">
 								<td style="width: 25%"><b>Concept</b></td>
@@ -297,349 +424,203 @@
 							</tr>
 							<tr>
 <td><a name="SPMO_Corrective+Action+Register"><b>Corrective Action Register</b></a>
-<a href=#SPMO_Corrective+Action+Register_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SPMO_Corrective+Action+Register_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Information Item describing an action to eliminate the cause or reduce the likelihood of recurrence of a detected nonconformity or other undesirable situation. [ISO/IEC/IEEE 24765]
 <br/>E.g.:<i> an additional developer shall be allocated for Project X; a new agreement on the requirements change shall be obtained from the client.</i></td>
 </tr>
 <tr>
 <td><a name="SPMO_Cost+Estimated+Activity"><b>Cost Estimated Activity</b></a>
-<a href=#SPMO_Cost+Estimated+Activity_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SPMO_Cost+Estimated+Activity_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A Project Activity with cost estimated.
 <br/></td>
 </tr>
 <tr>
 <td><a name="SPMO_Cost+Estimated+Process"><b>Cost Estimated Process</b></a>
-<a href=#SPMO_Cost+Estimated+Process_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SPMO_Cost+Estimated+Process_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A Project Process with cost estimated.<br/>
 <br/></td>
 </tr>
 <tr>
 <td><a name="SPMO_Deliverable"><b>Deliverable</b></a>
-<a href=#SPMO_Deliverable_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SPMO_Deliverable_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="SPMO_Duration+Estimated+Activity"><b>Duration Estimated Activity</b></a>
-<a href=#SPMO_Duration+Estimated+Activity_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SPMO_Duration+Estimated+Activity_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A Project Process with duration estimated.
 <br/></td>
 </tr>
 <tr>
 <td><a name="SPMO_Duration+Estimated+Process"><b>Duration Estimated Process</b></a>
-<a href=#SPMO_Duration+Estimated+Process_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SPMO_Duration+Estimated+Process_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A Project Process with duration estimated.
 <br/></td>
 </tr>
 <tr>
 <td><a name="SPMO_Estimated+Activity"><b>Estimated Activity</b></a>
-<a href=#SPMO_Estimated+Activity_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SPMO_Estimated+Activity_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A Project Activity with scope, cost, duration and time estimated.
 <br/></td>
 </tr>
 <tr>
 <td><a name="SPMO_Estimated+Process"><b>Estimated Process</b></a>
-<a href=#SPMO_Estimated+Process_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SPMO_Estimated+Process_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A Project Process with cost, duration and time estimated.
 <br/></td>
 </tr>
 <tr>
 <td><a name="SPMO_Estimated+Stakeholder+Allocation"><b>Estimated Stakeholder Allocation</b></a>
-<a href=#SPMO_Estimated+Stakeholder+Allocation_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SPMO_Estimated+Stakeholder+Allocation_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="SPMO_Practical+Result"><b>Practical Result</b></a>
-<a href=#SPMO_Practical+Result_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SPMO_Practical+Result_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="SPMO_Project+Manager"><b>Project Manager</b></a>
-<a href=#SPMO_Project+Manager_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SPMO_Project+Manager_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Stakeholder responsible for managing a Project.
 <br/></td>
 </tr>
 <tr>
 <td><a name="SPMO_Project+Plan"><b>Project Plan</b></a>
-<a href=#SPMO_Project+Plan_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SPMO_Project+Plan_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Document describing the planning of a Project, to be used as the basis for project management.
 <br/></td>
 </tr>
 <tr>
 <td><a name="SPMO_Scope+Estimated+Activity"><b>Scope Estimated Activity</b></a>
-<a href=#SPMO_Scope+Estimated+Activity_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SPMO_Scope+Estimated+Activity_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A Project Activity with its scope in the project defined in terms of the work packages that it shall produce.
 <br/></td>
 </tr>
 <tr>
 <td><a name="SPMO_Tracked+Activity"><b>Tracked Activity</b></a>
-<a href=#SPMO_Tracked+Activity_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SPMO_Tracked+Activity_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="SPMO_Tracked+Process"><b>Tracked Process</b></a>
-<a href=#SPMO_Tracked+Process_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SPMO_Tracked+Process_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="SPMO_Tracked+Stakeholder+Participation"><b>Tracked Stakeholder Participation</b></a>
-<a href=#SPMO_Tracked+Stakeholder+Participation_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SPMO_Tracked+Stakeholder+Participation_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="SPMO_Work+Package"><b>Work Package</b></a>
-<a href=#SPMO_Work+Package_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#SPMO_Work+Package_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 
 						</tbody>
-					</table>
+					</table>-->
 
 				</div>
 
-				<hr class="featurette-divider">		
+				<hr>		
 
-				<div class="container p-5 rounded" id="detailedconcepts">
+				<div class="p-5 rounded" id="detailedconcepts">
 					<h2 class="featurette-heading">5. Detailed Concepts</h2>
-					<p class="lead"><a name="SPMO_Corrective+Action+Register_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Corrective Action Register<strong></td></tr>
-</table><br/>
-<b>SPMO::Corrective Action Register</b><br/>
-Specializes SysSwO::Information Item<br/><br/>
-Information Item describing an action to eliminate the cause or reduce the likelihood of recurrence of a detected nonconformity or other undesirable situation. [ISO/IEC/IEEE 24765]<br/>
-E.g.:<i> an additional developer shall be allocated for Project X; a new agreement on the requirements change shall be obtained from the client.</i><br/>
-<br/>
-Relations:<br/>
+					<p class="lead">Software Project Management Ontology (SPMO) detailed concepts.</p>					
+					<hr><div class="container-fluid" id="SPMO_Corrective+Action+Register_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Corrective Action Register</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SPMO::Corrective Action Register</span><br/>Specializes SysSwO::Information Item</p><p>Information Item describing an action to eliminate the cause or reduce the likelihood of recurrence of a detected nonconformity or other undesirable situation. [ISO/IEC/IEEE 24765]<br/>E.g.:<span class="font-italic"> an additional developer shall be allocated for Project X; a new agreement on the requirements change shall be obtained from the client.</span></p><p>Relations:<br/>
 <code>Noncompliance Register (0..*) <>-- (0..*) Corrective Action Register<br/>
 Noncompliance Resolution creates Corrective Action Register<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SPMO_Cost+Estimated+Activity_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Cost Estimated Activity<strong></td></tr>
-</table><br/>
-<b>SPMO::Cost Estimated Activity</b><br/>
-Specializes SPO::Project Activity<br/><br/>
-A Project Activity with cost estimated.<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="SPMO_Cost+Estimated+Activity_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Cost Estimated Activity</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SPMO::Cost Estimated Activity</span><br/>Specializes SPO::Project Activity</p><p>A Project Activity with cost estimated.<br/></p><p></p></div></div>
 
-<a name="SPMO_Cost+Estimated+Process_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Cost Estimated Process<strong></td></tr>
-</table><br/>
-<b>SPMO::Cost Estimated Process</b><br/>
-Specializes SPO::Project Process<br/><br/>
-A Project Process with cost estimated.<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="SPMO_Cost+Estimated+Process_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Cost Estimated Process</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SPMO::Cost Estimated Process</span><br/>Specializes SPO::Project Process</p><p>A Project Process with cost estimated.<br/><br/></p><p></p></div></div>
 
-<a name="SPMO_Deliverable_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltmode&gt&gt</code><br/>
-<strong>Deliverable<strong></td></tr>
-</table><br/>
-<b>SPMO::Deliverable</b><br/>
-Specializes <br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SPMO_Deliverable_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltmode&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Deliverable</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SPMO::Deliverable</span><br/>Specializes </p><p><br/></p><p>Relations:<br/>
 <code>Software Project (1..1) has (0..*) Deliverable<br/>
 Practical Result (0..*) <>-- (2..*) Deliverable<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SPMO_Duration+Estimated+Activity_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Duration Estimated Activity<strong></td></tr>
-</table><br/>
-<b>SPMO::Duration Estimated Activity</b><br/>
-Specializes SPO::Project Activity<br/><br/>
-A Project Process with duration estimated.<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="SPMO_Duration+Estimated+Activity_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Duration Estimated Activity</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SPMO::Duration Estimated Activity</span><br/>Specializes SPO::Project Activity</p><p>A Project Process with duration estimated.<br/></p><p></p></div></div>
 
-<a name="SPMO_Duration+Estimated+Process_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Duration Estimated Process<strong></td></tr>
-</table><br/>
-<b>SPMO::Duration Estimated Process</b><br/>
-Specializes SPO::Project Process<br/><br/>
-A Project Process with duration estimated.<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="SPMO_Duration+Estimated+Process_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Duration Estimated Process</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SPMO::Duration Estimated Process</span><br/>Specializes SPO::Project Process</p><p>A Project Process with duration estimated.<br/></p><p></p></div></div>
 
-<a name="SPMO_Estimated+Activity_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Estimated Activity<strong></td></tr>
-</table><br/>
-<b>SPMO::Estimated Activity</b><br/>
-Specializes SPO::Scheduled Activity, SPMO::Cost Estimated Activity, SPMO::Scope Estimated Activity, SPMO::Duration Estimated Activity, SPO::Project Activity<br/><br/>
-A Project Activity with scope, cost, duration and time estimated.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SPMO_Estimated+Activity_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Estimated Activity</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SPMO::Estimated Activity</span><br/>Specializes SPO::Scheduled Activity, SPMO::Cost Estimated Activity, SPMO::Scope Estimated Activity, SPMO::Duration Estimated Activity, SPO::Project Activity</p><p>A Project Activity with scope, cost, duration and time estimated.<br/></p><p>Relations:<br/>
 <code>Tracked Activity (0..1) tracked in relation to (1..1) Estimated Activity<br/>
 Estimated Stakeholder Allocation (0..*) is to perform (1..1) Estimated Activity  &lt&ltmediation&gt&gt<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SPMO_Estimated+Process_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Estimated Process<strong></td></tr>
-</table><br/>
-<b>SPMO::Estimated Process</b><br/>
-Specializes SPMO::Duration Estimated Process, SPMO::Cost Estimated Process, SPO::Scheduled Process, SPO::Project Process<br/><br/>
-A Project Process with cost, duration and time estimated.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SPMO_Estimated+Process_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Estimated Process</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SPMO::Estimated Process</span><br/>Specializes SPMO::Duration Estimated Process, SPMO::Cost Estimated Process, SPO::Scheduled Process, SPO::Project Process</p><p>A Project Process with cost, duration and time estimated.<br/></p><p>Relations:<br/>
 <code>Tracked Process (0..1) tracked in relation to (1..1) Estimated Process<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SPMO_Estimated+Stakeholder+Allocation_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Estimated Stakeholder Allocation<strong></td></tr>
-</table><br/>
-<b>SPMO::Estimated Stakeholder Allocation</b><br/>
-Specializes SPO::Stakeholder Allocation<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SPMO_Estimated+Stakeholder+Allocation_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Estimated Stakeholder Allocation</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SPMO::Estimated Stakeholder Allocation</span><br/>Specializes SPO::Stakeholder Allocation</p><p><br/></p><p>Relations:<br/>
 <code>Estimated Stakeholder Allocation (0..*) is to perform (1..1) Estimated Activity  &lt&ltmediation&gt&gt<br/>
 Tracked Stakeholder Participation (0..*) refers to (1..1) Estimated Stakeholder Allocation<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SPMO_Practical+Result_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Practical Result<strong></td></tr>
-</table><br/>
-<b>SPMO::Practical Result</b><br/>
-Specializes SPMO::Deliverable<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SPMO_Practical+Result_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Practical Result</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SPMO::Practical Result</span><br/>Specializes SPMO::Deliverable</p><p><br/></p><p>Relations:<br/>
 <code>Practical Result (0..*) <>-- (2..*) Deliverable<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SPMO_Project+Manager_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltrole&gt&gt</code><br/>
-<strong>Project Manager<strong></td></tr>
-</table><br/>
-<b>SPMO::Project Manager</b><br/>
-Specializes SPO::Person Stakeholder<br/><br/>
-Stakeholder responsible for managing a Project.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SPMO_Project+Manager_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltrole&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Project Manager</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SPMO::Project Manager</span><br/>Specializes SPO::Person Stakeholder</p><p>Stakeholder responsible for managing a Project.<br/></p><p>Relations:<br/>
 <code>Project Manager is in charge of Quality Assurance Planning<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SPMO_Project+Plan_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Project Plan<strong></td></tr>
-</table><br/>
-<b>SPMO::Project Plan</b><br/>
-Specializes SysSwO::Document<br/><br/>
-Document describing the planning of a Project, to be used as the basis for project management.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SPMO_Project+Plan_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Project Plan</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SPMO::Project Plan</span><br/>Specializes SysSwO::Document</p><p>Document describing the planning of a Project, to be used as the basis for project management.<br/></p><p>Relations:<br/>
 <code>Quality Assurance Planning uses Project Plan<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SPMO_Scope+Estimated+Activity_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Scope Estimated Activity<strong></td></tr>
-</table><br/>
-<b>SPMO::Scope Estimated Activity</b><br/>
-Specializes SPO::Project Activity<br/><br/>
-A Project Activity with its scope in the project defined in terms of the work packages that it shall produce.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SPMO_Scope+Estimated+Activity_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Scope Estimated Activity</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SPMO::Scope Estimated Activity</span><br/>Specializes SPO::Project Activity</p><p>A Project Activity with its scope in the project defined in terms of the work packages that it shall produce.<br/></p><p>Relations:<br/>
 <code>Scope Estimated Activity (1..*) is to produce (1..*) Work Package<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SPMO_Tracked+Activity_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Tracked Activity<strong></td></tr>
-</table><br/>
-<b>SPMO::Tracked Activity</b><br/>
-Specializes SPO::Performed Project Activity<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SPMO_Tracked+Activity_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Tracked Activity</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SPMO::Tracked Activity</span><br/>Specializes SPO::Performed Project Activity</p><p><br/></p><p>Relations:<br/>
 <code>Tracked Activity (0..1) tracked in relation to (1..1) Estimated Activity<br/>
 Tracked Activity (0..*) contributes to produce (1..*) Work Package<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SPMO_Tracked+Process_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Tracked Process<strong></td></tr>
-</table><br/>
-<b>SPMO::Tracked Process</b><br/>
-Specializes SPO::Performed Project Process<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SPMO_Tracked+Process_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Tracked Process</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SPMO::Tracked Process</span><br/>Specializes SPO::Performed Project Process</p><p><br/></p><p>Relations:<br/>
 <code>Tracked Process (0..1) tracked in relation to (1..1) Estimated Process<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SPMO_Tracked+Stakeholder+Participation_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Tracked Stakeholder Participation<strong></td></tr>
-</table><br/>
-<b>SPMO::Tracked Stakeholder Participation</b><br/>
-Specializes SPO::Stakeholder Participation<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SPMO_Tracked+Stakeholder+Participation_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Tracked Stakeholder Participation</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SPMO::Tracked Stakeholder Participation</span><br/>Specializes SPO::Stakeholder Participation</p><p><br/></p><p>Relations:<br/>
 <code>Tracked Stakeholder Participation (0..*) refers to (1..1) Estimated Stakeholder Allocation<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="SPMO_Work+Package_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Work Package<strong></td></tr>
-</table><br/>
-<b>SPMO::Work Package</b><br/>
-Specializes SPMO::Deliverable<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="SPMO_Work+Package_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Work Package</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">SPMO::Work Package</span><br/>Specializes SPMO::Deliverable</p><p><br/></p><p>Relations:<br/>
 <code>Tracked Activity (0..*) contributes to produce (1..*) Work Package<br/>
 Scope Estimated Activity (1..*) is to produce (1..*) Work Package<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-</p>					
+
 				</div>
 				
 			</main>
 	
-    <footer class="footer">
-      <div class="container-fluid">
-        <span class="text-muted">Powered by NEMO.</span>
-        <span class="text-muted"><small><b>Software Project Management Ontology (SPMO)</b></small></span>
-        <span class="text-muted"><small>Thu Nov 18 16:11:33 BRT 2021</small></span>		
+    <footer class="p-5 rounded border-top">
+      <div class="row">
+      	<div class="col">
+      		  <span class="text-muted">Powered by NEMO.</span>
+      	</div>
+      	<div class="col">
+      		<span><small><b>Software Project Management Ontology (SPMO)</b></small></span>
+      	</div>
+      	<div class="col">
+      		<span class="text-muted"><small>Mon Nov 22 22:03:46 BRT 2021</small></span>	
+      	</div>
       </div>
     </footer>
 	   

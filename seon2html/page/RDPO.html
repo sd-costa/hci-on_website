@@ -18,7 +18,7 @@
 	    <!-- Custom styles for this template -->
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/navbar-top-fixed.css" rel="stylesheet">
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/sticky-footer-navbar.css" rel="stylesheet">
-	       
+	    <link href="../resources/static/bootstrap-5.1.3-dist/css/carousel.css" rel="stylesheet">
 
 	    <style>
 	      .bd-placeholder-img {
@@ -36,7 +36,7 @@
 	        }
 	      }
 
-	      .h1, h1 {
+	      .h2, .h3, h2, h3 {
 	      	margin-bottom: 2.5rem;
 	      }
 
@@ -44,6 +44,9 @@
 	      	font-size: 2rem;
 	      }
 
+	      .featurette-heading {
+	        margin-top: 0;
+	      }
 	    </style>
 
 	    
@@ -131,7 +134,7 @@
 	            RDPO
 	          </a>
 	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item" href="#ontologydescription" >Ontology Description</a></li>
+	            <li><a class="dropdown-item" href="#ontologydescription">Ontology Description</a></li>
 	            <li><a class="dropdown-item" href="#relatedontologies">Related Ontologies</a></li>
 	            <li><a class="dropdown-item" href="#ontologymodels">Ontology Models</a></li>
 	            <li><a class="dropdown-item" href="#conceptsdefinition">Concepts Definition</a></li>
@@ -157,21 +160,27 @@
 
 		<!-- Begin page content -->
     <main role="main" class="container-fluid">	
-    		<div class="container-fluid d-flex justify-content-end"><span class="badge badge-danger"></span></div>
+    		
 				<!--<div class="bg-light p-5 rounded" id="ontologydescription">
     			<h1 class="featurette-heading">The Requirements Development Process Ontology (RDPO)</h1>
 					<p class="lead" align="justify"><span class="text-muted font-weight-bold font-italic">Ontology Description. </span>The Requirements Development Process Ontology (RDPO) aims at representing the activities, artifacts and stakeholders involved in the Requirement Development Process. Since RDPO describes the first technical process in software development, it defines some of the base elements to be reused by other SEON networked ontologies.</p>
-					<p class="lead text-right text-muted font-italic">- domain ontology from SEON. </p>
+					<p class="lead text-right text-muted font-italic"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"><path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg> domain ontology from SEON</p>
     		</div>-->
 
-				<div class="bg-light p-5 rounded" id="ontologydescription">
+				<div class="bg-light p-5 rounded">
+					<div class="container-fluid d-flex justify-content-end"><span class="badge badge-danger text-lowercase"></span></div>
     			<h1 class="featurette-heading">The Requirements Development Process Ontology (RDPO)</h1>
-    				<h2 class="featurette-heading d-inline font-italic">Ontology Description. </h2>
-    				<p class="lead d-inline" align="justify">The Requirements Development Process Ontology (RDPO) aims at representing the activities, artifacts and stakeholders involved in the Requirement Development Process. Since RDPO describes the first technical process in software development, it defines some of the base elements to be reused by other SEON networked ontologies.</p>
-    				<p class="lead text-right text-muted font-italic">- domain ontology from SEON. </p>
+    			<p class="lead text-right text-muted font-italic"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"><path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg> domain ontology from SEON</p>
+    		</div>
+	
+				<hr> 
+				   		
+    		<div class="p-5 rounded" id="ontologydescription">
+  				<h2 class="featurette-heading">1. Ontology Description</h2>
+  				<p class="lead" align="justify">The Requirements Development Process Ontology (RDPO) aims at representing the activities, artifacts and stakeholders involved in the Requirement Development Process. Since RDPO describes the first technical process in software development, it defines some of the base elements to be reused by other SEON networked ontologies.</p>
     		</div>
 
-				<hr class="featurette-divider">
+				<hr>
 
 				<div class="p-5 rounded" id="relatedontologies">
 					<h2 class="featurette-heading">2. Related Ontologies</h2>
@@ -196,7 +205,7 @@
 
 				</div>	
 
-				<hr class="featurette-divider">
+				<hr>
     	
 				<div class="p-5 rounded" id="ontologymodels">
 					<h2 class="featurette-heading">3. Ontology Models</h2>
@@ -239,13 +248,89 @@
 </p>					
 				</div>
 
-				<hr class="featurette-divider">
+				<hr>
 
 				<div class="p-5 rounded" id="conceptsdefinition">
 					<h2 class="featurette-heading">4. Concepts Definition</h2>
 					<p class="lead">The following table shows the definitions for RDPO concepts.</p>		
 					<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->				
-					<table style="width: 100%" border="1" cellpadding="6">
+					<div class="table-responsive">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th scope="col">Concept</th>
+									<th scope="col">Definition</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+<td><a name="RDPO_Conceptual+Model"><b>Conceptual Model</b></a>
+<a href=#RDPO_Conceptual+Model_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Model describing the Product Requirements under different and relevant views.
+<br/>E.g.:<i> a class diagram.</i></td>
+</tr>
+<tr>
+<td><a name="RDPO_Conceptual+Modeling"><b>Conceptual Modeling</b></a>
+<a href=#RDPO_Conceptual+Modeling_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Composite Performed Activity executed for modeling requirements, producing Conceptual Models that provide a more comprehensive view of the problem.
+<br/></td>
+</tr>
+<tr>
+<td><a name="RDPO_Requirements+Agreement"><b>Requirements Agreement</b></a>
+<a href=#RDPO_Requirements+Agreement_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Information Item representing the agreement achieved by the Stakeholders, regarding the Requirements for the product.
+<br/>E.g.:<i> the agreement on the requirements than can be contained in an e-mail or in a document section.</i></td>
+</tr>
+<tr>
+<td><a name="RDPO_Requirements+Development+Process"><b>Requirements Development Process</b></a>
+<a href=#RDPO_Requirements+Development+Process_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Specific Performed Process for establishing and developing the requirements for a system or software.
+<br/></td>
+</tr>
+<tr>
+<td><a name="RDPO_Requirements+Documentation"><b>Requirements Documentation</b></a>
+<a href=#RDPO_Requirements+Documentation_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Composite Performed Activity executed for recording Documented Requirements and related Conceptual Models in Requirements Documents, assuring proper recording and management of them during and after the project.
+<br/></td>
+</tr>
+<tr>
+<td><a name="RDPO_Requirements+Elicitation"><b>Requirements Elicitation</b></a>
+<a href=#RDPO_Requirements+Elicitation_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Composite Performed Activity executed for identifying requirements from the Stakeholders and other sources, and documenting them.
+<br/></td>
+</tr>
+<tr>
+<td><a name="RDPO_Requirements+Evaluation+Document"><b>Requirements Evaluation Document</b></a>
+<a href=#RDPO_Requirements+Evaluation+Document_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Document pointing out problems identified in Documented Requirements and Conceptual Models registered in a Requirements Document.
+<br/></td>
+</tr>
+<tr>
+<td><a name="RDPO_Requirements+Negotiation+and+Prioritization"><b>Requirements Negotiation and Prioritization</b></a>
+<a href=#RDPO_Requirements+Negotiation+and+Prioritization_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Composite Performed Activity executed to solve problems in the requirements and to reach an agreement on the set of requirements to be considered in the Project and their priorities.
+<br/></td>
+</tr>
+<tr>
+<td><a name="RDPO_Requirements+Reviewer"><b>Requirements Reviewer</b></a>
+<a href=#RDPO_Requirements+Reviewer_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Stakeholder responsible for conducting reviews in requirements artifacts.
+<br/>E.g.:<i> the person in charge of the Requirements Verification and Validation activity.</i></td>
+</tr>
+<tr>
+<td><a name="RDPO_Requirements+Verification+and+Validation"><b>Requirements Verification and Validation</b></a>
+<a href=#RDPO_Requirements+Verification+and+Validation_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Composite Performed Activity executed for evaluating Documented Requirements and Conceptual Models registered in Requirements Documents, and for recording the identified problems.
+<br/></td>
+</tr>
+
+							</tbody>
+						</table>
+  				</div>
+
+
+
+				<!--	<table style="width: 100%" border="1" cellpadding="6">
 						<tbody>
 							<tr style="background-color: #D8D8D8">
 								<td style="width: 25%"><b>Concept</b></td>
@@ -253,194 +338,124 @@
 							</tr>
 							<tr>
 <td><a name="RDPO_Conceptual+Model"><b>Conceptual Model</b></a>
-<a href=#RDPO_Conceptual+Model_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RDPO_Conceptual+Model_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Model describing the Product Requirements under different and relevant views.
 <br/>E.g.:<i> a class diagram.</i></td>
 </tr>
 <tr>
 <td><a name="RDPO_Conceptual+Modeling"><b>Conceptual Modeling</b></a>
-<a href=#RDPO_Conceptual+Modeling_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RDPO_Conceptual+Modeling_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Composite Performed Activity executed for modeling requirements, producing Conceptual Models that provide a more comprehensive view of the problem.
 <br/></td>
 </tr>
 <tr>
 <td><a name="RDPO_Requirements+Agreement"><b>Requirements Agreement</b></a>
-<a href=#RDPO_Requirements+Agreement_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RDPO_Requirements+Agreement_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Information Item representing the agreement achieved by the Stakeholders, regarding the Requirements for the product.
 <br/>E.g.:<i> the agreement on the requirements than can be contained in an e-mail or in a document section.</i></td>
 </tr>
 <tr>
 <td><a name="RDPO_Requirements+Development+Process"><b>Requirements Development Process</b></a>
-<a href=#RDPO_Requirements+Development+Process_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RDPO_Requirements+Development+Process_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Specific Performed Process for establishing and developing the requirements for a system or software.
 <br/></td>
 </tr>
 <tr>
 <td><a name="RDPO_Requirements+Documentation"><b>Requirements Documentation</b></a>
-<a href=#RDPO_Requirements+Documentation_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RDPO_Requirements+Documentation_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Composite Performed Activity executed for recording Documented Requirements and related Conceptual Models in Requirements Documents, assuring proper recording and management of them during and after the project.
 <br/></td>
 </tr>
 <tr>
 <td><a name="RDPO_Requirements+Elicitation"><b>Requirements Elicitation</b></a>
-<a href=#RDPO_Requirements+Elicitation_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RDPO_Requirements+Elicitation_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Composite Performed Activity executed for identifying requirements from the Stakeholders and other sources, and documenting them.
 <br/></td>
 </tr>
 <tr>
 <td><a name="RDPO_Requirements+Evaluation+Document"><b>Requirements Evaluation Document</b></a>
-<a href=#RDPO_Requirements+Evaluation+Document_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RDPO_Requirements+Evaluation+Document_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Document pointing out problems identified in Documented Requirements and Conceptual Models registered in a Requirements Document.
 <br/></td>
 </tr>
 <tr>
 <td><a name="RDPO_Requirements+Negotiation+and+Prioritization"><b>Requirements Negotiation and Prioritization</b></a>
-<a href=#RDPO_Requirements+Negotiation+and+Prioritization_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RDPO_Requirements+Negotiation+and+Prioritization_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Composite Performed Activity executed to solve problems in the requirements and to reach an agreement on the set of requirements to be considered in the Project and their priorities.
 <br/></td>
 </tr>
 <tr>
 <td><a name="RDPO_Requirements+Reviewer"><b>Requirements Reviewer</b></a>
-<a href=#RDPO_Requirements+Reviewer_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RDPO_Requirements+Reviewer_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Stakeholder responsible for conducting reviews in requirements artifacts.
 <br/>E.g.:<i> the person in charge of the Requirements Verification and Validation activity.</i></td>
 </tr>
 <tr>
 <td><a name="RDPO_Requirements+Verification+and+Validation"><b>Requirements Verification and Validation</b></a>
-<a href=#RDPO_Requirements+Verification+and+Validation_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#RDPO_Requirements+Verification+and+Validation_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Composite Performed Activity executed for evaluating Documented Requirements and Conceptual Models registered in Requirements Documents, and for recording the identified problems.
 <br/></td>
 </tr>
 
 						</tbody>
-					</table>
+					</table>-->
 
 				</div>
 
-				<hr class="featurette-divider">		
+				<hr>		
 
-				<div class="container p-5 rounded" id="detailedconcepts">
+				<div class="p-5 rounded" id="detailedconcepts">
 					<h2 class="featurette-heading">5. Detailed Concepts</h2>
-					<p class="lead"><a name="RDPO_Conceptual+Model_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Conceptual Model<strong></td></tr>
-</table><br/>
-<b>RDPO::Conceptual Model</b><br/>
-Specializes SysSwO::Model<br/><br/>
-Model describing the Product Requirements under different and relevant views.<br/>
-E.g.:<i> a class diagram.</i><br/>
-<br/>
-Relations:<br/>
+					<p class="lead">Requirements Development Process Ontology (RDPO) detailed concepts.</p>					
+					<hr><div class="container-fluid" id="RDPO_Conceptual+Model_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Conceptual Model</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RDPO::Conceptual Model</span><br/>Specializes SysSwO::Model</p><p>Model describing the Product Requirements under different and relevant views.<br/>E.g.:<span class="font-italic"> a class diagram.</span></p><p>Relations:<br/>
 <code>Requirements Document describes Conceptual Model<br/>
 Conceptual Modeling creates Conceptual Model<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RDPO_Conceptual+Modeling_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Conceptual Modeling<strong></td></tr>
-</table><br/>
-<b>RDPO::Conceptual Modeling</b><br/>
-Specializes SPO::Performed Composite Activity<br/><br/>
-Composite Performed Activity executed for modeling requirements, producing Conceptual Models that provide a more comprehensive view of the problem.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RDPO_Conceptual+Modeling_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Conceptual Modeling</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RDPO::Conceptual Modeling</span><br/>Specializes SPO::Performed Composite Activity</p><p>Composite Performed Activity executed for modeling requirements, producing Conceptual Models that provide a more comprehensive view of the problem.<br/></p><p>Relations:<br/>
 <code>Conceptual Modeling creates Conceptual Model<br/>
 Conceptual Modeling uses Requirement Artifact<br/>
 Requirements Engineer is in charge of Conceptual Modeling<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RDPO_Requirements+Agreement_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Requirements Agreement<strong></td></tr>
-</table><br/>
-<b>RDPO::Requirements Agreement</b><br/>
-Specializes SysSwO::Information Item<br/><br/>
-Information Item representing the agreement achieved by the Stakeholders, regarding the Requirements for the product.<br/>
-E.g.:<i> the agreement on the requirements than can be contained in an e-mail or in a document section.</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RDPO_Requirements+Agreement_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Requirements Agreement</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RDPO::Requirements Agreement</span><br/>Specializes SysSwO::Information Item</p><p>Information Item representing the agreement achieved by the Stakeholders, regarding the Requirements for the product.<br/>E.g.:<span class="font-italic"> the agreement on the requirements than can be contained in an e-mail or in a document section.</span></p><p>Relations:<br/>
 <code>Requirements Negotiation and Prioritization creates Requirements Agreement<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RDPO_Requirements+Development+Process_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Requirements Development Process<strong></td></tr>
-</table><br/>
-<b>RDPO::Requirements Development Process</b><br/>
-Specializes SPO::Performed Specific Process<br/><br/>
-Specific Performed Process for establishing and developing the requirements for a system or software.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RDPO_Requirements+Development+Process_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Requirements Development Process</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RDPO::Requirements Development Process</span><br/>Specializes SPO::Performed Specific Process</p><p>Specific Performed Process for establishing and developing the requirements for a system or software.<br/></p><p>Relations:<br/>
 <code>Requirements Development Process <>-- Requirements Elicitation<br/>
 Requirements Development Process <>-- Requirements Documentation<br/>
 Requirements Development Process <>-- Requirements Negotiation and Prioritization<br/>
 Requirements Development Process <>-- Requirements Verification and Validation<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RDPO_Requirements+Documentation_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Requirements Documentation<strong></td></tr>
-</table><br/>
-<b>RDPO::Requirements Documentation</b><br/>
-Specializes SPO::Performed Composite Activity<br/><br/>
-Composite Performed Activity executed for recording Documented Requirements and related Conceptual Models in Requirements Documents, assuring proper recording and management of them during and after the project.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RDPO_Requirements+Documentation_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Requirements Documentation</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RDPO::Requirements Documentation</span><br/>Specializes SPO::Performed Composite Activity</p><p>Composite Performed Activity executed for recording Documented Requirements and related Conceptual Models in Requirements Documents, assuring proper recording and management of them during and after the project.<br/></p><p>Relations:<br/>
 <code>Requirements Documentation uses Requirement Artifact<br/>
 Requirements Documentation creates Requirements Document<br/>
 Requirements Development Process <>-- Requirements Documentation<br/>
 Requirements Engineer is in charge of Requirements Documentation<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RDPO_Requirements+Elicitation_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Requirements Elicitation<strong></td></tr>
-</table><br/>
-<b>RDPO::Requirements Elicitation</b><br/>
-Specializes SPO::Performed Composite Activity<br/><br/>
-Composite Performed Activity executed for identifying requirements from the Stakeholders and other sources, and documenting them.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RDPO_Requirements+Elicitation_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Requirements Elicitation</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RDPO::Requirements Elicitation</span><br/>Specializes SPO::Performed Composite Activity</p><p>Composite Performed Activity executed for identifying requirements from the Stakeholders and other sources, and documenting them.<br/></p><p>Relations:<br/>
 <code>Requirements Elicitation creates Requirement Artifact<br/>
 Requirements Development Process <>-- Requirements Elicitation<br/>
 Requirements Stakeholder participates in Requirements Elicitation<br/>
 Requirements Engineer is in charge of Requirements Elicitation<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RDPO_Requirements+Evaluation+Document_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltsubkind&gt&gt</code><br/>
-<strong>Requirements Evaluation Document<strong></td></tr>
-</table><br/>
-<b>RDPO::Requirements Evaluation Document</b><br/>
-Specializes SysSwO::Document<br/><br/>
-Document pointing out problems identified in Documented Requirements and Conceptual Models registered in a Requirements Document.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RDPO_Requirements+Evaluation+Document_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Requirements Evaluation Document</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RDPO::Requirements Evaluation Document</span><br/>Specializes SysSwO::Document</p><p>Document pointing out problems identified in Documented Requirements and Conceptual Models registered in a Requirements Document.<br/></p><p>Relations:<br/>
 <code>Requirements Verification and Validation creates Requirements Evaluation Document<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RDPO_Requirements+Negotiation+and+Prioritization_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Requirements Negotiation and Prioritization<strong></td></tr>
-</table><br/>
-<b>RDPO::Requirements Negotiation and Prioritization</b><br/>
-Specializes SPO::Performed Composite Activity<br/><br/>
-Composite Performed Activity executed to solve problems in the requirements and to reach an agreement on the set of requirements to be considered in the Project and their priorities.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RDPO_Requirements+Negotiation+and+Prioritization_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Requirements Negotiation and Prioritization</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RDPO::Requirements Negotiation and Prioritization</span><br/>Specializes SPO::Performed Composite Activity</p><p>Composite Performed Activity executed to solve problems in the requirements and to reach an agreement on the set of requirements to be considered in the Project and their priorities.<br/></p><p>Relations:<br/>
 <code>Requirements Negotiation and Prioritization depends on Requirements Verification and Validation<br/>
 Requirements Negotiation and Prioritization creates Requirements Agreement<br/>
 Requirements Negotiation and Prioritization changes Requirements Document<br/>
@@ -448,33 +463,15 @@ Requirements Negotiation and Prioritization changes Requirement Artifact<br/>
 Requirements Development Process <>-- Requirements Negotiation and Prioritization<br/>
 Requirements Stakeholder participates in Requirements Negotiation and Prioritization<br/>
 Requirements Engineer is in charge of Requirements Negotiation and Prioritization<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RDPO_Requirements+Reviewer_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltrole&gt&gt</code><br/>
-<strong>Requirements Reviewer<strong></td></tr>
-</table><br/>
-<b>RDPO::Requirements Reviewer</b><br/>
-Specializes SPO::Stakeholder<br/><br/>
-Stakeholder responsible for conducting reviews in requirements artifacts.<br/>
-E.g.:<i> the person in charge of the Requirements Verification and Validation activity.</i><br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RDPO_Requirements+Reviewer_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltrole&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Requirements Reviewer</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RDPO::Requirements Reviewer</span><br/>Specializes SPO::Stakeholder</p><p>Stakeholder responsible for conducting reviews in requirements artifacts.<br/>E.g.:<span class="font-italic"> the person in charge of the Requirements Verification and Validation activity.</span></p><p>Relations:<br/>
 <code>Requirements Reviewer is in charge of Requirements Verification and Validation<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="RDPO_Requirements+Verification+and+Validation_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><code>&lt&ltevent&gt&gt</code><br/>
-<strong>Requirements Verification and Validation<strong></td></tr>
-</table><br/>
-<b>RDPO::Requirements Verification and Validation</b><br/>
-Specializes SPO::Performed Composite Activity<br/><br/>
-Composite Performed Activity executed for evaluating Documented Requirements and Conceptual Models registered in Requirements Documents, and for recording the identified problems.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="RDPO_Requirements+Verification+and+Validation_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Requirements Verification and Validation</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RDPO::Requirements Verification and Validation</span><br/>Specializes SPO::Performed Composite Activity</p><p>Composite Performed Activity executed for evaluating Documented Requirements and Conceptual Models registered in Requirements Documents, and for recording the identified problems.<br/></p><p>Relations:<br/>
 <code>Requirements Verification and Validation creates Requirements Evaluation Document<br/>
 Requirements Verification and Validation uses Requirements Document<br/>
 Requirements Reviewer is in charge of Requirements Verification and Validation<br/>
@@ -482,19 +479,24 @@ Requirements Development Process <>-- Requirements Verification and Validation<b
 Requirements Stakeholder participates in Requirements Verification and Validation<br/>
 Requirements Negotiation and Prioritization depends on Requirements Verification and Validation<br/>
 Requirements Engineer participates in Requirements Verification and Validation<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-</p>					
+
 				</div>
 				
 			</main>
 	
-    <footer class="footer">
-      <div class="container-fluid">
-        <span class="text-muted">Powered by NEMO.</span>
-        <span class="text-muted"><small><b>Requirements Development Process Ontology (RDPO)</b></small></span>
-        <span class="text-muted"><small>Thu Nov 18 16:11:33 BRT 2021</small></span>		
+    <footer class="p-5 rounded border-top">
+      <div class="row">
+      	<div class="col">
+      		  <span class="text-muted">Powered by NEMO.</span>
+      	</div>
+      	<div class="col">
+      		<span><small><b>Requirements Development Process Ontology (RDPO)</b></small></span>
+      	</div>
+      	<div class="col">
+      		<span class="text-muted"><small>Mon Nov 22 22:03:46 BRT 2021</small></span>	
+      	</div>
       </div>
     </footer>
 	   

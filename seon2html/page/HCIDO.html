@@ -18,7 +18,7 @@
 	    <!-- Custom styles for this template -->
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/navbar-top-fixed.css" rel="stylesheet">
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/sticky-footer-navbar.css" rel="stylesheet">
-	       
+	    <link href="../resources/static/bootstrap-5.1.3-dist/css/carousel.css" rel="stylesheet">
 
 	    <style>
 	      .bd-placeholder-img {
@@ -36,7 +36,7 @@
 	        }
 	      }
 
-	      .h1, h1 {
+	      .h2, .h3, h2, h3 {
 	      	margin-bottom: 2.5rem;
 	      }
 
@@ -44,6 +44,9 @@
 	      	font-size: 2rem;
 	      }
 
+	      .featurette-heading {
+	        margin-top: 0;
+	      }
 	    </style>
 
 	    
@@ -131,7 +134,7 @@
 	            HCIDO
 	          </a>
 	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item" href="#ontologydescription" >Ontology Description</a></li>
+	            <li><a class="dropdown-item" href="#ontologydescription">Ontology Description</a></li>
 	            <li><a class="dropdown-item" href="#relatedontologies">Related Ontologies</a></li>
 	            <li><a class="dropdown-item" href="#ontologymodels">Ontology Models</a></li>
 	            <li><a class="dropdown-item" href="#conceptsdefinition">Concepts Definition</a></li>
@@ -157,21 +160,27 @@
 
 		<!-- Begin page content -->
     <main role="main" class="container-fluid">	
-    		<div class="container-fluid d-flex justify-content-end"><span class="badge badge-primary">Version 1.0</span></div>
+    		
 				<!--<div class="bg-light p-5 rounded" id="ontologydescription">
     			<h1 class="featurette-heading">The Human-Computer Interaction Design Ontology (HCIDO)</h1>
 					<p class="lead" align="justify"><span class="text-muted font-weight-bold font-italic">Ontology Description. </span></p>
-					<p class="lead text-right text-muted font-italic">- domain ontology from HCI-ON. </p>
+					<p class="lead text-right text-muted font-italic"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"><path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg> domain ontology from HCI-ON</p>
     		</div>-->
 
-				<div class="bg-light p-5 rounded" id="ontologydescription">
+				<div class="bg-light p-5 rounded">
+					<div class="container-fluid d-flex justify-content-end"><span class="badge badge-dark">version 1.0</span></div>
     			<h1 class="featurette-heading">The Human-Computer Interaction Design Ontology (HCIDO)</h1>
-    				<h2 class="featurette-heading d-inline font-italic">Ontology Description. </h2>
-    				<p class="lead d-inline" align="justify"></p>
-    				<p class="lead text-right text-muted font-italic">- domain ontology from HCI-ON. </p>
+    			<p class="lead text-right text-muted font-italic"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"><path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg> domain ontology from HCI-ON</p>
+    		</div>
+	
+				<hr> 
+				   		
+    		<div class="p-5 rounded" id="ontologydescription">
+  				<h2 class="featurette-heading">1. Ontology Description</h2>
+  				<p class="lead" align="justify"></p>
     		</div>
 
-				<hr class="featurette-divider">
+				<hr>
 
 				<div class="p-5 rounded" id="relatedontologies">
 					<h2 class="featurette-heading">2. Related Ontologies</h2>
@@ -197,7 +206,7 @@
 
 				</div>	
 
-				<hr class="featurette-divider">
+				<hr>
     	
 				<div class="p-5 rounded" id="ontologymodels">
 					<h2 class="featurette-heading">3. Ontology Models</h2>
@@ -334,13 +343,155 @@ Adapted from [Ralph, P., & Wand, Y. (2009)]">
 </p>					
 				</div>
 
-				<hr class="featurette-divider">
+				<hr>
 
 				<div class="p-5 rounded" id="conceptsdefinition">
 					<h2 class="featurette-heading">4. Concepts Definition</h2>
 					<p class="lead">The following table shows the definitions for HCIDO concepts.</p>		
 					<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->				
-					<table style="width: 100%" border="1" cellpadding="6">
+					<div class="table-responsive">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th scope="col">Concept</th>
+									<th scope="col">Definition</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+<td><a name="HCIDO_Functional+Prototype"><b>Functional Prototype</b></a>
+<a href=#HCIDO_Functional+Prototype_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A HCI Design Specitication that is a piece of code (i.e., a Software Item) intended to present basic functionality of an interactive system or of its components. It is developed for early evaluation purposes and cannot be considered the final implementation.
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDO_HCI+Design+Choice"><b>HCI Design Choice</b></a>
+<a href=#HCIDO_HCI+Design+Choice_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A Software Design Choice that describes Mental HCI Design Choices. It is a physical representation of Mental HCI Design Choices, which can be used for communication and evaluation purposes (e.g., the fragment of a sketch showing the fields of a form arranged in two columns or a sentence written in a document describing the expected behavior after a form submission).
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDO_HCI+Design+Component"><b>HCI Design Component</b></a>
+<a href=#HCIDO_HCI+Design+Component_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A User Interface Program that plays the role of Software Design Component and implements Mental HCI Design Components, having its own structure, appearance and behavior. It can be composed of other HCI Design Components.
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDO_HCI+Design+Object"><b>HCI Design Object</b></a>
+<a href=#HCIDO_HCI+Design+Object_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A Software Design Object is an Interactive Software System that plays the role of Software Design Object and implements a Mental HCI Design Object.
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDO_HCI+Design+Proposition"><b>HCI Design Proposition</b></a>
+<a href=#HCIDO_HCI+Design+Proposition_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDO_HCI+Design+Specification"><b>HCI Design Specification</b></a>
+<a href=#HCIDO_HCI+Design+Specification_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A Software Design Specification that describes Mental HCI Design Specifications, encoding one or more HCI Design Choices (e.g., a hand-drawn sketch or a text document).
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDO_HCI+Designer"><b>HCI Designer</b></a>
+<a href=#HCIDO_HCI+Designer_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A Software Designer that uses his or her skills to directly contribute to the creation of a specification containing design choices about human-computer interaction aspects of the interactive software system being designed.
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDO_HCI+Designer+Mental+Moment"><b>HCI Designer Mental Moment</b></a>
+<a href=#HCIDO_HCI+Designer+Mental+Moment_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDO_Interactive+HCI+Design+Component"><b>Interactive HCI Design Component</b></a>
+<a href=#HCIDO_Interactive+HCI+Design+Component_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A HCI Design Component that implements Mental User Input Resulting States and is expected to be triggered or not in certain conditions after actions performed by users of the interactive system
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDO_Loaded+HCI+Design+Component"><b>Loaded HCI Design Component</b></a>
+<a href=#HCIDO_Loaded+HCI+Design+Component_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A Loaded User Interface Program that plays the role of Loaded Software Design Component (i.e., a copy of a programs that deals with user interface aspects loaded in the memory of an interactive computer system)
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDO_Mental+HCI+Design+Choice"><b>Mental HCI Design Choice</b></a>
+<a href=#HCIDO_Mental+HCI+Design+Choice_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Mental Software Design Choices defining how the human-computer interaction should be implemented, including aspects related to the system’s appearance, the disposition of components in space and time and their expected behaviors in response to user actions.
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDO_Mental+HCI+Design+Component"><b>Mental HCI Design Component</b></a>
+<a href=#HCIDO_Mental+HCI+Design+Component_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A Mental Software Design Component that can be perceived or triggered by users (e.g., a text label and a button) through the user interface.
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDO_Mental+HCI+Design+Object"><b>Mental HCI Design Object</b></a>
+<a href=#HCIDO_Mental+HCI+Design+Object_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A Mental Software Design Object specified by a Mental HCI Design Specification that refers to an Interactive Software System being designed (i.e., what is expected to exist after the HCI design effort)
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDO_Mental+HCI+Design+Specification"><b>Mental HCI Design Specification</b></a>
+<a href=#HCIDO_Mental+HCI+Design+Specification_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A Mental Software Design Specification consisting of a set of Mental HCI Design Choices. It represents the ideas that give form to a detailed description in the designer’s mind about HCI structural and behavioral aspects of the design object (i.e., it specifies the Mental HCI Design Object).
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDO_Mental+User+Input+Resulting+State"><b>Mental User Input Resulting State</b></a>
+<a href=#HCIDO_Mental+User+Input+Resulting+State_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A Software Design Proposition describing situations, conditions or constraints related to actions that users can or cannot perform in a Mental HCI Design Component (e.g., a button that can only be clicked after filling all required fields in a form, a text input field that accepts only numbers)
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDO_Mental+User+Observable+State"><b>Mental User Observable State</b></a>
+<a href=#HCIDO_Mental+User+Observable+State_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A Mental Computing Resulting State decscribing how a Mental HCI Design Component should be presented to users (e.g., presenting a collection of products as a list or in a 3x3 grid).
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDO_Mockup"><b>Mockup</b></a>
+<a href=#HCIDO_Mockup_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A HCI Design Specification that is a higher fidelity Document depicting how the interactive system should be presented to users, similar to screenshots of the system’s future screens.
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDO_Presentational+HCI+Design+Component"><b>Presentational HCI Design Component</b></a>
+<a href=#HCIDO_Presentational+HCI+Design+Component_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A HCI Design Component that implements Mental User Observable States and aims to present information that can be perceived through users’ senses
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDO_User+Requirement"><b>User Requirement</b></a>
+<a href=#HCIDO_User+Requirement_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A Requirement that refers to User Goals (i.e., a Requirement concerned with users' needs or capabilities that should be addressed by the system, in order to allow users to achieve their goals in an effective, efficient, safe and satisfying manner).<br/><br/>(Adapted from: ISO 9241-220:2019)
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDO_User+Requirement+Artifact"><b>User Requirement Artifact</b></a>
+<a href=#HCIDO_User+Requirement+Artifact_detail><img src="images/plus-4-16.ico"></a></td>
+<td>Requirement Artifacts that describe User Requirements (e.g., user requirements written as user stories).
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDO_Wireframe"><b>Wireframe</b></a>
+<a href=#HCIDO_Wireframe_detail><img src="images/plus-4-16.ico"></a></td>
+<td>A HCI Design Specification that is a Document outlining the basic structure of the interactive system’s user interface (e.g., how elements are visually organized on the screen) in a low fidelity sketch, which does not address specific details such as colors and typography.
+<br/></td>
+</tr>
+
+							</tbody>
+						</table>
+  				</div>
+
+
+
+				<!--	<table style="width: 100%" border="1" cellpadding="6">
 						<tbody>
 							<tr style="background-color: #D8D8D8">
 								<td style="width: 25%"><b>Concept</b></td>
@@ -348,290 +499,193 @@ Adapted from [Ralph, P., & Wand, Y. (2009)]">
 							</tr>
 							<tr>
 <td><a name="HCIDO_Functional+Prototype"><b>Functional Prototype</b></a>
-<a href=#HCIDO_Functional+Prototype_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDO_Functional+Prototype_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A HCI Design Specitication that is a piece of code (i.e., a Software Item) intended to present basic functionality of an interactive system or of its components. It is developed for early evaluation purposes and cannot be considered the final implementation.
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDO_HCI+Design+Choice"><b>HCI Design Choice</b></a>
-<a href=#HCIDO_HCI+Design+Choice_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDO_HCI+Design+Choice_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A Software Design Choice that describes Mental HCI Design Choices. It is a physical representation of Mental HCI Design Choices, which can be used for communication and evaluation purposes (e.g., the fragment of a sketch showing the fields of a form arranged in two columns or a sentence written in a document describing the expected behavior after a form submission).
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDO_HCI+Design+Component"><b>HCI Design Component</b></a>
-<a href=#HCIDO_HCI+Design+Component_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDO_HCI+Design+Component_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A User Interface Program that plays the role of Software Design Component and implements Mental HCI Design Components, having its own structure, appearance and behavior. It can be composed of other HCI Design Components.
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDO_HCI+Design+Object"><b>HCI Design Object</b></a>
-<a href=#HCIDO_HCI+Design+Object_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDO_HCI+Design+Object_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A Software Design Object is an Interactive Software System that plays the role of Software Design Object and implements a Mental HCI Design Object.
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDO_HCI+Design+Proposition"><b>HCI Design Proposition</b></a>
-<a href=#HCIDO_HCI+Design+Proposition_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDO_HCI+Design+Proposition_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDO_HCI+Design+Specification"><b>HCI Design Specification</b></a>
-<a href=#HCIDO_HCI+Design+Specification_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDO_HCI+Design+Specification_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A Software Design Specification that describes Mental HCI Design Specifications, encoding one or more HCI Design Choices (e.g., a hand-drawn sketch or a text document).
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDO_HCI+Designer"><b>HCI Designer</b></a>
-<a href=#HCIDO_HCI+Designer_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDO_HCI+Designer_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A Software Designer that uses his or her skills to directly contribute to the creation of a specification containing design choices about human-computer interaction aspects of the interactive software system being designed.
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDO_HCI+Designer+Mental+Moment"><b>HCI Designer Mental Moment</b></a>
-<a href=#HCIDO_HCI+Designer+Mental+Moment_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDO_HCI+Designer+Mental+Moment_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDO_Interactive+HCI+Design+Component"><b>Interactive HCI Design Component</b></a>
-<a href=#HCIDO_Interactive+HCI+Design+Component_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDO_Interactive+HCI+Design+Component_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A HCI Design Component that implements Mental User Input Resulting States and is expected to be triggered or not in certain conditions after actions performed by users of the interactive system
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDO_Loaded+HCI+Design+Component"><b>Loaded HCI Design Component</b></a>
-<a href=#HCIDO_Loaded+HCI+Design+Component_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDO_Loaded+HCI+Design+Component_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A Loaded User Interface Program that plays the role of Loaded Software Design Component (i.e., a copy of a programs that deals with user interface aspects loaded in the memory of an interactive computer system)
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDO_Mental+HCI+Design+Choice"><b>Mental HCI Design Choice</b></a>
-<a href=#HCIDO_Mental+HCI+Design+Choice_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDO_Mental+HCI+Design+Choice_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Mental Software Design Choices defining how the human-computer interaction should be implemented, including aspects related to the system’s appearance, the disposition of components in space and time and their expected behaviors in response to user actions.
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDO_Mental+HCI+Design+Component"><b>Mental HCI Design Component</b></a>
-<a href=#HCIDO_Mental+HCI+Design+Component_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDO_Mental+HCI+Design+Component_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A Mental Software Design Component that can be perceived or triggered by users (e.g., a text label and a button) through the user interface.
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDO_Mental+HCI+Design+Object"><b>Mental HCI Design Object</b></a>
-<a href=#HCIDO_Mental+HCI+Design+Object_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDO_Mental+HCI+Design+Object_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A Mental Software Design Object specified by a Mental HCI Design Specification that refers to an Interactive Software System being designed (i.e., what is expected to exist after the HCI design effort)
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDO_Mental+HCI+Design+Specification"><b>Mental HCI Design Specification</b></a>
-<a href=#HCIDO_Mental+HCI+Design+Specification_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDO_Mental+HCI+Design+Specification_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A Mental Software Design Specification consisting of a set of Mental HCI Design Choices. It represents the ideas that give form to a detailed description in the designer’s mind about HCI structural and behavioral aspects of the design object (i.e., it specifies the Mental HCI Design Object).
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDO_Mental+User+Input+Resulting+State"><b>Mental User Input Resulting State</b></a>
-<a href=#HCIDO_Mental+User+Input+Resulting+State_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDO_Mental+User+Input+Resulting+State_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A Software Design Proposition describing situations, conditions or constraints related to actions that users can or cannot perform in a Mental HCI Design Component (e.g., a button that can only be clicked after filling all required fields in a form, a text input field that accepts only numbers)
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDO_Mental+User+Observable+State"><b>Mental User Observable State</b></a>
-<a href=#HCIDO_Mental+User+Observable+State_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDO_Mental+User+Observable+State_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A Mental Computing Resulting State decscribing how a Mental HCI Design Component should be presented to users (e.g., presenting a collection of products as a list or in a 3x3 grid).
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDO_Mockup"><b>Mockup</b></a>
-<a href=#HCIDO_Mockup_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDO_Mockup_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A HCI Design Specification that is a higher fidelity Document depicting how the interactive system should be presented to users, similar to screenshots of the system’s future screens.
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDO_Presentational+HCI+Design+Component"><b>Presentational HCI Design Component</b></a>
-<a href=#HCIDO_Presentational+HCI+Design+Component_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDO_Presentational+HCI+Design+Component_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A HCI Design Component that implements Mental User Observable States and aims to present information that can be perceived through users’ senses
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDO_User+Requirement"><b>User Requirement</b></a>
-<a href=#HCIDO_User+Requirement_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDO_User+Requirement_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A Requirement that refers to User Goals (i.e., a Requirement concerned with users' needs or capabilities that should be addressed by the system, in order to allow users to achieve their goals in an effective, efficient, safe and satisfying manner).<br/><br/>(Adapted from: ISO 9241-220:2019)
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDO_User+Requirement+Artifact"><b>User Requirement Artifact</b></a>
-<a href=#HCIDO_User+Requirement+Artifact_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDO_User+Requirement+Artifact_detail><img src="images/plus-4-16.ico"></a></td>
 <td>Requirement Artifacts that describe User Requirements (e.g., user requirements written as user stories).
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDO_Wireframe"><b>Wireframe</b></a>
-<a href=#HCIDO_Wireframe_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDO_Wireframe_detail><img src="images/plus-4-16.ico"></a></td>
 <td>A HCI Design Specification that is a Document outlining the basic structure of the interactive system’s user interface (e.g., how elements are visually organized on the screen) in a low fidelity sketch, which does not address specific details such as colors and typography.
 <br/></td>
 </tr>
 
 						</tbody>
-					</table>
+					</table>-->
 
 				</div>
 
-				<hr class="featurette-divider">		
+				<hr>		
 
-				<div class="container p-5 rounded" id="detailedconcepts">
+				<div class="p-5 rounded" id="detailedconcepts">
 					<h2 class="featurette-heading">5. Detailed Concepts</h2>
-					<p class="lead"><a name="HCIDO_Functional+Prototype_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Functional Prototype<strong></td></tr>
-</table><br/>
-<b>HCIDO::Functional Prototype</b><br/>
-Specializes HCIDO::HCI Design Specification, SysSwO::Software Item<br/><br/>
-A HCI Design Specitication that is a piece of code (i.e., a Software Item) intended to present basic functionality of an interactive system or of its components. It is developed for early evaluation purposes and cannot be considered the final implementation.<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+					<p class="lead">Human-Computer Interaction Design Ontology (HCIDO) detailed concepts.</p>					
+					<hr><div class="container-fluid" id="HCIDO_Functional+Prototype_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Functional Prototype</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDO::Functional Prototype</span><br/>Specializes HCIDO::HCI Design Specification, SysSwO::Software Item</p><p>A HCI Design Specitication that is a piece of code (i.e., a Software Item) intended to present basic functionality of an interactive system or of its components. It is developed for early evaluation purposes and cannot be considered the final implementation.<br/></p><p></p></div></div>
 
-<a name="HCIDO_HCI+Design+Choice_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>HCI Design Choice<strong></td></tr>
-</table><br/>
-<b>HCIDO::HCI Design Choice</b><br/>
-Specializes SDRO::Software Design Choice<br/><br/>
-A Software Design Choice that describes Mental HCI Design Choices. It is a physical representation of Mental HCI Design Choices, which can be used for communication and evaluation purposes (e.g., the fragment of a sketch showing the fields of a form arranged in two columns or a sentence written in a document describing the expected behavior after a form submission).<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="HCIDO_HCI+Design+Choice_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">HCI Design Choice</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDO::HCI Design Choice</span><br/>Specializes SDRO::Software Design Choice</p><p>A Software Design Choice that describes Mental HCI Design Choices. It is a physical representation of Mental HCI Design Choices, which can be used for communication and evaluation purposes (e.g., the fragment of a sketch showing the fields of a form arranged in two columns or a sentence written in a document describing the expected behavior after a form submission).<br/></p><p>Relations:<br/>
 <code>HCI Design Choice (0..*) describes (1..*) Mental HCI Design Choice<br/>
 HCI Design Choice (0..*) /motivated by (0..*) User Requirement Artifact<br/>
 HCI Design Choice (0..*) /motivated by (0..*) HCI Design Choice<br/>
 HCI Design Specification (1..*) <>-- (1..*) HCI Design Choice<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="HCIDO_HCI+Design+Component_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>HCI Design Component<strong></td></tr>
-</table><br/>
-<b>HCIDO::HCI Design Component</b><br/>
-Specializes HCIO::User Interface Program, SDRO::Software Design Component<br/><br/>
-A User Interface Program that plays the role of Software Design Component and implements Mental HCI Design Components, having its own structure, appearance and behavior. It can be composed of other HCI Design Components.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="HCIDO_HCI+Design+Component_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">HCI Design Component</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDO::HCI Design Component</span><br/>Specializes HCIO::User Interface Program, SDRO::Software Design Component</p><p>A User Interface Program that plays the role of Software Design Component and implements Mental HCI Design Components, having its own structure, appearance and behavior. It can be composed of other HCI Design Components.<br/></p><p>Relations:<br/>
 <code>HCI Design Component (0..*) implements (1..*) Mental HCI Design Component<br/>
 HCI Design Component (0..*) <>-- (0..*) HCI Design Component<br/>
 HCI Design Object (1..1) <>-- (1..*) HCI Design Component<br/>
 Loaded HCI Design Component (0..*) materialization of (1..1) HCI Design Component<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="HCIDO_HCI+Design+Object_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>HCI Design Object<strong></td></tr>
-</table><br/>
-<b>HCIDO::HCI Design Object</b><br/>
-Specializes SDRO::Software Design Object, HCIO::Interactive Software System<br/><br/>
-A Software Design Object is an Interactive Software System that plays the role of Software Design Object and implements a Mental HCI Design Object.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="HCIDO_HCI+Design+Object_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">HCI Design Object</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDO::HCI Design Object</span><br/>Specializes SDRO::Software Design Object, HCIO::Interactive Software System</p><p>A Software Design Object is an Interactive Software System that plays the role of Software Design Object and implements a Mental HCI Design Object.<br/></p><p>Relations:<br/>
 <code>HCI Design Object (1..1) <>-- (1..*) HCI Design Component<br/>
 HCI Design Object (0..*) realizes (0..*) HCI Design Specification<br/>
 HCI Design Object (0..*) implements (1..*) Mental HCI Design Object<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="HCIDO_HCI+Design+Proposition_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>HCI Design Proposition<strong></td></tr>
-</table><br/>
-<b>HCIDO::HCI Design Proposition</b><br/>
-Specializes SDRO::Software Design Proposition<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="HCIDO_HCI+Design+Proposition_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">HCI Design Proposition</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDO::HCI Design Proposition</span><br/>Specializes SDRO::Software Design Proposition</p><p><br/></p><p>Relations:<br/>
 <code>HCI Design Proposition (1..1) propositional content of (1..*) HCI Designer Mental Moment<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="HCIDO_HCI+Design+Specification_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>HCI Design Specification<strong></td></tr>
-</table><br/>
-<b>HCIDO::HCI Design Specification</b><br/>
-Specializes SDRO::Software Design Specification<br/><br/>
-A Software Design Specification that describes Mental HCI Design Specifications, encoding one or more HCI Design Choices (e.g., a hand-drawn sketch or a text document).<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="HCIDO_HCI+Design+Specification_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">HCI Design Specification</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDO::HCI Design Specification</span><br/>Specializes SDRO::Software Design Specification</p><p>A Software Design Specification that describes Mental HCI Design Specifications, encoding one or more HCI Design Choices (e.g., a hand-drawn sketch or a text document).<br/></p><p>Relations:<br/>
 <code>HCI Design Specification (1..*) <>-- (1..*) HCI Design Choice<br/>
 HCI Design Specification (0..*) describes (1..*) Mental HCI Design Specification<br/>
 HCI Design Object (0..*) realizes (0..*) HCI Design Specification<br/>
 HCI Designer (1..*) responsible for (0..*) HCI Design Specification<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="HCIDO_HCI+Designer_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>HCI Designer<strong></td></tr>
-</table><br/>
-<b>HCIDO::HCI Designer</b><br/>
-Specializes SDRO::Software Designer<br/><br/>
-A Software Designer that uses his or her skills to directly contribute to the creation of a specification containing design choices about human-computer interaction aspects of the interactive software system being designed.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="HCIDO_HCI+Designer_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">HCI Designer</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDO::HCI Designer</span><br/>Specializes SDRO::Software Designer</p><p>A Software Designer that uses his or her skills to directly contribute to the creation of a specification containing design choices about human-computer interaction aspects of the interactive software system being designed.<br/></p><p>Relations:<br/>
 <code>HCI Designer (1..*) responsible for (0..*) HCI Design Specification<br/>
 HCI Designer Mental Moment (0..*) inheres in (1..1) HCI Designer<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="HCIDO_HCI+Designer+Mental+Moment_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>HCI Designer Mental Moment<strong></td></tr>
-</table><br/>
-<b>HCIDO::HCI Designer Mental Moment</b><br/>
-Specializes SDRO::Software Designer Mental Moment<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="HCIDO_HCI+Designer+Mental+Moment_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">HCI Designer Mental Moment</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDO::HCI Designer Mental Moment</span><br/>Specializes SDRO::Software Designer Mental Moment</p><p><br/></p><p>Relations:<br/>
 <code>HCI Designer Mental Moment (0..*) inheres in (1..1) HCI Designer<br/>
 HCI Design Proposition (1..1) propositional content of (1..*) HCI Designer Mental Moment<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="HCIDO_Interactive+HCI+Design+Component_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Interactive HCI Design Component<strong></td></tr>
-</table><br/>
-<b>HCIDO::Interactive HCI Design Component</b><br/>
-Specializes HCIDO::HCI Design Component<br/><br/>
-A HCI Design Component that implements Mental User Input Resulting States and is expected to be triggered or not in certain conditions after actions performed by users of the interactive system<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="HCIDO_Interactive+HCI+Design+Component_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Interactive HCI Design Component</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDO::Interactive HCI Design Component</span><br/>Specializes HCIDO::HCI Design Component</p><p>A HCI Design Component that implements Mental User Input Resulting States and is expected to be triggered or not in certain conditions after actions performed by users of the interactive system<br/></p><p>Relations:<br/>
 <code>Interactive HCI Design Component (0..*) expects to be actioned by (1..*) Mental User Input Resulting State<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="HCIDO_Loaded+HCI+Design+Component_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Loaded HCI Design Component<strong></td></tr>
-</table><br/>
-<b>HCIDO::Loaded HCI Design Component</b><br/>
-Specializes SDRO::Loaded Software Design Component, HCIO::Loaded User Interface Program Copy<br/><br/>
-A Loaded User Interface Program that plays the role of Loaded Software Design Component (i.e., a copy of a programs that deals with user interface aspects loaded in the memory of an interactive computer system)<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="HCIDO_Loaded+HCI+Design+Component_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Loaded HCI Design Component</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDO::Loaded HCI Design Component</span><br/>Specializes SDRO::Loaded Software Design Component, HCIO::Loaded User Interface Program Copy</p><p>A Loaded User Interface Program that plays the role of Loaded Software Design Component (i.e., a copy of a programs that deals with user interface aspects loaded in the memory of an interactive computer system)<br/></p><p>Relations:<br/>
 <code>Loaded HCI Design Component (0..*) materialization of (1..1) HCI Design Component<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="HCIDO_Mental+HCI+Design+Choice_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Mental HCI Design Choice<strong></td></tr>
-</table><br/>
-<b>HCIDO::Mental HCI Design Choice</b><br/>
-Specializes HCIDO::HCI Design Proposition, SDRO::Mental Software Design Choice<br/><br/>
-Mental Software Design Choices defining how the human-computer interaction should be implemented, including aspects related to the system’s appearance, the disposition of components in space and time and their expected behaviors in response to user actions.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="HCIDO_Mental+HCI+Design+Choice_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Mental HCI Design Choice</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDO::Mental HCI Design Choice</span><br/>Specializes HCIDO::HCI Design Proposition, SDRO::Mental Software Design Choice</p><p>Mental Software Design Choices defining how the human-computer interaction should be implemented, including aspects related to the system’s appearance, the disposition of components in space and time and their expected behaviors in response to user actions.<br/></p><p>Relations:<br/>
 <code>Mental HCI Design Choice (1..*) concerns (0..*) Mental HCI Design Component<br/>
 Mental HCI Design Choice (1..*) concerns (0..*) Mental User Observable State<br/>
 Mental HCI Design Choice (1..*) concerns (0..*) Mental User Input Resulting State<br/>
@@ -639,157 +693,72 @@ Mental HCI Design Choice (0..*) motivated by (0..*) Mental HCI Design Choice<br/
 HCI Design Choice (0..*) describes (1..*) Mental HCI Design Choice<br/>
 User Requirement (0..*) motivates (0..*) Mental HCI Design Choice<br/>
 Mental HCI Design Specification (1..*) <>-- (1..*) Mental HCI Design Choice<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="HCIDO_Mental+HCI+Design+Component_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Mental HCI Design Component<strong></td></tr>
-</table><br/>
-<b>HCIDO::Mental HCI Design Component</b><br/>
-Specializes HCIDO::HCI Design Proposition, SDRO::Mental Software Design Component<br/><br/>
-A Mental Software Design Component that can be perceived or triggered by users (e.g., a text label and a button) through the user interface.<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="HCIDO_Mental+HCI+Design+Component_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Mental HCI Design Component</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDO::Mental HCI Design Component</span><br/>Specializes HCIDO::HCI Design Proposition, SDRO::Mental Software Design Component</p><p>A Mental Software Design Component that can be perceived or triggered by users (e.g., a text label and a button) through the user interface.<br/></p><p>Relations:<br/>
 <code>HCI Design Component (0..*) implements (1..*) Mental HCI Design Component<br/>
 Mental HCI Design Choice (1..*) concerns (0..*) Mental HCI Design Component<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="HCIDO_Mental+HCI+Design+Object_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Mental HCI Design Object<strong></td></tr>
-</table><br/>
-<b>HCIDO::Mental HCI Design Object</b><br/>
-Specializes HCIDO::HCI Design Proposition, SDRO::Mental Software Design Object<br/><br/>
-A Mental Software Design Object specified by a Mental HCI Design Specification that refers to an Interactive Software System being designed (i.e., what is expected to exist after the HCI design effort)<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="HCIDO_Mental+HCI+Design+Object_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Mental HCI Design Object</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDO::Mental HCI Design Object</span><br/>Specializes HCIDO::HCI Design Proposition, SDRO::Mental Software Design Object</p><p>A Mental Software Design Object specified by a Mental HCI Design Specification that refers to an Interactive Software System being designed (i.e., what is expected to exist after the HCI design effort)<br/></p><p>Relations:<br/>
 <code>HCI Design Object (0..*) implements (1..*) Mental HCI Design Object<br/>
 Mental HCI Design Specification (1..*) specifies (1..*) Mental HCI Design Object<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="HCIDO_Mental+HCI+Design+Specification_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Mental HCI Design Specification<strong></td></tr>
-</table><br/>
-<b>HCIDO::Mental HCI Design Specification</b><br/>
-Specializes HCIDO::HCI Design Proposition, SDRO::Mental Software Design Specification<br/><br/>
-A Mental Software Design Specification consisting of a set of Mental HCI Design Choices. It represents the ideas that give form to a detailed description in the designer’s mind about HCI structural and behavioral aspects of the design object (i.e., it specifies the Mental HCI Design Object).<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="HCIDO_Mental+HCI+Design+Specification_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Mental HCI Design Specification</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDO::Mental HCI Design Specification</span><br/>Specializes HCIDO::HCI Design Proposition, SDRO::Mental Software Design Specification</p><p>A Mental Software Design Specification consisting of a set of Mental HCI Design Choices. It represents the ideas that give form to a detailed description in the designer’s mind about HCI structural and behavioral aspects of the design object (i.e., it specifies the Mental HCI Design Object).<br/></p><p>Relations:<br/>
 <code>Mental HCI Design Specification (1..*) specifies (1..*) Mental HCI Design Object<br/>
 Mental HCI Design Specification (1..*) <>-- (1..*) Mental HCI Design Choice<br/>
 HCI Design Specification (0..*) describes (1..*) Mental HCI Design Specification<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="HCIDO_Mental+User+Input+Resulting+State_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Mental User Input Resulting State<strong></td></tr>
-</table><br/>
-<b>HCIDO::Mental User Input Resulting State</b><br/>
-Specializes HCIDO::HCI Design Proposition, SDRO::Software Design Proposition<br/><br/>
-A Software Design Proposition describing situations, conditions or constraints related to actions that users can or cannot perform in a Mental HCI Design Component (e.g., a button that can only be clicked after filling all required fields in a form, a text input field that accepts only numbers)<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="HCIDO_Mental+User+Input+Resulting+State_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Mental User Input Resulting State</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDO::Mental User Input Resulting State</span><br/>Specializes HCIDO::HCI Design Proposition, SDRO::Software Design Proposition</p><p>A Software Design Proposition describing situations, conditions or constraints related to actions that users can or cannot perform in a Mental HCI Design Component (e.g., a button that can only be clicked after filling all required fields in a form, a text input field that accepts only numbers)<br/></p><p>Relations:<br/>
 <code>Interactive HCI Design Component (0..*) expects to be actioned by (1..*) Mental User Input Resulting State<br/>
 Mental HCI Design Choice (1..*) concerns (0..*) Mental User Input Resulting State<br/>
 User Input Resulting State (0..*) satisfies (0..*) Mental User Input Resulting State<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="HCIDO_Mental+User+Observable+State_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Mental User Observable State<strong></td></tr>
-</table><br/>
-<b>HCIDO::Mental User Observable State</b><br/>
-Specializes HCIDO::HCI Design Proposition, SDRO::Mental Computing Resulting State<br/><br/>
-A Mental Computing Resulting State decscribing how a Mental HCI Design Component should be presented to users (e.g., presenting a collection of products as a list or in a 3x3 grid).<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="HCIDO_Mental+User+Observable+State_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Mental User Observable State</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDO::Mental User Observable State</span><br/>Specializes HCIDO::HCI Design Proposition, SDRO::Mental Computing Resulting State</p><p>A Mental Computing Resulting State decscribing how a Mental HCI Design Component should be presented to users (e.g., presenting a collection of products as a list or in a 3x3 grid).<br/></p><p>Relations:<br/>
 <code>Presentational HCI Design Component (0..*) aims to present (1..*) Mental User Observable State<br/>
 User Observable State (0..*) satisfies (0..*) Mental User Observable State<br/>
 Mental HCI Design Choice (1..*) concerns (0..*) Mental User Observable State<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="HCIDO_Mockup_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Mockup<strong></td></tr>
-</table><br/>
-<b>HCIDO::Mockup</b><br/>
-Specializes HCIDO::HCI Design Specification, SysSwO::Document<br/><br/>
-A HCI Design Specification that is a higher fidelity Document depicting how the interactive system should be presented to users, similar to screenshots of the system’s future screens.<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="HCIDO_Mockup_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Mockup</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDO::Mockup</span><br/>Specializes HCIDO::HCI Design Specification, SysSwO::Document</p><p>A HCI Design Specification that is a higher fidelity Document depicting how the interactive system should be presented to users, similar to screenshots of the system’s future screens.<br/></p><p></p></div></div>
 
-<a name="HCIDO_Presentational+HCI+Design+Component_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Presentational HCI Design Component<strong></td></tr>
-</table><br/>
-<b>HCIDO::Presentational HCI Design Component</b><br/>
-Specializes HCIDO::HCI Design Component<br/><br/>
-A HCI Design Component that implements Mental User Observable States and aims to present information that can be perceived through users’ senses<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="HCIDO_Presentational+HCI+Design+Component_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Presentational HCI Design Component</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDO::Presentational HCI Design Component</span><br/>Specializes HCIDO::HCI Design Component</p><p>A HCI Design Component that implements Mental User Observable States and aims to present information that can be perceived through users’ senses<br/></p><p>Relations:<br/>
 <code>Presentational HCI Design Component (0..*) aims to present (1..*) Mental User Observable State<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="HCIDO_User+Requirement_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>User Requirement<strong></td></tr>
-</table><br/>
-<b>HCIDO::User Requirement</b><br/>
-Specializes RSRO::Requirement<br/><br/>
-A Requirement that refers to User Goals (i.e., a Requirement concerned with users' needs or capabilities that should be addressed by the system, in order to allow users to achieve their goals in an effective, efficient, safe and satisfying manner).<br/><br/>(Adapted from: ISO 9241-220:2019)<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="HCIDO_User+Requirement_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">User Requirement</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDO::User Requirement</span><br/>Specializes RSRO::Requirement</p><p>A Requirement that refers to User Goals (i.e., a Requirement concerned with users' needs or capabilities that should be addressed by the system, in order to allow users to achieve their goals in an effective, efficient, safe and satisfying manner).<br/><br/>(Adapted from: ISO 9241-220:2019)<br/></p><p>Relations:<br/>
 <code>User Requirement (0..*) motivates (0..*) Mental HCI Design Choice<br/>
 User Requirement (0..*) refers to (1..*) User Goal<br/>
 User Requirement Artifact (0..*) describes (1..1) User Requirement<br/>
 HCI Evaluation Criteria (0..*) refers to (0..*) User Requirement<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="HCIDO_User+Requirement+Artifact_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>User Requirement Artifact<strong></td></tr>
-</table><br/>
-<b>HCIDO::User Requirement Artifact</b><br/>
-Specializes RSRO::Requirement Artifact<br/><br/>
-Requirement Artifacts that describe User Requirements (e.g., user requirements written as user stories).<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="HCIDO_User+Requirement+Artifact_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">User Requirement Artifact</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDO::User Requirement Artifact</span><br/>Specializes RSRO::Requirement Artifact</p><p>Requirement Artifacts that describe User Requirements (e.g., user requirements written as user stories).<br/></p><p>Relations:<br/>
 <code>User Requirement Artifact (0..*) describes (1..1) User Requirement<br/>
 HCI Design Choice (0..*) /motivated by (0..*) User Requirement Artifact<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="HCIDO_Wireframe_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Wireframe<strong></td></tr>
-</table><br/>
-<b>HCIDO::Wireframe</b><br/>
-Specializes HCIDO::HCI Design Specification, SysSwO::Document<br/><br/>
-A HCI Design Specification that is a Document outlining the basic structure of the interactive system’s user interface (e.g., how elements are visually organized on the screen) in a low fidelity sketch, which does not address specific details such as colors and typography.<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="HCIDO_Wireframe_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Wireframe</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDO::Wireframe</span><br/>Specializes HCIDO::HCI Design Specification, SysSwO::Document</p><p>A HCI Design Specification that is a Document outlining the basic structure of the interactive system’s user interface (e.g., how elements are visually organized on the screen) in a low fidelity sketch, which does not address specific details such as colors and typography.<br/></p><p></p></div></div>
 
-</p>					
+
 				</div>
 				
 			</main>
 	
-    <footer class="footer">
-      <div class="container-fluid">
-        <span class="text-muted">Powered by NEMO.</span>
-        <span class="text-muted"><small><b>Human-Computer Interaction Design Ontology (HCIDO)</b></small></span>
-        <span class="text-muted"><small>Thu Nov 18 16:11:32 BRT 2021</small></span>		
+    <footer class="p-5 rounded border-top">
+      <div class="row">
+      	<div class="col">
+      		  <span class="text-muted">Powered by NEMO.</span>
+      	</div>
+      	<div class="col">
+      		<span><small><b>Human-Computer Interaction Design Ontology (HCIDO)</b></small></span>
+      	</div>
+      	<div class="col">
+      		<span class="text-muted"><small>Mon Nov 22 22:03:45 BRT 2021</small></span>	
+      	</div>
       </div>
     </footer>
 	   

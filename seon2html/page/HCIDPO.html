@@ -18,7 +18,7 @@
 	    <!-- Custom styles for this template -->
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/navbar-top-fixed.css" rel="stylesheet">
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/sticky-footer-navbar.css" rel="stylesheet">
-	       
+	    <link href="../resources/static/bootstrap-5.1.3-dist/css/carousel.css" rel="stylesheet">
 
 	    <style>
 	      .bd-placeholder-img {
@@ -36,7 +36,7 @@
 	        }
 	      }
 
-	      .h1, h1 {
+	      .h2, .h3, h2, h3 {
 	      	margin-bottom: 2.5rem;
 	      }
 
@@ -44,6 +44,9 @@
 	      	font-size: 2rem;
 	      }
 
+	      .featurette-heading {
+	        margin-top: 0;
+	      }
 	    </style>
 
 	    
@@ -131,7 +134,7 @@
 	            HCIDPO
 	          </a>
 	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item" href="#ontologydescription" >Ontology Description</a></li>
+	            <li><a class="dropdown-item" href="#ontologydescription">Ontology Description</a></li>
 	            <li><a class="dropdown-item" href="#relatedontologies">Related Ontologies</a></li>
 	            <li><a class="dropdown-item" href="#ontologymodels">Ontology Models</a></li>
 	            <li><a class="dropdown-item" href="#conceptsdefinition">Concepts Definition</a></li>
@@ -157,21 +160,27 @@
 
 		<!-- Begin page content -->
     <main role="main" class="container-fluid">	
-    		<div class="container-fluid d-flex justify-content-end"><span class="badge badge-danger">Under Development</span></div>
+    		
 				<!--<div class="bg-light p-5 rounded" id="ontologydescription">
     			<h1 class="featurette-heading">The Human-Computer Interaction Design Process Ontology (HCIDPO)</h1>
 					<p class="lead" align="justify"><span class="text-muted font-weight-bold font-italic">Ontology Description. </span></p>
-					<p class="lead text-right text-muted font-italic">- domain ontology from HCI-ON. </p>
+					<p class="lead text-right text-muted font-italic"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"><path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg> domain ontology from HCI-ON</p>
     		</div>-->
 
-				<div class="bg-light p-5 rounded" id="ontologydescription">
+				<div class="bg-light p-5 rounded">
+					<div class="container-fluid d-flex justify-content-end"><span class="badge badge-danger text-lowercase">Under Development</span></div>
     			<h1 class="featurette-heading">The Human-Computer Interaction Design Process Ontology (HCIDPO)</h1>
-    				<h2 class="featurette-heading d-inline font-italic">Ontology Description. </h2>
-    				<p class="lead d-inline" align="justify"></p>
-    				<p class="lead text-right text-muted font-italic">- domain ontology from HCI-ON. </p>
+    			<p class="lead text-right text-muted font-italic"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"><path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg> domain ontology from HCI-ON</p>
+    		</div>
+	
+				<hr> 
+				   		
+    		<div class="p-5 rounded" id="ontologydescription">
+  				<h2 class="featurette-heading">1. Ontology Description</h2>
+  				<p class="lead" align="justify"></p>
     		</div>
 
-				<hr class="featurette-divider">
+				<hr>
 
 				<div class="p-5 rounded" id="relatedontologies">
 					<h2 class="featurette-heading">2. Related Ontologies</h2>
@@ -197,7 +206,7 @@
 
 				</div>	
 
-				<hr class="featurette-divider">
+				<hr>
     	
 				<div class="p-5 rounded" id="ontologymodels">
 					<h2 class="featurette-heading">3. Ontology Models</h2>
@@ -249,13 +258,191 @@
 </p>					
 				</div>
 
-				<hr class="featurette-divider">
+				<hr>
 
 				<div class="p-5 rounded" id="conceptsdefinition">
 					<h2 class="featurette-heading">4. Concepts Definition</h2>
 					<p class="lead">The following table shows the definitions for HCIDPO concepts.</p>		
 					<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->				
-					<table style="width: 100%" border="1" cellpadding="6">
+					<div class="table-responsive">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th scope="col">Concept</th>
+									<th scope="col">Definition</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+<td><a name="HCIDPO_Conformance+Test+Results"><b>Conformance Test Results</b></a>
+<a href=#HCIDPO_Conformance+Test+Results_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDPO_Context+of+use+description"><b>Context of use description</b></a>
+<a href=#HCIDPO_Context+of+use+description_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDPO_Derived+User+Requirements"><b>Derived User Requirements</b></a>
+<a href=#HCIDPO_Derived+User+Requirements_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDPO_Evaluate+the+designs"><b>Evaluate the designs</b></a>
+<a href=#HCIDPO_Evaluate+the+designs_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDPO_Evaluation+Results"><b>Evaluation Results</b></a>
+<a href=#HCIDPO_Evaluation+Results_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDPO_Field+Report"><b>Field Report</b></a>
+<a href=#HCIDPO_Field+Report_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDPO_High-Fidelity+Prototypes"><b>High-Fidelity Prototypes</b></a>
+<a href=#HCIDPO_High-Fidelity+Prototypes_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDPO_Human-Centred+Design+Process+(HCDP)"><b>Human-Centred Design Process (HCDP)</b></a>
+<a href=#HCIDPO_Human-Centred+Design+Process+(HCDP)_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDPO_Implemented+User+Interface"><b>Implemented User Interface</b></a>
+<a href=#HCIDPO_Implemented+User+Interface_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDPO_Long-Term+Monitoring+Results"><b>Long-Term Monitoring Results</b></a>
+<a href=#HCIDPO_Long-Term+Monitoring+Results_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDPO_Low-Fidelity+Prototypes"><b>Low-Fidelity Prototypes</b></a>
+<a href=#HCIDPO_Low-Fidelity+Prototypes_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDPO_Personas"><b>Personas</b></a>
+<a href=#HCIDPO_Personas_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDPO_Plan+the+HCDP"><b>Plan the HCDP</b></a>
+<a href=#HCIDPO_Plan+the+HCDP_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDPO_Produce+Design+Solutions"><b>Produce Design Solutions</b></a>
+<a href=#HCIDPO_Produce+Design+Solutions_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDPO_Required+Design+Guidance"><b>Required Design Guidance</b></a>
+<a href=#HCIDPO_Required+Design+Guidance_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDPO_Scenarios+of+Use"><b>Scenarios of Use</b></a>
+<a href=#HCIDPO_Scenarios+of+Use_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDPO_Specify+the+User+Requirements"><b>Specify the User Requirements</b></a>
+<a href=#HCIDPO_Specify+the+User+Requirements_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDPO_Understand+and+Specify+the+context+of+use"><b>Understand and Specify the context of use</b></a>
+<a href=#HCIDPO_Understand+and+Specify+the+context+of+use_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDPO_Usability-Test+Report"><b>Usability-Test Report</b></a>
+<a href=#HCIDPO_Usability-Test+Report_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDPO_User+Group+Profiles"><b>User Group Profiles</b></a>
+<a href=#HCIDPO_User+Group+Profiles_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDPO_User+Interface+Specification"><b>User Interface Specification</b></a>
+<a href=#HCIDPO_User+Interface+Specification_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDPO_User+Needs+Description"><b>User Needs Description</b></a>
+<a href=#HCIDPO_User+Needs+Description_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDPO_User+Requirements+Specification"><b>User Requirements Specification</b></a>
+<a href=#HCIDPO_User+Requirements+Specification_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDPO_User+Survey+Report"><b>User Survey Report</b></a>
+<a href=#HCIDPO_User+Survey+Report_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDPO_User-system+Interaction+Specification"><b>User-system Interaction Specification</b></a>
+<a href=#HCIDPO_User-system+Interaction+Specification_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDPO_as-is+Scenarios"><b>as-is Scenarios</b></a>
+<a href=#HCIDPO_as-is+Scenarios_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+<tr>
+<td><a name="HCIDPO_identified+user+needs"><b>identified user needs</b></a>
+<a href=#HCIDPO_identified+user+needs_detail><img src="images/plus-4-16.ico"></a></td>
+<td>
+<br/></td>
+</tr>
+
+							</tbody>
+						</table>
+  				</div>
+
+
+
+				<!--	<table style="width: 100%" border="1" cellpadding="6">
 						<tbody>
 							<tr style="background-color: #D8D8D8">
 								<td style="width: 25%"><b>Concept</b></td>
@@ -263,225 +450,191 @@
 							</tr>
 							<tr>
 <td><a name="HCIDPO_Conformance+Test+Results"><b>Conformance Test Results</b></a>
-<a href=#HCIDPO_Conformance+Test+Results_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDPO_Conformance+Test+Results_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDPO_Context+of+use+description"><b>Context of use description</b></a>
-<a href=#HCIDPO_Context+of+use+description_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDPO_Context+of+use+description_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDPO_Derived+User+Requirements"><b>Derived User Requirements</b></a>
-<a href=#HCIDPO_Derived+User+Requirements_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDPO_Derived+User+Requirements_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDPO_Evaluate+the+designs"><b>Evaluate the designs</b></a>
-<a href=#HCIDPO_Evaluate+the+designs_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDPO_Evaluate+the+designs_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDPO_Evaluation+Results"><b>Evaluation Results</b></a>
-<a href=#HCIDPO_Evaluation+Results_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDPO_Evaluation+Results_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDPO_Field+Report"><b>Field Report</b></a>
-<a href=#HCIDPO_Field+Report_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDPO_Field+Report_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDPO_High-Fidelity+Prototypes"><b>High-Fidelity Prototypes</b></a>
-<a href=#HCIDPO_High-Fidelity+Prototypes_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDPO_High-Fidelity+Prototypes_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDPO_Human-Centred+Design+Process+(HCDP)"><b>Human-Centred Design Process (HCDP)</b></a>
-<a href=#HCIDPO_Human-Centred+Design+Process+(HCDP)_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDPO_Human-Centred+Design+Process+(HCDP)_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDPO_Implemented+User+Interface"><b>Implemented User Interface</b></a>
-<a href=#HCIDPO_Implemented+User+Interface_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDPO_Implemented+User+Interface_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDPO_Long-Term+Monitoring+Results"><b>Long-Term Monitoring Results</b></a>
-<a href=#HCIDPO_Long-Term+Monitoring+Results_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDPO_Long-Term+Monitoring+Results_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDPO_Low-Fidelity+Prototypes"><b>Low-Fidelity Prototypes</b></a>
-<a href=#HCIDPO_Low-Fidelity+Prototypes_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDPO_Low-Fidelity+Prototypes_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDPO_Personas"><b>Personas</b></a>
-<a href=#HCIDPO_Personas_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDPO_Personas_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDPO_Plan+the+HCDP"><b>Plan the HCDP</b></a>
-<a href=#HCIDPO_Plan+the+HCDP_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDPO_Plan+the+HCDP_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDPO_Produce+Design+Solutions"><b>Produce Design Solutions</b></a>
-<a href=#HCIDPO_Produce+Design+Solutions_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDPO_Produce+Design+Solutions_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDPO_Required+Design+Guidance"><b>Required Design Guidance</b></a>
-<a href=#HCIDPO_Required+Design+Guidance_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDPO_Required+Design+Guidance_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDPO_Scenarios+of+Use"><b>Scenarios of Use</b></a>
-<a href=#HCIDPO_Scenarios+of+Use_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDPO_Scenarios+of+Use_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDPO_Specify+the+User+Requirements"><b>Specify the User Requirements</b></a>
-<a href=#HCIDPO_Specify+the+User+Requirements_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDPO_Specify+the+User+Requirements_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDPO_Understand+and+Specify+the+context+of+use"><b>Understand and Specify the context of use</b></a>
-<a href=#HCIDPO_Understand+and+Specify+the+context+of+use_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDPO_Understand+and+Specify+the+context+of+use_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDPO_Usability-Test+Report"><b>Usability-Test Report</b></a>
-<a href=#HCIDPO_Usability-Test+Report_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDPO_Usability-Test+Report_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDPO_User+Group+Profiles"><b>User Group Profiles</b></a>
-<a href=#HCIDPO_User+Group+Profiles_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDPO_User+Group+Profiles_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDPO_User+Interface+Specification"><b>User Interface Specification</b></a>
-<a href=#HCIDPO_User+Interface+Specification_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDPO_User+Interface+Specification_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDPO_User+Needs+Description"><b>User Needs Description</b></a>
-<a href=#HCIDPO_User+Needs+Description_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDPO_User+Needs+Description_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDPO_User+Requirements+Specification"><b>User Requirements Specification</b></a>
-<a href=#HCIDPO_User+Requirements+Specification_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDPO_User+Requirements+Specification_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDPO_User+Survey+Report"><b>User Survey Report</b></a>
-<a href=#HCIDPO_User+Survey+Report_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDPO_User+Survey+Report_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDPO_User-system+Interaction+Specification"><b>User-system Interaction Specification</b></a>
-<a href=#HCIDPO_User-system+Interaction+Specification_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDPO_User-system+Interaction+Specification_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDPO_as-is+Scenarios"><b>as-is Scenarios</b></a>
-<a href=#HCIDPO_as-is+Scenarios_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDPO_as-is+Scenarios_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 <tr>
 <td><a name="HCIDPO_identified+user+needs"><b>identified user needs</b></a>
-<a href=#HCIDPO_identified+user+needs_detail><IMG src="images/plus-4-16.ico"></a></td>
+<a href=#HCIDPO_identified+user+needs_detail><img src="images/plus-4-16.ico"></a></td>
 <td>
 <br/></td>
 </tr>
 
 						</tbody>
-					</table>
+					</table>-->
 
 				</div>
 
-				<hr class="featurette-divider">		
+				<hr>		
 
-				<div class="container p-5 rounded" id="detailedconcepts">
+				<div class="p-5 rounded" id="detailedconcepts">
 					<h2 class="featurette-heading">5. Detailed Concepts</h2>
-					<p class="lead"><a name="HCIDPO_Conformance+Test+Results_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Conformance Test Results<strong></td></tr>
-</table><br/>
-<b>HCIDPO::Conformance Test Results</b><br/>
-Specializes <br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+					<p class="lead">Human-Computer Interaction Design Process Ontology (HCIDPO) detailed concepts.</p>					
+					<hr><div class="container-fluid" id="HCIDPO_Conformance+Test+Results_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Conformance Test Results</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDPO::Conformance Test Results</span><br/>Specializes </p><p><br/></p><p>Relations:<br/>
 <code>Evaluate the designs (1..1) created (1..1) Conformance Test Results<br/>
 Evaluate the designs (0..*) changes (0..*) Conformance Test Results<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="HCIDPO_Context+of+use+description_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Context of use description<strong></td></tr>
-</table><br/>
-<b>HCIDPO::Context of use description</b><br/>
-Specializes SysSwO::Software Artifact<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="HCIDPO_Context+of+use+description_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Context of use description</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDPO::Context of use description</span><br/>Specializes SysSwO::Software Artifact</p><p><br/></p><p>Relations:<br/>
 <code>Understand and Specify the context of use (1..1) created (1..1) Context of use description<br/>
 Understand and Specify the context of use (0..*) changes (0..*) Context of use description<br/>
 Specify the User Requirements (0..*) uses (1..1) Context of use description<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="HCIDPO_Derived+User+Requirements_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Derived User Requirements<strong></td></tr>
-</table><br/>
-<b>HCIDPO::Derived User Requirements</b><br/>
-Specializes HCIDPO::User Requirements Specification<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="HCIDPO_Derived+User+Requirements_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Derived User Requirements</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDPO::Derived User Requirements</span><br/>Specializes HCIDPO::User Requirements Specification</p><p><br/></p><p></p></div></div>
 
-<a name="HCIDPO_Evaluate+the+designs_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Evaluate the designs<strong></td></tr>
-</table><br/>
-<b>HCIDPO::Evaluate the designs</b><br/>
-Specializes SPO::Performed Simple Activity<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="HCIDPO_Evaluate+the+designs_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Evaluate the designs</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDPO::Evaluate the designs</span><br/>Specializes SPO::Performed Simple Activity</p><p><br/></p><p>Relations:<br/>
 <code>Evaluate the designs (0..*) depends on (1..*) Produce Design Solutions<br/>
 Evaluate the designs (0..*) changes (0..*) Evaluation Results<br/>
 Evaluate the designs (1..1) created (1..1) Evaluation Results<br/>
@@ -490,134 +643,44 @@ Evaluate the designs (0..*) changes (0..*) Conformance Test Results<br/>
 Evaluate the designs (0..*) changes (0..*) Long-Term Monitoring Results<br/>
 Evaluate the designs (1..1) created (1..1) Long-Term Monitoring Results<br/>
 Human-Centred Design Process (HCDP) (1..*) <>-- (1..*) Evaluate the designs<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="HCIDPO_Evaluation+Results_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Evaluation Results<strong></td></tr>
-</table><br/>
-<b>HCIDPO::Evaluation Results</b><br/>
-Specializes <br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="HCIDPO_Evaluation+Results_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Evaluation Results</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDPO::Evaluation Results</span><br/>Specializes </p><p><br/></p><p>Relations:<br/>
 <code>Evaluate the designs (0..*) changes (0..*) Evaluation Results<br/>
 Evaluate the designs (1..1) created (1..1) Evaluation Results<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="HCIDPO_Field+Report_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Field Report<strong></td></tr>
-</table><br/>
-<b>HCIDPO::Field Report</b><br/>
-Specializes HCIDPO::Conformance Test Results<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="HCIDPO_Field+Report_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Field Report</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDPO::Field Report</span><br/>Specializes HCIDPO::Conformance Test Results</p><p><br/></p><p></p></div></div>
 
-<a name="HCIDPO_High-Fidelity+Prototypes_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>High-Fidelity Prototypes<strong></td></tr>
-</table><br/>
-<b>HCIDPO::High-Fidelity Prototypes</b><br/>
-Specializes HCIDPO::Implemented User Interface<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="HCIDPO_High-Fidelity+Prototypes_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">High-Fidelity Prototypes</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDPO::High-Fidelity Prototypes</span><br/>Specializes HCIDPO::Implemented User Interface</p><p><br/></p><p></p></div></div>
 
-<a name="HCIDPO_Human-Centred+Design+Process+(HCDP)_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Human-Centred Design Process (HCDP)<strong></td></tr>
-</table><br/>
-<b>HCIDPO::Human-Centred Design Process (HCDP)</b><br/>
-Specializes SPO::Performed Specific Process<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="HCIDPO_Human-Centred+Design+Process+(HCDP)_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Human-Centred Design Process (HCDP)</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDPO::Human-Centred Design Process (HCDP)</span><br/>Specializes SPO::Performed Specific Process</p><p><br/></p><p>Relations:<br/>
 <code>Human-Centred Design Process (HCDP) (1..*) <>-- (1..1) Plan the HCDP<br/>
 Human-Centred Design Process (HCDP) (1..*) <>-- (1..*) Understand and Specify the context of use<br/>
 Human-Centred Design Process (HCDP) (1..*) <>-- (1..*) Specify the User Requirements<br/>
 Human-Centred Design Process (HCDP) (1..*) <>-- (1..*) Produce Design Solutions<br/>
 Human-Centred Design Process (HCDP) (1..*) <>-- (1..*) Evaluate the designs<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="HCIDPO_Implemented+User+Interface_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Implemented User Interface<strong></td></tr>
-</table><br/>
-<b>HCIDPO::Implemented User Interface</b><br/>
-Specializes <br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="HCIDPO_Implemented+User+Interface_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Implemented User Interface</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDPO::Implemented User Interface</span><br/>Specializes </p><p><br/></p><p>Relations:<br/>
 <code>Produce Design Solutions (0..*) changes (0..*) Implemented User Interface<br/>
 Produce Design Solutions (1..1) created (1..1) Implemented User Interface<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="HCIDPO_Long-Term+Monitoring+Results_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Long-Term Monitoring Results<strong></td></tr>
-</table><br/>
-<b>HCIDPO::Long-Term Monitoring Results</b><br/>
-Specializes <br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="HCIDPO_Long-Term+Monitoring+Results_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Long-Term Monitoring Results</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDPO::Long-Term Monitoring Results</span><br/>Specializes </p><p><br/></p><p>Relations:<br/>
 <code>Evaluate the designs (0..*) changes (0..*) Long-Term Monitoring Results<br/>
 Evaluate the designs (1..1) created (1..1) Long-Term Monitoring Results<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="HCIDPO_Low-Fidelity+Prototypes_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Low-Fidelity Prototypes<strong></td></tr>
-</table><br/>
-<b>HCIDPO::Low-Fidelity Prototypes</b><br/>
-Specializes HCIDPO::User Interface Specification<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="HCIDPO_Low-Fidelity+Prototypes_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Low-Fidelity Prototypes</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDPO::Low-Fidelity Prototypes</span><br/>Specializes HCIDPO::User Interface Specification</p><p><br/></p><p></p></div></div>
 
-<a name="HCIDPO_Personas_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Personas<strong></td></tr>
-</table><br/>
-<b>HCIDPO::Personas</b><br/>
-Specializes HCIDPO::Context of use description<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="HCIDPO_Personas_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Personas</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDPO::Personas</span><br/>Specializes HCIDPO::Context of use description</p><p><br/></p><p></p></div></div>
 
-<a name="HCIDPO_Plan+the+HCDP_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Plan the HCDP<strong></td></tr>
-</table><br/>
-<b>HCIDPO::Plan the HCDP</b><br/>
-Specializes SPO::Performed Simple Activity<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="HCIDPO_Plan+the+HCDP_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Plan the HCDP</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDPO::Plan the HCDP</span><br/>Specializes SPO::Performed Simple Activity</p><p><br/></p><p>Relations:<br/>
 <code>Human-Centred Design Process (HCDP) (1..*) <>-- (1..1) Plan the HCDP<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="HCIDPO_Produce+Design+Solutions_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Produce Design Solutions<strong></td></tr>
-</table><br/>
-<b>HCIDPO::Produce Design Solutions</b><br/>
-Specializes SPO::Performed Simple Activity<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="HCIDPO_Produce+Design+Solutions_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Produce Design Solutions</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDPO::Produce Design Solutions</span><br/>Specializes SPO::Performed Simple Activity</p><p><br/></p><p>Relations:<br/>
 <code>Produce Design Solutions (0..*) depends on (1..*) Specify the User Requirements<br/>
 Produce Design Solutions (0..*) changes (0..*) User-system Interaction Specification<br/>
 Produce Design Solutions (1..1) created (1..1) User-system Interaction Specification<br/>
@@ -627,40 +690,13 @@ Produce Design Solutions (0..*) changes (0..*) Implemented User Interface<br/>
 Produce Design Solutions (1..1) created (1..1) Implemented User Interface<br/>
 Evaluate the designs (0..*) depends on (1..*) Produce Design Solutions<br/>
 Human-Centred Design Process (HCDP) (1..*) <>-- (1..*) Produce Design Solutions<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="HCIDPO_Required+Design+Guidance_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Required Design Guidance<strong></td></tr>
-</table><br/>
-<b>HCIDPO::Required Design Guidance</b><br/>
-Specializes HCIDPO::User Requirements Specification<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="HCIDPO_Required+Design+Guidance_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Required Design Guidance</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDPO::Required Design Guidance</span><br/>Specializes HCIDPO::User Requirements Specification</p><p><br/></p><p></p></div></div>
 
-<a name="HCIDPO_Scenarios+of+Use_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Scenarios of Use<strong></td></tr>
-</table><br/>
-<b>HCIDPO::Scenarios of Use</b><br/>
-Specializes HCIDPO::User-system Interaction Specification<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="HCIDPO_Scenarios+of+Use_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Scenarios of Use</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDPO::Scenarios of Use</span><br/>Specializes HCIDPO::User-system Interaction Specification</p><p><br/></p><p></p></div></div>
 
-<a name="HCIDPO_Specify+the+User+Requirements_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Specify the User Requirements<strong></td></tr>
-</table><br/>
-<b>HCIDPO::Specify the User Requirements</b><br/>
-Specializes SPO::Performed Simple Activity<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="HCIDPO_Specify+the+User+Requirements_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Specify the User Requirements</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDPO::Specify the User Requirements</span><br/>Specializes SPO::Performed Simple Activity</p><p><br/></p><p>Relations:<br/>
 <code>Specify the User Requirements (0..*) depends on (1..*) Understand and Specify the context of use<br/>
 Specify the User Requirements (0..*) uses (1..1) Context of use description<br/>
 Specify the User Requirements (0..*) changes (0..*) User Needs Description<br/>
@@ -669,146 +705,61 @@ Specify the User Requirements (0..*) changes (0..*) User Requirements Specificat
 Specify the User Requirements (1..1) created (1..1) User Requirements Specification<br/>
 Produce Design Solutions (0..*) depends on (1..*) Specify the User Requirements<br/>
 Human-Centred Design Process (HCDP) (1..*) <>-- (1..*) Specify the User Requirements<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="HCIDPO_Understand+and+Specify+the+context+of+use_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Understand and Specify the context of use<strong></td></tr>
-</table><br/>
-<b>HCIDPO::Understand and Specify the context of use</b><br/>
-Specializes SPO::Performed Simple Activity<br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="HCIDPO_Understand+and+Specify+the+context+of+use_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Understand and Specify the context of use</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDPO::Understand and Specify the context of use</span><br/>Specializes SPO::Performed Simple Activity</p><p><br/></p><p>Relations:<br/>
 <code>Understand and Specify the context of use (1..1) created (1..1) Context of use description<br/>
 Understand and Specify the context of use (0..*) changes (0..*) Context of use description<br/>
 Human-Centred Design Process (HCDP) (1..*) <>-- (1..*) Understand and Specify the context of use<br/>
 Specify the User Requirements (0..*) depends on (1..*) Understand and Specify the context of use<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="HCIDPO_Usability-Test+Report_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>Usability-Test Report<strong></td></tr>
-</table><br/>
-<b>HCIDPO::Usability-Test Report</b><br/>
-Specializes HCIDPO::Evaluation Results<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="HCIDPO_Usability-Test+Report_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Usability-Test Report</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDPO::Usability-Test Report</span><br/>Specializes HCIDPO::Evaluation Results</p><p><br/></p><p></p></div></div>
 
-<a name="HCIDPO_User+Group+Profiles_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>User Group Profiles<strong></td></tr>
-</table><br/>
-<b>HCIDPO::User Group Profiles</b><br/>
-Specializes HCIDPO::Context of use description<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="HCIDPO_User+Group+Profiles_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">User Group Profiles</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDPO::User Group Profiles</span><br/>Specializes HCIDPO::Context of use description</p><p><br/></p><p></p></div></div>
 
-<a name="HCIDPO_User+Interface+Specification_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>User Interface Specification<strong></td></tr>
-</table><br/>
-<b>HCIDPO::User Interface Specification</b><br/>
-Specializes <br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="HCIDPO_User+Interface+Specification_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">User Interface Specification</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDPO::User Interface Specification</span><br/>Specializes </p><p><br/></p><p>Relations:<br/>
 <code>Produce Design Solutions (0..*) changes (0..*) User Interface Specification<br/>
 Produce Design Solutions (1..1) created (1..1) User Interface Specification<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="HCIDPO_User+Needs+Description_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>User Needs Description<strong></td></tr>
-</table><br/>
-<b>HCIDPO::User Needs Description</b><br/>
-Specializes <br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="HCIDPO_User+Needs+Description_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">User Needs Description</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDPO::User Needs Description</span><br/>Specializes </p><p><br/></p><p>Relations:<br/>
 <code>Specify the User Requirements (0..*) changes (0..*) User Needs Description<br/>
 Specify the User Requirements (1..1) created (1..1) User Needs Description<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="HCIDPO_User+Requirements+Specification_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>User Requirements Specification<strong></td></tr>
-</table><br/>
-<b>HCIDPO::User Requirements Specification</b><br/>
-Specializes <br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="HCIDPO_User+Requirements+Specification_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">User Requirements Specification</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDPO::User Requirements Specification</span><br/>Specializes </p><p><br/></p><p>Relations:<br/>
 <code>Specify the User Requirements (0..*) changes (0..*) User Requirements Specification<br/>
 Specify the User Requirements (1..1) created (1..1) User Requirements Specification<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="HCIDPO_User+Survey+Report_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>User Survey Report<strong></td></tr>
-</table><br/>
-<b>HCIDPO::User Survey Report</b><br/>
-Specializes HCIDPO::Long-Term Monitoring Results<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="HCIDPO_User+Survey+Report_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">User Survey Report</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDPO::User Survey Report</span><br/>Specializes HCIDPO::Long-Term Monitoring Results</p><p><br/></p><p></p></div></div>
 
-<a name="HCIDPO_User-system+Interaction+Specification_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>User-system Interaction Specification<strong></td></tr>
-</table><br/>
-<b>HCIDPO::User-system Interaction Specification</b><br/>
-Specializes <br/><br/>
-<br/>
-<br/>
-<br/>
-Relations:<br/>
+<hr><div class="container-fluid" id="HCIDPO_User-system+Interaction+Specification_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">User-system Interaction Specification</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDPO::User-system Interaction Specification</span><br/>Specializes </p><p><br/></p><p>Relations:<br/>
 <code>Produce Design Solutions (0..*) changes (0..*) User-system Interaction Specification<br/>
 Produce Design Solutions (1..1) created (1..1) User-system Interaction Specification<br/>
-</code><br/>
-<br/><br/>
+</code></p></div></div>
 
-<a name="HCIDPO_as-is+Scenarios_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>as-is Scenarios<strong></td></tr>
-</table><br/>
-<b>HCIDPO::as-is Scenarios</b><br/>
-Specializes HCIDPO::Context of use description<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="HCIDPO_as-is+Scenarios_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">as-is Scenarios</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDPO::as-is Scenarios</span><br/>Specializes HCIDPO::Context of use description</p><p><br/></p><p></p></div></div>
 
-<a name="HCIDPO_identified+user+needs_detail"><hr></a><table border="1" cellpadding="8" style="border:black">
-<tr><td style="text-align:center"><strong>identified user needs<strong></td></tr>
-</table><br/>
-<b>HCIDPO::identified user needs</b><br/>
-Specializes HCIDPO::User Needs Description<br/><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/><br/>
+<hr><div class="container-fluid" id="HCIDPO_identified+user+needs_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">identified user needs</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">HCIDPO::identified user needs</span><br/>Specializes HCIDPO::User Needs Description</p><p><br/></p><p></p></div></div>
 
-</p>					
+
 				</div>
 				
 			</main>
 	
-    <footer class="footer">
-      <div class="container-fluid">
-        <span class="text-muted">Powered by NEMO.</span>
-        <span class="text-muted"><small><b>Human-Computer Interaction Design Process Ontology (HCIDPO)</b></small></span>
-        <span class="text-muted"><small>Thu Nov 18 16:11:32 BRT 2021</small></span>		
+    <footer class="p-5 rounded border-top">
+      <div class="row">
+      	<div class="col">
+      		  <span class="text-muted">Powered by NEMO.</span>
+      	</div>
+      	<div class="col">
+      		<span><small><b>Human-Computer Interaction Design Process Ontology (HCIDPO)</b></small></span>
+      	</div>
+      	<div class="col">
+      		<span class="text-muted"><small>Mon Nov 22 22:03:45 BRT 2021</small></span>	
+      	</div>
       </div>
     </footer>
 	   
