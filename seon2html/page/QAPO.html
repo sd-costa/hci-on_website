@@ -19,6 +19,7 @@
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/navbar-top-fixed.css" rel="stylesheet">
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/sticky-footer-navbar.css" rel="stylesheet">
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/carousel.css" rel="stylesheet">
+	    <link href="../resources/static/bootstrap-5.1.3-dist/css/pricing.css" rel="stylesheet">
 
 	    <style>
 	      .bd-placeholder-img {
@@ -40,6 +41,7 @@
 	      	margin-bottom: 2.5rem;
 	      }
 
+
 	      .span {
 	      	font-size: 2rem;
 	      }
@@ -47,9 +49,15 @@
 	      .featurette-heading {
 	        margin-top: 0;
 	      }
+
+	      
+
 	    </style>
 
-	    
+	  <!--.h6, h6 {
+	      	margin-bottom: 2.5rem;
+	      	margin-top: 2.5rem;	
+	      }-->  
 	    
 <!--	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
 	    
@@ -169,8 +177,8 @@
 
 				<div class="bg-light p-5 rounded">
 					<div class="container-fluid d-flex justify-content-end"><span class="badge badge-danger text-lowercase"></span></div>
-    			<h1 class="featurette-heading">The Quality Assurance Process Ontology (QAPO)</h1>
     			<p class="lead text-right text-muted font-italic"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"><path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg> domain ontology from SEON</p>
+    			<h1 class="featurette-heading">The Quality Assurance Process Ontology (QAPO)</h1>
     		</div>
 	
 				<hr> 
@@ -187,6 +195,7 @@
 					<p class="lead">Networked ontologies used by QAPO:</p>	
 					
 					<div class="table-responsive">
+						<caption>Ontologies (re)used by QAPO.</caption>
 						<table class="table table-hover">
 							<thead>
 								<tr>
@@ -208,8 +217,8 @@
     	
 				<div class="p-5 rounded" id="ontologymodels">
 					<h2 class="featurette-heading">3. Ontology Models</h2>
-					<p class="lead"><p>Figure 1 presents the conceptual model of the QAPO.</p>
-<p align="center"><IMG src="images/QAPO.png" width="1066" class="map" usemap="#QAPO"><MAP NAME="QAPO">
+					<p class="lead"><p class="lead">Figure 1 presents the conceptual model of the QAPO.</p>
+<div class="container-fluid" align="center"><img src="images/QAPO.png" width="1066" class="map" usemap="#QAPO"><MAP NAME="QAPO">
 <area shape="rect" coords="724,196,850,243" href="SysSwO.html#SysSwO_Software+Artifact" title="Object intentionally made to serve a given purpose in the context of a software Project or Organization.">
 <area shape="rect" coords="539,337,686,367" href="SysSwO.html#SysSwO_Complex+Sw+Artifact" title="Artifact composed of other Artifacts.">
 <area shape="rect" coords="622,301,758,331" href="SysSwO.html#SysSwO_Atomic+Sw+Artifact" title="Artifact that is not decomposed into other Artifacts.">
@@ -246,9 +255,9 @@
 <area shape="rect" coords="795,618,928,656" href="QAPO.html#QAPO_Evaluated+Process" title="Process objectively evaluated.">
 <area shape="rect" coords="63,603,165,633" href="EO.html#EO_Project+Team" title="">
 <area shape="rect" coords="24,289,156,319" href="SPO.html#SPO_Team+Stakeholder" title="Team interested or affected by the process activities or results.">
-<area shape="rect" coords="56,329,197,359" href="SPO.html#SPO_Person+Stakeholder" title="Person interested or affected by the process activities or their results."></MAP></p>
-<p align="center"><b>Figure 1. QAPO conceptual model.</b></p>
-<p align="justify">The Quality Assurance Process is a Process with the purpose of conducting the activities related to software quality assurance, assessing and assuring adherence of the performed processes and produced artifacts to the applicable requirements. It is composed of three main activities. (1) Quality Assurance Planning plans the quality assurance activities, resulting in a Quality Assurance Plan. (2) Adherence Evaluation objectively evaluates the adherence of processes and products to the applicable requirements, registering the identified issues. It has three sub-actvities: Artifact Evaluation, for evaluating the adherence of products and deliverables; Process Evaluation, for evaluating the adherence of processes and activities; and Noncompliance Identification, for registering the noncompliances identified in processes and artifacts. (3) Noncompliance Control manages the registered noncompliances until their effective resolution. It is decomposed into two sub-activities: Noncompliance Resolution, for analyzing a Noncompliance, planning and executing the applicable Corrective Actions to its resolution; and Noncompliance Closing, for finishing a noncompliance once it is satisfactorily solved.<br/>The process involves four Stakeholders: the Quality Auditor, who is responsible for conducting the objective evaluations; the Noncompliance Responsible, who is assigned for solving a noncompliance; the Project Manager, who is in charge of planning the Quality Assurance Process; and Project Team, who is involved in the objective evaluations of its project.</p>
+<area shape="rect" coords="56,329,197,359" href="SPO.html#SPO_Person+Stakeholder" title="Person interested or affected by the process activities or their results."></MAP>
+<p align="center" class="lead font-weight-bold">Figure 1. QAPO conceptual model.</p></div>
+<p align="justify" class="lead">The Quality Assurance Process is a Process with the purpose of conducting the activities related to software quality assurance, assessing and assuring adherence of the performed processes and produced artifacts to the applicable requirements. It is composed of three main activities. (1) Quality Assurance Planning plans the quality assurance activities, resulting in a Quality Assurance Plan. (2) Adherence Evaluation objectively evaluates the adherence of processes and products to the applicable requirements, registering the identified issues. It has three sub-actvities: Artifact Evaluation, for evaluating the adherence of products and deliverables; Process Evaluation, for evaluating the adherence of processes and activities; and Noncompliance Identification, for registering the noncompliances identified in processes and artifacts. (3) Noncompliance Control manages the registered noncompliances until their effective resolution. It is decomposed into two sub-activities: Noncompliance Resolution, for analyzing a Noncompliance, planning and executing the applicable Corrective Actions to its resolution; and Noncompliance Closing, for finishing a noncompliance once it is satisfactorily solved.<br/>The process involves four Stakeholders: the Quality Auditor, who is responsible for conducting the objective evaluations; the Noncompliance Responsible, who is assigned for solving a noncompliance; the Project Manager, who is in charge of planning the Quality Assurance Process; and Project Team, who is involved in the objective evaluations of its project.</p>
 </p>					
 				</div>
 
@@ -259,6 +268,7 @@
 					<p class="lead">The following table shows the definitions for QAPO concepts.</p>		
 					<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->				
 					<div class="table-responsive">
+						<caption>QAPO concepts definition.</caption>
 						<table class="table table-hover">
 							<thead>
 								<tr>
@@ -267,102 +277,22 @@
 								</tr>
 							</thead>
 							<tbody>
-								<tr>
-<td><a name="QAPO_Adherence+Evaluation"><b>Adherence Evaluation</b></a>
-<a href=#QAPO_Adherence+Evaluation_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Activity for objectively evaluating the adherence of processes and products to the applicable requirements, registering the identified issues.
-<br/></td>
-</tr>
-<tr>
-<td><a name="QAPO_Artifact+Evaluation"><b>Artifact Evaluation</b></a>
-<a href=#QAPO_Artifact+Evaluation_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Activity for objectively evaluating the adherence of products and deliverables to the applicable requirements.
-<br/></td>
-</tr>
-<tr>
-<td><a name="QAPO_Evaluated+Artifact"><b>Evaluated Artifact</b></a>
-<a href=#QAPO_Evaluated+Artifact_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Artifact objectively evaluated.
-<br/></td>
-</tr>
-<tr>
-<td><a name="QAPO_Evaluated+Process"><b>Evaluated Process</b></a>
-<a href=#QAPO_Evaluated+Process_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Process objectively evaluated.
-<br/></td>
-</tr>
-<tr>
-<td><a name="QAPO_Evaluation+Report"><b>Evaluation Report</b></a>
-<a href=#QAPO_Evaluation+Report_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Document describing the evaluation results and identified issues.
-<br/></td>
-</tr>
-<tr>
-<td><a name="QAPO_Noncompliance+Closing"><b>Noncompliance Closing</b></a>
-<a href=#QAPO_Noncompliance+Closing_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Activity for finishing a noncompliance once it is satisfactorily solved.
-<br/></td>
-</tr>
-<tr>
-<td><a name="QAPO_Noncompliance+Control"><b>Noncompliance Control</b></a>
-<a href=#QAPO_Noncompliance+Control_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Activity for managing the registered noncompliances until their effective resolution.
-<br/></td>
-</tr>
-<tr>
-<td><a name="QAPO_Noncompliance+Identification"><b>Noncompliance Identification</b></a>
-<a href=#QAPO_Noncompliance+Identification_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Activity for registering the noncompliances identified in processes and artifacts.
-<br/></td>
-</tr>
-<tr>
-<td><a name="QAPO_Noncompliance+Register"><b>Noncompliance Register</b></a>
-<a href=#QAPO_Noncompliance+Register_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Information Item describing a noncompliance (a failure or refusal to conform to an applicable requirement) in a process or artifact, and related information to solve it.
-<br/>E.g.:<i> a neglected activity in a process; a document wrongly specified.</i></td>
-</tr>
-<tr>
-<td><a name="QAPO_Noncompliance+Resolution"><b>Noncompliance Resolution</b></a>
-<a href=#QAPO_Noncompliance+Resolution_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Activity for analyzing a noncompliance, planning and executing the applicable corrective actions to its resolution.
-<br/></td>
-</tr>
-<tr>
-<td><a name="QAPO_Noncompliance+Responsible"><b>Noncompliance Responsible</b></a>
-<a href=#QAPO_Noncompliance+Responsible_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Stakeholder responsible for solving a noncompliance.
-<br/></td>
-</tr>
-<tr>
-<td><a name="QAPO_Process+Evaluation"><b>Process Evaluation</b></a>
-<a href=#QAPO_Process+Evaluation_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Activity for objectively evaluating the adherence of processes and activities to the applicable requirements.
-<br/></td>
-</tr>
-<tr>
-<td><a name="QAPO_Quality+Assurance+Plan"><b>Quality Assurance Plan</b></a>
-<a href=#QAPO_Quality+Assurance+Plan_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Document registering the planed quality assurance activities, processes and artifacts to be evaluated and involved personnel.
-<br/></td>
-</tr>
-<tr>
-<td><a name="QAPO_Quality+Assurance+Planning"><b>Quality Assurance Planning</b></a>
-<a href=#QAPO_Quality+Assurance+Planning_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Activity for planning the quality assurance activities, resulting in a Quality Assurance Plan.
-<br/></td>
-</tr>
-<tr>
-<td><a name="QAPO_Quality+Assurance+Process"><b>Quality Assurance Process</b></a>
-<a href=#QAPO_Quality+Assurance+Process_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Process for conducting the activities related to software quality assurance, assessing and assuring adherence of the performed processes and produced artifacts to the applicable requirements.
-<br/></td>
-</tr>
-<tr>
-<td><a name="QAPO_Quality+Auditor"><b>Quality Auditor</b></a>
-<a href=#QAPO_Quality+Auditor_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Stakeholder responsible for conducting objective evaluations.
-<br/></td>
-</tr>
+								<tr><td><p id="QAPO_Adherence+Evaluation"><span class="font-weight-bold">Adherence Evaluation</span><a href=#QAPO_Adherence+Evaluation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Activity for objectively evaluating the adherence of processes and products to the applicable requirements, registering the identified issues.<br/></p></td></tr>
+<tr><td><p id="QAPO_Artifact+Evaluation"><span class="font-weight-bold">Artifact Evaluation</span><a href=#QAPO_Artifact+Evaluation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Activity for objectively evaluating the adherence of products and deliverables to the applicable requirements.<br/></p></td></tr>
+<tr><td><p id="QAPO_Evaluated+Artifact"><span class="font-weight-bold">Evaluated Artifact</span><a href=#QAPO_Evaluated+Artifact_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Artifact objectively evaluated.<br/></p></td></tr>
+<tr><td><p id="QAPO_Evaluated+Process"><span class="font-weight-bold">Evaluated Process</span><a href=#QAPO_Evaluated+Process_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Process objectively evaluated.<br/></p></td></tr>
+<tr><td><p id="QAPO_Evaluation+Report"><span class="font-weight-bold">Evaluation Report</span><a href=#QAPO_Evaluation+Report_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Document describing the evaluation results and identified issues.<br/></p></td></tr>
+<tr><td><p id="QAPO_Noncompliance+Closing"><span class="font-weight-bold">Noncompliance Closing</span><a href=#QAPO_Noncompliance+Closing_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Activity for finishing a noncompliance once it is satisfactorily solved.<br/></p></td></tr>
+<tr><td><p id="QAPO_Noncompliance+Control"><span class="font-weight-bold">Noncompliance Control</span><a href=#QAPO_Noncompliance+Control_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Activity for managing the registered noncompliances until their effective resolution.<br/></p></td></tr>
+<tr><td><p id="QAPO_Noncompliance+Identification"><span class="font-weight-bold">Noncompliance Identification</span><a href=#QAPO_Noncompliance+Identification_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Activity for registering the noncompliances identified in processes and artifacts.<br/></p></td></tr>
+<tr><td><p id="QAPO_Noncompliance+Register"><span class="font-weight-bold">Noncompliance Register</span><a href=#QAPO_Noncompliance+Register_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Information Item describing a noncompliance (a failure or refusal to conform to an applicable requirement) in a process or artifact, and related information to solve it.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> a neglected activity in a process; a document wrongly specified.</span></p></td></tr>
+<tr><td><p id="QAPO_Noncompliance+Resolution"><span class="font-weight-bold">Noncompliance Resolution</span><a href=#QAPO_Noncompliance+Resolution_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Activity for analyzing a noncompliance, planning and executing the applicable corrective actions to its resolution.<br/></p></td></tr>
+<tr><td><p id="QAPO_Noncompliance+Responsible"><span class="font-weight-bold">Noncompliance Responsible</span><a href=#QAPO_Noncompliance+Responsible_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Stakeholder responsible for solving a noncompliance.<br/></p></td></tr>
+<tr><td><p id="QAPO_Process+Evaluation"><span class="font-weight-bold">Process Evaluation</span><a href=#QAPO_Process+Evaluation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Activity for objectively evaluating the adherence of processes and activities to the applicable requirements.<br/></p></td></tr>
+<tr><td><p id="QAPO_Quality+Assurance+Plan"><span class="font-weight-bold">Quality Assurance Plan</span><a href=#QAPO_Quality+Assurance+Plan_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Document registering the planed quality assurance activities, processes and artifacts to be evaluated and involved personnel.<br/></p></td></tr>
+<tr><td><p id="QAPO_Quality+Assurance+Planning"><span class="font-weight-bold">Quality Assurance Planning</span><a href=#QAPO_Quality+Assurance+Planning_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Activity for planning the quality assurance activities, resulting in a Quality Assurance Plan.<br/></p></td></tr>
+<tr><td><p id="QAPO_Quality+Assurance+Process"><span class="font-weight-bold">Quality Assurance Process</span><a href=#QAPO_Quality+Assurance+Process_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Process for conducting the activities related to software quality assurance, assessing and assuring adherence of the performed processes and produced artifacts to the applicable requirements.<br/></p></td></tr>
+<tr><td><p id="QAPO_Quality+Auditor"><span class="font-weight-bold">Quality Auditor</span><a href=#QAPO_Quality+Auditor_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Stakeholder responsible for conducting objective evaluations.<br/></p></td></tr>
 
 							</tbody>
 						</table>
@@ -376,102 +306,22 @@
 								<td style="width: 25%"><b>Concept</b></td>
 								<td style="width: 75%"><b>Definition</b></td>
 							</tr>
-							<tr>
-<td><a name="QAPO_Adherence+Evaluation"><b>Adherence Evaluation</b></a>
-<a href=#QAPO_Adherence+Evaluation_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Activity for objectively evaluating the adherence of processes and products to the applicable requirements, registering the identified issues.
-<br/></td>
-</tr>
-<tr>
-<td><a name="QAPO_Artifact+Evaluation"><b>Artifact Evaluation</b></a>
-<a href=#QAPO_Artifact+Evaluation_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Activity for objectively evaluating the adherence of products and deliverables to the applicable requirements.
-<br/></td>
-</tr>
-<tr>
-<td><a name="QAPO_Evaluated+Artifact"><b>Evaluated Artifact</b></a>
-<a href=#QAPO_Evaluated+Artifact_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Artifact objectively evaluated.
-<br/></td>
-</tr>
-<tr>
-<td><a name="QAPO_Evaluated+Process"><b>Evaluated Process</b></a>
-<a href=#QAPO_Evaluated+Process_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Process objectively evaluated.
-<br/></td>
-</tr>
-<tr>
-<td><a name="QAPO_Evaluation+Report"><b>Evaluation Report</b></a>
-<a href=#QAPO_Evaluation+Report_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Document describing the evaluation results and identified issues.
-<br/></td>
-</tr>
-<tr>
-<td><a name="QAPO_Noncompliance+Closing"><b>Noncompliance Closing</b></a>
-<a href=#QAPO_Noncompliance+Closing_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Activity for finishing a noncompliance once it is satisfactorily solved.
-<br/></td>
-</tr>
-<tr>
-<td><a name="QAPO_Noncompliance+Control"><b>Noncompliance Control</b></a>
-<a href=#QAPO_Noncompliance+Control_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Activity for managing the registered noncompliances until their effective resolution.
-<br/></td>
-</tr>
-<tr>
-<td><a name="QAPO_Noncompliance+Identification"><b>Noncompliance Identification</b></a>
-<a href=#QAPO_Noncompliance+Identification_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Activity for registering the noncompliances identified in processes and artifacts.
-<br/></td>
-</tr>
-<tr>
-<td><a name="QAPO_Noncompliance+Register"><b>Noncompliance Register</b></a>
-<a href=#QAPO_Noncompliance+Register_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Information Item describing a noncompliance (a failure or refusal to conform to an applicable requirement) in a process or artifact, and related information to solve it.
-<br/>E.g.:<i> a neglected activity in a process; a document wrongly specified.</i></td>
-</tr>
-<tr>
-<td><a name="QAPO_Noncompliance+Resolution"><b>Noncompliance Resolution</b></a>
-<a href=#QAPO_Noncompliance+Resolution_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Activity for analyzing a noncompliance, planning and executing the applicable corrective actions to its resolution.
-<br/></td>
-</tr>
-<tr>
-<td><a name="QAPO_Noncompliance+Responsible"><b>Noncompliance Responsible</b></a>
-<a href=#QAPO_Noncompliance+Responsible_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Stakeholder responsible for solving a noncompliance.
-<br/></td>
-</tr>
-<tr>
-<td><a name="QAPO_Process+Evaluation"><b>Process Evaluation</b></a>
-<a href=#QAPO_Process+Evaluation_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Activity for objectively evaluating the adherence of processes and activities to the applicable requirements.
-<br/></td>
-</tr>
-<tr>
-<td><a name="QAPO_Quality+Assurance+Plan"><b>Quality Assurance Plan</b></a>
-<a href=#QAPO_Quality+Assurance+Plan_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Document registering the planed quality assurance activities, processes and artifacts to be evaluated and involved personnel.
-<br/></td>
-</tr>
-<tr>
-<td><a name="QAPO_Quality+Assurance+Planning"><b>Quality Assurance Planning</b></a>
-<a href=#QAPO_Quality+Assurance+Planning_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Activity for planning the quality assurance activities, resulting in a Quality Assurance Plan.
-<br/></td>
-</tr>
-<tr>
-<td><a name="QAPO_Quality+Assurance+Process"><b>Quality Assurance Process</b></a>
-<a href=#QAPO_Quality+Assurance+Process_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Process for conducting the activities related to software quality assurance, assessing and assuring adherence of the performed processes and produced artifacts to the applicable requirements.
-<br/></td>
-</tr>
-<tr>
-<td><a name="QAPO_Quality+Auditor"><b>Quality Auditor</b></a>
-<a href=#QAPO_Quality+Auditor_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Stakeholder responsible for conducting objective evaluations.
-<br/></td>
-</tr>
+							<tr><td><p id="QAPO_Adherence+Evaluation"><span class="font-weight-bold">Adherence Evaluation</span><a href=#QAPO_Adherence+Evaluation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Activity for objectively evaluating the adherence of processes and products to the applicable requirements, registering the identified issues.<br/></p></td></tr>
+<tr><td><p id="QAPO_Artifact+Evaluation"><span class="font-weight-bold">Artifact Evaluation</span><a href=#QAPO_Artifact+Evaluation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Activity for objectively evaluating the adherence of products and deliverables to the applicable requirements.<br/></p></td></tr>
+<tr><td><p id="QAPO_Evaluated+Artifact"><span class="font-weight-bold">Evaluated Artifact</span><a href=#QAPO_Evaluated+Artifact_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Artifact objectively evaluated.<br/></p></td></tr>
+<tr><td><p id="QAPO_Evaluated+Process"><span class="font-weight-bold">Evaluated Process</span><a href=#QAPO_Evaluated+Process_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Process objectively evaluated.<br/></p></td></tr>
+<tr><td><p id="QAPO_Evaluation+Report"><span class="font-weight-bold">Evaluation Report</span><a href=#QAPO_Evaluation+Report_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Document describing the evaluation results and identified issues.<br/></p></td></tr>
+<tr><td><p id="QAPO_Noncompliance+Closing"><span class="font-weight-bold">Noncompliance Closing</span><a href=#QAPO_Noncompliance+Closing_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Activity for finishing a noncompliance once it is satisfactorily solved.<br/></p></td></tr>
+<tr><td><p id="QAPO_Noncompliance+Control"><span class="font-weight-bold">Noncompliance Control</span><a href=#QAPO_Noncompliance+Control_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Activity for managing the registered noncompliances until their effective resolution.<br/></p></td></tr>
+<tr><td><p id="QAPO_Noncompliance+Identification"><span class="font-weight-bold">Noncompliance Identification</span><a href=#QAPO_Noncompliance+Identification_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Activity for registering the noncompliances identified in processes and artifacts.<br/></p></td></tr>
+<tr><td><p id="QAPO_Noncompliance+Register"><span class="font-weight-bold">Noncompliance Register</span><a href=#QAPO_Noncompliance+Register_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Information Item describing a noncompliance (a failure or refusal to conform to an applicable requirement) in a process or artifact, and related information to solve it.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> a neglected activity in a process; a document wrongly specified.</span></p></td></tr>
+<tr><td><p id="QAPO_Noncompliance+Resolution"><span class="font-weight-bold">Noncompliance Resolution</span><a href=#QAPO_Noncompliance+Resolution_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Activity for analyzing a noncompliance, planning and executing the applicable corrective actions to its resolution.<br/></p></td></tr>
+<tr><td><p id="QAPO_Noncompliance+Responsible"><span class="font-weight-bold">Noncompliance Responsible</span><a href=#QAPO_Noncompliance+Responsible_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Stakeholder responsible for solving a noncompliance.<br/></p></td></tr>
+<tr><td><p id="QAPO_Process+Evaluation"><span class="font-weight-bold">Process Evaluation</span><a href=#QAPO_Process+Evaluation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Activity for objectively evaluating the adherence of processes and activities to the applicable requirements.<br/></p></td></tr>
+<tr><td><p id="QAPO_Quality+Assurance+Plan"><span class="font-weight-bold">Quality Assurance Plan</span><a href=#QAPO_Quality+Assurance+Plan_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Document registering the planed quality assurance activities, processes and artifacts to be evaluated and involved personnel.<br/></p></td></tr>
+<tr><td><p id="QAPO_Quality+Assurance+Planning"><span class="font-weight-bold">Quality Assurance Planning</span><a href=#QAPO_Quality+Assurance+Planning_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Activity for planning the quality assurance activities, resulting in a Quality Assurance Plan.<br/></p></td></tr>
+<tr><td><p id="QAPO_Quality+Assurance+Process"><span class="font-weight-bold">Quality Assurance Process</span><a href=#QAPO_Quality+Assurance+Process_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Process for conducting the activities related to software quality assurance, assessing and assuring adherence of the performed processes and produced artifacts to the applicable requirements.<br/></p></td></tr>
+<tr><td><p id="QAPO_Quality+Auditor"><span class="font-weight-bold">Quality Auditor</span><a href=#QAPO_Quality+Auditor_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Stakeholder responsible for conducting objective evaluations.<br/></p></td></tr>
 
 						</tbody>
 					</table>-->
@@ -483,8 +333,8 @@
 				<div class="p-5 rounded" id="detailedconcepts">
 					<h2 class="featurette-heading">5. Detailed Concepts</h2>
 					<p class="lead">Quality Assurance Process Ontology (QAPO) detailed concepts.</p>					
-					<hr><div class="container-fluid" id="QAPO_Adherence+Evaluation_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
-<br/><span class="font-weight-bold text-center">Adherence Evaluation</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">QAPO::Adherence Evaluation</span><br/>Specializes SPO::Performed Composite Activity</p><p>Activity for objectively evaluating the adherence of processes and products to the applicable requirements, registering the identified issues.<br/></p><p>Relations:<br/>
+					<hr><div class="container-fluid" id="QAPO_Adherence+Evaluation_detail"><h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> QAPO::Adherence Evaluation</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Adherence Evaluation</span></p></div><br/><h5>Specializes:</h5><p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> SPO::Performed Composite Activity</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Activity for objectively evaluating the adherence of processes and products to the applicable requirements, registering the identified issues.<br/></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
 <code>Adherence Evaluation <>-- Artifact Evaluation<br/>
 Adherence Evaluation <>-- Process Evaluation<br/>
 Adherence Evaluation <>-- Noncompliance Identification<br/>
@@ -492,100 +342,100 @@ Adherence Evaluation creates Evaluation Report<br/>
 Project Team participates in Adherence Evaluation<br/>
 Quality Auditor is in charge of Adherence Evaluation<br/>
 Quality Assurance Process <>-- Adherence Evaluation<br/>
-</code></p></div></div>
+</code></p></div></div></div>
 
-<hr><div class="container-fluid" id="QAPO_Artifact+Evaluation_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
-<br/><span class="font-weight-bold text-center">Artifact Evaluation</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">QAPO::Artifact Evaluation</span><br/>Specializes SPO::Performed Simple Activity</p><p>Activity for objectively evaluating the adherence of products and deliverables to the applicable requirements.<br/></p><p>Relations:<br/>
+<hr><div class="container-fluid" id="QAPO_Artifact+Evaluation_detail"><h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> QAPO::Artifact Evaluation</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Artifact Evaluation</span></p></div><br/><h5>Specializes:</h5><p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> SPO::Performed Simple Activity</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Activity for objectively evaluating the adherence of products and deliverables to the applicable requirements.<br/></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
 <code>Artifact Evaluation uses Evaluated Artifact<br/>
 Adherence Evaluation <>-- Artifact Evaluation<br/>
-</code></p></div></div>
+</code></p></div></div></div>
 
-<hr><div class="container-fluid" id="QAPO_Evaluated+Artifact_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltrole&gt&gt</code>
-<br/><span class="font-weight-bold text-center">Evaluated Artifact</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">QAPO::Evaluated Artifact</span><br/>Specializes SysSwO::Software Artifact</p><p>Artifact objectively evaluated.<br/></p><p>Relations:<br/>
+<hr><div class="container-fluid" id="QAPO_Evaluated+Artifact_detail"><h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> QAPO::Evaluated Artifact</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code>&lt&ltrole&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Evaluated Artifact</span></p></div><br/><h5>Specializes:</h5><p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> SysSwO::Software Artifact</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Artifact objectively evaluated.<br/></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
 <code>Artifact Evaluation uses Evaluated Artifact<br/>
-</code></p></div></div>
+</code></p></div></div></div>
 
-<hr><div class="container-fluid" id="QAPO_Evaluated+Process_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltrole&gt&gt</code>
-<br/><span class="font-weight-bold text-center">Evaluated Process</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">QAPO::Evaluated Process</span><br/>Specializes SPO::Performed Process</p><p>Process objectively evaluated.<br/></p><p>Relations:<br/>
+<hr><div class="container-fluid" id="QAPO_Evaluated+Process_detail"><h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> QAPO::Evaluated Process</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code>&lt&ltrole&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Evaluated Process</span></p></div><br/><h5>Specializes:</h5><p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> SPO::Performed Process</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Process objectively evaluated.<br/></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
 <code>Process Evaluation uses Evaluated Process<br/>
-</code></p></div></div>
+</code></p></div></div></div>
 
-<hr><div class="container-fluid" id="QAPO_Evaluation+Report_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
-<br/><span class="font-weight-bold text-center">Evaluation Report</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">QAPO::Evaluation Report</span><br/>Specializes SysSwO::Document</p><p>Document describing the evaluation results and identified issues.<br/></p><p>Relations:<br/>
+<hr><div class="container-fluid" id="QAPO_Evaluation+Report_detail"><h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> QAPO::Evaluation Report</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Evaluation Report</span></p></div><br/><h5>Specializes:</h5><p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> SysSwO::Document</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Document describing the evaluation results and identified issues.<br/></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
 <code>Adherence Evaluation creates Evaluation Report<br/>
-</code></p></div></div>
+</code></p></div></div></div>
 
-<hr><div class="container-fluid" id="QAPO_Noncompliance+Closing_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
-<br/><span class="font-weight-bold text-center">Noncompliance Closing</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">QAPO::Noncompliance Closing</span><br/>Specializes SPO::Performed Simple Activity</p><p>Activity for finishing a noncompliance once it is satisfactorily solved.<br/></p><p>Relations:<br/>
+<hr><div class="container-fluid" id="QAPO_Noncompliance+Closing_detail"><h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> QAPO::Noncompliance Closing</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Noncompliance Closing</span></p></div><br/><h5>Specializes:</h5><p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> SPO::Performed Simple Activity</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Activity for finishing a noncompliance once it is satisfactorily solved.<br/></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
 <code>Noncompliance Control <>-- Noncompliance Closing<br/>
-</code></p></div></div>
+</code></p></div></div></div>
 
-<hr><div class="container-fluid" id="QAPO_Noncompliance+Control_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
-<br/><span class="font-weight-bold text-center">Noncompliance Control</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">QAPO::Noncompliance Control</span><br/>Specializes SPO::Performed Composite Activity</p><p>Activity for managing the registered noncompliances until their effective resolution.<br/></p><p>Relations:<br/>
+<hr><div class="container-fluid" id="QAPO_Noncompliance+Control_detail"><h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> QAPO::Noncompliance Control</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Noncompliance Control</span></p></div><br/><h5>Specializes:</h5><p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> SPO::Performed Composite Activity</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Activity for managing the registered noncompliances until their effective resolution.<br/></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
 <code>Noncompliance Control <>-- Noncompliance Resolution<br/>
 Noncompliance Control <>-- Noncompliance Closing<br/>
 Noncompliance Control changes Noncompliance Register<br/>
 Quality Auditor is in charge of Noncompliance Control<br/>
 Noncompliance Responsible participates in Noncompliance Control<br/>
 Quality Assurance Process <>-- Noncompliance Control<br/>
-</code></p></div></div>
+</code></p></div></div></div>
 
-<hr><div class="container-fluid" id="QAPO_Noncompliance+Identification_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
-<br/><span class="font-weight-bold text-center">Noncompliance Identification</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">QAPO::Noncompliance Identification</span><br/>Specializes SPO::Performed Simple Activity</p><p>Activity for registering the noncompliances identified in processes and artifacts.<br/></p><p>Relations:<br/>
+<hr><div class="container-fluid" id="QAPO_Noncompliance+Identification_detail"><h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> QAPO::Noncompliance Identification</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Noncompliance Identification</span></p></div><br/><h5>Specializes:</h5><p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> SPO::Performed Simple Activity</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Activity for registering the noncompliances identified in processes and artifacts.<br/></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
 <code>Noncompliance Identification creates Noncompliance Register<br/>
 Adherence Evaluation <>-- Noncompliance Identification<br/>
-</code></p></div></div>
+</code></p></div></div></div>
 
-<hr><div class="container-fluid" id="QAPO_Noncompliance+Register_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
-<br/><span class="font-weight-bold text-center">Noncompliance Register</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">QAPO::Noncompliance Register</span><br/>Specializes SysSwO::Information Item</p><p>Information Item describing a noncompliance (a failure or refusal to conform to an applicable requirement) in a process or artifact, and related information to solve it.<br/>E.g.:<span class="font-italic"> a neglected activity in a process; a document wrongly specified.</span></p><p>Relations:<br/>
+<hr><div class="container-fluid" id="QAPO_Noncompliance+Register_detail"><h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> QAPO::Noncompliance Register</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Noncompliance Register</span></p></div><br/><h5>Specializes:</h5><p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> SysSwO::Information Item</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Information Item describing a noncompliance (a failure or refusal to conform to an applicable requirement) in a process or artifact, and related information to solve it.<br/><span class="font-weight-bold">Example:</span><span class="font-italic"> a neglected activity in a process; a document wrongly specified.</span></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
 <code>Noncompliance Register (0..*) <>-- (0..*) Corrective Action Register<br/>
 Noncompliance Control changes Noncompliance Register<br/>
 Configuration Audit Report depicts Noncompliance Register<br/>
 Noncompliance Identification creates Noncompliance Register<br/>
-</code></p></div></div>
+</code></p></div></div></div>
 
-<hr><div class="container-fluid" id="QAPO_Noncompliance+Resolution_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
-<br/><span class="font-weight-bold text-center">Noncompliance Resolution</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">QAPO::Noncompliance Resolution</span><br/>Specializes SPO::Performed Simple Activity</p><p>Activity for analyzing a noncompliance, planning and executing the applicable corrective actions to its resolution.<br/></p><p>Relations:<br/>
+<hr><div class="container-fluid" id="QAPO_Noncompliance+Resolution_detail"><h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> QAPO::Noncompliance Resolution</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Noncompliance Resolution</span></p></div><br/><h5>Specializes:</h5><p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> SPO::Performed Simple Activity</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Activity for analyzing a noncompliance, planning and executing the applicable corrective actions to its resolution.<br/></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
 <code>Noncompliance Resolution creates Corrective Action Register<br/>
 Noncompliance Control <>-- Noncompliance Resolution<br/>
-</code></p></div></div>
+</code></p></div></div></div>
 
-<hr><div class="container-fluid" id="QAPO_Noncompliance+Responsible_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltrole&gt&gt</code>
-<br/><span class="font-weight-bold text-center">Noncompliance Responsible</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">QAPO::Noncompliance Responsible</span><br/>Specializes SPO::Person Stakeholder</p><p>Stakeholder responsible for solving a noncompliance.<br/></p><p>Relations:<br/>
+<hr><div class="container-fluid" id="QAPO_Noncompliance+Responsible_detail"><h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> QAPO::Noncompliance Responsible</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code>&lt&ltrole&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Noncompliance Responsible</span></p></div><br/><h5>Specializes:</h5><p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> SPO::Person Stakeholder</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Stakeholder responsible for solving a noncompliance.<br/></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
 <code>Noncompliance Responsible participates in Noncompliance Control<br/>
-</code></p></div></div>
+</code></p></div></div></div>
 
-<hr><div class="container-fluid" id="QAPO_Process+Evaluation_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
-<br/><span class="font-weight-bold text-center">Process Evaluation</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">QAPO::Process Evaluation</span><br/>Specializes SPO::Performed Simple Activity</p><p>Activity for objectively evaluating the adherence of processes and activities to the applicable requirements.<br/></p><p>Relations:<br/>
+<hr><div class="container-fluid" id="QAPO_Process+Evaluation_detail"><h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> QAPO::Process Evaluation</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Process Evaluation</span></p></div><br/><h5>Specializes:</h5><p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> SPO::Performed Simple Activity</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Activity for objectively evaluating the adherence of processes and activities to the applicable requirements.<br/></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
 <code>Process Evaluation uses Evaluated Process<br/>
 Adherence Evaluation <>-- Process Evaluation<br/>
-</code></p></div></div>
+</code></p></div></div></div>
 
-<hr><div class="container-fluid" id="QAPO_Quality+Assurance+Plan_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
-<br/><span class="font-weight-bold text-center">Quality Assurance Plan</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">QAPO::Quality Assurance Plan</span><br/>Specializes SysSwO::Document</p><p>Document registering the planed quality assurance activities, processes and artifacts to be evaluated and involved personnel.<br/></p><p>Relations:<br/>
+<hr><div class="container-fluid" id="QAPO_Quality+Assurance+Plan_detail"><h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> QAPO::Quality Assurance Plan</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Quality Assurance Plan</span></p></div><br/><h5>Specializes:</h5><p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> SysSwO::Document</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Document registering the planed quality assurance activities, processes and artifacts to be evaluated and involved personnel.<br/></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
 <code>Quality Assurance Planning creates Quality Assurance Plan<br/>
-</code></p></div></div>
+</code></p></div></div></div>
 
-<hr><div class="container-fluid" id="QAPO_Quality+Assurance+Planning_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
-<br/><span class="font-weight-bold text-center">Quality Assurance Planning</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">QAPO::Quality Assurance Planning</span><br/>Specializes SPO::Performed Composite Activity, SPO::Performed Activity</p><p>Activity for planning the quality assurance activities, resulting in a Quality Assurance Plan.<br/></p><p>Relations:<br/>
+<hr><div class="container-fluid" id="QAPO_Quality+Assurance+Planning_detail"><h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> QAPO::Quality Assurance Planning</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Quality Assurance Planning</span></p></div><br/><h5>Specializes:</h5><p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> SPO::Performed Composite Activity</p><p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg>  SPO::Performed Activity</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Activity for planning the quality assurance activities, resulting in a Quality Assurance Plan.<br/></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
 <code>Quality Assurance Planning uses Project Plan<br/>
 Quality Assurance Planning creates Quality Assurance Plan<br/>
 Project Manager is in charge of Quality Assurance Planning<br/>
 Quality Assurance Process <>-- Quality Assurance Planning<br/>
-</code></p></div></div>
+</code></p></div></div></div>
 
-<hr><div class="container-fluid" id="QAPO_Quality+Assurance+Process_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
-<br/><span class="font-weight-bold text-center">Quality Assurance Process</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">QAPO::Quality Assurance Process</span><br/>Specializes SPO::Performed Specific Process</p><p>Process for conducting the activities related to software quality assurance, assessing and assuring adherence of the performed processes and produced artifacts to the applicable requirements.<br/></p><p>Relations:<br/>
+<hr><div class="container-fluid" id="QAPO_Quality+Assurance+Process_detail"><h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> QAPO::Quality Assurance Process</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Quality Assurance Process</span></p></div><br/><h5>Specializes:</h5><p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> SPO::Performed Specific Process</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Process for conducting the activities related to software quality assurance, assessing and assuring adherence of the performed processes and produced artifacts to the applicable requirements.<br/></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
 <code>Quality Assurance Process <>-- Quality Assurance Planning<br/>
 Quality Assurance Process <>-- Adherence Evaluation<br/>
 Quality Assurance Process <>-- Noncompliance Control<br/>
-</code></p></div></div>
+</code></p></div></div></div>
 
-<hr><div class="container-fluid" id="QAPO_Quality+Auditor_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltrole&gt&gt</code>
-<br/><span class="font-weight-bold text-center">Quality Auditor</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">QAPO::Quality Auditor</span><br/>Specializes SPO::Person Stakeholder</p><p>Stakeholder responsible for conducting objective evaluations.<br/></p><p>Relations:<br/>
+<hr><div class="container-fluid" id="QAPO_Quality+Auditor_detail"><h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> QAPO::Quality Auditor</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code>&lt&ltrole&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Quality Auditor</span></p></div><br/><h5>Specializes:</h5><p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> SPO::Person Stakeholder</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Stakeholder responsible for conducting objective evaluations.<br/></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
 <code>Quality Auditor is in charge of Adherence Evaluation<br/>
 Quality Auditor is in charge of Noncompliance Control<br/>
-</code></p></div></div>
+</code></p></div></div></div>
 
 
 				</div>
@@ -593,15 +443,37 @@ Quality Auditor is in charge of Noncompliance Control<br/>
 			</main>
 	
     <footer class="p-5 rounded border-top">
-      <div class="row">
-      	<div class="col">
-      		  <span class="text-muted">Powered by NEMO.</span>
+      <div class="row justify-content-md-center">
+      	<div class="col-md-auto">
+    		  <h5>Powered by</h5>
+    		  <ul class="list-unstyled text-small">
+    		  	<li>
+    		  		<a class="text-muted" href="https://nemo.inf.ufes.br/" target="_blank">NEMO</a>
+    		  	</li>
+    		  </ul>
       	</div>
-      	<div class="col">
-      		<span><small><b>Quality Assurance Process Ontology (QAPO)</b></small></span>
+      	<div class="col-md-auto">
+      		<h5>QAPO</h5>
+      		<ul class="list-unstyled text-small">
+      			<li>
+      				<a class="text-muted" href="#">Quality Assurance Process Ontology</a>
+      			</li>
+      			<li>
+      				<a class="text-muted" href="#">Domain ontology from SEON</a>
+      			</li>
+      			<li>
+      				<a class="text-muted" href="#"></a>
+      			</li>
+      		</ul>
       	</div>
-      	<div class="col">
-      		<span class="text-muted"><small>Mon Nov 22 22:03:46 BRT 2021</small></span>	
+      	<div class="col-md-auto">
+      		<h5>About</h5>
+      		<ul class="list-unstyled text-small">
+      			<li>
+      				<a class="text-muted" href="team.html">Team</a>
+      			</li>
+      		</ul>
+      		<span class="text-muted"><small>Tue Nov 23 20:39:41 BRT 2021</small></span>	
       	</div>
       </div>
     </footer>

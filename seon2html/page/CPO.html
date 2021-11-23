@@ -19,6 +19,7 @@
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/navbar-top-fixed.css" rel="stylesheet">
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/sticky-footer-navbar.css" rel="stylesheet">
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/carousel.css" rel="stylesheet">
+	    <link href="../resources/static/bootstrap-5.1.3-dist/css/pricing.css" rel="stylesheet">
 
 	    <style>
 	      .bd-placeholder-img {
@@ -40,6 +41,7 @@
 	      	margin-bottom: 2.5rem;
 	      }
 
+
 	      .span {
 	      	font-size: 2rem;
 	      }
@@ -47,9 +49,15 @@
 	      .featurette-heading {
 	        margin-top: 0;
 	      }
+
+	      
+
 	    </style>
 
-	    
+	  <!--.h6, h6 {
+	      	margin-bottom: 2.5rem;
+	      	margin-top: 2.5rem;	
+	      }-->  
 	    
 <!--	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
 	    
@@ -169,8 +177,8 @@
 
 				<div class="bg-light p-5 rounded">
 					<div class="container-fluid d-flex justify-content-end"><span class="badge badge-danger text-lowercase"></span></div>
-    			<h1 class="featurette-heading">The Coding Process Ontology (CPO)</h1>
     			<p class="lead text-right text-muted font-italic"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"><path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg> domain ontology from SEON</p>
+    			<h1 class="featurette-heading">The Coding Process Ontology (CPO)</h1>
     		</div>
 	
 				<hr> 
@@ -187,6 +195,7 @@
 					<p class="lead">Networked ontologies used by CPO:</p>	
 					
 					<div class="table-responsive">
+						<caption>Ontologies (re)used by CPO.</caption>
 						<table class="table table-hover">
 							<thead>
 								<tr>
@@ -211,8 +220,8 @@
     	
 				<div class="p-5 rounded" id="ontologymodels">
 					<h2 class="featurette-heading">3. Ontology Models</h2>
-					<p class="lead"><p>Figure 1 presents the conceptual model of the CPO.</p>
-<p align="center"><IMG src="images/CPO.png" width="1062" class="map" usemap="#CPO"><MAP NAME="CPO">
+					<p class="lead"><p class="lead">Figure 1 presents the conceptual model of the CPO.</p>
+<div class="container-fluid" align="center"><img src="images/CPO.png" width="1062" class="map" usemap="#CPO"><MAP NAME="CPO">
 <area shape="rect" coords="695,193,821,240" href="SysSwO.html#SysSwO_Software+Artifact" title="Object intentionally made to serve a given purpose in the context of a software Project or Organization.">
 <area shape="rect" coords="515,335,662,365" href="SysSwO.html#SysSwO_Complex+Sw+Artifact" title="Artifact composed of other Artifacts.">
 <area shape="rect" coords="593,299,729,329" href="SysSwO.html#SysSwO_Atomic+Sw+Artifact" title="Artifact that is not decomposed into other Artifacts.">
@@ -238,9 +247,9 @@
 <area shape="rect" coords="348,598,500,628" href="CPO.html#CPO_Code+Documentation" title="Simple Performed Activity executed for documenting the software Code with useful information.">
 <area shape="rect" coords="789,485,963,515" href="RSRO.html#RSRO_Requirements+Document" title="Document composed of Documented Requirements and related information, as a basis for other technical software processes, including maintenance.">
 <area shape="rect" coords="831,522,963,552" href="DPO.html#DPO_Design+Document" title="Document specifying the design of a software, by depicting the software architecture, components, interfaces and data models, as well as other information regarding the design choices and decisions.">
-<area shape="rect" coords="15,661,127,691" href="CPO.html#CPO_Code+Reviewer" title="Stakeholder responsible for reviewing the Code according to the Requirements Document and Design Document."></MAP></p>
-<p align="center"><b>Figure 1. CPO conceptual model.</b></p>
-<p align="justify">Coding Process is a Performed Process with the purpose of producing software Code in conformance with the requirements and design decisions established in the previous technical processes (requirements development and design processes). It is composed of a set of Coding activity, when the Programmer uses the requirements and definitions established in the Requirements Document and Design Document for developing and documenting the code. Code Development activity creates the software Code , while Code Documentation changes the Code by adding comments with useful information. Finally, in the Code Review activity, the Code Reviewer reviews the Code searching for errors and non-conformances and produces a Code Review Report.</p>
+<area shape="rect" coords="15,661,127,691" href="CPO.html#CPO_Code+Reviewer" title="Stakeholder responsible for reviewing the Code according to the Requirements Document and Design Document."></MAP>
+<p align="center" class="lead font-weight-bold">Figure 1. CPO conceptual model.</p></div>
+<p align="justify" class="lead">Coding Process is a Performed Process with the purpose of producing software Code in conformance with the requirements and design decisions established in the previous technical processes (requirements development and design processes). It is composed of a set of Coding activity, when the Programmer uses the requirements and definitions established in the Requirements Document and Design Document for developing and documenting the code. Code Development activity creates the software Code , while Code Documentation changes the Code by adding comments with useful information. Finally, in the Code Review activity, the Code Reviewer reviews the Code searching for errors and non-conformances and produces a Code Review Report.</p>
 </p>					
 				</div>
 
@@ -251,6 +260,7 @@
 					<p class="lead">The following table shows the definitions for CPO concepts.</p>		
 					<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->				
 					<div class="table-responsive">
+						<caption>CPO concepts definition.</caption>
 						<table class="table table-hover">
 							<thead>
 								<tr>
@@ -259,54 +269,14 @@
 								</tr>
 							</thead>
 							<tbody>
-								<tr>
-<td><a name="CPO_Code+Development"><b>Code Development</b></a>
-<a href=#CPO_Code+Development_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Simple Performed Activity executed for developing the software Code according to previews definitions.
-<br/></td>
-</tr>
-<tr>
-<td><a name="CPO_Code+Documentation"><b>Code Documentation</b></a>
-<a href=#CPO_Code+Documentation_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Simple Performed Activity executed for documenting the software Code with useful information.
-<br/></td>
-</tr>
-<tr>
-<td><a name="CPO_Code+Review"><b>Code Review</b></a>
-<a href=#CPO_Code+Review_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Simple Performed Activity executed for reviewing the software Code to identify errors and non-conformances.
-<br/></td>
-</tr>
-<tr>
-<td><a name="CPO_Code+Review+Report"><b>Code Review Report</b></a>
-<a href=#CPO_Code+Review+Report_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Document pointing out problems identified in the Code during review activities.
-<br/></td>
-</tr>
-<tr>
-<td><a name="CPO_Code+Reviewer"><b>Code Reviewer</b></a>
-<a href=#CPO_Code+Reviewer_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Stakeholder responsible for reviewing the Code according to the Requirements Document and Design Document.
-<br/></td>
-</tr>
-<tr>
-<td><a name="CPO_Coding"><b>Coding</b></a>
-<a href=#CPO_Coding_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Composite Performed Activity executed for coordinating the Code development and documentation, according to definitions from the Requirements Document and Design Document.
-<br/></td>
-</tr>
-<tr>
-<td><a name="CPO_Coding+Process"><b>Coding Process</b></a>
-<a href=#CPO_Coding+Process_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Specific Performed Process for conducting the activities related to software Code production.
-<br/></td>
-</tr>
-<tr>
-<td><a name="CPO_Programmer"><b>Programmer</b></a>
-<a href=#CPO_Programmer_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Stakeholder with programming skills responsible for producing and documenting the software Code.
-<br/></td>
-</tr>
+								<tr><td><p id="CPO_Code+Development"><span class="font-weight-bold">Code Development</span><a href=#CPO_Code+Development_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Simple Performed Activity executed for developing the software Code according to previews definitions.<br/></p></td></tr>
+<tr><td><p id="CPO_Code+Documentation"><span class="font-weight-bold">Code Documentation</span><a href=#CPO_Code+Documentation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Simple Performed Activity executed for documenting the software Code with useful information.<br/></p></td></tr>
+<tr><td><p id="CPO_Code+Review"><span class="font-weight-bold">Code Review</span><a href=#CPO_Code+Review_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Simple Performed Activity executed for reviewing the software Code to identify errors and non-conformances.<br/></p></td></tr>
+<tr><td><p id="CPO_Code+Review+Report"><span class="font-weight-bold">Code Review Report</span><a href=#CPO_Code+Review+Report_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Document pointing out problems identified in the Code during review activities.<br/></p></td></tr>
+<tr><td><p id="CPO_Code+Reviewer"><span class="font-weight-bold">Code Reviewer</span><a href=#CPO_Code+Reviewer_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Stakeholder responsible for reviewing the Code according to the Requirements Document and Design Document.<br/></p></td></tr>
+<tr><td><p id="CPO_Coding"><span class="font-weight-bold">Coding</span><a href=#CPO_Coding_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Composite Performed Activity executed for coordinating the Code development and documentation, according to definitions from the Requirements Document and Design Document.<br/></p></td></tr>
+<tr><td><p id="CPO_Coding+Process"><span class="font-weight-bold">Coding Process</span><a href=#CPO_Coding+Process_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Specific Performed Process for conducting the activities related to software Code production.<br/></p></td></tr>
+<tr><td><p id="CPO_Programmer"><span class="font-weight-bold">Programmer</span><a href=#CPO_Programmer_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Stakeholder with programming skills responsible for producing and documenting the software Code.<br/></p></td></tr>
 
 							</tbody>
 						</table>
@@ -320,54 +290,14 @@
 								<td style="width: 25%"><b>Concept</b></td>
 								<td style="width: 75%"><b>Definition</b></td>
 							</tr>
-							<tr>
-<td><a name="CPO_Code+Development"><b>Code Development</b></a>
-<a href=#CPO_Code+Development_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Simple Performed Activity executed for developing the software Code according to previews definitions.
-<br/></td>
-</tr>
-<tr>
-<td><a name="CPO_Code+Documentation"><b>Code Documentation</b></a>
-<a href=#CPO_Code+Documentation_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Simple Performed Activity executed for documenting the software Code with useful information.
-<br/></td>
-</tr>
-<tr>
-<td><a name="CPO_Code+Review"><b>Code Review</b></a>
-<a href=#CPO_Code+Review_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Simple Performed Activity executed for reviewing the software Code to identify errors and non-conformances.
-<br/></td>
-</tr>
-<tr>
-<td><a name="CPO_Code+Review+Report"><b>Code Review Report</b></a>
-<a href=#CPO_Code+Review+Report_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Document pointing out problems identified in the Code during review activities.
-<br/></td>
-</tr>
-<tr>
-<td><a name="CPO_Code+Reviewer"><b>Code Reviewer</b></a>
-<a href=#CPO_Code+Reviewer_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Stakeholder responsible for reviewing the Code according to the Requirements Document and Design Document.
-<br/></td>
-</tr>
-<tr>
-<td><a name="CPO_Coding"><b>Coding</b></a>
-<a href=#CPO_Coding_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Composite Performed Activity executed for coordinating the Code development and documentation, according to definitions from the Requirements Document and Design Document.
-<br/></td>
-</tr>
-<tr>
-<td><a name="CPO_Coding+Process"><b>Coding Process</b></a>
-<a href=#CPO_Coding+Process_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Specific Performed Process for conducting the activities related to software Code production.
-<br/></td>
-</tr>
-<tr>
-<td><a name="CPO_Programmer"><b>Programmer</b></a>
-<a href=#CPO_Programmer_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Stakeholder with programming skills responsible for producing and documenting the software Code.
-<br/></td>
-</tr>
+							<tr><td><p id="CPO_Code+Development"><span class="font-weight-bold">Code Development</span><a href=#CPO_Code+Development_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Simple Performed Activity executed for developing the software Code according to previews definitions.<br/></p></td></tr>
+<tr><td><p id="CPO_Code+Documentation"><span class="font-weight-bold">Code Documentation</span><a href=#CPO_Code+Documentation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Simple Performed Activity executed for documenting the software Code with useful information.<br/></p></td></tr>
+<tr><td><p id="CPO_Code+Review"><span class="font-weight-bold">Code Review</span><a href=#CPO_Code+Review_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Simple Performed Activity executed for reviewing the software Code to identify errors and non-conformances.<br/></p></td></tr>
+<tr><td><p id="CPO_Code+Review+Report"><span class="font-weight-bold">Code Review Report</span><a href=#CPO_Code+Review+Report_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Document pointing out problems identified in the Code during review activities.<br/></p></td></tr>
+<tr><td><p id="CPO_Code+Reviewer"><span class="font-weight-bold">Code Reviewer</span><a href=#CPO_Code+Reviewer_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Stakeholder responsible for reviewing the Code according to the Requirements Document and Design Document.<br/></p></td></tr>
+<tr><td><p id="CPO_Coding"><span class="font-weight-bold">Coding</span><a href=#CPO_Coding_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Composite Performed Activity executed for coordinating the Code development and documentation, according to definitions from the Requirements Document and Design Document.<br/></p></td></tr>
+<tr><td><p id="CPO_Coding+Process"><span class="font-weight-bold">Coding Process</span><a href=#CPO_Coding+Process_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Specific Performed Process for conducting the activities related to software Code production.<br/></p></td></tr>
+<tr><td><p id="CPO_Programmer"><span class="font-weight-bold">Programmer</span><a href=#CPO_Programmer_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Stakeholder with programming skills responsible for producing and documenting the software Code.<br/></p></td></tr>
 
 						</tbody>
 					</table>-->
@@ -379,58 +309,58 @@
 				<div class="p-5 rounded" id="detailedconcepts">
 					<h2 class="featurette-heading">5. Detailed Concepts</h2>
 					<p class="lead">Coding Process Ontology (CPO) detailed concepts.</p>					
-					<hr><div class="container-fluid" id="CPO_Code+Development_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
-<br/><span class="font-weight-bold text-center">Code Development</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CPO::Code Development</span><br/>Specializes SPO::Performed Simple Activity</p><p>Simple Performed Activity executed for developing the software Code according to previews definitions.<br/></p><p>Relations:<br/>
+					<hr><div class="container-fluid" id="CPO_Code+Development_detail"><h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> CPO::Code Development</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Code Development</span></p></div><br/><h5>Specializes:</h5><p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> SPO::Performed Simple Activity</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Simple Performed Activity executed for developing the software Code according to previews definitions.<br/></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
 <code>Code Development creates Code<br/>
 Coding <>-- Code Development<br/>
-</code></p></div></div>
+</code></p></div></div></div>
 
-<hr><div class="container-fluid" id="CPO_Code+Documentation_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
-<br/><span class="font-weight-bold text-center">Code Documentation</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CPO::Code Documentation</span><br/>Specializes SPO::Performed Simple Activity</p><p>Simple Performed Activity executed for documenting the software Code with useful information.<br/></p><p>Relations:<br/>
+<hr><div class="container-fluid" id="CPO_Code+Documentation_detail"><h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> CPO::Code Documentation</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Code Documentation</span></p></div><br/><h5>Specializes:</h5><p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> SPO::Performed Simple Activity</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Simple Performed Activity executed for documenting the software Code with useful information.<br/></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
 <code>Code Documentation changes Code<br/>
 Coding <>-- Code Documentation<br/>
-</code></p></div></div>
+</code></p></div></div></div>
 
-<hr><div class="container-fluid" id="CPO_Code+Review_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
-<br/><span class="font-weight-bold text-center">Code Review</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CPO::Code Review</span><br/>Specializes SPO::Performed Simple Activity</p><p>Simple Performed Activity executed for reviewing the software Code to identify errors and non-conformances.<br/></p><p>Relations:<br/>
+<hr><div class="container-fluid" id="CPO_Code+Review_detail"><h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> CPO::Code Review</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Code Review</span></p></div><br/><h5>Specializes:</h5><p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> SPO::Performed Simple Activity</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Simple Performed Activity executed for reviewing the software Code to identify errors and non-conformances.<br/></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
 <code>Code Review creates Code Review Report<br/>
 Code Review uses Requirements Document<br/>
 Code Review uses Design Document<br/>
 Code Review uses Code<br/>
 Coding Process <>-- Code Review<br/>
 Code Reviewer is in charge of Code Review<br/>
-</code></p></div></div>
+</code></p></div></div></div>
 
-<hr><div class="container-fluid" id="CPO_Code+Review+Report_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
-<br/><span class="font-weight-bold text-center">Code Review Report</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CPO::Code Review Report</span><br/>Specializes SysSwO::Document</p><p>Document pointing out problems identified in the Code during review activities.<br/></p><p>Relations:<br/>
+<hr><div class="container-fluid" id="CPO_Code+Review+Report_detail"><h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> CPO::Code Review Report</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Code Review Report</span></p></div><br/><h5>Specializes:</h5><p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> SysSwO::Document</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Document pointing out problems identified in the Code during review activities.<br/></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
 <code>Code Review creates Code Review Report<br/>
-</code></p></div></div>
+</code></p></div></div></div>
 
-<hr><div class="container-fluid" id="CPO_Code+Reviewer_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltrole&gt&gt</code>
-<br/><span class="font-weight-bold text-center">Code Reviewer</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CPO::Code Reviewer</span><br/>Specializes SPO::Stakeholder</p><p>Stakeholder responsible for reviewing the Code according to the Requirements Document and Design Document.<br/></p><p>Relations:<br/>
+<hr><div class="container-fluid" id="CPO_Code+Reviewer_detail"><h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> CPO::Code Reviewer</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code>&lt&ltrole&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Code Reviewer</span></p></div><br/><h5>Specializes:</h5><p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> SPO::Stakeholder</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Stakeholder responsible for reviewing the Code according to the Requirements Document and Design Document.<br/></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
 <code>Code Reviewer is in charge of Code Review<br/>
-</code></p></div></div>
+</code></p></div></div></div>
 
-<hr><div class="container-fluid" id="CPO_Coding_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
-<br/><span class="font-weight-bold text-center">Coding</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CPO::Coding</span><br/>Specializes SPO::Performed Composite Activity</p><p>Composite Performed Activity executed for coordinating the Code development and documentation, according to definitions from the Requirements Document and Design Document.<br/></p><p>Relations:<br/>
+<hr><div class="container-fluid" id="CPO_Coding_detail"><h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> CPO::Coding</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Coding</span></p></div><br/><h5>Specializes:</h5><p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> SPO::Performed Composite Activity</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Composite Performed Activity executed for coordinating the Code development and documentation, according to definitions from the Requirements Document and Design Document.<br/></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
 <code>Coding <>-- Code Development<br/>
 Coding <>-- Code Documentation<br/>
 Coding uses Design Document<br/>
 Coding uses Requirements Document<br/>
 Coding Process <>-- Coding<br/>
 Programmer is in charge of Coding<br/>
-</code></p></div></div>
+</code></p></div></div></div>
 
-<hr><div class="container-fluid" id="CPO_Coding+Process_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
-<br/><span class="font-weight-bold text-center">Coding Process</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CPO::Coding Process</span><br/>Specializes SPO::Performed Specific Process</p><p>Specific Performed Process for conducting the activities related to software Code production.<br/></p><p>Relations:<br/>
+<hr><div class="container-fluid" id="CPO_Coding+Process_detail"><h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> CPO::Coding Process</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Coding Process</span></p></div><br/><h5>Specializes:</h5><p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> SPO::Performed Specific Process</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Specific Performed Process for conducting the activities related to software Code production.<br/></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
 <code>Coding Process <>-- Coding<br/>
 Coding Process <>-- Code Review<br/>
-</code></p></div></div>
+</code></p></div></div></div>
 
-<hr><div class="container-fluid" id="CPO_Programmer_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltrole&gt&gt</code>
-<br/><span class="font-weight-bold text-center">Programmer</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">CPO::Programmer</span><br/>Specializes SPO::Stakeholder</p><p>Stakeholder with programming skills responsible for producing and documenting the software Code.<br/></p><p>Relations:<br/>
+<hr><div class="container-fluid" id="CPO_Programmer_detail"><h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> CPO::Programmer</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code>&lt&ltrole&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Programmer</span></p></div><br/><h5>Specializes:</h5><p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> SPO::Stakeholder</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Stakeholder with programming skills responsible for producing and documenting the software Code.<br/></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
 <code>Programmer is in charge of Coding<br/>
-</code></p></div></div>
+</code></p></div></div></div>
 
 
 				</div>
@@ -438,15 +368,37 @@ Coding Process <>-- Code Review<br/>
 			</main>
 	
     <footer class="p-5 rounded border-top">
-      <div class="row">
-      	<div class="col">
-      		  <span class="text-muted">Powered by NEMO.</span>
+      <div class="row justify-content-md-center">
+      	<div class="col-md-auto">
+    		  <h5>Powered by</h5>
+    		  <ul class="list-unstyled text-small">
+    		  	<li>
+    		  		<a class="text-muted" href="https://nemo.inf.ufes.br/" target="_blank">NEMO</a>
+    		  	</li>
+    		  </ul>
       	</div>
-      	<div class="col">
-      		<span><small><b>Coding Process Ontology (CPO)</b></small></span>
+      	<div class="col-md-auto">
+      		<h5>CPO</h5>
+      		<ul class="list-unstyled text-small">
+      			<li>
+      				<a class="text-muted" href="#">Coding Process Ontology</a>
+      			</li>
+      			<li>
+      				<a class="text-muted" href="#">Domain ontology from SEON</a>
+      			</li>
+      			<li>
+      				<a class="text-muted" href="#"></a>
+      			</li>
+      		</ul>
       	</div>
-      	<div class="col">
-      		<span class="text-muted"><small>Mon Nov 22 22:03:46 BRT 2021</small></span>	
+      	<div class="col-md-auto">
+      		<h5>About</h5>
+      		<ul class="list-unstyled text-small">
+      			<li>
+      				<a class="text-muted" href="team.html">Team</a>
+      			</li>
+      		</ul>
+      		<span class="text-muted"><small>Tue Nov 23 20:39:41 BRT 2021</small></span>	
       	</div>
       </div>
     </footer>

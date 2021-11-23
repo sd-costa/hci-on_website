@@ -19,6 +19,7 @@
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/navbar-top-fixed.css" rel="stylesheet">
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/sticky-footer-navbar.css" rel="stylesheet">
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/carousel.css" rel="stylesheet">
+	    <link href="../resources/static/bootstrap-5.1.3-dist/css/pricing.css" rel="stylesheet">
 
 	    <style>
 	      .bd-placeholder-img {
@@ -40,6 +41,7 @@
 	      	margin-bottom: 2.5rem;
 	      }
 
+
 	      .span {
 	      	font-size: 2rem;
 	      }
@@ -47,9 +49,15 @@
 	      .featurette-heading {
 	        margin-top: 0;
 	      }
+
+	      
+
 	    </style>
 
-	    
+	  <!--.h6, h6 {
+	      	margin-bottom: 2.5rem;
+	      	margin-top: 2.5rem;	
+	      }-->  
 	    
 <!--	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
 	    
@@ -169,8 +177,8 @@
 
 				<div class="bg-light p-5 rounded">
 					<div class="container-fluid d-flex justify-content-end"><span class="badge badge-danger text-lowercase">Under Development</span></div>
-    			<h1 class="featurette-heading">The UI Types and Elements Ontology (UIT&EO)</h1>
     			<p class="lead text-right text-muted font-italic"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"><path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg> domain ontology from HCI-ON</p>
+    			<h1 class="featurette-heading">The UI Types and Elements Ontology (UIT&EO)</h1>
     		</div>
 	
 				<hr> 
@@ -187,6 +195,7 @@
 					<p class="lead">Networked ontologies used by UIT&EO:</p>	
 					
 					<div class="table-responsive">
+						<caption>Ontologies (re)used by UIT&EO.</caption>
 						<table class="table table-hover">
 							<thead>
 								<tr>
@@ -219,6 +228,7 @@
 					<p class="lead">The following table shows the definitions for UIT&EO concepts.</p>		
 					<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->				
 					<div class="table-responsive">
+						<caption>UIT&EO concepts definition.</caption>
 						<table class="table table-hover">
 							<thead>
 								<tr>
@@ -257,15 +267,37 @@
 			</main>
 	
     <footer class="p-5 rounded border-top">
-      <div class="row">
-      	<div class="col">
-      		  <span class="text-muted">Powered by NEMO.</span>
+      <div class="row justify-content-md-center">
+      	<div class="col-md-auto">
+    		  <h5>Powered by</h5>
+    		  <ul class="list-unstyled text-small">
+    		  	<li>
+    		  		<a class="text-muted" href="https://nemo.inf.ufes.br/" target="_blank">NEMO</a>
+    		  	</li>
+    		  </ul>
       	</div>
-      	<div class="col">
-      		<span><small><b>UI Types and Elements Ontology (UIT&EO)</b></small></span>
+      	<div class="col-md-auto">
+      		<h5>UIT&EO</h5>
+      		<ul class="list-unstyled text-small">
+      			<li>
+      				<a class="text-muted" href="#">UI Types and Elements Ontology</a>
+      			</li>
+      			<li>
+      				<a class="text-muted" href="#">Domain ontology from HCI-ON</a>
+      			</li>
+      			<li>
+      				<a class="text-muted" href="#">Under Development</a>
+      			</li>
+      		</ul>
       	</div>
-      	<div class="col">
-      		<span class="text-muted"><small>Mon Nov 22 22:03:45 BRT 2021</small></span>	
+      	<div class="col-md-auto">
+      		<h5>About</h5>
+      		<ul class="list-unstyled text-small">
+      			<li>
+      				<a class="text-muted" href="team.html">Team</a>
+      			</li>
+      		</ul>
+      		<span class="text-muted"><small>Tue Nov 23 20:39:40 BRT 2021</small></span>	
       	</div>
       </div>
     </footer>

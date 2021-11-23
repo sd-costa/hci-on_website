@@ -19,6 +19,7 @@
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/navbar-top-fixed.css" rel="stylesheet">
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/sticky-footer-navbar.css" rel="stylesheet">
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/carousel.css" rel="stylesheet">
+	    <link href="../resources/static/bootstrap-5.1.3-dist/css/pricing.css" rel="stylesheet">
 
 	    <style>
 	      .bd-placeholder-img {
@@ -40,6 +41,7 @@
 	      	margin-bottom: 2.5rem;
 	      }
 
+
 	      .span {
 	      	font-size: 2rem;
 	      }
@@ -47,9 +49,15 @@
 	      .featurette-heading {
 	        margin-top: 0;
 	      }
+
+	      
+
 	    </style>
 
-	    
+	  <!--.h6, h6 {
+	      	margin-bottom: 2.5rem;
+	      	margin-top: 2.5rem;	
+	      }-->  
 	    
 <!--	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
 	    
@@ -169,8 +177,8 @@
 
 				<div class="bg-light p-5 rounded">
 					@additionalinfo
-    			<h1 class="featurette-heading">The @title</h1>
     			<p class="lead text-right text-muted font-italic">@onto_level</p>
+    			<h1 class="featurette-heading">The @title</h1>
     		</div>
 	
 				<hr> 
@@ -187,6 +195,7 @@
 					<p class="lead">Networked ontologies used by @onto:</p>	
 					
 					<div class="table-responsive">
+						<caption>Ontologies (re)used by @onto.</caption>
 						<table class="table table-hover">
 							<thead>
 								<tr>
@@ -217,6 +226,7 @@
 					<p class="lead">The following table shows the definitions for @onto concepts.</p>		
 					<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->				
 					<div class="table-responsive">
+						<caption>@onto concepts definition.</caption>
 						<table class="table table-hover">
 							<thead>
 								<tr>
@@ -257,12 +267,34 @@
     <footer class="p-5 rounded border-top">
       <div class="row justify-content-md-center">
       	<div class="col-md-auto">
-      		  <h5>Powered by NEMO.</h5>
+    		  <h5>Powered by</h5>
+    		  <ul class="list-unstyled text-small">
+    		  	<li>
+    		  		<a class="text-muted" href="https://nemo.inf.ufes.br/" target="_blank">NEMO</a>
+    		  	</li>
+    		  </ul>
       	</div>
       	<div class="col-md-auto">
-      		<h5>@title</h5>
+      		<h5>@onto</h5>
+      		<ul class="list-unstyled text-small">
+      			<li>
+      				<a class="text-muted" href="#">@onlyname</a>
+      			</li>
+      			<li>
+      				<a class="text-muted" href="#">@onlevel</a>
+      			</li>
+      			<li>
+      				<a class="text-muted" href="#">@addinfo</a>
+      			</li>
+      		</ul>
       	</div>
       	<div class="col-md-auto">
+      		<h5>About</h5>
+      		<ul class="list-unstyled text-small">
+      			<li>
+      				<a class="text-muted" href="team.html">Team</a>
+      			</li>
+      		</ul>
       		<span class="text-muted"><small>@date</small></span>	
       	</div>
       </div>

@@ -19,6 +19,7 @@
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/navbar-top-fixed.css" rel="stylesheet">
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/sticky-footer-navbar.css" rel="stylesheet">
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/carousel.css" rel="stylesheet">
+	    <link href="../resources/static/bootstrap-5.1.3-dist/css/pricing.css" rel="stylesheet">
 
 	    <style>
 	      .bd-placeholder-img {
@@ -40,6 +41,7 @@
 	      	margin-bottom: 2.5rem;
 	      }
 
+
 	      .span {
 	      	font-size: 2rem;
 	      }
@@ -47,9 +49,15 @@
 	      .featurette-heading {
 	        margin-top: 0;
 	      }
+
+	      
+
 	    </style>
 
-	    
+	  <!--.h6, h6 {
+	      	margin-bottom: 2.5rem;
+	      	margin-top: 2.5rem;	
+	      }-->  
 	    
 <!--	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
 	    
@@ -169,8 +177,8 @@
 
 				<div class="bg-light p-5 rounded">
 					<div class="container-fluid d-flex justify-content-end"><span class="badge badge-danger text-lowercase"></span></div>
-    			<h1 class="featurette-heading">The Goal-Oriented Requirements Ontology (GORO)</h1>
     			<p class="lead text-right text-muted font-italic"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"><path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg> domain ontology from SEON</p>
+    			<h1 class="featurette-heading">The Goal-Oriented Requirements Ontology (GORO)</h1>
     		</div>
 	
 				<hr> 
@@ -187,6 +195,7 @@
 					<p class="lead">Networked ontologies used by GORO:</p>	
 					
 					<div class="table-responsive">
+						<caption>Ontologies (re)used by GORO.</caption>
 						<table class="table table-hover">
 							<thead>
 								<tr>
@@ -208,8 +217,8 @@
     	
 				<div class="p-5 rounded" id="ontologymodels">
 					<h2 class="featurette-heading">3. Ontology Models</h2>
-					<p class="lead"><p>Figure 1 presents the conceptual model of the GORO.</p>
-<p align="center"><IMG src="images/GORO.png" width="1188" class="map" usemap="#GORO"><MAP NAME="GORO">
+					<p class="lead"><p class="lead">Figure 1 presents the conceptual model of the GORO.</p>
+<div class="container-fluid" align="center"><img src="images/GORO.png" width="1188" class="map" usemap="#GORO"><MAP NAME="GORO">
 <area shape="rect" coords="301,152,398,182" href="UFO.html#UFO_Goal" title="The propositional content of an Intention.">
 <area shape="rect" coords="278,267,417,297" href="RSRO.html#RSRO_Requirement" title="Goal to be achieved, representing a condition or capacity needed for the system users for solving a problem.">
 <area shape="rect" coords="1018,151,1114,181" href="SPO.html#SPO_Stakeholder" title="Agent (Person, Team or Organization) interested or affected by the process activities or results.">
@@ -230,9 +239,9 @@
 <area shape="rect" coords="659,20,851,50" href="UFO.html#UFO_Intentional+Moment" title="The capacity of some properties of certain individuals to refer to possible Situations of reality. Every intentional moment has a propositional content (Proposition), which is an abstract representation of a class of situations referred by that intentional moment.">
 <area shape="rect" coords="669,85,835,115" href="UFO.html#UFO_Mental+Moment" title="">
 <area shape="rect" coords="281,71,422,101" href="UFO.html#UFO_Proposition" title="A Proposition is a sentence that is either true or false. The truth of a proposition is determined by its correspondence to the existence of an entity or fact in reality, the so-called truthmaker of a proposition.">
-<area shape="rect" coords="835,151,939,181" href="UFO.html#UFO_Belief" title=""></MAP></p>
-<p align="center"><b>Figure 1. GORO conceptual model.</b></p>
-<p align="justify">In GORE, the domain characterization (and further identification of requirements and so on) is obtained initially by modeling the agents' goals. Agents bear intentional properties such as Beliefs and Intentions. These intentional properties are called Mental Moments. A Goal is a propositional content of an Intention. An Intention represents not only a will but also an internal commitment of the Agent to act towards the Goal, implying in a Plan to accomplish it. In that way, a Goal as an Intention should be associated with a Plan. Thus, Goals with associated Plans to accomplish them (Tasks) are propositional contents of Intentions.<br/><br/>In a Software Engineering process, a requirement does not refer necessarily to software. Hence, a Requirement is a Goal, in the scope of a specific problem, that describes environmental conditions to be achieved through a desired solution resulting in satisfaction of the underlying strategic goals.<br/><br/>Hardgoals are defined as propositions that are objectively satisfied by a given set of situations. In constrast, Softgoals refer to a vague quality region whose exact boundaries are unknown. <br/></p>
+<area shape="rect" coords="835,151,939,181" href="UFO.html#UFO_Belief" title=""></MAP>
+<p align="center" class="lead font-weight-bold">Figure 1. GORO conceptual model.</p></div>
+<p align="justify" class="lead">In GORE, the domain characterization (and further identification of requirements and so on) is obtained initially by modeling the agents' goals. Agents bear intentional properties such as Beliefs and Intentions. These intentional properties are called Mental Moments. A Goal is a propositional content of an Intention. An Intention represents not only a will but also an internal commitment of the Agent to act towards the Goal, implying in a Plan to accomplish it. In that way, a Goal as an Intention should be associated with a Plan. Thus, Goals with associated Plans to accomplish them (Tasks) are propositional contents of Intentions.<br/><br/>In a Software Engineering process, a requirement does not refer necessarily to software. Hence, a Requirement is a Goal, in the scope of a specific problem, that describes environmental conditions to be achieved through a desired solution resulting in satisfaction of the underlying strategic goals.<br/><br/>Hardgoals are defined as propositions that are objectively satisfied by a given set of situations. In constrast, Softgoals refer to a vague quality region whose exact boundaries are unknown. <br/></p>
 </p>					
 				</div>
 
@@ -243,6 +252,7 @@
 					<p class="lead">The following table shows the definitions for GORO concepts.</p>		
 					<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->				
 					<div class="table-responsive">
+						<caption>GORO concepts definition.</caption>
 						<table class="table table-hover">
 							<thead>
 								<tr>
@@ -251,36 +261,11 @@
 								</tr>
 							</thead>
 							<tbody>
-								<tr>
-<td><a name="GORO_Atomic+Task"><b>Atomic Task</b></a>
-<a href=#GORO_Atomic+Task_detail><img src="images/plus-4-16.ico"></a></td>
-<td>An Atomic Task is a Task that is not decomposed in other tasks.
-<br/></td>
-</tr>
-<tr>
-<td><a name="GORO_Complex+Task"><b>Complex Task</b></a>
-<a href=#GORO_Complex+Task_detail><img src="images/plus-4-16.ico"></a></td>
-<td>A Complex Task is a Task that is composed in other tasks.
-<br/></td>
-</tr>
-<tr>
-<td><a name="GORO_Hardgoal"><b>Hardgoal</b></a>
-<a href=#GORO_Hardgoal_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Hardgoal is a proposition that is objectively satisfied by a given set of situations.
-<br/></td>
-</tr>
-<tr>
-<td><a name="GORO_Requirement"><b>Requirement</b></a>
-<a href=#GORO_Requirement_detail><img src="images/plus-4-16.ico"></a></td>
-<td>A Goal in the scope of a specific problem, that describes environmental conditions to be achieved through a desired solution resulting in satisfaction of the underlying strategic goals. In GORE, these goals can be refined by decomposing them into sub-goals, as well as by defining them by means of alternative goals.
-<br/></td>
-</tr>
-<tr>
-<td><a name="GORO_Softgoal"><b>Softgoal</b></a>
-<a href=#GORO_Softgoal_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Softgoal is an initial and temporary vague expression of a goal not suficiently defined yet. It refers to a vague quality region whose exact boundaries are unknown. Thus it is not  possible to determine a priori the set of situations that satisfies the softgoal. Its satisfiability is usually related to an agent's judgement.
-<br/></td>
-</tr>
+								<tr><td><p id="GORO_Atomic+Task"><span class="font-weight-bold">Atomic Task</span><a href=#GORO_Atomic+Task_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>An Atomic Task is a Task that is not decomposed in other tasks.<br/></p></td></tr>
+<tr><td><p id="GORO_Complex+Task"><span class="font-weight-bold">Complex Task</span><a href=#GORO_Complex+Task_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>A Complex Task is a Task that is composed in other tasks.<br/></p></td></tr>
+<tr><td><p id="GORO_Hardgoal"><span class="font-weight-bold">Hardgoal</span><a href=#GORO_Hardgoal_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Hardgoal is a proposition that is objectively satisfied by a given set of situations.<br/></p></td></tr>
+<tr><td><p id="GORO_Requirement"><span class="font-weight-bold">Requirement</span><a href=#GORO_Requirement_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>A Goal in the scope of a specific problem, that describes environmental conditions to be achieved through a desired solution resulting in satisfaction of the underlying strategic goals. In GORE, these goals can be refined by decomposing them into sub-goals, as well as by defining them by means of alternative goals.<br/></p></td></tr>
+<tr><td><p id="GORO_Softgoal"><span class="font-weight-bold">Softgoal</span><a href=#GORO_Softgoal_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Softgoal is an initial and temporary vague expression of a goal not suficiently defined yet. It refers to a vague quality region whose exact boundaries are unknown. Thus it is not  possible to determine a priori the set of situations that satisfies the softgoal. Its satisfiability is usually related to an agent's judgement.<br/></p></td></tr>
 
 							</tbody>
 						</table>
@@ -294,36 +279,11 @@
 								<td style="width: 25%"><b>Concept</b></td>
 								<td style="width: 75%"><b>Definition</b></td>
 							</tr>
-							<tr>
-<td><a name="GORO_Atomic+Task"><b>Atomic Task</b></a>
-<a href=#GORO_Atomic+Task_detail><img src="images/plus-4-16.ico"></a></td>
-<td>An Atomic Task is a Task that is not decomposed in other tasks.
-<br/></td>
-</tr>
-<tr>
-<td><a name="GORO_Complex+Task"><b>Complex Task</b></a>
-<a href=#GORO_Complex+Task_detail><img src="images/plus-4-16.ico"></a></td>
-<td>A Complex Task is a Task that is composed in other tasks.
-<br/></td>
-</tr>
-<tr>
-<td><a name="GORO_Hardgoal"><b>Hardgoal</b></a>
-<a href=#GORO_Hardgoal_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Hardgoal is a proposition that is objectively satisfied by a given set of situations.
-<br/></td>
-</tr>
-<tr>
-<td><a name="GORO_Requirement"><b>Requirement</b></a>
-<a href=#GORO_Requirement_detail><img src="images/plus-4-16.ico"></a></td>
-<td>A Goal in the scope of a specific problem, that describes environmental conditions to be achieved through a desired solution resulting in satisfaction of the underlying strategic goals. In GORE, these goals can be refined by decomposing them into sub-goals, as well as by defining them by means of alternative goals.
-<br/></td>
-</tr>
-<tr>
-<td><a name="GORO_Softgoal"><b>Softgoal</b></a>
-<a href=#GORO_Softgoal_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Softgoal is an initial and temporary vague expression of a goal not suficiently defined yet. It refers to a vague quality region whose exact boundaries are unknown. Thus it is not  possible to determine a priori the set of situations that satisfies the softgoal. Its satisfiability is usually related to an agent's judgement.
-<br/></td>
-</tr>
+							<tr><td><p id="GORO_Atomic+Task"><span class="font-weight-bold">Atomic Task</span><a href=#GORO_Atomic+Task_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>An Atomic Task is a Task that is not decomposed in other tasks.<br/></p></td></tr>
+<tr><td><p id="GORO_Complex+Task"><span class="font-weight-bold">Complex Task</span><a href=#GORO_Complex+Task_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>A Complex Task is a Task that is composed in other tasks.<br/></p></td></tr>
+<tr><td><p id="GORO_Hardgoal"><span class="font-weight-bold">Hardgoal</span><a href=#GORO_Hardgoal_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Hardgoal is a proposition that is objectively satisfied by a given set of situations.<br/></p></td></tr>
+<tr><td><p id="GORO_Requirement"><span class="font-weight-bold">Requirement</span><a href=#GORO_Requirement_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>A Goal in the scope of a specific problem, that describes environmental conditions to be achieved through a desired solution resulting in satisfaction of the underlying strategic goals. In GORE, these goals can be refined by decomposing them into sub-goals, as well as by defining them by means of alternative goals.<br/></p></td></tr>
+<tr><td><p id="GORO_Softgoal"><span class="font-weight-bold">Softgoal</span><a href=#GORO_Softgoal_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Softgoal is an initial and temporary vague expression of a goal not suficiently defined yet. It refers to a vague quality region whose exact boundaries are unknown. Thus it is not  possible to determine a priori the set of situations that satisfies the softgoal. Its satisfiability is usually related to an agent's judgement.<br/></p></td></tr>
 
 						</tbody>
 					</table>-->
@@ -335,17 +295,17 @@
 				<div class="p-5 rounded" id="detailedconcepts">
 					<h2 class="featurette-heading">5. Detailed Concepts</h2>
 					<p class="lead">Goal-Oriented Requirements Ontology (GORO) detailed concepts.</p>					
-					<hr><div class="container-fluid" id="GORO_Atomic+Task_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Atomic Task</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">GORO::Atomic Task</span><br/>Specializes </p><p>An Atomic Task is a Task that is not decomposed in other tasks.<br/></p><p></p></div></div>
+					<hr><div class="container-fluid" id="GORO_Atomic+Task_detail"><h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> GORO::Atomic Task</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><span class="font-weight-bold text-center">Atomic Task</span></p></div><br/><h5>Specializes:</h5><p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> </p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>An Atomic Task is a Task that is not decomposed in other tasks.<br/></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p></p></div></div></div>
 
-<hr><div class="container-fluid" id="GORO_Complex+Task_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Complex Task</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">GORO::Complex Task</span><br/>Specializes </p><p>A Complex Task is a Task that is composed in other tasks.<br/></p><p></p></div></div>
+<hr><div class="container-fluid" id="GORO_Complex+Task_detail"><h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> GORO::Complex Task</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><span class="font-weight-bold text-center">Complex Task</span></p></div><br/><h5>Specializes:</h5><p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> </p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>A Complex Task is a Task that is composed in other tasks.<br/></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p></p></div></div></div>
 
-<hr><div class="container-fluid" id="GORO_Hardgoal_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Hardgoal</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">GORO::Hardgoal</span><br/>Specializes UFO::Goal</p><p>Hardgoal is a proposition that is objectively satisfied by a given set of situations.<br/></p><p></p></div></div>
+<hr><div class="container-fluid" id="GORO_Hardgoal_detail"><h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> GORO::Hardgoal</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><span class="font-weight-bold text-center">Hardgoal</span></p></div><br/><h5>Specializes:</h5><p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> UFO::Goal</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Hardgoal is a proposition that is objectively satisfied by a given set of situations.<br/></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p></p></div></div></div>
 
-<hr><div class="container-fluid" id="GORO_Requirement_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Requirement</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">GORO::Requirement</span><br/>Specializes RSRO::Requirement</p><p>A Goal in the scope of a specific problem, that describes environmental conditions to be achieved through a desired solution resulting in satisfaction of the underlying strategic goals. In GORE, these goals can be refined by decomposing them into sub-goals, as well as by defining them by means of alternative goals.<br/></p><p>Relations:<br/>
+<hr><div class="container-fluid" id="GORO_Requirement_detail"><h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> GORO::Requirement</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><span class="font-weight-bold text-center">Requirement</span></p></div><br/><h5>Specializes:</h5><p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> RSRO::Requirement</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>A Goal in the scope of a specific problem, that describes environmental conditions to be achieved through a desired solution resulting in satisfaction of the underlying strategic goals. In GORE, these goals can be refined by decomposing them into sub-goals, as well as by defining them by means of alternative goals.<br/></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
 <code>Requirement (0..1)  (0..*) Requirement<br/>
-</code></p></div></div>
+</code></p></div></div></div>
 
-<hr><div class="container-fluid" id="GORO_Softgoal_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><span class="font-weight-bold text-center">Softgoal</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">GORO::Softgoal</span><br/>Specializes UFO::Goal</p><p>Softgoal is an initial and temporary vague expression of a goal not suficiently defined yet. It refers to a vague quality region whose exact boundaries are unknown. Thus it is not  possible to determine a priori the set of situations that satisfies the softgoal. Its satisfiability is usually related to an agent's judgement.<br/></p><p></p></div></div>
+<hr><div class="container-fluid" id="GORO_Softgoal_detail"><h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> GORO::Softgoal</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><span class="font-weight-bold text-center">Softgoal</span></p></div><br/><h5>Specializes:</h5><p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> UFO::Goal</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Softgoal is an initial and temporary vague expression of a goal not suficiently defined yet. It refers to a vague quality region whose exact boundaries are unknown. Thus it is not  possible to determine a priori the set of situations that satisfies the softgoal. Its satisfiability is usually related to an agent's judgement.<br/></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p></p></div></div></div>
 
 
 				</div>
@@ -353,15 +313,37 @@
 			</main>
 	
     <footer class="p-5 rounded border-top">
-      <div class="row">
-      	<div class="col">
-      		  <span class="text-muted">Powered by NEMO.</span>
+      <div class="row justify-content-md-center">
+      	<div class="col-md-auto">
+    		  <h5>Powered by</h5>
+    		  <ul class="list-unstyled text-small">
+    		  	<li>
+    		  		<a class="text-muted" href="https://nemo.inf.ufes.br/" target="_blank">NEMO</a>
+    		  	</li>
+    		  </ul>
       	</div>
-      	<div class="col">
-      		<span><small><b>Goal-Oriented Requirements Ontology (GORO)</b></small></span>
+      	<div class="col-md-auto">
+      		<h5>GORO</h5>
+      		<ul class="list-unstyled text-small">
+      			<li>
+      				<a class="text-muted" href="#">Goal-Oriented Requirements Ontology</a>
+      			</li>
+      			<li>
+      				<a class="text-muted" href="#">Domain ontology from SEON</a>
+      			</li>
+      			<li>
+      				<a class="text-muted" href="#"></a>
+      			</li>
+      		</ul>
       	</div>
-      	<div class="col">
-      		<span class="text-muted"><small>Mon Nov 22 22:03:46 BRT 2021</small></span>	
+      	<div class="col-md-auto">
+      		<h5>About</h5>
+      		<ul class="list-unstyled text-small">
+      			<li>
+      				<a class="text-muted" href="team.html">Team</a>
+      			</li>
+      		</ul>
+      		<span class="text-muted"><small>Tue Nov 23 20:39:41 BRT 2021</small></span>	
       	</div>
       </div>
     </footer>

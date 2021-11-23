@@ -19,6 +19,7 @@
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/navbar-top-fixed.css" rel="stylesheet">
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/sticky-footer-navbar.css" rel="stylesheet">
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/carousel.css" rel="stylesheet">
+	    <link href="../resources/static/bootstrap-5.1.3-dist/css/pricing.css" rel="stylesheet">
 
 	    <style>
 	      .bd-placeholder-img {
@@ -40,6 +41,7 @@
 	      	margin-bottom: 2.5rem;
 	      }
 
+
 	      .span {
 	      	font-size: 2rem;
 	      }
@@ -47,9 +49,15 @@
 	      .featurette-heading {
 	        margin-top: 0;
 	      }
+
+	      
+
 	    </style>
 
-	    
+	  <!--.h6, h6 {
+	      	margin-bottom: 2.5rem;
+	      	margin-top: 2.5rem;	
+	      }-->  
 	    
 <!--	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
 	    
@@ -169,8 +177,8 @@
 
 				<div class="bg-light p-5 rounded">
 					<div class="container-fluid d-flex justify-content-end"><span class="badge badge-danger text-lowercase"></span></div>
-    			<h1 class="featurette-heading">The Requirements Development Process Ontology (RDPO)</h1>
     			<p class="lead text-right text-muted font-italic"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"><path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg> domain ontology from SEON</p>
+    			<h1 class="featurette-heading">The Requirements Development Process Ontology (RDPO)</h1>
     		</div>
 	
 				<hr> 
@@ -187,6 +195,7 @@
 					<p class="lead">Networked ontologies used by RDPO:</p>	
 					
 					<div class="table-responsive">
+						<caption>Ontologies (re)used by RDPO.</caption>
 						<table class="table table-hover">
 							<thead>
 								<tr>
@@ -209,8 +218,8 @@
     	
 				<div class="p-5 rounded" id="ontologymodels">
 					<h2 class="featurette-heading">3. Ontology Models</h2>
-					<p class="lead"><p>Figure 1 presents the conceptual model of the RDPO.</p>
-<p align="center"><IMG src="images/RDPO.png" width="1146" class="map" usemap="#RDPO"><MAP NAME="RDPO">
+					<p class="lead"><p class="lead">Figure 1 presents the conceptual model of the RDPO.</p>
+<div class="container-fluid" align="center"><img src="images/RDPO.png" width="1146" class="map" usemap="#RDPO"><MAP NAME="RDPO">
 <area shape="rect" coords="770,157,896,204" href="SysSwO.html#SysSwO_Software+Artifact" title="Object intentionally made to serve a given purpose in the context of a software Project or Organization.">
 <area shape="rect" coords="610,294,757,324" href="SysSwO.html#SysSwO_Complex+Sw+Artifact" title="Artifact composed of other Artifacts.">
 <area shape="rect" coords="661,251,797,281" href="SysSwO.html#SysSwO_Atomic+Sw+Artifact" title="Artifact that is not decomposed into other Artifacts.">
@@ -242,9 +251,9 @@
 <area shape="rect" coords="1021,654,1121,684" href="RSRO.html#RSRO_Requirement" title="Goal to be achieved, representing a condition or capacity needed for the system users for solving a problem.">
 <area shape="rect" coords="724,429,875,459" href="RSRO.html#RSRO_Requirement+Artifact" title="Information Item describing a Requirement.">
 <area shape="rect" coords="875,612,1118,642" href="RDPO.html#RDPO_Requirements+Evaluation+Document" title="Document pointing out problems identified in Documented Requirements and Conceptual Models registered in a Requirements Document.">
-<area shape="rect" coords="18,349,185,379" href="RDPO.html#RDPO_Requirements+Reviewer" title="Stakeholder responsible for conducting reviews in requirements artifacts."></MAP></p>
-<p align="center"><b>Figure 1. RDPO conceptual model.</b></p>
-<p align="justify">Requirements Development Process is a Performed Process with the purpose of conducting the establishment and development of requirements, from the elicitation to the agreement. It is composed of five Performed Activities: (1) The Requirements Elicitation activity identifies a set of Functional and Non-Functional Requirements and documents them as Documented Requirements. This activity counts on the participation of the Requirements Stakeholders and can collect information from other sources (not presented in the model). (2) Conceptual Modeling uses the Documented Requirements for developing Conceptual Models (e.g. a class diagram), providing relevant views of the problem. (3) Requirements Documentation creates the Requirements Document, which is composed of Documented Requirements and describes the Conceptual Models and possibly other related information. (4) Requirements Verification and Validation evaluates requirements and models documented in the Requirements Document, producing the Requirements Evaluation Document. (5) Finally, Requirements Agreement is obtained from the authorized Requirements Stakeholders in the Requirements Negotiation and Prioritization activity.<br/>Considering Stakeholders, the Requirements Engineer is in charge of all activities of the Requirements Development Process, except for Requirements Verification and Validation where he/she participates in, but the responsibility is of the Requirements Reviewer. The Requirements Stakeholder participates only in Requirements Elicitation and, then, in Requirements Verification and Validation and Requirements Negotiation and Prioritization.<br/>The Requirements Development Process can be applied for dealing with different levels of Documented Requirements. For example, it can deal with more general requirements such as higher level Customer Requirements, typically identified in software development preliminary stages, or with a more detailed level such as Product Requirements, defined in more advanced stages.</p>
+<area shape="rect" coords="18,349,185,379" href="RDPO.html#RDPO_Requirements+Reviewer" title="Stakeholder responsible for conducting reviews in requirements artifacts."></MAP>
+<p align="center" class="lead font-weight-bold">Figure 1. RDPO conceptual model.</p></div>
+<p align="justify" class="lead">Requirements Development Process is a Performed Process with the purpose of conducting the establishment and development of requirements, from the elicitation to the agreement. It is composed of five Performed Activities: (1) The Requirements Elicitation activity identifies a set of Functional and Non-Functional Requirements and documents them as Documented Requirements. This activity counts on the participation of the Requirements Stakeholders and can collect information from other sources (not presented in the model). (2) Conceptual Modeling uses the Documented Requirements for developing Conceptual Models (e.g. a class diagram), providing relevant views of the problem. (3) Requirements Documentation creates the Requirements Document, which is composed of Documented Requirements and describes the Conceptual Models and possibly other related information. (4) Requirements Verification and Validation evaluates requirements and models documented in the Requirements Document, producing the Requirements Evaluation Document. (5) Finally, Requirements Agreement is obtained from the authorized Requirements Stakeholders in the Requirements Negotiation and Prioritization activity.<br/>Considering Stakeholders, the Requirements Engineer is in charge of all activities of the Requirements Development Process, except for Requirements Verification and Validation where he/she participates in, but the responsibility is of the Requirements Reviewer. The Requirements Stakeholder participates only in Requirements Elicitation and, then, in Requirements Verification and Validation and Requirements Negotiation and Prioritization.<br/>The Requirements Development Process can be applied for dealing with different levels of Documented Requirements. For example, it can deal with more general requirements such as higher level Customer Requirements, typically identified in software development preliminary stages, or with a more detailed level such as Product Requirements, defined in more advanced stages.</p>
 </p>					
 				</div>
 
@@ -255,6 +264,7 @@
 					<p class="lead">The following table shows the definitions for RDPO concepts.</p>		
 					<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->				
 					<div class="table-responsive">
+						<caption>RDPO concepts definition.</caption>
 						<table class="table table-hover">
 							<thead>
 								<tr>
@@ -263,66 +273,16 @@
 								</tr>
 							</thead>
 							<tbody>
-								<tr>
-<td><a name="RDPO_Conceptual+Model"><b>Conceptual Model</b></a>
-<a href=#RDPO_Conceptual+Model_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Model describing the Product Requirements under different and relevant views.
-<br/>E.g.:<i> a class diagram.</i></td>
-</tr>
-<tr>
-<td><a name="RDPO_Conceptual+Modeling"><b>Conceptual Modeling</b></a>
-<a href=#RDPO_Conceptual+Modeling_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Composite Performed Activity executed for modeling requirements, producing Conceptual Models that provide a more comprehensive view of the problem.
-<br/></td>
-</tr>
-<tr>
-<td><a name="RDPO_Requirements+Agreement"><b>Requirements Agreement</b></a>
-<a href=#RDPO_Requirements+Agreement_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Information Item representing the agreement achieved by the Stakeholders, regarding the Requirements for the product.
-<br/>E.g.:<i> the agreement on the requirements than can be contained in an e-mail or in a document section.</i></td>
-</tr>
-<tr>
-<td><a name="RDPO_Requirements+Development+Process"><b>Requirements Development Process</b></a>
-<a href=#RDPO_Requirements+Development+Process_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Specific Performed Process for establishing and developing the requirements for a system or software.
-<br/></td>
-</tr>
-<tr>
-<td><a name="RDPO_Requirements+Documentation"><b>Requirements Documentation</b></a>
-<a href=#RDPO_Requirements+Documentation_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Composite Performed Activity executed for recording Documented Requirements and related Conceptual Models in Requirements Documents, assuring proper recording and management of them during and after the project.
-<br/></td>
-</tr>
-<tr>
-<td><a name="RDPO_Requirements+Elicitation"><b>Requirements Elicitation</b></a>
-<a href=#RDPO_Requirements+Elicitation_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Composite Performed Activity executed for identifying requirements from the Stakeholders and other sources, and documenting them.
-<br/></td>
-</tr>
-<tr>
-<td><a name="RDPO_Requirements+Evaluation+Document"><b>Requirements Evaluation Document</b></a>
-<a href=#RDPO_Requirements+Evaluation+Document_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Document pointing out problems identified in Documented Requirements and Conceptual Models registered in a Requirements Document.
-<br/></td>
-</tr>
-<tr>
-<td><a name="RDPO_Requirements+Negotiation+and+Prioritization"><b>Requirements Negotiation and Prioritization</b></a>
-<a href=#RDPO_Requirements+Negotiation+and+Prioritization_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Composite Performed Activity executed to solve problems in the requirements and to reach an agreement on the set of requirements to be considered in the Project and their priorities.
-<br/></td>
-</tr>
-<tr>
-<td><a name="RDPO_Requirements+Reviewer"><b>Requirements Reviewer</b></a>
-<a href=#RDPO_Requirements+Reviewer_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Stakeholder responsible for conducting reviews in requirements artifacts.
-<br/>E.g.:<i> the person in charge of the Requirements Verification and Validation activity.</i></td>
-</tr>
-<tr>
-<td><a name="RDPO_Requirements+Verification+and+Validation"><b>Requirements Verification and Validation</b></a>
-<a href=#RDPO_Requirements+Verification+and+Validation_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Composite Performed Activity executed for evaluating Documented Requirements and Conceptual Models registered in Requirements Documents, and for recording the identified problems.
-<br/></td>
-</tr>
+								<tr><td><p id="RDPO_Conceptual+Model"><span class="font-weight-bold">Conceptual Model</span><a href=#RDPO_Conceptual+Model_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Model describing the Product Requirements under different and relevant views.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> a class diagram.</span></p></td></tr>
+<tr><td><p id="RDPO_Conceptual+Modeling"><span class="font-weight-bold">Conceptual Modeling</span><a href=#RDPO_Conceptual+Modeling_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Composite Performed Activity executed for modeling requirements, producing Conceptual Models that provide a more comprehensive view of the problem.<br/></p></td></tr>
+<tr><td><p id="RDPO_Requirements+Agreement"><span class="font-weight-bold">Requirements Agreement</span><a href=#RDPO_Requirements+Agreement_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Information Item representing the agreement achieved by the Stakeholders, regarding the Requirements for the product.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> the agreement on the requirements than can be contained in an e-mail or in a document section.</span></p></td></tr>
+<tr><td><p id="RDPO_Requirements+Development+Process"><span class="font-weight-bold">Requirements Development Process</span><a href=#RDPO_Requirements+Development+Process_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Specific Performed Process for establishing and developing the requirements for a system or software.<br/></p></td></tr>
+<tr><td><p id="RDPO_Requirements+Documentation"><span class="font-weight-bold">Requirements Documentation</span><a href=#RDPO_Requirements+Documentation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Composite Performed Activity executed for recording Documented Requirements and related Conceptual Models in Requirements Documents, assuring proper recording and management of them during and after the project.<br/></p></td></tr>
+<tr><td><p id="RDPO_Requirements+Elicitation"><span class="font-weight-bold">Requirements Elicitation</span><a href=#RDPO_Requirements+Elicitation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Composite Performed Activity executed for identifying requirements from the Stakeholders and other sources, and documenting them.<br/></p></td></tr>
+<tr><td><p id="RDPO_Requirements+Evaluation+Document"><span class="font-weight-bold">Requirements Evaluation Document</span><a href=#RDPO_Requirements+Evaluation+Document_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Document pointing out problems identified in Documented Requirements and Conceptual Models registered in a Requirements Document.<br/></p></td></tr>
+<tr><td><p id="RDPO_Requirements+Negotiation+and+Prioritization"><span class="font-weight-bold">Requirements Negotiation and Prioritization</span><a href=#RDPO_Requirements+Negotiation+and+Prioritization_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Composite Performed Activity executed to solve problems in the requirements and to reach an agreement on the set of requirements to be considered in the Project and their priorities.<br/></p></td></tr>
+<tr><td><p id="RDPO_Requirements+Reviewer"><span class="font-weight-bold">Requirements Reviewer</span><a href=#RDPO_Requirements+Reviewer_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Stakeholder responsible for conducting reviews in requirements artifacts.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> the person in charge of the Requirements Verification and Validation activity.</span></p></td></tr>
+<tr><td><p id="RDPO_Requirements+Verification+and+Validation"><span class="font-weight-bold">Requirements Verification and Validation</span><a href=#RDPO_Requirements+Verification+and+Validation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Composite Performed Activity executed for evaluating Documented Requirements and Conceptual Models registered in Requirements Documents, and for recording the identified problems.<br/></p></td></tr>
 
 							</tbody>
 						</table>
@@ -336,66 +296,16 @@
 								<td style="width: 25%"><b>Concept</b></td>
 								<td style="width: 75%"><b>Definition</b></td>
 							</tr>
-							<tr>
-<td><a name="RDPO_Conceptual+Model"><b>Conceptual Model</b></a>
-<a href=#RDPO_Conceptual+Model_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Model describing the Product Requirements under different and relevant views.
-<br/>E.g.:<i> a class diagram.</i></td>
-</tr>
-<tr>
-<td><a name="RDPO_Conceptual+Modeling"><b>Conceptual Modeling</b></a>
-<a href=#RDPO_Conceptual+Modeling_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Composite Performed Activity executed for modeling requirements, producing Conceptual Models that provide a more comprehensive view of the problem.
-<br/></td>
-</tr>
-<tr>
-<td><a name="RDPO_Requirements+Agreement"><b>Requirements Agreement</b></a>
-<a href=#RDPO_Requirements+Agreement_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Information Item representing the agreement achieved by the Stakeholders, regarding the Requirements for the product.
-<br/>E.g.:<i> the agreement on the requirements than can be contained in an e-mail or in a document section.</i></td>
-</tr>
-<tr>
-<td><a name="RDPO_Requirements+Development+Process"><b>Requirements Development Process</b></a>
-<a href=#RDPO_Requirements+Development+Process_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Specific Performed Process for establishing and developing the requirements for a system or software.
-<br/></td>
-</tr>
-<tr>
-<td><a name="RDPO_Requirements+Documentation"><b>Requirements Documentation</b></a>
-<a href=#RDPO_Requirements+Documentation_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Composite Performed Activity executed for recording Documented Requirements and related Conceptual Models in Requirements Documents, assuring proper recording and management of them during and after the project.
-<br/></td>
-</tr>
-<tr>
-<td><a name="RDPO_Requirements+Elicitation"><b>Requirements Elicitation</b></a>
-<a href=#RDPO_Requirements+Elicitation_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Composite Performed Activity executed for identifying requirements from the Stakeholders and other sources, and documenting them.
-<br/></td>
-</tr>
-<tr>
-<td><a name="RDPO_Requirements+Evaluation+Document"><b>Requirements Evaluation Document</b></a>
-<a href=#RDPO_Requirements+Evaluation+Document_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Document pointing out problems identified in Documented Requirements and Conceptual Models registered in a Requirements Document.
-<br/></td>
-</tr>
-<tr>
-<td><a name="RDPO_Requirements+Negotiation+and+Prioritization"><b>Requirements Negotiation and Prioritization</b></a>
-<a href=#RDPO_Requirements+Negotiation+and+Prioritization_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Composite Performed Activity executed to solve problems in the requirements and to reach an agreement on the set of requirements to be considered in the Project and their priorities.
-<br/></td>
-</tr>
-<tr>
-<td><a name="RDPO_Requirements+Reviewer"><b>Requirements Reviewer</b></a>
-<a href=#RDPO_Requirements+Reviewer_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Stakeholder responsible for conducting reviews in requirements artifacts.
-<br/>E.g.:<i> the person in charge of the Requirements Verification and Validation activity.</i></td>
-</tr>
-<tr>
-<td><a name="RDPO_Requirements+Verification+and+Validation"><b>Requirements Verification and Validation</b></a>
-<a href=#RDPO_Requirements+Verification+and+Validation_detail><img src="images/plus-4-16.ico"></a></td>
-<td>Composite Performed Activity executed for evaluating Documented Requirements and Conceptual Models registered in Requirements Documents, and for recording the identified problems.
-<br/></td>
-</tr>
+							<tr><td><p id="RDPO_Conceptual+Model"><span class="font-weight-bold">Conceptual Model</span><a href=#RDPO_Conceptual+Model_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Model describing the Product Requirements under different and relevant views.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> a class diagram.</span></p></td></tr>
+<tr><td><p id="RDPO_Conceptual+Modeling"><span class="font-weight-bold">Conceptual Modeling</span><a href=#RDPO_Conceptual+Modeling_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Composite Performed Activity executed for modeling requirements, producing Conceptual Models that provide a more comprehensive view of the problem.<br/></p></td></tr>
+<tr><td><p id="RDPO_Requirements+Agreement"><span class="font-weight-bold">Requirements Agreement</span><a href=#RDPO_Requirements+Agreement_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Information Item representing the agreement achieved by the Stakeholders, regarding the Requirements for the product.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> the agreement on the requirements than can be contained in an e-mail or in a document section.</span></p></td></tr>
+<tr><td><p id="RDPO_Requirements+Development+Process"><span class="font-weight-bold">Requirements Development Process</span><a href=#RDPO_Requirements+Development+Process_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Specific Performed Process for establishing and developing the requirements for a system or software.<br/></p></td></tr>
+<tr><td><p id="RDPO_Requirements+Documentation"><span class="font-weight-bold">Requirements Documentation</span><a href=#RDPO_Requirements+Documentation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Composite Performed Activity executed for recording Documented Requirements and related Conceptual Models in Requirements Documents, assuring proper recording and management of them during and after the project.<br/></p></td></tr>
+<tr><td><p id="RDPO_Requirements+Elicitation"><span class="font-weight-bold">Requirements Elicitation</span><a href=#RDPO_Requirements+Elicitation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Composite Performed Activity executed for identifying requirements from the Stakeholders and other sources, and documenting them.<br/></p></td></tr>
+<tr><td><p id="RDPO_Requirements+Evaluation+Document"><span class="font-weight-bold">Requirements Evaluation Document</span><a href=#RDPO_Requirements+Evaluation+Document_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Document pointing out problems identified in Documented Requirements and Conceptual Models registered in a Requirements Document.<br/></p></td></tr>
+<tr><td><p id="RDPO_Requirements+Negotiation+and+Prioritization"><span class="font-weight-bold">Requirements Negotiation and Prioritization</span><a href=#RDPO_Requirements+Negotiation+and+Prioritization_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Composite Performed Activity executed to solve problems in the requirements and to reach an agreement on the set of requirements to be considered in the Project and their priorities.<br/></p></td></tr>
+<tr><td><p id="RDPO_Requirements+Reviewer"><span class="font-weight-bold">Requirements Reviewer</span><a href=#RDPO_Requirements+Reviewer_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Stakeholder responsible for conducting reviews in requirements artifacts.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> the person in charge of the Requirements Verification and Validation activity.</span></p></td></tr>
+<tr><td><p id="RDPO_Requirements+Verification+and+Validation"><span class="font-weight-bold">Requirements Verification and Validation</span><a href=#RDPO_Requirements+Verification+and+Validation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Composite Performed Activity executed for evaluating Documented Requirements and Conceptual Models registered in Requirements Documents, and for recording the identified problems.<br/></p></td></tr>
 
 						</tbody>
 					</table>-->
@@ -407,55 +317,55 @@
 				<div class="p-5 rounded" id="detailedconcepts">
 					<h2 class="featurette-heading">5. Detailed Concepts</h2>
 					<p class="lead">Requirements Development Process Ontology (RDPO) detailed concepts.</p>					
-					<hr><div class="container-fluid" id="RDPO_Conceptual+Model_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
-<br/><span class="font-weight-bold text-center">Conceptual Model</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RDPO::Conceptual Model</span><br/>Specializes SysSwO::Model</p><p>Model describing the Product Requirements under different and relevant views.<br/>E.g.:<span class="font-italic"> a class diagram.</span></p><p>Relations:<br/>
+					<hr><div class="container-fluid" id="RDPO_Conceptual+Model_detail"><h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> RDPO::Conceptual Model</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Conceptual Model</span></p></div><br/><h5>Specializes:</h5><p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> SysSwO::Model</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Model describing the Product Requirements under different and relevant views.<br/><span class="font-weight-bold">Example:</span><span class="font-italic"> a class diagram.</span></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
 <code>Requirements Document describes Conceptual Model<br/>
 Conceptual Modeling creates Conceptual Model<br/>
-</code></p></div></div>
+</code></p></div></div></div>
 
-<hr><div class="container-fluid" id="RDPO_Conceptual+Modeling_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
-<br/><span class="font-weight-bold text-center">Conceptual Modeling</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RDPO::Conceptual Modeling</span><br/>Specializes SPO::Performed Composite Activity</p><p>Composite Performed Activity executed for modeling requirements, producing Conceptual Models that provide a more comprehensive view of the problem.<br/></p><p>Relations:<br/>
+<hr><div class="container-fluid" id="RDPO_Conceptual+Modeling_detail"><h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> RDPO::Conceptual Modeling</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Conceptual Modeling</span></p></div><br/><h5>Specializes:</h5><p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> SPO::Performed Composite Activity</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Composite Performed Activity executed for modeling requirements, producing Conceptual Models that provide a more comprehensive view of the problem.<br/></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
 <code>Conceptual Modeling creates Conceptual Model<br/>
 Conceptual Modeling uses Requirement Artifact<br/>
 Requirements Engineer is in charge of Conceptual Modeling<br/>
-</code></p></div></div>
+</code></p></div></div></div>
 
-<hr><div class="container-fluid" id="RDPO_Requirements+Agreement_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
-<br/><span class="font-weight-bold text-center">Requirements Agreement</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RDPO::Requirements Agreement</span><br/>Specializes SysSwO::Information Item</p><p>Information Item representing the agreement achieved by the Stakeholders, regarding the Requirements for the product.<br/>E.g.:<span class="font-italic"> the agreement on the requirements than can be contained in an e-mail or in a document section.</span></p><p>Relations:<br/>
+<hr><div class="container-fluid" id="RDPO_Requirements+Agreement_detail"><h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> RDPO::Requirements Agreement</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Requirements Agreement</span></p></div><br/><h5>Specializes:</h5><p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> SysSwO::Information Item</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Information Item representing the agreement achieved by the Stakeholders, regarding the Requirements for the product.<br/><span class="font-weight-bold">Example:</span><span class="font-italic"> the agreement on the requirements than can be contained in an e-mail or in a document section.</span></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
 <code>Requirements Negotiation and Prioritization creates Requirements Agreement<br/>
-</code></p></div></div>
+</code></p></div></div></div>
 
-<hr><div class="container-fluid" id="RDPO_Requirements+Development+Process_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
-<br/><span class="font-weight-bold text-center">Requirements Development Process</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RDPO::Requirements Development Process</span><br/>Specializes SPO::Performed Specific Process</p><p>Specific Performed Process for establishing and developing the requirements for a system or software.<br/></p><p>Relations:<br/>
+<hr><div class="container-fluid" id="RDPO_Requirements+Development+Process_detail"><h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> RDPO::Requirements Development Process</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Requirements Development Process</span></p></div><br/><h5>Specializes:</h5><p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> SPO::Performed Specific Process</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Specific Performed Process for establishing and developing the requirements for a system or software.<br/></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
 <code>Requirements Development Process <>-- Requirements Elicitation<br/>
 Requirements Development Process <>-- Requirements Documentation<br/>
 Requirements Development Process <>-- Requirements Negotiation and Prioritization<br/>
 Requirements Development Process <>-- Requirements Verification and Validation<br/>
-</code></p></div></div>
+</code></p></div></div></div>
 
-<hr><div class="container-fluid" id="RDPO_Requirements+Documentation_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
-<br/><span class="font-weight-bold text-center">Requirements Documentation</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RDPO::Requirements Documentation</span><br/>Specializes SPO::Performed Composite Activity</p><p>Composite Performed Activity executed for recording Documented Requirements and related Conceptual Models in Requirements Documents, assuring proper recording and management of them during and after the project.<br/></p><p>Relations:<br/>
+<hr><div class="container-fluid" id="RDPO_Requirements+Documentation_detail"><h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> RDPO::Requirements Documentation</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Requirements Documentation</span></p></div><br/><h5>Specializes:</h5><p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> SPO::Performed Composite Activity</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Composite Performed Activity executed for recording Documented Requirements and related Conceptual Models in Requirements Documents, assuring proper recording and management of them during and after the project.<br/></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
 <code>Requirements Documentation uses Requirement Artifact<br/>
 Requirements Documentation creates Requirements Document<br/>
 Requirements Development Process <>-- Requirements Documentation<br/>
 Requirements Engineer is in charge of Requirements Documentation<br/>
-</code></p></div></div>
+</code></p></div></div></div>
 
-<hr><div class="container-fluid" id="RDPO_Requirements+Elicitation_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
-<br/><span class="font-weight-bold text-center">Requirements Elicitation</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RDPO::Requirements Elicitation</span><br/>Specializes SPO::Performed Composite Activity</p><p>Composite Performed Activity executed for identifying requirements from the Stakeholders and other sources, and documenting them.<br/></p><p>Relations:<br/>
+<hr><div class="container-fluid" id="RDPO_Requirements+Elicitation_detail"><h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> RDPO::Requirements Elicitation</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Requirements Elicitation</span></p></div><br/><h5>Specializes:</h5><p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> SPO::Performed Composite Activity</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Composite Performed Activity executed for identifying requirements from the Stakeholders and other sources, and documenting them.<br/></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
 <code>Requirements Elicitation creates Requirement Artifact<br/>
 Requirements Development Process <>-- Requirements Elicitation<br/>
 Requirements Stakeholder participates in Requirements Elicitation<br/>
 Requirements Engineer is in charge of Requirements Elicitation<br/>
-</code></p></div></div>
+</code></p></div></div></div>
 
-<hr><div class="container-fluid" id="RDPO_Requirements+Evaluation+Document_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
-<br/><span class="font-weight-bold text-center">Requirements Evaluation Document</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RDPO::Requirements Evaluation Document</span><br/>Specializes SysSwO::Document</p><p>Document pointing out problems identified in Documented Requirements and Conceptual Models registered in a Requirements Document.<br/></p><p>Relations:<br/>
+<hr><div class="container-fluid" id="RDPO_Requirements+Evaluation+Document_detail"><h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> RDPO::Requirements Evaluation Document</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code>&lt&ltsubkind&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Requirements Evaluation Document</span></p></div><br/><h5>Specializes:</h5><p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> SysSwO::Document</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Document pointing out problems identified in Documented Requirements and Conceptual Models registered in a Requirements Document.<br/></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
 <code>Requirements Verification and Validation creates Requirements Evaluation Document<br/>
-</code></p></div></div>
+</code></p></div></div></div>
 
-<hr><div class="container-fluid" id="RDPO_Requirements+Negotiation+and+Prioritization_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
-<br/><span class="font-weight-bold text-center">Requirements Negotiation and Prioritization</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RDPO::Requirements Negotiation and Prioritization</span><br/>Specializes SPO::Performed Composite Activity</p><p>Composite Performed Activity executed to solve problems in the requirements and to reach an agreement on the set of requirements to be considered in the Project and their priorities.<br/></p><p>Relations:<br/>
+<hr><div class="container-fluid" id="RDPO_Requirements+Negotiation+and+Prioritization_detail"><h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> RDPO::Requirements Negotiation and Prioritization</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Requirements Negotiation and Prioritization</span></p></div><br/><h5>Specializes:</h5><p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> SPO::Performed Composite Activity</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Composite Performed Activity executed to solve problems in the requirements and to reach an agreement on the set of requirements to be considered in the Project and their priorities.<br/></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
 <code>Requirements Negotiation and Prioritization depends on Requirements Verification and Validation<br/>
 Requirements Negotiation and Prioritization creates Requirements Agreement<br/>
 Requirements Negotiation and Prioritization changes Requirements Document<br/>
@@ -463,15 +373,15 @@ Requirements Negotiation and Prioritization changes Requirement Artifact<br/>
 Requirements Development Process <>-- Requirements Negotiation and Prioritization<br/>
 Requirements Stakeholder participates in Requirements Negotiation and Prioritization<br/>
 Requirements Engineer is in charge of Requirements Negotiation and Prioritization<br/>
-</code></p></div></div>
+</code></p></div></div></div>
 
-<hr><div class="container-fluid" id="RDPO_Requirements+Reviewer_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltrole&gt&gt</code>
-<br/><span class="font-weight-bold text-center">Requirements Reviewer</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RDPO::Requirements Reviewer</span><br/>Specializes SPO::Stakeholder</p><p>Stakeholder responsible for conducting reviews in requirements artifacts.<br/>E.g.:<span class="font-italic"> the person in charge of the Requirements Verification and Validation activity.</span></p><p>Relations:<br/>
+<hr><div class="container-fluid" id="RDPO_Requirements+Reviewer_detail"><h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> RDPO::Requirements Reviewer</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code>&lt&ltrole&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Requirements Reviewer</span></p></div><br/><h5>Specializes:</h5><p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> SPO::Stakeholder</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Stakeholder responsible for conducting reviews in requirements artifacts.<br/><span class="font-weight-bold">Example:</span><span class="font-italic"> the person in charge of the Requirements Verification and Validation activity.</span></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
 <code>Requirements Reviewer is in charge of Requirements Verification and Validation<br/>
-</code></p></div></div>
+</code></p></div></div></div>
 
-<hr><div class="container-fluid" id="RDPO_Requirements+Verification+and+Validation_detail"><div class="row"><div class="col-md-auto my-1 border border-dark"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
-<br/><span class="font-weight-bold text-center">Requirements Verification and Validation</span></p></div></div><div class="my-3"><p><span class="font-weight-bold">RDPO::Requirements Verification and Validation</span><br/>Specializes SPO::Performed Composite Activity</p><p>Composite Performed Activity executed for evaluating Documented Requirements and Conceptual Models registered in Requirements Documents, and for recording the identified problems.<br/></p><p>Relations:<br/>
+<hr><div class="container-fluid" id="RDPO_Requirements+Verification+and+Validation_detail"><h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> RDPO::Requirements Verification and Validation</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code>&lt&ltevent&gt&gt</code>
+<br/><span class="font-weight-bold text-center">Requirements Verification and Validation</span></p></div><br/><h5>Specializes:</h5><p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/></svg> SPO::Performed Composite Activity</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Composite Performed Activity executed for evaluating Documented Requirements and Conceptual Models registered in Requirements Documents, and for recording the identified problems.<br/></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
 <code>Requirements Verification and Validation creates Requirements Evaluation Document<br/>
 Requirements Verification and Validation uses Requirements Document<br/>
 Requirements Reviewer is in charge of Requirements Verification and Validation<br/>
@@ -479,7 +389,7 @@ Requirements Development Process <>-- Requirements Verification and Validation<b
 Requirements Stakeholder participates in Requirements Verification and Validation<br/>
 Requirements Negotiation and Prioritization depends on Requirements Verification and Validation<br/>
 Requirements Engineer participates in Requirements Verification and Validation<br/>
-</code></p></div></div>
+</code></p></div></div></div>
 
 
 				</div>
@@ -487,15 +397,37 @@ Requirements Engineer participates in Requirements Verification and Validation<b
 			</main>
 	
     <footer class="p-5 rounded border-top">
-      <div class="row">
-      	<div class="col">
-      		  <span class="text-muted">Powered by NEMO.</span>
+      <div class="row justify-content-md-center">
+      	<div class="col-md-auto">
+    		  <h5>Powered by</h5>
+    		  <ul class="list-unstyled text-small">
+    		  	<li>
+    		  		<a class="text-muted" href="https://nemo.inf.ufes.br/" target="_blank">NEMO</a>
+    		  	</li>
+    		  </ul>
       	</div>
-      	<div class="col">
-      		<span><small><b>Requirements Development Process Ontology (RDPO)</b></small></span>
+      	<div class="col-md-auto">
+      		<h5>RDPO</h5>
+      		<ul class="list-unstyled text-small">
+      			<li>
+      				<a class="text-muted" href="#">Requirements Development Process Ontology</a>
+      			</li>
+      			<li>
+      				<a class="text-muted" href="#">Domain ontology from SEON</a>
+      			</li>
+      			<li>
+      				<a class="text-muted" href="#"></a>
+      			</li>
+      		</ul>
       	</div>
-      	<div class="col">
-      		<span class="text-muted"><small>Mon Nov 22 22:03:46 BRT 2021</small></span>	
+      	<div class="col-md-auto">
+      		<h5>About</h5>
+      		<ul class="list-unstyled text-small">
+      			<li>
+      				<a class="text-muted" href="team.html">Team</a>
+      			</li>
+      		</ul>
+      		<span class="text-muted"><small>Tue Nov 23 20:39:41 BRT 2021</small></span>	
       	</div>
       </div>
     </footer>
