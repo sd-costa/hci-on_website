@@ -560,7 +560,7 @@ public class PageWriter {
 
 	/* Check Network and ontologies */
 	/* Simone Dornelas */
-	private static ArrayList<String> checkNetwork(Ontology onto) {
+/*	private static ArrayList<String> checkNetwork(Ontology onto) {
 
 		//Onto Level
 		// Replacing the tags for the actual values
@@ -623,7 +623,7 @@ public class PageWriter {
 			
 		}
 		return netOnto;
-	}
+	}*/
 
 
 	/* Prints the Ontologies' pages. */
@@ -651,15 +651,47 @@ public class PageWriter {
 		String svgstar3 = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-star\" viewBox=\"0 0 16 16\"><path d=\"M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z\"/></svg>";
 
 		
+		OntoLevel level = onto.getLevel();
+	    if (level != null) {
+	     	if (level == OntoLevel.FOUNDATIONAL) {
+			    onlevel = "Foundational ontology";
+				onto_level = svgstar1 + " foundational ontology";
+	      	} else if (level == OntoLevel.CORE) {
+		        if (onto.getNetwork().equals(hcion)) {
+		         	onto_level = svgstar2 + " core ontology from HCI-ON"; 
+					onlevel = "Core ontology from HCI-ON";
+		        } else if (onto.getNetwork().equals(seon)) {
+		        	onto_level = svgstar2 + " core ontology from SEON";
+					onlevel = "Core ontology from SEON"; 
+		        } else {
+		          System.out.println("Network not found: " + onto.getNetwork());
+		        }
+	        	//System.out.println(onto.getNetwork() + onto.getShortName() + onto_level);
+	      	} else if (level == OntoLevel.DOMAIN) {
+		        if (onto.getNetwork().equals(hcion)) {
+		        	onto_level = svgstar3 + " domain ontology from HCI-ON";
+					onlevel = "Domain ontology from HCI-ON";
+		        } else if (onto.getNetwork().equals(seon)) {
+		        	onto_level = svgstar3 + " domain ontology from SEON";
+					onlevel = "Domain ontology from SEON";
+		        } else {
+		          System.out.println("Network not found:" + onto.getNetwork());
+		        }
+		        //System.out.println(onto.getNetwork() + onto.getShortName() + onto_level);
+		    }
+	      // other level: ignore
+	    }
+
+
 		/*EDITAR e ELIMINAR ESSE CODIGO*/
-		networkOnto = checkNetwork(onto);
+		/*networkOnto = checkNetwork(onto);
 
 		if (networkOnto != null) {			
 			if (networkOnto.get(0).equals(found)) {
 				onlevel = "Foundational ontology";
 				onto_level = svgstar1 + " foundational ontology";
 			}
-			if (networkOnto.get(0).equals(core)) {
+			else if (networkOnto.get(0).equals(core)) {
 				if (networkOnto.get(1).equals(hcion)) { 
 					onto_level = svgstar2 + " core ontology from HCI-ON"; 
 					onlevel = "Core ontology from HCI-ON";
@@ -685,12 +717,12 @@ public class PageWriter {
 					System.out.println("Network not found:" + onto.getNetwork());
 				}
 			}
-		}
+		}*/
 
 		if (onto.getStatus().equals("Finished")){
 			ADDITIONALINFO = "<div class=\"container-fluid d-flex justify-content-end\"><span class=\"badge badge-dark\">version "+ onto.getVersion() +"</span></div>";
 			addinfo = "version "+ onto.getVersion();
-		}else {
+		} else {
 			ADDITIONALINFO = "<div class=\"container-fluid d-flex justify-content-end\"><span class=\"badge badge-danger text-lowercase\">"+ onto.getStatus() +"</span></div>";
 			addinfo = onto.getStatus();
 		}
@@ -991,7 +1023,7 @@ public class PageWriter {
 	/* Generates the lines of the concepts table. */
 	public String generateConceptsTable(Ontology onto) {		
 		//String CONCEPTLINE = "<tr>\n<td><a name=\"@reference\">@concept</a>\n<a href=#@reference_detail><img src=\"images/plus-4-16.ico\"></a></td>\n<td>@definition\n<br/>@example</td>\n</tr>";
-		String CONCEPTLINE = "<tr><td><p id=\"@reference\">@concept<a href=#@reference_detail><span class=\"m-1\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-plus-circle\" viewBox=\"0 0 16 16\"><path d=\"M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z\"/><path d=\"M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z\"/></svg></span></a></td><td><p>@definition<br/>@example</p></td></tr>";
+		String CONCEPTLINE = "<tr><td><p id=\"@reference\">@concept<a href=#@reference_detail><span class=\"m-1\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-plus-circle\" viewBox=\"0 0 16 16\"><path d=\"M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z\"/><path d=\"M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z\"/></svg></span></a></td><td><p>@definition@example@source</p></td></tr>";
 		List<Concept> concepts = onto.getAllConcepts();
 		Collections.sort(concepts);
 		String conceptsTable = "";
@@ -1006,13 +1038,25 @@ public class PageWriter {
 			else if (onto.getLevel() == OntoLevel.DOMAIN) name = "<span class=\"font-weight-bold\">" + name + "</span>";
 			line = line.replace("@concept", name);
 			line = line.replace("@reference", concept.getLabel());
-			line = line.replace("@definition", concept.getDefinition().replaceAll("(\\r\\n|\\n\\r|\\r|\\n)", "<br/>"));
+			line = line.replace("@definition", concept.getDefinition().replaceAll("(\\r\\n|\\n\\r|\\r|\\n)", ""));
+			//line = concept.getDefinition().replaceAll("<source>", "<span class=\"font-weight-bold\">Source:").replaceAll("</source>", "</</span>>");
+			System.out.println("\n\n Conc. Def.: " + concept.getDefinition() + "\n\n");
 			String example = "";
 			if (concept.getExample() != null) {
 				//example = "E.g.:<i>" + concept.getExample() + "</i>";
-				example = "<span class=\"font-weight-light\">E.g.:</span><span class=\"font-italic\">" + concept.getExample() + "</span>";
+				example = "<br/><span class=\"font-weight-light\">E.g.:</span><span class=\"font-italic\">" + concept.getExample().replaceAll("(\\r\\n|\\n\\r|\\r|\\n)", "") + "</span>";
 			}
+			//Simone 
+			String source = "";
+			if (concept.getSource() != null) {
+				//example = "E.g.:<i>" + concept.getExample() + "</i>";
+				source = "<br/><span class=\"font-weight-light\">src.: </span><span>" + concept.getSource().replaceAll("(\\r\\n|\\n\\r|\\r|\\n)", "") + "</span>";
+			}
+
 			line = line.replace("@example", example);
+			line = line.replace("@source", source);
+			System.out.println("\n\n EXAMPLE.: " + example + "\n\n");
+			//line = line.replace("@definition", concept.getDefinition().replaceAll("<source>", "<br/><span class=\"font-weight-light\">Source: </span><span class=\"font-italic\">").replaceAll("</source>", "</span>>").replaceAll("(\\r\\n|\\n\\r|\\r|\\n)", "<br/>"));
 			conceptsTable += line + "\n";
 		}
 		return conceptsTable;
@@ -1022,7 +1066,7 @@ public class PageWriter {
 	private String generateDetailedConcepts(Ontology onto) {
 		String detailedicon = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-diagram-3\" viewBox=\"0 0 16 16\"><path fill-rule=\"evenodd\" d=\"M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z\"/></svg>";
 		String specializeicon = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-diagram-2\" viewBox=\"0 0 16 16\"><path fill-rule=\"evenodd\" d=\"M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z\"/></svg>";
-		String DETAILITEM = "<hr><div class=\"container-fluid\" id=\"@reference_detail\"><h4>@fullName</h4><div class=\"row d-flex\"><div class=\"p-3 m-3 col\"><div class=\"border border-dark mb-3\"><p class=\"text-center\">@stereotype<br/><span class=\"font-weight-bold text-center\">@concept</span></p></div><br/><h5>Specializes:</h5>@generals</div><div class=\"p-3 m-3 col\"><h5>Definition:</h5><p>@definition<br/>@example</p></div><div class=\"p-3 m-3 col\"><h5>Relations:</h5><p>@relations</p></div></div></div>";
+		String DETAILITEM = "<hr><div class=\"container-fluid\" id=\"@reference_detail\"><h4>@fullName</h4><div class=\"row d-flex\"><div class=\"p-3 m-3 col\"><div class=\"border border-dark mb-3\"><p class=\"text-center\">@stereotype<br/><span class=\"font-weight-bold text-center\">@concept</span></p></div><br/><h5>Specializes:</h5>@generals</div><div class=\"p-3 m-3 col\"><h5>Definition:</h5><p>@definition@example@source</p></div><div class=\"p-3 m-3 col\"><h5>Relations:</h5><p>@relations</p></div></div></div>";
 		List<Concept> concepts = onto.getAllConcepts();
 		Collections.sort(concepts);
 		String detailedConcepts = "";
@@ -1040,13 +1084,23 @@ public class PageWriter {
 			item = item.replace("@stereotype", ster);
 			item = item.replace("@concept", concept.getName());
 			item = item.replace("@fullName", detailedicon + " " + concept.getFullName());
-			item = item.replace("@definition", concept.getDefinition().replaceAll("(\\r\\n|\\n\\r|\\r|\\n)", "<br/>"));
+			item = item.replace("@definition", concept.getDefinition().replaceAll("(\\r\\n|\\n\\r|\\r|\\n)", ""));
 			String example = "";
 			if (concept.getExample() != null) {
 				//example = "E.g.:<i>" + concept.getExample() + "</i>";
-				example = "<span class=\"font-weight-bold\">Example:</span><span class=\"font-italic\">" + concept.getExample() + "</span>";
+
+				example = "<br/><span class=\"font-weight-bold\">Example:</span><span class=\"font-italic\">" + concept.getExample().replaceAll("(\\r\\n|\\n\\r|\\r|\\n)", "") + "</span>";
 			}
+
+			//Simone
+			String source = "";
+			if (concept.getSource() != null) {
+				//example = "E.g.:<i>" + concept.getExample() + "</i>";
+				source = "<br/><span class=\"font-weight-bold\">Source: </span><span>" + concept.getSource().replaceAll("(\\r\\n|\\n\\r|\\r|\\n)", "") + "</span>";
+			}
+
 			item = item.replace("@example", example);
+			item = item.replace("@source", source);
 
 			// generalizations
 			List<Concept> generalizations = concept.getGeneralizations();
