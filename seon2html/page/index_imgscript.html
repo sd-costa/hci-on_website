@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div style="width:100%;">
+    <img class="img-fluid" id="img_ID" src="http://www.gravatar.com/avatar/0865e7bad648eab23c7d4a843144de48?s=128&d=identicon&r=PG" usemap="#map" border="0" width="100%" alt="" />
+</div>
+<map id="map_ID" name="map">
+<area shape="poly" coords="48,10,80,10,65,42" href="javascript:;" alt="Bandcamp" title="Bandcamp" />
+<area shape="poly" coords="30,50,62,50,46,82" href="javascript:;" alt="Facebook" title="Facebook" />
+<area shape="poly" coords="66,50,98,50,82,82" href="javascript:;" alt="Soundcloud" title="Soundcloud" />
+</map>
+
+<!--<div class="container-fluid" align="center">
+	<img src="images/HCIO Modularization.png" width="661" class="img-fluid" usemap="#map">
+	<MAP class="map_ID" name="map">
+		<area shape="rect" coords="145,146,275,214" href="HCIO.html#HCIO_HC+Interaction_section" title="">
+		<area shape="rect" coords="40,241,260,311" href="HCIO.html#HCIO_Interactive+Computer+System_section" title="">
+		<area shape="rect" coords="290,243,440,311" href="HCIO.html#HCIO_User_section" title="">
+		<area shape="rect" coords="10,104,455,327" href="HCIO.html#HCIO_HCIO_section" title="">
+		<area shape="rect" coords="563,193,651,261" href="SysSwO.html#SysSwO_SysSwO_section" title="">
+		<area shape="rect" coords="374,10,440,78" href="UFO.html#UFO_UFO_section" title="">
+	</MAP>
+	<p align="center" class="lead font-weight-bold">Figure 1. HCIO Modularization.</p>
+</div>-->
+
+</body>
+<script src="../resources/static/bootstrap-5.1.3-dist/js/jquery-3.2.1.slim.min.js"></script>
+<script src="../resources/static/bootstrap-5.1.3-dist/js/jquery-3.2.1.slim.min.js"></script>
+
+   <script src="../resources/static/bootstrap-5.1.3-dist/js/popper2.min.js"></script>
+
+
+    <script src="../resources/static/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+
+    <script src="../resources/static/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+<!--<script type="text/javascript">
+window.onresize = function () {
+    console.log("teste")
+    var ImageMap = function (map, img) {
+            console.log(map.getElementsByTagName('area'))
+            var n,
+                areas = map.getElementsByTagName('area'),
+                len = areas.length,
+                coords = [],
+                previousWidth = 128;
+            for (n = 0; n < len; n++) {
+                coords[n] = areas[n].coords.split(',');
+            }
+            this.resize = function () {
+                var n, m, clen,
+                    x = img.offsetWidth / previousWidth;
+                for (n = 0; n < len; n++) {
+                    clen = coords[n].length;
+                    for (m = 0; m < clen; m++) {
+                        coords[n][m] *= x;
+                    }
+                    areas[n].coords = coords[n].join(',');
+                }
+                previousWidth = document.body.clientWidth;
+                return true;
+            };
+            window.onresize = this.resize;
+        },
+        imageMap = new ImageMap(document.getElementById('map_ID'), document.getElementsByClassName('img-fluid'));
+    imageMap.resize();
+    return;
+}
+
+
+
+</script>-->
+
+<script type="text/javascript">
+    
+    window.onload = function () {
+        console.log('entrei')
+    var ImageMap = function (map, img) {
+            var n,
+                areas = map.getElementsByTagName('area'),
+                len = areas.length,
+                coords = [],
+                previousWidth = img.width;
+            for (n = 0; n < len; n++) {
+                coords[n] = areas[n].coords.split(',');
+            }
+            this.resize = function () {
+                var n, m, clen,
+                    x = img.offsetWidth / previousWidth;
+                for (n = 0; n < len; n++) {
+                    clen = coords[n].length;
+                    for (m = 0; m < clen; m++) {
+                        coords[n][m] *= x;
+                    }
+                    areas[n].coords = coords[n].join(',');
+                }
+                previousWidth = document.body.clientWidth;
+                return true;
+            };
+            window.onresize = this.resize;
+        },
+        imageMap = new ImageMap(document.getElementById('map_ID'), document.getElementById('img_ID'));
+        imageMap.resize();
+    return;
+}
+
+
+</script>
+
+
+</html>
+

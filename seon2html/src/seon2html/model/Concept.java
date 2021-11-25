@@ -120,18 +120,6 @@ public class Concept implements Comparable<Concept> {
 		return astahClass;
 	}
 
-	/*private void parseDefintion(String fullDefinition) {
-		if (fullDefinition != null) {
-			int atPos = fullDefinition.indexOf("@Ex.:");
-			if (atPos >= 0) {
-				this.definition = fullDefinition.substring(0, atPos - 1);
-				this.example = fullDefinition.substring(atPos + 5);
-			} else {
-				this.definition = fullDefinition;
-			}
-		}
-	}*/
-
 	private void parseDefintion(String fullDefinition) {
 		if (fullDefinition != null) {
 			int atPos = fullDefinition.indexOf("@Ex.:");
@@ -155,101 +143,6 @@ public class Concept implements Comparable<Concept> {
 			} 	
 		}
 	}
-
-	/*private void parseDefintion(String fullDefinition) {
-		if (fullDefinition != null) {
-			int atPos = fullDefinition.indexOf("@Ex.:");
-			int atPos2 = fullDefinition.indexOf("<source>");
-			int atPos3 = fullDefinition.indexOf("</source>");
-			
-			//Example or Source True
-			if ( (atPos >= 0) || ((atPos2 >= 0) && (atPos3 >= 0)) ){
-				
-				//Only Example True
-				if ( (atPos >= 0) && ((atPos2 <= 0) && (atPos3 <= 0)) ) {
-					this.definition = fullDefinition.substring(0, atPos - 1);
-					this.example = fullDefinition.substring(atPos + 5);
-				}//Only Source True
-				else if ( (atPos <= 0) && ((atPos2 >= 0) && (atPos3 >= 0)) ) {
-					this.definition = fullDefinition.substring(0, atPos2);
-					this.defsource = fullDefinition.substring(atPos2 + 8, atPos3);
-				}	
-			}//ALL True 
-			else if ( (atPos >= 0) && ((atPos2 >= 0) && (atPos3 >= 0)) ) {
-				this.definition = fullDefinition.substring(0, atPos - 1);
-				this.example = fullDefinition.substring(atPos + 5);
-				this.defsource = fullDefinition.substring(atPos2 + 8, atPos3);
-			}//ALL False
-			else {
-				this.definition = fullDefinition;
-			}
-		}
-	}*/
-
-/*	private void parseDefintion(String fullDefinition) {
-		if (fullDefinition != null) {
-			//Simone
-			int atPos2 = fullDefinition.indexOf("<source>");
-			int atPos3 = fullDefinition.indexOf("</source>");
-			//
-			int atPos = fullDefinition.indexOf("@Ex.:");
-
-			
-
-
-			/*if ( (atPos >= 0) && ((atPos2 >= 0) && (atPos3 >= 0)) ){ //TRUE
-				this.definition = fullDefinition.substring(0, atPos - 1);
-				this.example = fullDefinition.substring(atPos + 5);
-				this.defsource = fullDefinition.substring(atPos2 + 8, atPos3);
-			} else {
-				this.definition = fullDefinition;
-			}*/
-
-			//Example or Source True
-			/*if ( (atPos >= 0) || ((atPos2 >= 0) && (atPos3 >= 0)) ){
-				
-				//Only Example True
-				if ( (atPos >= 0) && ((atPos2 <= 0) && (atPos3 <= 0)) ) {
-					this.definition = fullDefinition.substring(0, atPos - 1);
-					this.example = fullDefinition.substring(atPos + 5);
-				}//Only Source True
-				else if ( (atPos <= 0) && ((atPos2 >= 0) && (atPos3 >= 0)) ) {
-					this.definition = fullDefinition.substring(0, atPos2);
-					this.defsource = fullDefinition.substring(atPos2 + 8, atPos3);
-				}	
-			}// ALL True
-			else if ( (atPos >= 0) && ((atPos2 >= 0) && (atPos3 >= 0)) ) {
-				this.definition = fullDefinition.substring(0, atPos - 1);
-				this.example = fullDefinition.substring(atPos + 5);
-				this.defsource = fullDefinition.substring(atPos2 + 8, atPos3);
-			}//ALL False
-			else {
-				this.definition = fullDefinition;
-			}
-
-
-		/*	else {
-				this.definition = fullDefinition;
-			}
-
-			this.definition = fullDefinition;
-			
-			if (atPos >= 0) {
-				this.definition = fullDefinition.substring(0, atPos - 1);
-				this.example = fullDefinition.substring(atPos + 5);
-				
-			} else if ( (atPos2 >= 0) && (atPos3 >= 0) ) {
-					this.definition = fullDefinition.substring(0, atPos2);
-					this.defsource = fullDefinition.substring(atPos2 + 8, atPos3);
-			} 
-			
-			if ( (atPos2 >= 0) && (atPos3 >= 0) ) {
-					this.defsource = fullDefinition.substring(atPos2 + 8, atPos3);
-			}*/
-
-			
-		/*}
-	}*/
 
 	@Override
 	public String toString() {
