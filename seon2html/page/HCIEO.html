@@ -225,7 +225,7 @@
 				<div class="p-5 rounded" id="ontologymodels">
 					<h2 class="featurette-heading">3. Ontology Models</h2>
 					<p class="lead"><p class="lead">Figure 1 presents the packages of the HCIEO Modularization.</p>
-<div class="container-fluid" align="center"><img src="images/HCIEO Modularization.png" width="965" class="map" usemap="#HCIEO Modularization"><MAP NAME="HCIEO Modularization">
+<div class="container-fluid" align="center"><img src="images/HCIEO Modularization.png" width="965" class="map img-fluid" usemap="#HCIEO Modularization"><map name="HCIEO Modularization">
 <area shape="rect" coords="454,524,573,592" href="HCIEO.html#HCIEO_Central+View_section" title="">
 <area shape="rect" coords="616,524,789,592" href="HCIEO.html#HCIEO_Complementary+View_section" title="">
 <area shape="rect" coords="673,231,803,299" href="HCIO.html#HCIO_HC+Interaction_section" title="">
@@ -244,14 +244,14 @@
 <area shape="rect" coords="25,160,277,409" href="Core+Layer_section" title="">
 <area shape="rect" coords="26,475,278,615" href="Domain+Layer_section" title="">
 <area shape="rect" coords="10,113,292,630" href="SEON_section" title="">
-<area shape="rect" coords="399,100,955,641" href="HCI-ON_section" title=""></MAP>
+<area shape="rect" coords="399,100,955,641" href="HCI-ON_section" title=""></map>
 <p align="center" class="lead font-weight-bold">Figure 1. HCIEO Modularization.</p></div>
 <p align="justify" class="lead"></p>
 
 <hr class="featurette-divider"><h6 class="featurette-heading" id="HCIEO_Central+View_section">3.1.  Central View</h6>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 2 presents the conceptual model of the HCIEO Central View subontology.</p>
-<div class="container-fluid" align="center"><img src="images/HCIEO Central View.png" width="1895" class="map" usemap="#HCIEO Central View"><MAP NAME="HCIEO Central View">
+<div class="container-fluid" align="center"><img src="images/HCIEO Central View.png" width="1895" class="map img-fluid" usemap="#HCIEO Central View"><map name="HCIEO Central View">
 <area shape="rect" coords="553,690,715,720" href="HCIEO.html#HCIEO_HCI+Evaluation+Method" title="A Procedure describing the actions to be performed by the HCI Evaluator to perform a HCI Evaluation.">
 <area shape="rect" coords="1276,874,1437,904" href="HCIEO.html#HCIEO_HCI+Evaluation+Artifact" title="Object intentionally made to specify evaluation criteria in the context of an evaluation.">
 <area shape="rect" coords="1470,1006,1675,1058" href="HCIEO.html#HCIEO_HCI+Evaluation+Criteria" title="Conditions, or capacity needed (Requirement), used to evaluate interactive computer system’s quality characteristics. It can be determined by the HCI evaluation method of a certain HCI evaluation and may be related to user requirements.">
@@ -288,14 +288,14 @@ The content of evaluation reports can vary based on the objectives of the evalua
 <area shape="rect" coords="853,489,976,519" href="HCIO.html#HCIO_User+Interface" title="All components of an interactive system (software or hardware) that provide information and controls for the user to accomplish specific tasks with the interactive system.">
 <area shape="rect" coords="1567,594,1698,624" href="HCIDO.html#HCIDO_User+Requirement" title="A Requirement that refers to User Goals (i.e., a Requirement concerned with users' needs or capabilities that should be addressed by the system, in order to allow users to achieve their goals in an effective, efficient, safe and satisfying manner).
 
-"></MAP>
+"></map>
 <p align="center" class="lead font-weight-bold">Figure 2. HCIEO Central View conceptual model.</p></div>
 <p align="justify" class="lead">HCI Evaluation is a Complex Action and, like that, it is an intentional event. It is caused by the HCI Evaluator Intention that inheres in the HCI Evaluator. Being an Intention, HCI Evaluaton Intention has a HCI Evaluator Goal (Goal) as propositional content. HCI Evaluator is the role played by an individual or an organization (Stakeholder) that performs the HCI Evaluation.<br/><br/>An HCI Evaluation consists in the systematic determination of the extent to which an Interactive Computer System ’s (or its User Interface ) quality characteristics (HCI Quality Characteristic) meet the HCI Evaluation Criteria applied in the evaluation. HCI Evaluation Criteria, in turn, are conditions, or capacity needed (Requirement), used to evaluate Interactive Computer System ’s HCI Quality Characteristics and may be related to User Requirements.<br/><br/>HCI Quality Characteritics are qualities (Quality Universal) of an Interactive Computer System (manifested in its software or hardware constituents). Therefore, HCI Evaluation evaluates HCI Quality Characteristics of an Interactive Computer System or, more specifically, of its User Interface.<br/><br/>An HCI Evaluation follows HCI Evaluation Method (e.g., Heuristic Method, Usability Testing), which is a Procedure that describes the actions to be performed by the HCI Evaluator in an HCI Evaluation. An HCI Evaluation Method is chosen according to the HCI Evaluator Goal and can determine the HCI Evaluation Criteria to be applied in an HCI Evaluation. To perform an HCI Evaluation it may be necessary to use an HCI Evaluation Artifact (Sw Artifact), which is an object intentionally built to specify, among others, the HCI Evaluation Criteria to be applied in the evaluation (e.g., a checklist specifying the criteria to be applied).<br/><br/>In some HCI Evaluations it is necessary to evaluate the Interactive Computer System during the Human-Computer Interaction . In this case, the User (or user representatives) of the Interactive Computer System participates in the HCI Evaluation while, at the same time, participates (User Participation ), together with the Interactive Computer System (Interactive Computer System Participation ), in the Human-Computer Interaction . When the User participates in an HCI Evaluation, it is required that this User uses the Interactive Computer System in order to achieve a certain goal (User Goal ) (e.g., send an email). While the User interacts with the Interactive Computer System to achieve his/her goal (User Goal ), the HCI Evaluator performs the HCI Evaluation, following the HCI Evaluation Method and applying HCI Evaluation Criteria to evaluate HCI Quality Characteristics of the Interactive Computer System . This scenario involves some constraints, addressed by the following axioms:<br/><br/>A6.1. <code>&forall; hcie: HCI Evaluation, ics: Interactive Computer System, icsp: Interactive Computer System Participation, hci: Human-Computer Interaction, user: User evaluates(hcie, ics) &and; participatesIn(user, hcie) &and; composedOf(hci, icsp) &rarr; &exist; up: User Participation participationOf(user, up) &and; composedOf(hci, up)</code><br/><br/>A6.2. <code>&forall; hcie: HCI Evaluation, hci: Human-Computer Interaction, hciqc: HCI Quality Characteristic, ics: Interactive Computer System, icsp: Interactive Computer System Participation evaluates(hcie, hci) ∧ evaluates(hcie,hciqc) &and; has(ics, hciqc) &and; composedOf(hci, icsp) &and; participationOf(icsp, ics) &rarr; evaluates(hcie, ics)</code><br/><br/>Moreover, in an HCI Evaluation an HCI Evaluator can act as a User . Conversely, a User can act as an HCI Evaluator. Thus, if an evaluator performs an evaluation in which he/she acts as a user, then this evaluator is also the user who participates in the evaluation. On the other hand, if a user that participates in an evaluation performs that evaluation, then he/she is also an evaluator of that evaluation. Hence, the following axiom applies:<br/><br/>A6.3. <code>&forall; e: HCI Evaluator, hcie: HCI Evaluation performs(e, hcie) &and; participatesIn(e, hcie) &rarr; &exist; u: User participatesIn(u, hcie) &and; (e = u)</code><br/><br/>A6.4. <code>&forall; u: User, hcie: HCI Evaluation participatesIn(u, hcie) &and; performs(u, hcie) &rarr; &exist; e: HCI Evaluator performs(e, hcie) &and; (e = u)</code><br/><br/>After the HCI Evaluation is performed, the HCI Evaluation Report, a Document, is created, under responsibility of the HCI Evaluator, aiming to report the evaluation results and other relevant information, such as the applied HCI Evaluation Criteria.</p>
 
 <hr class="featurette-divider"><h6 class="featurette-heading" id="HCIEO_Complementary+View_section">3.2.  Complementary View</h6>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 3 presents the conceptual model of the HCIEO Complementary View subontology.</p>
-<div class="container-fluid" align="center"><img src="images/HCIEO Complementary View.png" width="1746" class="map" usemap="#HCIEO Complementary View"><MAP NAME="HCIEO Complementary View">
+<div class="container-fluid" align="center"><img src="images/HCIEO Complementary View.png" width="1746" class="map img-fluid" usemap="#HCIEO Complementary View"><map name="HCIEO Complementary View">
 <area shape="rect" coords="693,780,854,810" href="HCIEO.html#HCIEO_HCI+Evaluation+Artifact" title="Object intentionally made to specify evaluation criteria in the context of an evaluation.">
 <area shape="rect" coords="810,886,971,916" href="HCIEO.html#HCIEO_HCI+Evaluation+Criteria" title="Conditions, or capacity needed (Requirement), used to evaluate interactive computer system’s quality characteristics. It can be determined by the HCI evaluation method of a certain HCI evaluation and may be related to user requirements.">
 <area shape="rect" coords="105,886,261,916" href="HCIEO.html#HCIEO_HCI+Evaluation+Report" title="Document that presents evaluation results and other relevant information such as the considered HCI Evaluation Criteria. @Ex.: Usability test report. <source>adapted from
@@ -322,7 +322,7 @@ The content of evaluation reports can vary based on the objectives of the evalua
 <area shape="rect" coords="972,20,1297,50" href="UFO.html#UFO_Measurement+Reference+Region" title="">
 <area shape="rect" coords="1388,20,1728,50" href="UFO.html#UFO_Measurement+Reference+Structure" title="Measurement Reference Structures act as scales based on quality structures. They are composed of Measurement Reference Regions. Measurement Reference Structures can be partitioned into spaces of the same magnitude according to a Unit.">
 <area shape="rect" coords="782,20,958,50" href="UFO.html#UFO_Event+(Perdurant)" title="Events (also called perdurants) are individuals composed of temporal parts. They happen in time in the sense that they extend in time accumulating temporal parts. @Examples of events are a conversation, a football game, a symphony execution, a birthday party, or a particular business process.">
-<area shape="rect" coords="418,567,525,597" href="HCIO.html#HCIO_User+Interface" title="All components of an interactive system (software or hardware) that provide information and controls for the user to accomplish specific tasks with the interactive system."></MAP>
+<area shape="rect" coords="418,567,525,597" href="HCIO.html#HCIO_User+Interface" title="All components of an interactive system (software or hardware) that provide information and controls for the user to accomplish specific tasks with the interactive system."></map>
 <p align="center" class="lead font-weight-bold">Figure 3. HCIEO Complementary View conceptual model.</p></div>
 <p align="justify" class="lead">There are HCI Evaluations in which it is necessary to perform measurements to determine the extent to which HCI Quality characteristics of an Interactive Computer System meet HCI Evaluation Criteria. This is addressed in the conceptual model shown in Figure 6.5, which depicts a view of HCIEO that reuses concepts from COM to represent evaluations that quantify HCI Quality Characteristics.<br/><br/>Besides being Objects (grounding in UFO), Interactive Computer System and User Interface are also Measurable Entities, i.e., entities that can be measured. In this sense, HCI Quality Characteristic is subtype of Measurable Element, i.e., a measurable property that characterizes Interactive Computer System (or a User Interface ). Measures can be used to quantify HCI Quality Characteristics. For example, usability (HCI Quality Characteristic) characterizesasystem(Interactive Computer System)oritsUI(User Interface)and can be quantified, among others, by means of the number of wrong clicks or touches (Measure). HCI Evaluation Criteria can refer to Measures used to quantify HCI Quality Characteristic. For example, the criteria “the number of wrong clicks or touches must be smaller than two”, used to evaluate usability, refers to the measure number of wrong clicks or touches, which, in turn, is used to quantify usability. In this context, the Measure referred by an HCI Evaluation Criteria in an HCI Evaluation that evaluates a HCI Quality Characteristic must be a Measure used to quantify that HCI Quality Characteristic. Thus:<br/><br/>A6.5. <code>&forall; m: Measure, hciec: HCI Evaluation criteria, hcie: HCI Evaluation, hciqc: HCI Quality Characteristic evaluates(hcie, hciqc) &and; applies(hcie, hciec) &and; usedToEvaluate(hciec, hciqc) &and; refersTo(hciec, m) &rarr; quantifies(m, hciqc)</code><br/><br/>A Measure (e.g., time spent to log in the system) can be expressed in Measure Unit (e.g., minute) and has a Scale partitioned according to the Measure Unit and composed of the values that can be associated to the Measure. Measurement consists in collecting Measured Values to a Measure (e.g., the measurement of the time to log in the system, resulting in the value 1 minute). In an HCI Evaluation, Measurements are performed to establish Measured Values to quantify HCI Quality Characteristics.<br/><br/>When a HCI Evaluation involves measurements, the HCI Evaluation Report must consider the Measured Values.</p>
 </p>					
@@ -498,7 +498,7 @@ Interactive Computer System (1..*) has (0..*) HCI Quality Characteristic<br/>
       				<a class="text-muted" href="team.html">Team</a>
       			</li>
       		</ul>
-      		<span class="text-muted"><small>Thu Nov 25 19:48:05 BRT 2021</small></span>	
+      		<span class="text-muted"><small>Fri Nov 26 13:00:40 BRT 2021</small></span>	
       	</div>
       </div>
     </footer>
@@ -519,10 +519,72 @@ Interactive Computer System (1..*) has (0..*) HCI Quality Characteristic<br/>
 
     <script type="text/javascript" src="jquery.min.js"></script>
 		<script type="text/javascript" src="maphilight.js"></script>
+
 		<script type="text/javascript">
+			;(function($) {
+				$.fn.rwdImageMaps = function() {
+					var $img = this;
+					var rwdImageMap = function() {
+						$img.each(function() {
+							if (typeof($(this).attr('usemap')) == 'undefined')
+								return;
+							var that = this,
+								$that = $(that);
+
+								var w = $that.attr('width'),
+									h = $that.attr('height');
+								if (!w || !h) {
+									if (!$that.data("ratio")) {
+										var temp = new Image();
+										temp.src = $that.attr('src');
+										$that.data("ratio", temp.width / temp.height);
+									}
+									var ratio = $that.data("ratio");
+									//console.log(ratio);
+									if (!w){
+										w = (h * ratio);
+									}else if (!h) {
+										h = w / ratio;
+									}
+								}
+								var wPercent = $that.width()/100,
+										hPercent = $that.height()/100,
+										map = $that.attr('usemap').replace('#', ''),
+										c = 'coords';
+
+								$('map[name="' + map + '"]').find('area').each(function() {
+									var $this = $(this);
+									if (!$this.data(c))
+										$this.data(c, $this.attr(c));
+
+									var coords = $this.data(c).split(','),
+											coordsPercent = new Array(coords.length);
+
+									for (var i = 0; i < coordsPercent.length; ++i) {
+										if (i % 2 === 0)
+											coordsPercent[i] = parseInt(((coords[i]/w)*100)*wPercent);
+										else
+											coordsPercent[i] = parseInt(((coords[i]/h)*100)*hPercent);
+									}
+									$this.attr(c, coordsPercent.toString());
+								});
+						});
+					};
+					$(window).resize(rwdImageMap).trigger('resize');
+
+					return this;
+				};
+			})(jQuery);
+
 			$(function() {
-		        $('.map').maphilight();
-		    });
+				$('img[usemap]').maphilight();
+				$('img[usemap]').rwdImageMaps(); 
+				
+				$(window).on('resize', function(){
+				  location.reload();
+				});
+			});			
+			
 		</script>
 
 	</body>

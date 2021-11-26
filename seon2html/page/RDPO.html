@@ -219,7 +219,7 @@
 				<div class="p-5 rounded" id="ontologymodels">
 					<h2 class="featurette-heading">3. Ontology Models</h2>
 					<p class="lead"><p class="lead">Figure 1 presents the conceptual model of the RDPO.</p>
-<div class="container-fluid" align="center"><img src="images/RDPO.png" width="1146" class="map" usemap="#RDPO"><MAP NAME="RDPO">
+<div class="container-fluid" align="center"><img src="images/RDPO.png" width="1146" class="map img-fluid" usemap="#RDPO"><map name="RDPO">
 <area shape="rect" coords="770,157,896,204" href="SysSwO.html#SysSwO_Software+Artifact" title="Object intentionally made to serve a given purpose in the context of a software Project or Organization.">
 <area shape="rect" coords="610,294,757,324" href="SysSwO.html#SysSwO_Complex+Sw+Artifact" title="Artifact composed of other Artifacts.">
 <area shape="rect" coords="661,251,797,281" href="SysSwO.html#SysSwO_Atomic+Sw+Artifact" title="Artifact that is not decomposed into other Artifacts.">
@@ -251,7 +251,7 @@
 <area shape="rect" coords="1021,654,1121,684" href="RSRO.html#RSRO_Requirement" title="Goal to be achieved, representing a condition or capacity needed for the system users for solving a problem.">
 <area shape="rect" coords="724,429,875,459" href="RSRO.html#RSRO_Requirement+Artifact" title="Information Item describing a Requirement.">
 <area shape="rect" coords="875,612,1118,642" href="RDPO.html#RDPO_Requirements+Evaluation+Document" title="Document pointing out problems identified in Documented Requirements and Conceptual Models registered in a Requirements Document.">
-<area shape="rect" coords="18,349,185,379" href="RDPO.html#RDPO_Requirements+Reviewer" title="Stakeholder responsible for conducting reviews in requirements artifacts."></MAP>
+<area shape="rect" coords="18,349,185,379" href="RDPO.html#RDPO_Requirements+Reviewer" title="Stakeholder responsible for conducting reviews in requirements artifacts."></map>
 <p align="center" class="lead font-weight-bold">Figure 1. RDPO conceptual model.</p></div>
 <p align="justify" class="lead">Requirements Development Process is a Performed Process with the purpose of conducting the establishment and development of requirements, from the elicitation to the agreement. It is composed of five Performed Activities: (1) The Requirements Elicitation activity identifies a set of Functional and Non-Functional Requirements and documents them as Documented Requirements. This activity counts on the participation of the Requirements Stakeholders and can collect information from other sources (not presented in the model). (2) Conceptual Modeling uses the Documented Requirements for developing Conceptual Models (e.g. a class diagram), providing relevant views of the problem. (3) Requirements Documentation creates the Requirements Document, which is composed of Documented Requirements and describes the Conceptual Models and possibly other related information. (4) Requirements Verification and Validation evaluates requirements and models documented in the Requirements Document, producing the Requirements Evaluation Document. (5) Finally, Requirements Agreement is obtained from the authorized Requirements Stakeholders in the Requirements Negotiation and Prioritization activity.<br/>Considering Stakeholders, the Requirements Engineer is in charge of all activities of the Requirements Development Process, except for Requirements Verification and Validation where he/she participates in, but the responsibility is of the Requirements Reviewer. The Requirements Stakeholder participates only in Requirements Elicitation and, then, in Requirements Verification and Validation and Requirements Negotiation and Prioritization.<br/>The Requirements Development Process can be applied for dealing with different levels of Documented Requirements. For example, it can deal with more general requirements such as higher level Customer Requirements, typically identified in software development preliminary stages, or with a more detailed level such as Product Requirements, defined in more advanced stages.</p>
 </p>					
@@ -427,7 +427,7 @@ Requirements Engineer participates in Requirements Verification and Validation<b
       				<a class="text-muted" href="team.html">Team</a>
       			</li>
       		</ul>
-      		<span class="text-muted"><small>Thu Nov 25 19:48:06 BRT 2021</small></span>	
+      		<span class="text-muted"><small>Fri Nov 26 13:00:41 BRT 2021</small></span>	
       	</div>
       </div>
     </footer>
@@ -448,10 +448,72 @@ Requirements Engineer participates in Requirements Verification and Validation<b
 
     <script type="text/javascript" src="jquery.min.js"></script>
 		<script type="text/javascript" src="maphilight.js"></script>
+
 		<script type="text/javascript">
+			;(function($) {
+				$.fn.rwdImageMaps = function() {
+					var $img = this;
+					var rwdImageMap = function() {
+						$img.each(function() {
+							if (typeof($(this).attr('usemap')) == 'undefined')
+								return;
+							var that = this,
+								$that = $(that);
+
+								var w = $that.attr('width'),
+									h = $that.attr('height');
+								if (!w || !h) {
+									if (!$that.data("ratio")) {
+										var temp = new Image();
+										temp.src = $that.attr('src');
+										$that.data("ratio", temp.width / temp.height);
+									}
+									var ratio = $that.data("ratio");
+									//console.log(ratio);
+									if (!w){
+										w = (h * ratio);
+									}else if (!h) {
+										h = w / ratio;
+									}
+								}
+								var wPercent = $that.width()/100,
+										hPercent = $that.height()/100,
+										map = $that.attr('usemap').replace('#', ''),
+										c = 'coords';
+
+								$('map[name="' + map + '"]').find('area').each(function() {
+									var $this = $(this);
+									if (!$this.data(c))
+										$this.data(c, $this.attr(c));
+
+									var coords = $this.data(c).split(','),
+											coordsPercent = new Array(coords.length);
+
+									for (var i = 0; i < coordsPercent.length; ++i) {
+										if (i % 2 === 0)
+											coordsPercent[i] = parseInt(((coords[i]/w)*100)*wPercent);
+										else
+											coordsPercent[i] = parseInt(((coords[i]/h)*100)*hPercent);
+									}
+									$this.attr(c, coordsPercent.toString());
+								});
+						});
+					};
+					$(window).resize(rwdImageMap).trigger('resize');
+
+					return this;
+				};
+			})(jQuery);
+
 			$(function() {
-		        $('.map').maphilight();
-		    });
+				$('img[usemap]').maphilight();
+				$('img[usemap]').rwdImageMaps(); 
+				
+				$(window).on('resize', function(){
+				  location.reload();
+				});
+			});			
+			
 		</script>
 
 	</body>

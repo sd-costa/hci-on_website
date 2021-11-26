@@ -219,20 +219,20 @@
 				<div class="p-5 rounded" id="ontologymodels">
 					<h2 class="featurette-heading">3. Ontology Models</h2>
 					<p class="lead"><p class="lead">Figure 1 presents the packages of the HCIO Modularization.</p>
-<div class="container-fluid" align="center"><img src="images/HCIO Modularization.png" width="661" class="map" usemap="#HCIO Modularization"><MAP NAME="HCIO Modularization">
+<div class="container-fluid" align="center"><img src="images/HCIO Modularization.png" width="661" class="map img-fluid" usemap="#HCIO Modularization"><map name="HCIO Modularization">
 <area shape="rect" coords="145,146,275,214" href="HCIO.html#HCIO_HC+Interaction_section" title="">
 <area shape="rect" coords="40,241,260,311" href="HCIO.html#HCIO_Interactive+Computer+System_section" title="">
 <area shape="rect" coords="290,243,440,311" href="HCIO.html#HCIO_User_section" title="">
 <area shape="rect" coords="10,104,455,327" href="HCIO.html#HCIO_HCIO_section" title="">
 <area shape="rect" coords="563,193,651,261" href="SysSwO.html#SysSwO_SysSwO_section" title="">
-<area shape="rect" coords="374,10,440,78" href="UFO.html#UFO_UFO_section" title=""></MAP>
+<area shape="rect" coords="374,10,440,78" href="UFO.html#UFO_UFO_section" title=""></map>
 <p align="center" class="lead font-weight-bold">Figure 1. HCIO Modularization.</p></div>
 <p align="justify" class="lead"></p>
 
 <hr class="featurette-divider"><h6 class="featurette-heading" id="HCIO_Interactive+Computer+System_section">3.1.  Interactive Computer System</h6>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 2 presents the conceptual model of the Interactive Computer System subontology.</p>
-<div class="container-fluid" align="center"><img src="images/Interactive Computer System.png" width="1115" class="map" usemap="#Interactive Computer System"><MAP NAME="Interactive Computer System">
+<div class="container-fluid" align="center"><img src="images/Interactive Computer System.png" width="1115" class="map img-fluid" usemap="#Interactive Computer System"><map name="Interactive Computer System">
 <area shape="rect" coords="75,495,265,525" href="SysSwO.html#SysSwO_Complex+Computer+System" title="">
 <area shape="rect" coords="407,780,666,810" href="HCIO.html#HCIO_Complex+Interactive+Computer+System" title="Interactive Computer System composed of others Interactive Computer System">
 <area shape="rect" coords="407,695,607,725" href="HCIO.html#HCIO_Interactive+Computer+System" title="Computer System that combines User Interface, Computer Machine and Loaded Software System Copies, used to process, transform, store, display or transmit information or data by receiving input, and communicating output to Users.">
@@ -265,14 +265,14 @@ Definição ANTIGA: Machine is a hardware equipament able to run programs.">
 <area shape="rect" coords="193,131,319,161" href="UFO.html#UFO_Intrinsic+Moment" title="Intrinsic Moments are moments that inhere in one single individual (e.g., an apple’s color). An example of an intrinsic moment is a Mode (@e.g., John’s desires, intentions, perceptions, symptoms, skills).">
 <area shape="rect" coords="382,163,475,193" href="UFO.html#UFO_Disposition" title="Dispositions are properties (moments) that are only manifested in particular situations and that can also fail to be manifested. When manifested, they are manifested through the occurrence of events. Take for example the disposition of a magnet m to attract metallic material. The object m has this disposition even if it is never manifested, for example, because it is never close to any magnetic material. Nonetheless, m can certainly be said to possess that intrinsic moment, which it shares with other magnets.">
 <area shape="rect" coords="169,560,363,590" href="HCIO.html#HCIO_Interactive+Software+System" title="Software system that includes, among other programs, User Interface Programs.">
-<area shape="rect" coords="703,560,981,590" href="HCIO.html#HCIO_Loaded+Interactive+Software+System+Copy" title="Loaded Software System Copy that is the materialization of an Interactive Software System."></MAP>
+<area shape="rect" coords="703,560,981,590" href="HCIO.html#HCIO_Loaded+Interactive+Software+System+Copy" title="Loaded Software System Copy that is the materialization of an Interactive Software System."></map>
 <p align="center" class="lead font-weight-bold">Figure 2. Interactive Computer System conceptual model.</p></div>
 <p align="justify" class="lead">The Interactive Computer System sub-ontology addresses what an interactive computer system is and its elements, including the user interface. It is mainly an extension of SysSwO (SEON Core Layer). <br/><br/>Interactive Computer System is a subtype of Computer System, and like the last, it combines hardware and software. Concerning hardware, an Interactive Computer System is (the Computer System) composed of a set of Computer Machines and peripheral devices (Hardware Equipment) connected to them. The striking feature of an Interactive Computer System is that it has a User Interface, a complex Object that is composed of Input Equipment and Output Equipment connected to the Computer Machine. If an Output Equipment is part of a User Interface of an Interactive Computer System, then this Interactive Computer System should be constituted of the Computer Machine that connects the Output Equipment. The same applies to Input Equipment. These constraints are addressed by the following axioms:<br/><br/>A1. <code>&forall; oeq: Output Equipment, ui: User Interface, ics: Interactive Computer System partOf (oeq, ui) &and; partOf (ui, ics) &rarr; (&exist; cm: Computer Machine partOf (cm, ics) &and; connectedTo (oeq, cm))</code><br/><br/>A2. <code>&forall; ieq: Input Equipment, ui: User Interface, ics: Interactive Computer System partOf (ieq, ui) &and; partOf (ui, ics) &rarr; (&exist; cm: Computer Machine partOf (cm, ics) &and; connectedTo (ieq, cm))</code><br/><br/>When a Hardware Equipment is both an Input Equipment and an Output Equipment it is said an IO Equipment. Thus:<br/><br/>A3. <code>&forall; he: Hardware Equipment Input Equipment(he) &and; OutputEquipment(he) &rarr; IOEquipment (he)</code><br/><br/>Regarding software, an Interactive Computer System has a set of Software Systems (In- teractive Software System) loaded in its Computer Machines (Loaded Interactive Software System Copies). The programs that constitute these systems are instances of Program. Some of them deal with aspects related to the user interface and, thus, are instances of User Interface Program. Thus, an Interactive Computer System has a User Interface and the copies of the programs loaded in its computer (Loaded User Interface Programs Copy) that handle its User Interface. The following axiom applies:<br/><br/>A4. <code>&forall; ui: User Interface, ics: Interactive Computer System, lissc: Loaded Interactive Software System Copy partOf (ui, ics) &and; has (ics, lissc) &rarr; &exist; luipc: Loaded User Interface Program Copy includes (lissc, luipc) &and; handles (luipc, ui)</code><br/><br/>Interactive Computer Systems can form another Interactive Computer System, which is said a Complex Interactive Computer System.</p>
 
 <hr class="featurette-divider"><h6 class="featurette-heading" id="HCIO_User_section">3.2.  User</h6>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 3 presents the conceptual model of the User subontology.</p>
-<div class="container-fluid" align="center"><img src="images/User.png" width="1178" class="map" usemap="#User"><MAP NAME="User">
+<div class="container-fluid" align="center"><img src="images/User.png" width="1178" class="map img-fluid" usemap="#User"><map name="User">
 <area shape="rect" coords="259,506,547,536" href="HCIO.html#HCIO_Intentional+User+Participation+(User+Action)" title="User participation intentionally performed.">
 <area shape="rect" coords="686,506,873,536" href="HCIO.html#HCIO_User+Initiated+Participation" title="Event in which a User inputs data or information using an Input Equipment.">
 <area shape="rect" coords="181,322,247,353" href="HCIO.html#HCIO_User" title="A Person who interacts with (or is expected to interact with) an Interactive Computer System.">
@@ -296,14 +296,14 @@ A human Physical Agent.">
 <area shape="rect" coords="214,577,362,607" href="HCIO.html#HCIO_User+Initiated+Action" title="Intentional User Action of inputting data or information using an Input Equipment.">
 <area shape="rect" coords="890,475,1080,505" href="HCIO.html#HCIO_Complex+User+Participation" title="Participation composed of two or more User Participations.">
 <area shape="rect" coords="946,430,1125,460" href="HCIO.html#HCIO_Atomic+User+Participation" title="Single User Participation.">
-<area shape="rect" coords="279,414,388,444" href="HCIO.html#HCIO_User+Intention" title="An Intention that inheres in a User, causing him to perform intentional user actions."></MAP>
+<area shape="rect" coords="279,414,388,444" href="HCIO.html#HCIO_User+Intention" title="An Intention that inheres in a User, causing him to perform intentional user actions."></map>
 <p align="center" class="lead font-weight-bold">Figure 3. User conceptual model.</p></div>
 <p align="justify" class="lead">The User sub-ontology focuses on the user and its possible actions when interacting with an interactive computer system.<br/><br/>User is the role played by a Person that participates in a human-computer interaction. Such participation is said a User Participation, which can be either intentional (Intentional User Participation &minus; or simply User Action) or unintentional (Unintentional User Participation).<br/><br/>In terms of UFO, User Participation is an Agent Participation. Intentional User Participation (User Action) is an Action Contribution, i.e., an intentional participation of a User. Intentional User Participations (User Actions) are caused by Intentions (User Intentions) that inhere in the User. As an Intention, User Intention has a Goal (more specifically a User Goal) as its propositional content. User Action, as an intentional participation, is performed by the User in order to achieve a User Goal. User Actions performed by a User can only be caused by User Intentions that inhere in that User. This constraint is addressed by the following axiom:<br/><br/>A5. <code>&forall; user: User, ua: Intentional User Participation (User Action), uint: User Intention participationOf (ua, user) &and; causedBy (ua, uint) &rarr; inheresIn (uint, user)</code><br/><br/>Considering its mereological structure, a User Participation can be an Atomic User Participation or a Complex User Participation, which is composed of others User Participations. In a Complex User Participation, all the User Participations are participations from the same User. Thus:<br/><br/>A6. <code>&forall; cup: Complex User Participation, user: User, up: User Participation participationOf (cup, user) &and; partOf (up, cup) &rarr; participationOf (up, user)</code><br/><br/>In another classification, which considers the nature of participations and is orthogonal to the ones discussed above, User Participations are classified into two disjoint types: User Initiated Participation and User Interpretation. User Initiated Participation refers to an act performed by the user making an input in the system. User Interpretation, in turn, regards interpreting a state of the system. When a User Initiated Participation is intentional, it is said a User Initiated Action.</p>
 
 <hr class="featurette-divider"><h6 class="featurette-heading" id="HCIO_HC+Interaction_section">3.3.  HC Interaction</h6>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 4 presents the conceptual model of the HC Interaction subontology.</p>
-<div class="container-fluid" align="center"><img src="images/HC Interaction.png" width="1604" class="map" usemap="#HC Interaction"><MAP NAME="HC Interaction">
+<div class="container-fluid" align="center"><img src="images/HC Interaction.png" width="1604" class="map img-fluid" usemap="#HC Interaction"><map name="HC Interaction">
 <area shape="rect" coords="461,848,666,878" href="HCIO.html#HCIO_Human-Computer+Interaction" title="An exchange of information (i.e., communication) between a User and an Interactive Computer System via the User Interface.">
 <area shape="rect" coords="685,987,843,1017" href="HCIO.html#HCIO_User+Observable+State" title="A situation (an Observable State) perceivable by Users, typically achieved as the result (output) of a Program Copy Execution, communicated or presented by an Output Equipment.">
 <area shape="rect" coords="1079,594,1237,624" href="SysSwO.html#SysSwO_Loaded+Program+Copy" title="Loaded Program Copy is the materialization of a Program, inhering in a Computer Machine.">
@@ -352,7 +352,7 @@ Definição ANTIGA: Machine is a hardware equipament able to run programs.">
 A human Physical Agent.">
 <area shape="rect" coords="102,864,182,894" href="HCIO.html#HCIO_User+Goal" title="The propositional content of something the User wants to achieve (User Intention).">
 <area shape="rect" coords="25,769,134,799" href="HCIO.html#HCIO_User+Intention" title="An Intention that inheres in a User, causing him to perform intentional user actions.">
-<area shape="rect" coords="886,434,993,464" href="SysSwO.html#SysSwO_Software+Item" title="Piece of software, produced during the software process, not considered a complete Software Product, but an intermediary result."></MAP>
+<area shape="rect" coords="886,434,993,464" href="SysSwO.html#SysSwO_Software+Item" title="Piece of software, produced during the software process, not considered a complete Software Product, but an intermediary result."></map>
 <p align="center" class="lead font-weight-bold">Figure 4. HC Interaction conceptual model.</p></div>
 <p align="justify" class="lead">The HC Interaction sub-ontology links concepts from the other two sub-ontologies to define what a human-computer interaction is.<br/><br/>A Human-Computer Interaction is an interaction between a User and an Interactive Computer System. Thus, a Human-Computer Interaction is composed by a User Participation and an Interactive Computer System Participation, indicating the events performed by both parties in a specific interaction.<br/><br/>As said before (see User Sub-ontology), in terms of UFO, User Participation is an Agent Participation. Interactive Computer System Participation, in turn, is a Complex Object Participation. It is a Complex Event, since it aggregates all events performed by the Interactive Computer System in the context of a single Human-Computer Interaction. It is an Object Participation because, being the Interactive Computer System an Object, its participation is always unintentional.<br/><br/>A User Initiated Participation is performed using one or more Input Equipment. As a result of a User Initiated Participation, a User Input Resulting State is achieved. User Input Resulting State is a Situation representing the data entered by the user before any program execution. This situation triggers Program Copy Executions. Moreover, we can say that User Initiated Participation directly causes Program Copy Execution. Program Copy Execution brings about a Computing Resulting State (internal computer state), which, in turn, can trigger other Program Copy Executions. Thus, a Program Copy Execution can directly cause new Program Copy Executions.<br/><br/>Some Program Copy Executions can bring about a special type of Computing Resulting State, the one that is perceivable by user, said User Observable State. A User Observable State, thus, triggers User Interpretation. Therefore, we say that Program Copy Execution directly causes User Interpretation. In this context, the following axiom applies:<br/><br/>A7. <code>&forall; ui: User Interpretation, uos: User Observable State, pce: Program Copy Execution, uirs: User Input Resulting State, uip: User Initiated Participation triggers (uos, ui) &and; bringsAbout (pce, uos) &and; triggers (uirs, pce) &and; bringsAbout (uip, uirs) &rarr; causes (uip, ui)</code><br/><br/>It is important to say that (A7) does not constrain who are the users involved in the User Initiated Participation and in the User Interpretation, i.e., the User in the User Initiated Participation may be different from the one involved in the User Interpretation.<br/><br/>A User Observable State triggers User Interpretation and is presented by one or more Output Equipment. Thus, Output Equipment supports User Interpretation, i.e.:<br/><br/>A8. <code>&forall; oe: Output Equipment, uos: User Observable State, ui: User Interpretation presents (oe, uos) &and; triggers (uos, ui) &rarr; supports (oe, ui)</code><br/><br/>In a Human-Computer Interaction, both the Input and Output Equipment involved in the interaction should be part of the User Interface of the Interactive Computer System that participates in the interaction.<br/><br/>Since User Initiated Participation typically leads to some processing inside the system that results in an output to the user who can interpret it, we say that User Initiated Participation (indirectly) causes User Interpretation. User Interpretation may cause the User to act again. Thus, User Interpretation may directly cause (in terms of UFO) User Initiated Participations.<br/><br/>When a User Participation is intentional, it means that the User performed it considering some goal (User Goal). Interpretations performed by the user (User Interpretations) may evaluate User Goal achievement. This is a case of goal-driven behavior, in which a cycle of actions (User Participation) are repeated until the user achieves his/her goal (User Initiated Participation (indirectly) causes User Interpretation and User Interpretations (directly) causes User Initiated Participations).<br/><br/>The HC Interaction sub-ontology main purpose is to define what human-computer interaction is. In view of what was discussed, in summary, a Human-Computer Interaction is a Complex Event composed of User Participation and Interactive Computer System Participation. User Participation can involve both User Initiated Participations and User Interpretations. Interactive Computer System Participation regards the set of Program Executions performed by the Interactive Computer System in the interaction.</p>
 </p>					
@@ -638,7 +638,7 @@ User (1..1) participation of (1..*) User Participation<br/>
       				<a class="text-muted" href="team.html">Team</a>
       			</li>
       		</ul>
-      		<span class="text-muted"><small>Thu Nov 25 19:48:05 BRT 2021</small></span>	
+      		<span class="text-muted"><small>Fri Nov 26 13:00:40 BRT 2021</small></span>	
       	</div>
       </div>
     </footer>
@@ -659,10 +659,72 @@ User (1..1) participation of (1..*) User Participation<br/>
 
     <script type="text/javascript" src="jquery.min.js"></script>
 		<script type="text/javascript" src="maphilight.js"></script>
+
 		<script type="text/javascript">
+			;(function($) {
+				$.fn.rwdImageMaps = function() {
+					var $img = this;
+					var rwdImageMap = function() {
+						$img.each(function() {
+							if (typeof($(this).attr('usemap')) == 'undefined')
+								return;
+							var that = this,
+								$that = $(that);
+
+								var w = $that.attr('width'),
+									h = $that.attr('height');
+								if (!w || !h) {
+									if (!$that.data("ratio")) {
+										var temp = new Image();
+										temp.src = $that.attr('src');
+										$that.data("ratio", temp.width / temp.height);
+									}
+									var ratio = $that.data("ratio");
+									//console.log(ratio);
+									if (!w){
+										w = (h * ratio);
+									}else if (!h) {
+										h = w / ratio;
+									}
+								}
+								var wPercent = $that.width()/100,
+										hPercent = $that.height()/100,
+										map = $that.attr('usemap').replace('#', ''),
+										c = 'coords';
+
+								$('map[name="' + map + '"]').find('area').each(function() {
+									var $this = $(this);
+									if (!$this.data(c))
+										$this.data(c, $this.attr(c));
+
+									var coords = $this.data(c).split(','),
+											coordsPercent = new Array(coords.length);
+
+									for (var i = 0; i < coordsPercent.length; ++i) {
+										if (i % 2 === 0)
+											coordsPercent[i] = parseInt(((coords[i]/w)*100)*wPercent);
+										else
+											coordsPercent[i] = parseInt(((coords[i]/h)*100)*hPercent);
+									}
+									$this.attr(c, coordsPercent.toString());
+								});
+						});
+					};
+					$(window).resize(rwdImageMap).trigger('resize');
+
+					return this;
+				};
+			})(jQuery);
+
 			$(function() {
-		        $('.map').maphilight();
-		    });
+				$('img[usemap]').maphilight();
+				$('img[usemap]').rwdImageMaps(); 
+				
+				$(window).on('resize', function(){
+				  location.reload();
+				});
+			});			
+			
 		</script>
 
 	</body>

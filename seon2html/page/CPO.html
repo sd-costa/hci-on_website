@@ -221,7 +221,7 @@
 				<div class="p-5 rounded" id="ontologymodels">
 					<h2 class="featurette-heading">3. Ontology Models</h2>
 					<p class="lead"><p class="lead">Figure 1 presents the conceptual model of the CPO.</p>
-<div class="container-fluid" align="center"><img src="images/CPO.png" width="1062" class="map" usemap="#CPO"><MAP NAME="CPO">
+<div class="container-fluid" align="center"><img src="images/CPO.png" width="1062" class="map img-fluid" usemap="#CPO"><map name="CPO">
 <area shape="rect" coords="695,193,821,240" href="SysSwO.html#SysSwO_Software+Artifact" title="Object intentionally made to serve a given purpose in the context of a software Project or Organization.">
 <area shape="rect" coords="515,335,662,365" href="SysSwO.html#SysSwO_Complex+Sw+Artifact" title="Artifact composed of other Artifacts.">
 <area shape="rect" coords="593,299,729,329" href="SysSwO.html#SysSwO_Atomic+Sw+Artifact" title="Artifact that is not decomposed into other Artifacts.">
@@ -247,7 +247,7 @@
 <area shape="rect" coords="348,598,500,628" href="CPO.html#CPO_Code+Documentation" title="Simple Performed Activity executed for documenting the software Code with useful information.">
 <area shape="rect" coords="789,485,963,515" href="RSRO.html#RSRO_Requirements+Document" title="Document composed of Documented Requirements and related information, as a basis for other technical software processes, including maintenance.">
 <area shape="rect" coords="831,522,963,552" href="DPO.html#DPO_Design+Document" title="Document specifying the design of a software, by depicting the software architecture, components, interfaces and data models, as well as other information regarding the design choices and decisions.">
-<area shape="rect" coords="15,661,127,691" href="CPO.html#CPO_Code+Reviewer" title="Stakeholder responsible for reviewing the Code according to the Requirements Document and Design Document."></MAP>
+<area shape="rect" coords="15,661,127,691" href="CPO.html#CPO_Code+Reviewer" title="Stakeholder responsible for reviewing the Code according to the Requirements Document and Design Document."></map>
 <p align="center" class="lead font-weight-bold">Figure 1. CPO conceptual model.</p></div>
 <p align="justify" class="lead">Coding Process is a Performed Process with the purpose of producing software Code in conformance with the requirements and design decisions established in the previous technical processes (requirements development and design processes). It is composed of a set of Coding activity, when the Programmer uses the requirements and definitions established in the Requirements Document and Design Document for developing and documenting the code. Code Development activity creates the software Code , while Code Documentation changes the Code by adding comments with useful information. Finally, in the Code Review activity, the Code Reviewer reviews the Code searching for errors and non-conformances and produces a Code Review Report.</p>
 </p>					
@@ -398,7 +398,7 @@ Coding Process <>-- Code Review<br/>
       				<a class="text-muted" href="team.html">Team</a>
       			</li>
       		</ul>
-      		<span class="text-muted"><small>Thu Nov 25 19:48:05 BRT 2021</small></span>	
+      		<span class="text-muted"><small>Fri Nov 26 13:00:40 BRT 2021</small></span>	
       	</div>
       </div>
     </footer>
@@ -419,10 +419,72 @@ Coding Process <>-- Code Review<br/>
 
     <script type="text/javascript" src="jquery.min.js"></script>
 		<script type="text/javascript" src="maphilight.js"></script>
+
 		<script type="text/javascript">
+			;(function($) {
+				$.fn.rwdImageMaps = function() {
+					var $img = this;
+					var rwdImageMap = function() {
+						$img.each(function() {
+							if (typeof($(this).attr('usemap')) == 'undefined')
+								return;
+							var that = this,
+								$that = $(that);
+
+								var w = $that.attr('width'),
+									h = $that.attr('height');
+								if (!w || !h) {
+									if (!$that.data("ratio")) {
+										var temp = new Image();
+										temp.src = $that.attr('src');
+										$that.data("ratio", temp.width / temp.height);
+									}
+									var ratio = $that.data("ratio");
+									//console.log(ratio);
+									if (!w){
+										w = (h * ratio);
+									}else if (!h) {
+										h = w / ratio;
+									}
+								}
+								var wPercent = $that.width()/100,
+										hPercent = $that.height()/100,
+										map = $that.attr('usemap').replace('#', ''),
+										c = 'coords';
+
+								$('map[name="' + map + '"]').find('area').each(function() {
+									var $this = $(this);
+									if (!$this.data(c))
+										$this.data(c, $this.attr(c));
+
+									var coords = $this.data(c).split(','),
+											coordsPercent = new Array(coords.length);
+
+									for (var i = 0; i < coordsPercent.length; ++i) {
+										if (i % 2 === 0)
+											coordsPercent[i] = parseInt(((coords[i]/w)*100)*wPercent);
+										else
+											coordsPercent[i] = parseInt(((coords[i]/h)*100)*hPercent);
+									}
+									$this.attr(c, coordsPercent.toString());
+								});
+						});
+					};
+					$(window).resize(rwdImageMap).trigger('resize');
+
+					return this;
+				};
+			})(jQuery);
+
 			$(function() {
-		        $('.map').maphilight();
-		    });
+				$('img[usemap]').maphilight();
+				$('img[usemap]').rwdImageMaps(); 
+				
+				$(window).on('resize', function(){
+				  location.reload();
+				});
+			});			
+			
 		</script>
 
 	</body>

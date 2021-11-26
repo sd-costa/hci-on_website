@@ -222,7 +222,7 @@
 				<div class="p-5 rounded" id="ontologymodels">
 					<h2 class="featurette-heading">3. Ontology Models</h2>
 					<p class="lead"><p class="lead">Figure 1 presents the conceptual model of the RSRO.</p>
-<div class="container-fluid" align="center"><img src="images/RSRO.png" width="1292" class="map" usemap="#RSRO"><MAP NAME="RSRO">
+<div class="container-fluid" align="center"><img src="images/RSRO.png" width="1292" class="map img-fluid" usemap="#RSRO"><map name="RSRO">
 <area shape="rect" coords="267,157,364,187" href="UFO.html#UFO_Goal" title="The propositional content of an Intention.">
 <area shape="rect" coords="77,157,262,187" href="UFO.html#UFO_Function+Universal" title="">
 <area shape="rect" coords="23,110,199,140" href="UFO.html#UFO_Quality+Universal" title="Quality Universals are those universals whose instances are Qualities.">
@@ -250,7 +250,7 @@
 <area shape="rect" coords="510,20,676,50" href="UFO.html#UFO_Mental+Moment" title="">
 <area shape="rect" coords="645,110,749,140" href="UFO.html#UFO_Belief" title="">
 <area shape="rect" coords="1141,691,1237,721" href="RSRO.html#RSRO_Assumption" title="Assumptions describe states-of-affairs in the environment of interest that the Stakeholders believe to be true, i.e., they are the propositional content of Stakeholders' Beliefs. They express the belief that a specific situation exists in the environment.">
-<area shape="rect" coords="808,691,941,721" href="RSRO.html#RSRO_Stakeholder+Belief" title="The belief of Requirements Stakeholders regarding the environment of interest that are described in terms of Assumptions."></MAP>
+<area shape="rect" coords="808,691,941,721" href="RSRO.html#RSRO_Stakeholder+Belief" title="The belief of Requirements Stakeholders regarding the environment of interest that are described in terms of Assumptions."></map>
 <p align="center" class="lead font-weight-bold">Figure 1. RSRO conceptual model.</p></div>
 <p align="justify" class="lead">The main RSRO concept is Requirement. It is a goal, representing the users' needs and expectations (Stakeholder Intention) to be achieved as result of the system development. Requirements can be functional or non-functional. Functional Requirements are the ones defining a function to be available from the target system (e.g. the need for providing a client register or controlling an order). They refer to Software Function Types, i.e. types of functions that the software must provide (e.g., providing a client register, controlling an order). Non-Functional Requirements define criteria or capabilities for the system (e.g. being easy to operate, being in conformance with a standard). A special type of NFR is Product Quality Requirement, which refers to Quality Characteristics that the product shall present in some degree, such as reliability, usability, efficiency.<br/>Requirements are documented by Requirement Artifacts, an Information Item that describes the Requirement in a proper way. The Requirements Document is composed of Requirement Artifacts and related information (such as models, information sources and varied descriptions). This Document is under the responsibility of the Requirements Engineer, a Stakeholder that conducts the requirements development activities. The Requirements Stakeholder represents the Stakeholders from whom the Requirements are collected and, consequently, are the ones interested in the Requirement Artifacts.</p>
 </p>					
@@ -460,7 +460,7 @@ Requirement (1..*) propositional content of (1..*) Stakeholder Intention<br/>
       				<a class="text-muted" href="team.html">Team</a>
       			</li>
       		</ul>
-      		<span class="text-muted"><small>Thu Nov 25 19:48:06 BRT 2021</small></span>	
+      		<span class="text-muted"><small>Fri Nov 26 13:00:41 BRT 2021</small></span>	
       	</div>
       </div>
     </footer>
@@ -481,10 +481,72 @@ Requirement (1..*) propositional content of (1..*) Stakeholder Intention<br/>
 
     <script type="text/javascript" src="jquery.min.js"></script>
 		<script type="text/javascript" src="maphilight.js"></script>
+
 		<script type="text/javascript">
+			;(function($) {
+				$.fn.rwdImageMaps = function() {
+					var $img = this;
+					var rwdImageMap = function() {
+						$img.each(function() {
+							if (typeof($(this).attr('usemap')) == 'undefined')
+								return;
+							var that = this,
+								$that = $(that);
+
+								var w = $that.attr('width'),
+									h = $that.attr('height');
+								if (!w || !h) {
+									if (!$that.data("ratio")) {
+										var temp = new Image();
+										temp.src = $that.attr('src');
+										$that.data("ratio", temp.width / temp.height);
+									}
+									var ratio = $that.data("ratio");
+									//console.log(ratio);
+									if (!w){
+										w = (h * ratio);
+									}else if (!h) {
+										h = w / ratio;
+									}
+								}
+								var wPercent = $that.width()/100,
+										hPercent = $that.height()/100,
+										map = $that.attr('usemap').replace('#', ''),
+										c = 'coords';
+
+								$('map[name="' + map + '"]').find('area').each(function() {
+									var $this = $(this);
+									if (!$this.data(c))
+										$this.data(c, $this.attr(c));
+
+									var coords = $this.data(c).split(','),
+											coordsPercent = new Array(coords.length);
+
+									for (var i = 0; i < coordsPercent.length; ++i) {
+										if (i % 2 === 0)
+											coordsPercent[i] = parseInt(((coords[i]/w)*100)*wPercent);
+										else
+											coordsPercent[i] = parseInt(((coords[i]/h)*100)*hPercent);
+									}
+									$this.attr(c, coordsPercent.toString());
+								});
+						});
+					};
+					$(window).resize(rwdImageMap).trigger('resize');
+
+					return this;
+				};
+			})(jQuery);
+
 			$(function() {
-		        $('.map').maphilight();
-		    });
+				$('img[usemap]').maphilight();
+				$('img[usemap]').rwdImageMaps(); 
+				
+				$(window).on('resize', function(){
+				  location.reload();
+				});
+			});			
+			
 		</script>
 
 	</body>

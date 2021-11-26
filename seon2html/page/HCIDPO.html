@@ -220,7 +220,7 @@
 				<div class="p-5 rounded" id="ontologymodels">
 					<h2 class="featurette-heading">3. Ontology Models</h2>
 					<p class="lead"><p class="lead">Figure 1 presents the conceptual model of the HCIDPO.</p>
-<div class="container-fluid" align="center"><img src="images/HCIDPO.png" width="1544" class="map" usemap="#HCIDPO"><MAP NAME="HCIDPO">
+<div class="container-fluid" align="center"><img src="images/HCIDPO.png" width="1544" class="map img-fluid" usemap="#HCIDPO"><map name="HCIDPO">
 <area shape="rect" coords="337,285,474,315" href="SPO.html#SPO_Performed+Process" title="Complex Action, composed of other processes or activities, performed in a specific Time Interval, for reaching a goal in a Project or Organization.">
 <area shape="rect" coords="286,395,475,425" href="SPO.html#SPO_Performed+Specific+Process" title="Performed Process that is part of the General Performed Process of a Project or Organization, necessarily composed of at least two Performed Activities.">
 <area shape="rect" coords="623,395,812,425" href="SPO.html#SPO_Performed+General+Process" title="The overall Performed Process executed in a specific Project or Organization, which is necessarily composed of Specific Performed Processes.">
@@ -261,7 +261,7 @@
 <area shape="rect" coords="826,2357,1041,2402" href="HCIDPO.html#HCIDPO_Long-Term+Monitoring+Results" title="">
 <area shape="rect" coords="1169,2199,1324,2229" href="HCIDPO.html#HCIDPO_Usability-Test+Report" title="">
 <area shape="rect" coords="1227,2282,1323,2312" href="HCIDPO.html#HCIDPO_Field+Report" title="">
-<area shape="rect" coords="1223,2365,1363,2395" href="HCIDPO.html#HCIDPO_User+Survey+Report" title=""></MAP>
+<area shape="rect" coords="1223,2365,1363,2395" href="HCIDPO.html#HCIDPO_User+Survey+Report" title=""></map>
 <p align="center" class="lead font-weight-bold">Figure 1. HCIDPO conceptual model.</p></div>
 <p align="justify" class="lead"></p>
 </p>					
@@ -520,7 +520,7 @@ Produce Design Solutions (1..1) created (1..1) User-system Interaction Specifica
       				<a class="text-muted" href="team.html">Team</a>
       			</li>
       		</ul>
-      		<span class="text-muted"><small>Thu Nov 25 19:48:05 BRT 2021</small></span>	
+      		<span class="text-muted"><small>Fri Nov 26 13:00:40 BRT 2021</small></span>	
       	</div>
       </div>
     </footer>
@@ -541,10 +541,72 @@ Produce Design Solutions (1..1) created (1..1) User-system Interaction Specifica
 
     <script type="text/javascript" src="jquery.min.js"></script>
 		<script type="text/javascript" src="maphilight.js"></script>
+
 		<script type="text/javascript">
+			;(function($) {
+				$.fn.rwdImageMaps = function() {
+					var $img = this;
+					var rwdImageMap = function() {
+						$img.each(function() {
+							if (typeof($(this).attr('usemap')) == 'undefined')
+								return;
+							var that = this,
+								$that = $(that);
+
+								var w = $that.attr('width'),
+									h = $that.attr('height');
+								if (!w || !h) {
+									if (!$that.data("ratio")) {
+										var temp = new Image();
+										temp.src = $that.attr('src');
+										$that.data("ratio", temp.width / temp.height);
+									}
+									var ratio = $that.data("ratio");
+									//console.log(ratio);
+									if (!w){
+										w = (h * ratio);
+									}else if (!h) {
+										h = w / ratio;
+									}
+								}
+								var wPercent = $that.width()/100,
+										hPercent = $that.height()/100,
+										map = $that.attr('usemap').replace('#', ''),
+										c = 'coords';
+
+								$('map[name="' + map + '"]').find('area').each(function() {
+									var $this = $(this);
+									if (!$this.data(c))
+										$this.data(c, $this.attr(c));
+
+									var coords = $this.data(c).split(','),
+											coordsPercent = new Array(coords.length);
+
+									for (var i = 0; i < coordsPercent.length; ++i) {
+										if (i % 2 === 0)
+											coordsPercent[i] = parseInt(((coords[i]/w)*100)*wPercent);
+										else
+											coordsPercent[i] = parseInt(((coords[i]/h)*100)*hPercent);
+									}
+									$this.attr(c, coordsPercent.toString());
+								});
+						});
+					};
+					$(window).resize(rwdImageMap).trigger('resize');
+
+					return this;
+				};
+			})(jQuery);
+
 			$(function() {
-		        $('.map').maphilight();
-		    });
+				$('img[usemap]').maphilight();
+				$('img[usemap]').rwdImageMaps(); 
+				
+				$(window).on('resize', function(){
+				  location.reload();
+				});
+			});			
+			
 		</script>
 
 	</body>

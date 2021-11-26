@@ -219,7 +219,7 @@
 				<div class="p-5 rounded" id="ontologymodels">
 					<h2 class="featurette-heading">3. Ontology Models</h2>
 					<p class="lead"><p class="lead">Figure 1 presents the conceptual model of the DPO.</p>
-<div class="container-fluid" align="center"><img src="images/DPO.png" width="1182" class="map" usemap="#DPO"><MAP NAME="DPO">
+<div class="container-fluid" align="center"><img src="images/DPO.png" width="1182" class="map img-fluid" usemap="#DPO"><map name="DPO">
 <area shape="rect" coords="740,193,866,240" href="SysSwO.html#SysSwO_Software+Artifact" title="Object intentionally made to serve a given purpose in the context of a software Project or Organization.">
 <area shape="rect" coords="559,335,706,365" href="SysSwO.html#SysSwO_Complex+Sw+Artifact" title="Artifact composed of other Artifacts.">
 <area shape="rect" coords="637,299,773,329" href="SysSwO.html#SysSwO_Atomic+Sw+Artifact" title="Artifact that is not decomposed into other Artifacts.">
@@ -259,7 +259,7 @@
 <area shape="rect" coords="575,851,766,881" href="DPO.html#DPO_User+Interface+Specification" title="Interface Specification focusing on the human-computer interaction.">
 <area shape="rect" coords="309,851,464,881" href="DPO.html#DPO_User+Interface+Design" title="Activity for specifying the User Interfaces in detail.">
 <area shape="rect" coords="945,982,1146,1012" href="DPO.html#DPO_Design+Evaluation+Document" title="Document registering the issues identified in a Design Document evaluation.">
-<area shape="rect" coords="710,677,833,707" href="DPO.html#DPO_Data+Definitions" title="Information Item describing the high-level choices of how the software will manage data."></MAP>
+<area shape="rect" coords="710,677,833,707" href="DPO.html#DPO_Data+Definitions" title="Information Item describing the high-level choices of how the software will manage data."></map>
 <p align="center" class="lead font-weight-bold">Figure 1. DPO conceptual model.</p></div>
 <p align="justify" class="lead">The Design Process is a Process with the purpose of defining the architecture, elements, interfaces, and other characteristics of a software, aiming at its implementation.<br/>Some notions are important for this process. Software Architecture is a model describing the fundamental structures of a software. It is composed of Architectural Elements, which can be a Component, describing a software module, or a Connector, connecting two or more components. Architectural Elements have Interfaces, which can be internal or external. The Design is a refinement process involving several design choices. It starts defining an architecture and follows by detailing each element to the extent it can be implemented.<br/>The Design Process is composed of four main Activities. (1) Architectural Design makes the high-level design choices, defining a Software Architecture and involved elements. Its three sub-activities are Architecture Development, for producing the architecture and specifying its components and connectors; Interface High-level Design, for specifying the interfaces between components and with external elements (users or other systems); and Data High-level Design, for establishing the high-level choices regarding the software data. (2) Detailed Design refines a preliminary software design to the extent that it is sufficiently complete to be implemented. It has four sub-activities: Component Design, for refining each architectural component; Component Interface Design, for detailing each software interface; User Interface Design, specifically for detailing the user interfaces; and Data Design, for producing a detailed Data Model for data storage and management. (3) Design Documentation registers the architectural and detailed design choices made, producing a Design Document. (4) Finally, Design Evaluation evaluates a Design Document, registering the identified issues.<br/>The process has two main Stakeholders, the Software Architect, responsible for making the high-level design choices, and establishing a software architecture; and the Designer, responsible for making the detailed design choices.</p>
 </p>					
@@ -561,7 +561,7 @@ User Interface Design creates User Interface Specification<br/>
       				<a class="text-muted" href="team.html">Team</a>
       			</li>
       		</ul>
-      		<span class="text-muted"><small>Thu Nov 25 19:48:05 BRT 2021</small></span>	
+      		<span class="text-muted"><small>Fri Nov 26 13:00:40 BRT 2021</small></span>	
       	</div>
       </div>
     </footer>
@@ -582,10 +582,72 @@ User Interface Design creates User Interface Specification<br/>
 
     <script type="text/javascript" src="jquery.min.js"></script>
 		<script type="text/javascript" src="maphilight.js"></script>
+
 		<script type="text/javascript">
+			;(function($) {
+				$.fn.rwdImageMaps = function() {
+					var $img = this;
+					var rwdImageMap = function() {
+						$img.each(function() {
+							if (typeof($(this).attr('usemap')) == 'undefined')
+								return;
+							var that = this,
+								$that = $(that);
+
+								var w = $that.attr('width'),
+									h = $that.attr('height');
+								if (!w || !h) {
+									if (!$that.data("ratio")) {
+										var temp = new Image();
+										temp.src = $that.attr('src');
+										$that.data("ratio", temp.width / temp.height);
+									}
+									var ratio = $that.data("ratio");
+									//console.log(ratio);
+									if (!w){
+										w = (h * ratio);
+									}else if (!h) {
+										h = w / ratio;
+									}
+								}
+								var wPercent = $that.width()/100,
+										hPercent = $that.height()/100,
+										map = $that.attr('usemap').replace('#', ''),
+										c = 'coords';
+
+								$('map[name="' + map + '"]').find('area').each(function() {
+									var $this = $(this);
+									if (!$this.data(c))
+										$this.data(c, $this.attr(c));
+
+									var coords = $this.data(c).split(','),
+											coordsPercent = new Array(coords.length);
+
+									for (var i = 0; i < coordsPercent.length; ++i) {
+										if (i % 2 === 0)
+											coordsPercent[i] = parseInt(((coords[i]/w)*100)*wPercent);
+										else
+											coordsPercent[i] = parseInt(((coords[i]/h)*100)*hPercent);
+									}
+									$this.attr(c, coordsPercent.toString());
+								});
+						});
+					};
+					$(window).resize(rwdImageMap).trigger('resize');
+
+					return this;
+				};
+			})(jQuery);
+
 			$(function() {
-		        $('.map').maphilight();
-		    });
+				$('img[usemap]').maphilight();
+				$('img[usemap]').rwdImageMaps(); 
+				
+				$(window).on('resize', function(){
+				  location.reload();
+				});
+			});			
+			
 		</script>
 
 	</body>

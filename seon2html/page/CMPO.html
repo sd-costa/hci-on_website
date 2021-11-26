@@ -220,7 +220,7 @@
 				<div class="p-5 rounded" id="ontologymodels">
 					<h2 class="featurette-heading">3. Ontology Models</h2>
 					<p class="lead"><p class="lead">Figure 1 presents the conceptual model of the CMPO.</p>
-<div class="container-fluid" align="center"><img src="images/CMPO.png" width="1475" class="map" usemap="#CMPO"><MAP NAME="CMPO">
+<div class="container-fluid" align="center"><img src="images/CMPO.png" width="1475" class="map img-fluid" usemap="#CMPO"><map name="CMPO">
 <area shape="rect" coords="809,193,935,240" href="SysSwO.html#SysSwO_Software+Artifact" title="Object intentionally made to serve a given purpose in the context of a software Project or Organization.">
 <area shape="rect" coords="630,335,777,365" href="SysSwO.html#SysSwO_Complex+Sw+Artifact" title="Artifact composed of other Artifacts.">
 <area shape="rect" coords="708,299,844,329" href="SysSwO.html#SysSwO_Atomic+Sw+Artifact" title="Artifact that is not decomposed into other Artifacts.">
@@ -275,7 +275,7 @@
 <area shape="rect" coords="1330,838,1430,868" href="CMPO.html#CMPO_Reviewed+CR" title="Change Request reviewed to check if the modifications done are correct.">
 <area shape="rect" coords="1381,879,1465,909" href="CMPO.html#CMPO_Closed+CR" title="Change Request closed after solved, reviewed and approved.">
 <area shape="rect" coords="415,962,588,992" href="CMPO.html#CMPO_Change+Request+Closing" title="Activity for closing a reviewed and approved Change Request.">
-<area shape="rect" coords="1119,121,1228,151" href="UFO.html#UFO_Object" title="Non-agentive substantial individuals. Objects can be Physical or Social."></MAP>
+<area shape="rect" coords="1119,121,1228,151" href="UFO.html#UFO_Object" title="Non-agentive substantial individuals. Objects can be Physical or Social."></map>
 <p align="center" class="lead font-weight-bold">Figure 1. CMPO conceptual model.</p></div>
 <p align="justify" class="lead">The Configuration Management (CM) Process is a Process with the purpose of conducting the activities related to software configuration management, ensuring the completeness and correctness of software Configuration Items.<br/>Some notions are important for this process. Item is anything whose configuration may be managed (such as an artifact, tool, or process description). Configuration Item (CI) is an Item whose configuration is being managed. The most important type of CI in this context is the Artifact CI, an Artifact whose configuration is being managed, and, like so, subject of Change Requests. A CI bears Versions defining each of its important releases. When a Version of an Artifact CI is modified in a Change Control process, an Artifact Copy, based on the desired Version, is created to be modified and then gives rise to a new Version of that Artifact CI. Finally, Baselines are Information Items embracing a set of CIs' Versions at a specific time in the product's life.<br/>The CM Process is composed of five Activities: (1) Configuration Management Planning plans the Configuration Management Process creating the Configuration Management Plan, and including the activities for Configuration Management System Establishment and Configuration Items Identification. (2) Change Control formally controls the modification of CIs supported by an evolving Change Request artifact. Change Control is composed of five activities: Change Requesting, to someone communicate a request for a change; Request Evaluation, an evaluation to authorize or reject a Change Request; Change Accomplishment, for implementing the authorized changes in a version controlled context; Change Review, for approving the changes done if they were made as planned; and Change Request Closing, for finishing the Change Request. (3) Baseline Establishment creates Baselines embracing planned sets of CIs' Versions. (4) Configuration Auditing verifies the completeness, integrity and conformity of Baselines and Deliverable Products, registering nonconformities as needed. (5) Finally, Release Management and Delivery manages the building, releasing and delivering of products to the clients.<br/>Considering Stakeholders, the Configuration Manager is the main responsible for the process. Different roles apply for specific activities: Change Requester, Change Request Evaluator, Change Implementer, Change Reviewer and Configuration Auditor.</p>
 </p>					
@@ -698,7 +698,7 @@ Artifact Copy (0..*) based on (1..1) Version<br/>
       				<a class="text-muted" href="team.html">Team</a>
       			</li>
       		</ul>
-      		<span class="text-muted"><small>Thu Nov 25 19:48:05 BRT 2021</small></span>	
+      		<span class="text-muted"><small>Fri Nov 26 13:00:40 BRT 2021</small></span>	
       	</div>
       </div>
     </footer>
@@ -719,10 +719,72 @@ Artifact Copy (0..*) based on (1..1) Version<br/>
 
     <script type="text/javascript" src="jquery.min.js"></script>
 		<script type="text/javascript" src="maphilight.js"></script>
+
 		<script type="text/javascript">
+			;(function($) {
+				$.fn.rwdImageMaps = function() {
+					var $img = this;
+					var rwdImageMap = function() {
+						$img.each(function() {
+							if (typeof($(this).attr('usemap')) == 'undefined')
+								return;
+							var that = this,
+								$that = $(that);
+
+								var w = $that.attr('width'),
+									h = $that.attr('height');
+								if (!w || !h) {
+									if (!$that.data("ratio")) {
+										var temp = new Image();
+										temp.src = $that.attr('src');
+										$that.data("ratio", temp.width / temp.height);
+									}
+									var ratio = $that.data("ratio");
+									//console.log(ratio);
+									if (!w){
+										w = (h * ratio);
+									}else if (!h) {
+										h = w / ratio;
+									}
+								}
+								var wPercent = $that.width()/100,
+										hPercent = $that.height()/100,
+										map = $that.attr('usemap').replace('#', ''),
+										c = 'coords';
+
+								$('map[name="' + map + '"]').find('area').each(function() {
+									var $this = $(this);
+									if (!$this.data(c))
+										$this.data(c, $this.attr(c));
+
+									var coords = $this.data(c).split(','),
+											coordsPercent = new Array(coords.length);
+
+									for (var i = 0; i < coordsPercent.length; ++i) {
+										if (i % 2 === 0)
+											coordsPercent[i] = parseInt(((coords[i]/w)*100)*wPercent);
+										else
+											coordsPercent[i] = parseInt(((coords[i]/h)*100)*hPercent);
+									}
+									$this.attr(c, coordsPercent.toString());
+								});
+						});
+					};
+					$(window).resize(rwdImageMap).trigger('resize');
+
+					return this;
+				};
+			})(jQuery);
+
 			$(function() {
-		        $('.map').maphilight();
-		    });
+				$('img[usemap]').maphilight();
+				$('img[usemap]').rwdImageMaps(); 
+				
+				$(window).on('resize', function(){
+				  location.reload();
+				});
+			});			
+			
 		</script>
 
 	</body>

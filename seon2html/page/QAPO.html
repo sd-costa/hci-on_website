@@ -218,7 +218,7 @@
 				<div class="p-5 rounded" id="ontologymodels">
 					<h2 class="featurette-heading">3. Ontology Models</h2>
 					<p class="lead"><p class="lead">Figure 1 presents the conceptual model of the QAPO.</p>
-<div class="container-fluid" align="center"><img src="images/QAPO.png" width="1066" class="map" usemap="#QAPO"><MAP NAME="QAPO">
+<div class="container-fluid" align="center"><img src="images/QAPO.png" width="1066" class="map img-fluid" usemap="#QAPO"><map name="QAPO">
 <area shape="rect" coords="724,196,850,243" href="SysSwO.html#SysSwO_Software+Artifact" title="Object intentionally made to serve a given purpose in the context of a software Project or Organization.">
 <area shape="rect" coords="539,337,686,367" href="SysSwO.html#SysSwO_Complex+Sw+Artifact" title="Artifact composed of other Artifacts.">
 <area shape="rect" coords="622,301,758,331" href="SysSwO.html#SysSwO_Atomic+Sw+Artifact" title="Artifact that is not decomposed into other Artifacts.">
@@ -255,7 +255,7 @@
 <area shape="rect" coords="795,618,928,656" href="QAPO.html#QAPO_Evaluated+Process" title="Process objectively evaluated.">
 <area shape="rect" coords="63,603,165,633" href="EO.html#EO_Project+Team" title="">
 <area shape="rect" coords="24,289,156,319" href="SPO.html#SPO_Team+Stakeholder" title="Team interested or affected by the process activities or results.">
-<area shape="rect" coords="56,329,197,359" href="SPO.html#SPO_Person+Stakeholder" title="Person interested or affected by the process activities or their results."></MAP>
+<area shape="rect" coords="56,329,197,359" href="SPO.html#SPO_Person+Stakeholder" title="Person interested or affected by the process activities or their results."></map>
 <p align="center" class="lead font-weight-bold">Figure 1. QAPO conceptual model.</p></div>
 <p align="justify" class="lead">The Quality Assurance Process is a Process with the purpose of conducting the activities related to software quality assurance, assessing and assuring adherence of the performed processes and produced artifacts to the applicable requirements. It is composed of three main activities. (1) Quality Assurance Planning plans the quality assurance activities, resulting in a Quality Assurance Plan. (2) Adherence Evaluation objectively evaluates the adherence of processes and products to the applicable requirements, registering the identified issues. It has three sub-actvities: Artifact Evaluation, for evaluating the adherence of products and deliverables; Process Evaluation, for evaluating the adherence of processes and activities; and Noncompliance Identification, for registering the noncompliances identified in processes and artifacts. (3) Noncompliance Control manages the registered noncompliances until their effective resolution. It is decomposed into two sub-activities: Noncompliance Resolution, for analyzing a Noncompliance, planning and executing the applicable Corrective Actions to its resolution; and Noncompliance Closing, for finishing a noncompliance once it is satisfactorily solved.<br/>The process involves four Stakeholders: the Quality Auditor, who is responsible for conducting the objective evaluations; the Noncompliance Responsible, who is assigned for solving a noncompliance; the Project Manager, who is in charge of planning the Quality Assurance Process; and Project Team, who is involved in the objective evaluations of its project.</p>
 </p>					
@@ -473,7 +473,7 @@ Quality Auditor is in charge of Noncompliance Control<br/>
       				<a class="text-muted" href="team.html">Team</a>
       			</li>
       		</ul>
-      		<span class="text-muted"><small>Thu Nov 25 19:48:05 BRT 2021</small></span>	
+      		<span class="text-muted"><small>Fri Nov 26 13:00:40 BRT 2021</small></span>	
       	</div>
       </div>
     </footer>
@@ -494,10 +494,72 @@ Quality Auditor is in charge of Noncompliance Control<br/>
 
     <script type="text/javascript" src="jquery.min.js"></script>
 		<script type="text/javascript" src="maphilight.js"></script>
+
 		<script type="text/javascript">
+			;(function($) {
+				$.fn.rwdImageMaps = function() {
+					var $img = this;
+					var rwdImageMap = function() {
+						$img.each(function() {
+							if (typeof($(this).attr('usemap')) == 'undefined')
+								return;
+							var that = this,
+								$that = $(that);
+
+								var w = $that.attr('width'),
+									h = $that.attr('height');
+								if (!w || !h) {
+									if (!$that.data("ratio")) {
+										var temp = new Image();
+										temp.src = $that.attr('src');
+										$that.data("ratio", temp.width / temp.height);
+									}
+									var ratio = $that.data("ratio");
+									//console.log(ratio);
+									if (!w){
+										w = (h * ratio);
+									}else if (!h) {
+										h = w / ratio;
+									}
+								}
+								var wPercent = $that.width()/100,
+										hPercent = $that.height()/100,
+										map = $that.attr('usemap').replace('#', ''),
+										c = 'coords';
+
+								$('map[name="' + map + '"]').find('area').each(function() {
+									var $this = $(this);
+									if (!$this.data(c))
+										$this.data(c, $this.attr(c));
+
+									var coords = $this.data(c).split(','),
+											coordsPercent = new Array(coords.length);
+
+									for (var i = 0; i < coordsPercent.length; ++i) {
+										if (i % 2 === 0)
+											coordsPercent[i] = parseInt(((coords[i]/w)*100)*wPercent);
+										else
+											coordsPercent[i] = parseInt(((coords[i]/h)*100)*hPercent);
+									}
+									$this.attr(c, coordsPercent.toString());
+								});
+						});
+					};
+					$(window).resize(rwdImageMap).trigger('resize');
+
+					return this;
+				};
+			})(jQuery);
+
 			$(function() {
-		        $('.map').maphilight();
-		    });
+				$('img[usemap]').maphilight();
+				$('img[usemap]').rwdImageMaps(); 
+				
+				$(window).on('resize', function(){
+				  location.reload();
+				});
+			});			
+			
 		</script>
 
 	</body>

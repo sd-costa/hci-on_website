@@ -864,7 +864,7 @@ public class PageWriter {
 			} else if (diag.getType() == DiagType.OTHER) {
 				introText = name;
 				labelText = name;
-				image = "<img class=\"img-fluid\" src=\"images/" + diag.getName() + ".png\">";
+				image = "<img class=\"map img-fluid\" src=\"images/" + diag.getName() + ".png\">";
 			} else { // Type == IGNORE
 				continue; // do nothing
 			}
@@ -887,7 +887,7 @@ public class PageWriter {
 
 	/* Creates the html IMG code (defining dimensions) and the MAP code. */
 	private String parseImage(Diagram diagram) {
-		String image = "<img src=\"images/@diagram.png\" width=\"@width\" class=\"map\" usemap=\"#@diagram\">";
+		String image = "<img src=\"images/@diagram.png\" width=\"@width\" class=\"map img-fluid\" usemap=\"#@diagram\">";
 		IDiagram aDiagram = diagram.getAstahDiagram();
 		image = image.replace("@diagram", diagram.getName());
 		image = image.replace("@width", String.valueOf(Math.round(aDiagram.getBoundRect().getWidth())));
@@ -898,7 +898,7 @@ public class PageWriter {
 	 * information is not considered in the SEON Model. */
 	private String parseMap(Diagram diagram) {
 		String AREA = "\n<area shape=\"rect\" coords=\"@coords\" href=\"@reference\" title=\"@definition\">";
-		String mapcode = "<MAP NAME=\"" + diagram.getName() + "\">";
+		String mapcode = "<map name=\"" + diagram.getName() + "\">";
 		IDiagram aDiagram = diagram.getAstahDiagram();
 		try {
 			// For Conceptual Model diagrams
@@ -960,7 +960,7 @@ public class PageWriter {
 		} catch (InvalidUsingException e) {
 			e.printStackTrace();
 		}
-		return mapcode + "</MAP>";
+		return mapcode + "</map>";
 	}
 
 	/* Returns the String Coords of a html image MAP. */

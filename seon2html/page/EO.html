@@ -218,18 +218,18 @@
 				<div class="p-5 rounded" id="ontologymodels">
 					<h2 class="featurette-heading">3. Ontology Models</h2>
 					<p class="lead"><p class="lead">Figure 1 presents the packages of the Teams.</p>
-<div class="container-fluid" align="center"><img src="images/Teams.png" width="1101" class="map" usemap="#Teams"><MAP NAME="Teams"></MAP>
+<div class="container-fluid" align="center"><img src="images/Teams.png" width="1101" class="map img-fluid" usemap="#Teams"><map name="Teams"></map>
 <p align="center" class="lead font-weight-bold">Figure 1. Teams.</p></div>
 <p align="justify" class="lead">Project Team<br/>Organizational Team<br/>Team Membership</p>
 <p class="lead">Figure 2 presents the packages of the Job Plan and Roles.</p>
-<div class="container-fluid" align="center"><img src="images/Job Plan and Roles.png" width="734" class="map" usemap="#Job Plan and Roles"><MAP NAME="Job Plan and Roles"></MAP>
+<div class="container-fluid" align="center"><img src="images/Job Plan and Roles.png" width="734" class="map img-fluid" usemap="#Job Plan and Roles"><map name="Job Plan and Roles"></map>
 <p align="center" class="lead font-weight-bold">Figure 2. Job Plan and Roles.</p></div>
 <p align="justify" class="lead"></p>
 
 <hr class="featurette-divider"><h6 class="featurette-heading" id="EO_Human+Resource+Management_section">3.1.  Human Resource Management</h6>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 3 presents the conceptual model of the HR Management subontology.</p>
-<div class="container-fluid" align="center"><img src="images/HR Management.png" width="1310" class="map" usemap="#HR Management"><MAP NAME="HR Management">
+<div class="container-fluid" align="center"><img src="images/HR Management.png" width="1310" class="map img-fluid" usemap="#HR Management"><map name="HR Management">
 <area shape="rect" coords="494,79,606,115" href="UFO.html#UFO_Physical+Agent" title="">
 <area shape="rect" coords="511,154,597,190" href="UFO.html#UFO_Person" title="Same as UFO::Human Agent
 A human Physical Agent.">
@@ -249,14 +249,14 @@ A Social Agent involving people and other agents and facilities with an arrangem
 <area shape="rect" coords="133,33,288,69" href="EO.html#EO_Human+Resource+Role" title="">
 <area shape="rect" coords="510,17,642,53" href="EO.html#EO_Employment+Type" title="">
 <area shape="rect" coords="1050,525,1226,561" href="EO.html#EO_Organizational+Unit+Type" title="">
-<area shape="rect" coords="436,525,588,561" href="EO.html#EO_OU+Assignment+Type" title=""></MAP>
+<area shape="rect" coords="436,525,588,561" href="EO.html#EO_OU+Assignment+Type" title=""></map>
 <p align="center" class="lead font-weight-bold">Figure 3. HR Management conceptual model.</p></div>
 <p align="justify" class="lead"></p>
 
 <hr class="featurette-divider"><h6 class="featurette-heading" id="EO_Organizational+Structure_section">3.2.  Organizational Structure</h6>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 4 presents the conceptual model of the Organizational Structure subontology.</p>
-<div class="container-fluid" align="center"><img src="images/Organizational Structure.png" width="1216" class="map" usemap="#Organizational Structure"><MAP NAME="Organizational Structure">
+<div class="container-fluid" align="center"><img src="images/Organizational Structure.png" width="1216" class="map img-fluid" usemap="#Organizational Structure"><map name="Organizational Structure">
 <area shape="rect" coords="504,126,629,162" href="EO.html#EO_Organization" title="Same as UFO::Organization.
 A Social Agent involving people and other agents and facilities with an arrangement of responsibilities, authorities and relationships.">
 <area shape="rect" coords="356,223,504,259" href="EO.html#EO_Formal+Organization" title="">
@@ -269,7 +269,7 @@ A Social Agent involving people and other agents and facilities with an arrangem
 <area shape="rect" coords="154,487,421,517" href="EO.html#EO_Simple+Standalone+Formal+Organization" title="">
 <area shape="rect" coords="410,487,690,517" href="EO.html#EO_Complex+Standalone+Formal+Organization" title="">
 <area shape="rect" coords="857,411,1045,441" href="EO.html#EO_Simple+Organizational+Unit" title="">
-<area shape="rect" coords="736,347,937,377" href="EO.html#EO_Complex+Organizational+Unit" title=""></MAP>
+<area shape="rect" coords="736,347,937,377" href="EO.html#EO_Complex+Organizational+Unit" title=""></map>
 <p align="center" class="lead font-weight-bold">Figure 4. Organizational Structure conceptual model.</p></div>
 <p align="justify" class="lead"></p>
 </p>					
@@ -603,7 +603,7 @@ Team Member (1..1) allocates (1..*) Team Membership  &lt&ltmediation&gt&gt<br/>
       				<a class="text-muted" href="team.html">Team</a>
       			</li>
       		</ul>
-      		<span class="text-muted"><small>Thu Nov 25 19:48:05 BRT 2021</small></span>	
+      		<span class="text-muted"><small>Fri Nov 26 13:00:40 BRT 2021</small></span>	
       	</div>
       </div>
     </footer>
@@ -624,10 +624,72 @@ Team Member (1..1) allocates (1..*) Team Membership  &lt&ltmediation&gt&gt<br/>
 
     <script type="text/javascript" src="jquery.min.js"></script>
 		<script type="text/javascript" src="maphilight.js"></script>
+
 		<script type="text/javascript">
+			;(function($) {
+				$.fn.rwdImageMaps = function() {
+					var $img = this;
+					var rwdImageMap = function() {
+						$img.each(function() {
+							if (typeof($(this).attr('usemap')) == 'undefined')
+								return;
+							var that = this,
+								$that = $(that);
+
+								var w = $that.attr('width'),
+									h = $that.attr('height');
+								if (!w || !h) {
+									if (!$that.data("ratio")) {
+										var temp = new Image();
+										temp.src = $that.attr('src');
+										$that.data("ratio", temp.width / temp.height);
+									}
+									var ratio = $that.data("ratio");
+									//console.log(ratio);
+									if (!w){
+										w = (h * ratio);
+									}else if (!h) {
+										h = w / ratio;
+									}
+								}
+								var wPercent = $that.width()/100,
+										hPercent = $that.height()/100,
+										map = $that.attr('usemap').replace('#', ''),
+										c = 'coords';
+
+								$('map[name="' + map + '"]').find('area').each(function() {
+									var $this = $(this);
+									if (!$this.data(c))
+										$this.data(c, $this.attr(c));
+
+									var coords = $this.data(c).split(','),
+											coordsPercent = new Array(coords.length);
+
+									for (var i = 0; i < coordsPercent.length; ++i) {
+										if (i % 2 === 0)
+											coordsPercent[i] = parseInt(((coords[i]/w)*100)*wPercent);
+										else
+											coordsPercent[i] = parseInt(((coords[i]/h)*100)*hPercent);
+									}
+									$this.attr(c, coordsPercent.toString());
+								});
+						});
+					};
+					$(window).resize(rwdImageMap).trigger('resize');
+
+					return this;
+				};
+			})(jQuery);
+
 			$(function() {
-		        $('.map').maphilight();
-		    });
+				$('img[usemap]').maphilight();
+				$('img[usemap]').rwdImageMaps(); 
+				
+				$(window).on('resize', function(){
+				  location.reload();
+				});
+			});			
+			
 		</script>
 
 	</body>
