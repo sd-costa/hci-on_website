@@ -280,29 +280,84 @@ public class PageWriter {
 		Utils.stringToFile("./page/testemenu.html", html);
 	}
 
+	/* Creates div container-fluid and row of Stats page  */
+	public String generateStatsDivs(ArrayList<String> layer) {
+		String newlayer = "";
+		if (layer.size() > 0) {
+			//newlayer = "<div class=\"container-fluid\"><div class=\"row\">\n";
+			newlayer = "<div class=\"row\">\n";
+			if (layer.size() % 2 == 0) { //pair
+				var pair = 0;
+				for (int i = 0; i < layer.size(); i++) {
+					newlayer += layer.get(i);
+					pair += 1;
+			      if (pair == 2) {
+			      	//newlayer += "\n</div></div>\n"; //end div row and container
+			      	newlayer += "\n</div>\n"; //end div row and container
+			      	pair = 0;
+			      	if (i < layer.size()-2) {
+			      		//newlayer += "<div class=\"container-fluid\"><div class=\"row\">\n"; //open div row and container
+			      		newlayer += "<div class=\"row\">\n"; //open div row and container
+			      	}
+			      	
+			      }
+			    }
+			}
+			else { //impar
+				//System.out.println("\n********fAZER IMPAR** \n\n");
+				//newlayer = "<div class=\"container-fluid\"><div class=\"row\">\n";
+				newlayer = "<div class=\"row\">\n";
+				if (layer.size() == 1) {
+					newlayer += layer.get(0);
+					newlayer += "\n<div class=\"p-3 m-3 col\"></div>";
+					//newlayer += "\n</div></div>\n"; //end div row and container
+					newlayer += "\n</div>\n"; //end div row and container
+				}
+				else {
+					var odd = 0;
+					for (int i = 0; i < layer.size(); i++) {
+						newlayer += layer.get(i);
+						odd += 1;
+				      if (odd == 2) {
+				      	//newlayer += "\n</div></div>\n"; //end div row and container
+				      	newlayer += "\n</div>\n"; //end div row and container
+				      	odd = 0;
+				      	// 2 < 1
+				      	if (i < layer.size()-2) {
+				      		//newlayer += "<div class=\"container-fluid\"><div class=\"row\">\n"; //open div row and container
+				      		newlayer += "<div class=\"row\">\n"; //open div row and container
+				      	}
+				      }
+				      else if (i == layer.size()-1) {
+				      	newlayer += "<div class=\"p-3 m-3 col\"></div>";
+						//newlayer += "\n</div></div>\n"; //end div row and container
+						newlayer += "\n</div>\n"; //end div row and container
+				      }
+					}    
+				}
+			}
+		}
+		return newlayer;
+	}
+
 	/* Reads the Network and creates the Stats page. */
 	private void generateStatsPage() {
 		// Reading the HTML template
 		String html = Utils.fileToString("./resources/Template.Stats.html");
 
 		// Replacing the tags for the actual values
-		String found = "";
-		//String core = "";
-		//String domain = "";
-		String SEONcore = "";
-		String HCIONcore = "";
-		String SEONdomain = "";
-		String HCIONdomain = "";
 		String hcion = "HCI-ON";
 		String seon = "SEON";
 		String ontoversion = "";
-		
+	
 		int[] ontoDeps = new int[ontologies.size()];
 		int[] ontoGens = new int[ontologies.size()];
 		// Sorting the Ontologies by level and size.
 		// Collections.sort(ontologies, Ontology.getLevelComparator());
-		int countcore = 0;
-		int countdomain = 0;
+		ArrayList<String> arFound = new ArrayList<String>();
+		ArrayList<String> arCore = new ArrayList<String>();
+		ArrayList<String> arDomain = new ArrayList<String>();
+
 		String stats = "";
 		for (Ontology ontology : ontologies) {
 			int relats = 0;
@@ -350,13 +405,9 @@ public class PageWriter {
 					}
 				}
 				allGens = allGens.substring(0, allGens.length() - 2) + ")";
-			}
-
-
-			
+			}			
 
 			stats = "";
-
 			if (level != null) {
 				if (level == OntoLevel.FOUNDATIONAL) {
 					stats += "<div class=\"p-3 m-3 col border border-dark\"><p class=\"lead\" align=\"justify\">" + ontology.getShortName() + " - " + ontology.getFullName() + "</p>\n";
@@ -366,81 +417,51 @@ public class PageWriter {
 					} else {
 						ontoversion = "<p><span class=\"badge badge-dark\">version " + ontology.getVersion() + "</span></p>";
 					}
-					
-					stats += "<div class=\"p-3 m-3 col border border-dark\"><p class=\"lead\" align=\"justify\">" + ontology.getShortName() + " - " + ontology.getFullName() + ontoversion + "</p>\n";
+					stats += "<div class=\"p-3 m-3 col border border-dark\"><p class=\"lead\" align=\"justify\">" + ontology.getShortName() + " - " + ontology.getFullName() + "</p>\n" + ontoversion;
 				}
 			}
-
 
 			stats += "<code>" + concepts.size() + " concepts<br/>\n";
 			stats += relats + " internal relations<br/>\n";
 			stats += generals + " external generalizations " + allGens + "<br/>\n";
 			stats += depends + " external dependencies " + allDeps + "</code>\n</div>\n";
-			
-			
 
 			if (level != null) {
-				if (level == OntoLevel.FOUNDATIONAL) found += stats;
+				if (level == OntoLevel.FOUNDATIONAL) arFound.add(stats);
 				else if (level == OntoLevel.CORE) {
 					/*if (ontology.getNetwork().equals(seon)){
 						SEONcore += stats;						
 					}
 					else*/ if (ontology.getNetwork().equals(hcion)){
-						HCIONcore += stats;
-						countcore += 1;
-						
-
+						arCore.add(stats);
 					}
-					//core += stats;		
+					//core += stats;
 				} 
 				else if (level == OntoLevel.DOMAIN) {
 					/*if (ontology.getNetwork().equals(seon)){
 						SEONdomain += stats;						
 					}
 					else*/ if (ontology.getNetwork().equals(hcion)){
-						//System.out.println("\n********COUNT DOMAIN AQUII___ " + countdomain + "\n");
-
-						if (countdomain == 0) {
-							HCIONdomain += "<div class=\"conainer\"><div class=\"row\">\n";
-							//countdomain += 1;
-							//System.out.println("\n********ENTREIIIIIIIII countdomain 0** \n" + countdomain + "\n________\n");
-							//System.out.println("\n********STATS AQUII 0** \n" + stats + "\n________\n");
-						}
-
-						HCIONdomain += stats;
-
-						
-						//System.out.println("\n********html AQUII** \n" + stats + "\n________\n");
-						
-						countdomain += 1;
-						
-						if (countdomain == 2) {
-							HCIONdomain += "\n</div></div>\n";
-							//System.out.println("\n********ENTREIIIIIIIII countdomain 2** \n" + countdomain + "\n________\n");
-							//System.out.println("\n********STATS AQUII 2** \n" + stats + "\n________\n");
-							countdomain = 0;
-						}
+						arDomain.add(stats);
 					}
 				}
-				//domain += stats;
-				// other level: ignore
-				//System.out.println("********COUNTCORE AQUII___ " + countcore + "\n");
-				
 			}
-
-				
-
 		}
 
-		
-		//System.out.println("********STATS AQUII** " + HCIONdomain + "\n");
-		//Simone Dornelas
+		var foundlayer = generateStatsDivs(arFound);
+		var corelayer = generateStatsDivs(arCore);
+		var domainlayer = generateStatsDivs(arDomain);
+
+		System.out.println("\n\n\n********foundlayer PAR** " + foundlayer + "\n\n\n");
+		System.out.println("\n\n\n********corelayer PAR** " + corelayer + "\n\n\n");
+		System.out.println("\n\n\n********domainlayer PAR** " + domainlayer + "\n\n\n");
+
 		//html = html.replace("@title", hcion);
-		html = html.replace("@foundOntology", found);
+		html = html.replace("@foundOntology", foundlayer);
 		//html = html.replace("@SEONcoreOntologies", SEONcore);
 		//html = html.replace("@SEONdomainOntologies", SEONdomain);
-		html = html.replace("@HCIONcoreOntologies", HCIONcore);
-		html = html.replace("@HCIONdomainOntologies", HCIONdomain);
+		html = html.replace("@HCIONcoreOntologies", corelayer);
+		html = html.replace("@HCIONdomainOntologies", domainlayer);
 
 		//html = html.replace("@foundOntology", found);
 		//html = html.replace("@coreOntologies", core);
@@ -558,73 +579,6 @@ public class PageWriter {
 		return nourl;
 	}
 
-	/* Check Network and ontologies */
-	/* Simone Dornelas */
-/*	private static ArrayList<String> checkNetwork(Ontology onto) {
-
-		//Onto Level
-		// Replacing the tags for the actual values
-		String ufo = "UFO";
-		String hcion = "HCI-ON";
-		String seon = "SEON";
-		String o_level = "";
-		ArrayList<String> netOnto = new ArrayList<String>();
-
-		OntoLevel level = onto.getLevel();
-		if (o_level != null) {
-			if (level == OntoLevel.FOUNDATIONAL) {
-				//System.out.println("**FOUNDATIONAL LEVEL**");
-				//System.out.println(onto.getFullName());
-				//System.out.println(onto.getNetwork());
-				o_level = "foundational";
-				netOnto.add(o_level);
-				netOnto.add(ufo);
-				netOnto.add(ufo);
-			}
-			if (level == OntoLevel.CORE) {
-				//System.out.println("**CORE LEVEL**");
-				//System.out.println(onto.getFullName());
-				//System.out.println(onto.getNetwork());
-				o_level = "core";
-				netOnto.add(o_level);
-				if (onto.getNetwork().equals(hcion)) {
-					netOnto.add(hcion);
-					netOnto.add(onto.getShortName());
-				}
-				else if (onto.getNetwork().equals(seon)) {
-					netOnto.add(seon);
-					netOnto.add(onto.getShortName());
-				}
-				else {
-					System.out.println("Network not found: " + onto.getNetwork());
-				}
-				//System.out.println(onto.getNetwork() + onto.getShortName() + onto_level);
-			}
-			else if (level == OntoLevel.DOMAIN) {
-				//System.out.println("**DOMAIN LEVEL**");
-				//System.out.println(onto.getFullName());
-				//System.out.println(onto.getNetwork());
-				o_level = "domain";
-				netOnto.add(o_level);
-				if (onto.getNetwork().equals(hcion)) {
-					netOnto.add(hcion);
-					netOnto.add(onto.getShortName());
-				}
-				else if (onto.getNetwork().equals(seon)) {
-					netOnto.add(seon);
-					netOnto.add(onto.getShortName());
-				}
-				else {
-					System.out.println("Network not found:" + onto.getNetwork());
-				}
-				//System.out.println(onto.getNetwork() + onto.getShortName() + onto_level);
-			}
-			// other level: ignore
-			
-		}
-		return netOnto;
-	}*/
-
 
 	/* Prints the Ontologies' pages. */
 	private void generateOntologyPage(Ontology onto) {
@@ -681,43 +635,6 @@ public class PageWriter {
 		    }
 	      // other level: ignore
 	    }
-
-
-		/*EDITAR e ELIMINAR ESSE CODIGO*/
-		/*networkOnto = checkNetwork(onto);
-
-		if (networkOnto != null) {			
-			if (networkOnto.get(0).equals(found)) {
-				onlevel = "Foundational ontology";
-				onto_level = svgstar1 + " foundational ontology";
-			}
-			else if (networkOnto.get(0).equals(core)) {
-				if (networkOnto.get(1).equals(hcion)) { 
-					onto_level = svgstar2 + " core ontology from HCI-ON"; 
-					onlevel = "Core ontology from HCI-ON";
-				}
-				else if (networkOnto.get(1).equals(seon)) { 
-					onto_level = svgstar2 + " core ontology from SEON";
-					onlevel = "Core ontology from SEON"; 
-				}
-				else {
-					System.out.println("Network not found: " + onto.getNetwork());
-				}
-			}
-			else if (networkOnto.get(0).equals(domain)) {
-				if (networkOnto.get(1).equals(hcion)) { 
-					onto_level = svgstar3 + " domain ontology from HCI-ON";
-					onlevel = "Domain ontology from HCI-ON";
-				}
-				else if (networkOnto.get(1).equals(seon)) { 
-					onto_level = svgstar3 + " domain ontology from SEON";
-					onlevel = "Domain ontology from SEON";
-				}
-				else {
-					System.out.println("Network not found:" + onto.getNetwork());
-				}
-			}
-		}*/
 
 		if (onto.getStatus().equals("Finished")){
 			ADDITIONALINFO = "<div class=\"container-fluid d-flex justify-content-end\"><span class=\"badge badge-dark\">version "+ onto.getVersion() +"</span></div>";
@@ -796,9 +713,9 @@ public class PageWriter {
 			on_url = networkedOntoURL(supplier.getShortName());
 
 			if (supplier.getNetwork().equals("SEON")){
-				DEPENDSLINE = "<tr><td><a href=\"" + on_url + "\" target=\"_blank\">@ontology</a></td><td>@description</td><td style=\"text-align:center\">@level</td></tr>";
+				DEPENDSLINE = "<tr><td><a class=\"text-muted\" href=\"" + on_url + "\" target=\"_blank\">@ontology</a></td><td>@description</td><td style=\"text-align:center\">@level</td></tr>";
 			} else {
-				DEPENDSLINE = "<tr><td><a href=\"" + on_url + "\">@ontology</a></td><td>@description</td><td style=\"text-align:center\">@level</td></tr>";				
+				DEPENDSLINE = "<tr><td><a class=\"text-muted\" href=\"" + on_url + "\">@ontology</a></td><td>@description</td><td style=\"text-align:center\">@level</td></tr>";				
 			}
 
 			String line = DEPENDSLINE;
@@ -1023,7 +940,7 @@ public class PageWriter {
 	/* Generates the lines of the concepts table. */
 	public String generateConceptsTable(Ontology onto) {		
 		//String CONCEPTLINE = "<tr>\n<td><a name=\"@reference\">@concept</a>\n<a href=#@reference_detail><img src=\"images/plus-4-16.ico\"></a></td>\n<td>@definition\n<br/>@example</td>\n</tr>";
-		String CONCEPTLINE = "<tr><td><p id=\"@reference\">@concept<a href=#@reference_detail><span class=\"m-1\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-plus-circle\" viewBox=\"0 0 16 16\"><path d=\"M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z\"/><path d=\"M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z\"/></svg></span></a></td><td><p>@definition@example@source</p></td></tr>";
+		String CONCEPTLINE = "<tr><td><p id=\"@reference\">@concept<a class=\"text-muted\" href=#@reference_detail><span class=\"m-1\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-plus-circle\" viewBox=\"0 0 16 16\"><path d=\"M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z\"/><path d=\"M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z\"/></svg></span></a></td><td><p>@definition@example@source</p></td></tr>";
 		List<Concept> concepts = onto.getAllConcepts();
 		Collections.sort(concepts);
 		String conceptsTable = "";
@@ -1055,7 +972,7 @@ public class PageWriter {
 
 			line = line.replace("@example", example);
 			line = line.replace("@source", source);
-			System.out.println("\n\n EXAMPLE.: " + example + "\n\n");
+			//System.out.println("\n\n EXAMPLE.: " + example + "\n\n");
 			//line = line.replace("@definition", concept.getDefinition().replaceAll("<source>", "<br/><span class=\"font-weight-light\">Source: </span><span class=\"font-italic\">").replaceAll("</source>", "</span>>").replaceAll("(\\r\\n|\\n\\r|\\r|\\n)", "<br/>"));
 			conceptsTable += line + "\n";
 		}

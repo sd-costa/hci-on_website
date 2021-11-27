@@ -315,75 +315,75 @@
 
     <script src="../resources/static/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
 
-    <script type="text/javascript" src="jquery.min.js"></script>
-		<script type="text/javascript" src="maphilight.js"></script>
+	    <script type="text/javascript" src="jquery.min.js"></script>
+			<script type="text/javascript" src="maphilight.js"></script>
 
-		<script type="text/javascript">
-			;(function($) {
-				$.fn.rwdImageMaps = function() {
-					var $img = this;
-					var rwdImageMap = function() {
-						$img.each(function() {
-							if (typeof($(this).attr('usemap')) == 'undefined')
-								return;
-							var that = this,
-								$that = $(that);
+			<script type="text/javascript">
+				;(function($) {
+					$.fn.rwdImageMaps = function() {
+						var $img = this;
+						var rwdImageMap = function() {
+							$img.each(function() {
+								if (typeof($(this).attr('usemap')) == 'undefined')
+									return;
+								var that = this,
+									$that = $(that);
 
-								var w = $that.attr('width'),
-									h = $that.attr('height');
-								if (!w || !h) {
-									if (!$that.data("ratio")) {
-										var temp = new Image();
-										temp.src = $that.attr('src');
-										$that.data("ratio", temp.width / temp.height);
+									var w = $that.attr('width'),
+										h = $that.attr('height');
+									if (!w || !h) {
+										if (!$that.data("ratio")) {
+											var temp = new Image();
+											temp.src = $that.attr('src');
+											$that.data("ratio", temp.width / temp.height);
+										}
+										var ratio = $that.data("ratio");
+										//console.log(ratio);
+										if (!w){
+											w = (h * ratio);
+										}else if (!h) {
+											h = w / ratio;
+										}
 									}
-									var ratio = $that.data("ratio");
-									//console.log(ratio);
-									if (!w){
-										w = (h * ratio);
-									}else if (!h) {
-										h = w / ratio;
-									}
-								}
-								var wPercent = $that.width()/100,
-										hPercent = $that.height()/100,
-										map = $that.attr('usemap').replace('#', ''),
-										c = 'coords';
+									var wPercent = $that.width()/100,
+											hPercent = $that.height()/100,
+											map = $that.attr('usemap').replace('#', ''),
+											c = 'coords';
 
-								$('map[name="' + map + '"]').find('area').each(function() {
-									var $this = $(this);
-									if (!$this.data(c))
-										$this.data(c, $this.attr(c));
+									$('map[name="' + map + '"]').find('area').each(function() {
+										var $this = $(this);
+										if (!$this.data(c))
+											$this.data(c, $this.attr(c));
 
-									var coords = $this.data(c).split(','),
-											coordsPercent = new Array(coords.length);
+										var coords = $this.data(c).split(','),
+												coordsPercent = new Array(coords.length);
 
-									for (var i = 0; i < coordsPercent.length; ++i) {
-										if (i % 2 === 0)
-											coordsPercent[i] = parseInt(((coords[i]/w)*100)*wPercent);
-										else
-											coordsPercent[i] = parseInt(((coords[i]/h)*100)*hPercent);
-									}
-									$this.attr(c, coordsPercent.toString());
-								});
-						});
+										for (var i = 0; i < coordsPercent.length; ++i) {
+											if (i % 2 === 0)
+												coordsPercent[i] = parseInt(((coords[i]/w)*100)*wPercent);
+											else
+												coordsPercent[i] = parseInt(((coords[i]/h)*100)*hPercent);
+										}
+										$this.attr(c, coordsPercent.toString());
+									});
+							});
+						};
+						$(window).resize(rwdImageMap).trigger('resize');
+
+						return this;
 					};
-					$(window).resize(rwdImageMap).trigger('resize');
+				})(jQuery);
 
-					return this;
-				};
-			})(jQuery);
-
-			$(function() {
-				$('img[usemap]').maphilight();
-				$('img[usemap]').rwdImageMaps(); 
+				$(function() {
+					$('img[usemap]').maphilight();
+					$('img[usemap]').rwdImageMaps(); 
+					
+					$(window).on('resize', function(){
+					  location.reload();
+					});
+				});			
 				
-				$(window).on('resize', function(){
-				  location.reload();
-				});
-			});			
-			
-		</script>
+			</script>
 		
 	</body>
 	<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>

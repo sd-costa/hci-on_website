@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="en">
 	<head>
@@ -19,7 +19,7 @@
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/navbar-top-fixed.css" rel="stylesheet">
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/sticky-footer-navbar.css" rel="stylesheet">
 	    <link href="../resources/static/bootstrap-5.1.3-dist/css/carousel.css" rel="stylesheet">
-	    <link href="../resources/static/bootstrap-5.1.3-dist/css/pricing.css" rel="stylesheet">
+	    
 
 	    <style>
 	      .bd-placeholder-img {
@@ -72,7 +72,7 @@
 	
 	<!--MAIN fixed navbar -->	
 	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-	  <div class="container-fluid">
+	  <!--<div class="container-fluid">-->
 	    <a class="navbar-brand" href="#">HCI-ON</a>
 	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
@@ -157,7 +157,7 @@
 	      </ul>
 	      
 	    </div>
-	  </div>
+	  <!--</div>-->
 	</nav>	
 		
 	
@@ -195,7 +195,7 @@
 					<p class="lead">Networked ontologies used by @onto:</p>	
 					
 					<div class="table-responsive">
-						<caption>Ontologies (re)used by @onto.</caption>
+						
 						<table class="table table-hover">
 							<thead>
 								<tr>
@@ -208,6 +208,7 @@
 								@myontologyDependencies
 							</tbody>
 						</table>
+  					<caption>Ontologies (re)used by @onto.</caption>
   				</div>
 
 				</div>	
@@ -226,7 +227,6 @@
 					<p class="lead">The following table shows the definitions for @onto concepts.</p>		
 					<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->				
 					<div class="table-responsive">
-						<caption>@onto concepts definition.</caption>
 						<table class="table table-hover">
 							<thead>
 								<tr>
@@ -237,6 +237,7 @@
 							<tbody>
 								@conceptDefinitions
 							</tbody>
+							<caption>@onto concepts definition.</caption>
 						</table>
   				</div>
 
