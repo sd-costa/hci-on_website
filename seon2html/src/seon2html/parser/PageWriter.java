@@ -478,8 +478,8 @@ public class PageWriter {
 	/* Simone Dornelas */
 	private static String networkedOntoURL(String netOnto) {
 		String nourl = "";
+		//SDRO ainda não existe no site atual de SEON
 		if (netOnto != null) {
-			//System.out.println("********ENTREI AQUII** " + netOnto + "\n");
 			switch (netOnto) {
 				case "HCI-ON":
 					nourl = "index.html";
@@ -565,12 +565,11 @@ public class PageWriter {
 				case "RSMO":
 					nourl = "http://dev.nemo.inf.ufes.br/seon/RSMO.html";
 					break;
-				//Essa ontologia ainda não existe no site atual de SEON	
 				case "SDRO":
 					nourl = "SDRO.html";
 					break;
 				default:
-       				nourl = "invalido";
+       				nourl = "invalido aqui";
 			}
 			
 		}
@@ -838,17 +837,13 @@ public class PageWriter {
 						String area = AREA;
 						area = area.replace("@coords", getMapCoords(node, aDiagram.getBoundRect()));
 
-						
-						//System.out.println("\n\n CONCEITO AQUI +++ " + concept.getName() + " ---- onto " + whatOnto.getNetwork() + " -> " + whatOnto.getMainOntology().getShortName());
 						Ontology whatOnto = concept.getOntology();
 						if (whatOnto.getNetwork().equals(seon)) {
 							String onURL = networkedOntoURL(whatOnto.getMainOntology().getShortName());
-							System.out.println("\n\n EITA SEON " + whatOnto.getMainOntology().getShortName() + " " + onURL + "\n\n");
 							area = area.replace("@reference", onURL + "#" + whatOnto.getMainOntology().getShortName() + "_" + concept.getName().replace(' ', '+'));
 							area = area.replace("@target", "_blank");
 						}
-						else if (whatOnto.getNetwork().equals(hcion) || whatOnto.getMainOntology().getShortName().equals("UFO")) {
-							System.out.println("\n\n EITA UFO OR HCION " + whatOnto.getMainOntology().getShortName() + " " + concept.getReference() + "\n\n");
+						else {
 							area = area.replace("@reference", concept.getReference());
 							area = area.replace("@target", "");
 						}
@@ -895,8 +890,17 @@ public class PageWriter {
 					INodePresentation node = (INodePresentation) present;
 					Package pack = Package.getPackageByFullName(((IPackage) node.getModel()).getFullName("::"));
 					String area = AREA;
-
 					area = area.replace("@coords", getMapCoords(node, aDiagram.getBoundRect()));
+					//area = area.replace("@reference", pack.getReference() + "_section");
+
+					//Ontology onto = this.getMainOntology();
+					//String sname = this.name.replace(' ', '+');
+					//if (onto != null) {
+					//	sname = onto.getShortName() + ".html#" + onto.getShortName() + "_" + sname;
+					//}
+					//return sname;
+
+					
 
 					if ( (pack.getName().contains("Layer")) || (pack.getType() == PackType.NETWORK) ) {
 						if (pack.getNetwork().equals(seon)) {
@@ -909,8 +913,19 @@ public class PageWriter {
 						}
 					}
 					else {
-						if (pack.getNetwork().equals(seon)) {
-							area = area.replace("@reference", networkedOntoURL(pack.getName()));
+						Ontology mainOnto = pack.getMainOntology();
+						String mainOntoName = pack.getMainOntology().getShortName();
+						String pname = pack.getName().replace(' ', '+');
+						if (mainOnto.getNetwork().equals(seon)) {
+							if (mainOnto != null) {
+								//System.out.println("\n" + pname);
+								//System.out.println(" " + networkedOntoURL(mainOntoName) + "#" + mainOntoName + "_" + pname + "_section" + "\n\n");
+								area = area.replace("@reference", networkedOntoURL(mainOntoName) + "#" + mainOntoName + "_" + pname + "_section");
+								//area = area.replace("@target", "_blank");	
+							}
+							else {
+								area = area.replace("@reference", pname + "_section");
+							}
 							area = area.replace("@target", "_blank");
 						} else {
 							area = area.replace("@reference", pack.getReference() + "_section");
