@@ -349,6 +349,8 @@ public class PageWriter {
 		String hcion = "HCI-ON";
 		String seon = "SEON";
 		String ontoversion = "";
+		String brieflyStats = "";
+		int totalConcepts = 0;
 	
 		int[] ontoDeps = new int[ontologies.size()];
 		int[] ontoGens = new int[ontologies.size()];
@@ -452,9 +454,9 @@ public class PageWriter {
 		var corelayer = generateStatsDivs(arCore);
 		var domainlayer = generateStatsDivs(arDomain);
 
-		System.out.println("\n\n\n********foundlayer PAR** " + foundlayer + "\n\n\n");
-		System.out.println("\n\n\n********corelayer PAR** " + corelayer + "\n\n\n");
-		System.out.println("\n\n\n********domainlayer PAR** " + domainlayer + "\n\n\n");
+		//System.out.println("\n\n\n********foundlayer PAR** " + foundlayer + "\n\n\n");
+		//System.out.println("\n\n\n********corelayer PAR** " + corelayer + "\n\n\n");
+		//System.out.println("\n\n\n********domainlayer PAR** " + domainlayer + "\n\n\n");
 
 		//html = html.replace("@title", hcion);
 		html = html.replace("@foundOntology", foundlayer);
@@ -472,7 +474,7 @@ public class PageWriter {
 		Utils.stringToFile("./page/NetworkStats.html", html);
 	}
 
-	/* Return SEON website URL */
+	/* Return ontologies and network URL */
 	/* Simone Dornelas */
 	private static String networkedOntoURL(String netOnto) {
 		String nourl = "";
@@ -513,7 +515,7 @@ public class PageWriter {
 					nourl = "UFO.html";
 					break;
 				case "SEON":
-					nourl = "http://dev.nemo.inf.ufes.br/seon/SEON.html";
+					nourl = "http://dev.nemo.inf.ufes.br/seon/";
 					break;
 				case "SPO":
 					nourl = "http://dev.nemo.inf.ufes.br/seon/SPO.html";
@@ -579,6 +581,11 @@ public class PageWriter {
 		return nourl;
 	}
 
+	/* Return ontologies concepts URL, specially made for SEON (external url) */
+	/* Simone Dornelas */
+	/*private static String conceptsOntoURL(){
+
+	}*/
 
 	/* Prints the Ontologies' pages. */
 	private void generateOntologyPage(Ontology onto) {
@@ -814,9 +821,11 @@ public class PageWriter {
 	/* Reads the elements positions and creates the MAP code. This method reads the Astah model becouse the presentation
 	 * information is not considered in the SEON Model. */
 	private String parseMap(Diagram diagram) {
-		String AREA = "\n<area shape=\"rect\" coords=\"@coords\" href=\"@reference\" title=\"@definition\">";
+		String AREA = "\n<area shape=\"rect\" coords=\"@coords\" href=\"@reference\" target=\"@target\" title=\"@definition\">";
 		String mapcode = "<map name=\"" + diagram.getName() + "\">";
 		IDiagram aDiagram = diagram.getAstahDiagram();
+		String seon = "SEON";
+		String hcion = "HCI-ON";
 		try {
 			// For Conceptual Model diagrams
 			if (diagram.getType() == DiagType.CONCEPTUALMODEL) {
@@ -828,7 +837,23 @@ public class PageWriter {
 						// area for the whole node
 						String area = AREA;
 						area = area.replace("@coords", getMapCoords(node, aDiagram.getBoundRect()));
-						area = area.replace("@reference", concept.getReference());
+
+						
+						//System.out.println("\n\n CONCEITO AQUI +++ " + concept.getName() + " ---- onto " + whatOnto.getNetwork() + " -> " + whatOnto.getMainOntology().getShortName());
+						Ontology whatOnto = concept.getOntology();
+						if (whatOnto.getNetwork().equals(seon)) {
+							String onURL = networkedOntoURL(whatOnto.getMainOntology().getShortName());
+							System.out.println("\n\n EITA SEON " + whatOnto.getMainOntology().getShortName() + " " + onURL + "\n\n");
+							area = area.replace("@reference", onURL + "#" + whatOnto.getMainOntology().getShortName() + "_" + concept.getName().replace(' ', '+'));
+							area = area.replace("@target", "_blank");
+						}
+						else if (whatOnto.getNetwork().equals(hcion) || whatOnto.getMainOntology().getShortName().equals("UFO")) {
+							System.out.println("\n\n EITA UFO OR HCION " + whatOnto.getMainOntology().getShortName() + " " + concept.getReference() + "\n\n");
+							area = area.replace("@reference", concept.getReference());
+							area = area.replace("@target", "");
+						}
+
+						//area = area.replace("@reference", concept.getReference());
 						area = area.replace("@definition", concept.getDefinition()); // TODO: add the namespace and
 																						// concept name
 						mapcode += area;
@@ -840,6 +865,8 @@ public class PageWriter {
 						// areaOver = areaOver.replace("@reference", concept.getOntology().getReference() + "_section");
 						// mapcode += areaOver;
 						// }
+
+						
 					}
 				}
 				// For Package diagrams
@@ -868,10 +895,33 @@ public class PageWriter {
 					INodePresentation node = (INodePresentation) present;
 					Package pack = Package.getPackageByFullName(((IPackage) node.getModel()).getFullName("::"));
 					String area = AREA;
+
 					area = area.replace("@coords", getMapCoords(node, aDiagram.getBoundRect()));
-					area = area.replace("@reference", pack.getReference() + "_section");
+
+					if ( (pack.getName().contains("Layer")) || (pack.getType() == PackType.NETWORK) ) {
+						if (pack.getNetwork().equals(seon)) {
+							area = area.replace("@reference", networkedOntoURL(seon));
+							area = area.replace("@target", "_blank");
+						}
+						else if (pack.getNetwork().equals(hcion)) {
+							area = area.replace("@reference", networkedOntoURL(hcion));
+							area = area.replace("@target", "");
+						}
+					}
+					else {
+						if (pack.getNetwork().equals(seon)) {
+							area = area.replace("@reference", networkedOntoURL(pack.getName()));
+							area = area.replace("@target", "_blank");
+						} else {
+							area = area.replace("@reference", pack.getReference() + "_section");
+							area = area.replace("@target", "");								
+						}
+
+					}
+
 					area = area.replace("@definition", "");
 					mapcode += area;
+					
 				}
 			}
 		} catch (InvalidUsingException e) {
@@ -957,7 +1007,7 @@ public class PageWriter {
 			line = line.replace("@reference", concept.getLabel());
 			line = line.replace("@definition", concept.getDefinition().replaceAll("(\\r\\n|\\n\\r|\\r|\\n)", ""));
 			//line = concept.getDefinition().replaceAll("<source>", "<span class=\"font-weight-bold\">Source:").replaceAll("</source>", "</</span>>");
-			System.out.println("\n\n Conc. Def.: " + concept.getDefinition() + "\n\n");
+			//System.out.println("\n\n Conc. Def.: " + concept.getDefinition() + "\n\n");
 			String example = "";
 			if (concept.getExample() != null) {
 				//example = "E.g.:<i>" + concept.getExample() + "</i>";
