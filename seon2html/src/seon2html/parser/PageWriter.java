@@ -569,7 +569,7 @@ public class PageWriter {
 					nourl = "SDRO.html";
 					break;
 				default:
-       				nourl = "invalido aqui";
+       				nourl = "invalido";
 			}
 			
 		}
@@ -837,6 +837,7 @@ public class PageWriter {
 						String area = AREA;
 						area = area.replace("@coords", getMapCoords(node, aDiagram.getBoundRect()));
 
+						//area = area.replace("@reference", concept.getReference());
 						Ontology whatOnto = concept.getOntology();
 						if (whatOnto.getNetwork().equals(seon)) {
 							String onURL = networkedOntoURL(whatOnto.getMainOntology().getShortName());
@@ -847,8 +848,7 @@ public class PageWriter {
 							area = area.replace("@reference", concept.getReference());
 							area = area.replace("@target", "");
 						}
-
-						//area = area.replace("@reference", concept.getReference());
+						
 						area = area.replace("@definition", concept.getDefinition()); // TODO: add the namespace and
 																						// concept name
 						mapcode += area;
@@ -900,8 +900,6 @@ public class PageWriter {
 					//}
 					//return sname;
 
-					
-
 					if ( (pack.getName().contains("Layer")) || (pack.getType() == PackType.NETWORK) ) {
 						if (pack.getNetwork().equals(seon)) {
 							area = area.replace("@reference", networkedOntoURL(seon));
@@ -918,10 +916,7 @@ public class PageWriter {
 						String pname = pack.getName().replace(' ', '+');
 						if (mainOnto.getNetwork().equals(seon)) {
 							if (mainOnto != null) {
-								//System.out.println("\n" + pname);
-								//System.out.println(" " + networkedOntoURL(mainOntoName) + "#" + mainOntoName + "_" + pname + "_section" + "\n\n");
 								area = area.replace("@reference", networkedOntoURL(mainOntoName) + "#" + mainOntoName + "_" + pname + "_section");
-								//area = area.replace("@target", "_blank");	
 							}
 							else {
 								area = area.replace("@reference", pname + "_section");
@@ -931,12 +926,13 @@ public class PageWriter {
 							area = area.replace("@reference", pack.getReference() + "_section");
 							area = area.replace("@target", "");								
 						}
-
+						if (mainOntoName.equals("invalido")) {
+							System.out.println("\n URL " + mainOntoName + " \n");
+						}
 					}
 
 					area = area.replace("@definition", "");
-					mapcode += area;
-					
+					mapcode += area;					
 				}
 			}
 		} catch (InvalidUsingException e) {
