@@ -23,80 +23,103 @@
   </head>
   
   <body>
-    <header>  
-      <!--MAIN fixed navbar -->  
-      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">HCI-ON</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
+    <header>
+  
+  <!--MAIN fixed navbar --> 
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <!--<div class="container-fluid">-->
+      <a class="navbar-brand" href="#">HCI-ON</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
 
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  The Network
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item fst-italic" href="#" tabindex="-1" aria-disabled="true">Architecture</a></li>
-                  <li><a class="dropdown-item fst-italic" href="#" tabindex="-1" aria-disabled="true">Evolution Mechanisms</a></li>
-                  <li><a class="dropdown-item fst-italic" href="#" tabindex="-1" aria-disabled="true">Relationship with SEON</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Foundational Layer</a></li>
-                  <li><a class="dropdown-item" href="UFO.html">UFO - Unified Foundational Ontology</a></li>
-                  <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Core Layer</a></li>
-                  <li><a class="dropdown-item" href="HCIO.html">HCIO - Human-Computer Interaction Ontology</a></li>
-                  <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Domain Layer</a></li>
-                  <li><a class="dropdown-item" href="HCIDO.html">HCIDO - Human-Computer Interaction Design Ontology</a></li>
-                  <li><a class="dropdown-item" href="HCIEO.html">HCIEO - Human-Computer Interaction Evaluation Ontology</a></li>
-                  <li><a class="dropdown-item" href="HCIDPO.html">HCIDPO - Human-Computer Interaction Design Process Ontology</a></li>
-                  <li><a class="dropdown-item" href="UIT&EO.html">UIT&EO - UI Types and Elements Ontology</a></li>
-                  <li><a class="dropdown-item" href="HCIMO.html">HCIMO - HCI Modality Ontology</a></li>
-                  <li><a class="dropdown-item" href="CUO.html">CUO - Context of Use Ontology</a></li>
-                  <li><a class="dropdown-item" href="UCO.html">UCO - User Characterization Ontology</a></li>
-                  <li><a class="dropdown-item" href="HCIQCO.html">HCIQCO - HCI Quality Characteristics Ontology</a></li>
-                </ul>
-              </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              The Network
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item fst-italic" href="#" tabindex="-1" aria-disabled="true">Architecture</a></li>
+              <li><a class="dropdown-item fst-italic" href="#" tabindex="-1" aria-disabled="true">Evolution Mechanisms</a></li>
+              <li><a class="dropdown-item fst-italic" href="#" tabindex="-1" aria-disabled="true">Relationship with SEON</a></li>
+              <li><hr class="dropdown-divider"></li>
 
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Features
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="SearchFrames.html">Concepts Searcher</a></li>
-                  <li><a class="dropdown-item" href="NetworkGraph.html">Graph</a></li>
-                  <li><a class="dropdown-item" href="NetworkStats.html">Stats</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="SeonFeedback.html">Feedback</a></li>
-                </ul>
-              </li>
+              <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Foundational Layer</a></li>
+              <li><a class="dropdown-item" href="UFO.html">UFO - Unified Foundational Ontology</a></li>
 
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  More
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="SEON.owl" target="_blank">Operational Version (in OWL)</a></li>
-                  <li><a class="dropdown-item" href="#">Astah file</a></li>
-                  <li><a class="dropdown-item" href="#">Specifications</a></li>
-                  <li><a class="dropdown-item" href="#">Publications</a></li>
-                </ul>
-              </li>
+              <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Core Layer</a></li>
+              <li><a class="dropdown-item" href="HCIO.html">HCIO - Human-Computer Interaction Ontology</a></li>
 
-    <!--          <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>-->
-            
+              <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Domain Layer</a></li>
+              <li><a class="dropdown-item" href="HCIDO.html">HCIDO - Human-Computer Interaction Design Ontology</a></li>
+              <li><a class="dropdown-item" href="HCIEO.html">HCIEO - Human-Computer Interaction Evaluation Ontology</a></li>
+              <!--<li><a class="dropdown-item" href="HCIDPO.html">HCIDPO - Human-Computer Interaction Design Process Ontology</a></li>-->
+              <li><a class="dropdown-item" href="UIT&EO.html">UIT&EO - UI Types and Elements Ontology</a></li>
+              <li><a class="dropdown-item" href="HCIMO.html">HCIMO - HCI Modality Ontology</a></li>
+              <li><a class="dropdown-item" href="CUO.html">CUO - Context of Use Ontology</a></li>
+              <li><a class="dropdown-item" href="UCO.html">UCO - User Characterization Ontology</a></li>
+              <li><a class="dropdown-item" href="HCIQCO.html">HCIQCO - HCI Quality Characteristics Ontology</a></li>
             </ul>
-            
-          </div>
-        </div>
-      </nav>  
-    </header> 
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Features
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="SearchFrames.html">Concepts Searcher</a></li>
+              <li><a class="dropdown-item" href="NetworkGraph.html">Graph</a></li>
+              <li><a class="dropdown-item" href="NetworkStats.html">Stats</a></li>
+
+              <!--<li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="SeonFeedback.html">Feedback</a></li>-->
+            </ul>
+          </li>
+
+          <!--<li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              More
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="SEON.owl" target="_blank">Operational Version (in OWL)</a></li>
+              <li><a class="dropdown-item" href="#">Astah file</a></li>
+              <li><a class="dropdown-item" href="#">Specifications</a></li>
+              <li><a class="dropdown-item" href="#">Publications</a></li>
+            </ul>
+          </li>-->
+
+         <!-- <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              @onto
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#ontologydescription">Ontology Description</a></li>
+              <li><a class="dropdown-item" href="#relatedontologies">Related Ontologies</a></li>
+              <li><a class="dropdown-item" href="#ontologymodels">Ontology Models</a></li>
+              <li><a class="dropdown-item" href="#conceptsdefinition">Concepts Definition</a></li>
+              <li><a class="dropdown-item" href="#detailedconcepts">Detailed Concepts</a></li>
+            </ul>
+          </li>-->
+
+<!--          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>-->
+        
+        </ul>
+        
+      </div>
+    <!--</div>-->
+  </nav>  
+    
+  
+
+
+  
+    </header>
        
     <main class="container-fluid">
       <div class="bg-light p-5 rounded">
@@ -109,12 +132,11 @@
           <h3 class="featurette-heading">Foundational Layer</h3>
           <div class="row">
 <div class="p-3 m-3 col border border-dark"><p class="lead" align="justify">UFO - Unified Foundational Ontology</p>
-<code>132 concepts<br/>
-97 internal relations<br/>
-0 external generalizations <br/>
-0 external dependencies </code>
+<code class="text-muted"><mark>132</mark> concepts<br/>
+<mark>97</mark> internal relations<br/>
+<mark>0</mark> external generalizations <br/>
+<mark>0</mark> external dependencies </code>
 </div>
-
 <div class="p-3 m-3 col"></div>
 </div>
 
@@ -126,12 +148,11 @@
           <h3 class="featurette-heading">Core Layer</h3>
           <div class="row">
 <div class="p-3 m-3 col border border-dark"><p class="lead" align="justify">HCIO - Human-Computer Interaction Ontology</p>
-<p><span class="badge badge-dark">version 1.0</span></p><code>24 concepts<br/>
-33 internal relations<br/>
-22 external generalizations (UFO:10, SysSwO:9, COM:3)<br/>
-13 external dependencies (SysSwO:7, HCIDO:2, HCIEO:3, RSRO:1)</code>
+<p><span class="badge badge-dark">version 1.0</span></p><code class="text-muted"><mark>24</mark> concepts<br/>
+<mark>33</mark> internal relations<br/>
+<mark>23</mark> external generalizations (UFO:10, SysSwO:9, COM:4)<br/>
+<mark>13</mark> external dependencies (SysSwO:7, HCIDO:2, HCIEO:3, RSRO:1)</code>
 </div>
-
 <div class="p-3 m-3 col"></div>
 </div>
 
@@ -143,63 +164,57 @@
           <h3 class="featurette-heading">Domain Layer</h3>
           <div class="row">
 <div class="p-3 m-3 col border border-dark"><p class="lead" align="justify">HCIDO - Human-Computer Interaction Design Ontology</p>
-<p><span class="badge badge-dark">version 1.0</span></p><code>21 concepts<br/>
-24 internal relations<br/>
-22 external generalizations (HCIO:3, SysSwO:3, SDRO:14, RSRO:2)<br/>
-1 external dependencies (HCIO:1)</code>
+<p><span class="badge badge-dark">version 1.0</span></p><code class="text-muted"><mark>21</mark> concepts<br/>
+<mark>24</mark> internal relations<br/>
+<mark>22</mark> external generalizations (HCIO:3, SysSwO:3, SDRO:14, RSRO:2)<br/>
+<mark>1</mark> external dependencies (HCIO:1)</code>
 </div>
 <div class="p-3 m-3 col border border-dark"><p class="lead" align="justify">HCIEO - Human-Computer Interaction Evaluation Ontology</p>
-<p><span class="badge badge-dark">version 1.0</span></p><code>9 concepts<br/>
-19 internal relations<br/>
-11 external generalizations (UFO:5, SPO:2, SysSwO:2, COM:1, RSRO:1)<br/>
-8 external dependencies (HCIO:5, COM:2, HCIDO:1)</code>
+<p><span class="badge badge-dark">version 1.0</span></p><code class="text-muted"><mark>9</mark> concepts<br/>
+<mark>19</mark> internal relations<br/>
+<mark>11</mark> external generalizations (UFO:5, SPO:2, SysSwO:2, COM:1, RSRO:1)<br/>
+<mark>8</mark> external dependencies (HCIO:5, COM:2, HCIDO:1)</code>
 </div>
 
 </div>
 <div class="row">
-<div class="p-3 m-3 col border border-dark"><p class="lead" align="justify">HCIDPO - Human-Computer Interaction Design Process Ontology</p>
-<p><span class="badge badge-danger text-lowercase">Under Development</span></p><code>27 concepts<br/>
-27 internal relations<br/>
-7 external generalizations (SPO:6, SysSwO:1)<br/>
-0 external dependencies </code>
-</div>
 <div class="p-3 m-3 col border border-dark"><p class="lead" align="justify">UIT&EO - UI Types and Elements Ontology</p>
-<p><span class="badge badge-danger text-lowercase">Under Development</span></p><code>0 concepts<br/>
-0 internal relations<br/>
-0 external generalizations <br/>
-0 external dependencies </code>
+<p><span class="badge badge-danger text-lowercase">Under Development</span></p><code class="text-muted"><mark>0</mark> concepts<br/>
+<mark>0</mark> internal relations<br/>
+<mark>0</mark> external generalizations <br/>
+<mark>0</mark> external dependencies </code>
 </div>
-
-</div>
-<div class="row">
 <div class="p-3 m-3 col border border-dark"><p class="lead" align="justify">HCIMO - HCI Modality Ontology</p>
-<p><span class="badge badge-danger text-lowercase">Under Development</span></p><code>0 concepts<br/>
-0 internal relations<br/>
-0 external generalizations <br/>
-0 external dependencies </code>
-</div>
-<div class="p-3 m-3 col border border-dark"><p class="lead" align="justify">CUO - Context of Use Ontology</p>
-<p><span class="badge badge-danger text-lowercase">Under Development</span></p><code>0 concepts<br/>
-0 internal relations<br/>
-0 external generalizations <br/>
-0 external dependencies </code>
+<p><span class="badge badge-danger text-lowercase">Under Development</span></p><code class="text-muted"><mark>0</mark> concepts<br/>
+<mark>0</mark> internal relations<br/>
+<mark>0</mark> external generalizations <br/>
+<mark>0</mark> external dependencies </code>
 </div>
 
 </div>
 <div class="row">
-<div class="p-3 m-3 col border border-dark"><p class="lead" align="justify">UCO - User Characterization Ontology</p>
-<p><span class="badge badge-danger text-lowercase">Under Development</span></p><code>0 concepts<br/>
-0 internal relations<br/>
-0 external generalizations <br/>
-0 external dependencies </code>
+<div class="p-3 m-3 col border border-dark"><p class="lead" align="justify">CUO - Context of Use Ontology</p>
+<p><span class="badge badge-danger text-lowercase">Under Development</span></p><code class="text-muted"><mark>0</mark> concepts<br/>
+<mark>0</mark> internal relations<br/>
+<mark>0</mark> external generalizations <br/>
+<mark>0</mark> external dependencies </code>
 </div>
-<div class="p-3 m-3 col border border-dark"><p class="lead" align="justify">HCIQCO - HCI Quality Characteristics Ontology</p>
-<p><span class="badge badge-danger text-lowercase">Under Development</span></p><code>0 concepts<br/>
-0 internal relations<br/>
-0 external generalizations <br/>
-0 external dependencies </code>
+<div class="p-3 m-3 col border border-dark"><p class="lead" align="justify">UCO - User Characterization Ontology</p>
+<p><span class="badge badge-danger text-lowercase">Under Development</span></p><code class="text-muted"><mark>0</mark> concepts<br/>
+<mark>0</mark> internal relations<br/>
+<mark>0</mark> external generalizations <br/>
+<mark>0</mark> external dependencies </code>
 </div>
 
+</div>
+<div class="row">
+<div class="p-3 m-3 col border border-dark"><p class="lead" align="justify">HCIQCO - HCI Quality Characteristics Ontology</p>
+<p><span class="badge badge-danger text-lowercase">Under Development</span></p><code class="text-muted"><mark>0</mark> concepts<br/>
+<mark>0</mark> internal relations<br/>
+<mark>0</mark> external generalizations <br/>
+<mark>0</mark> external dependencies </code>
+</div>
+<div class="p-3 m-3 col"></div>
 </div>
 
       </div>

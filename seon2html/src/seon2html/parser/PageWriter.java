@@ -284,7 +284,6 @@ public class PageWriter {
 	public String generateStatsDivs(ArrayList<String> layer) {
 		String newlayer = "";
 		if (layer.size() > 0) {
-			//newlayer = "<div class=\"container-fluid\"><div class=\"row\">\n";
 			newlayer = "<div class=\"row\">\n";
 			if (layer.size() % 2 == 0) { //pair
 				var pair = 0;
@@ -292,50 +291,35 @@ public class PageWriter {
 					newlayer += layer.get(i);
 					pair += 1;
 			      if (pair == 2) {
-			      	//newlayer += "\n</div></div>\n"; //end div row and container
-			      	newlayer += "\n</div>\n"; //end div row and container
+			      	newlayer += "\n</div>\n"; //end div row
 			      	pair = 0;
 			      	if (i < layer.size()-2) {
-			      		//newlayer += "<div class=\"container-fluid\"><div class=\"row\">\n"; //open div row and container
-			      		newlayer += "<div class=\"row\">\n"; //open div row and container
+			      		newlayer += "<div class=\"row\">\n"; //open div row
 			      	}
-			      	
 			      }
 			    }
 			}
-			else { //impar
-				//System.out.println("\n********fAZER IMPAR** \n\n");
-				//newlayer = "<div class=\"container-fluid\"><div class=\"row\">\n";
-				newlayer = "<div class=\"row\">\n";
-				if (layer.size() == 1) {
-					newlayer += layer.get(0);
-					newlayer += "\n<div class=\"p-3 m-3 col\"></div>";
-					//newlayer += "\n</div></div>\n"; //end div row and container
-					newlayer += "\n</div>\n"; //end div row and container
-				}
-				else {
-					var odd = 0;
-					for (int i = 0; i < layer.size(); i++) {
-						newlayer += layer.get(i);
-						odd += 1;
-				      if (odd == 2) {
-				      	//newlayer += "\n</div></div>\n"; //end div row and container
-				      	newlayer += "\n</div>\n"; //end div row and container
-				      	odd = 0;
-				      	// 2 < 1
-				      	if (i < layer.size()-2) {
-				      		//newlayer += "<div class=\"container-fluid\"><div class=\"row\">\n"; //open div row and container
-				      		newlayer += "<div class=\"row\">\n"; //open div row and container
-				      	}
-				      }
-				      else if (i == layer.size()-1) {
-				      	newlayer += "<div class=\"p-3 m-3 col\"></div>";
-						//newlayer += "\n</div></div>\n"; //end div row and container
-						newlayer += "\n</div>\n"; //end div row and container
-				      }
-					}    
-				}
+			else { //odd				
+				var odd = 0;
+				for (int i = 0; i < layer.size(); i++) {
+					newlayer += layer.get(i);
+					odd += 1;
+			      if (odd == 2) {
+			      	newlayer += "\n</div>\n"; //end div row 
+			      	odd = 0;
+			      	if (i <= layer.size()-1) {
+			      		newlayer += "<div class=\"row\">\n"; //open div row and container
+			      	}
+			      }
+			      else if (i == layer.size()-1) {
+			      	newlayer += "<div class=\"p-3 m-3 col\"></div>";
+					newlayer += "\n</div>\n"; //end div row
+			      }
+				}    
 			}
+		} 
+		else {
+			newlayer = "No Layer";
 		}
 		return newlayer;
 	}
@@ -423,10 +407,10 @@ public class PageWriter {
 				}
 			}
 
-			stats += "<code>" + concepts.size() + " concepts<br/>\n";
-			stats += relats + " internal relations<br/>\n";
-			stats += generals + " external generalizations " + allGens + "<br/>\n";
-			stats += depends + " external dependencies " + allDeps + "</code>\n</div>\n";
+			stats += "<code class=\"text-muted\"><mark>" + concepts.size() + "</mark> concepts<br/>\n";
+			stats += "<mark>" + relats + "</mark> internal relations<br/>\n";
+			stats += "<mark>" + generals + "</mark> external generalizations " + allGens + "<br/>\n";
+			stats += "<mark>" + depends + "</mark> external dependencies " + allDeps + "</code>\n</div>\n";
 
 			if (level != null) {
 				if (level == OntoLevel.FOUNDATIONAL) arFound.add(stats);
@@ -449,14 +433,9 @@ public class PageWriter {
 				}
 			}
 		}
-
 		var foundlayer = generateStatsDivs(arFound);
 		var corelayer = generateStatsDivs(arCore);
 		var domainlayer = generateStatsDivs(arDomain);
-
-		//System.out.println("\n\n\n********foundlayer PAR** " + foundlayer + "\n\n\n");
-		//System.out.println("\n\n\n********corelayer PAR** " + corelayer + "\n\n\n");
-		//System.out.println("\n\n\n********domainlayer PAR** " + domainlayer + "\n\n\n");
 
 		//html = html.replace("@title", hcion);
 		html = html.replace("@foundOntology", foundlayer);
@@ -530,7 +509,7 @@ public class PageWriter {
 					nourl = "http://dev.nemo.inf.ufes.br/seon/SwO.html";
 					break;
 				case "SysSwO":
-					nourl = "http://dev.nemo.inf.ufes.br/seon/SwO.html";
+					nourl = "SysSwO.html";
 					break;
 				case "RSRO":
 					nourl = "http://dev.nemo.inf.ufes.br/seon/RSRO.html";
@@ -580,11 +559,6 @@ public class PageWriter {
 		return nourl;
 	}
 
-	/* Return ontologies concepts URL, specially made for SEON (external url) */
-	/* Simone Dornelas */
-	/*private static String conceptsOntoURL(){
-
-	}*/
 
 	/* Prints the Ontologies' pages. */
 	private void generateOntologyPage(Ontology onto) {
@@ -692,11 +666,29 @@ public class PageWriter {
 	/* Generates the file with the concepts and definitions for the Search. */
 	private void generateSearchBase() {
 		String conceptsHash = "var concepts = {\n";
+		String seon = "SEON";
+		String hcion = "HCI-ON";
 		List<Concept> concepts = Concept.getAllConcepts();
 		Collections.sort(concepts);
 		for (Concept concept : concepts) {
 			String definition = concept.getDefinition().replaceAll("\'", "").replaceAll("\n", ". ");
-			conceptsHash += "'" + concept.getName() + "': {'def': '" + definition + "', 'ref': '" + concept.getReference() + "_detail'},\n";
+			//conceptsHash += "'" + concept.getName() + "': {'def': '" + definition + "', 'ref': '" + concept.getReference() + "_detail'},\n";
+			
+			//Simone
+			conceptsHash += "'" + concept.getName() + "': {'def': '" + definition + "', 'ref': '";
+			Ontology whatOnto = concept.getOntology();
+			if (whatOnto.getNetwork().equals(seon)) {
+				String onURL = networkedOntoURL(whatOnto.getMainOntology().getShortName());
+				//conceptsHash += onURL + "#" + whatOnto.getMainOntology().getShortName() + "_" + concept.getName().replace(' ', '+') + "_detail'},\n";
+				conceptsHash += onURL + "#" + whatOnto.getMainOntology().getShortName() + "_" + concept.getName().replace(' ', '+') + "_detail', ";
+				conceptsHash += "'onto': '" + whatOnto.getMainOntology().getShortName() + "', 'net': '" + whatOnto.getNetwork() + "'},\n";
+			}
+			else {
+				//conceptsHash += concept.getReference() + "_detail'},\n";
+				conceptsHash += concept.getReference() + "_detail', ";
+				conceptsHash += "'onto': '" + whatOnto.getMainOntology().getShortName() + "', 'net': '" + whatOnto.getNetwork() + "'},\n";
+			}
+
 		}
 		conceptsHash += "};";
 		Utils.stringToFile("./page/ConceptsHash.js", conceptsHash);
@@ -798,7 +790,7 @@ public class PageWriter {
 			struct = struct.replace("@diagram", name);
 			struct = struct.replace("@image", image);
 			String newDescription = diag.getDescription();
-			newDescription = newDescription.replaceAll("<ax>", "<code>").replaceAll("</ax>", "</code>");
+			newDescription = newDescription.replaceAll("<ax>", "<code class=\"text-muted\">").replaceAll("</ax>", "</code>");
 			//struct = struct.replace("@description", formatDescription(diag.getDescription()));
 			struct = struct.replace("@description", formatDescription(newDescription));
 			figCount++;
@@ -1054,7 +1046,7 @@ public class PageWriter {
 			// main information
 			String ster = concept.getStereotype();
 			if (!ster.isEmpty()) {
-				ster = "<br/><code>&lt&lt" + ster + "&gt&gt</code>\n";
+				ster = "<br/><code class=\"text-muted\">&lt&lt" + ster + "&gt&gt</code>\n";
 			} else {
 				if (!onto.getShortName().equals("UFO")) System.out.println("*" + concept + " <none>");
 			}
@@ -1096,7 +1088,7 @@ public class PageWriter {
 			List<Relation> relations = Relation.getRelationsByConcept(concept);
 			String relats = "";
 			if (!relations.isEmpty()) {
-				relats = "\n<code>";
+				relats = "\n<code class=\"text-muted\">";
 				for (Relation relation : relations) {
 					Ontology ontoSource = relation.getSource().getMainOntology();
 					Ontology ontoTarget = relation.getTarget().getMainOntology();
