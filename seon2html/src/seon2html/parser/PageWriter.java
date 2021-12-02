@@ -88,6 +88,9 @@ public class PageWriter {
 	/* Creates a Network view (graph) from the Ontologies and dependencies. */
 	private void generateNetworkGraph(Package seon) {
 		System.out.println("# Creating the Network Graph");
+		String netseon = "SEON";
+		String nethcion = "HCI-ON";
+
 		// Reading the HTML template
 		String code = Utils.fileToString("./resources/Template.NetworkCode.js");
 
@@ -104,11 +107,38 @@ public class PageWriter {
 		int diff = 100;
 		double factor = 1.25;
 		int id = 0;
+
 		for (Ontology ontology : nwOntos) {
 			String name = ontology.getShortName();
 			int level = 3; // domain
 			String color = "#e1e1d0"; // neutral
+			
+			//Simone
 			if (ontology.getLevel() == OntoLevel.DOMAIN) {
+				if (ontology.getNetwork().equals(netseon)) {
+					color = "#ffff99"; // yellow	
+				} 
+				else if (ontology.getNetwork().equals(nethcion)) {
+					color = "#E5EFF7"; // blue
+				}
+				
+			} else if (ontology.getLevel() == OntoLevel.CORE) {
+				level = 2;
+				if (ontology.getNetwork().equals(netseon)) {
+					color = "#99ff99"; // green
+				} 
+				else if (ontology.getNetwork().equals(nethcion)) {
+					color = "#E8D9E8"; // pink
+				}
+				
+			} else if (ontology.getLevel() == OntoLevel.FOUNDATIONAL) {
+				level = 1;
+				color = "#E9EBEB"; // gray
+			} else {
+				continue;
+			}
+
+			/*if (ontology.getLevel() == OntoLevel.DOMAIN) {
 				color = "#ffff99"; // yellow
 			} else if (ontology.getLevel() == OntoLevel.CORE) {
 				level = 2;
@@ -118,12 +148,13 @@ public class PageWriter {
 				color = "#99ffff"; // blue
 			} else {
 				continue;
-			}
+			}*/
 			// {data: {id:'0', name:'UFO', dim:92, level:1, color:'#99ffff'}},
 			nodes += "  {data: {id:'" + id + "', name:'" + name + "', dim:" + (diff + (int) (factor * ontology.getAllConcepts().size())) + ", level:" + level + ", color:'" + color
 					+ "'}},\n";
 			id++;
 		}
+
 		// neutral nodes (examples)
 		// nodes += " {data: {id:'" + (id++) + "', name:'DocO', dim:" + diff + ", level:3, color:'#e1e1d0'}},\n";
 		// nodes += " {data: {id:'" + (id++) + "', name:'RSMO', dim:" + diff + ", level:3, color:'#e1e1d0'}},\n";
@@ -155,7 +186,6 @@ public class PageWriter {
 				}
 			}
 		}
-
 		// Replacing the tags
 		code = code.replace("@nodes", nodes);
 		code = code.replace("@edges", edges);
@@ -169,7 +199,6 @@ public class PageWriter {
 		int[][] matrix = new int[ontos.size()][ontos.size()];
 		// for each ontology
 		for (int i = 0; i < ontos.size(); i++) {
-			// System.out.println(ontos.get(i));
 			// get the concepts and their relations (including generalizations)
 			for (Concept concept : ontos.get(i).getAllConcepts()) {
 				// find the ontology of each relation target
