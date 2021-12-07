@@ -75,14 +75,21 @@ public class PageWriter {
 	/* Prepare the main SEON diagram and put it in the SEON Page. */
 	private void generateSeonPage(Package seon) {
 		// Reading the HTML template
-		String html = Utils.fileToString("./resources/Template.Seon.html");
+		//String html = Utils.fileToString("./resources/Template.Seon.html");
+		String html = Utils.fileToString("./resources/Template.HCION.html");
 
 		// Replacing the tags for the actual values
-		Diagram diagram = seon.getDiagrams().get(0); // suposing only one package diagram here.
-		html = html.replace("@networkImage", parseImage(diagram));
+		//Diagram diagram = seon.getDiagrams().get(0); // suposing only one package diagram here.
+		Diagram hciondiagram = seon.getDiagrams().get(3); // HCI-ON package diagram here.
+		Diagram hsdiagram = seon.getDiagrams().get(4); // HCI-ON & SEON packages diagrams here.		
+		
+		//html = html.replace("@networkImage", parseImage(diagram));
+		html = html.replace("@networkImage", parseImage(hciondiagram));
+		html = html.replace("@hcionSeonImage", parseImage(hsdiagram));
 
 		// Writing the HTML page
-		Utils.stringToFile("./page/SEON.html", html);
+		//Utils.stringToFile("./page/SEON.html", html);
+		Utils.stringToFile("./page/HCION.html", html);
 	}
 
 	/* Creates a Network view (graph) from the Ontologies and dependencies. */
@@ -846,6 +853,7 @@ public class PageWriter {
 		IDiagram aDiagram = diagram.getAstahDiagram();
 		String seon = "SEON";
 		String hcion = "HCI-ON";
+		String ufo = "UFO";
 		try {
 			// For Conceptual Model diagrams
 			if (diagram.getType() == DiagType.CONCEPTUALMODEL) {
@@ -928,6 +936,10 @@ public class PageWriter {
 						}
 						else if (pack.getNetwork().equals(hcion)) {
 							area = area.replace("@reference", networkedOntoURL(hcion));
+							area = area.replace("@target", "");
+						}
+						else if (pack.getNetwork().equals(ufo)){
+							area = area.replace("@reference", networkedOntoURL(ufo));
 							area = area.replace("@target", "");
 						}
 					}

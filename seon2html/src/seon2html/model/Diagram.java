@@ -9,16 +9,18 @@ public class Diagram {
 	private DiagType	type;
 	private Package		pack;
 	private IDiagram	astahDiagram;
+	private String 		network;
 
 	public static enum DiagType {
 		PACKAGE, CONCEPTUALMODEL, OTHER, IGNORE
 	}
 
-	public Diagram(String name, String description, DiagType type, IDiagram astahDiagram) {
+	public Diagram(String name, String description, DiagType type, IDiagram astahDiagram, String network) {
 		this.name = name;
 		this.description = description;
 		this.type = type;
 		this.astahDiagram = astahDiagram;
+		this.network = network;
 	}
 
 	/** Returns the diagram type (PackType). */
@@ -52,6 +54,10 @@ public class Diagram {
 
 	public Package getPack() {
 		return pack;
+	}
+
+	public String getDiagramNetwork() {
+		return this.network;
 	}
 
 	public void setPack(Package pack) {

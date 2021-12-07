@@ -194,7 +194,10 @@ public class ModelReader {
 			String name = elem.getName();
 			String definition = elem.getDefinition();
 			DiagType type = Diagram.getDiagramType(elem.getTaggedValue("Type"));
-			Diagram diagram = new Diagram(name, definition, type, elem);
+			//Diagram diagram = new Diagram(name, definition, type, elem);
+			String net = elem.getTaggedValue("Network");
+
+			Diagram diagram = new Diagram(name, definition, type, elem, net);
 			diagram.setPack(superpack);
 			superpack.addDiagram(diagram);
 			// System.out.println("DIAGRAM:" + diagram);

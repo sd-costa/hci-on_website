@@ -1,0 +1,400 @@
+<!doctype html>
+
+<html lang="en">
+
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+      <meta name="generator" content="Jekyll v3.8.6">
+      <title>HCI-ON</title>    
+
+		<!-- Bootstrap core CSS -->
+		<link href="../resources/static/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Custom styles for this template -->
+		<link href="../resources/static/bootstrap-5.1.3-dist/css/navbar-top-fixed.css" rel="stylesheet">
+		<link href="../resources/static/bootstrap-5.1.3-dist/css/sticky-footer-navbar.css" rel="stylesheet">
+		<link href="../resources/static/bootstrap-5.1.3-dist/css/carousel.css" rel="stylesheet">
+
+      <style>
+        .bd-placeholder-img {
+	        font-size: 1.125rem;
+	        text-anchor: middle;
+	        -webkit-user-select: none;
+	        -moz-user-select: none;
+	        -ms-user-select: none;
+	        user-select: none;
+	      }
+
+	      @media (min-width: 768px) {
+	        .bd-placeholder-img-lg {
+	          font-size: 3.5rem;
+	        }
+	      }
+
+	      .h2, .h3, h2, h3 {
+	      	margin-bottom: 2.5rem;
+	      }
+
+
+	      .span {
+	      	font-size: 2rem;
+	      }
+
+	      .featurette-heading {
+	        margin-top: 0;
+	      }
+      </style>
+
+    </head>
+
+  <body data-new-gr-c-s-check-loaded="14.1038.0" data-gr-ext-installed="">
+<header>
+  
+  <!--MAIN fixed navbar --> 
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <!--<div class="container-fluid">-->
+      <a class="navbar-brand" href="HCION.html">HCI-ON</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              The Network
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item fst-italic" href="HCION.html#architecture" tabindex="-1" aria-disabled="true">Architecture</a></li>
+              <li><a class="dropdown-item fst-italic" href="#" tabindex="-1" aria-disabled="true">Evolution Mechanisms</a></li>
+              <li><a class="dropdown-item fst-italic" href="#" tabindex="-1" aria-disabled="true">Relationship with SEON</a></li>
+              <li><hr class="dropdown-divider"></li>
+
+              <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Foundational Layer</a></li>
+              <li><a class="dropdown-item" href="UFO.html">UFO - Unified Foundational Ontology</a></li>
+
+              <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Core Layer</a></li>
+              <li><a class="dropdown-item" href="HCIO.html">HCIO - Human-Computer Interaction Ontology</a></li>
+
+              <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Domain Layer</a></li>
+              <li><a class="dropdown-item" href="HCIDO.html">HCIDO - Human-Computer Interaction Design Ontology</a></li>
+              <li><a class="dropdown-item" href="HCIEO.html">HCIEO - Human-Computer Interaction Evaluation Ontology</a></li>
+              <!--<li><a class="dropdown-item" href="HCIDPO.html">HCIDPO - Human-Computer Interaction Design Process Ontology</a></li>-->
+              <li><a class="dropdown-item" href="UIT&EO.html">UIT&EO - UI Types and Elements Ontology</a></li>
+              <li><a class="dropdown-item" href="HCIMO.html">HCIMO - HCI Modality Ontology</a></li>
+              <li><a class="dropdown-item" href="CUO.html">CUO - Context of Use Ontology</a></li>
+              <li><a class="dropdown-item" href="UCO.html">UCO - User Characterization Ontology</a></li>
+              <li><a class="dropdown-item" href="HCIQCO.html">HCIQCO - HCI Quality Characteristics Ontology</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Features
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="SearchFrames.html">Concepts Searcher</a></li>
+              <li><a class="dropdown-item" href="NetworkGraph.html">Graph</a></li>
+              <li><a class="dropdown-item" href="NetworkStats.html">Stats</a></li>
+
+              <!--<li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="SeonFeedback.html">Feedback</a></li>-->
+            </ul>
+          </li>
+
+          <!--<li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              More
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="SEON.owl" target="_blank">Operational Version (in OWL)</a></li>
+              <li><a class="dropdown-item" href="#">Astah file</a></li>
+              <li><a class="dropdown-item" href="#">Specifications</a></li>
+              <li><a class="dropdown-item" href="#">Publications</a></li>
+            </ul>
+          </li>-->
+
+         <!-- <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              @onto
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#ontologydescription">Ontology Description</a></li>
+              <li><a class="dropdown-item" href="#relatedontologies">Related Ontologies</a></li>
+              <li><a class="dropdown-item" href="#ontologymodels">Ontology Models</a></li>
+              <li><a class="dropdown-item" href="#conceptsdefinition">Concepts Definition</a></li>
+              <li><a class="dropdown-item" href="#detailedconcepts">Detailed Concepts</a></li>
+            </ul>
+          </li>-->
+
+<!--          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>-->
+        
+        </ul>
+        
+      </div>
+    <!--</div>-->
+  </nav>  
+
+    </header>
+	<main role="main" class="container-fluid">
+
+	<div class="bg-light p-5 rounded">
+		<h1 class="featurette-heading">HCI-ON: The Human-Computer Interaction Ontology Network</h1>
+	</div>
+	
+	<div class="px-5 my-5 rounded" id="hciondescription">
+		<div class="card">
+		  <div class="card-body">
+		    <h2 class="featurette-heading card-title">The Network</h2>
+				<p class="lead card-text" align="justify">Acrescentar descricao</p>
+				<p class="lead card-text" align="justify">Acrescentar descricao</p>
+				<p class="lead card-text" align="justify">Acrescentar descricao</p>
+		  </div>
+		</div>
+	</div>
+
+	<div class="px-5 my-5 rounded" id="architecture">
+		<div class="card">
+		  <div class="card-body">
+		    <h2 class="featurette-heading card-title">HCI-ON's Architecture</h2>
+		    <p class="lead card-text" align="justify">Acrescentar descricao</p>
+		    <p class="lead card-text" align="justify"><small class="text-muted">Last updated 3 mins ago</small></p>
+			  <img src="images/hcion_architecture.png" class="img-fluid" alt="...">
+		  </div>
+		</div>
+	</div>
+
+	<hr>
+
+	<p>SEON provides a well-grounded network of SE reference
+		ontologies, and mechanisms for deriving and incorporating new
+		integrated domain ontologies into the network.</p>
+	<p>SEON results from various efforts on building ontologies for the
+		Software Engineering (SE) field. Although SEON itself is a new
+		proposal, the studies and ontologies developed along the years are
+		important contributions for defining this network. Hence, SEON rises
+		with three main premises:
+	<ol type="i">
+		<li>being based on a well-founded grounding for ontology development;</li>
+		<li>offering mechanisms to support building and integrating new SE
+			domain ontologies to the network; and</li>
+		<li>promoting integration by keeping a consistent semantics for
+			concepts and relations along the whole network.</li>
+	</ol>
+	<p>Currently, the SEON Network is composed of the networked
+		ontologies shown in Figure 1.</p>
+	<p align="center"><img src="images/HCI-ON.png" width="594" class="map img-fluid" usemap="#HCI-ON"><map name="HCI-ON">
+<area shape="rect" coords="58,257,538,325" href="HCIO.html#HCIO_HCIO_section" target="" title="">
+<area shape="rect" coords="361,476,429,544" href="CUO.html#CUO_CUO_section" target="" title="">
+<area shape="rect" coords="76,476,158,544" href="HCIDO.html#HCIDO_HCIDO_section" target="" title="">
+<area shape="rect" coords="79,626,158,694" href="HCIEO.html#HCIEO_HCIEO_section" target="" title="">
+<area shape="rect" coords="450,626,533,694" href="HCIMO.html#HCIMO_HCIMO_section" target="" title="">
+<area shape="rect" coords="233,476,324,544" href="HCIQCO.html#HCIQCO_HCIQCO_section" target="" title="">
+<area shape="rect" coords="457,476,525,544" href="UCO.html#UCO_UCO_section" target="" title="">
+<area shape="rect" coords="243,626,331,694" href="UIT&EO.html#UIT&EO_UIT&EO_section" target="" title="">
+<area shape="rect" coords="27,415,568,710" href="index.html" target="" title="">
+<area shape="rect" coords="27,218,568,343" href="index.html" target="" title="">
+<area shape="rect" coords="25,60,566,128" href="UFO.html#UFO_UFO_section" target="" title="">
+<area shape="rect" coords="12,174,583,725" href="index.html" target="" title="">
+<area shape="rect" coords="10,10,584,149" href="UFO.html" target="" title=""></map></p>
+	<h4 align="center">
+		Figure 1. SEON Network view. (<a href="NetworkGraph.html">Network
+			Graph view</a>)
+	</h4>
+	<br>
+
+	<p>Currently, the SEON Network is composed of the networked
+		ontologies shown in Figure 1.</p>
+	<p align="center"><img src="images/HCI-ON and SEON.png" width="1256" class="map img-fluid" usemap="#HCI-ON and SEON"><map name="HCI-ON and SEON">
+<area shape="rect" coords="711,331,1191,399" href="HCIO.html#HCIO_HCIO_section" target="" title="">
+<area shape="rect" coords="1014,549,1082,617" href="CUO.html#CUO_CUO_section" target="" title="">
+<area shape="rect" coords="729,549,811,617" href="HCIDO.html#HCIDO_HCIDO_section" target="" title="">
+<area shape="rect" coords="732,699,811,767" href="HCIEO.html#HCIEO_HCIEO_section" target="" title="">
+<area shape="rect" coords="1103,699,1186,767" href="HCIMO.html#HCIMO_HCIMO_section" target="" title="">
+<area shape="rect" coords="886,549,977,617" href="HCIQCO.html#HCIQCO_HCIQCO_section" target="" title="">
+<area shape="rect" coords="1110,549,1178,617" href="UCO.html#UCO_UCO_section" target="" title="">
+<area shape="rect" coords="897,699,985,767" href="UIT&EO.html#UIT&EO_UIT&EO_section" target="" title="">
+<area shape="rect" coords="78,386,148,454" href="http://dev.nemo.inf.ufes.br/seon/COM.html#COM_COM_section" target="_blank" title="">
+<area shape="rect" coords="215,385,279,453" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_SPO_section" target="_blank" title="">
+<area shape="rect" coords="381,385,469,453" href="SysSwO.html#SysSwO_SysSwO_section" target="_blank" title="">
+<area shape="rect" coords="373,633,448,701" href="SDRO.html#SDRO_SDRO_section" target="_blank" title="">
+<area shape="rect" coords="142,633,216,701" href="http://dev.nemo.inf.ufes.br/seon/RSRO.html#RSRO_RSRO_section" target="_blank" title="">
+<area shape="rect" coords="680,292,1221,417" href="index.html" target="" title="">
+<area shape="rect" coords="680,489,1221,784" href="index.html" target="" title="">
+<area shape="rect" coords="30,60,1229,128" href="UFO.html#UFO_UFO_section" target="" title="">
+<area shape="rect" coords="33,331,507,478" href="http://dev.nemo.inf.ufes.br/seon/" target="_blank" title="">
+<area shape="rect" coords="33,599,507,724" href="http://dev.nemo.inf.ufes.br/seon/" target="_blank" title="">
+<area shape="rect" coords="635,205,1246,798" href="index.html" target="" title="">
+<area shape="rect" coords="10,10,1246,143" href="UFO.html" target="" title="">
+<area shape="rect" coords="10,242,526,739" href="http://dev.nemo.inf.ufes.br/seon/" target="_blank" title=""></map></p>
+	<h4 align="center">
+		Figure 1. SEON Network view. (<a href="NetworkGraph.html">Network
+			Graph view</a>)
+	</h4>
+	<br>
+
+	<hr>
+
+
+	<h3>Foundational layer</h3>
+	<p>
+		At the bottom of SEON, there is the Unified Foundational Ontology
+		(UFO), which is developed based on a number of theories from Formal
+		Ontology, Philosophical Logics, Philosophy of Language, Linguistics
+		and Cognitive Psychology. UFO [<a
+			href="http://doc.utwente.nl/50826/1/thesis_Guizzardi.pdf"
+			target="_blank">1</a>] is divided in three parts: an ontology of
+		endurants (objects), an ontology of perdurants (events), and an
+		ontology of social entities. UFO's ontological distinctions are used
+		for classifying SEON concepts, e.g., as <i>objects</i>, <i>actions</i>,
+		<i>commitments</i>, <i>agents</i>, <i>roles</i>, <i>goals</i> and so on.
+		UFO provides the necessary grounding for the concepts and relations of
+		all networked ontologies.
+	</p>
+
+	<h3>Core layer</h3>
+	<p>In the center of SEON, providing the SE core knowledge for the network,
+		there is the Software Process Ontology (SPO). SPO is a core ontology
+		grounded in UFO, aiming at establishing a common conceptualization on
+		software processes. SPO scope embraces the following aspects of the
+		software process domain: standard, project and performed processes and
+		their activities, artifacts handled, resources used and procedures adopted,
+		and stakeholders participation. SPO reuses some concepts from the Enterprise
+		Ontology (EO), a core ontology on enterprises (external to SEON), for dealing
+		with aspects related to organizations, such as team membership. Another
+		external ontology related to this layer is the Core Ontology on Measurements (COM)
+	</p>
+
+	<h3>Domain-specific layer</h3>
+	<p>Over the foundational and core layers, domain ontologies appear.
+		Each domain networked ontology is grounded in core ontologies and in UFO,
+		and encompasses a SE subdomain (e.g., software requirements, design,
+		configuration management, and measurement). Although not explicit in Figure 2,
+		more specific domain ontologies can be developed based on other more general
+		domain ontologies. For instance, ontologies addressing runtime requirements (RRO),
+		goal-oriented requirements (GORO) and the requirements development process (RDPO)
+		were developed based on the Reference Software Requirements Ontology (RSRO).
+		For matter of organization, domain networked ontologies can be grouped in subnetworks,
+		as the Requirements engineering Ontology subNetwork (ReqON).
+
+	<p>In a nutshell, the foundational ontology offers the ontological
+		distinctions for the core and domain layers, while the core layer
+		offers the SE core knowledge for building the domain networked
+		ontologies. This way of grounding the ontologies in the network is
+		helpful for engineering the networked ontologies, since it provides
+		ontological consistency and makes a number of modeling decisions
+		easier.</p>
+
+	<br>
+	<hr>
+	<h2>SEON's Search Mechanism</h2>
+	<p>As SEON grows, the number of network ontologies and their
+		concepts increases. In order to facilitate exploring the network and
+		identifying the concepts for integration or reusing, the SEON
+		Specification provides a simple search mechanism. This feature is able
+		to locate the desired concepts by maching the search string with the
+		concepts' names and definitions.</p>
+
+	<br>
+	<hr>
+	<br>
+	<p align="center">
+		<a href="http://nemo.inf.ufes.br/" target="_blank"><IMG
+			src="images/logo_nemo.svg"></a>
+	</p>
+	<h5 align="center">Powered by NEMO</h5>
+	</main>
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="../resources/static/bootstrap-5.1.3-dist/js/jquery-3.2.1.slim.min.js"></script>
+
+    <script src="../resources/static/bootstrap-5.1.3-dist/js/popper.min.js"></script>
+
+
+    <script src="../resources/static/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+
+    <script src="../resources/static/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript" src="maphilight.js"></script>
+
+		<script type="text/javascript">
+			;(function($) {
+				$.fn.rwdImageMaps = function() {
+					var $img = this;
+					var rwdImageMap = function() {
+						$img.each(function() {
+							if (typeof($(this).attr('usemap')) == 'undefined')
+								return;
+							var that = this,
+								$that = $(that);
+
+								var w = $that.attr('width'),
+									h = $that.attr('height');
+								if (!w || !h) {
+									if (!$that.data("ratio")) {
+										var temp = new Image();
+										temp.src = $that.attr('src');
+										$that.data("ratio", temp.width / temp.height);
+									}
+									var ratio = $that.data("ratio");
+									//console.log(ratio);
+									if (!w){
+										w = (h * ratio);
+									}else if (!h) {
+										h = w / ratio;
+									}
+								}
+								var wPercent = $that.width()/100,
+										hPercent = $that.height()/100,
+										map = $that.attr('usemap').replace('#', ''),
+										c = 'coords';
+
+								$('map[name="' + map + '"]').find('area').each(function() {
+									var $this = $(this);
+									if (!$this.data(c))
+										$this.data(c, $this.attr(c));
+
+									var coords = $this.data(c).split(','),
+											coordsPercent = new Array(coords.length);
+
+									for (var i = 0; i < coordsPercent.length; ++i) {
+										if (i % 2 === 0)
+											coordsPercent[i] = parseInt(((coords[i]/w)*100)*wPercent);
+										else
+											coordsPercent[i] = parseInt(((coords[i]/h)*100)*hPercent);
+									}
+									$this.attr(c, coordsPercent.toString());
+								});
+						});
+					};
+					$(window).resize(rwdImageMap).trigger('resize');
+
+					return this;
+				};
+			})(jQuery);
+
+			$(function() {
+				$('img[usemap]').maphilight();
+				$('img[usemap]').rwdImageMaps(); 
+				
+				$(window).on('resize', function(){
+				  location.reload();
+				});
+			});			
+			
+		</script>
+
+	</body>
+	<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+</html>
