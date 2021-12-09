@@ -28,10 +28,40 @@
 	        user-select: none;
 	      }
 
-	      @media (min-width: 768px) {
+				@media (min-width: 768px) {
 	        .bd-placeholder-img-lg {
-	          font-size: 3.5rem;
+	          font-size: 1.25rem;
 	        }
+	      }
+
+	      @media (max-width: 575.98px) {
+	      	.p {
+	      		font-size: 0.75rem;	
+	      	}
+	      }
+
+	      @media (min-width: 576px) and (max-width: 767.98px) {
+	      	.p {
+	      		font-size: 1rem;	
+	      	}
+	      }
+
+	      @media (min-width: 768px) and (max-width: 991.98px) {
+	        .p {
+	        	font-size: 1.25rem;
+	        }
+	      }
+
+	      @media (min-width: 992px) and (max-width: 1199.98px) {
+	      	.p {
+	      		font-size: 1.5rem;
+	      	}
+	      }
+
+	      @media (min-width: 1200px) {
+	      	.p {
+	      		font-size: 1.75rem;
+	      	}
 	      }
 
 	      .h2, .h3, h2, h3 {
@@ -155,14 +185,10 @@
 	</div>
 	
 	<div class="px-5 my-5 rounded" id="hciondescription">
-		<div class="card">
-		  <div class="card-body">
-		    <h2 class="featurette-heading card-title">The Network</h2>
-				<p class="lead card-text" align="justify">Acrescentar descricao</p>
-				<p class="lead card-text" align="justify">Acrescentar descricao</p>
-				<p class="lead card-text" align="justify">Acrescentar descricao</p>
-		  </div>
-		</div>
+		    <h2 class="featurette-heading">The Network</h2>
+				<p class="card-text" align="justify">Acrescentar descricao</p>
+				<p class="card-text" align="justify">Acrescentar descricao</p>
+				<p class="card-text" align="justify">Acrescentar descricao</p>
 	</div>
 
 	<div class="px-5">
@@ -171,20 +197,18 @@
 	
 	<div class="px-5 my-5 rounded" id="architecture">
 		<h2 class="featurette-heading">HCI-ON's Architecture </h2>
-		<p class="lead" align="justify">ACRESCENTAR Texto: </p>
-		<p class="lead" align="justify">ACRESCENTAR Texto: </p>
-		<img src="images/hcion_architecture.png" class="img-fluid">
-	</div>
-
-	<div class="px-5">
-		<hr>
-	</div>
-
-	<div class="px-5 my-5 rounded" id="architecture">
-		<h2 class="featurette-heading">HCI-ON's Architecture </h2>
-		<p class="lead" align="justify">ACRESCENTAR Texto: </p>
-		<p class="lead" align="justify">ACRESCENTAR Texto: </p>
-		<p align="center"><img src="images/HCI-ON.png" width="594" class="map img-fluid" usemap="#HCI-ON"><map name="HCI-ON">
+		<p  align="justify">HCI-ON adopts a three-layered architecture: in the background, we have a foundational ontology (the Unified Foundational Ontology – UFO (GUIZZARDI, 2005; GUIZZARDI; FALBO; GUIZZARDI, 2008; GUIZZARDI et al., 2013)) to provide the general ground knowledge for classifying concepts and relations in the ON; in the center, core ontologies are used to represent the general domain knowledge, being the basis for the sub-domain networked ontologies; going to the borders, well-founded and aligned domain-specific ontologies appear, describing more specific knowledge. Well-founded domain ontologies are grounded in the foun- dational ontology and cover HCI more relevant aspects. Aligned ontologies are existing HCI ontologies that are connected to the ON as they are. Thus, the last layer of HCI-ON, which regards domain-specific ontologies, is subdivided into two: one with well-founded domain ontologies and another with aligned domain ontologies.</p>
+		<p  align="justify">Therefore, the HCI-ON architecture is organized considering the stated premises and the three ontology generality levels (foundational, core and domain), as Figure 1 shows.</p>
+		<div class="d-flex justify-content-center">
+			<figure class="figure">
+				<img src="images/hcion-fig01.png" class="figure-img img-fluid rounded" alt="...">
+				<figcaption class="figure-caption text-center"><span class="font-weight-bold">Figure 1: </span>HCI-ON Architecture.</figcaption>
+			</figure>
+		</div>
+		<p  align="justify">Acrescentar texto</p>
+		<div class="d-flex justify-content-center">
+			<figure class="figure">
+				<img src="images/HCI-ON.png" width="594" class="map img-fluid" usemap="#HCI-ON"><map name="HCI-ON">
 <area shape="rect" coords="58,257,538,325" href="HCIO.html#HCIO_HCIO_section" target="" title="">
 <area shape="rect" coords="361,476,429,544" href="CUO.html#CUO_CUO_section" target="" title="">
 <area shape="rect" coords="76,476,158,544" href="HCIDO.html#HCIDO_HCIDO_section" target="" title="">
@@ -197,24 +221,117 @@
 <area shape="rect" coords="27,218,568,343" href="index.html" target="" title="">
 <area shape="rect" coords="25,60,566,128" href="UFO.html#UFO_UFO_section" target="" title="">
 <area shape="rect" coords="12,174,583,725" href="index.html" target="" title="">
-<area shape="rect" coords="10,10,584,149" href="UFO.html" target="" title=""></map></p>
-			<h4 align="center">
-			Figure 1. SEON Network view. (<a href="NetworkGraph.html">Network
-			Graph view</a>)
-			</h4>
+<area shape="rect" coords="10,10,584,149" href="UFO.html" target="" title=""></map>
+				<figcaption class="figure-caption text-center"><span class="font-weight-bold">Figure 2: </span>HCI-ON Network view. <a href="NetworkGraph.html" class="text-muted">network
+			graph view</a></figcaption>
+			</figure>
+		</div>
 	</div>
 
 	<div class="px-5">
 		<hr>
 	</div>
-
+	
 	<div class="px-5 my-5 rounded" id="architecture">
-		<h2 class="featurette-heading">HCI-ON's Architecture </h2>
-		<p class="lead" align="justify">ACRESCENTAR Texto: </p>
-		<p class="lead" align="justify">ACRESCENTAR Texto: </p>
-		<p>Currently, the SEON Network is composed of the networked
-			ontologies shown in Figure 1.</p>
-			<p align="center"><img src="images/HCI-ON and SEON.png" width="1256" class="map img-fluid" usemap="#HCI-ON and SEON"><map name="HCI-ON and SEON">
+		<h2 class="featurette-heading">Foundational Layer</h2>
+		<p  align="justify">ACRESCENTAR Texto: </p>
+		<p  align="justify">ACRESCENTAR Texto: </p>
+		<div class="d-flex justify-content-center">
+			<img src="images/hcion-fig02.png" class="img-fluid">
+		</div>
+	</div>
+
+	<div class="px-5">
+		<hr>
+	</div>
+	
+	<div class="px-5 my-5 rounded" id="architecture">
+		<h2 class="featurette-heading">Core Layer</h2>
+		<p  align="justify">ACRESCENTAR Texto: </p>
+		<p  align="justify">ACRESCENTAR Texto: </p>
+		<div class="d-flex justify-content-center">
+			<img src="images/hcion-fig03.png" class="img-fluid">
+		</div>
+	</div>
+
+	<div class="px-5">
+		<hr>
+	</div>
+	
+	<div class="px-5 my-5 rounded" id="architecture">
+		<h2 class="featurette-heading">Domain Layer</h2>
+		<p  align="justify">ACRESCENTAR Texto: </p>
+		<p  align="justify">ACRESCENTAR Texto: </p>
+		<div class="d-flex justify-content-center">
+			<img src="images/hcion-fig04.png" class="img-fluid">
+		</div>
+	</div>
+
+	<div class="px-5">
+		<hr>
+	</div>
+	
+	<div class="px-5 my-5 rounded" id="architecture">
+		<h2 class="featurette-heading">Domain Layer</h2>
+		<p  align="justify">ACRESCENTAR Texto: </p>
+		<p  align="justify">ACRESCENTAR Texto: </p>
+		<div class="d-flex justify-content-center">
+			<img src="images/hcion-fig05.png" class="img-fluid">
+		</div>
+	</div>
+
+	<div class="px-5">
+		<hr>
+	</div>
+	
+	<div class="px-5 my-5 rounded" id="architecture">
+		<h2 class="featurette-heading">Domain Layer</h2>
+		<p  align="justify">ACRESCENTAR Texto: </p>
+		<p  align="justify">ACRESCENTAR Texto: </p>
+		<div class="d-flex justify-content-center">
+			<img src="images/hcion-fig06.png" class="img-fluid">
+		</div>
+	</div>
+
+	<div class="px-5">
+		<hr>
+	</div>
+	
+	<div class="px-5 my-5 rounded" id="architecture">
+		<h2 class="featurette-heading">HCI-ON's Evolution Mechanism</h2>
+		<p  align="justify">ACRESCENTAR Texto: </p>
+		<p  align="justify">ACRESCENTAR Texto: </p>
+		<div class="d-flex justify-content-center">
+			<div class="card text-center" style="width: 18rem;">
+  			<div class="card-body">
+					<figure class="figure">
+						<img src="images/hcion-fig08.png" class="figure-img img-fluid rounded" alt="...">
+						<figcaption class="figure-caption text-center"><span class="font-weight-bold">Figure 7: </span>HCI-ON Architecture.</figcaption>
+					</figure>
+				</div>
+			</div>
+		</div>
+		<p  align="justify">Acrescentar texto</p>
+	</div>
+
+	<div class="px-5">
+		<hr>
+	</div>
+	
+	<div class="px-5 my-5 rounded" id="architecture">
+		<h2 class="featurette-heading">HCI-ON's & SEON </h2>
+		<p  align="justify">ACRESCENTAR Texto: </p>
+		<p  align="justify">ACRESCENTAR Texto: </p>
+		<div class="d-flex justify-content-center">
+			<figure class="figure">
+				<img src="images/hcion-fig07.png" class="figure-img img-fluid rounded" alt="...">
+				<figcaption class="figure-caption text-center"><span class="font-weight-bold">Figure 1: </span>HCI-ON Architecture.</figcaption>
+			</figure>
+		</div>
+		<p  align="justify">Acrescentar texto</p>
+		<div class="d-flex justify-content-center">
+			<figure class="figure">
+				<img src="images/HCI-ON and SEON.png" width="1256" class="map img-fluid" usemap="#HCI-ON and SEON"><map name="HCI-ON and SEON">
 <area shape="rect" coords="711,331,1191,399" href="HCIO.html#HCIO_HCIO_section" target="" title="">
 <area shape="rect" coords="1014,549,1082,617" href="CUO.html#CUO_CUO_section" target="" title="">
 <area shape="rect" coords="729,549,811,617" href="HCIDO.html#HCIDO_HCIDO_section" target="" title="">
@@ -235,69 +352,39 @@
 <area shape="rect" coords="33,599,507,724" href="http://dev.nemo.inf.ufes.br/seon/" target="_blank" title="">
 <area shape="rect" coords="635,205,1246,798" href="index.html" target="" title="">
 <area shape="rect" coords="10,10,1246,143" href="UFO.html" target="" title="">
-<area shape="rect" coords="10,242,526,739" href="http://dev.nemo.inf.ufes.br/seon/" target="_blank" title=""></map></p>
-			<h4 align="center">
-			Figure 1. SEON Network view. (<a href="NetworkGraph.html">Network
-			Graph view</a>)
-			</h4>
-	</div>	
-
-	<div class="px-5">
-		<hr>
-	</div>
-	
-	<div class="px-5 my-5 rounded" id="architecture">
-		<h2 class="featurette-heading">Foundational Layer</h2>
-		<p class="lead" align="justify">ACRESCENTAR Texto: </p>
-		<p class="lead" align="justify">ACRESCENTAR Texto: </p>
-		<img src="images/hcion_architecture.png" class="img-fluid">
-	</div>
-
-	<div class="px-5">
-		<hr>
-	</div>
-	
-	<div class="px-5 my-5 rounded" id="architecture">
-		<h2 class="featurette-heading">Core Layer</h2>
-		<p class="lead" align="justify">ACRESCENTAR Texto: </p>
-		<p class="lead" align="justify">ACRESCENTAR Texto: </p>
-		<img src="images/hcion_architecture.png" class="img-fluid">
-	</div>
-
-	<div class="px-5">
-		<hr>
-	</div>
-	
-	<div class="px-5 my-5 rounded" id="architecture">
-		<h2 class="featurette-heading">Domain Layer</h2>
-		<p class="lead" align="justify">ACRESCENTAR Texto: </p>
-		<p class="lead" align="justify">ACRESCENTAR Texto: </p>
-		<img src="images/hcion_architecture.png" class="img-fluid">
-	</div>
-
-	<div class="px-5">
-		<hr>
-	</div>
-	
-	<div class="px-5 my-5 rounded" id="architecture">
-		<h2 class="featurette-heading">HCI-ON & SEON</h2>
-		<p class="lead" align="justify">ACRESCENTAR Texto: </p>
-		<p class="lead" align="justify">ACRESCENTAR Texto: </p>
-		<img src="images/hcion_architecture.png" class="img-fluid">
-	</div>
-
-	<div class="px-5">
-		<hr>
-	</div>
-	
-	<div class="px-5 my-5 rounded" id="architecture">
-		<h2 class="featurette-heading">HCI-ON's Evolution Mechanism</h2>
-		<p class="lead" align="justify">ACRESCENTAR Texto: </p>
-		<p class="lead" align="justify">ACRESCENTAR Texto: </p>
-		<img src="images/hcion_architecture.png" class="img-fluid">
+<area shape="rect" coords="10,242,526,739" href="http://dev.nemo.inf.ufes.br/seon/" target="_blank" title=""></map>
+				<figcaption class="figure-caption text-center"><span class="font-weight-bold">Figure 8: </span>SEON Network view.<a href="NetworkGraph.html" class="text-muted">Network
+			Graph view</a></figcaption>
+			</figure>
+		</div>
 	</div>
 
 	</main>
+
+	<footer class="p-5 rounded border-top">
+      <div class="row justify-content-md-center">
+      	<div class="col-md-auto">
+    		  <h5>Powered by</h5>
+    		  <ul class="list-unstyled text-small">
+    		  	<li>
+    		  		<a class="text-muted" href="https://nemo.inf.ufes.br/" target="_blank">NEMO</a>
+    		  	</li>
+    		  </ul>
+      	</div>
+      	<div class="col-md-auto">
+      		<h5>Contact us</h5>
+      		<ul class="list-unstyled text-small">
+      			<li>
+      				<a href="mailto:simone.costa@ufes.br" class="text-muted">simone.costa@ufes.br</a>
+      			</li>
+      			<li>
+      				<a href="mailto:monalessa@inf.ufes.br" class="text-muted">monalessa@inf.ufes.br</a>
+      			</li>
+      		</ul>
+      		<span class="text-muted"><small>Thu Dec 09 18:42:00 BRT 2021</small></span>	
+      	</div>
+      </div>
+    </footer>
 <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
