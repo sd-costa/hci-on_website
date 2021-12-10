@@ -17,6 +17,11 @@
 		<link href="../resources/static/bootstrap-5.1.3-dist/css/navbar-top-fixed.css" rel="stylesheet">
 		<link href="../resources/static/bootstrap-5.1.3-dist/css/sticky-footer-navbar.css" rel="stylesheet">
 		<link href="../resources/static/bootstrap-5.1.3-dist/css/carousel.css" rel="stylesheet">
+		
+		<!-- ICONS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 
       <style>
         .bd-placeholder-img {
@@ -185,10 +190,20 @@
 	</div>
 	
 	<div class="px-5 my-5 rounded" id="hciondescription">
-		    <h2 class="featurette-heading">The Network</h2>
-				<p class="card-text" align="justify">Acrescentar descricao</p>
-				<p class="card-text" align="justify">Acrescentar descricao</p>
-				<p class="card-text" align="justify">Acrescentar descricao</p>
+    <h2 class="featurette-heading">The Network.</h2>
+		<p align="justify" class="lead">The Human-Computer Interaction Ontology Network (HCI-ON), is a knowledge framework proposed to support addressing knowledge-related and semantic interoperability solutions.</p>
+		<p align="justify" class="lead">Ideally, in wide domains like HCI, ontologies should not be stand-alone artifacts. Thus, we advocate that ontologies should be organized in an ontology network (ON), where ontologies are modular and related together through a variety of relationships, forming a network of interlinked semantic resources (SUÁREZ-FIGUEROA et al., 2012).</p>
+		<p align="justify" class="lead">This way, knowledge is better structured and ontologies reuse concepts one from another, keeping consistency in shared concepts and decreasing overlap problems. By organizing ontologies in an ON, when ontologies are needed in scenarios spanning different HCI sub-domains, instead of spending effort to integrate several ontologies, one can just extract the ON portion to be used.</p>
+		<p align="justify" class="lead">Taking these considerations in mind, we propose the Human-Computer Interaction Ontology Network (HCI-ON) as a knowledge framework of the HCI domain</p>
+		<p align="justify" class="lead">Figure 4.2 shows the current version of HCI-ON, containing the foundational, core and well- founded domain-specific layers. Each circle (network’s node) represents an ontology. Dotted circles represent ontologies under development. Arrows denote dependency relationship between networked ontologies. Dependency relationship indicates that concepts from the target ontology are reused by the source ontology.</p>
+		<div class="d-flex justify-content-center">
+			<figure class="figure">
+				<img src="images/hcion-fig02.png" class="figure-img img-fluid rounded" alt="...">
+				<figcaption class="figure-caption text-center"><span class="font-weight-bold">Figure 1: </span>HCI-ON current version.</figcaption>
+			</figure>
+		</div>
+		<p align="justify" class="lead">Ontology development and integration are not simple tasks. In addition, for building an integrated framework, it is not just putting the pieces together. Contrariwise, it is an incremental and long-term work. Therefore, the ON shall provide the means for facilitating its growth, i.e., mechanisms that deliver the high-level structures and methods for easily accommodating the new, lower-level, pieces in such a way that preserves the network properties and does not conflict with any existing part (RUY, 2017). Finally, by organizing HCI ontologies in a network, it is not our ambition to establish a “complete HCI ontology”, but providing a starting point, and a proper structure for easing the addition of new ontologies and evolution of the existing ones. Hence, HCI-ON rises with three main premises (RUY, 2017): grounding, being based on a well-founded grounding for supporting ontology development; growth, offering mechanisms to easily building and incorporating new HCI sub-domain ontologies to the network; and consistency, promoting integration by keeping a consistent semantics for concepts and relations along the whole network.</p>
+
 	</div>
 
 	<div class="px-5">
@@ -197,15 +212,15 @@
 	
 	<div class="px-5 my-5 rounded" id="architecture">
 		<h2 class="featurette-heading">HCI-ON's Architecture </h2>
-		<p  align="justify">HCI-ON adopts a three-layered architecture: in the background, we have a foundational ontology (the Unified Foundational Ontology – UFO (GUIZZARDI, 2005; GUIZZARDI; FALBO; GUIZZARDI, 2008; GUIZZARDI et al., 2013)) to provide the general ground knowledge for classifying concepts and relations in the ON; in the center, core ontologies are used to represent the general domain knowledge, being the basis for the sub-domain networked ontologies; going to the borders, well-founded and aligned domain-specific ontologies appear, describing more specific knowledge. Well-founded domain ontologies are grounded in the foun- dational ontology and cover HCI more relevant aspects. Aligned ontologies are existing HCI ontologies that are connected to the ON as they are. Thus, the last layer of HCI-ON, which regards domain-specific ontologies, is subdivided into two: one with well-founded domain ontologies and another with aligned domain ontologies.</p>
-		<p  align="justify">Therefore, the HCI-ON architecture is organized considering the stated premises and the three ontology generality levels (foundational, core and domain), as Figure 1 shows.</p>
+		<p align="justify" class="lead">To truly enjoy the benefits of keeping the ontologies in a network, we need to take advantage of the existing resources available in the ON for gradually improving and extending it. It is crucial to establish a sustainable architecture that supports growing the ON by adding new ontologies to it or integrating existing ontologies into it.</p>
 		<div class="d-flex justify-content-center">
 			<figure class="figure">
 				<img src="images/hcion-fig01.png" class="figure-img img-fluid rounded" alt="...">
 				<figcaption class="figure-caption text-center"><span class="font-weight-bold">Figure 1: </span>HCI-ON Architecture.</figcaption>
 			</figure>
 		</div>
-		<p  align="justify">Acrescentar texto</p>
+		<p align="justify" class="lead">HCI-ON adopts a three-layered architecture: in the background, we have a foundational ontology (the Unified Foundational Ontology – UFO (GUIZZARDI, 2005; GUIZZARDI; FALBO; GUIZZARDI, 2008; GUIZZARDI et al., 2013)) to provide the general ground knowledge for classifying concepts and relations in the ON; in the center, core ontologies are used to represent the general domain knowledge, being the basis for the sub-domain networked ontologies; going to the borders, well-founded and aligned domain-specific ontologies appear, describing more specific knowledge. Well-founded domain ontologies are grounded in the foun- dational ontology and cover HCI more relevant aspects. Aligned ontologies are existing HCI ontologies that are connected to the ON as they are. Thus, the last layer of HCI-ON, which regards domain-specific ontologies, is subdivided into two: one with well-founded domain ontologies and another with aligned domain ontologies.</p>
+		<p align="justify" class="lead">Therefore, the HCI-ON architecture is organized considering the stated premises and the three ontology generality levels (foundational, core and domain), as Figure 1 shows.</p>
 		<div class="d-flex justify-content-center">
 			<figure class="figure">
 				@networkImage
@@ -213,69 +228,59 @@
 			graph view</a></figcaption>
 			</figure>
 		</div>
+		<p align="justify" class="lead">In a nutshell, the foundational layer offers the ontological distinctions for the core and domain layers, while the core layer offers the HCI core knowledge for building the domain networked ontologies. This way of grounding the ontologies in the network is helpful for engine- ering the networked ontologies, since it provides ontological consistency and makes a number of modeling decisions easier. It assures the grounding and consistency premises. Moreover, HCI is a very interrelated domain and, as HCI-ON increases, it has more ontologies with concepts and relations potentially reusable by the new ontologies. This reuse-based development reinforces the growth premise. Regarding the aligned domain-specific layer, currently, HCI-ON contains the 35 HCI ontologies identified in our secondary study (see Chapter 3).</p>
+		<p align="justify" class="lead">These ontologies were connected to HCI-ON through alignment relationships and, thus, they are kept as they are. Therefore, they are not grounded in UFO. For better visualization, ontologies at the aligned domain-specific layer are represented in several figures. Figure 4.3, Figure 4.4, Figure 4.5 and Figure 4.6 complement Figure 4.2 and present all the networked ontologies of HCI-ON. In the figures, the id related to each ontology refer to the ones assigned to the ontologies in Chapter 3. Dotted arrows represent alignment relationships.</p>
 	</div>
 
 	<div class="px-5">
 		<hr>
 	</div>
 	
-	<div class="px-5 my-5 rounded" id="architecture">
-		<h2 class="featurette-heading">Foundational Layer</h2>
-		<p  align="justify">ACRESCENTAR Texto: </p>
-		<p  align="justify">ACRESCENTAR Texto: </p>
-		<div class="d-flex justify-content-center">
-			<img src="images/hcion-fig02.png" class="img-fluid">
-		</div>
+	<div class="px-5 my-5 rounded" id="hcionfl">
+		<h3 class="featurette-heading">Foundational Layer</h3>
+		<p align="justify" class="lead">At the top of HCI-ON, sustaining the network, is the Unified Foundational Ontology (UFO) (GUIZZARDI, 2005). UFO is divided into three parts: an ontology of endurants (objects) (GUIZZARDI, 2005), an ontology of perdurants (events) (GUIZZARDI et al., 2013), and an ontology of social entities (GUIZZARDI; FALBO; GUIZZARDI, 2008). Its ontological distinctions are used for classifying HCI-ON concepts, e.g., as objects, actions, quality, agents, roles, goals and so on. UFO provides the necessary grounding for the concepts and relations of all networked ontologies. Although UFO is incorporated as an essential part of the ON, it is not under the HCI-ON control.</p>		
 	</div>
 
 	<div class="px-5">
 		<hr>
 	</div>
 	
-	<div class="px-5 my-5 rounded" id="architecture">
-		<h2 class="featurette-heading">Core Layer</h2>
-		<p  align="justify">ACRESCENTAR Texto: </p>
-		<p  align="justify">ACRESCENTAR Texto: </p>
+	<div class="px-5 my-5 rounded" id="hcioncl">
+		<h3 class="featurette-heading">Core Layer</h3>
+		<p align="justify" class="lead">In the center of HCI-ON, providing the HCI core knowledge for the network, there is the Human-Computer Interaction Ontology (HCIO). HCIO is a core ontology developed based on a set of HCI theories and literature. It captures that interactive computer system have a complex artifactual nature, being constituted by software artifacts of different nature. Its purpose is to clarify the main notions and establish an explicit common and shared conceptualization about the HCI phenomenon. HCIO describes what an interactive system is, which types of actions users perform when interacting with an interactive system and, finally, what a human-computer interaction is. It is at the heart of HCI-ON, since it includes important concepts for talking about core aspects of HCI (e.g., to talk about HCI design or evaluation, it is necessary to refer to Interactive Computer System) (COSTA et al., 2020).</p>
+	</div>
+
+	<div class="px-5">
+		<hr>
+	</div>
+	
+	<div class="px-5 my-5 rounded" id="hciondl">
+		<h3 class="featurette-heading">Domain Layer</h3>
+		<p align="justify" class="lead">Under the foundational and core layers, HCI-ON places the domain ontologies. As we explained before, this layer contains well-founded domain ontologies and aligned domain ontologies, organized in two sub-layers.</p>
+		<p align="justify" class="lead">ACRESCENTAR Texto: </p>
+	</div>
+
+	<div class="px-5">
+		<hr>
+	</div>
+	
+	<div class="px-5 my-5 rounded" id="hcionwfdsl">
+		<h4 class="featurette-heading">Well-founded Domain-specific Layer</h4>
+		<p align="justify" class="lead">Well-founded domain ontologies encompass HCI sub-domains (e.g., HCI design, HCI evaluation, user interface, user characterization), are grounded in UFO and reuse concepts from HCIO. They are connected to the network through dependency relationships. Currently, there are seven well-founded domain ontologies (some of them under development): HCI Design Ontology (HCIDO) (COSTA et al., 2020; CASTRO, 2021); HCI Evaluation Ontology (HCIEO) (presented in Chapter 6); UI Types and Elements Ontology (UIT&EO); HCI Modality Ontology (HCIMO); Context of Use Ontology (CUO); User Characterization Ontology (UCO), and HCI Quality Characteristics Ontology (HCIQCO). HCIDO and HCIEO address aspects related to, respectively, HCI design and evaluation, such as the process, produced arti- facts and stakeholders, among others. HCIMO treats, in a general way, HCI styles/paradigms (modalities of interaction). It connects to UIT&EO to indicate Input and Output (I/O) devices and types of interface used in these approaches. UIT&EO addresses interface types and their elements, associating them with the possible types of I/O equipment to be used in each element. CUO describes the elements that characterize a context of use, describing physical and social environments in which the interaction occurs, such as users involved in the interaction, tasks in which the interaction occurs and involved equipment (e.g., hardware, software). UCO treats, in a general way, aspects of user profile and characteristics that are important in the context of HCI domain, such as user’s needs, preferences, disability, capacity, impairments.</p>
+		<p align="justify" class="lead">Finally, HCIQCO describes quality characteristics of user interface or interactive computer system (e.g., usability, communicability). The decision on which well-founded domain ontologies we should develop was made in order to cover relevant aspects of the HCI domain, providing knowledge to talk about the whole life cycle of an HCI project, ranging from the HCI design, user interface, modalities of interaction, HCI evaluation to context of use.</p>
+	</div>
+
+	<div class="px-5">
+		<hr>
+	</div>
+	
+	<div class="px-5 my-5 rounded" id="hcionadsl">
+		<h2 class="featurette-heading">Aligned Domain-specific Layer</h2>
+		<p align="justify" class="lead">Aligned domain ontologies refer to existing HCI ontologies that are connected to HCI-ON as they are. They are not grounded in UFO and are connected to the network through alignment relationships. As we presented before, currently, there are 35 aligned domain ontologies (the ones we found in the secondary study) in HCI-ON.</p>
 		<div class="d-flex justify-content-center">
 			<img src="images/hcion-fig03.png" class="img-fluid">
-		</div>
-	</div>
-
-	<div class="px-5">
-		<hr>
-	</div>
-	
-	<div class="px-5 my-5 rounded" id="architecture">
-		<h2 class="featurette-heading">Domain Layer</h2>
-		<p  align="justify">ACRESCENTAR Texto: </p>
-		<p  align="justify">ACRESCENTAR Texto: </p>
-		<div class="d-flex justify-content-center">
 			<img src="images/hcion-fig04.png" class="img-fluid">
-		</div>
-	</div>
-
-	<div class="px-5">
-		<hr>
-	</div>
-	
-	<div class="px-5 my-5 rounded" id="architecture">
-		<h2 class="featurette-heading">Domain Layer</h2>
-		<p  align="justify">ACRESCENTAR Texto: </p>
-		<p  align="justify">ACRESCENTAR Texto: </p>
-		<div class="d-flex justify-content-center">
 			<img src="images/hcion-fig05.png" class="img-fluid">
-		</div>
-	</div>
-
-	<div class="px-5">
-		<hr>
-	</div>
-	
-	<div class="px-5 my-5 rounded" id="architecture">
-		<h2 class="featurette-heading">Domain Layer</h2>
-		<p  align="justify">ACRESCENTAR Texto: </p>
-		<p  align="justify">ACRESCENTAR Texto: </p>
-		<div class="d-flex justify-content-center">
 			<img src="images/hcion-fig06.png" class="img-fluid">
 		</div>
 	</div>
@@ -284,38 +289,32 @@
 		<hr>
 	</div>
 	
-	<div class="px-5 my-5 rounded" id="architecture">
-		<h2 class="featurette-heading">HCI-ON's Evolution Mechanism</h2>
-		<p  align="justify">ACRESCENTAR Texto: </p>
-		<p  align="justify">ACRESCENTAR Texto: </p>
+	<div class="px-5 my-5 rounded" id="hcionmechanism">
+		<h2 class="featurette-heading">Mechanisms to support HCI-ON evolution</h2>
+		<p align="justify" class="lead">An ON is like a living organism, i.e., it is constantly evolving. In a network, each new added node (i.e., ontology) contributes for the whole network. When a new ontology is added, it should reuse existing elements (from a higher or the same layer). Other ontologies, in turn, may be adapted to keep consistency, in order to share the same semantics along the whole network. Even the core ontologies can evolve to adapt or incorporate new concepts or relations discovered when domain ontologies are created or integrated. Moreover, due to the wideness and complexity of the domain addressed by the ON, it requires a continuous and long-term effort with ontologies being added and integrated incrementally (RUY, 2017). Therefore, new ontologies can be gradually added to HCI-ON, evolving the ON and the conceptualization it provides.</p>
+		<p align="justify" class="lead">Figure 4.8, illustrates the mechanisms to evolve the HCI-ON.</p>
 		<div class="d-flex justify-content-center">
-			<div class="card text-center" style="width: 18rem;">
-  			<div class="card-body">
-					<figure class="figure">
-						<img src="images/hcion-fig08.png" class="figure-img img-fluid rounded" alt="...">
-						<figcaption class="figure-caption text-center"><span class="font-weight-bold">Figure 7: </span>HCI-ON Architecture.</figcaption>
-					</figure>
-				</div>
-			</div>
+			<figure class="figure">
+				<img src="images/hcion-fig07.png" class="figure-img img-fluid rounded" alt="...">
+				<figcaption class="figure-caption text-center"><span class="font-weight-bold">Figure 7: </span>HCI-ON Architecture.</figcaption>
+			</figure>
 		</div>
-		<p  align="justify">Acrescentar texto</p>
+		<p align="justify" class="lead">Before explaining them, it is necessary to clarify the meaning of some terms used in Figure 4.8: integrate is the act of joining two (or more) ontologies (which deal with different subjects) using dependency relationships (SALAMON, 2018); merge is the act of joining two (or more) ontologies (which deal with the same subject) also using dependency relationships (SUÁREZ-FIGUEROA et al., 2012); align consists in putting two (or more) ontologies in correspondence using alignment relationships (SUÁREZ-FIGUEROA et al., 2012);; and (iv) re-engineer consists in changing, restructuring and improving existing ontologies (SUÁREZ-FIGUEROA et al., 2012). In this work, re-engineer involves the use of UFO (i.e., the ontology is re-engineered in the light of UFO).</p>
+		<p align="justify" class="lead">There are four ways (here, called mechanisms) of evolving HCI-ON: (i) develop new ontologies from scratch and integrate them to the network; (ii) integrate existing ontologies grounded in UFO to the network; (iii) integrate existing ontologies not grounded in UFO, to the network; and (iv) align existing ontologies not grounded in UFO, to the network. In (i), (ii) and (iii), dependency relationships are used to integrate ontologies to HCI-ON. In (iv) alignment relationships are used to put ontologies in correspondence with HCI-ON ontologies.</p>
+		<p align="justify" class="lead">In (i), the ontology engineer builds a new ontology aiming at its integration to HCI-ON. The new ontology must be developed from scratch, grounded in UFO or reusing HCI-ON conceptualization (from core or well-founded domain layer, which are grounded in UFO). This ensures sharing the same foundation among all networked ontologies. The integration of the ontology to the networked is done through the dependency relationships from the new ontology to networked ontologies. As an example, new HCI domains ontologies can be developed based on more general domain ontologies of HCI-ON. For instance, an ontology on Brain Computer Interface can be develop based on the User Interface Elements and Types Ontology (UIT&EO).</p>
+		<p align="justify" class="lead">In (ii), the ontology engineer wants to add an existing ontology to HCI-ON and that ontology was built grounded in UFO. Thus, it is already consistent with the network foundation and, thus, can be directly integrated to HCI-ON through the dependency relationships from the new ontology to networked ontologies. It may be necessary to make minor adjustments to reuse the networked ontologies conceptualization. For example, if there is an ontology about Persona developed grounded on UFO, it could be integrated to HCI-ON. When two or more existing ontologies addressing the same subject represent together the conceptualization the ontology engineer wants to add to HCI-ON (i.e., they are complementary), the ontology engineer needs to merge them before integrating them to HCI-ON.</p>
+		<p align="justify" class="lead">In (iii), the ontology engineer aims to add an existing ontology to HCI-ON and that ontology was not built grounded in UFO. Thus, first, it is necessary to re-engineer the existing ontology in the light of UFO, so that the ontology will share the same basic conceptualization than the other networked ontologies and, thus, it will be possible to integrate it into the network properly. Analogous to (ii), if there are more than one ontology and they are complementary, they need to be merged before the integrations to HCI-ON. It is worthy saying that the order in which re-engineer and merge are applied is at the discretion of the ontology engineer, i.e., he/she can merge the ontologies and them re-engineer them or the other way around. For example, taking the results of our SLR into account (Chapter 3), some new domain ontologies could be integrated to HCI-ON. For example, we can merge and re-engineer the ontologies #16 and #17 to produce a Persona Ontology; #07, #16, #25, #26 and #30 to produce a User Capacity and Accessibility Ontology; #06, #16, #20 and #27 to produce an HCI Procedure Ontology, and integrate them to HCI-ON.</p>
+		<p align="justify" class="lead">Finally, in (iv) the ontology engineer wants to add an existing ontology to the network as it is. For that, he/she must connect the ontology with HCI-ON through alignment relationships (i.e., align the existing ontology with networked ontologies by indicating equivalences between their concepts). On one hand, aligning existing ontologies to HCI-ON makes the HCI-ON conceptualization more comprehensive. On the other hand, it allows the plugged ontologies not to be changed (not affecting applications in which they are used) and, even so, extend their conceptualizations through mappings with concepts from HCI-ON ontologies. With (iv) new existing HCI ontologies (besides the ones we found in the secondary study) can be aligned to HCI-ON.</p>
 	</div>
 
 	<div class="px-5">
 		<hr>
 	</div>
 	
-	<div class="px-5 my-5 rounded" id="architecture">
+	<div class="px-5 my-5 rounded" id="hcionseon">
 		<h2 class="featurette-heading">HCI-ON's & SEON </h2>
-		<p  align="justify">ACRESCENTAR Texto: </p>
-		<p  align="justify">ACRESCENTAR Texto: </p>
-		<div class="d-flex justify-content-center">
-			<figure class="figure">
-				<img src="images/hcion-fig07.png" class="figure-img img-fluid rounded" alt="...">
-				<figcaption class="figure-caption text-center"><span class="font-weight-bold">Figure 1: </span>HCI-ON Architecture.</figcaption>
-			</figure>
-		</div>
-		<p  align="justify">Acrescentar texto</p>
+		<p align="justify" class="lead">Since several HCI concepts are related to Software Engineering, HCI-ON is integrated to SEON (Software Engineering Ontology Network) (RUY et al., 2016). SEON defines concepts such as software, hardware, equipment, requirements, stakeholder among others that are relevant to HCI. For example, to talk about interactive systems, user and user group and user requirements concepts addressed in SEON are necessary.</p>
+		<p align="justify" class="lead">SEON (presented in Section 2.3.1) has been developed over the years and provides a well-grounded network of SE reference ontologies. It is important to highlight that as HCI-ON evolves, with new HCI networked ontologies, there is a tendency for this integration to become increasingly stronger. New HCI ontologies mean new concepts and if they are related to software engineering concepts, it is therefore of the utmost importance that SEON concepts are reused.</p>
 		<div class="d-flex justify-content-center">
 			<figure class="figure">
 				@hcionSeonImage
@@ -323,35 +322,79 @@
 			Graph view</a></figcaption>
 			</figure>
 		</div>
+		<p align="justify" class="lead">Both SEON and HCI-ON adopt UFO (Unified Foundational Ontology) at the founda- tional layer. This makes easier to integrate them, since they keep the same conceptualization foundation and, as a consequence, contribute to consistency in the networked ontologies concep- tualization.</p>
+		<div class="d-flex justify-content-center">
+			<figure class="figure">
+				<img src="images/hcion-fig08.png" class="figure-img img-fluid rounded" alt="...">
+				<figcaption class="figure-caption text-center"><span class="font-weight-bold">Figure 1: </span>HCI-ON & SEON.</figcaption>
+			</figure>
+		</div>
+		<p align="justify" class="lead">Figure 4.7 shows the connections between HCI-ON and SEON. SEON ontologies relevant to the current version of HCI-ON are: the core ontologies System and Software Ontology (SysSwO, presented in Section 2.3.1.1) and Software Process Ontology (SPO, presented in Section 2.3.1.2; the Core Ontology on Measurement (COM, presented in 2.3.1.3) (SEON core ontologies) and the Reference Software Requirements Ontology (RSRO, presented in 2.3.1.4) (SEON domain ontologies). SysSwO is reused by most HCI-ON ontologies, due to the fact that it deals with recurring and relevant aspects in HCI such as systems and software. On the other hand, SPO, RSRO and CSDO are reused more punctually as they support a more specific conceptualization of the HCI domain. In Figure 4.7, each circle (network’s node) represents HCI-ON and SEON core or domain ontology. Dotted circles represent HCI-ON ontologies under development. Red arrows (directed arcs) represent dependency relationships from HCI-ON to SEON. HCI-ON dependency to SEON core ontologies are denoted by red solid arrows, while to SEON domain ontologies are denoted by red dotted arrows.</p>
 	</div>
 
 	</main>
 
 	<footer class="p-5 rounded border-top">
-      <div class="row justify-content-md-center">
-      	<div class="col-md-auto">
-    		  <h5>Powered by</h5>
-    		  <ul class="list-unstyled text-small">
-    		  	<li>
-    		  		<a class="text-muted" href="https://nemo.inf.ufes.br/" target="_blank">NEMO</a>
-    		  	</li>
-    		  </ul>
-      	</div>
-      	<div class="col-md-auto">
-      		<h5>Contact us</h5>
-      		<ul class="list-unstyled text-small">
-      			<li>
-      				<a href="mailto:simone.costa@ufes.br" class="text-muted">simone.costa@ufes.br</a>
-      			</li>
-      			<li>
-      				<a href="mailto:monalessa@inf.ufes.br" class="text-muted">monalessa@inf.ufes.br</a>
-      			</li>
-      		</ul>
-      		<span class="text-muted"><small>Thu Dec 09 18:42:00 BRT 2021</small></span>	
-      	</div>
-      </div>
-    </footer>
-<!-- Bootstrap core JavaScript
+
+    <div class="row justify-content-md-center">
+    	<div class="col-md-auto">
+    		<h6>Copyright</h6>
+    		<div class="d-inline">
+				  	<i class="material-icons text-muted align-middle">copyright</i>
+			  </div>
+				<div class="d-inline">
+			  	<span class="text-muted"><small> 2022 Simone Dornelas Costa</small></span>
+			  </div>
+			</div>
+			
+    	<div class="col-md-auto">
+  		  <h6>Powered by</h6>
+  		  <ul class="list-unstyled text-small">
+  		  	<li>
+  		  		<a class="text-muted" href="https://nemo.inf.ufes.br/" target="_blank"><img src="images/logoo_nemo.svg" width="50px"><br/>
+  		  		NEMO</a>
+  		  	</li>
+  		  </ul>
+    	</div>
+
+    	<div class="col-md-auto">
+    		<h6>Contact us</h6>
+    		<ul class="list-unstyled text-small">
+    			<li>
+    				<div class="d-inline">
+    					<i class="material-icons text-muted align-middle">email</i>
+    				</div>
+    				<div class="d-inline">
+    					<a href="mailto:simone.costa@ufes.br" class="text-muted"><small>simone.costa@ufes.br</small></a>
+    				</div>
+    			</li>
+    			<li>
+    				<div class="d-inline">
+    					<i class="material-icons text-muted align-middle">email</i>
+  					</div>
+    				<div class="d-inline">
+    					<a href="mailto:monalessa@inf.ufes.br" class="text-muted"><small>monalessa@inf.ufes.br</small></a>
+    				</div>
+    			</li>
+    		</ul>
+    	</div>
+    	
+    </div>
+
+		<div class="row mt-3 justify-content-md-center">
+			<div class="col-md-auto">
+				<small>
+					<span class="text-muted">
+					@date
+					</span>
+				</small>
+			</div>
+		</div>
+
+  </footer>
+
+
+		<!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
 
