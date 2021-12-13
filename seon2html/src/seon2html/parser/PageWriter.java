@@ -379,6 +379,7 @@ public class PageWriter {
 		// Reading the HTML template
 		String html = Utils.fileToString("./resources/Template.index.html");
 
+
 		html = html.replace("@date", (new Date()).toString());
 
 		// Writing the HTML page
