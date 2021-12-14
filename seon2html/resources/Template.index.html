@@ -50,6 +50,10 @@
         .featurette-heading {
           margin-top: 0;
         }
+
+        .carousel-item {
+          height: 22rem;
+        }
       </style>
 
       <!-- Custom styles for this template -->
@@ -163,11 +167,24 @@
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
       <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
       
     </ol>
     <div class="carousel-inner">
 
       <div class="carousel-item active">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
+        <div class="container">
+          <div class="carousel-caption text-left">
+            <h1><i class="bi bi-star"></i><i class="bi bi-star-half"></i><i class="bi bi-star-fill"></i></h1>
+            <h1>HCI-ON</h1>
+            <p>An Ontology Network to support Knowledge Representation and Semantic Interoperability in the HCI Domain. </p>
+            <code><a class="text-light" href="hcion.html">view more »</a></p></code>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
         <div class="container">
           <div class="carousel-caption text-left">
@@ -233,19 +250,19 @@
     <!-- Three columns of text below the carousel -->
     <div class="row">
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" dy=".3em">FL</text></svg>
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text fill="white" x="50%" y="50%" dy=".3em" font-family="SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;">FL</text></svg>
         <h2>Foundational Layer</h2>
         <p>Provides the general ground knowledge for classifying concepts and relations in the HCI-ON.</p>
         <code><a class="text-muted" href="hcion.html#hcionfl">View details »</a></code>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" dy=".3em">CL</text></svg>
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text fill="white" x="50%" y="50%" dy=".3em">CL</text></svg>
         <h2>Core Layer</h2>
         <p>In the center, core ontology is used to represent the general domain knowledge, being the basis for the sub-domain networked ontologies.</p>
         <code><a class="text-muted" href="hcion.html#hcioncl">View details »</a></code>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" dy=".3em">DL</text></svg>
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text fill="white" x="50%" y="50%" dy=".3em">DL</text></svg>
         <h2>Domain Layer</h2>
         <p>Going to the borders, well-founded and aligned domain-specific ontologies appear, describing more specific knowledge.</p>
         <code><a class="text-muted" href="hcion.html#hciondl">View details »</a></code>
@@ -290,7 +307,7 @@
     <div class="row featurette">
       <div class="col-md-7">
         <h2 class="featurette-heading">And lastly, HCI-ON. <span class="text-muted">Is connected to SEON.</span></h2>
-        <p class="lead">A Software Engineering Ontology Network which provides a well-grounded network of Software Engineering reference ontologies. <code><a class="text-muted" href="https://dev.nemo.inf.ufes.br/seon/" target="_blank">SEON website</a></code></p>
+        <p class="lead">A Software Engineering Ontology Network which provides a well-grounded network of Software Engineering reference ontologies. <code><a class="text-muted" href="https://dev.nemo.inf.ufes.br/seon/" target="_blank">SEON website »</a></code></p>
       </div>
       <div class="col-md-5 align-self-end">
         <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" height="500" src="images/HCI-ON and SEON.png">
@@ -367,9 +384,12 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
 
-      <script src="../resources/static/bootstrap-5.1.3-dist/js/jquery-3.5.1.slim.min.js"></script>
-      <script>window.jQuery || document.write('<script src="../resources/static/bootstrap-5.1.3-dist/js/jquery-3.5.1.slim.min.js"><\/script>')</script><script src="../resources/static/bootstrap-5.1.3-dist/js/bootstrap-4.6.1.bundle.min.js"></script>
-            <script src="../resources/static/bootstrap-5.1.3-dist/js/jquery-3.2.1.slim.min.js"></script>
+    <script src="../resources/static/jquery/jquery-3.5.1.slim.min.js"></script>
+
+    <script src="../resources/static/jquery/jquery-3.2.1.slim.min.js"></script>
+
+    <script src="../resources/static/bootstrap/4.6.1-dist/js/bootstrap.bundle.min.js"></script>
+            
 
     <script src="../resources/static/bootstrap-5.1.3-dist/js/popper.min.js"></script>
 
