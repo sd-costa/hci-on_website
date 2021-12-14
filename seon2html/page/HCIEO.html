@@ -6,9 +6,9 @@
 
 	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	    <meta name="description" content="">
-	    <meta name="author" content="">
+	    <meta name="author" content="Simone Dornelas Costa">
 	    <meta charset="ISO-8859-1">
-	    <link rel="icon" href="https://getbootstrap.com/docs/4.0/assets/img/favicons/favicon.ico">
+	    
 	
 	    <title>Human-Computer Interaction Evaluation Ontology (HCIEO)</title>
 	
@@ -67,8 +67,7 @@
 <!--	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
 	    
 	    
-
-
+	<link rel="icon" type="image/svg+xml" sizes="48x48" href="images/diagram-3-fill.svg">
   </head>
 
   <body data-new-gr-c-s-check-loaded="14.1038.0" data-gr-ext-installed="">
@@ -252,10 +251,10 @@
 <area shape="rect" coords="10,113,292,630" href="http://dev.nemo.inf.ufes.br/seon/" target="_blank" title="">
 <area shape="rect" coords="399,100,955,641" href="index.html" target="" title=""></map>
 <p align="center" class="lead font-weight-bold">Figure 1. HCIEO Modularization.</p></div>
-<p align="justify" class="lead">(acrescentar descrição no astah)</p>
+<p align="justify" class="lead"></p>
 
 <hr class="featurette-divider"><h3 class="featurette-heading" id="HCIEO_Central+View_section">3.1.  Central View</h3>
-<p class="lead" align="justify">(acrescentar descrição no astah)</p>
+<p class="lead" align="justify"></p>
 <p class="lead">Figure 2 presents the conceptual model of the HCIEO Central View subontology.</p>
 <div class="container-fluid" align="center"><img src="images/HCIEO Central View.png" width="1895" class="map img-fluid" usemap="#HCIEO Central View"><map name="HCIEO Central View">
 <area shape="rect" coords="553,690,715,720" href="HCIEO.html#HCIEO_HCI+Evaluation+Method" target="" title="A Procedure describing the actions to be performed by the HCI Evaluator to perform a HCI Evaluation.">
@@ -300,7 +299,7 @@ The content of evaluation reports can vary based on the objectives of the evalua
 <p align="justify" class="lead">HCI Evaluation is a Complex Action and, like that, it is an intentional event. It is caused by the HCI Evaluator Intention that inheres in the HCI Evaluator. Being an Intention, HCI Evaluaton Intention has a HCI Evaluator Goal (Goal) as propositional content. HCI Evaluator is the role played by an individual or an organization (Stakeholder) that performs the HCI Evaluation.<br/><br/>An HCI Evaluation consists in the systematic determination of the extent to which an Interactive Computer System ’s (or its User Interface ) quality characteristics (HCI Quality Characteristic) meet the HCI Evaluation Criteria applied in the evaluation. HCI Evaluation Criteria, in turn, are conditions, or capacity needed (Requirement), used to evaluate Interactive Computer System ’s HCI Quality Characteristics and may be related to User Requirements.<br/><br/>HCI Quality Characteritics are qualities (Quality Universal) of an Interactive Computer System (manifested in its software or hardware constituents). Therefore, HCI Evaluation evaluates HCI Quality Characteristics of an Interactive Computer System or, more specifically, of its User Interface.<br/><br/>An HCI Evaluation follows HCI Evaluation Method (e.g., Heuristic Method, Usability Testing), which is a Procedure that describes the actions to be performed by the HCI Evaluator in an HCI Evaluation. An HCI Evaluation Method is chosen according to the HCI Evaluator Goal and can determine the HCI Evaluation Criteria to be applied in an HCI Evaluation. To perform an HCI Evaluation it may be necessary to use an HCI Evaluation Artifact (Sw Artifact), which is an object intentionally built to specify, among others, the HCI Evaluation Criteria to be applied in the evaluation (e.g., a checklist specifying the criteria to be applied).<br/><br/>In some HCI Evaluations it is necessary to evaluate the Interactive Computer System during the Human-Computer Interaction . In this case, the User (or user representatives) of the Interactive Computer System participates in the HCI Evaluation while, at the same time, participates (User Participation ), together with the Interactive Computer System (Interactive Computer System Participation ), in the Human-Computer Interaction . When the User participates in an HCI Evaluation, it is required that this User uses the Interactive Computer System in order to achieve a certain goal (User Goal ) (e.g., send an email). While the User interacts with the Interactive Computer System to achieve his/her goal (User Goal ), the HCI Evaluator performs the HCI Evaluation, following the HCI Evaluation Method and applying HCI Evaluation Criteria to evaluate HCI Quality Characteristics of the Interactive Computer System . This scenario involves some constraints, addressed by the following axioms:<br/><br/>A6.1. <code class="text-muted">&forall; hcie: HCI Evaluation, ics: Interactive Computer System, icsp: Interactive Computer System Participation, hci: Human-Computer Interaction, user: User evaluates(hcie, ics) &and; participatesIn(user, hcie) &and; composedOf(hci, icsp) &rarr; &exist; up: User Participation participationOf(user, up) &and; composedOf(hci, up)</code><br/><br/>A6.2. <code class="text-muted">&forall; hcie: HCI Evaluation, hci: Human-Computer Interaction, hciqc: HCI Quality Characteristic, ics: Interactive Computer System, icsp: Interactive Computer System Participation evaluates(hcie, hci) ∧ evaluates(hcie,hciqc) &and; has(ics, hciqc) &and; composedOf(hci, icsp) &and; participationOf(icsp, ics) &rarr; evaluates(hcie, ics)</code><br/><br/>Moreover, in an HCI Evaluation an HCI Evaluator can act as a User . Conversely, a User can act as an HCI Evaluator. Thus, if an evaluator performs an evaluation in which he/she acts as a user, then this evaluator is also the user who participates in the evaluation. On the other hand, if a user that participates in an evaluation performs that evaluation, then he/she is also an evaluator of that evaluation. Hence, the following axiom applies:<br/><br/>A6.3. <code class="text-muted">&forall; e: HCI Evaluator, hcie: HCI Evaluation performs(e, hcie) &and; participatesIn(e, hcie) &rarr; &exist; u: User participatesIn(u, hcie) &and; (e = u)</code><br/><br/>A6.4. <code class="text-muted">&forall; u: User, hcie: HCI Evaluation participatesIn(u, hcie) &and; performs(u, hcie) &rarr; &exist; e: HCI Evaluator performs(e, hcie) &and; (e = u)</code><br/><br/>After the HCI Evaluation is performed, the HCI Evaluation Report, a Document, is created, under responsibility of the HCI Evaluator, aiming to report the evaluation results and other relevant information, such as the applied HCI Evaluation Criteria.</p>
 
 <hr class="featurette-divider"><h3 class="featurette-heading" id="HCIEO_Complementary+View_section">3.2.  Complementary View</h3>
-<p class="lead" align="justify">(acrescentar descrição no astah)</p>
+<p class="lead" align="justify"></p>
 <p class="lead">Figure 3 presents the conceptual model of the HCIEO Complementary View subontology.</p>
 <div class="container-fluid" align="center"><img src="images/HCIEO Complementary View.png" width="1746" class="map img-fluid" usemap="#HCIEO Complementary View"><map name="HCIEO Complementary View">
 <area shape="rect" coords="693,813,855,843" href="HCIEO.html#HCIEO_HCI+Evaluation+Artifact" target="" title="Object intentionally made to specify evaluation criteria in the context of an evaluation.">
@@ -548,7 +547,7 @@ HCI Evaluation Criteria (0..*) used to evaluate (1..*) HCI Quality Characteristi
 				<div class="col-md-auto">
 					<small>
 						<span class="text-muted">
-						Tue Dec 14 16:03:46 BRT 2021
+						Tue Dec 14 19:27:16 BRT 2021
 						</span>
 					</small>
 				</div>

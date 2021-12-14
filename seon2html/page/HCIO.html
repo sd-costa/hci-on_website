@@ -6,9 +6,9 @@
 
 	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	    <meta name="description" content="">
-	    <meta name="author" content="">
+	    <meta name="author" content="Simone Dornelas Costa">
 	    <meta charset="ISO-8859-1">
-	    <link rel="icon" href="https://getbootstrap.com/docs/4.0/assets/img/favicons/favicon.ico">
+	    
 	
 	    <title>Human-Computer Interaction Ontology (HCIO)</title>
 	
@@ -67,8 +67,7 @@
 <!--	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
 	    
 	    
-
-
+	<link rel="icon" type="image/svg+xml" sizes="48x48" href="images/diagram-3-fill.svg">
   </head>
 
   <body data-new-gr-c-s-check-loaded="14.1038.0" data-gr-ext-installed="">
@@ -233,10 +232,10 @@
 <area shape="rect" coords="563,193,651,261" href="SysSwO.html#SysSwO_SysSwO_section" target="_blank" title="">
 <area shape="rect" coords="374,10,440,78" href="UFO.html#UFO_UFO_section" target="" title=""></map>
 <p align="center" class="lead font-weight-bold">Figure 1. HCIO Modularization.</p></div>
-<p align="justify" class="lead">(acrescentar descrição no astah)</p>
+<p align="justify" class="lead"></p>
 
 <hr class="featurette-divider"><h3 class="featurette-heading" id="HCIO_Interactive+Computer+System_section">3.1.  Interactive Computer System</h3>
-<p class="lead" align="justify">ICS (acrescentar descrição no astah)</p>
+<p class="lead" align="justify"></p>
 <p class="lead">Figure 2 presents the conceptual model of the Interactive Computer System subontology.</p>
 <div class="container-fluid" align="center"><img src="images/Interactive Computer System.png" width="1115" class="map img-fluid" usemap="#Interactive Computer System"><map name="Interactive Computer System">
 <area shape="rect" coords="75,495,265,525" href="SysSwO.html#SysSwO_Complex+Computer+System" target="_blank" title="">
@@ -276,7 +275,7 @@ Definição ANTIGA: Machine is a hardware equipament able to run programs.">
 <p align="justify" class="lead">The Interactive Computer System sub-ontology addresses what an interactive computer system is and its elements, including the user interface. It is mainly an extension of SysSwO (SEON Core Layer). <br/><br/>Interactive Computer System is a subtype of Computer System, and like the last, it combines hardware and software. Concerning hardware, an Interactive Computer System is (the Computer System) composed of a set of Computer Machines and peripheral devices (Hardware Equipment) connected to them. The striking feature of an Interactive Computer System is that it has a User Interface, a complex Object that is composed of Input Equipment and Output Equipment connected to the Computer Machine. If an Output Equipment is part of a User Interface of an Interactive Computer System, then this Interactive Computer System should be constituted of the Computer Machine that connects the Output Equipment. The same applies to Input Equipment. These constraints are addressed by the following axioms:<br/><br/>A1. <code class="text-muted">&forall; oeq: Output Equipment, ui: User Interface, ics: Interactive Computer System partOf (oeq, ui) &and; partOf (ui, ics) &rarr; (&exist; cm: Computer Machine partOf (cm, ics) &and; connectedTo (oeq, cm))</code><br/><br/>A2. <code class="text-muted">&forall; ieq: Input Equipment, ui: User Interface, ics: Interactive Computer System partOf (ieq, ui) &and; partOf (ui, ics) &rarr; (&exist; cm: Computer Machine partOf (cm, ics) &and; connectedTo (ieq, cm))</code><br/><br/>When a Hardware Equipment is both an Input Equipment and an Output Equipment it is said an IO Equipment. Thus:<br/><br/>A3. <code class="text-muted">&forall; he: Hardware Equipment Input Equipment(he) &and; OutputEquipment(he) &rarr; IOEquipment (he)</code><br/><br/>Regarding software, an Interactive Computer System has a set of Software Systems (In- teractive Software System) loaded in its Computer Machines (Loaded Interactive Software System Copies). The programs that constitute these systems are instances of Program. Some of them deal with aspects related to the user interface and, thus, are instances of User Interface Program. Thus, an Interactive Computer System has a User Interface and the copies of the programs loaded in its computer (Loaded User Interface Programs Copy) that handle its User Interface. The following axiom applies:<br/><br/>A4. <code class="text-muted">&forall; ui: User Interface, ics: Interactive Computer System, lissc: Loaded Interactive Software System Copy partOf (ui, ics) &and; has (ics, lissc) &rarr; &exist; luipc: Loaded User Interface Program Copy includes (lissc, luipc) &and; handles (luipc, ui)</code><br/><br/>Interactive Computer Systems can form another Interactive Computer System, which is said a Complex Interactive Computer System.</p>
 
 <hr class="featurette-divider"><h3 class="featurette-heading" id="HCIO_User_section">3.2.  User</h3>
-<p class="lead" align="justify">USER (acrescentar descrição no astah)</p>
+<p class="lead" align="justify"></p>
 <p class="lead">Figure 3 presents the conceptual model of the User subontology.</p>
 <div class="container-fluid" align="center"><img src="images/User.png" width="1178" class="map img-fluid" usemap="#User"><map name="User">
 <area shape="rect" coords="259,506,547,536" href="HCIO.html#HCIO_Intentional+User+Participation+(User+Action)" target="" title="User participation intentionally performed.">
@@ -307,7 +306,7 @@ A human Physical Agent.">
 <p align="justify" class="lead">The User sub-ontology focuses on the user and its possible actions when interacting with an interactive computer system.<br/><br/>User is the role played by a Person that participates in a human-computer interaction. Such participation is said a User Participation, which can be either intentional (Intentional User Participation &minus; or simply User Action) or unintentional (Unintentional User Participation).<br/><br/>In terms of UFO, User Participation is an Agent Participation. Intentional User Participation (User Action) is an Action Contribution, i.e., an intentional participation of a User. Intentional User Participations (User Actions) are caused by Intentions (User Intentions) that inhere in the User. As an Intention, User Intention has a Goal (more specifically a User Goal) as its propositional content. User Action, as an intentional participation, is performed by the User in order to achieve a User Goal. User Actions performed by a User can only be caused by User Intentions that inhere in that User. This constraint is addressed by the following axiom:<br/><br/>A5. <code class="text-muted">&forall; user: User, ua: Intentional User Participation (User Action), uint: User Intention participationOf (ua, user) &and; causedBy (ua, uint) &rarr; inheresIn (uint, user)</code><br/><br/>Considering its mereological structure, a User Participation can be an Atomic User Participation or a Complex User Participation, which is composed of others User Participations. In a Complex User Participation, all the User Participations are participations from the same User. Thus:<br/><br/>A6. <code class="text-muted">&forall; cup: Complex User Participation, user: User, up: User Participation participationOf (cup, user) &and; partOf (up, cup) &rarr; participationOf (up, user)</code><br/><br/>In another classification, which considers the nature of participations and is orthogonal to the ones discussed above, User Participations are classified into two disjoint types: User Initiated Participation and User Interpretation. User Initiated Participation refers to an act performed by the user making an input in the system. User Interpretation, in turn, regards interpreting a state of the system. When a User Initiated Participation is intentional, it is said a User Initiated Action.</p>
 
 <hr class="featurette-divider"><h3 class="featurette-heading" id="HCIO_HC+Interaction_section">3.3.  HC Interaction</h3>
-<p class="lead" align="justify">HC INTERACTION (acrescentar descrição no astah)</p>
+<p class="lead" align="justify"></p>
 <p class="lead">Figure 4 presents the conceptual model of the HC Interaction subontology.</p>
 <div class="container-fluid" align="center"><img src="images/HC Interaction.png" width="1604" class="map img-fluid" usemap="#HC Interaction"><map name="HC Interaction">
 <area shape="rect" coords="461,848,666,878" href="HCIO.html#HCIO_Human-Computer+Interaction" target="" title="An exchange of information (i.e., communication) between a User and an Interactive Computer System via the User Interface.">
@@ -684,7 +683,7 @@ User (1..1) participation of (1..*) User Participation<br/>
 				<div class="col-md-auto">
 					<small>
 						<span class="text-muted">
-						Tue Dec 14 16:03:46 BRT 2021
+						Tue Dec 14 19:27:16 BRT 2021
 						</span>
 					</small>
 				</div>
