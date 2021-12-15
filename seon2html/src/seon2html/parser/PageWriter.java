@@ -92,7 +92,7 @@ public class PageWriter {
 
 		// Writing the HTML page
 		//Utils.stringToFile("./page/SEON.html", html);
-		Utils.stringToFile("./page/HCION.html", html);
+		Utils.stringToFile("./page/hci-on.html", html);
 	}
 
 	/* Creates a Network view (graph) from the Ontologies and dependencies. */
