@@ -42,6 +42,16 @@
      <!-- Custom styles for this template -->
      <link href="bootstrap/css/carousel.css" rel="stylesheet">
       
+		  <!-- Global site tag (gtag.js) - Google Analytics -->
+		  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WXTXYYCXMP"></script>
+		  <script>
+		    window.dataLayer = window.dataLayer || [];
+		    function gtag(){dataLayer.push(arguments);}
+		    gtag('js', new Date());
+
+		    gtag('config', 'G-WXTXYYCXMP');
+		  </script>
+
     </head>
 
   <body>
@@ -178,7 +188,7 @@
 <p align="center"><span class="font-weight-bold">Figure 1. </span>ROoST Modularization.</p></div>
 <p align="justify" class="lead"></p>
 
-<hr class="featurette-divider"><h3 class="featurette-heading" id="ROoST_Testing+Artifacts_section">3.1.  Testing Artifacts</h3>
+<hr class="featurette-divider"><div class="py-5"><h3 class="featurette-heading" id="ROoST_Testing+Artifacts_section">3.1.  Testing Artifacts</h3>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 2 presents the conceptual model of the Testing Artifacts subontology.</p>
 <div class="container-fluid my-5" align="center"><img src="images/Testing Artifacts.png" width="1261" class="map img-fluid" usemap="#Testing Artifacts"><map name="Testing Artifacts">
@@ -205,7 +215,8 @@
 <p align="center"><span class="font-weight-bold">Figure 2. </span>Testing Artifacts conceptual model.</p></div>
 <p align="justify" class="lead">Testing activities handle with several artifacts, which can present different nature and composition. Among the documents produced by testing activities the following detach: Test Plan, Test Suite, Test Case, Test Result and Test Analysis Report. Test Plans describe how the tests should be performed, providing a roadmap for the testing activities. Test Suites are collection of test cases that are intended to be used to test a software program to show that it has some specified set of behaviours. Test Cases are most important testing artifacts. They describe the input data, expected results, steps and general conditions for testing some situation regarding a Code To Be Tested. Some test cases are implemented by some Test Code, such as Test Driver, Stub or Test Script. Test Results documents the execution of a test case, and includes the Test Case Actual Result, and optionally a Test Incident Report. Finally, Test Analysis Reports documents the analyses done from a set of Test Results.</p>
 
-<hr class="featurette-divider"><h3 class="featurette-heading" id="ROoST_Testing+Stakeholders_section">3.2.  Testing Stakeholders</h3>
+</div>
+<hr class="featurette-divider"><div class="py-5"><h3 class="featurette-heading" id="ROoST_Testing+Stakeholders_section">3.2.  Testing Stakeholders</h3>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 3 presents the conceptual model of the Testing Stakeholders subontology.</p>
 <div class="container-fluid my-5" align="center"><img src="images/Testing Stakeholders.png" width="375" class="map img-fluid" usemap="#Testing Stakeholders"><map name="Testing Stakeholders">
@@ -216,7 +227,8 @@
 <p align="center"><span class="font-weight-bold">Figure 3. </span>Testing Stakeholders conceptual model.</p></div>
 <p align="justify" class="lead">The main stakeholders involved in testing activities include Test Manager, Test Case Designer and Tester. These are roles that can be played by people, teams or even by organizations.</p>
 
-<hr class="featurette-divider"><h3 class="featurette-heading" id="ROoST_Testing+Techniques_section">3.3.  Testing Techniques</h3>
+</div>
+<hr class="featurette-divider"><div class="py-5"><h3 class="featurette-heading" id="ROoST_Testing+Techniques_section">3.3.  Testing Techniques</h3>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 4 presents the conceptual model of the Testing Techniques subontology.</p>
 <div class="container-fluid my-5" align="center"><img src="images/Testing Techniques.png" width="649" class="map img-fluid" usemap="#Testing Techniques"><map name="Testing Techniques">
@@ -231,7 +243,8 @@
 <p align="center"><span class="font-weight-bold">Figure 4. </span>Testing Techniques conceptual model.</p></div>
 <p align="justify" class="lead">For designing test case, several testing techniques apply. These testing techniques are classified according to Testing Technique Types, such as black-box, white-box, model-based and mutation testing techniques. Some Testing Techniques Types applies only to certain testing levels. For instance, white-box testing typically applies to unit testing. </p>
 
-<hr class="featurette-divider"><h3 class="featurette-heading" id="ROoST_Testing+Process_section">3.4.  Testing Process</h3>
+</div>
+<hr class="featurette-divider"><div class="py-5"><h3 class="featurette-heading" id="ROoST_Testing+Process_section">3.4.  Testing Process</h3>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 5 presents the conceptual model of the Testing Process and Activities subontology.</p>
 <div class="container-fluid my-5" align="center"><img src="images/Testing Process and Activities.png" width="1301" class="map img-fluid" usemap="#Testing Process and Activities"><map name="Testing Process and Activities">
@@ -278,7 +291,8 @@
 <p align="center"><span class="font-weight-bold">Figure 5. </span>Testing Process and Activities conceptual model.</p></div>
 <p align="justify" class="lead">Testing Process is a Performed Process with the purpose of conducting dynamic software testing related activities, from planning to results analysis. It is composed of two main activities: Test Planning and Level-based Testing, performed respectively by the Test Manager and the Tester stakeholders. The former activity creates a Test Plan as a roadmap for conducting the following testing activities (such as testing design and execution). The Level-based Testing can be classified according to the testing level into: Unit Testing, Integration Testing and System Testing (among other). Level-based Testing activities are composed of the following testing activities: Test Case Design, Test Coding, Test Execution and Test Result Analysis. Thus, the testing activities can be performed according to the different testing levels (e.g. a Test Case Design focusing on Integration Testing). Concerning artifacts produced and used: (i) Test Case Design uses a Test Case Design Input (e.g. a requirements or a design document) for designing a Test Case containing the information for running the test; (ii) Test Coding creates Test Code implementing the defined Test Cases; (iii) Test Execution uses the Test Code for effectively testing the established Code To Be Tested, producing Test Results relative to the Test Cases; and, finally, (iv) Test Result Analysis produces a Test Analysis Report by examining the Test Results and determining whether the tests have been successful in identifying defects.</p>
 
-<hr class="featurette-divider"><h3 class="featurette-heading" id="ROoST_Testing+Environment_section">3.5.  Testing Environment</h3>
+</div>
+<hr class="featurette-divider"><div class="py-5"><h3 class="featurette-heading" id="ROoST_Testing+Environment_section">3.5.  Testing Environment</h3>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 6 presents the conceptual model of the Testing Environment subontology.</p>
 <div class="container-fluid my-5" align="center"><img src="images/Testing Environment.png" width="783" class="map img-fluid" usemap="#Testing Environment"><map name="Testing Environment">
@@ -300,7 +314,8 @@ DEFINIÇÃO ANTIGA: Physical Object used for running software programs or to sup
 <area shape="rect" coords="261,585,409,623" href="http://dev.nemo.inf.ufes.br/seon/ROoST.html#ROoST_Level-based+Testing" target="_blank" title="Composite Performed Activity consisting of testing activities and classified by the different levels they can be performed."></map>
 <p align="center"><span class="font-weight-bold">Figure 6. </span>Testing Environment conceptual model.</p></div>
 <p align="justify" class="lead">The testing environment is the collection of the Test Hardware and Software Resources that are used to perform the testing activities of a Project. Among the software tools that are used to support testing activities, there are Test Management Tools and Incident Management Tools.</p>
-</p>					
+
+</div></p>					
 			</div>
 
 			<hr>
@@ -690,7 +705,7 @@ Testing Technique (0..*) instanceOf (1..1) Testing Technique Type<br/>
 				<div class="col-md-auto">
 					<small>
 						<span class="text-muted">
-						Wed Dec 15 22:38:29 BRT 2021
+						Thu Dec 16 14:14:56 BRT 2021
 						</span>
 					</small>
 				</div>
@@ -773,19 +788,10 @@ Testing Technique (0..*) instanceOf (1..1) Testing Technique Type<br/>
 				$('img[usemap]').rwdImageMaps(); 
 				
 				$(window).on('resize', function(){
-				  location.reload();
+				  //location.reload();
 				});
 			});			
 			
-		</script>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-WXTXYYCXMP"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-
-		  gtag('config', 'G-WXTXYYCXMP');
 		</script>
 	</body>
 </html>

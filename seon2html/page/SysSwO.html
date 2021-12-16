@@ -42,6 +42,16 @@
      <!-- Custom styles for this template -->
      <link href="bootstrap/css/carousel.css" rel="stylesheet">
       
+		  <!-- Global site tag (gtag.js) - Google Analytics -->
+		  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WXTXYYCXMP"></script>
+		  <script>
+		    window.dataLayer = window.dataLayer || [];
+		    function gtag(){dataLayer.push(arguments);}
+		    gtag('js', new Date());
+
+		    gtag('config', 'G-WXTXYYCXMP');
+		  </script>
+
     </head>
 
   <body>
@@ -176,7 +186,7 @@
 <p align="center"><span class="font-weight-bold">Figure 1. </span>SysSwO view HCIO.</p></div>
 <p align="justify" class="lead">SysSwO is a core reference ontology (from SEON) about the nature of system and software, including, software artifacts, software constitution, software execution, computer system and hardware equipment.<br/><br/>Computer System is an Object combining hardware and software. Concerning hardware, a Computer System is composed of a set of Computer Machines. Computer Machine is a Hardware Equipment which other Hardware Equipment connect to it. Hardware Equipment is a physical Object used for running software programs or to support some software process activity (e.g., a printer, a router, a mouse, a keyboard).<br/><br/><br/>Regarding software, a Computer System has a set of copies of software systems that are installed and loaded in the Computer Machines that comprise the Computer System. A copy of a software system installed and loaded in a Computer Machine is said a Loaded Software System Copy and it is a Disposition inhering in the Computer Machine where it is loaded. A Loaded Software System Copy is the materialization of a Software System, which is a subtype of Software Item. A Software Item, in turn, is a piece of software produced during the software development process, not considered a complete software product (e.g., a program).<br/><br/>A Software System is constituted of Programs (also a subtype of Software Item). Analogously to a Software System, to run a Program, one must have a copy of the program loaded in a Computer Machine (Loaded Program Copy) and execute it. Program Copy Execution is then an Event that brings about a particular Situation (the post-state of the event termed as a Computing Resulting State) resulting from the Program Copy Execution. A Computing Resulting State (Situation) can trigger other Program Copy Execution (Event). The Program Copy Execution (pce1) that brought about a Computing Resulting State that triggered a second Program Copy Execution (pce2) is said to directly cause it (pce1 directly causes pce2).<br/><br/>Finally, a Computer System can be composed of others Computer Systems. In this case, it is said a Complex Computer System.</p>
 
-<hr class="featurette-divider"><h3 class="featurette-heading" id="SysSwO_Computer+System_section">3.1.  Computer System</h3>
+<hr class="featurette-divider"><div class="py-5"><h3 class="featurette-heading" id="SysSwO_Computer+System_section">3.1.  Computer System</h3>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 2 presents the conceptual model of the Computer System subontology.</p>
 <div class="container-fluid my-5" align="center"><img src="images/Computer System.png" width="1103" class="map img-fluid" usemap="#Computer System"><map name="Computer System">
@@ -208,7 +218,8 @@ Definição ANTIGA: Machine is a hardware equipament able to run programs.">
 <p align="center"><span class="font-weight-bold">Figure 2. </span>Computer System conceptual model.</p></div>
 <p align="justify" class="lead"></p>
 
-<hr class="featurette-divider"><h3 class="featurette-heading" id="SysSwO_Hw+Equipment_section">3.2.  Hw Equipment</h3>
+</div>
+<hr class="featurette-divider"><div class="py-5"><h3 class="featurette-heading" id="SysSwO_Hw+Equipment_section">3.2.  Hw Equipment</h3>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 3 presents the conceptual model of the Hw Equipment subontology.</p>
 <div class="container-fluid my-5" align="center"><img src="images/Hw Equipment.png" width="593" class="map img-fluid" usemap="#Hw Equipment"><map name="Hw Equipment">
@@ -227,7 +238,8 @@ Definição ANTIGA: Machine is a hardware equipament able to run programs."></ma
 <p align="center"><span class="font-weight-bold">Figure 3. </span>Hw Equipment conceptual model.</p></div>
 <p align="justify" class="lead"></p>
 
-<hr class="featurette-divider"><h3 class="featurette-heading" id="SysSwO_Program+Execution_section">3.3.  Program Execution</h3>
+</div>
+<hr class="featurette-divider"><div class="py-5"><h3 class="featurette-heading" id="SysSwO_Program+Execution_section">3.3.  Program Execution</h3>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 4 presents the conceptual model of the Program Execution subontology.</p>
 <div class="container-fluid my-5" align="center"><img src="images/Program Execution.png" width="681" class="map img-fluid" usemap="#Program Execution"><map name="Program Execution">
@@ -247,7 +259,8 @@ Definição ANTIGA: Machine is a hardware equipament able to run programs.">
 <p align="center"><span class="font-weight-bold">Figure 4. </span>Program Execution conceptual model.</p></div>
 <p align="justify" class="lead">A Program is defined as a Software Item, a piece of software, produced during the software process, not considered a complete Software Product, but which aims at producing a certain result through execution on a computer, in a particular way, given by the Program Specification. In other words, a Program intends to implement a Program Specification, that intends to satisfy a set of Requirement Artifacts. Thus, we can say that there is a relation between Program and Requirement Artifact that is derived from the existing relation between Program Specification and Requirement Artifact.<br/><br/>A Loaded Program Copy is the materialization of a Program, inhering in a Machine. The Loaded Program Copy is a complex Disposition that is constituted by one or more Software Functions, which are, in turn, instances of Software Function Universals. When the software development process is accomplished correctly, the Software Functions that constitute the (loaded) program copy are instances of the exact Software Function Universals described by the Program Specification and successfully implemented by the Program.<br/><br/>Program Copy Execution is an Event representing the execution of the Loaded Program Copy running in a Machine, i.e., the Program Copy Execution is the event of the physical manifestation of the dispositions, represented as the complex disposition Loaded Program Copy, that inhere in the Machine. In this context, the Machine participates in the Program Copy Execution playing the role of Controller.<br/><br/>A Program Copy Execution, as an event, brings about a particular situation, said an Observable State. An Observable State is a situation resulting from the execution of a program copy.<br/><br/><br/><br/><br/></p>
 
-<hr class="featurette-divider"><h3 class="featurette-heading" id="SysSwO_Sw+Artifacts_section">3.4.  Sw Artifacts</h3>
+</div>
+<hr class="featurette-divider"><div class="py-5"><h3 class="featurette-heading" id="SysSwO_Sw+Artifacts_section">3.4.  Sw Artifacts</h3>
 <p class="lead" align="justify">The Artifact Ontology aims at establishing a common conceptualization regarding Software Artifacts, including software products and related components.<br/>Artifacts are objects consumed or produced during the software process. They can present different nature and composition. Possible types of Artifacts are (not limited to): Software Product (e.g. Eclipse IDE), Software Item (e.g. a database schema), Information Item (e.g. a bug reported), Model (e.g. a UML class model) and Document (e.g. a requirements specification). Documents can describe other Artifacts, as it is the case of a Design Specification describing a Software Architecture. The concepts Artifact Type, Document Type and Software Product Type define the possible specializations of Artifact, Software Product and Document (respectively).<br/>An Artifact can be composite or simple. A Composite Artifact is composed of two or more other Artifacts (e.g. a Project Plan composed of artifacts as a WBS diagram and a Risk Plan). A Simple Artifact is not decomposable. Artifacts can also depend on other Artifacts to be produced or updated, such as a Test Case depending on the Code it was designed to test.</p>
 <p class="lead">Figure 5 presents the conceptual model of the Sw Artifacts subontology.</p>
 <div class="container-fluid my-5" align="center"><img src="images/Sw Artifacts.png" width="847" class="map img-fluid" usemap="#Sw Artifacts"><map name="Sw Artifacts">
@@ -277,7 +290,8 @@ or other translator.">
 <div class="container-fluid my-5" align="center"><img src="images/Sw Constituition.png" width="945" class="map img-fluid" usemap="#Sw Constituition"><map name="Sw Constituition"></map>
 <p align="center"><span class="font-weight-bold">Figure 6. </span>Sw Constituition.</p></div>
 <p align="justify" class="lead">The System and Software Ontology (SysSwO) captures that software products have a complex artifactual nature, being constituted of software artifacts of different nature, including software systems, programs and code. </p>
-</p>					
+
+</div></p>					
 			</div>
 
 			<hr>
@@ -618,7 +632,7 @@ Software System (0..1) intends to implement (1..1) System Specification<br/>
 				<div class="col-md-auto">
 					<small>
 						<span class="text-muted">
-						Wed Dec 15 22:38:28 BRT 2021
+						Thu Dec 16 14:14:56 BRT 2021
 						</span>
 					</small>
 				</div>
@@ -701,19 +715,10 @@ Software System (0..1) intends to implement (1..1) System Specification<br/>
 				$('img[usemap]').rwdImageMaps(); 
 				
 				$(window).on('resize', function(){
-				  location.reload();
+				  //location.reload();
 				});
 			});			
 			
-		</script>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-WXTXYYCXMP"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-
-		  gtag('config', 'G-WXTXYYCXMP');
 		</script>
 	</body>
 </html>

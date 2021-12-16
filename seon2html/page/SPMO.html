@@ -42,6 +42,16 @@
      <!-- Custom styles for this template -->
      <link href="bootstrap/css/carousel.css" rel="stylesheet">
       
+		  <!-- Global site tag (gtag.js) - Google Analytics -->
+		  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WXTXYYCXMP"></script>
+		  <script>
+		    window.dataLayer = window.dataLayer || [];
+		    function gtag(){dataLayer.push(arguments);}
+		    gtag('js', new Date());
+
+		    gtag('config', 'G-WXTXYYCXMP');
+		  </script>
+
     </head>
 
   <body>
@@ -178,7 +188,7 @@
 <p align="center"><span class="font-weight-bold">Figure 1. </span>SPMO Modularization.</p></div>
 <p align="justify" class="lead">The Project Management Ontology (PMO) is defined as a layer over the Software Process Ontology, addressing aspects related to scope, time & duration, and cost estimation of intended processes, as well as aspects related to tracking planned versus performed processes. </p>
 
-<hr class="featurette-divider"><h3 class="featurette-heading" id="SPMO_WBS_section">3.1.  WBS</h3>
+<hr class="featurette-divider"><div class="py-5"><h3 class="featurette-heading" id="SPMO_WBS_section">3.1.  WBS</h3>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 2 presents the conceptual model of the WBS subontology.</p>
 <div class="container-fluid my-5" align="center"><img src="images/WBS.png" width="449" class="map img-fluid" usemap="#WBS"><map name="WBS">
@@ -189,7 +199,8 @@
 <p align="center"><span class="font-weight-bold">Figure 2. </span>WBS conceptual model.</p></div>
 <p align="justify" class="lead"></p>
 
-<hr class="featurette-divider"><h3 class="featurette-heading" id="SPMO_Estimated+Process_section">3.2.  Estimated Process</h3>
+</div>
+<hr class="featurette-divider"><div class="py-5"><h3 class="featurette-heading" id="SPMO_Estimated+Process_section">3.2.  Estimated Process</h3>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 3 presents the conceptual model of the Estimated Process subontology.</p>
 <div class="container-fluid my-5" align="center"><img src="images/Estimated Process.png" width="1240" class="map img-fluid" usemap="#Estimated Process"><map name="Estimated Process">
@@ -219,7 +230,8 @@
 <p align="center"><span class="font-weight-bold">Figure 3. </span>Estimated Process conceptual model.</p></div>
 <p align="justify" class="lead"></p>
 
-<hr class="featurette-divider"><h3 class="featurette-heading" id="SPMO_Tracked+Process_section">3.3.  Tracked Process</h3>
+</div>
+<hr class="featurette-divider"><div class="py-5"><h3 class="featurette-heading" id="SPMO_Tracked+Process_section">3.3.  Tracked Process</h3>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 4 presents the conceptual model of the Tracked Process subontology.</p>
 <div class="container-fluid my-5" align="center"><img src="images/Tracked Process.png" width="1288" class="map img-fluid" usemap="#Tracked Process"><map name="Tracked Process">
@@ -249,7 +261,8 @@
 <area shape="rect" coords="1105,331,1278,361" href="http://dev.nemo.inf.ufes.br/seon/SPMO.html#SPMO_Scope+Estimated+Activity" target="_blank" title="A Project Activity with its scope in the project defined in terms of the work packages that it shall produce."></map>
 <p align="center"><span class="font-weight-bold">Figure 4. </span>Tracked Process conceptual model.</p></div>
 <p align="justify" class="lead"><br/></p>
-</p>					
+
+</div></p>					
 			</div>
 
 			<hr>
@@ -443,7 +456,7 @@ Tracked Activity (0..*) contributes to produce (1..*) Work Package<br/>
 				<div class="col-md-auto">
 					<small>
 						<span class="text-muted">
-						Wed Dec 15 22:38:29 BRT 2021
+						Thu Dec 16 14:14:56 BRT 2021
 						</span>
 					</small>
 				</div>
@@ -526,19 +539,10 @@ Tracked Activity (0..*) contributes to produce (1..*) Work Package<br/>
 				$('img[usemap]').rwdImageMaps(); 
 				
 				$(window).on('resize', function(){
-				  location.reload();
+				  //location.reload();
 				});
 			});			
 			
-		</script>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-WXTXYYCXMP"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-
-		  gtag('config', 'G-WXTXYYCXMP');
 		</script>
 	</body>
 </html>

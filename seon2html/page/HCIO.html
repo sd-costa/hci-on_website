@@ -42,6 +42,16 @@
      <!-- Custom styles for this template -->
      <link href="bootstrap/css/carousel.css" rel="stylesheet">
       
+		  <!-- Global site tag (gtag.js) - Google Analytics -->
+		  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WXTXYYCXMP"></script>
+		  <script>
+		    window.dataLayer = window.dataLayer || [];
+		    function gtag(){dataLayer.push(arguments);}
+		    gtag('js', new Date());
+
+		    gtag('config', 'G-WXTXYYCXMP');
+		  </script>
+
     </head>
 
   <body>
@@ -180,7 +190,7 @@
 <p align="center"><span class="font-weight-bold">Figure 1. </span>HCIO Modularization.</p></div>
 <p align="justify" class="lead"></p>
 
-<hr class="featurette-divider"><h3 class="featurette-heading" id="HCIO_Interactive+Computer+System_section">3.1.  Interactive Computer System</h3>
+<hr class="featurette-divider"><div class="py-5"><h3 class="featurette-heading" id="HCIO_Interactive+Computer+System_section">3.1.  Interactive Computer System</h3>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 2 presents the conceptual model of the Interactive Computer System subontology.</p>
 <div class="container-fluid my-5" align="center"><img src="images/Interactive Computer System.png" width="1115" class="map img-fluid" usemap="#Interactive Computer System"><map name="Interactive Computer System">
@@ -220,7 +230,8 @@ Definição ANTIGA: Machine is a hardware equipament able to run programs.">
 <p align="center"><span class="font-weight-bold">Figure 2. </span>Interactive Computer System conceptual model.</p></div>
 <p align="justify" class="lead">The Interactive Computer System sub-ontology addresses what an interactive computer system is and its elements, including the user interface. It is mainly an extension of SysSwO (SEON Core Layer). <br/><br/>Interactive Computer System is a subtype of Computer System, and like the last, it combines hardware and software. Concerning hardware, an Interactive Computer System is (the Computer System) composed of a set of Computer Machines and peripheral devices (Hardware Equipment) connected to them. The striking feature of an Interactive Computer System is that it has a User Interface, a complex Object that is composed of Input Equipment and Output Equipment connected to the Computer Machine. If an Output Equipment is part of a User Interface of an Interactive Computer System, then this Interactive Computer System should be constituted of the Computer Machine that connects the Output Equipment. The same applies to Input Equipment. These constraints are addressed by the following axioms:<br/><br/>A1. <code class="text-muted">&forall; oeq: Output Equipment, ui: User Interface, ics: Interactive Computer System partOf (oeq, ui) &and; partOf (ui, ics) &rarr; (&exist; cm: Computer Machine partOf (cm, ics) &and; connectedTo (oeq, cm))</code><br/><br/>A2. <code class="text-muted">&forall; ieq: Input Equipment, ui: User Interface, ics: Interactive Computer System partOf (ieq, ui) &and; partOf (ui, ics) &rarr; (&exist; cm: Computer Machine partOf (cm, ics) &and; connectedTo (ieq, cm))</code><br/><br/>When a Hardware Equipment is both an Input Equipment and an Output Equipment it is said an IO Equipment. Thus:<br/><br/>A3. <code class="text-muted">&forall; he: Hardware Equipment Input Equipment(he) &and; OutputEquipment(he) &rarr; IOEquipment (he)</code><br/><br/>Regarding software, an Interactive Computer System has a set of Software Systems (In- teractive Software System) loaded in its Computer Machines (Loaded Interactive Software System Copies). The programs that constitute these systems are instances of Program. Some of them deal with aspects related to the user interface and, thus, are instances of User Interface Program. Thus, an Interactive Computer System has a User Interface and the copies of the programs loaded in its computer (Loaded User Interface Programs Copy) that handle its User Interface. The following axiom applies:<br/><br/>A4. <code class="text-muted">&forall; ui: User Interface, ics: Interactive Computer System, lissc: Loaded Interactive Software System Copy partOf (ui, ics) &and; has (ics, lissc) &rarr; &exist; luipc: Loaded User Interface Program Copy includes (lissc, luipc) &and; handles (luipc, ui)</code><br/><br/>Interactive Computer Systems can form another Interactive Computer System, which is said a Complex Interactive Computer System.</p>
 
-<hr class="featurette-divider"><h3 class="featurette-heading" id="HCIO_User_section">3.2.  User</h3>
+</div>
+<hr class="featurette-divider"><div class="py-5"><h3 class="featurette-heading" id="HCIO_User_section">3.2.  User</h3>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 3 presents the conceptual model of the User subontology.</p>
 <div class="container-fluid my-5" align="center"><img src="images/User.png" width="1178" class="map img-fluid" usemap="#User"><map name="User">
@@ -251,7 +262,8 @@ A human Physical Agent.">
 <p align="center"><span class="font-weight-bold">Figure 3. </span>User conceptual model.</p></div>
 <p align="justify" class="lead">The User sub-ontology focuses on the user and its possible actions when interacting with an interactive computer system.<br/><br/>User is the role played by a Person that participates in a human-computer interaction. Such participation is said a User Participation, which can be either intentional (Intentional User Participation &minus; or simply User Action) or unintentional (Unintentional User Participation).<br/><br/>In terms of UFO, User Participation is an Agent Participation. Intentional User Participation (User Action) is an Action Contribution, i.e., an intentional participation of a User. Intentional User Participations (User Actions) are caused by Intentions (User Intentions) that inhere in the User. As an Intention, User Intention has a Goal (more specifically a User Goal) as its propositional content. User Action, as an intentional participation, is performed by the User in order to achieve a User Goal. User Actions performed by a User can only be caused by User Intentions that inhere in that User. This constraint is addressed by the following axiom:<br/><br/>A5. <code class="text-muted">&forall; user: User, ua: Intentional User Participation (User Action), uint: User Intention participationOf (ua, user) &and; causedBy (ua, uint) &rarr; inheresIn (uint, user)</code><br/><br/>Considering its mereological structure, a User Participation can be an Atomic User Participation or a Complex User Participation, which is composed of others User Participations. In a Complex User Participation, all the User Participations are participations from the same User. Thus:<br/><br/>A6. <code class="text-muted">&forall; cup: Complex User Participation, user: User, up: User Participation participationOf (cup, user) &and; partOf (up, cup) &rarr; participationOf (up, user)</code><br/><br/>In another classification, which considers the nature of participations and is orthogonal to the ones discussed above, User Participations are classified into two disjoint types: User Initiated Participation and User Interpretation. User Initiated Participation refers to an act performed by the user making an input in the system. User Interpretation, in turn, regards interpreting a state of the system. When a User Initiated Participation is intentional, it is said a User Initiated Action.</p>
 
-<hr class="featurette-divider"><h3 class="featurette-heading" id="HCIO_HC+Interaction_section">3.3.  HC Interaction</h3>
+</div>
+<hr class="featurette-divider"><div class="py-5"><h3 class="featurette-heading" id="HCIO_HC+Interaction_section">3.3.  HC Interaction</h3>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 4 presents the conceptual model of the HC Interaction subontology.</p>
 <div class="container-fluid my-5" align="center"><img src="images/HC Interaction.png" width="1604" class="map img-fluid" usemap="#HC Interaction"><map name="HC Interaction">
@@ -306,7 +318,8 @@ A human Physical Agent.">
 <area shape="rect" coords="886,434,993,464" href="SysSwO.html#SysSwO_Software+Item" target="_blank" title="Piece of software, produced during the software process, not considered a complete Software Product, but an intermediary result."></map>
 <p align="center"><span class="font-weight-bold">Figure 4. </span>HC Interaction conceptual model.</p></div>
 <p align="justify" class="lead">The HC Interaction sub-ontology links concepts from the other two sub-ontologies to define what a human-computer interaction is.<br/><br/>A Human-Computer Interaction is an interaction between a User and an Interactive Computer System. Thus, a Human-Computer Interaction is composed by a User Participation and an Interactive Computer System Participation, indicating the events performed by both parties in a specific interaction.<br/><br/>As said before (see User Sub-ontology), in terms of UFO, User Participation is an Agent Participation. Interactive Computer System Participation, in turn, is a Complex Object Participation. It is a Complex Event, since it aggregates all events performed by the Interactive Computer System in the context of a single Human-Computer Interaction. It is an Object Participation because, being the Interactive Computer System an Object, its participation is always unintentional.<br/><br/>A User Initiated Participation is performed using one or more Input Equipment. As a result of a User Initiated Participation, a User Input Resulting State is achieved. User Input Resulting State is a Situation representing the data entered by the user before any program execution. This situation triggers Program Copy Executions. Moreover, we can say that User Initiated Participation directly causes Program Copy Execution. Program Copy Execution brings about a Computing Resulting State (internal computer state), which, in turn, can trigger other Program Copy Executions. Thus, a Program Copy Execution can directly cause new Program Copy Executions.<br/><br/>Some Program Copy Executions can bring about a special type of Computing Resulting State, the one that is perceivable by user, said User Observable State. A User Observable State, thus, triggers User Interpretation. Therefore, we say that Program Copy Execution directly causes User Interpretation. In this context, the following axiom applies:<br/><br/>A7. <code class="text-muted">&forall; ui: User Interpretation, uos: User Observable State, pce: Program Copy Execution, uirs: User Input Resulting State, uip: User Initiated Participation triggers (uos, ui) &and; bringsAbout (pce, uos) &and; triggers (uirs, pce) &and; bringsAbout (uip, uirs) &rarr; causes (uip, ui)</code><br/><br/>It is important to say that (A7) does not constrain who are the users involved in the User Initiated Participation and in the User Interpretation, i.e., the User in the User Initiated Participation may be different from the one involved in the User Interpretation.<br/><br/>A User Observable State triggers User Interpretation and is presented by one or more Output Equipment. Thus, Output Equipment supports User Interpretation, i.e.:<br/><br/>A8. <code class="text-muted">&forall; oe: Output Equipment, uos: User Observable State, ui: User Interpretation presents (oe, uos) &and; triggers (uos, ui) &rarr; supports (oe, ui)</code><br/><br/>In a Human-Computer Interaction, both the Input and Output Equipment involved in the interaction should be part of the User Interface of the Interactive Computer System that participates in the interaction.<br/><br/>Since User Initiated Participation typically leads to some processing inside the system that results in an output to the user who can interpret it, we say that User Initiated Participation (indirectly) causes User Interpretation. User Interpretation may cause the User to act again. Thus, User Interpretation may directly cause (in terms of UFO) User Initiated Participations.<br/><br/>When a User Participation is intentional, it means that the User performed it considering some goal (User Goal). Interpretations performed by the user (User Interpretations) may evaluate User Goal achievement. This is a case of goal-driven behavior, in which a cycle of actions (User Participation) are repeated until the user achieves his/her goal (User Initiated Participation (indirectly) causes User Interpretation and User Interpretations (directly) causes User Initiated Participations).<br/><br/>The HC Interaction sub-ontology main purpose is to define what human-computer interaction is. In view of what was discussed, in summary, a Human-Computer Interaction is a Complex Event composed of User Participation and Interactive Computer System Participation. User Participation can involve both User Initiated Participations and User Interpretations. Interactive Computer System Participation regards the set of Program Executions performed by the Interactive Computer System in the interaction.</p>
-</p>					
+
+</div></p>					
 			</div>
 
 			<hr>
@@ -593,7 +606,7 @@ User (1..1) participation of (1..*) User Participation<br/>
 				<div class="col-md-auto">
 					<small>
 						<span class="text-muted">
-						Wed Dec 15 22:38:28 BRT 2021
+						Thu Dec 16 14:14:55 BRT 2021
 						</span>
 					</small>
 				</div>
@@ -676,19 +689,10 @@ User (1..1) participation of (1..*) User Participation<br/>
 				$('img[usemap]').rwdImageMaps(); 
 				
 				$(window).on('resize', function(){
-				  location.reload();
+				  //location.reload();
 				});
 			});			
 			
-		</script>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-WXTXYYCXMP"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-
-		  gtag('config', 'G-WXTXYYCXMP');
 		</script>
 	</body>
 </html>

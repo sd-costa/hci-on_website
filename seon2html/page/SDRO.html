@@ -42,6 +42,16 @@
      <!-- Custom styles for this template -->
      <link href="bootstrap/css/carousel.css" rel="stylesheet">
       
+		  <!-- Global site tag (gtag.js) - Google Analytics -->
+		  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WXTXYYCXMP"></script>
+		  <script>
+		    window.dataLayer = window.dataLayer || [];
+		    function gtag(){dataLayer.push(arguments);}
+		    gtag('js', new Date());
+
+		    gtag('config', 'G-WXTXYYCXMP');
+		  </script>
+
     </head>
 
   <body>
@@ -174,7 +184,7 @@
 <p align="center"><span class="font-weight-bold">Figure 1. </span>SDRO Modularization.</p></div>
 <p align="justify" class="lead"></p>
 
-<hr class="featurette-divider"><h3 class="featurette-heading" id="SDRO_Mental+Aspects_section">3.1.  Mental Aspects</h3>
+<hr class="featurette-divider"><div class="py-5"><h3 class="featurette-heading" id="SDRO_Mental+Aspects_section">3.1.  Mental Aspects</h3>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 2 presents the conceptual model of the Mental aspects subontology.</p>
 <div class="container-fluid my-5" align="center"><img src="images/Mental aspects.png" width="1030" class="map img-fluid" usemap="#Mental aspects"><map name="Mental aspects">
@@ -206,7 +216,8 @@ Adapted from [Guarino, N. (2014)]"></map>
 <p align="center"><span class="font-weight-bold">Figure 2. </span>Mental aspects conceptual model.</p></div>
 <p align="justify" class="lead"></p>
 
-<hr class="featurette-divider"><h3 class="featurette-heading" id="SDRO_Physical+Aspects_section">3.2.  Physical Aspects</h3>
+</div>
+<hr class="featurette-divider"><div class="py-5"><h3 class="featurette-heading" id="SDRO_Physical+Aspects_section">3.2.  Physical Aspects</h3>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 3 presents the conceptual model of the Physical aspects subontology.</p>
 <div class="container-fluid my-5" align="center"><img src="images/Physical aspects.png" width="1223" class="map img-fluid" usemap="#Physical aspects"><map name="Physical aspects">
@@ -265,7 +276,8 @@ Definição ANTIGA: Machine is a hardware equipament able to run programs.">
 DEFINIÇÃO ANTIGA: Physical Object used for running software programs or to support some related action."></map>
 <p align="center"><span class="font-weight-bold">Figure 3. </span>Physical aspects conceptual model.</p></div>
 <p align="justify" class="lead"></p>
-</p>					
+
+</div></p>					
 			</div>
 
 			<hr>
@@ -468,7 +480,7 @@ Software Design Proposition (1..1) propositional content of (1..*) Software Desi
 				<div class="col-md-auto">
 					<small>
 						<span class="text-muted">
-						Wed Dec 15 22:38:29 BRT 2021
+						Thu Dec 16 14:14:56 BRT 2021
 						</span>
 					</small>
 				</div>
@@ -551,19 +563,10 @@ Software Design Proposition (1..1) propositional content of (1..*) Software Desi
 				$('img[usemap]').rwdImageMaps(); 
 				
 				$(window).on('resize', function(){
-				  location.reload();
+				  //location.reload();
 				});
 			});			
 			
-		</script>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-WXTXYYCXMP"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-
-		  gtag('config', 'G-WXTXYYCXMP');
 		</script>
 	</body>
 </html>

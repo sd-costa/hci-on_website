@@ -42,6 +42,16 @@
      <!-- Custom styles for this template -->
      <link href="bootstrap/css/carousel.css" rel="stylesheet">
       
+		  <!-- Global site tag (gtag.js) - Google Analytics -->
+		  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WXTXYYCXMP"></script>
+		  <script>
+		    window.dataLayer = window.dataLayer || [];
+		    function gtag(){dataLayer.push(arguments);}
+		    gtag('js', new Date());
+
+		    gtag('config', 'G-WXTXYYCXMP');
+		  </script>
+
     </head>
 
   <body>
@@ -169,7 +179,7 @@
 			<div class="p-5 rounded" id="ontologymodels">
 				<h2 class="featurette-heading">3. Ontology Models</h2>
 				<p class="lead">
-<hr class="featurette-divider"><h3 class="featurette-heading" id="RRO_RRO-+Program+Execution_section">3.1.  RRO- Program Execution</h3>
+<hr class="featurette-divider"><div class="py-5"><h3 class="featurette-heading" id="RRO_RRO-+Program+Execution_section">3.1.  RRO- Program Execution</h3>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 1 presents the conceptual model of the RRO- Program Execution subontology.</p>
 <div class="container-fluid my-5" align="center"><img src="images/RRO- Program Execution.png" width="1177" class="map img-fluid" usemap="#RRO- Program Execution"><map name="RRO- Program Execution">
@@ -204,7 +214,8 @@ Definição ANTIGA: Machine is a hardware equipament able to run programs.">
 <p align="center"><span class="font-weight-bold">Figure 1. </span>RRO- Program Execution conceptual model.</p></div>
 <p align="justify" class="lead"></p>
 
-<hr class="featurette-divider"><h3 class="featurette-heading" id="RRO_Runtime+Requirements_section">3.2.  Runtime Requirements</h3>
+</div>
+<hr class="featurette-divider"><div class="py-5"><h3 class="featurette-heading" id="RRO_Runtime+Requirements_section">3.2.  Runtime Requirements</h3>
 <p class="lead" align="justify">The Runtime Requirements sub-ontology addresses the use of Runtime Requirements Artifacts by programs in execution.</p>
 <p class="lead">Figure 2 presents the conceptual model of the RRO - RTR subontology.</p>
 <div class="container-fluid my-5" align="center"><img src="images/RRO - RTR.png" width="1140" class="map img-fluid" usemap="#RRO - RTR"><map name="RRO - RTR">
@@ -234,7 +245,8 @@ behavior, in order for the software system to keep fulfilling the goals it has b
 <area shape="rect" coords="61,459,221,489" href="http://dev.nemo.inf.ufes.br/seon/RRO.html#RRO_Target+Execution+State" target="_blank" title="Execution State is the Observable State resulting from the Target Program Copy Execution, which is monitored by some Compliance Program Copy Executions."></map>
 <p align="center"><span class="font-weight-bold">Figure 2. </span>RRO - RTR conceptual model.</p></div>
 <p align="justify" class="lead">The first important distinction in the Runtime Requirements sub-ontology is between Runtime Requirement Artifacts, those that can be used by Program Copy Executions at runtime, from their non-runtime counterparts, named Design Time Requirement Artifacts.<br/><br/>Runtime Requirement Artifact is further specialized into two specific subtypes: Monitoring Runtime Requirement Artifact defines the criteria for verifying if a requirement is being satisfied or not at runtime; on the other hand, Change Runtime Requirement Artifact specifies changes on the system’s behavior, in order for the software system to keep fulfilling the goals it has been designed for. <br/><br/>An RRT Program is a Program that is built intending to satisfy at least one Runtime Requirement Artifact. The aforementioned distinction between runtime requirement artifacts also reflects in RRT Programs (and in the corresponding Loaded Program Copies that materialize them and in the Program Copy Executions that are executions of the latter). Thus, RRT Program is specialized in Compliance Program, representing those RRT Programs that intend to satisfy at least one Monitoring Runtime Requirement Artifact, and Adaptation Program, representing those RRT Programs that intend to satisfy at least one Change Runtime Requirement Artifact. The generalization set of RRT Program is not disjoint, since the same program can intend to satisfy, at the same time, both a Monitoring Runtime Requirement Artifact and a Change Runtime Requirement Artifact. Finally, some RRT Programs are built to act over (monitor/change) specific programs. When a Program is the target of an RRT Program, we say that it plays the role of a Target Program.<br/>A Loaded RRT Program Copy is the materialization of an RRT Program, while an RRT Program Copy Execution is the execution of a Loaded RRT Program Copy. An RRT Program Copy Execution uses Runtime Requirement Artifacts as resources. A Compliance Program Copy Execution uses Monitoring Runtime Requirement Artifacts, and monitors Observable States produced by another Program Copy Execution, said Target Program Copy Execution. While using requirements at runtime, we are not interested in situations arising from the execution of any program, but only in those arising from the Target Program Copy Executions. For this reason, a Compliance Program Copy Execution monitors  Target Execution States, i.e, the situations arising from the Target Program Copy Execution. The Compliance Program Copy Execution monitors the Target Execution States to verify if the runtime requirements comply with the criteria specified in the Monitoring Runtime Requirement Artifacts. If one or more requirements are not being fulfilled accordingly, an Adaptation Program Copy Execution can trigger changes in the the Loaded Program Copy being monitored, which is said a Loaded Target Program Copy, by using Change Runtime Requirement Artifacts. Like the RRT Program generalization set, the generalization set of RRT Program Copy Execution (and also of Loaded RRT Program Copy) is not disjoint, since the same RRT Program Copy Execution can use, at the same time, both a Monitoring Runtime Requirement Artifact and a Change Runtime Requirement Artifact. </p>
-</p>					
+
+</div></p>					
 			</div>
 
 			<hr>
@@ -444,7 +456,7 @@ Target Program Copy Execution (0..*) execution of (1..1) Loaded Target Program C
 				<div class="col-md-auto">
 					<small>
 						<span class="text-muted">
-						Wed Dec 15 22:38:29 BRT 2021
+						Thu Dec 16 14:14:56 BRT 2021
 						</span>
 					</small>
 				</div>
@@ -527,19 +539,10 @@ Target Program Copy Execution (0..*) execution of (1..1) Loaded Target Program C
 				$('img[usemap]').rwdImageMaps(); 
 				
 				$(window).on('resize', function(){
-				  location.reload();
+				  //location.reload();
 				});
 			});			
 			
-		</script>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-WXTXYYCXMP"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-
-		  gtag('config', 'G-WXTXYYCXMP');
 		</script>
 	</body>
 </html>

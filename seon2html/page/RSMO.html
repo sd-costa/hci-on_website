@@ -42,6 +42,16 @@
      <!-- Custom styles for this template -->
      <link href="bootstrap/css/carousel.css" rel="stylesheet">
       
+		  <!-- Global site tag (gtag.js) - Google Analytics -->
+		  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WXTXYYCXMP"></script>
+		  <script>
+		    window.dataLayer = window.dataLayer || [];
+		    function gtag(){dataLayer.push(arguments);}
+		    gtag('js', new Date());
+
+		    gtag('config', 'G-WXTXYYCXMP');
+		  </script>
+
     </head>
 
   <body>
@@ -182,7 +192,7 @@
 <p align="center"><span class="font-weight-bold">Figure 1. </span>RSMO Modularization.</p></div>
 <p align="justify" class="lead"></p>
 
-<hr class="featurette-divider"><h3 class="featurette-heading" id="RSMO_Software+Measurable+Entities_section">3.1.  Software Measurable Entities</h3>
+<hr class="featurette-divider"><div class="py-5"><h3 class="featurette-heading" id="RSMO_Software+Measurable+Entities_section">3.1.  Software Measurable Entities</h3>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 2 presents the conceptual model of the Software Measurement Entities subontology.</p>
 <div class="container-fluid my-5" align="center"><img src="images/Software Measurement Entities.png" width="1091" class="map img-fluid" usemap="#Software Measurement Entities"><map name="Software Measurement Entities">
@@ -205,7 +215,8 @@
 <p align="center"><span class="font-weight-bold">Figure 2. </span>Software Measurement Entities conceptual model.</p></div>
 <p align="justify" class="lead"></p>
 
-<hr class="featurette-divider"><h3 class="featurette-heading" id="RSMO_Software+Measurement+Process_section">3.2.  Software Measurement Process</h3>
+</div>
+<hr class="featurette-divider"><div class="py-5"><h3 class="featurette-heading" id="RSMO_Software+Measurement+Process_section">3.2.  Software Measurement Process</h3>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 3 presents the conceptual model of the Software Measurement Process subontology.</p>
 <div class="container-fluid my-5" align="center"><img src="images/Software Measurement Process.png" width="1393" class="map img-fluid" usemap="#Software Measurement Process"><map name="Software Measurement Process">
@@ -268,7 +279,8 @@
 <p align="center"><span class="font-weight-bold">Figure 3. </span>Software Measurement Process conceptual model.</p></div>
 <p align="justify" class="lead"></p>
 
-<hr class="featurette-divider"><h3 class="featurette-heading" id="RSMO_Software+Measurement+Planning_section">3.3.  Software Measurement Planning</h3>
+</div>
+<hr class="featurette-divider"><div class="py-5"><h3 class="featurette-heading" id="RSMO_Software+Measurement+Planning_section">3.3.  Software Measurement Planning</h3>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 4 presents the conceptual model of the Software Measurement Planning subontology.</p>
 <div class="container-fluid my-5" align="center"><img src="images/Software Measurement Planning.png" width="1631" class="map img-fluid" usemap="#Software Measurement Planning"><map name="Software Measurement Planning">
@@ -308,7 +320,8 @@
 <p align="center"><span class="font-weight-bold">Figure 4. </span>Software Measurement Planning conceptual model.</p></div>
 <p align="justify" class="lead"></p>
 
-<hr class="featurette-divider"><h3 class="featurette-heading" id="RSMO_Software+Measurement+Execution_section">3.4.  Software Measurement Execution</h3>
+</div>
+<hr class="featurette-divider"><div class="py-5"><h3 class="featurette-heading" id="RSMO_Software+Measurement+Execution_section">3.4.  Software Measurement Execution</h3>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 5 presents the conceptual model of the Measurement Execution subontology.</p>
 <div class="container-fluid my-5" align="center"><img src="images/Measurement Execution.png" width="1197" class="map img-fluid" usemap="#Measurement Execution"><map name="Measurement Execution">
@@ -338,7 +351,8 @@
 <p align="center"><span class="font-weight-bold">Figure 5. </span>Measurement Execution conceptual model.</p></div>
 <p align="justify" class="lead"></p>
 
-<hr class="featurette-divider"><h3 class="featurette-heading" id="RSMO_Software+Measurement+Analysis_section">3.5.  Software Measurement Analysis</h3>
+</div>
+<hr class="featurette-divider"><div class="py-5"><h3 class="featurette-heading" id="RSMO_Software+Measurement+Analysis_section">3.5.  Software Measurement Analysis</h3>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 6 presents the conceptual model of the Measurement Analysis subontology.</p>
 <div class="container-fluid my-5" align="center"><img src="images/Measurement Analysis.png" width="1017" class="map img-fluid" usemap="#Measurement Analysis"><map name="Measurement Analysis">
@@ -365,7 +379,8 @@
 <area shape="rect" coords="506,809,698,839" href="http://dev.nemo.inf.ufes.br/seon/RSMO.html#RSMO_Analysis+Result+Description" target="_blank" title="Information Item that records the Analysis Result produced in a Software Measurement Analysis.  "></map>
 <p align="center"><span class="font-weight-bold">Figure 6. </span>Measurement Analysis conceptual model.</p></div>
 <p align="justify" class="lead"></p>
-</p>					
+
+</div></p>					
 			</div>
 
 			<hr>
@@ -792,7 +807,7 @@ Software Measurement Execution (0..*) applies (1..1) Software-Related Measure<br
 				<div class="col-md-auto">
 					<small>
 						<span class="text-muted">
-						Wed Dec 15 22:38:29 BRT 2021
+						Thu Dec 16 14:14:56 BRT 2021
 						</span>
 					</small>
 				</div>
@@ -875,19 +890,10 @@ Software Measurement Execution (0..*) applies (1..1) Software-Related Measure<br
 				$('img[usemap]').rwdImageMaps(); 
 				
 				$(window).on('resize', function(){
-				  location.reload();
+				  //location.reload();
 				});
 			});			
 			
-		</script>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-WXTXYYCXMP"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-
-		  gtag('config', 'G-WXTXYYCXMP');
 		</script>
 	</body>
 </html>

@@ -42,6 +42,16 @@
      <!-- Custom styles for this template -->
      <link href="bootstrap/css/carousel.css" rel="stylesheet">
       
+		  <!-- Global site tag (gtag.js) - Google Analytics -->
+		  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WXTXYYCXMP"></script>
+		  <script>
+		    window.dataLayer = window.dataLayer || [];
+		    function gtag(){dataLayer.push(arguments);}
+		    gtag('js', new Date());
+
+		    gtag('config', 'G-WXTXYYCXMP');
+		  </script>
+
     </head>
 
   <body>
@@ -199,7 +209,7 @@
 <p align="center"><span class="font-weight-bold">Figure 1. </span>HCIEO Modularization.</p></div>
 <p align="justify" class="lead"></p>
 
-<hr class="featurette-divider"><h3 class="featurette-heading" id="HCIEO_Central+View_section">3.1.  Central View</h3>
+<hr class="featurette-divider"><div class="py-5"><h3 class="featurette-heading" id="HCIEO_Central+View_section">3.1.  Central View</h3>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 2 presents the conceptual model of the HCIEO Central View subontology.</p>
 <div class="container-fluid my-5" align="center"><img src="images/HCIEO Central View.png" width="1895" class="map img-fluid" usemap="#HCIEO Central View"><map name="HCIEO Central View">
@@ -244,7 +254,8 @@ The content of evaluation reports can vary based on the objectives of the evalua
 <p align="center"><span class="font-weight-bold">Figure 2. </span>HCIEO Central View conceptual model.</p></div>
 <p align="justify" class="lead">HCI Evaluation is a Complex Action and, like that, it is an intentional event. It is caused by the HCI Evaluator Intention that inheres in the HCI Evaluator. Being an Intention, HCI Evaluaton Intention has a HCI Evaluator Goal (Goal) as propositional content. HCI Evaluator is the role played by an individual or an organization (Stakeholder) that performs the HCI Evaluation.<br/><br/>An HCI Evaluation consists in the systematic determination of the extent to which an Interactive Computer System ’s (or its User Interface ) quality characteristics (HCI Quality Characteristic) meet the HCI Evaluation Criteria applied in the evaluation. HCI Evaluation Criteria, in turn, are conditions, or capacity needed (Requirement), used to evaluate Interactive Computer System ’s HCI Quality Characteristics and may be related to User Requirements.<br/><br/>HCI Quality Characteritics are qualities (Quality Universal) of an Interactive Computer System (manifested in its software or hardware constituents). Therefore, HCI Evaluation evaluates HCI Quality Characteristics of an Interactive Computer System or, more specifically, of its User Interface.<br/><br/>An HCI Evaluation follows HCI Evaluation Method (e.g., Heuristic Method, Usability Testing), which is a Procedure that describes the actions to be performed by the HCI Evaluator in an HCI Evaluation. An HCI Evaluation Method is chosen according to the HCI Evaluator Goal and can determine the HCI Evaluation Criteria to be applied in an HCI Evaluation. To perform an HCI Evaluation it may be necessary to use an HCI Evaluation Artifact (Sw Artifact), which is an object intentionally built to specify, among others, the HCI Evaluation Criteria to be applied in the evaluation (e.g., a checklist specifying the criteria to be applied).<br/><br/>In some HCI Evaluations it is necessary to evaluate the Interactive Computer System during the Human-Computer Interaction . In this case, the User (or user representatives) of the Interactive Computer System participates in the HCI Evaluation while, at the same time, participates (User Participation ), together with the Interactive Computer System (Interactive Computer System Participation ), in the Human-Computer Interaction . When the User participates in an HCI Evaluation, it is required that this User uses the Interactive Computer System in order to achieve a certain goal (User Goal ) (e.g., send an email). While the User interacts with the Interactive Computer System to achieve his/her goal (User Goal ), the HCI Evaluator performs the HCI Evaluation, following the HCI Evaluation Method and applying HCI Evaluation Criteria to evaluate HCI Quality Characteristics of the Interactive Computer System . This scenario involves some constraints, addressed by the following axioms:<br/><br/>A6.1. <code class="text-muted">&forall; hcie: HCI Evaluation, ics: Interactive Computer System, icsp: Interactive Computer System Participation, hci: Human-Computer Interaction, user: User evaluates(hcie, ics) &and; participatesIn(user, hcie) &and; composedOf(hci, icsp) &rarr; &exist; up: User Participation participationOf(user, up) &and; composedOf(hci, up)</code><br/><br/>A6.2. <code class="text-muted">&forall; hcie: HCI Evaluation, hci: Human-Computer Interaction, hciqc: HCI Quality Characteristic, ics: Interactive Computer System, icsp: Interactive Computer System Participation evaluates(hcie, hci) ∧ evaluates(hcie,hciqc) &and; has(ics, hciqc) &and; composedOf(hci, icsp) &and; participationOf(icsp, ics) &rarr; evaluates(hcie, ics)</code><br/><br/>Moreover, in an HCI Evaluation an HCI Evaluator can act as a User . Conversely, a User can act as an HCI Evaluator. Thus, if an evaluator performs an evaluation in which he/she acts as a user, then this evaluator is also the user who participates in the evaluation. On the other hand, if a user that participates in an evaluation performs that evaluation, then he/she is also an evaluator of that evaluation. Hence, the following axiom applies:<br/><br/>A6.3. <code class="text-muted">&forall; e: HCI Evaluator, hcie: HCI Evaluation performs(e, hcie) &and; participatesIn(e, hcie) &rarr; &exist; u: User participatesIn(u, hcie) &and; (e = u)</code><br/><br/>A6.4. <code class="text-muted">&forall; u: User, hcie: HCI Evaluation participatesIn(u, hcie) &and; performs(u, hcie) &rarr; &exist; e: HCI Evaluator performs(e, hcie) &and; (e = u)</code><br/><br/>After the HCI Evaluation is performed, the HCI Evaluation Report, a Document, is created, under responsibility of the HCI Evaluator, aiming to report the evaluation results and other relevant information, such as the applied HCI Evaluation Criteria.</p>
 
-<hr class="featurette-divider"><h3 class="featurette-heading" id="HCIEO_Complementary+View_section">3.2.  Complementary View</h3>
+</div>
+<hr class="featurette-divider"><div class="py-5"><h3 class="featurette-heading" id="HCIEO_Complementary+View_section">3.2.  Complementary View</h3>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 3 presents the conceptual model of the HCIEO Complementary View subontology.</p>
 <div class="container-fluid my-5" align="center"><img src="images/HCIEO Complementary View.png" width="1746" class="map img-fluid" usemap="#HCIEO Complementary View"><map name="HCIEO Complementary View">
@@ -280,7 +291,8 @@ The content of evaluation reports can vary based on the objectives of the evalua
 <area shape="rect" coords="846,559,977,589" href="HCIO.html#HCIO_User+Participation" target="" title="Event in which the user participates in a Human-Computer Interaction."></map>
 <p align="center"><span class="font-weight-bold">Figure 3. </span>HCIEO Complementary View conceptual model.</p></div>
 <p align="justify" class="lead">There are HCI Evaluations in which it is necessary to perform measurements to determine the extent to which HCI Quality characteristics of an Interactive Computer System meet HCI Evaluation Criteria. This is addressed in the conceptual model shown in Figure 6.5, which depicts a view of HCIEO that reuses concepts from COM to represent evaluations that quantify HCI Quality Characteristics.<br/><br/>Besides being Objects (grounding in UFO), Interactive Computer System and User Interface are also Measurable Entities, i.e., entities that can be measured. In this sense, HCI Quality Characteristic is subtype of Measurable Element, i.e., a measurable property that characterizes Interactive Computer System (or a User Interface ). Measures can be used to quantify HCI Quality Characteristics. For example, usability (HCI Quality Characteristic) characterizesasystem(Interactive Computer System)oritsUI(User Interface)and can be quantified, among others, by means of the number of wrong clicks or touches (Measure). HCI Evaluation Criteria can refer to Measures used to quantify HCI Quality Characteristic. For example, the criteria “the number of wrong clicks or touches must be smaller than two”, used to evaluate usability, refers to the measure number of wrong clicks or touches, which, in turn, is used to quantify usability. In this context, the Measure referred by an HCI Evaluation Criteria in an HCI Evaluation that evaluates a HCI Quality Characteristic must be a Measure used to quantify that HCI Quality Characteristic. Thus:<br/><br/>A6.5. <code class="text-muted">&forall; m: Measure, hciec: HCI Evaluation criteria, hcie: HCI Evaluation, hciqc: HCI Quality Characteristic evaluates(hcie, hciqc) &and; applies(hcie, hciec) &and; usedToEvaluate(hciec, hciqc) &and; refersTo(hciec, m) &rarr; quantifies(m, hciqc)</code><br/><br/>A Measure (e.g., time spent to log in the system) can be expressed in Measure Unit (e.g., minute) and has a Scale partitioned according to the Measure Unit and composed of the values that can be associated to the Measure. Measurement consists in collecting Measured Values to a Measure (e.g., the measurement of the time to log in the system, resulting in the value 1 minute). In an HCI Evaluation, Measurements are performed to establish Measured Values to quantify HCI Quality Characteristics.<br/><br/>When a HCI Evaluation involves measurements, the HCI Evaluation Report must consider the Measured Values.</p>
-</p>					
+
+</div></p>					
 			</div>
 
 			<hr>
@@ -472,7 +484,7 @@ HCI Evaluation Criteria (0..*) used to evaluate (1..*) HCI Quality Characteristi
 				<div class="col-md-auto">
 					<small>
 						<span class="text-muted">
-						Wed Dec 15 22:38:28 BRT 2021
+						Thu Dec 16 14:14:55 BRT 2021
 						</span>
 					</small>
 				</div>
@@ -555,19 +567,10 @@ HCI Evaluation Criteria (0..*) used to evaluate (1..*) HCI Quality Characteristi
 				$('img[usemap]').rwdImageMaps(); 
 				
 				$(window).on('resize', function(){
-				  location.reload();
+				  //location.reload();
 				});
 			});			
 			
-		</script>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-WXTXYYCXMP"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-
-		  gtag('config', 'G-WXTXYYCXMP');
 		</script>
 	</body>
 </html>

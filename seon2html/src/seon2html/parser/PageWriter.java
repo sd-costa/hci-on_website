@@ -54,6 +54,7 @@ public class PageWriter {
 		generateStatsPage();
 		generateSearchFramesPage();
 		generateIndexPage();
+		generateVideosPage();
 
 		// Copying the static page files
 		recoverStaticPages();
@@ -384,6 +385,18 @@ public class PageWriter {
 
 		// Writing the HTML page
 		Utils.stringToFile("./page/index.html", html);
+	}
+
+	/* Reads the Network and creates the Index page. */
+	private void generateVideosPage() {
+		// Reading the HTML template
+		String html = Utils.fileToString("./resources/Template.videos.html");
+
+
+		html = html.replace("@date", (new Date()).toString());
+
+		// Writing the HTML page
+		Utils.stringToFile("./page/videos.html", html);
 	}
 
 	/* Reads the Network and creates the Stats page. */
@@ -796,7 +809,7 @@ public class PageWriter {
 	/* Generates the sections' structures of an ontology. */
 	private String generateSectionStructures(Package superpack, String snum) {
 		//String SECTIONSTRUCT = "\n<h6 class=\"featurette-heading\"><a name=\"@sectionref\">@snum @section</a></h6>\n<p align=\"justify\">@intro</p>\n@packdiagrams";
-		String SECTIONSTRUCT = "\n<hr class=\"featurette-divider\"><h3 class=\"featurette-heading\" id=\"@sectionref\">@snum @section</h3>\n<p class=\"lead\" align=\"justify\">@intro</p>\n@packdiagrams";
+		String SECTIONSTRUCT = "\n<hr class=\"featurette-divider\"><div class=\"py-5\"><h3 class=\"featurette-heading\" id=\"@sectionref\">@snum @section</h3>\n<p class=\"lead\" align=\"justify\">@intro</p>\n@packdiagrams\n</div>";
 		int num = 1;
 		String sectionStructures = "";
 		List<Package> packs = superpack.getPacks();

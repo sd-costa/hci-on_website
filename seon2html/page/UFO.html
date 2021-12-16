@@ -42,6 +42,16 @@
      <!-- Custom styles for this template -->
      <link href="bootstrap/css/carousel.css" rel="stylesheet">
       
+		  <!-- Global site tag (gtag.js) - Google Analytics -->
+		  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WXTXYYCXMP"></script>
+		  <script>
+		    window.dataLayer = window.dataLayer || [];
+		    function gtag(){dataLayer.push(arguments);}
+		    gtag('js', new Date());
+
+		    gtag('config', 'G-WXTXYYCXMP');
+		  </script>
+
     </head>
 
   <body>
@@ -168,7 +178,7 @@
 			<div class="p-5 rounded" id="ontologymodels">
 				<h2 class="featurette-heading">3. Ontology Models</h2>
 				<p class="lead">
-<hr class="featurette-divider"><h3 class="featurette-heading" id="UFO_MLT_section">3.1.  MLT</h3>
+<hr class="featurette-divider"><div class="py-5"><h3 class="featurette-heading" id="UFO_MLT_section">3.1.  MLT</h3>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 1 presents the conceptual model of the MLT subontology.</p>
 <div class="container-fluid my-5" align="center"><img src="images/MLT.png" width="1210" class="map img-fluid" usemap="#MLT"><map name="MLT">
@@ -180,7 +190,8 @@
 <p align="center"><span class="font-weight-bold">Figure 1. </span>MLT conceptual model.</p></div>
 <p align="justify" class="lead"></p>
 
-<hr class="featurette-divider"><h3 class="featurette-heading" id="UFO_UFO-A_section">3.2.  UFO-A</h3>
+</div>
+<hr class="featurette-divider"><div class="py-5"><h3 class="featurette-heading" id="UFO_UFO-A_section">3.2.  UFO-A</h3>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 2 presents the conceptual model of the UFO-A subontology.</p>
 <div class="container-fluid my-5" align="center"><img src="images/UFO-A.png" width="1633" class="map img-fluid" usemap="#UFO-A"><map name="UFO-A">
@@ -225,7 +236,8 @@
 <p align="center"><span class="font-weight-bold">Figure 2. </span>UFO-A conceptual model.</p></div>
 <p align="justify" class="lead"></p>
 
-<hr class="featurette-divider"><h3 class="featurette-heading" id="UFO_UFO-A+Qualities_section">3.2.1.  UFO-A Qualities</h4>
+</div>
+<hr class="featurette-divider"><div class="py-5"><h3 class="featurette-heading" id="UFO_UFO-A+Qualities_section">3.2.1.  UFO-A Qualities</h4>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 3 presents the conceptual model of the Qualities subontology.</p>
 <div class="container-fluid my-5" align="center"><img src="images/Qualities.png" width="978" class="map img-fluid" usemap="#Qualities"><map name="Qualities">
@@ -248,7 +260,8 @@
 <p align="center"><span class="font-weight-bold">Figure 3. </span>Qualities conceptual model.</p></div>
 <p align="justify" class="lead"></p>
 
-<hr class="featurette-divider"><h3 class="featurette-heading" id="UFO_UFO-B_section">3.3.  UFO-B</h3>
+</div>
+<hr class="featurette-divider"><div class="py-5"><h3 class="featurette-heading" id="UFO_UFO-B_section">3.3.  UFO-B</h3>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 4 presents the conceptual model of the UFO-B subontology.</p>
 <div class="container-fluid my-5" align="center"><img src="images/UFO-B.png" width="970" class="map img-fluid" usemap="#UFO-B"><map name="UFO-B">
@@ -273,7 +286,8 @@
 <p align="center"><span class="font-weight-bold">Figure 4. </span>UFO-B conceptual model.</p></div>
 <p align="justify" class="lead"></p>
 
-<hr class="featurette-divider"><h3 class="featurette-heading" id="UFO_UFO-C_section">3.4.  UFO-C</h3>
+</div>
+<hr class="featurette-divider"><div class="py-5"><h3 class="featurette-heading" id="UFO_UFO-C_section">3.4.  UFO-C</h3>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 5 presents the conceptual model of the Mental Moments subontology.</p>
 <div class="container-fluid my-5" align="center"><img src="images/Mental Moments.png" width="671" class="map img-fluid" usemap="#Mental Moments"><map name="Mental Moments">
@@ -287,7 +301,8 @@
 <area shape="rect" coords="569,20,661,50" href="UFO.html#UFO_Proposition" target="" title="A Proposition is a sentence that is either true or false. The truth of a proposition is determined by its correspondence to the existence of an entity or fact in reality, the so-called truthmaker of a proposition."></map>
 <p align="center"><span class="font-weight-bold">Figure 5. </span>Mental Moments conceptual model.</p></div>
 <p align="justify" class="lead"></p>
-</p>					
+
+</div></p>					
 			</div>
 
 			<hr>
@@ -1062,7 +1077,7 @@ Individual (1..*) instantiates (1..1) Universal<br/>
 				<div class="col-md-auto">
 					<small>
 						<span class="text-muted">
-						Wed Dec 15 22:38:28 BRT 2021
+						Thu Dec 16 14:14:55 BRT 2021
 						</span>
 					</small>
 				</div>
@@ -1145,19 +1160,10 @@ Individual (1..*) instantiates (1..1) Universal<br/>
 				$('img[usemap]').rwdImageMaps(); 
 				
 				$(window).on('resize', function(){
-				  location.reload();
+				  //location.reload();
 				});
 			});			
 			
-		</script>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-WXTXYYCXMP"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-
-		  gtag('config', 'G-WXTXYYCXMP');
 		</script>
 	</body>
 </html>
