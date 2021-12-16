@@ -788,9 +788,9 @@ public class PageWriter {
 			on_url = networkedOntoURL(supplier.getShortName());
 
 			if (supplier.getNetwork().equals("SEON")){
-				DEPENDSLINE = "<tr><td><a class=\"text-muted\" href=\"" + on_url + "\" target=\"_blank\">@ontology</a></td><td>@description</td><td style=\"text-align:center\">@level</td></tr>";
+				DEPENDSLINE = "<tr><td><a class=\"text-dark\" href=\"" + on_url + "\" target=\"_blank\">@ontology</a></td><td>@description</td><td style=\"text-align:center\">@level</td></tr>";
 			} else {
-				DEPENDSLINE = "<tr><td><a class=\"text-muted\" href=\"" + on_url + "\">@ontology</a></td><td>@description</td><td style=\"text-align:center\">@level</td></tr>";				
+				DEPENDSLINE = "<tr><td><a class=\"text-dark\" href=\"" + on_url + "\">@ontology</a></td><td>@description</td><td style=\"text-align:center\">@level</td></tr>";				
 			}
 
 			String line = DEPENDSLINE;
