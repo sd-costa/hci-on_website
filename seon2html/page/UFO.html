@@ -1,243 +1,189 @@
 <!doctype html>
-
 <html lang="en">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	    <meta name="description" content="">
-	    <meta name="author" content="Simone Dornelas Costa">
-	    <meta charset="ISO-8859-1">
-	    
-	
-	    <title>Unified Foundational Ontology (UFO)</title>
-	
-	    <!-- Bootstrap core CSS -->
-	    <link href="bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
-	    
-	    <!-- Custom styles for this template -->
-	    <link href="bootstrap-5.1.3-dist/css/navbar-top-fixed.css" rel="stylesheet">
-	    <link href="bootstrap-5.1.3-dist/css/sticky-footer-navbar.css" rel="stylesheet">
-	    <link href="bootstrap-5.1.3-dist/css/carousel.css" rel="stylesheet">
+      <meta name="description" content="">
+      <meta name="author" content="Simone Dornelas Costa">
+      <meta name="generator" content="Simone Dornelas Costa">
+      <title>HCI-ON</title>    
 
-	    <!-- ICONS -->
-	    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <!-- Bootstrap core CSS -->
+      <link rel="stylesheet" type="text/css" href="bootstrap/4.6.1-dist/css/bootstrap.min.css">
+      
+      
+      <!-- ICONS -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-	    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 
-	    <style>
-	      .bd-placeholder-img {
-	        font-size: 1.125rem;
-	        text-anchor: middle;
-	        -webkit-user-select: none;
-	        -moz-user-select: none;
-	        -ms-user-select: none;
-	        user-select: none;
-	      }
+      <!-- favicon -->
+      <link rel="icon" type="image/svg+xml" sizes="48x48" href="images/diagram-3-fill.svg">
 
-	      @media (min-width: 768px) {
-	        .bd-placeholder-img-lg {
-	          font-size: 3.5rem;
-	        }
-	      }
+      <style>   
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
 
-	      .h2, .h3, h2, h3 {
-	      	margin-bottom: 2.5rem;
-	      }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      </style>
+     
+     <!-- Custom styles for this template -->
+     <link href="bootstrap/css/carousel.css" rel="stylesheet">
+      
+    </head>
 
+  <body>
 
-	      .span {
-	      	font-size: 2rem;
-	      }
-
-	      .featurette-heading {
-	        margin-top: 0;
-	      }
-
-	      
-
-	    </style>
-
-	  <!--.h6, h6 {
-	      	margin-bottom: 2.5rem;
-	      	margin-top: 2.5rem;	
-	      }-->  
-	    
-<!--	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
-	    
-	    
-	<link rel="icon" type="image/svg+xml" sizes="48x48" href="images/diagram-3-fill.svg">
-  </head>
-
-  <body data-new-gr-c-s-check-loaded="14.1038.0" data-gr-ext-installed="">
-
-	<header>
-	
-	<!--MAIN fixed navbar -->	
-	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-	  <!--<div class="container-fluid">-->
-	    <a class="navbar-brand" href="hci-on.html">HCI-ON</a>
-	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	      <span class="navbar-toggler-icon"></span>
-	    </button>
-	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-	        <li class="nav-item">
-	          <a class="nav-link" aria-current="page" href="index.html">Home</a>
-	        </li>
-
-	        <li class="nav-item dropdown">
-	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-	            The Network
-	          </a>
-	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item fst-italic" href="hci-on.html#architecture" tabindex="-1" aria-disabled="true">Architecture</a></li>
-	            <li><a class="dropdown-item fst-italic" href="hci-on.html#hcionmechanism" tabindex="-1" aria-disabled="true">Evolution Mechanisms</a></li>
-	            <li><a class="dropdown-item fst-italic" href="hci-on.html#hcionseon" tabindex="-1" aria-disabled="true">Relationship with SEON</a></li>
-	          	<li><hr class="dropdown-divider"></li>
-
-	            <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Foundational Layer</a></li>
-	            <li><a class="dropdown-item" href="UFO.html">UFO - Unified Foundational Ontology</a></li>
-
-	            <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Core Layer</a></li>
-	            <li><a class="dropdown-item" href="HCIO.html">HCIO - Human-Computer Interaction Ontology</a></li>
-
-	            <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Domain Layer</a></li>
-	            <li><a class="dropdown-item" href="HCIDO.html">HCIDO - Human-Computer Interaction Design Ontology</a></li>
-							<li><a class="dropdown-item" href="HCIEO.html">HCIEO - Human-Computer Interaction Evaluation Ontology</a></li>
-							<!--<li><a class="dropdown-item" href="HCIDPO.html">HCIDPO - Human-Computer Interaction Design Process Ontology</a></li>-->
-							<li><a class="dropdown-item" href="UIT&EO.html">UIT&EO - UI Types and Elements Ontology</a></li>
-							<li><a class="dropdown-item" href="HCIMO.html">HCIMO - HCI Modality Ontology</a></li>
-							<li><a class="dropdown-item" href="CUO.html">CUO - Context of Use Ontology</a></li>
-							<li><a class="dropdown-item" href="UCO.html">UCO - User Characterization Ontology</a></li>
-							<li><a class="dropdown-item" href="HCIQCO.html">HCIQCO - HCI Quality Characteristics Ontology</a></li>
-	          </ul>
-	        </li>
-
-	        <li class="nav-item dropdown">
-	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-	            Features
-	          </a>
-	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item" href="SearchFrames.html">Concepts Searcher</a></li>
-	            <li><a class="dropdown-item" href="NetworkGraph.html">Graph</a></li>
-	            <li><a class="dropdown-item" href="NetworkStats.html">Stats</a></li>
-	            <li><a class="dropdown-item" href="videos.html">Videos</a></li>
-	            <!--<li><hr class="dropdown-divider"></li>
-	            <li><a class="dropdown-item" href="SeonFeedback.html">Feedback</a></li>-->
-	          </ul>
-	        </li>
-
-	        <!--<li class="nav-item dropdown">
-	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-	            More
-	          </a>
-	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item" href="SEON.owl" target="_blank">Operational Version (in OWL)</a></li>
-	            <li><a class="dropdown-item" href="#">Astah file</a></li>
-	            <li><a class="dropdown-item" href="#">Specifications</a></li>
-	            <li><a class="dropdown-item" href="#">Publications</a></li>
-	          </ul>
-	        </li>-->
-
-					<li class="nav-item dropdown">
-	          <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-	            UFO
-	          </a>
-	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item" href="#ontologydescription">Ontology Description</a></li>
-	            <li><a class="dropdown-item" href="#relatedontologies">Related Ontologies</a></li>
-	            <li><a class="dropdown-item" href="#ontologymodels">Ontology Models</a></li>
-	            <li><a class="dropdown-item" href="#conceptsdefinition">Concepts Definition</a></li>
-	            <li><a class="dropdown-item" href="#detailedconcepts">Detailed Concepts</a></li>
-	          </ul>
-	        </li>
-
-<!--	        <li class="nav-item">
-	          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-	        </li>-->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="HCI-ON.html">HCI-ON</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
         
-	      </ul>
-	      
-	    </div>
-	  <!--</div>-->
-	</nav>	
-		
-	
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+            The Network
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="HCI-ON.html">HCI-ON</a>
+            <a class="dropdown-item" href="HCI-ON.html#architecture">Architecture</a>
+            <a class="dropdown-item" href="HCI-ON.html#hcionmechanism">Evolution Mechanism</a>
+            <a class="dropdown-item" href="HCI-ON.html#hcionseon">Relationship with SEON</a>
+          </div>
+        </li>
 
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+            Networked Ontologies
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        
+            <a class="dropdown-item disabled">Foundational Layer</a>
+            <a class="dropdown-item" href="UFO.html">UFO</a>
 
-	
-		</header>
+            <a class="dropdown-item disabled">Core Layer</a>
+            <a class="dropdown-item" href="HCIO.html">HCIO</a>
 
-		<!-- Begin page content -->
-    <main role="main" class="container-fluid">	
-    		
-				<!--<div class="bg-light p-5 rounded" id="ontologydescription">
-    			<h1 class="featurette-heading">The Unified Foundational Ontology (UFO)</h1>
-					<p class="lead" align="justify"><span class="text-muted font-weight-bold font-italic">Ontology Description. </span>The Unified Foundational Ontology (UFO) is developed based on a number of theories from Formal Ontology, Philosophical Logics, Philosophy of Language, Linguistics and Cognitive Psychology. UFO is divided in three parts: an ontology of endurants (objects), an ontology of perdurants (events), and an ontology of social entities. UFO's ontological distinctions are used for classifying SEON concepts, e.g., as objects, actions, co mmitments, agents, roles, goals and so on. UFO provides the necessary grounding for the concepts and relations of all networked ontologies.<br/>This specification is being documented. For further details on UFO, see doc.utwente.nl/50826/1/thesis_Guizzardi.pdf.</p>
-					<p class="lead text-right text-muted font-italic"><i class="bi bi-star"></i> foundational ontology</p>
-    		</div>-->
+            <a class="dropdown-item disabled">Domain Layer</a>
+            <a class="dropdown-item" href="HCIDO.html">HCIDO</a>
+            <a class="dropdown-item" href="HCIEO.html">HCIEO</a>
+            <a class="dropdown-item" href="UIT&EO.html">UIT&EO</a>
+            <a class="dropdown-item" href="HCIMO.html">HCIMO</a>
+            <a class="dropdown-item" href="CUO.html">CUO</a>
+            <a class="dropdown-item" href="UCO.html">UCO</a>
+            <a class="dropdown-item" href="HCIQCO.html">HCIQCO</a>
+            
+          </div>
+        </li>
 
-				<div class="bg-light p-5 rounded">
-					<div class="container-fluid d-flex justify-content-end"><span class="badge badge-danger text-lowercase"></span></div>
-    			<h1 class="featurette-heading">The Unified Foundational Ontology (UFO)</h1>
-    			<p class="lead text-right font-italic"><i class="bi bi-star"></i> foundational ontology</p>
-    		</div>
-	
-				<hr> 
-				   		
-    		<div class="p-5 rounded" id="ontologydescription">
-  				<h2 class="featurette-heading">1. Ontology Description</h2>
-  				<p class="lead" align="justify">The Unified Foundational Ontology (UFO) is developed based on a number of theories from Formal Ontology, Philosophical Logics, Philosophy of Language, Linguistics and Cognitive Psychology. UFO is divided in three parts: an ontology of endurants (objects), an ontology of perdurants (events), and an ontology of social entities. UFO's ontological distinctions are used for classifying SEON concepts, e.g., as objects, actions, co mmitments, agents, roles, goals and so on. UFO provides the necessary grounding for the concepts and relations of all networked ontologies.<br/>This specification is being documented. For further details on UFO, see doc.utwente.nl/50826/1/thesis_Guizzardi.pdf.</p>
-    		</div>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+            Features
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="SearchFrames.html">Concepts Searcher</a> 
+            <a class="dropdown-item" href="NetworkGraph.html">Graph</a>
+            <a class="dropdown-item" href="NetworkStats.html">Stats</a>
+            <a class="dropdown-item" href="videos.html">Videos</a>
+          </div>
+        </li>
 
-				<hr>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+            UFO
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#ontologydescription">Ontology Description</a> 
+            <a class="dropdown-item" href="#relatedontologies">Related Ontologies</a>
+            <a class="dropdown-item" href="#ontologymodels">Ontology Models</a>
+            <a class="dropdown-item" href="#conceptsdefinition">Concepts Definition</a>
+            <a class="dropdown-item" href="#detailedconcepts">Detailed Concepts</a>
+          </div>
+        </li>
 
-				<div class="p-5 rounded" id="relatedontologies">
-					<h2 class="featurette-heading">2. Related Ontologies</h2>
-					<p class="lead">Networked ontologies used by UFO:</p>	
+      </ul>
+    </div>
+  </nav>
+
+	<!-- Begin page content -->
+  <main role="main" class="container-fluid">	
+
+			<div class="bg-light p-5 rounded">
+				<div class="container-fluid d-flex justify-content-end"><span class="badge badge-danger text-lowercase"></span></div>
+  			<h1 class="featurette-heading">The Unified Foundational Ontology (UFO)</h1>
+  			<p class="lead text-right font-italic"><i class="bi bi-star"></i> foundational ontology</p>
+  		</div>
+
+			<hr> 
+			   		
+  		<div class="p-5 rounded" id="ontologydescription">
+				<h2 class="featurette-heading">1. Ontology Description</h2>
+				<p class="lead" align="justify">The Unified Foundational Ontology (UFO) is developed based on a number of theories from Formal Ontology, Philosophical Logics, Philosophy of Language, Linguistics and Cognitive Psychology. UFO is divided in three parts: an ontology of endurants (objects), an ontology of perdurants (events), and an ontology of social entities. UFO's ontological distinctions are used for classifying SEON concepts, e.g., as objects, actions, co mmitments, agents, roles, goals and so on. UFO provides the necessary grounding for the concepts and relations of all networked ontologies.<br/>This specification is being documented. For further details on UFO, see doc.utwente.nl/50826/1/thesis_Guizzardi.pdf.</p>
+  		</div>
+
+			<hr>
+
+			<div class="p-5 rounded" id="relatedontologies">
+				<h2 class="featurette-heading">2. Related Ontologies</h2>
+				<p class="lead">Networked ontologies used by UFO:</p>	
+				
+				<div class="table-responsive my-5">
 					
-					<div class="table-responsive">
-						
-						<table class="table table-hover">
-							<thead>
-								<tr>
-									<th scope="col">Ontology</th>
-									<th scope="col">Relation</th>
-									<th scope="col">Integration Level</th>
-								</tr>
-							</thead>
-							<tbody>
-								
-							</tbody>
-						</table>
-  					<caption><small>Ontologies (re)used by UFO.</small></caption>
-  				</div>
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th scope="col">Ontology</th>
+								<th scope="col">Relation</th>
+								<th scope="col">Integration Level</th>
+							</tr>
+						</thead>
+						<tbody>
+							
+						</tbody>
+					</table>
+					<caption><small>Ontologies (re)used by UFO.</small></caption>
+				</div>
 
-				</div>	
+			</div>	
 
-				<hr>
-    	
-				<div class="p-5 rounded" id="ontologymodels">
-					<h2 class="featurette-heading">3. Ontology Models</h2>
-					<p class="lead">
+			<hr>
+  	
+			<div class="p-5 rounded" id="ontologymodels">
+				<h2 class="featurette-heading">3. Ontology Models</h2>
+				<p class="lead">
 <hr class="featurette-divider"><h3 class="featurette-heading" id="UFO_MLT_section">3.1.  MLT</h3>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 1 presents the conceptual model of the MLT subontology.</p>
-<div class="container-fluid" align="center"><img src="images/MLT.png" width="1210" class="map img-fluid" usemap="#MLT"><map name="MLT">
+<div class="container-fluid my-5" align="center"><img src="images/MLT.png" width="1210" class="map img-fluid" usemap="#MLT"><map name="MLT">
 <area shape="rect" coords="1024,298,1177,424" href="UFO.html#UFO_Individual" target="" title="">
 <area shape="rect" coords="766,298,919,424" href="UFO.html#UFO_Universal" target="" title="">
 <area shape="rect" coords="508,298,661,424" href="UFO.html#UFO_2ndOT" target="" title="">
 <area shape="rect" coords="238,298,391,424" href="UFO.html#UFO_3rdOT" target="" title="">
 <area shape="rect" coords="576,132,632,162" href="UFO.html#UFO_Entity" target="" title="Entity is the topmost category of UFO, representing anything, concrete or abstract, and both types and individuals."></map>
-<p align="center" class="lead font-weight-bold">Figure 1. MLT conceptual model.</p></div>
+<p align="center"><span class="font-weight-bold">Figure 1. </span>MLT conceptual model.</p></div>
 <p align="justify" class="lead"></p>
 
 <hr class="featurette-divider"><h3 class="featurette-heading" id="UFO_UFO-A_section">3.2.  UFO-A</h3>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 2 presents the conceptual model of the UFO-A subontology.</p>
-<div class="container-fluid" align="center"><img src="images/UFO-A.png" width="1633" class="map img-fluid" usemap="#UFO-A"><map name="UFO-A">
+<div class="container-fluid my-5" align="center"><img src="images/UFO-A.png" width="1633" class="map img-fluid" usemap="#UFO-A"><map name="UFO-A">
 <area shape="rect" coords="938,200,1077,230" href="UFO.html#UFO_Concrete+Particular" target="" title="">
 <area shape="rect" coords="969,270,1046,300" href="UFO.html#UFO_Endurant" target="" title="Endurants are said to be wholly present whenever they are present, i.e., they are in time. They can be understood in contrast with the category of Perdurants (Processes, Events). Examples of endurants are a house, a person, the Moon, an amount of sand. For instance, we can say that an individual John weights 80kg at in circumstance c1 but 68kg at in circumstance c2. Nonetheless, we are in these two cases referring to the same individual.">
 <area shape="rect" coords="877,342,967,372" href="UFO.html#UFO_Substantial" target="" title="Substantials (objects) are existentially-independent Endurants (@e.g., a person, a car).">
@@ -276,13 +222,13 @@
 <area shape="rect" coords="639,302,757,332" href="UFO.html#UFO_Formal+Relation" target="" title="">
 <area shape="rect" coords="1093,200,1230,230" href="UFO.html#UFO_Abstract+Particular" target="" title="">
 <area shape="rect" coords="1252,526,1345,556" href="UFO.html#UFO_Disposition" target="" title="Dispositions are properties (moments) that are only manifested in particular situations and that can also fail to be manifested. When manifested, they are manifested through the occurrence of events. Take for example the disposition of a magnet m to attract metallic material. The object m has this disposition even if it is never manifested, for example, because it is never close to any magnetic material. Nonetheless, m can certainly be said to possess that intrinsic moment, which it shares with other magnets."></map>
-<p align="center" class="lead font-weight-bold">Figure 2. UFO-A conceptual model.</p></div>
+<p align="center"><span class="font-weight-bold">Figure 2. </span>UFO-A conceptual model.</p></div>
 <p align="justify" class="lead"></p>
 
 <hr class="featurette-divider"><h3 class="featurette-heading" id="UFO_UFO-A+Qualities_section">3.2.1.  UFO-A Qualities</h4>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 3 presents the conceptual model of the Qualities subontology.</p>
-<div class="container-fluid" align="center"><img src="images/Qualities.png" width="978" class="map img-fluid" usemap="#Qualities"><map name="Qualities">
+<div class="container-fluid my-5" align="center"><img src="images/Qualities.png" width="978" class="map img-fluid" usemap="#Qualities"><map name="Qualities">
 <area shape="rect" coords="347,384,437,414" href="UFO.html#UFO_Substantial" target="" title="Substantials (objects) are existentially-independent Endurants (@e.g., a person, a car).">
 <area shape="rect" coords="423,107,505,137" href="UFO.html#UFO_Individual" target="" title="">
 <area shape="rect" coords="90,107,169,137" href="UFO.html#UFO_Universal" target="" title="">
@@ -299,13 +245,13 @@
 <area shape="rect" coords="87,253,220,283" href="UFO.html#UFO_Moment+Universal" target="" title="">
 <area shape="rect" coords="85,192,224,222" href="UFO.html#UFO_Endurant+Universal" target="" title="">
 <area shape="rect" coords="521,538,586,568" href="UFO.html#UFO_Quality" target="" title=""></map>
-<p align="center" class="lead font-weight-bold">Figure 3. Qualities conceptual model.</p></div>
+<p align="center"><span class="font-weight-bold">Figure 3. </span>Qualities conceptual model.</p></div>
 <p align="justify" class="lead"></p>
 
 <hr class="featurette-divider"><h3 class="featurette-heading" id="UFO_UFO-B_section">3.3.  UFO-B</h3>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 4 presents the conceptual model of the UFO-B subontology.</p>
-<div class="container-fluid" align="center"><img src="images/UFO-B.png" width="970" class="map img-fluid" usemap="#UFO-B"><map name="UFO-B">
+<div class="container-fluid my-5" align="center"><img src="images/UFO-B.png" width="970" class="map img-fluid" usemap="#UFO-B"><map name="UFO-B">
 <area shape="rect" coords="139,251,289,330" href="UFO.html#UFO_Event+(Perdurant)" target="" title="Events (also called perdurants) are individuals composed of temporal parts. They happen in time in the sense that they extend in time accumulating temporal parts. @Examples of events are a conversation, a football game, a symphony execution, a birthday party, or a particular business process.">
 <area shape="rect" coords="93,472,195,502" href="UFO.html#UFO_Atomic+Event" target="" title="Atomic Events are those events which have no proper parts, i.e., events which cannot be further decomposed.">
 <area shape="rect" coords="208,472,321,502" href="UFO.html#UFO_Complex+Event" target="" title="Complex events are aggregations of at least two disjoint events. A Complex Event is existentially dependent on all its proper parts and, indirectly, to the objects these proper parts depend on.">
@@ -324,13 +270,13 @@
 <area shape="rect" coords="471,529,542,559" href="UFO.html#UFO_Moment" target="" title="Moments are individuals that can only exist by inhering in other individuals. In other words, moments are individuals that are existentially-dependent on their bearers (@e.g., a person’s headache, a covalent bond between atoms).">
 <area shape="rect" coords="444,595,570,625" href="UFO.html#UFO_Intrinsic+Moment" target="" title="Intrinsic Moments are moments that inhere in one single individual (e.g., an apple’s color). An example of an intrinsic moment is a Mode (@e.g., John’s desires, intentions, perceptions, symptoms, skills).">
 <area shape="rect" coords="460,661,553,691" href="UFO.html#UFO_Disposition" target="" title="Dispositions are properties (moments) that are only manifested in particular situations and that can also fail to be manifested. When manifested, they are manifested through the occurrence of events. Take for example the disposition of a magnet m to attract metallic material. The object m has this disposition even if it is never manifested, for example, because it is never close to any magnetic material. Nonetheless, m can certainly be said to possess that intrinsic moment, which it shares with other magnets."></map>
-<p align="center" class="lead font-weight-bold">Figure 4. UFO-B conceptual model.</p></div>
+<p align="center"><span class="font-weight-bold">Figure 4. </span>UFO-B conceptual model.</p></div>
 <p align="justify" class="lead"></p>
 
 <hr class="featurette-divider"><h3 class="featurette-heading" id="UFO_UFO-C_section">3.4.  UFO-C</h3>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 5 presents the conceptual model of the Mental Moments subontology.</p>
-<div class="container-fluid" align="center"><img src="images/Mental Moments.png" width="671" class="map img-fluid" usemap="#Mental Moments"><map name="Mental Moments">
+<div class="container-fluid my-5" align="center"><img src="images/Mental Moments.png" width="671" class="map img-fluid" usemap="#Mental Moments"><map name="Mental Moments">
 <area shape="rect" coords="591,252,639,282" href="UFO.html#UFO_Goal" target="" title="The propositional content of an Intention.">
 <area shape="rect" coords="10,20,67,50" href="UFO.html#UFO_Agent" target="" title="Agents are Substantials (Functional Complexes or Collectives) that can bear special kinds of Intrinsic Moments named Intentional Moments.">
 <area shape="rect" coords="248,86,365,116" href="UFO.html#UFO_Mental+Moment" target="" title="">
@@ -339,172 +285,26 @@
 <area shape="rect" coords="350,179,410,209" href="UFO.html#UFO_Desire" target="" title="">
 <area shape="rect" coords="431,179,486,209" href="UFO.html#UFO_Belief" target="" title="">
 <area shape="rect" coords="569,20,661,50" href="UFO.html#UFO_Proposition" target="" title="A Proposition is a sentence that is either true or false. The truth of a proposition is determined by its correspondence to the existence of an entity or fact in reality, the so-called truthmaker of a proposition."></map>
-<p align="center" class="lead font-weight-bold">Figure 5. Mental Moments conceptual model.</p></div>
+<p align="center"><span class="font-weight-bold">Figure 5. </span>Mental Moments conceptual model.</p></div>
 <p align="justify" class="lead"></p>
 </p>					
-				</div>
+			</div>
 
-				<hr>
+			<hr>
 
-				<div class="p-5 rounded" id="conceptsdefinition">
-					<h2 class="featurette-heading">4. Concepts Definition</h2>
-					<p class="lead">The following table shows the definitions for UFO concepts.</p>		
-					<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->				
-					<div class="table-responsive">
-						<table class="table table-hover">
-							<thead>
-								<tr>
-									<th scope="col">Concept</th>
-									<th scope="col">Definition</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr><td><p id="UFO_2ndOT"><span class="font-italic">2ndOT</span><a class="text-muted" href=#UFO_2ndOT_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_3rdOT"><span class="font-italic">3rdOT</span><a class="text-muted" href=#UFO_3rdOT_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Abstract+Particular"><span class="font-italic">Abstract Particular</span><a class="text-muted" href=#UFO_Abstract+Particular_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Abstract+Thing"><span class="font-italic">Abstract Thing</span><a class="text-muted" href=#UFO_Abstract+Thing_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Action"><span class="font-italic">Action</span><a class="text-muted" href=#UFO_Action_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Actions are intentional events, i.e. they are caused by Intentions. Actions are events which instantiate a Plan (Action Universal) with the specific purpose of satisfying (the propositional content of) some Intention.</p></td></tr>
-<tr><td><p id="UFO_Action+Contribution"><span class="font-italic">Action Contribution</span><a class="text-muted" href=#UFO_Action+Contribution_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Action Contribution is a participation that are intentional.</p></td></tr>
-<tr><td><p id="UFO_Action+Universal"><span class="font-italic">Action Universal</span><a class="text-muted" href=#UFO_Action+Universal_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Agent"><span class="font-italic">Agent</span><a class="text-muted" href=#UFO_Agent_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Agents are Substantials (Functional Complexes or Collectives) that can bear special kinds of Intrinsic Moments named Intentional Moments.</p></td></tr>
-<tr><td><p id="UFO_Agent+Participation"><span class="font-italic">Agent Participation</span><a class="text-muted" href=#UFO_Agent+Participation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Anti-Rigid+Mixin+Universal"><span class="font-italic">Anti-Rigid Mixin Universal</span><a class="text-muted" href=#UFO_Anti-Rigid+Mixin+Universal_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Anti-Rigid+Sortal+Universal"><span class="font-italic">Anti-Rigid Sortal Universal</span><a class="text-muted" href=#UFO_Anti-Rigid+Sortal+Universal_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Appointment"><span class="font-italic">Appointment</span><a class="text-muted" href=#UFO_Appointment_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Appointment+Goal"><span class="font-italic">Appointment Goal</span><a class="text-muted" href=#UFO_Appointment+Goal_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Atomic+Action"><span class="font-italic">Atomic Action</span><a class="text-muted" href=#UFO_Atomic+Action_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Atomic+Action+Universal"><span class="font-italic">Atomic Action Universal</span><a class="text-muted" href=#UFO_Atomic+Action+Universal_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Atomic+Event"><span class="font-italic">Atomic Event</span><a class="text-muted" href=#UFO_Atomic+Event_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Atomic Events are those events which have no proper parts, i.e., events which cannot be further decomposed.</p></td></tr>
-<tr><td><p id="UFO_Belief"><span class="font-italic">Belief</span><a class="text-muted" href=#UFO_Belief_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Category"><span class="font-italic">Category</span><a class="text-muted" href=#UFO_Category_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Change"><span class="font-italic">Change</span><a class="text-muted" href=#UFO_Change_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Closed+Appointment"><span class="font-italic">Closed Appointment</span><a class="text-muted" href=#UFO_Closed+Appointment_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Closed+Commitment"><span class="font-italic">Closed Commitment</span><a class="text-muted" href=#UFO_Closed+Commitment_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Closed+Commitment+Universal"><span class="font-italic">Closed Commitment Universal</span><a class="text-muted" href=#UFO_Closed+Commitment+Universal_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Collective+Social+Agent"><span class="font-italic">Collective Social Agent</span><a class="text-muted" href=#UFO_Collective+Social+Agent_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Commitment"><span class="font-italic">Commitment</span><a class="text-muted" href=#UFO_Commitment_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Commitment+Universal"><span class="font-italic">Commitment Universal</span><a class="text-muted" href=#UFO_Commitment+Universal_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Complex+Action"><span class="font-italic">Complex Action</span><a class="text-muted" href=#UFO_Complex+Action_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>A Complex Action is composed of two or more Participations. These participations can themselves be intentional (i.e., be themselves actions) or unintentional events. For @ex, the stabbing of Caesar by Brutus includes the intentional participation of Brutus and the unintentional. participation of Caesar and the knife. In a complex action, at least one participation should be intentional, i.e., an action contribution</p></td></tr>
-<tr><td><p id="UFO_Complex+Action+Universal"><span class="font-italic">Complex Action Universal</span><a class="text-muted" href=#UFO_Complex+Action+Universal_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Complex+Closed+Appointment"><span class="font-italic">Complex Closed Appointment</span><a class="text-muted" href=#UFO_Complex+Closed+Appointment_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Complex+Closed+Commitment"><span class="font-italic">Complex Closed Commitment</span><a class="text-muted" href=#UFO_Complex+Closed+Commitment_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Complex+Commitment"><span class="font-italic">Complex Commitment</span><a class="text-muted" href=#UFO_Complex+Commitment_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Complex+Event"><span class="font-italic">Complex Event</span><a class="text-muted" href=#UFO_Complex+Event_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Complex events are aggregations of at least two disjoint events. A Complex Event is existentially dependent on all its proper parts and, indirectly, to the objects these proper parts depend on.</p></td></tr>
-<tr><td><p id="UFO_Composed+Quality+Universal"><span class="font-italic">Composed Quality Universal</span><a class="text-muted" href=#UFO_Composed+Quality+Universal_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Concrete+Particular"><span class="font-italic">Concrete Particular</span><a class="text-muted" href=#UFO_Concrete+Particular_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Creation"><span class="font-italic">Creation</span><a class="text-muted" href=#UFO_Creation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Delegation"><span class="font-italic">Delegation</span><a class="text-muted" href=#UFO_Delegation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Delegatum"><span class="font-italic">Delegatum</span><a class="text-muted" href=#UFO_Delegatum_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Desire"><span class="font-italic">Desire</span><a class="text-muted" href=#UFO_Desire_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Disposition"><span class="font-italic">Disposition</span><a class="text-muted" href=#UFO_Disposition_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Dispositions are properties (moments) that are only manifested in particular situations and that can also fail to be manifested. When manifested, they are manifested through the occurrence of events. Take for example the disposition of a magnet m to attract metallic material. The object m has this disposition even if it is never manifested, for example, because it is never close to any magnetic material. Nonetheless, m can certainly be said to possess that intrinsic moment, which it shares with other magnets.</p></td></tr>
-<tr><td><p id="UFO_Disposition"><span class="font-italic">Disposition</span><a class="text-muted" href=#UFO_Disposition_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Endurant"><span class="font-italic">Endurant</span><a class="text-muted" href=#UFO_Endurant_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Endurants are said to be wholly present whenever they are present, i.e., they are in time. They can be understood in contrast with the category of Perdurants (Processes, Events). Examples of endurants are a house, a person, the Moon, an amount of sand. For instance, we can say that an individual John weights 80kg at in circumstance c1 but 68kg at in circumstance c2. Nonetheless, we are in these two cases referring to the same individual.</p></td></tr>
-<tr><td><p id="UFO_Endurant+Universal"><span class="font-italic">Endurant Universal</span><a class="text-muted" href=#UFO_Endurant+Universal_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Entity"><span class="font-italic">Entity</span><a class="text-muted" href=#UFO_Entity_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Entity is the topmost category of UFO, representing anything, concrete or abstract, and both types and individuals.</p></td></tr>
-<tr><td><p id="UFO_Event+(Perdurant)"><span class="font-italic">Event (Perdurant)</span><a class="text-muted" href=#UFO_Event+(Perdurant)_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Events (also called perdurants) are individuals composed of temporal parts. They happen in time in the sense that they extend in time accumulating temporal parts. @Examples of events are a conversation, a football game, a symphony execution, a birthday party, or a particular business process.</p></td></tr>
-<tr><td><p id="UFO_Event+Universal"><span class="font-italic">Event Universal</span><a class="text-muted" href=#UFO_Event+Universal_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Expression"><span class="font-italic">Expression</span><a class="text-muted" href=#UFO_Expression_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Externally+Dependent+Moment"><span class="font-italic">Externally Dependent Moment</span><a class="text-muted" href=#UFO_Externally+Dependent+Moment_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Fact"><span class="font-italic">Fact</span><a class="text-muted" href=#UFO_Fact_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Formal+Relation"><span class="font-italic">Formal Relation</span><a class="text-muted" href=#UFO_Formal+Relation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Fulfilled"><span class="font-italic">Fulfilled</span><a class="text-muted" href=#UFO_Fulfilled_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Function"><span class="font-italic">Function</span><a class="text-muted" href=#UFO_Function_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Function is a specialization of Set that maps instances of a Quality Universal to points in a Quality Structure.</p></td></tr>
-<tr><td><p id="UFO_Function"><span class="font-italic">Function</span><a class="text-muted" href=#UFO_Function_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Function+Universal"><span class="font-italic">Function Universal</span><a class="text-muted" href=#UFO_Function+Universal_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Goal"><span class="font-italic">Goal</span><a class="text-muted" href=#UFO_Goal_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>The propositional content of an Intention.</p></td></tr>
-<tr><td><p id="UFO_High+Order+Universal"><span class="font-italic">High Order Universal</span><a class="text-muted" href=#UFO_High+Order+Universal_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Higher-Order+Object+Kind"><span class="font-italic">Higher-Order Object Kind</span><a class="text-muted" href=#UFO_Higher-Order+Object+Kind_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Individual"><span class="font-italic">Individual</span><a class="text-muted" href=#UFO_Individual_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Intention"><span class="font-italic">Intention</span><a class="text-muted" href=#UFO_Intention_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Intentions are desired state of affairs (situations) for which the agent commits at pursuing (@e.g., the Intention of going to a beach resort for the next summer break).</p></td></tr>
-<tr><td><p id="UFO_Intentional+Moment"><span class="font-italic">Intentional Moment</span><a class="text-muted" href=#UFO_Intentional+Moment_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>The capacity of some properties of certain individuals to refer to possible Situations of reality. Every intentional moment has a propositional content (Proposition), which is an abstract representation of a class of situations referred by that intentional moment.</p></td></tr>
-<tr><td><p id="UFO_Interaction"><span class="font-italic">Interaction</span><a class="text-muted" href=#UFO_Interaction_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Internal+Closed+Commitment+Universal"><span class="font-italic">Internal Closed Commitment Universal</span><a class="text-muted" href=#UFO_Internal+Closed+Commitment+Universal_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Internal+Commitment+Universal"><span class="font-italic">Internal Commitment Universal</span><a class="text-muted" href=#UFO_Internal+Commitment+Universal_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Interval+MeaRefDimension"><span class="font-italic">Interval MeaRefDimension</span><a class="text-muted" href=#UFO_Interval+MeaRefDimension_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Intrinsic+Moment"><span class="font-italic">Intrinsic Moment</span><a class="text-muted" href=#UFO_Intrinsic+Moment_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Intrinsic Moments are moments that inhere in one single individual (e.g., an apple’s color). An example of an intrinsic moment is a Mode (@e.g., John’s desires, intentions, perceptions, symptoms, skills).</p></td></tr>
-<tr><td><p id="UFO_Intrisic+Moment+Universal"><span class="font-italic">Intrisic Moment Universal</span><a class="text-muted" href=#UFO_Intrisic+Moment+Universal_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Kind"><span class="font-italic">Kind</span><a class="text-muted" href=#UFO_Kind_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Linear+Temporal+Structure"><span class="font-italic">Linear Temporal Structure</span><a class="text-muted" href=#UFO_Linear+Temporal+Structure_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Material+Relation"><span class="font-italic">Material Relation</span><a class="text-muted" href=#UFO_Material+Relation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Measurable+Quality+Universal"><span class="font-italic">Measurable Quality Universal</span><a class="text-muted" href=#UFO_Measurable+Quality+Universal_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Measurable Quality Universals are quality universals that can be objectively measured by cognitive agents or measurement devices, and it is possible to establish distances among their quality regions (@e.g., Weight and Height).</p></td></tr>
-<tr><td><p id="UFO_Measurement+Quality+Domain"><span class="font-italic">Measurement Quality Domain</span><a class="text-muted" href=#UFO_Measurement+Quality+Domain_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Measurement+Quality+Region"><span class="font-italic">Measurement Quality Region</span><a class="text-muted" href=#UFO_Measurement+Quality+Region_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Measurement+Quality+Structure"><span class="font-italic">Measurement Quality Structure</span><a class="text-muted" href=#UFO_Measurement+Quality+Structure_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Measurement+Reference+Dimension"><span class="font-italic">Measurement Reference Dimension</span><a class="text-muted" href=#UFO_Measurement+Reference+Dimension_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Measurement+Reference+Region"><span class="font-italic">Measurement Reference Region</span><a class="text-muted" href=#UFO_Measurement+Reference+Region_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Measurement+Reference+Structure"><span class="font-italic">Measurement Reference Structure</span><a class="text-muted" href=#UFO_Measurement+Reference+Structure_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Measurement Reference Structures act as scales based on quality structures. They are composed of Measurement Reference Regions. Measurement Reference Structures can be partitioned into spaces of the same magnitude according to a Unit.</p></td></tr>
-<tr><td><p id="UFO_Mental+Moment"><span class="font-italic">Mental Moment</span><a class="text-muted" href=#UFO_Mental+Moment_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Mixin+Universal"><span class="font-italic">Mixin Universal</span><a class="text-muted" href=#UFO_Mixin+Universal_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Mode"><span class="font-italic">Mode</span><a class="text-muted" href=#UFO_Mode_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Mode+Universal"><span class="font-italic">Mode Universal</span><a class="text-muted" href=#UFO_Mode+Universal_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Moment"><span class="font-italic">Moment</span><a class="text-muted" href=#UFO_Moment_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Moments are individuals that can only exist by inhering in other individuals. In other words, moments are individuals that are existentially-dependent on their bearers (@e.g., a person’s headache, a covalent bond between atoms).</p></td></tr>
-<tr><td><p id="UFO_Moment+Universal"><span class="font-italic">Moment Universal</span><a class="text-muted" href=#UFO_Moment+Universal_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Normative+Description"><span class="font-italic">Normative Description</span><a class="text-muted" href=#UFO_Normative+Description_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Normative Descriptions are Social Objects that define one or more rules/norms recognized by at least one Social Agent and that can define other Social objects (the crown of the king of Spain) or Social Roles (such as president, PhD candidate or pedestrian). @Examples of normative descriptions include the Brazilian Constitution, the Federal University of Espírito Santo PhD program regulation, but also a set of directives on how to perform some actions within an organization (a Plan Description).</p></td></tr>
-<tr><td><p id="UFO_Object"><span class="font-italic">Object</span><a class="text-muted" href=#UFO_Object_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Non-agentive substantial individuals. Objects can be Physical or Social.</p></td></tr>
-<tr><td><p id="UFO_Object+Kind"><span class="font-italic">Object Kind</span><a class="text-muted" href=#UFO_Object+Kind_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Object+Participation"><span class="font-italic">Object Participation</span><a class="text-muted" href=#UFO_Object+Participation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Object Participation is a set of different ways than an object can participate in actions. There are four different types of Object Participation, namely: Creation, Termination, Change and Usage.</p></td></tr>
-<tr><td><p id="UFO_Ordinal+MeaRefDimension"><span class="font-italic">Ordinal MeaRefDimension</span><a class="text-muted" href=#UFO_Ordinal+MeaRefDimension_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Participation"><span class="font-italic">Participation</span><a class="text-muted" href=#UFO_Participation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>A participation is the portion of an event which depends exclusively on a single object. Each of participations is itself an event that can be complex or atomic but which existentially depends on a single substantial. Take for instance the event e: the stabbing of Caesar by Brutus. In this event we have the participation of Caesar himself, of Brutus and of the knife. In this case, e is composed of the individual participation of each of these entities.</p></td></tr>
-<tr><td><p id="UFO_Participation+Universal"><span class="font-italic">Participation Universal</span><a class="text-muted" href=#UFO_Participation+Universal_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Person"><span class="font-italic">Person</span><a class="text-muted" href=#UFO_Person_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Same as UFO::Human AgentA human Physical Agent.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> Tim Berners Lee, Dennis Ritchie, Donald Knuth.</span></p></td></tr>
-<tr><td><p id="UFO_Phase"><span class="font-italic">Phase</span><a class="text-muted" href=#UFO_Phase_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Phasemixin"><span class="font-italic">Phasemixin</span><a class="text-muted" href=#UFO_Phasemixin_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Physical+Agent"><span class="font-italic">Physical Agent</span><a class="text-muted" href=#UFO_Physical+Agent_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Physical+Object"><span class="font-italic">Physical Object</span><a class="text-muted" href=#UFO_Physical+Object_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Plan+Description"><span class="font-italic">Plan Description</span><a class="text-muted" href=#UFO_Plan+Description_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Processual+Role"><span class="font-italic">Processual Role</span><a class="text-muted" href=#UFO_Processual+Role_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Proposition"><span class="font-italic">Proposition</span><a class="text-muted" href=#UFO_Proposition_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>A Proposition is a sentence that is either true or false. The truth of a proposition is determined by its correspondence to the existence of an entity or fact in reality, the so-called truthmaker of a proposition.</p></td></tr>
-<tr><td><p id="UFO_Quale"><span class="font-italic">Quale</span><a class="text-muted" href=#UFO_Quale_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Quality"><span class="font-italic">Quality</span><a class="text-muted" href=#UFO_Quality_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Quality+Region"><span class="font-italic">Quality Region</span><a class="text-muted" href=#UFO_Quality+Region_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Quality+Structure"><span class="font-italic">Quality Structure</span><a class="text-muted" href=#UFO_Quality+Structure_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Quality+Universal"><span class="font-italic">Quality Universal</span><a class="text-muted" href=#UFO_Quality+Universal_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Quality Universals are those universals whose instances are Qualities.</p></td></tr>
-<tr><td><p id="UFO_Rational+MeaRefDimension"><span class="font-italic">Rational MeaRefDimension</span><a class="text-muted" href=#UFO_Rational+MeaRefDimension_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Reference+Structure"><span class="font-italic">Reference Structure</span><a class="text-muted" href=#UFO_Reference+Structure_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Relation"><span class="font-italic">Relation</span><a class="text-muted" href=#UFO_Relation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Relational+Role"><span class="font-italic">Relational Role</span><a class="text-muted" href=#UFO_Relational+Role_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Relator"><span class="font-italic">Relator</span><a class="text-muted" href=#UFO_Relator_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Relator+Universal"><span class="font-italic">Relator Universal</span><a class="text-muted" href=#UFO_Relator+Universal_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Rigid+Mixin+Universal"><span class="font-italic">Rigid Mixin Universal</span><a class="text-muted" href=#UFO_Rigid+Mixin+Universal_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Rigid+Sortal+Universal"><span class="font-italic">Rigid Sortal Universal</span><a class="text-muted" href=#UFO_Rigid+Sortal+Universal_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Role"><span class="font-italic">Role</span><a class="text-muted" href=#UFO_Role_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Rolemixin"><span class="font-italic">Rolemixin</span><a class="text-muted" href=#UFO_Rolemixin_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Scientific+Measurement+Domain"><span class="font-italic">Scientific Measurement Domain</span><a class="text-muted" href=#UFO_Scientific+Measurement+Domain_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Self+Appointment"><span class="font-italic">Self Appointment</span><a class="text-muted" href=#UFO_Self+Appointment_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Set"><span class="font-italic">Set</span><a class="text-muted" href=#UFO_Set_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Simple+Quality+Universal"><span class="font-italic">Simple Quality Universal</span><a class="text-muted" href=#UFO_Simple+Quality+Universal_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Situation"><span class="font-italic">Situation</span><a class="text-muted" href=#UFO_Situation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>A situation is a particular configuration of a part of reality which can be understood as a whole. Situations can be factual or counterfactual (@e.g., the situation in which “Al Gore is the president of the USA”).</p></td></tr>
-<tr><td><p id="UFO_Social+Agent"><span class="font-italic">Social Agent</span><a class="text-muted" href=#UFO_Social+Agent_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Social+Appointment"><span class="font-italic">Social Appointment</span><a class="text-muted" href=#UFO_Social+Appointment_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Social+Commitment"><span class="font-italic">Social Commitment</span><a class="text-muted" href=#UFO_Social+Commitment_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Social+Moment"><span class="font-italic">Social Moment</span><a class="text-muted" href=#UFO_Social+Moment_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Social+Object"><span class="font-italic">Social Object</span><a class="text-muted" href=#UFO_Social+Object_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Social+Relator"><span class="font-italic">Social Relator</span><a class="text-muted" href=#UFO_Social+Relator_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Social+Role"><span class="font-italic">Social Role</span><a class="text-muted" href=#UFO_Social+Role_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Sortal+Universal"><span class="font-italic">Sortal Universal</span><a class="text-muted" href=#UFO_Sortal+Universal_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Subkind"><span class="font-italic">Subkind</span><a class="text-muted" href=#UFO_Subkind_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Substantial"><span class="font-italic">Substantial</span><a class="text-muted" href=#UFO_Substantial_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Substantials (objects) are existentially-independent Endurants (@e.g., a person, a car).</p></td></tr>
-<tr><td><p id="UFO_Substantial+Universal"><span class="font-italic">Substantial Universal</span><a class="text-muted" href=#UFO_Substantial+Universal_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Time+Point"><span class="font-italic">Time Point</span><a class="text-muted" href=#UFO_Time+Point_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Unfulfilled"><span class="font-italic">Unfulfilled</span><a class="text-muted" href=#UFO_Unfulfilled_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Unit"><span class="font-italic">Unit</span><a class="text-muted" href=#UFO_Unit_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Universal"><span class="font-italic">Universal</span><a class="text-muted" href=#UFO_Universal_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_Usage"><span class="font-italic">Usage</span><a class="text-muted" href=#UFO_Usage_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="UFO_xOrganization"><span class="font-italic">xOrganization</span><a class="text-muted" href=#UFO_xOrganization_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-
-							</tbody>
-							<caption><small>UFO concepts definition.</small></caption>
-						</table>
-  				</div>
-
-
-
-				<!--	<table style="width: 100%" border="1" cellpadding="6">
-						<tbody>
-							<tr style="background-color: #D8D8D8">
-								<td style="width: 25%"><b>Concept</b></td>
-								<td style="width: 75%"><b>Definition</b></td>
+			<div class="p-5 rounded" id="conceptsdefinition">
+				<h2 class="featurette-heading">4. Concepts Definition</h2>
+				<p class="lead">The following table shows the definitions for UFO concepts.</p>		
+				
+				<div class="table-responsive my-5">
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th scope="col">Concept</th>
+								<th scope="col">Definition</th>
 							</tr>
+						</thead>
+						<tbody>
 							<tr><td><p id="UFO_2ndOT"><span class="font-italic">2ndOT</span><a class="text-muted" href=#UFO_2ndOT_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
 <tr><td><p id="UFO_3rdOT"><span class="font-italic">3rdOT</span><a class="text-muted" href=#UFO_3rdOT_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
 <tr><td><p id="UFO_Abstract+Particular"><span class="font-italic">Abstract Particular</span><a class="text-muted" href=#UFO_Abstract+Particular_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
@@ -639,16 +439,18 @@
 <tr><td><p id="UFO_xOrganization"><span class="font-italic">xOrganization</span><a class="text-muted" href=#UFO_xOrganization_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
 
 						</tbody>
-					</table>-->
-
+						<caption><small>UFO concepts definition.</small></caption>
+					</table>
 				</div>
 
-				<hr>		
+			</div>
 
-				<div class="p-5 rounded" id="detailedconcepts">
-					<h2 class="featurette-heading">5. Detailed Concepts</h2>
-					<p class="lead">Unified Foundational Ontology (UFO) detailed concepts.</p>					
-					<hr><div class="container-fluid" id="UFO_2ndOT_detail"><h4><i class="bi bi-diagram-3"></i> UFO::2ndOT</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><span class="font-weight-bold text-center">2ndOT</span></p></div><br/><h5>Specializes:</h5><p><i class="bi bi-diagram-2"></i> UFO::Entity</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
+			<hr>		
+
+			<div class="p-5 rounded" id="detailedconcepts">
+				<h2 class="featurette-heading">5. Detailed Concepts</h2>
+				<p class="lead">Unified Foundational Ontology (UFO) detailed concepts.</p>					
+				<hr><div class="container-fluid" id="UFO_2ndOT_detail"><h4><i class="bi bi-diagram-3"></i> UFO::2ndOT</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><span class="font-weight-bold text-center">2ndOT</span></p></div><br/><h5>Specializes:</h5><p><i class="bi bi-diagram-2"></i> UFO::Entity</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
 <code class="text-muted">2ndOT (1..*) iof (1..*) 3rdOT<br/>
 2ndOT (0..*) is subordinate to (0..*) 2ndOT<br/>
 2ndOT (0..*) proper specializes (0..*) 2ndOT<br/>
@@ -1185,9 +987,9 @@ Individual (1..*) instantiates (1..1) Universal<br/>
 <hr><div class="container-fluid" id="UFO_xOrganization_detail"><h4><i class="bi bi-diagram-3"></i> UFO::xOrganization</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><span class="font-weight-bold text-center">xOrganization</span></p></div><br/><h5>Specializes:</h5><p><i class="bi bi-diagram-2"></i> UFO::Social Agent</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p></p></div></div></div>
 
 
-				</div>
-				
-			</main>
+			</div>
+			
+		</main>
 	
     <footer class="p-5 rounded border-top">
     	<div class="row justify-content-md-center">
@@ -1260,7 +1062,7 @@ Individual (1..*) instantiates (1..1) Universal<br/>
 				<div class="col-md-auto">
 					<small>
 						<span class="text-muted">
-						Tue Dec 14 21:27:58 BRT 2021
+						Wed Dec 15 22:38:28 BRT 2021
 						</span>
 					</small>
 				</div>
@@ -1272,15 +1074,12 @@ Individual (1..*) instantiates (1..1) Universal<br/>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+	  <script type="text/javascript" src="bootstrap/jquery/jquery-3.5.1.slim.min.js"></script>
 
-    <script src="bootstrap-5.1.3-dist/js/jquery-3.2.1.slim.min.js"></script>
+	  <script type="text/javascript" src="bootstrap/js/popper-1.16.1.min.js"></script>
 
-    <script src="bootstrap-5.1.3-dist/js/popper.min.js"></script>
+	  <script type="text/javascript" src="bootstrap/4.6.1-dist/js/bootstrap.min.js"></script>
 
-
-    <script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
-
-    <script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
 
     <script type="text/javascript" src="jquery.min.js"></script>
 		<script type="text/javascript" src="maphilight.js"></script>
@@ -1351,7 +1150,14 @@ Individual (1..*) instantiates (1..1) Universal<br/>
 			});			
 			
 		</script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-WXTXYYCXMP"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
 
+		  gtag('config', 'G-WXTXYYCXMP');
+		</script>
 	</body>
-	<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 </html>

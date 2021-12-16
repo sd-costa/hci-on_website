@@ -1,240 +1,186 @@
 <!doctype html>
-
 <html lang="en">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	    <meta name="description" content="">
-	    <meta name="author" content="Simone Dornelas Costa">
-	    <meta charset="ISO-8859-1">
-	    
-	
-	    <title>Enterprise Ontology (external) (EO)</title>
-	
-	    <!-- Bootstrap core CSS -->
-	    <link href="bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
-	    
-	    <!-- Custom styles for this template -->
-	    <link href="bootstrap-5.1.3-dist/css/navbar-top-fixed.css" rel="stylesheet">
-	    <link href="bootstrap-5.1.3-dist/css/sticky-footer-navbar.css" rel="stylesheet">
-	    <link href="bootstrap-5.1.3-dist/css/carousel.css" rel="stylesheet">
+      <meta name="description" content="">
+      <meta name="author" content="Simone Dornelas Costa">
+      <meta name="generator" content="Simone Dornelas Costa">
+      <title>HCI-ON</title>    
 
-	    <!-- ICONS -->
-	    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <!-- Bootstrap core CSS -->
+      <link rel="stylesheet" type="text/css" href="bootstrap/4.6.1-dist/css/bootstrap.min.css">
+      
+      
+      <!-- ICONS -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-	    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 
-	    <style>
-	      .bd-placeholder-img {
-	        font-size: 1.125rem;
-	        text-anchor: middle;
-	        -webkit-user-select: none;
-	        -moz-user-select: none;
-	        -ms-user-select: none;
-	        user-select: none;
-	      }
+      <!-- favicon -->
+      <link rel="icon" type="image/svg+xml" sizes="48x48" href="images/diagram-3-fill.svg">
 
-	      @media (min-width: 768px) {
-	        .bd-placeholder-img-lg {
-	          font-size: 3.5rem;
-	        }
-	      }
+      <style>   
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
 
-	      .h2, .h3, h2, h3 {
-	      	margin-bottom: 2.5rem;
-	      }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      </style>
+     
+     <!-- Custom styles for this template -->
+     <link href="bootstrap/css/carousel.css" rel="stylesheet">
+      
+    </head>
 
+  <body>
 
-	      .span {
-	      	font-size: 2rem;
-	      }
-
-	      .featurette-heading {
-	        margin-top: 0;
-	      }
-
-	      
-
-	    </style>
-
-	  <!--.h6, h6 {
-	      	margin-bottom: 2.5rem;
-	      	margin-top: 2.5rem;	
-	      }-->  
-	    
-<!--	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
-	    
-	    
-	<link rel="icon" type="image/svg+xml" sizes="48x48" href="images/diagram-3-fill.svg">
-  </head>
-
-  <body data-new-gr-c-s-check-loaded="14.1038.0" data-gr-ext-installed="">
-
-	<header>
-	
-	<!--MAIN fixed navbar -->	
-	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-	  <!--<div class="container-fluid">-->
-	    <a class="navbar-brand" href="hci-on.html">HCI-ON</a>
-	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	      <span class="navbar-toggler-icon"></span>
-	    </button>
-	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-	        <li class="nav-item">
-	          <a class="nav-link" aria-current="page" href="index.html">Home</a>
-	        </li>
-
-	        <li class="nav-item dropdown">
-	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-	            The Network
-	          </a>
-	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item fst-italic" href="hci-on.html#architecture" tabindex="-1" aria-disabled="true">Architecture</a></li>
-	            <li><a class="dropdown-item fst-italic" href="hci-on.html#hcionmechanism" tabindex="-1" aria-disabled="true">Evolution Mechanisms</a></li>
-	            <li><a class="dropdown-item fst-italic" href="hci-on.html#hcionseon" tabindex="-1" aria-disabled="true">Relationship with SEON</a></li>
-	          	<li><hr class="dropdown-divider"></li>
-
-	            <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Foundational Layer</a></li>
-	            <li><a class="dropdown-item" href="UFO.html">UFO - Unified Foundational Ontology</a></li>
-
-	            <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Core Layer</a></li>
-	            <li><a class="dropdown-item" href="HCIO.html">HCIO - Human-Computer Interaction Ontology</a></li>
-
-	            <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Domain Layer</a></li>
-	            <li><a class="dropdown-item" href="HCIDO.html">HCIDO - Human-Computer Interaction Design Ontology</a></li>
-							<li><a class="dropdown-item" href="HCIEO.html">HCIEO - Human-Computer Interaction Evaluation Ontology</a></li>
-							<!--<li><a class="dropdown-item" href="HCIDPO.html">HCIDPO - Human-Computer Interaction Design Process Ontology</a></li>-->
-							<li><a class="dropdown-item" href="UIT&EO.html">UIT&EO - UI Types and Elements Ontology</a></li>
-							<li><a class="dropdown-item" href="HCIMO.html">HCIMO - HCI Modality Ontology</a></li>
-							<li><a class="dropdown-item" href="CUO.html">CUO - Context of Use Ontology</a></li>
-							<li><a class="dropdown-item" href="UCO.html">UCO - User Characterization Ontology</a></li>
-							<li><a class="dropdown-item" href="HCIQCO.html">HCIQCO - HCI Quality Characteristics Ontology</a></li>
-	          </ul>
-	        </li>
-
-	        <li class="nav-item dropdown">
-	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-	            Features
-	          </a>
-	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item" href="SearchFrames.html">Concepts Searcher</a></li>
-	            <li><a class="dropdown-item" href="NetworkGraph.html">Graph</a></li>
-	            <li><a class="dropdown-item" href="NetworkStats.html">Stats</a></li>
-	            <li><a class="dropdown-item" href="videos.html">Videos</a></li>
-	            <!--<li><hr class="dropdown-divider"></li>
-	            <li><a class="dropdown-item" href="SeonFeedback.html">Feedback</a></li>-->
-	          </ul>
-	        </li>
-
-	        <!--<li class="nav-item dropdown">
-	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-	            More
-	          </a>
-	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item" href="SEON.owl" target="_blank">Operational Version (in OWL)</a></li>
-	            <li><a class="dropdown-item" href="#">Astah file</a></li>
-	            <li><a class="dropdown-item" href="#">Specifications</a></li>
-	            <li><a class="dropdown-item" href="#">Publications</a></li>
-	          </ul>
-	        </li>-->
-
-					<li class="nav-item dropdown">
-	          <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-	            EO
-	          </a>
-	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item" href="#ontologydescription">Ontology Description</a></li>
-	            <li><a class="dropdown-item" href="#relatedontologies">Related Ontologies</a></li>
-	            <li><a class="dropdown-item" href="#ontologymodels">Ontology Models</a></li>
-	            <li><a class="dropdown-item" href="#conceptsdefinition">Concepts Definition</a></li>
-	            <li><a class="dropdown-item" href="#detailedconcepts">Detailed Concepts</a></li>
-	          </ul>
-	        </li>
-
-<!--	        <li class="nav-item">
-	          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-	        </li>-->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="HCI-ON.html">HCI-ON</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
         
-	      </ul>
-	      
-	    </div>
-	  <!--</div>-->
-	</nav>	
-		
-	
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+            The Network
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="HCI-ON.html">HCI-ON</a>
+            <a class="dropdown-item" href="HCI-ON.html#architecture">Architecture</a>
+            <a class="dropdown-item" href="HCI-ON.html#hcionmechanism">Evolution Mechanism</a>
+            <a class="dropdown-item" href="HCI-ON.html#hcionseon">Relationship with SEON</a>
+          </div>
+        </li>
 
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+            Networked Ontologies
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        
+            <a class="dropdown-item disabled">Foundational Layer</a>
+            <a class="dropdown-item" href="UFO.html">UFO</a>
 
-	
-		</header>
+            <a class="dropdown-item disabled">Core Layer</a>
+            <a class="dropdown-item" href="HCIO.html">HCIO</a>
 
-		<!-- Begin page content -->
-    <main role="main" class="container-fluid">	
-    		
-				<!--<div class="bg-light p-5 rounded" id="ontologydescription">
-    			<h1 class="featurette-heading">The Enterprise Ontology (external) (EO)</h1>
-					<p class="lead" align="justify"><span class="text-muted font-weight-bold font-italic">Ontology Description. </span>The Enterprise Ontology (EO) aims at establishing a common conceptualization on the Entreprise domain, including organizations, organizational units, people, roles, teams and projects.<br/>Currently, it as considered external to SEON.</p>
-					<p class="lead text-right text-muted font-italic"><i class="bi bi-star-half"></i> core ontology from SEON</p>
-    		</div>-->
+            <a class="dropdown-item disabled">Domain Layer</a>
+            <a class="dropdown-item" href="HCIDO.html">HCIDO</a>
+            <a class="dropdown-item" href="HCIEO.html">HCIEO</a>
+            <a class="dropdown-item" href="UIT&EO.html">UIT&EO</a>
+            <a class="dropdown-item" href="HCIMO.html">HCIMO</a>
+            <a class="dropdown-item" href="CUO.html">CUO</a>
+            <a class="dropdown-item" href="UCO.html">UCO</a>
+            <a class="dropdown-item" href="HCIQCO.html">HCIQCO</a>
+            
+          </div>
+        </li>
 
-				<div class="bg-light p-5 rounded">
-					<div class="container-fluid d-flex justify-content-end"><span class="badge badge-danger text-lowercase"></span></div>
-    			<h1 class="featurette-heading">The Enterprise Ontology (external) (EO)</h1>
-    			<p class="lead text-right font-italic"><i class="bi bi-star-half"></i> core ontology from SEON</p>
-    		</div>
-	
-				<hr> 
-				   		
-    		<div class="p-5 rounded" id="ontologydescription">
-  				<h2 class="featurette-heading">1. Ontology Description</h2>
-  				<p class="lead" align="justify">The Enterprise Ontology (EO) aims at establishing a common conceptualization on the Entreprise domain, including organizations, organizational units, people, roles, teams and projects.<br/>Currently, it as considered external to SEON.</p>
-    		</div>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+            Features
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="SearchFrames.html">Concepts Searcher</a> 
+            <a class="dropdown-item" href="NetworkGraph.html">Graph</a>
+            <a class="dropdown-item" href="NetworkStats.html">Stats</a>
+            <a class="dropdown-item" href="videos.html">Videos</a>
+          </div>
+        </li>
 
-				<hr>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+            EO
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#ontologydescription">Ontology Description</a> 
+            <a class="dropdown-item" href="#relatedontologies">Related Ontologies</a>
+            <a class="dropdown-item" href="#ontologymodels">Ontology Models</a>
+            <a class="dropdown-item" href="#conceptsdefinition">Concepts Definition</a>
+            <a class="dropdown-item" href="#detailedconcepts">Detailed Concepts</a>
+          </div>
+        </li>
 
-				<div class="p-5 rounded" id="relatedontologies">
-					<h2 class="featurette-heading">2. Related Ontologies</h2>
-					<p class="lead">Networked ontologies used by EO:</p>	
+      </ul>
+    </div>
+  </nav>
+
+	<!-- Begin page content -->
+  <main role="main" class="container-fluid">	
+
+			<div class="bg-light p-5 rounded">
+				<div class="container-fluid d-flex justify-content-end"><span class="badge badge-danger text-lowercase"></span></div>
+  			<h1 class="featurette-heading">The Enterprise Ontology (external) (EO)</h1>
+  			<p class="lead text-right font-italic"><i class="bi bi-star-half"></i> core ontology from SEON</p>
+  		</div>
+
+			<hr> 
+			   		
+  		<div class="p-5 rounded" id="ontologydescription">
+				<h2 class="featurette-heading">1. Ontology Description</h2>
+				<p class="lead" align="justify">The Enterprise Ontology (EO) aims at establishing a common conceptualization on the Entreprise domain, including organizations, organizational units, people, roles, teams and projects.<br/>Currently, it as considered external to SEON.</p>
+  		</div>
+
+			<hr>
+
+			<div class="p-5 rounded" id="relatedontologies">
+				<h2 class="featurette-heading">2. Related Ontologies</h2>
+				<p class="lead">Networked ontologies used by EO:</p>	
+				
+				<div class="table-responsive my-5">
 					
-					<div class="table-responsive">
-						
-						<table class="table table-hover">
-							<thead>
-								<tr>
-									<th scope="col">Ontology</th>
-									<th scope="col">Relation</th>
-									<th scope="col">Integration Level</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr><td><a class="text-muted" href="UFO.html">UFO - Unified Foundational Ontology</a></td><td>The EO concepts are derived from UFO (mostly social entities from UFO-C).</td><td style="text-align:center">High</td></tr>
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th scope="col">Ontology</th>
+								<th scope="col">Relation</th>
+								<th scope="col">Integration Level</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr><td><a class="text-muted" href="UFO.html">UFO - Unified Foundational Ontology</a></td><td>The EO concepts are derived from UFO (mostly social entities from UFO-C).</td><td style="text-align:center">High</td></tr>
 
-							</tbody>
-						</table>
-  					<caption><small>Ontologies (re)used by EO.</small></caption>
-  				</div>
+						</tbody>
+					</table>
+					<caption><small>Ontologies (re)used by EO.</small></caption>
+				</div>
 
-				</div>	
+			</div>	
 
-				<hr>
-    	
-				<div class="p-5 rounded" id="ontologymodels">
-					<h2 class="featurette-heading">3. Ontology Models</h2>
-					<p class="lead"><p class="lead">Figure 1 presents the packages of the Teams.</p>
-<div class="container-fluid" align="center"><img src="images/Teams.png" width="1101" class="map img-fluid" usemap="#Teams"><map name="Teams"></map>
-<p align="center" class="lead font-weight-bold">Figure 1. Teams.</p></div>
+			<hr>
+  	
+			<div class="p-5 rounded" id="ontologymodels">
+				<h2 class="featurette-heading">3. Ontology Models</h2>
+				<p class="lead"><p class="lead">Figure 1 presents the packages of the Teams.</p>
+<div class="container-fluid my-5" align="center"><img src="images/Teams.png" width="1101" class="map img-fluid" usemap="#Teams"><map name="Teams"></map>
+<p align="center"><span class="font-weight-bold">Figure 1. </span>Teams.</p></div>
 <p align="justify" class="lead">Project Team<br/>Organizational Team<br/>Team Membership</p>
 <p class="lead">Figure 2 presents the packages of the Job Plan and Roles.</p>
-<div class="container-fluid" align="center"><img src="images/Job Plan and Roles.png" width="734" class="map img-fluid" usemap="#Job Plan and Roles"><map name="Job Plan and Roles"></map>
-<p align="center" class="lead font-weight-bold">Figure 2. Job Plan and Roles.</p></div>
+<div class="container-fluid my-5" align="center"><img src="images/Job Plan and Roles.png" width="734" class="map img-fluid" usemap="#Job Plan and Roles"><map name="Job Plan and Roles"></map>
+<p align="center"><span class="font-weight-bold">Figure 2. </span>Job Plan and Roles.</p></div>
 <p align="justify" class="lead"></p>
 
 <hr class="featurette-divider"><h3 class="featurette-heading" id="EO_Human+Resource+Management_section">3.1.  Human Resource Management</h3>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 3 presents the conceptual model of the HR Management subontology.</p>
-<div class="container-fluid" align="center"><img src="images/HR Management.png" width="1310" class="map img-fluid" usemap="#HR Management"><map name="HR Management">
+<div class="container-fluid my-5" align="center"><img src="images/HR Management.png" width="1310" class="map img-fluid" usemap="#HR Management"><map name="HR Management">
 <area shape="rect" coords="494,79,606,115" href="UFO.html#UFO_Physical+Agent" target="" title="">
 <area shape="rect" coords="511,154,597,190" href="UFO.html#UFO_Person" target="" title="Same as UFO::Human Agent
 A human Physical Agent.">
@@ -255,13 +201,13 @@ A Social Agent involving people and other agents and facilities with an arrangem
 <area shape="rect" coords="510,17,642,53" href="http://dev.nemo.inf.ufes.br/seon/EO.html#EO_Employment+Type" target="_blank" title="">
 <area shape="rect" coords="1050,525,1226,561" href="http://dev.nemo.inf.ufes.br/seon/EO.html#EO_Organizational+Unit+Type" target="_blank" title="">
 <area shape="rect" coords="436,525,588,561" href="http://dev.nemo.inf.ufes.br/seon/EO.html#EO_OU+Assignment+Type" target="_blank" title=""></map>
-<p align="center" class="lead font-weight-bold">Figure 3. HR Management conceptual model.</p></div>
+<p align="center"><span class="font-weight-bold">Figure 3. </span>HR Management conceptual model.</p></div>
 <p align="justify" class="lead"></p>
 
 <hr class="featurette-divider"><h3 class="featurette-heading" id="EO_Organizational+Structure_section">3.2.  Organizational Structure</h3>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 4 presents the conceptual model of the Organizational Structure subontology.</p>
-<div class="container-fluid" align="center"><img src="images/Organizational Structure.png" width="1216" class="map img-fluid" usemap="#Organizational Structure"><map name="Organizational Structure">
+<div class="container-fluid my-5" align="center"><img src="images/Organizational Structure.png" width="1216" class="map img-fluid" usemap="#Organizational Structure"><map name="Organizational Structure">
 <area shape="rect" coords="504,126,629,162" href="http://dev.nemo.inf.ufes.br/seon/EO.html#EO_Organization" target="_blank" title="Same as UFO::Organization.
 A Social Agent involving people and other agents and facilities with an arrangement of responsibilities, authorities and relationships.">
 <area shape="rect" coords="356,223,504,259" href="http://dev.nemo.inf.ufes.br/seon/EO.html#EO_Formal+Organization" target="_blank" title="">
@@ -275,71 +221,26 @@ A Social Agent involving people and other agents and facilities with an arrangem
 <area shape="rect" coords="410,487,690,517" href="http://dev.nemo.inf.ufes.br/seon/EO.html#EO_Complex+Standalone+Formal+Organization" target="_blank" title="">
 <area shape="rect" coords="857,411,1045,441" href="http://dev.nemo.inf.ufes.br/seon/EO.html#EO_Simple+Organizational+Unit" target="_blank" title="">
 <area shape="rect" coords="736,347,937,377" href="http://dev.nemo.inf.ufes.br/seon/EO.html#EO_Complex+Organizational+Unit" target="_blank" title=""></map>
-<p align="center" class="lead font-weight-bold">Figure 4. Organizational Structure conceptual model.</p></div>
+<p align="center"><span class="font-weight-bold">Figure 4. </span>Organizational Structure conceptual model.</p></div>
 <p align="justify" class="lead"></p>
 </p>					
-				</div>
+			</div>
 
-				<hr>
+			<hr>
 
-				<div class="p-5 rounded" id="conceptsdefinition">
-					<h2 class="featurette-heading">4. Concepts Definition</h2>
-					<p class="lead">The following table shows the definitions for EO concepts.</p>		
-					<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->				
-					<div class="table-responsive">
-						<table class="table table-hover">
-							<thead>
-								<tr>
-									<th scope="col">Concept</th>
-									<th scope="col">Definition</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr><td><p id="EO_Allocation+Unit"><span class="font-italic font-weight-bold">Allocation Unit</span><a class="text-muted" href=#EO_Allocation+Unit_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="EO_Business+Role"><span class="font-italic font-weight-bold">Business Role</span><a class="text-muted" href=#EO_Business+Role_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="EO_Complex+Organizational+Unit"><span class="font-italic font-weight-bold">Complex Organizational Unit</span><a class="text-muted" href=#EO_Complex+Organizational+Unit_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="EO_Complex+Standalone+Formal+Organization"><span class="font-italic font-weight-bold">Complex Standalone Formal Organization</span><a class="text-muted" href=#EO_Complex+Standalone+Formal+Organization_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="EO_Employment"><span class="font-italic font-weight-bold">Employment</span><a class="text-muted" href=#EO_Employment_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="EO_Employment+Type"><span class="font-italic font-weight-bold">Employment Type</span><a class="text-muted" href=#EO_Employment+Type_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="EO_Formal+Organization"><span class="font-italic font-weight-bold">Formal Organization</span><a class="text-muted" href=#EO_Formal+Organization_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="EO_Formal+Organization+Employer"><span class="font-italic font-weight-bold">Formal Organization Employer</span><a class="text-muted" href=#EO_Formal+Organization+Employer_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="EO_Formal+Organization+Member+Type"><span class="font-italic font-weight-bold">Formal Organization Member Type</span><a class="text-muted" href=#EO_Formal+Organization+Member+Type_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="EO_Formal+Organization+Type"><span class="font-italic font-weight-bold">Formal Organization Type</span><a class="text-muted" href=#EO_Formal+Organization+Type_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="EO_Human+Resource"><span class="font-italic font-weight-bold">Human Resource</span><a class="text-muted" href=#EO_Human+Resource_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="EO_Human+Resource+Role"><span class="font-italic font-weight-bold">Human Resource Role</span><a class="text-muted" href=#EO_Human+Resource+Role_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="EO_Job+Plan"><span class="font-italic font-weight-bold">Job Plan</span><a class="text-muted" href=#EO_Job+Plan_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="EO_Multi+Formal+Organization"><span class="font-italic font-weight-bold">Multi Formal Organization</span><a class="text-muted" href=#EO_Multi+Formal+Organization_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="EO_OU+Assignment"><span class="font-italic font-weight-bold">OU Assignment</span><a class="text-muted" href=#EO_OU+Assignment_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="EO_OU+Assignment+Type"><span class="font-italic font-weight-bold">OU Assignment Type</span><a class="text-muted" href=#EO_OU+Assignment+Type_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="EO_OU+Member"><span class="font-italic font-weight-bold">OU Member</span><a class="text-muted" href=#EO_OU+Member_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="EO_Organization"><span class="font-italic font-weight-bold">Organization</span><a class="text-muted" href=#EO_Organization_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Same as UFO::Organization.A Social Agent involving people and other agents and facilities with an arrangement of responsibilities, authorities and relationships.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> A company, an enterprise, a software house.</span></p></td></tr>
-<tr><td><p id="EO_Organizational+Role"><span class="font-italic font-weight-bold">Organizational Role</span><a class="text-muted" href=#EO_Organizational+Role_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>A Social Role, recognized by the Organization, assigned to Agents when they are hired, included in a team, allocated or participating in activities.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> System Analyst, Designer, Programmer, Client Organization.</span></p></td></tr>
-<tr><td><p id="EO_Organizational+Team"><span class="font-italic font-weight-bold">Organizational Team</span><a class="text-muted" href=#EO_Organizational+Team_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="EO_Organizational+Unit"><span class="font-italic font-weight-bold">Organizational Unit</span><a class="text-muted" href=#EO_Organizational+Unit_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="EO_Organizational+Unit+Type"><span class="font-italic font-weight-bold">Organizational Unit Type</span><a class="text-muted" href=#EO_Organizational+Unit+Type_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="EO_Project"><span class="font-italic font-weight-bold">Project</span><a class="text-muted" href=#EO_Project_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>A Social Object as a temporary endeavor undertaken to create a unique product, service, or result.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> A project to produce a software on demand.</span></p></td></tr>
-<tr><td><p id="EO_Project+Team"><span class="font-italic font-weight-bold">Project Team</span><a class="text-muted" href=#EO_Project+Team_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="EO_Simple+Organizational+Unit"><span class="font-italic font-weight-bold">Simple Organizational Unit</span><a class="text-muted" href=#EO_Simple+Organizational+Unit_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="EO_Simple+Standalone+Formal+Organization"><span class="font-italic font-weight-bold">Simple Standalone Formal Organization</span><a class="text-muted" href=#EO_Simple+Standalone+Formal+Organization_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="EO_Standalone+Formal+Organization"><span class="font-italic font-weight-bold">Standalone Formal Organization</span><a class="text-muted" href=#EO_Standalone+Formal+Organization_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="EO_Team"><span class="font-italic font-weight-bold">Team</span><a class="text-muted" href=#EO_Team_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Social Agent representing a group of people with a defined purpose.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> a Testing team, a Quality Assurance team, a Deployment team.</span></p></td></tr>
-<tr><td><p id="EO_Team+Member"><span class="font-italic font-weight-bold">Team Member</span><a class="text-muted" href=#EO_Team+Member_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="EO_Team+Membership"><span class="font-italic font-weight-bold">Team Membership</span><a class="text-muted" href=#EO_Team+Membership_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="EO_Team+Purpose"><span class="font-italic font-weight-bold">Team Purpose</span><a class="text-muted" href=#EO_Team+Purpose_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-
-							</tbody>
-							<caption><small>EO concepts definition.</small></caption>
-						</table>
-  				</div>
-
-
-
-				<!--	<table style="width: 100%" border="1" cellpadding="6">
-						<tbody>
-							<tr style="background-color: #D8D8D8">
-								<td style="width: 25%"><b>Concept</b></td>
-								<td style="width: 75%"><b>Definition</b></td>
+			<div class="p-5 rounded" id="conceptsdefinition">
+				<h2 class="featurette-heading">4. Concepts Definition</h2>
+				<p class="lead">The following table shows the definitions for EO concepts.</p>		
+				
+				<div class="table-responsive my-5">
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th scope="col">Concept</th>
+								<th scope="col">Definition</th>
 							</tr>
+						</thead>
+						<tbody>
 							<tr><td><p id="EO_Allocation+Unit"><span class="font-italic font-weight-bold">Allocation Unit</span><a class="text-muted" href=#EO_Allocation+Unit_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
 <tr><td><p id="EO_Business+Role"><span class="font-italic font-weight-bold">Business Role</span><a class="text-muted" href=#EO_Business+Role_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
 <tr><td><p id="EO_Complex+Organizational+Unit"><span class="font-italic font-weight-bold">Complex Organizational Unit</span><a class="text-muted" href=#EO_Complex+Organizational+Unit_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
@@ -373,16 +274,18 @@ A Social Agent involving people and other agents and facilities with an arrangem
 <tr><td><p id="EO_Team+Purpose"><span class="font-italic font-weight-bold">Team Purpose</span><a class="text-muted" href=#EO_Team+Purpose_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
 
 						</tbody>
-					</table>-->
-
+						<caption><small>EO concepts definition.</small></caption>
+					</table>
 				</div>
 
-				<hr>		
+			</div>
 
-				<div class="p-5 rounded" id="detailedconcepts">
-					<h2 class="featurette-heading">5. Detailed Concepts</h2>
-					<p class="lead">Enterprise Ontology (external) (EO) detailed concepts.</p>					
-					<hr><div class="container-fluid" id="EO_Allocation+Unit_detail"><h4><i class="bi bi-diagram-3"></i> EO::Allocation Unit</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code class="text-muted">&lt&ltrole&gt&gt</code>
+			<hr>		
+
+			<div class="p-5 rounded" id="detailedconcepts">
+				<h2 class="featurette-heading">5. Detailed Concepts</h2>
+				<p class="lead">Enterprise Ontology (external) (EO) detailed concepts.</p>					
+				<hr><div class="container-fluid" id="EO_Allocation+Unit_detail"><h4><i class="bi bi-diagram-3"></i> EO::Allocation Unit</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code class="text-muted">&lt&ltrole&gt&gt</code>
 <br/><span class="font-weight-bold text-center">Allocation Unit</span></p></div><br/><h5>Specializes:</h5><p><i class="bi bi-diagram-2"></i> EO::Organizational Unit</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
 <code class="text-muted">Allocation Unit <>-- OU Member  &lt&ltmemberOf&gt&gt<br/>
 OU Assignment (1..*) assigns to (1..1) Allocation Unit  &lt&ltmediation&gt&gt<br/>
@@ -573,9 +476,9 @@ Team Member (1..1) allocates (1..*) Team Membership  &lt&ltmediation&gt&gt<br/>
 </code></p></div></div></div>
 
 
-				</div>
-				
-			</main>
+			</div>
+			
+		</main>
 	
     <footer class="p-5 rounded border-top">
     	<div class="row justify-content-md-center">
@@ -648,7 +551,7 @@ Team Member (1..1) allocates (1..*) Team Membership  &lt&ltmediation&gt&gt<br/>
 				<div class="col-md-auto">
 					<small>
 						<span class="text-muted">
-						Tue Dec 14 21:27:59 BRT 2021
+						Wed Dec 15 22:38:28 BRT 2021
 						</span>
 					</small>
 				</div>
@@ -660,15 +563,12 @@ Team Member (1..1) allocates (1..*) Team Membership  &lt&ltmediation&gt&gt<br/>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+	  <script type="text/javascript" src="bootstrap/jquery/jquery-3.5.1.slim.min.js"></script>
 
-    <script src="bootstrap-5.1.3-dist/js/jquery-3.2.1.slim.min.js"></script>
+	  <script type="text/javascript" src="bootstrap/js/popper-1.16.1.min.js"></script>
 
-    <script src="bootstrap-5.1.3-dist/js/popper.min.js"></script>
+	  <script type="text/javascript" src="bootstrap/4.6.1-dist/js/bootstrap.min.js"></script>
 
-
-    <script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
-
-    <script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
 
     <script type="text/javascript" src="jquery.min.js"></script>
 		<script type="text/javascript" src="maphilight.js"></script>
@@ -739,7 +639,14 @@ Team Member (1..1) allocates (1..*) Team Membership  &lt&ltmediation&gt&gt<br/>
 			});			
 			
 		</script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-WXTXYYCXMP"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
 
+		  gtag('config', 'G-WXTXYYCXMP');
+		</script>
 	</body>
-	<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 </html>

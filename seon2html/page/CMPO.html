@@ -1,231 +1,177 @@
 <!doctype html>
-
 <html lang="en">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	    <meta name="description" content="">
-	    <meta name="author" content="Simone Dornelas Costa">
-	    <meta charset="ISO-8859-1">
-	    
-	
-	    <title>Configuration Management Process Ontology (CMPO)</title>
-	
-	    <!-- Bootstrap core CSS -->
-	    <link href="bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
-	    
-	    <!-- Custom styles for this template -->
-	    <link href="bootstrap-5.1.3-dist/css/navbar-top-fixed.css" rel="stylesheet">
-	    <link href="bootstrap-5.1.3-dist/css/sticky-footer-navbar.css" rel="stylesheet">
-	    <link href="bootstrap-5.1.3-dist/css/carousel.css" rel="stylesheet">
+      <meta name="description" content="">
+      <meta name="author" content="Simone Dornelas Costa">
+      <meta name="generator" content="Simone Dornelas Costa">
+      <title>HCI-ON</title>    
 
-	    <!-- ICONS -->
-	    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <!-- Bootstrap core CSS -->
+      <link rel="stylesheet" type="text/css" href="bootstrap/4.6.1-dist/css/bootstrap.min.css">
+      
+      
+      <!-- ICONS -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-	    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 
-	    <style>
-	      .bd-placeholder-img {
-	        font-size: 1.125rem;
-	        text-anchor: middle;
-	        -webkit-user-select: none;
-	        -moz-user-select: none;
-	        -ms-user-select: none;
-	        user-select: none;
-	      }
+      <!-- favicon -->
+      <link rel="icon" type="image/svg+xml" sizes="48x48" href="images/diagram-3-fill.svg">
 
-	      @media (min-width: 768px) {
-	        .bd-placeholder-img-lg {
-	          font-size: 3.5rem;
-	        }
-	      }
+      <style>   
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
 
-	      .h2, .h3, h2, h3 {
-	      	margin-bottom: 2.5rem;
-	      }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      </style>
+     
+     <!-- Custom styles for this template -->
+     <link href="bootstrap/css/carousel.css" rel="stylesheet">
+      
+    </head>
 
+  <body>
 
-	      .span {
-	      	font-size: 2rem;
-	      }
-
-	      .featurette-heading {
-	        margin-top: 0;
-	      }
-
-	      
-
-	    </style>
-
-	  <!--.h6, h6 {
-	      	margin-bottom: 2.5rem;
-	      	margin-top: 2.5rem;	
-	      }-->  
-	    
-<!--	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
-	    
-	    
-	<link rel="icon" type="image/svg+xml" sizes="48x48" href="images/diagram-3-fill.svg">
-  </head>
-
-  <body data-new-gr-c-s-check-loaded="14.1038.0" data-gr-ext-installed="">
-
-	<header>
-	
-	<!--MAIN fixed navbar -->	
-	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-	  <!--<div class="container-fluid">-->
-	    <a class="navbar-brand" href="hci-on.html">HCI-ON</a>
-	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	      <span class="navbar-toggler-icon"></span>
-	    </button>
-	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-	        <li class="nav-item">
-	          <a class="nav-link" aria-current="page" href="index.html">Home</a>
-	        </li>
-
-	        <li class="nav-item dropdown">
-	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-	            The Network
-	          </a>
-	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item fst-italic" href="hci-on.html#architecture" tabindex="-1" aria-disabled="true">Architecture</a></li>
-	            <li><a class="dropdown-item fst-italic" href="hci-on.html#hcionmechanism" tabindex="-1" aria-disabled="true">Evolution Mechanisms</a></li>
-	            <li><a class="dropdown-item fst-italic" href="hci-on.html#hcionseon" tabindex="-1" aria-disabled="true">Relationship with SEON</a></li>
-	          	<li><hr class="dropdown-divider"></li>
-
-	            <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Foundational Layer</a></li>
-	            <li><a class="dropdown-item" href="UFO.html">UFO - Unified Foundational Ontology</a></li>
-
-	            <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Core Layer</a></li>
-	            <li><a class="dropdown-item" href="HCIO.html">HCIO - Human-Computer Interaction Ontology</a></li>
-
-	            <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Domain Layer</a></li>
-	            <li><a class="dropdown-item" href="HCIDO.html">HCIDO - Human-Computer Interaction Design Ontology</a></li>
-							<li><a class="dropdown-item" href="HCIEO.html">HCIEO - Human-Computer Interaction Evaluation Ontology</a></li>
-							<!--<li><a class="dropdown-item" href="HCIDPO.html">HCIDPO - Human-Computer Interaction Design Process Ontology</a></li>-->
-							<li><a class="dropdown-item" href="UIT&EO.html">UIT&EO - UI Types and Elements Ontology</a></li>
-							<li><a class="dropdown-item" href="HCIMO.html">HCIMO - HCI Modality Ontology</a></li>
-							<li><a class="dropdown-item" href="CUO.html">CUO - Context of Use Ontology</a></li>
-							<li><a class="dropdown-item" href="UCO.html">UCO - User Characterization Ontology</a></li>
-							<li><a class="dropdown-item" href="HCIQCO.html">HCIQCO - HCI Quality Characteristics Ontology</a></li>
-	          </ul>
-	        </li>
-
-	        <li class="nav-item dropdown">
-	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-	            Features
-	          </a>
-	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item" href="SearchFrames.html">Concepts Searcher</a></li>
-	            <li><a class="dropdown-item" href="NetworkGraph.html">Graph</a></li>
-	            <li><a class="dropdown-item" href="NetworkStats.html">Stats</a></li>
-	            <li><a class="dropdown-item" href="videos.html">Videos</a></li>
-	            <!--<li><hr class="dropdown-divider"></li>
-	            <li><a class="dropdown-item" href="SeonFeedback.html">Feedback</a></li>-->
-	          </ul>
-	        </li>
-
-	        <!--<li class="nav-item dropdown">
-	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-	            More
-	          </a>
-	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item" href="SEON.owl" target="_blank">Operational Version (in OWL)</a></li>
-	            <li><a class="dropdown-item" href="#">Astah file</a></li>
-	            <li><a class="dropdown-item" href="#">Specifications</a></li>
-	            <li><a class="dropdown-item" href="#">Publications</a></li>
-	          </ul>
-	        </li>-->
-
-					<li class="nav-item dropdown">
-	          <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-	            CMPO
-	          </a>
-	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item" href="#ontologydescription">Ontology Description</a></li>
-	            <li><a class="dropdown-item" href="#relatedontologies">Related Ontologies</a></li>
-	            <li><a class="dropdown-item" href="#ontologymodels">Ontology Models</a></li>
-	            <li><a class="dropdown-item" href="#conceptsdefinition">Concepts Definition</a></li>
-	            <li><a class="dropdown-item" href="#detailedconcepts">Detailed Concepts</a></li>
-	          </ul>
-	        </li>
-
-<!--	        <li class="nav-item">
-	          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-	        </li>-->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="HCI-ON.html">HCI-ON</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
         
-	      </ul>
-	      
-	    </div>
-	  <!--</div>-->
-	</nav>	
-		
-	
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+            The Network
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="HCI-ON.html">HCI-ON</a>
+            <a class="dropdown-item" href="HCI-ON.html#architecture">Architecture</a>
+            <a class="dropdown-item" href="HCI-ON.html#hcionmechanism">Evolution Mechanism</a>
+            <a class="dropdown-item" href="HCI-ON.html#hcionseon">Relationship with SEON</a>
+          </div>
+        </li>
 
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+            Networked Ontologies
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        
+            <a class="dropdown-item disabled">Foundational Layer</a>
+            <a class="dropdown-item" href="UFO.html">UFO</a>
 
-	
-		</header>
+            <a class="dropdown-item disabled">Core Layer</a>
+            <a class="dropdown-item" href="HCIO.html">HCIO</a>
 
-		<!-- Begin page content -->
-    <main role="main" class="container-fluid">	
-    		
-				<!--<div class="bg-light p-5 rounded" id="ontologydescription">
-    			<h1 class="featurette-heading">The Configuration Management Process Ontology (CMPO)</h1>
-					<p class="lead" align="justify"><span class="text-muted font-weight-bold font-italic">Ontology Description. </span>The Configuration Management Process Ontology (CMPO) aims at representing the activities, artifacts and stakeholders involved in the software Configuration Management Process. Since CMPO can be applied in the context of several SE subdomains, it describes some general notions applicable for diverse SEON concepts.</p>
-					<p class="lead text-right text-muted font-italic"><i class="bi bi-star-fill"></i> domain ontology from SEON</p>
-    		</div>-->
+            <a class="dropdown-item disabled">Domain Layer</a>
+            <a class="dropdown-item" href="HCIDO.html">HCIDO</a>
+            <a class="dropdown-item" href="HCIEO.html">HCIEO</a>
+            <a class="dropdown-item" href="UIT&EO.html">UIT&EO</a>
+            <a class="dropdown-item" href="HCIMO.html">HCIMO</a>
+            <a class="dropdown-item" href="CUO.html">CUO</a>
+            <a class="dropdown-item" href="UCO.html">UCO</a>
+            <a class="dropdown-item" href="HCIQCO.html">HCIQCO</a>
+            
+          </div>
+        </li>
 
-				<div class="bg-light p-5 rounded">
-					<div class="container-fluid d-flex justify-content-end"><span class="badge badge-danger text-lowercase"></span></div>
-    			<h1 class="featurette-heading">The Configuration Management Process Ontology (CMPO)</h1>
-    			<p class="lead text-right font-italic"><i class="bi bi-star-fill"></i> domain ontology from SEON</p>
-    		</div>
-	
-				<hr> 
-				   		
-    		<div class="p-5 rounded" id="ontologydescription">
-  				<h2 class="featurette-heading">1. Ontology Description</h2>
-  				<p class="lead" align="justify">The Configuration Management Process Ontology (CMPO) aims at representing the activities, artifacts and stakeholders involved in the software Configuration Management Process. Since CMPO can be applied in the context of several SE subdomains, it describes some general notions applicable for diverse SEON concepts.</p>
-    		</div>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+            Features
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="SearchFrames.html">Concepts Searcher</a> 
+            <a class="dropdown-item" href="NetworkGraph.html">Graph</a>
+            <a class="dropdown-item" href="NetworkStats.html">Stats</a>
+            <a class="dropdown-item" href="videos.html">Videos</a>
+          </div>
+        </li>
 
-				<hr>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+            CMPO
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#ontologydescription">Ontology Description</a> 
+            <a class="dropdown-item" href="#relatedontologies">Related Ontologies</a>
+            <a class="dropdown-item" href="#ontologymodels">Ontology Models</a>
+            <a class="dropdown-item" href="#conceptsdefinition">Concepts Definition</a>
+            <a class="dropdown-item" href="#detailedconcepts">Detailed Concepts</a>
+          </div>
+        </li>
 
-				<div class="p-5 rounded" id="relatedontologies">
-					<h2 class="featurette-heading">2. Related Ontologies</h2>
-					<p class="lead">Networked ontologies used by CMPO:</p>	
+      </ul>
+    </div>
+  </nav>
+
+	<!-- Begin page content -->
+  <main role="main" class="container-fluid">	
+
+			<div class="bg-light p-5 rounded">
+				<div class="container-fluid d-flex justify-content-end"><span class="badge badge-danger text-lowercase"></span></div>
+  			<h1 class="featurette-heading">The Configuration Management Process Ontology (CMPO)</h1>
+  			<p class="lead text-right font-italic"><i class="bi bi-star-fill"></i> domain ontology from SEON</p>
+  		</div>
+
+			<hr> 
+			   		
+  		<div class="p-5 rounded" id="ontologydescription">
+				<h2 class="featurette-heading">1. Ontology Description</h2>
+				<p class="lead" align="justify">The Configuration Management Process Ontology (CMPO) aims at representing the activities, artifacts and stakeholders involved in the software Configuration Management Process. Since CMPO can be applied in the context of several SE subdomains, it describes some general notions applicable for diverse SEON concepts.</p>
+  		</div>
+
+			<hr>
+
+			<div class="p-5 rounded" id="relatedontologies">
+				<h2 class="featurette-heading">2. Related Ontologies</h2>
+				<p class="lead">Networked ontologies used by CMPO:</p>	
+				
+				<div class="table-responsive my-5">
 					
-					<div class="table-responsive">
-						
-						<table class="table table-hover">
-							<thead>
-								<tr>
-									<th scope="col">Ontology</th>
-									<th scope="col">Relation</th>
-									<th scope="col">Integration Level</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr><td><a class="text-muted" href="http://dev.nemo.inf.ufes.br/seon/SPO.html" target="_blank">SPO - Software Process Ontology</a></td><td>Most CMPO concepts extend concepts from SPO.</td><td style="text-align:center">High</td></tr>
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th scope="col">Ontology</th>
+								<th scope="col">Relation</th>
+								<th scope="col">Integration Level</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr><td><a class="text-muted" href="http://dev.nemo.inf.ufes.br/seon/SPO.html" target="_blank">SPO - Software Process Ontology</a></td><td>Most CMPO concepts extend concepts from SPO.</td><td style="text-align:center">High</td></tr>
 <tr><td><a class="text-muted" href="http://dev.nemo.inf.ufes.br/seon/QAPO.html" target="_blank">QAPO - Quality Assurance Process Ontology</a></td><td>CMPO reuses two artifacts from QAPO.</td><td style="text-align:center">Low</td></tr>
 <tr><td><a class="text-muted" href="UFO.html">UFO - Unified Foundational Ontology</a></td><td>Two concepts of CMPO are derived directly from UFO.</td><td style="text-align:center">Low</td></tr>
 
-							</tbody>
-						</table>
-  					<caption><small>Ontologies (re)used by CMPO.</small></caption>
-  				</div>
+						</tbody>
+					</table>
+					<caption><small>Ontologies (re)used by CMPO.</small></caption>
+				</div>
 
-				</div>	
+			</div>	
 
-				<hr>
-    	
-				<div class="p-5 rounded" id="ontologymodels">
-					<h2 class="featurette-heading">3. Ontology Models</h2>
-					<p class="lead"><p class="lead">Figure 1 presents the conceptual model of the CMPO.</p>
-<div class="container-fluid" align="center"><img src="images/CMPO.png" width="1475" class="map img-fluid" usemap="#CMPO"><map name="CMPO">
+			<hr>
+  	
+			<div class="p-5 rounded" id="ontologymodels">
+				<h2 class="featurette-heading">3. Ontology Models</h2>
+				<p class="lead"><p class="lead">Figure 1 presents the conceptual model of the CMPO.</p>
+<div class="container-fluid my-5" align="center"><img src="images/CMPO.png" width="1475" class="map img-fluid" usemap="#CMPO"><map name="CMPO">
 <area shape="rect" coords="809,193,935,240" href="SysSwO.html#SysSwO_Software+Artifact" target="_blank" title="Object intentionally made to serve a given purpose in the context of a software Project or Organization.">
 <area shape="rect" coords="630,335,777,365" href="SysSwO.html#SysSwO_Complex+Sw+Artifact" target="_blank" title="Artifact composed of other Artifacts.">
 <area shape="rect" coords="708,299,844,329" href="SysSwO.html#SysSwO_Atomic+Sw+Artifact" target="_blank" title="Artifact that is not decomposed into other Artifacts.">
@@ -281,78 +227,26 @@
 <area shape="rect" coords="1381,879,1465,909" href="http://dev.nemo.inf.ufes.br/seon/CMPO.html#CMPO_Closed+CR" target="_blank" title="Change Request closed after solved, reviewed and approved.">
 <area shape="rect" coords="415,962,588,992" href="http://dev.nemo.inf.ufes.br/seon/CMPO.html#CMPO_Change+Request+Closing" target="_blank" title="Activity for closing a reviewed and approved Change Request.">
 <area shape="rect" coords="1119,121,1228,151" href="UFO.html#UFO_Object" target="" title="Non-agentive substantial individuals. Objects can be Physical or Social."></map>
-<p align="center" class="lead font-weight-bold">Figure 1. CMPO conceptual model.</p></div>
+<p align="center"><span class="font-weight-bold">Figure 1. </span>CMPO conceptual model.</p></div>
 <p align="justify" class="lead">The Configuration Management (CM) Process is a Process with the purpose of conducting the activities related to software configuration management, ensuring the completeness and correctness of software Configuration Items.<br/>Some notions are important for this process. Item is anything whose configuration may be managed (such as an artifact, tool, or process description). Configuration Item (CI) is an Item whose configuration is being managed. The most important type of CI in this context is the Artifact CI, an Artifact whose configuration is being managed, and, like so, subject of Change Requests. A CI bears Versions defining each of its important releases. When a Version of an Artifact CI is modified in a Change Control process, an Artifact Copy, based on the desired Version, is created to be modified and then gives rise to a new Version of that Artifact CI. Finally, Baselines are Information Items embracing a set of CIs' Versions at a specific time in the product's life.<br/>The CM Process is composed of five Activities: (1) Configuration Management Planning plans the Configuration Management Process creating the Configuration Management Plan, and including the activities for Configuration Management System Establishment and Configuration Items Identification. (2) Change Control formally controls the modification of CIs supported by an evolving Change Request artifact. Change Control is composed of five activities: Change Requesting, to someone communicate a request for a change; Request Evaluation, an evaluation to authorize or reject a Change Request; Change Accomplishment, for implementing the authorized changes in a version controlled context; Change Review, for approving the changes done if they were made as planned; and Change Request Closing, for finishing the Change Request. (3) Baseline Establishment creates Baselines embracing planned sets of CIs' Versions. (4) Configuration Auditing verifies the completeness, integrity and conformity of Baselines and Deliverable Products, registering nonconformities as needed. (5) Finally, Release Management and Delivery manages the building, releasing and delivering of products to the clients.<br/>Considering Stakeholders, the Configuration Manager is the main responsible for the process. Different roles apply for specific activities: Change Requester, Change Request Evaluator, Change Implementer, Change Reviewer and Configuration Auditor.</p>
 </p>					
-				</div>
+			</div>
 
-				<hr>
+			<hr>
 
-				<div class="p-5 rounded" id="conceptsdefinition">
-					<h2 class="featurette-heading">4. Concepts Definition</h2>
-					<p class="lead">The following table shows the definitions for CMPO concepts.</p>		
-					<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->				
-					<div class="table-responsive">
-						<table class="table table-hover">
-							<thead>
-								<tr>
-									<th scope="col">Concept</th>
-									<th scope="col">Definition</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr><td><p id="CMPO_Artifact+CI"><span class="font-weight-bold">Artifact CI</span><a class="text-muted" href=#CMPO_Artifact+CI_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Artifact whose configuration is being managed.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> Documents, Models, Software Products under Configuration Management.</span></p></td></tr>
-<tr><td><p id="CMPO_Artifact+Copy"><span class="font-weight-bold">Artifact Copy</span><a class="text-muted" href=#CMPO_Artifact+Copy_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Copy of an Artifact that is under version control.</p></td></tr>
-<tr><td><p id="CMPO_Baseline"><span class="font-weight-bold">Baseline</span><a class="text-muted" href=#CMPO_Baseline_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Information Item packaging a set of Configuration Items' Versions at a specific time in the product's life (for a product delivery or to establish a relevant point in the Project).<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> Release 01 Baseline, established for the first delivered product for the client; Planning baseline, established after project planning is established and agreed.</span></p></td></tr>
-<tr><td><p id="CMPO_Baseline+Establishment"><span class="font-weight-bold">Baseline Establishment</span><a class="text-muted" href=#CMPO_Baseline+Establishment_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Activity for establishing a Baseline embracing a planned set of Configuration Items' Versions.</p></td></tr>
-<tr><td><p id="CMPO_CR+Being+Solved"><span class="font-weight-bold">CR Being Solved</span><a class="text-muted" href=#CMPO_CR+Being+Solved_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Change Request being solved after authorization.</p></td></tr>
-<tr><td><p id="CMPO_Change+Accomplishment"><span class="font-weight-bold">Change Accomplishment</span><a class="text-muted" href=#CMPO_Change+Accomplishment_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Activity for performing the authorized changes in a set of Configuration Items under version control.</p></td></tr>
-<tr><td><p id="CMPO_Change+Control"><span class="font-weight-bold">Change Control</span><a class="text-muted" href=#CMPO_Change+Control_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Activity for formally controlling the modification of Configuration Items, in a process of requesting, evaluating, changing and reviewing.</p></td></tr>
-<tr><td><p id="CMPO_Change+Implementation"><span class="font-weight-bold">Change Implementation</span><a class="text-muted" href=#CMPO_Change+Implementation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Activity for implementing the changes requested and approved for a Configuration Item.</p></td></tr>
-<tr><td><p id="CMPO_Change+Implementer"><span class="font-weight-bold">Change Implementer</span><a class="text-muted" href=#CMPO_Change+Implementer_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Stakeholder responsible for implementing a change in Configuration Items.</p></td></tr>
-<tr><td><p id="CMPO_Change+Request+(CR)"><span class="font-weight-bold">Change Request (CR)</span><a class="text-muted" href=#CMPO_Change+Request+(CR)_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Information Item describing a request for modification on a set of Configuration Items.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> a request for changing the project planning replacing a developer, which affects the Project Plan and the Project Schedule.</span></p></td></tr>
-<tr><td><p id="CMPO_Change+Request+Closing"><span class="font-weight-bold">Change Request Closing</span><a class="text-muted" href=#CMPO_Change+Request+Closing_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Activity for closing a reviewed and approved Change Request.</p></td></tr>
-<tr><td><p id="CMPO_Change+Request+Evaluator"><span class="font-weight-bold">Change Request Evaluator</span><a class="text-muted" href=#CMPO_Change+Request+Evaluator_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Stakeholder responsible for evaluating if a Change Request should be implemented or not.</p></td></tr>
-<tr><td><p id="CMPO_Change+Requester"><span class="font-weight-bold">Change Requester</span><a class="text-muted" href=#CMPO_Change+Requester_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Stakeholder responsible for requesting a change in Configuration Items.</p></td></tr>
-<tr><td><p id="CMPO_Change+Requesting"><span class="font-weight-bold">Change Requesting</span><a class="text-muted" href=#CMPO_Change+Requesting_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Activity for requesting the modification of a set of Configuration Items.</p></td></tr>
-<tr><td><p id="CMPO_Change+Review"><span class="font-weight-bold">Change Review</span><a class="text-muted" href=#CMPO_Change+Review_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Activity for reviewing an accomplished change assuring that the modifications were made as planned.</p></td></tr>
-<tr><td><p id="CMPO_Change+Reviewer"><span class="font-weight-bold">Change Reviewer</span><a class="text-muted" href=#CMPO_Change+Reviewer_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Stakeholder responsible for reviewing the changes in Configuration Items regarding a Change Request.</p></td></tr>
-<tr><td><p id="CMPO_Checkin"><span class="font-weight-bold">Checkin</span><a class="text-muted" href=#CMPO_Checkin_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Activity for including new Versions of Configuration Items into a version control repository.</p></td></tr>
-<tr><td><p id="CMPO_Checkout"><span class="font-weight-bold">Checkout</span><a class="text-muted" href=#CMPO_Checkout_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Activity for accessing defined versions of Configuration Items from a version control repository, usually for changing purposes.</p></td></tr>
-<tr><td><p id="CMPO_Closed+CR"><span class="font-weight-bold">Closed CR</span><a class="text-muted" href=#CMPO_Closed+CR_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Change Request closed after solved, reviewed and approved.</p></td></tr>
-<tr><td><p id="CMPO_Communicated+CR"><span class="font-weight-bold">Communicated CR</span><a class="text-muted" href=#CMPO_Communicated+CR_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Change Request in the first phase, communicated.</p></td></tr>
-<tr><td><p id="CMPO_Configuration+Audit+Report"><span class="font-weight-bold">Configuration Audit Report</span><a class="text-muted" href=#CMPO_Configuration+Audit+Report_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Document reporting the results of a Quality Audit Performing, including Noncompliance and Corrective Action Registers.</p></td></tr>
-<tr><td><p id="CMPO_Configuration+Auditing"><span class="font-weight-bold">Configuration Auditing</span><a class="text-muted" href=#CMPO_Configuration+Auditing_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Activity for verifying that a Baseline or a Deliverable Product is complete, consistent and in conformity with the specified requirements.</p></td></tr>
-<tr><td><p id="CMPO_Configuration+Auditor"><span class="font-weight-bold">Configuration Auditor</span><a class="text-muted" href=#CMPO_Configuration+Auditor_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Stakeholder responsible for auditing the Configuration Management related results.</p></td></tr>
-<tr><td><p id="CMPO_Configuration+Item+(CI)"><span class="font-weight-bold">Configuration Item (CI)</span><a class="text-muted" href=#CMPO_Configuration+Item+(CI)_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Object whose configuration is being managed.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> Artifacts, Process descriptions, Tools under Configuration Management.</span></p></td></tr>
-<tr><td><p id="CMPO_Configuration+Items+Identification"><span class="font-weight-bold">Configuration Items Identification</span><a class="text-muted" href=#CMPO_Configuration+Items+Identification_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Activity for identifying the Configuration Items of a Project.</p></td></tr>
-<tr><td><p id="CMPO_Configuration+Management+Plan"><span class="font-weight-bold">Configuration Management Plan</span><a class="text-muted" href=#CMPO_Configuration+Management+Plan_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Document describing the configuration management parameters for conducting the process, including the identified Configuration Items types, the configuration systems and the planned Baselines, Configuration Audits, and Products Deliveries.</p></td></tr>
-<tr><td><p id="CMPO_Configuration+Management+Planning"><span class="font-weight-bold">Configuration Management Planning</span><a class="text-muted" href=#CMPO_Configuration+Management+Planning_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Activity for planning the Configuration Management Process, including, among others, the Configuration Management System Establishment and the Configuration Items Identification.</p></td></tr>
-<tr><td><p id="CMPO_Configuration+Management+Process"><span class="font-weight-bold">Configuration Management Process</span><a class="text-muted" href=#CMPO_Configuration+Management+Process_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Process for conducting the activities related to software configuration management, ensuring the completeness and correctness of software Configuration Items.</p></td></tr>
-<tr><td><p id="CMPO_Configuration+Management+System+Establishment"><span class="font-weight-bold">Configuration Management System Establishment</span><a class="text-muted" href=#CMPO_Configuration+Management+System+Establishment_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Activity for establishing the configuration management system, usually composed of version control system, a change control system and a product building system.</p></td></tr>
-<tr><td><p id="CMPO_Configuration+Manager"><span class="font-weight-bold">Configuration Manager</span><a class="text-muted" href=#CMPO_Configuration+Manager_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Stakeholder responsible for planning and managing the Configuration Management Process.</p></td></tr>
-<tr><td><p id="CMPO_Deliverable+Product"><span class="font-weight-bold">Deliverable Product</span><a class="text-muted" href=#CMPO_Deliverable+Product_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Software Product ready to be delivered to the client.</p></td></tr>
-<tr><td><p id="CMPO_Evaluated+CR"><span class="font-weight-bold">Evaluated CR</span><a class="text-muted" href=#CMPO_Evaluated+CR_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Change Request evaluated and set as authorized or rejected.</p></td></tr>
-<tr><td><p id="CMPO_Item"><span class="font-weight-bold">Item</span><a class="text-muted" href=#CMPO_Item_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Object whose configuration may be managed.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> Artifacts, Process descriptions, Tools.</span></p></td></tr>
-<tr><td><p id="CMPO_Release+Management+and+Delivery"><span class="font-weight-bold">Release Management and Delivery</span><a class="text-muted" href=#CMPO_Release+Management+and+Delivery_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Activity for managing the building, releasing and delivering of the products to be delivered to clients.</p></td></tr>
-<tr><td><p id="CMPO_Request+Evaluation"><span class="font-weight-bold">Request Evaluation</span><a class="text-muted" href=#CMPO_Request+Evaluation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Activity for evaluating the Change Request for a set of Configuration Items, authorizing or rejecting it.</p></td></tr>
-<tr><td><p id="CMPO_Reviewed+CR"><span class="font-weight-bold">Reviewed CR</span><a class="text-muted" href=#CMPO_Reviewed+CR_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Change Request reviewed to check if the modifications done are correct.</p></td></tr>
-<tr><td><p id="CMPO_Solved+CR"><span class="font-weight-bold">Solved CR</span><a class="text-muted" href=#CMPO_Solved+CR_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Change Request solved through the Change Implementation.</p></td></tr>
-<tr><td><p id="CMPO_Version"><span class="font-weight-bold">Version</span><a class="text-muted" href=#CMPO_Version_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Each identified release of a Configuration Item submitted to a version control repository.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> Project Plan of Project Alfa, version 01; Requirements Document of Project Alfa, version 03.</span></p></td></tr>
-
-							</tbody>
-							<caption><small>CMPO concepts definition.</small></caption>
-						</table>
-  				</div>
-
-
-
-				<!--	<table style="width: 100%" border="1" cellpadding="6">
-						<tbody>
-							<tr style="background-color: #D8D8D8">
-								<td style="width: 25%"><b>Concept</b></td>
-								<td style="width: 75%"><b>Definition</b></td>
+			<div class="p-5 rounded" id="conceptsdefinition">
+				<h2 class="featurette-heading">4. Concepts Definition</h2>
+				<p class="lead">The following table shows the definitions for CMPO concepts.</p>		
+				
+				<div class="table-responsive my-5">
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th scope="col">Concept</th>
+								<th scope="col">Definition</th>
 							</tr>
+						</thead>
+						<tbody>
 							<tr><td><p id="CMPO_Artifact+CI"><span class="font-weight-bold">Artifact CI</span><a class="text-muted" href=#CMPO_Artifact+CI_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Artifact whose configuration is being managed.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> Documents, Models, Software Products under Configuration Management.</span></p></td></tr>
 <tr><td><p id="CMPO_Artifact+Copy"><span class="font-weight-bold">Artifact Copy</span><a class="text-muted" href=#CMPO_Artifact+Copy_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Copy of an Artifact that is under version control.</p></td></tr>
 <tr><td><p id="CMPO_Baseline"><span class="font-weight-bold">Baseline</span><a class="text-muted" href=#CMPO_Baseline_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Information Item packaging a set of Configuration Items' Versions at a specific time in the product's life (for a product delivery or to establish a relevant point in the Project).<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> Release 01 Baseline, established for the first delivered product for the client; Planning baseline, established after project planning is established and agreed.</span></p></td></tr>
@@ -393,16 +287,18 @@
 <tr><td><p id="CMPO_Version"><span class="font-weight-bold">Version</span><a class="text-muted" href=#CMPO_Version_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Each identified release of a Configuration Item submitted to a version control repository.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> Project Plan of Project Alfa, version 01; Requirements Document of Project Alfa, version 03.</span></p></td></tr>
 
 						</tbody>
-					</table>-->
-
+						<caption><small>CMPO concepts definition.</small></caption>
+					</table>
 				</div>
 
-				<hr>		
+			</div>
 
-				<div class="p-5 rounded" id="detailedconcepts">
-					<h2 class="featurette-heading">5. Detailed Concepts</h2>
-					<p class="lead">Configuration Management Process Ontology (CMPO) detailed concepts.</p>					
-					<hr><div class="container-fluid" id="CMPO_Artifact+CI_detail"><h4><i class="bi bi-diagram-3"></i> CMPO::Artifact CI</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code class="text-muted">&lt&ltrole&gt&gt</code>
+			<hr>		
+
+			<div class="p-5 rounded" id="detailedconcepts">
+				<h2 class="featurette-heading">5. Detailed Concepts</h2>
+				<p class="lead">Configuration Management Process Ontology (CMPO) detailed concepts.</p>					
+				<hr><div class="container-fluid" id="CMPO_Artifact+CI_detail"><h4><i class="bi bi-diagram-3"></i> CMPO::Artifact CI</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code class="text-muted">&lt&ltrole&gt&gt</code>
 <br/><span class="font-weight-bold text-center">Artifact CI</span></p></div><br/><h5>Specializes:</h5><p><i class="bi bi-diagram-2"></i> CMPO::Configuration Item (CI)</p><p><i class="bi bi-diagram-2"></i>  SysSwO::Software Artifact</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Artifact whose configuration is being managed.<br/><span class="font-weight-bold">Example:</span><span class="font-italic"> Documents, Models, Software Products under Configuration Management.</span></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
 <code class="text-muted">Checkin changes Artifact CI<br/>
 Checkin creates Artifact CI<br/>
@@ -668,9 +564,9 @@ Artifact Copy (0..*) based on (1..1) Version<br/>
 </code></p></div></div></div>
 
 
-				</div>
-				
-			</main>
+			</div>
+			
+		</main>
 	
     <footer class="p-5 rounded border-top">
     	<div class="row justify-content-md-center">
@@ -743,7 +639,7 @@ Artifact Copy (0..*) based on (1..1) Version<br/>
 				<div class="col-md-auto">
 					<small>
 						<span class="text-muted">
-						Tue Dec 14 21:27:59 BRT 2021
+						Wed Dec 15 22:38:28 BRT 2021
 						</span>
 					</small>
 				</div>
@@ -755,15 +651,12 @@ Artifact Copy (0..*) based on (1..1) Version<br/>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+	  <script type="text/javascript" src="bootstrap/jquery/jquery-3.5.1.slim.min.js"></script>
 
-    <script src="bootstrap-5.1.3-dist/js/jquery-3.2.1.slim.min.js"></script>
+	  <script type="text/javascript" src="bootstrap/js/popper-1.16.1.min.js"></script>
 
-    <script src="bootstrap-5.1.3-dist/js/popper.min.js"></script>
+	  <script type="text/javascript" src="bootstrap/4.6.1-dist/js/bootstrap.min.js"></script>
 
-
-    <script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
-
-    <script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
 
     <script type="text/javascript" src="jquery.min.js"></script>
 		<script type="text/javascript" src="maphilight.js"></script>
@@ -834,7 +727,14 @@ Artifact Copy (0..*) based on (1..1) Version<br/>
 			});			
 			
 		</script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-WXTXYYCXMP"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
 
+		  gtag('config', 'G-WXTXYYCXMP');
+		</script>
 	</body>
-	<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 </html>

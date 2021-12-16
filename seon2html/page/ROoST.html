@@ -1,241 +1,187 @@
 <!doctype html>
-
 <html lang="en">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	    <meta name="description" content="">
-	    <meta name="author" content="Simone Dornelas Costa">
-	    <meta charset="ISO-8859-1">
-	    
-	
-	    <title>Reference Ontology on Software Testing (ROoST)</title>
-	
-	    <!-- Bootstrap core CSS -->
-	    <link href="bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
-	    
-	    <!-- Custom styles for this template -->
-	    <link href="bootstrap-5.1.3-dist/css/navbar-top-fixed.css" rel="stylesheet">
-	    <link href="bootstrap-5.1.3-dist/css/sticky-footer-navbar.css" rel="stylesheet">
-	    <link href="bootstrap-5.1.3-dist/css/carousel.css" rel="stylesheet">
+      <meta name="description" content="">
+      <meta name="author" content="Simone Dornelas Costa">
+      <meta name="generator" content="Simone Dornelas Costa">
+      <title>HCI-ON</title>    
 
-	    <!-- ICONS -->
-	    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <!-- Bootstrap core CSS -->
+      <link rel="stylesheet" type="text/css" href="bootstrap/4.6.1-dist/css/bootstrap.min.css">
+      
+      
+      <!-- ICONS -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-	    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 
-	    <style>
-	      .bd-placeholder-img {
-	        font-size: 1.125rem;
-	        text-anchor: middle;
-	        -webkit-user-select: none;
-	        -moz-user-select: none;
-	        -ms-user-select: none;
-	        user-select: none;
-	      }
+      <!-- favicon -->
+      <link rel="icon" type="image/svg+xml" sizes="48x48" href="images/diagram-3-fill.svg">
 
-	      @media (min-width: 768px) {
-	        .bd-placeholder-img-lg {
-	          font-size: 3.5rem;
-	        }
-	      }
+      <style>   
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
 
-	      .h2, .h3, h2, h3 {
-	      	margin-bottom: 2.5rem;
-	      }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      </style>
+     
+     <!-- Custom styles for this template -->
+     <link href="bootstrap/css/carousel.css" rel="stylesheet">
+      
+    </head>
 
+  <body>
 
-	      .span {
-	      	font-size: 2rem;
-	      }
-
-	      .featurette-heading {
-	        margin-top: 0;
-	      }
-
-	      
-
-	    </style>
-
-	  <!--.h6, h6 {
-	      	margin-bottom: 2.5rem;
-	      	margin-top: 2.5rem;	
-	      }-->  
-	    
-<!--	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
-	    
-	    
-	<link rel="icon" type="image/svg+xml" sizes="48x48" href="images/diagram-3-fill.svg">
-  </head>
-
-  <body data-new-gr-c-s-check-loaded="14.1038.0" data-gr-ext-installed="">
-
-	<header>
-	
-	<!--MAIN fixed navbar -->	
-	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-	  <!--<div class="container-fluid">-->
-	    <a class="navbar-brand" href="hci-on.html">HCI-ON</a>
-	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	      <span class="navbar-toggler-icon"></span>
-	    </button>
-	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-	        <li class="nav-item">
-	          <a class="nav-link" aria-current="page" href="index.html">Home</a>
-	        </li>
-
-	        <li class="nav-item dropdown">
-	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-	            The Network
-	          </a>
-	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item fst-italic" href="hci-on.html#architecture" tabindex="-1" aria-disabled="true">Architecture</a></li>
-	            <li><a class="dropdown-item fst-italic" href="hci-on.html#hcionmechanism" tabindex="-1" aria-disabled="true">Evolution Mechanisms</a></li>
-	            <li><a class="dropdown-item fst-italic" href="hci-on.html#hcionseon" tabindex="-1" aria-disabled="true">Relationship with SEON</a></li>
-	          	<li><hr class="dropdown-divider"></li>
-
-	            <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Foundational Layer</a></li>
-	            <li><a class="dropdown-item" href="UFO.html">UFO - Unified Foundational Ontology</a></li>
-
-	            <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Core Layer</a></li>
-	            <li><a class="dropdown-item" href="HCIO.html">HCIO - Human-Computer Interaction Ontology</a></li>
-
-	            <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Domain Layer</a></li>
-	            <li><a class="dropdown-item" href="HCIDO.html">HCIDO - Human-Computer Interaction Design Ontology</a></li>
-							<li><a class="dropdown-item" href="HCIEO.html">HCIEO - Human-Computer Interaction Evaluation Ontology</a></li>
-							<!--<li><a class="dropdown-item" href="HCIDPO.html">HCIDPO - Human-Computer Interaction Design Process Ontology</a></li>-->
-							<li><a class="dropdown-item" href="UIT&EO.html">UIT&EO - UI Types and Elements Ontology</a></li>
-							<li><a class="dropdown-item" href="HCIMO.html">HCIMO - HCI Modality Ontology</a></li>
-							<li><a class="dropdown-item" href="CUO.html">CUO - Context of Use Ontology</a></li>
-							<li><a class="dropdown-item" href="UCO.html">UCO - User Characterization Ontology</a></li>
-							<li><a class="dropdown-item" href="HCIQCO.html">HCIQCO - HCI Quality Characteristics Ontology</a></li>
-	          </ul>
-	        </li>
-
-	        <li class="nav-item dropdown">
-	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-	            Features
-	          </a>
-	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item" href="SearchFrames.html">Concepts Searcher</a></li>
-	            <li><a class="dropdown-item" href="NetworkGraph.html">Graph</a></li>
-	            <li><a class="dropdown-item" href="NetworkStats.html">Stats</a></li>
-	            <li><a class="dropdown-item" href="videos.html">Videos</a></li>
-	            <!--<li><hr class="dropdown-divider"></li>
-	            <li><a class="dropdown-item" href="SeonFeedback.html">Feedback</a></li>-->
-	          </ul>
-	        </li>
-
-	        <!--<li class="nav-item dropdown">
-	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-	            More
-	          </a>
-	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item" href="SEON.owl" target="_blank">Operational Version (in OWL)</a></li>
-	            <li><a class="dropdown-item" href="#">Astah file</a></li>
-	            <li><a class="dropdown-item" href="#">Specifications</a></li>
-	            <li><a class="dropdown-item" href="#">Publications</a></li>
-	          </ul>
-	        </li>-->
-
-					<li class="nav-item dropdown">
-	          <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-	            ROoST
-	          </a>
-	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item" href="#ontologydescription">Ontology Description</a></li>
-	            <li><a class="dropdown-item" href="#relatedontologies">Related Ontologies</a></li>
-	            <li><a class="dropdown-item" href="#ontologymodels">Ontology Models</a></li>
-	            <li><a class="dropdown-item" href="#conceptsdefinition">Concepts Definition</a></li>
-	            <li><a class="dropdown-item" href="#detailedconcepts">Detailed Concepts</a></li>
-	          </ul>
-	        </li>
-
-<!--	        <li class="nav-item">
-	          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-	        </li>-->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="HCI-ON.html">HCI-ON</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
         
-	      </ul>
-	      
-	    </div>
-	  <!--</div>-->
-	</nav>	
-		
-	
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+            The Network
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="HCI-ON.html">HCI-ON</a>
+            <a class="dropdown-item" href="HCI-ON.html#architecture">Architecture</a>
+            <a class="dropdown-item" href="HCI-ON.html#hcionmechanism">Evolution Mechanism</a>
+            <a class="dropdown-item" href="HCI-ON.html#hcionseon">Relationship with SEON</a>
+          </div>
+        </li>
 
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+            Networked Ontologies
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        
+            <a class="dropdown-item disabled">Foundational Layer</a>
+            <a class="dropdown-item" href="UFO.html">UFO</a>
 
-	
-		</header>
+            <a class="dropdown-item disabled">Core Layer</a>
+            <a class="dropdown-item" href="HCIO.html">HCIO</a>
 
-		<!-- Begin page content -->
-    <main role="main" class="container-fluid">	
-    		
-				<!--<div class="bg-light p-5 rounded" id="ontologydescription">
-    			<h1 class="featurette-heading">The Reference Ontology on Software Testing (ROoST)</h1>
-					<p class="lead" align="justify"><span class="text-muted font-weight-bold font-italic">Ontology Description. </span>The Reference Ontology on Software Testing (ROoST) is partially integrated to SEON, representing the activities, artifacts and stakeholders involved in the Software Testing Process, considering only dynamic tests. Since the testing process is a technical process in the software development, ROoST shares concepts with other SEON networked ontologies. </p>
-					<p class="lead text-right text-muted font-italic"><i class="bi bi-star-fill"></i> domain ontology from SEON</p>
-    		</div>-->
+            <a class="dropdown-item disabled">Domain Layer</a>
+            <a class="dropdown-item" href="HCIDO.html">HCIDO</a>
+            <a class="dropdown-item" href="HCIEO.html">HCIEO</a>
+            <a class="dropdown-item" href="UIT&EO.html">UIT&EO</a>
+            <a class="dropdown-item" href="HCIMO.html">HCIMO</a>
+            <a class="dropdown-item" href="CUO.html">CUO</a>
+            <a class="dropdown-item" href="UCO.html">UCO</a>
+            <a class="dropdown-item" href="HCIQCO.html">HCIQCO</a>
+            
+          </div>
+        </li>
 
-				<div class="bg-light p-5 rounded">
-					<div class="container-fluid d-flex justify-content-end"><span class="badge badge-danger text-lowercase"></span></div>
-    			<h1 class="featurette-heading">The Reference Ontology on Software Testing (ROoST)</h1>
-    			<p class="lead text-right font-italic"><i class="bi bi-star-fill"></i> domain ontology from SEON</p>
-    		</div>
-	
-				<hr> 
-				   		
-    		<div class="p-5 rounded" id="ontologydescription">
-  				<h2 class="featurette-heading">1. Ontology Description</h2>
-  				<p class="lead" align="justify">The Reference Ontology on Software Testing (ROoST) is partially integrated to SEON, representing the activities, artifacts and stakeholders involved in the Software Testing Process, considering only dynamic tests. Since the testing process is a technical process in the software development, ROoST shares concepts with other SEON networked ontologies. </p>
-    		</div>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+            Features
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="SearchFrames.html">Concepts Searcher</a> 
+            <a class="dropdown-item" href="NetworkGraph.html">Graph</a>
+            <a class="dropdown-item" href="NetworkStats.html">Stats</a>
+            <a class="dropdown-item" href="videos.html">Videos</a>
+          </div>
+        </li>
 
-				<hr>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+            ROoST
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#ontologydescription">Ontology Description</a> 
+            <a class="dropdown-item" href="#relatedontologies">Related Ontologies</a>
+            <a class="dropdown-item" href="#ontologymodels">Ontology Models</a>
+            <a class="dropdown-item" href="#conceptsdefinition">Concepts Definition</a>
+            <a class="dropdown-item" href="#detailedconcepts">Detailed Concepts</a>
+          </div>
+        </li>
 
-				<div class="p-5 rounded" id="relatedontologies">
-					<h2 class="featurette-heading">2. Related Ontologies</h2>
-					<p class="lead">Networked ontologies used by ROoST:</p>	
+      </ul>
+    </div>
+  </nav>
+
+	<!-- Begin page content -->
+  <main role="main" class="container-fluid">	
+
+			<div class="bg-light p-5 rounded">
+				<div class="container-fluid d-flex justify-content-end"><span class="badge badge-danger text-lowercase"></span></div>
+  			<h1 class="featurette-heading">The Reference Ontology on Software Testing (ROoST)</h1>
+  			<p class="lead text-right font-italic"><i class="bi bi-star-fill"></i> domain ontology from SEON</p>
+  		</div>
+
+			<hr> 
+			   		
+  		<div class="p-5 rounded" id="ontologydescription">
+				<h2 class="featurette-heading">1. Ontology Description</h2>
+				<p class="lead" align="justify">The Reference Ontology on Software Testing (ROoST) is partially integrated to SEON, representing the activities, artifacts and stakeholders involved in the Software Testing Process, considering only dynamic tests. Since the testing process is a technical process in the software development, ROoST shares concepts with other SEON networked ontologies. </p>
+  		</div>
+
+			<hr>
+
+			<div class="p-5 rounded" id="relatedontologies">
+				<h2 class="featurette-heading">2. Related Ontologies</h2>
+				<p class="lead">Networked ontologies used by ROoST:</p>	
+				
+				<div class="table-responsive my-5">
 					
-					<div class="table-responsive">
-						
-						<table class="table table-hover">
-							<thead>
-								<tr>
-									<th scope="col">Ontology</th>
-									<th scope="col">Relation</th>
-									<th scope="col">Integration Level</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr><td><a class="text-muted" href="http://dev.nemo.inf.ufes.br/seon/SPO.html" target="_blank">SPO - Software Process Ontology</a></td><td>Most of ROoST concepts extend concepts from SPO.</td><td style="text-align:center">High</td></tr>
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th scope="col">Ontology</th>
+								<th scope="col">Relation</th>
+								<th scope="col">Integration Level</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr><td><a class="text-muted" href="http://dev.nemo.inf.ufes.br/seon/SPO.html" target="_blank">SPO - Software Process Ontology</a></td><td>Most of ROoST concepts extend concepts from SPO.</td><td style="text-align:center">High</td></tr>
 
-							</tbody>
-						</table>
-  					<caption><small>Ontologies (re)used by ROoST.</small></caption>
-  				</div>
+						</tbody>
+					</table>
+					<caption><small>Ontologies (re)used by ROoST.</small></caption>
+				</div>
 
-				</div>	
+			</div>	
 
-				<hr>
-    	
-				<div class="p-5 rounded" id="ontologymodels">
-					<h2 class="featurette-heading">3. Ontology Models</h2>
-					<p class="lead"><p class="lead">Figure 1 presents the packages of the ROoST Modularization.</p>
-<div class="container-fluid" align="center"><img src="images/ROoST Modularization.png" width="561" class="map img-fluid" usemap="#ROoST Modularization"><map name="ROoST Modularization">
+			<hr>
+  	
+			<div class="p-5 rounded" id="ontologymodels">
+				<h2 class="featurette-heading">3. Ontology Models</h2>
+				<p class="lead"><p class="lead">Figure 1 presents the packages of the ROoST Modularization.</p>
+<div class="container-fluid my-5" align="center"><img src="images/ROoST Modularization.png" width="561" class="map img-fluid" usemap="#ROoST Modularization"><map name="ROoST Modularization">
 <area shape="rect" coords="11,146,223,216" href="http://dev.nemo.inf.ufes.br/seon/ROoST.html#ROoST_Testing+Artifacts_section" target="_blank" title="">
 <area shape="rect" coords="10,282,222,352" href="http://dev.nemo.inf.ufes.br/seon/ROoST.html#ROoST_Testing+Environment_section" target="_blank" title="">
 <area shape="rect" coords="338,146,550,216" href="http://dev.nemo.inf.ufes.br/seon/ROoST.html#ROoST_Testing+Process_section" target="_blank" title="">
 <area shape="rect" coords="339,10,551,80" href="http://dev.nemo.inf.ufes.br/seon/ROoST.html#ROoST_Testing+Techniques_section" target="_blank" title="">
 <area shape="rect" coords="339,282,551,352" href="http://dev.nemo.inf.ufes.br/seon/ROoST.html#ROoST_Testing+Stakeholders_section" target="_blank" title=""></map>
-<p align="center" class="lead font-weight-bold">Figure 1. ROoST Modularization.</p></div>
+<p align="center"><span class="font-weight-bold">Figure 1. </span>ROoST Modularization.</p></div>
 <p align="justify" class="lead"></p>
 
 <hr class="featurette-divider"><h3 class="featurette-heading" id="ROoST_Testing+Artifacts_section">3.1.  Testing Artifacts</h3>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 2 presents the conceptual model of the Testing Artifacts subontology.</p>
-<div class="container-fluid" align="center"><img src="images/Testing Artifacts.png" width="1261" class="map img-fluid" usemap="#Testing Artifacts"><map name="Testing Artifacts">
+<div class="container-fluid my-5" align="center"><img src="images/Testing Artifacts.png" width="1261" class="map img-fluid" usemap="#Testing Artifacts"><map name="Testing Artifacts">
 <area shape="rect" coords="1114,581,1251,617" href="http://dev.nemo.inf.ufes.br/seon/ROoST.html#ROoST_Code+To+Be+Tested" target="_blank" title="Portion of Code (software module) to be tested by a Test Case.">
 <area shape="rect" coords="603,216,753,252" href="http://dev.nemo.inf.ufes.br/seon/ROoST.html#ROoST_Test+Analysis+Report" target="_blank" title="Document containing the analysis of Test Results and how they succeed.">
 <area shape="rect" coords="268,216,376,252" href="http://dev.nemo.inf.ufes.br/seon/ROoST.html#ROoST_Test+Case" target="_blank" title="Document containing the input data, expected results, steps and general conditions for testing some situation regarding a Code To Be Tested.">
@@ -256,24 +202,24 @@
 <area shape="rect" coords="113,216,221,252" href="http://dev.nemo.inf.ufes.br/seon/ROoST.html#ROoST_Test+Suite" target="_blank" title="A collection of test cases that are intended to be used to test a software program to show that it has some specified set of behaviours (Wikipedia).">
 <area shape="rect" coords="719,369,827,405" href="http://dev.nemo.inf.ufes.br/seon/ROoST.html#ROoST_Test+Input" target="_blank" title="Descriptions of the parameters and values to be used in a test case, in order to produce an expected result.">
 <area shape="rect" coords="766,249,913,285" href="http://dev.nemo.inf.ufes.br/seon/ROoST.html#ROoST_Test+Incident+Report" target="_blank" title="Report describing any event that occurs during the testing process which requires investigation (adapted from ISO/IEC/IEEE 24765:2017 Systems and software engineering-Vocabulary)"></map>
-<p align="center" class="lead font-weight-bold">Figure 2. Testing Artifacts conceptual model.</p></div>
+<p align="center"><span class="font-weight-bold">Figure 2. </span>Testing Artifacts conceptual model.</p></div>
 <p align="justify" class="lead">Testing activities handle with several artifacts, which can present different nature and composition. Among the documents produced by testing activities the following detach: Test Plan, Test Suite, Test Case, Test Result and Test Analysis Report. Test Plans describe how the tests should be performed, providing a roadmap for the testing activities. Test Suites are collection of test cases that are intended to be used to test a software program to show that it has some specified set of behaviours. Test Cases are most important testing artifacts. They describe the input data, expected results, steps and general conditions for testing some situation regarding a Code To Be Tested. Some test cases are implemented by some Test Code, such as Test Driver, Stub or Test Script. Test Results documents the execution of a test case, and includes the Test Case Actual Result, and optionally a Test Incident Report. Finally, Test Analysis Reports documents the analyses done from a set of Test Results.</p>
 
 <hr class="featurette-divider"><h3 class="featurette-heading" id="ROoST_Testing+Stakeholders_section">3.2.  Testing Stakeholders</h3>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 3 presents the conceptual model of the Testing Stakeholders subontology.</p>
-<div class="container-fluid" align="center"><img src="images/Testing Stakeholders.png" width="375" class="map img-fluid" usemap="#Testing Stakeholders"><map name="Testing Stakeholders">
+<div class="container-fluid my-5" align="center"><img src="images/Testing Stakeholders.png" width="375" class="map img-fluid" usemap="#Testing Stakeholders"><map name="Testing Stakeholders">
 <area shape="rect" coords="130,104,271,140" href="http://dev.nemo.inf.ufes.br/seon/ROoST.html#ROoST_Test+Case+Designer" target="_blank" title="Stakeholder responsible for designing test cases and analysing test results.">
 <area shape="rect" coords="10,104,115,140" href="http://dev.nemo.inf.ufes.br/seon/ROoST.html#ROoST_Test+Manager" target="_blank" title="Stakeholder responsible for planning and managing the testing activities.">
 <area shape="rect" coords="283,104,365,140" href="http://dev.nemo.inf.ufes.br/seon/ROoST.html#ROoST_Tester" target="_blank" title="Stakeholder responsible for coding and executing test cases.">
 <area shape="rect" coords="150,10,267,46" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Stakeholder" target="_blank" title="Agent (Person, Team or Organization) interested or affected by the process activities or results."></map>
-<p align="center" class="lead font-weight-bold">Figure 3. Testing Stakeholders conceptual model.</p></div>
+<p align="center"><span class="font-weight-bold">Figure 3. </span>Testing Stakeholders conceptual model.</p></div>
 <p align="justify" class="lead">The main stakeholders involved in testing activities include Test Manager, Test Case Designer and Tester. These are roles that can be played by people, teams or even by organizations.</p>
 
 <hr class="featurette-divider"><h3 class="featurette-heading" id="ROoST_Testing+Techniques_section">3.3.  Testing Techniques</h3>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 4 presents the conceptual model of the Testing Techniques subontology.</p>
-<div class="container-fluid" align="center"><img src="images/Testing Techniques.png" width="649" class="map img-fluid" usemap="#Testing Techniques"><map name="Testing Techniques">
+<div class="container-fluid my-5" align="center"><img src="images/Testing Techniques.png" width="649" class="map img-fluid" usemap="#Testing Techniques"><map name="Testing Techniques">
 <area shape="rect" coords="347,10,433,46" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Technique" target="_blank" title="Procedure that provides heuristics to perform an activity (but in a less rigid and detailed way than a method, since it does not prescribe a set of activities).">
 <area shape="rect" coords="323,183,459,219" href="http://dev.nemo.inf.ufes.br/seon/ROoST.html#ROoST_Testing+Technique" target="_blank" title="Technique for designing test cases. It can be Black-box, White-box, Model-based or Mutation testing techniques, among others.">
 <area shape="rect" coords="10,183,179,219" href="http://dev.nemo.inf.ufes.br/seon/ROoST.html#ROoST_Testing+Technique+Type" target="_blank" title="Major types of testing techniques such as black-box, white-box, model-based and mutation testing techniques.">
@@ -282,13 +228,13 @@
 <area shape="rect" coords="376,290,599,326" href="http://dev.nemo.inf.ufes.br/seon/ROoST.html#ROoST_Model-based+Testing+Technique" target="_blank" title="Testing technique in which the test cases are derived from a model that describes the system under test.">
 <area shape="rect" coords="443,342,639,378" href="http://dev.nemo.inf.ufes.br/seon/ROoST.html#ROoST_Mutation+Testing+Technique" target="_blank" title="Testing technique in which two or more program mutations are executed using the same test cases to evaluate the ability of the test cases to detect differences in the mutations (ISO/IEC/IEEE 24765:2017 Systems and software engineering-Vocabulary)">
 <area shape="rect" coords="40,71,143,107" href="http://dev.nemo.inf.ufes.br/seon/ROoST.html#ROoST_Testing+Level" target="_blank" title="Levels in which testing activities are performed, such as Unit, Integration and System testing."></map>
-<p align="center" class="lead font-weight-bold">Figure 4. Testing Techniques conceptual model.</p></div>
+<p align="center"><span class="font-weight-bold">Figure 4. </span>Testing Techniques conceptual model.</p></div>
 <p align="justify" class="lead">For designing test case, several testing techniques apply. These testing techniques are classified according to Testing Technique Types, such as black-box, white-box, model-based and mutation testing techniques. Some Testing Techniques Types applies only to certain testing levels. For instance, white-box testing typically applies to unit testing. </p>
 
 <hr class="featurette-divider"><h3 class="featurette-heading" id="ROoST_Testing+Process_section">3.4.  Testing Process</h3>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 5 presents the conceptual model of the Testing Process and Activities subontology.</p>
-<div class="container-fluid" align="center"><img src="images/Testing Process and Activities.png" width="1301" class="map img-fluid" usemap="#Testing Process and Activities"><map name="Testing Process and Activities">
+<div class="container-fluid my-5" align="center"><img src="images/Testing Process and Activities.png" width="1301" class="map img-fluid" usemap="#Testing Process and Activities"><map name="Testing Process and Activities">
 <area shape="rect" coords="325,501,431,531" href="http://dev.nemo.inf.ufes.br/seon/ROoST.html#ROoST_Test+Planning" target="_blank" title="Composite Performed Activity for planning how the testing activities should be performed, and documenting it in a Test Plan.">
 <area shape="rect" coords="517,593,646,623" href="http://dev.nemo.inf.ufes.br/seon/ROoST.html#ROoST_Test+Case+Design" target="_blank" title="Simple Performed Activity for designing the Test Cases to be executed, supported by input artifacts.">
 <area shape="rect" coords="516,830,628,860" href="http://dev.nemo.inf.ufes.br/seon/ROoST.html#ROoST_Test+Execution" target="_blank" title="Simple Performed Activity for effectively executing the Test Cases, by running the Test Code and producing the Test Results.">
@@ -329,13 +275,13 @@
 <area shape="rect" coords="653,32,765,68" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Procedure" target="_blank" title="Normative Description prescribing a defined way for performing process activities.">
 <area shape="rect" coords="172,634,313,664" href="http://dev.nemo.inf.ufes.br/seon/ROoST.html#ROoST_Test+Case+Designer" target="_blank" title="Stakeholder responsible for designing test cases and analysing test results.">
 <area shape="rect" coords="10,600,113,636" href="http://dev.nemo.inf.ufes.br/seon/ROoST.html#ROoST_Testing+Level" target="_blank" title="Levels in which testing activities are performed, such as Unit, Integration and System testing."></map>
-<p align="center" class="lead font-weight-bold">Figure 5. Testing Process and Activities conceptual model.</p></div>
+<p align="center"><span class="font-weight-bold">Figure 5. </span>Testing Process and Activities conceptual model.</p></div>
 <p align="justify" class="lead">Testing Process is a Performed Process with the purpose of conducting dynamic software testing related activities, from planning to results analysis. It is composed of two main activities: Test Planning and Level-based Testing, performed respectively by the Test Manager and the Tester stakeholders. The former activity creates a Test Plan as a roadmap for conducting the following testing activities (such as testing design and execution). The Level-based Testing can be classified according to the testing level into: Unit Testing, Integration Testing and System Testing (among other). Level-based Testing activities are composed of the following testing activities: Test Case Design, Test Coding, Test Execution and Test Result Analysis. Thus, the testing activities can be performed according to the different testing levels (e.g. a Test Case Design focusing on Integration Testing). Concerning artifacts produced and used: (i) Test Case Design uses a Test Case Design Input (e.g. a requirements or a design document) for designing a Test Case containing the information for running the test; (ii) Test Coding creates Test Code implementing the defined Test Cases; (iii) Test Execution uses the Test Code for effectively testing the established Code To Be Tested, producing Test Results relative to the Test Cases; and, finally, (iv) Test Result Analysis produces a Test Analysis Report by examining the Test Results and determining whether the tests have been successful in identifying defects.</p>
 
 <hr class="featurette-divider"><h3 class="featurette-heading" id="ROoST_Testing+Environment_section">3.5.  Testing Environment</h3>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 6 presents the conceptual model of the Testing Environment subontology.</p>
-<div class="container-fluid" align="center"><img src="images/Testing Environment.png" width="783" class="map img-fluid" usemap="#Testing Environment"><map name="Testing Environment">
+<div class="container-fluid my-5" align="center"><img src="images/Testing Environment.png" width="783" class="map img-fluid" usemap="#Testing Environment"><map name="Testing Environment">
 <area shape="rect" coords="260,419,410,457" href="http://dev.nemo.inf.ufes.br/seon/ROoST.html#ROoST_Testing+Environment" target="_blank" title="The set of resources (Hardware and Software Resources) that are used to perform testing activities of a Project.">
 <area shape="rect" coords="161,248,302,286" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Hardware+Resource" target="_blank" title="Hardware Equipment when used as Resource of some process activity.">
 <area shape="rect" coords="10,152,161,190" href="SysSwO.html#SysSwO_Hardware+Equipment" target="_blank" title="DEFINIÇÃO NOVA: Physical Object used to process, transform, store, display or transmit information or data
@@ -352,81 +298,26 @@ DEFINIÇÃO ANTIGA: Physical Object used for running software programs or to sup
 <area shape="rect" coords="278,152,395,190" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Resource" target="_blank" title="Software Product or Hardware Equipment when used by a process activity.">
 <area shape="rect" coords="267,10,404,48" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Performed+Activity" target="_blank" title="Action performed, in a specific Time Interval, by a Stakeholder, potentially producing and consuming Artifacts, as part of a Specific Performed Process.">
 <area shape="rect" coords="261,585,409,623" href="http://dev.nemo.inf.ufes.br/seon/ROoST.html#ROoST_Level-based+Testing" target="_blank" title="Composite Performed Activity consisting of testing activities and classified by the different levels they can be performed."></map>
-<p align="center" class="lead font-weight-bold">Figure 6. Testing Environment conceptual model.</p></div>
+<p align="center"><span class="font-weight-bold">Figure 6. </span>Testing Environment conceptual model.</p></div>
 <p align="justify" class="lead">The testing environment is the collection of the Test Hardware and Software Resources that are used to perform the testing activities of a Project. Among the software tools that are used to support testing activities, there are Test Management Tools and Incident Management Tools.</p>
 </p>					
-				</div>
+			</div>
 
-				<hr>
+			<hr>
 
-				<div class="p-5 rounded" id="conceptsdefinition">
-					<h2 class="featurette-heading">4. Concepts Definition</h2>
-					<p class="lead">The following table shows the definitions for ROoST concepts.</p>		
-					<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->				
-					<div class="table-responsive">
-						<table class="table table-hover">
-							<thead>
-								<tr>
-									<th scope="col">Concept</th>
-									<th scope="col">Definition</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr><td><p id="ROoST_Black-box+Testing+Technique"><span class="font-weight-bold">Black-box Testing Technique</span><a class="text-muted" href=#ROoST_Black-box+Testing+Technique_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Testing technique that ignores the internal mechanism of a system or component and focuses solely on the outputs generated in response to selected inputs and execution conditions (adapted from ISO/IEC/IEEE 24765:2017 Systems and software engineering-Vocabulary)</p></td></tr>
-<tr><td><p id="ROoST_Code+To+Be+Tested"><span class="font-weight-bold">Code To Be Tested</span><a class="text-muted" href=#ROoST_Code+To+Be+Tested_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Portion of Code (software module) to be tested by a Test Case.</p></td></tr>
-<tr><td><p id="ROoST_Incident+Management+Tool"><span class="font-weight-bold">Incident Management Tool</span><a class="text-muted" href=#ROoST_Incident+Management+Tool_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Software product that manages and maintains lists of issues as needed by an organization (adapted from Wikipedia).</p></td></tr>
-<tr><td><p id="ROoST_Incident+Report"><span class="font-weight-bold">Incident Report</span><a class="text-muted" href=#ROoST_Incident+Report_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Report describing the occurrence, nature, and status of an incident (adapted from ISO/IEC/IEEE 29119-1:2013 Software and systems engineering--Software testing--Part 1: Concepts and definitions, 4.18).</p></td></tr>
-<tr><td><p id="ROoST_Integration+Testing"><span class="font-weight-bold">Integration Testing</span><a class="text-muted" href=#ROoST_Integration+Testing_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Level-based Testing focusing on larger components, ensuring that a collection of units functions as desired.</p></td></tr>
-<tr><td><p id="ROoST_Level-based+Testing"><span class="font-weight-bold">Level-based Testing</span><a class="text-muted" href=#ROoST_Level-based+Testing_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Composite Performed Activity consisting of testing activities and classified by the different levels they can be performed.</p></td></tr>
-<tr><td><p id="ROoST_Model-based+Testing+Technique"><span class="font-weight-bold">Model-based Testing Technique</span><a class="text-muted" href=#ROoST_Model-based+Testing+Technique_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Testing technique in which the test cases are derived from a model that describes the system under test.</p></td></tr>
-<tr><td><p id="ROoST_Mutation+Testing+Technique"><span class="font-weight-bold">Mutation Testing Technique</span><a class="text-muted" href=#ROoST_Mutation+Testing+Technique_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Testing technique in which two or more program mutations are executed using the same test cases to evaluate the ability of the test cases to detect differences in the mutations (ISO/IEC/IEEE 24765:2017 Systems and software engineering-Vocabulary)</p></td></tr>
-<tr><td><p id="ROoST_Stub"><span class="font-weight-bold">Stub</span><a class="text-muted" href=#ROoST_Stub_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Skeletal or special-purpose test code substituting a software module, used to test a module that calls or is otherwise dependent on it (adapted from ISO/IEC/IEEE 24765:2017 Systems and software engineering - Vocabulary)</p></td></tr>
-<tr><td><p id="ROoST_System+Testing"><span class="font-weight-bold">System Testing</span><a class="text-muted" href=#ROoST_System+Testing_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Level-based Testing focusing on the behavior of the entire system, ensuring that it is in conformance with its requirements.</p></td></tr>
-<tr><td><p id="ROoST_Test+Analysis+Report"><span class="font-weight-bold">Test Analysis Report</span><a class="text-muted" href=#ROoST_Test+Analysis+Report_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Document containing the analysis of Test Results and how they succeed.</p></td></tr>
-<tr><td><p id="ROoST_Test+Case"><span class="font-weight-bold">Test Case</span><a class="text-muted" href=#ROoST_Test+Case_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Document containing the input data, expected results, steps and general conditions for testing some situation regarding a Code To Be Tested.</p></td></tr>
-<tr><td><p id="ROoST_Test+Case+Actual+Result"><span class="font-weight-bold">Test Case Actual Result</span><a class="text-muted" href=#ROoST_Test+Case+Actual+Result_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>The actual result obtained from the execution of a test case.</p></td></tr>
-<tr><td><p id="ROoST_Test+Case+Design"><span class="font-weight-bold">Test Case Design</span><a class="text-muted" href=#ROoST_Test+Case+Design_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Simple Performed Activity for designing the Test Cases to be executed, supported by input artifacts.</p></td></tr>
-<tr><td><p id="ROoST_Test+Case+Design+Input"><span class="font-weight-bold">Test Case Design Input</span><a class="text-muted" href=#ROoST_Test+Case+Design+Input_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Some Artifact defined as an input for the Test Case Design.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> Requirements Document, Design Document, Code.</span></p></td></tr>
-<tr><td><p id="ROoST_Test+Case+Designer"><span class="font-weight-bold">Test Case Designer</span><a class="text-muted" href=#ROoST_Test+Case+Designer_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Stakeholder responsible for designing test cases and analysing test results.</p></td></tr>
-<tr><td><p id="ROoST_Test+Case+Expected+Result"><span class="font-weight-bold">Test Case Expected Result</span><a class="text-muted" href=#ROoST_Test+Case+Expected+Result_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>The result expected from the execution of a test case.</p></td></tr>
-<tr><td><p id="ROoST_Test+Code"><span class="font-weight-bold">Test Code</span><a class="text-muted" href=#ROoST_Test+Code_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Code produced for implementing a Test Case.</p></td></tr>
-<tr><td><p id="ROoST_Test+Coding"><span class="font-weight-bold">Test Coding</span><a class="text-muted" href=#ROoST_Test+Coding_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Simple Performed Activity for implementing the Test Cases as Code artifacts (Test Code) to be used during Test Execution.</p></td></tr>
-<tr><td><p id="ROoST_Test+Driver"><span class="font-weight-bold">Test Driver</span><a class="text-muted" href=#ROoST_Test+Driver_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Software item used to invoke a module under test and, often, provide test inputs, control and monitor execution, and report test results (adapted from ISO/IEC/IEEE 24765:2017 Systems and software engineering-Vocabulary).</p></td></tr>
-<tr><td><p id="ROoST_Test+Execution"><span class="font-weight-bold">Test Execution</span><a class="text-muted" href=#ROoST_Test+Execution_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Simple Performed Activity for effectively executing the Test Cases, by running the Test Code and producing the Test Results.</p></td></tr>
-<tr><td><p id="ROoST_Test+Hardware+Resource"><span class="font-weight-bold">Test Hardware Resource</span><a class="text-muted" href=#ROoST_Test+Hardware+Resource_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Hardware Resource that comprises the Testing Environment of a Project.</p></td></tr>
-<tr><td><p id="ROoST_Test+Incident+Report"><span class="font-weight-bold">Test Incident Report</span><a class="text-muted" href=#ROoST_Test+Incident+Report_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Report describing any event that occurs during the testing process which requires investigation (adapted from ISO/IEC/IEEE 24765:2017 Systems and software engineering-Vocabulary)</p></td></tr>
-<tr><td><p id="ROoST_Test+Input"><span class="font-weight-bold">Test Input</span><a class="text-muted" href=#ROoST_Test+Input_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Descriptions of the parameters and values to be used in a test case, in order to produce an expected result.</p></td></tr>
-<tr><td><p id="ROoST_Test+Management+Tool"><span class="font-weight-bold">Test Management Tool</span><a class="text-muted" href=#ROoST_Test+Management+Tool_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Software Product used to store information on how testing is to be done, plan testing activities and report the status of testing activities (adpated from Wikipedia).</p></td></tr>
-<tr><td><p id="ROoST_Test+Manager"><span class="font-weight-bold">Test Manager</span><a class="text-muted" href=#ROoST_Test+Manager_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Stakeholder responsible for planning and managing the testing activities.</p></td></tr>
-<tr><td><p id="ROoST_Test+Plan"><span class="font-weight-bold">Test Plan</span><a class="text-muted" href=#ROoST_Test+Plan_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Document describing how the tests should be performed, providing a roadmap for the testing activities.</p></td></tr>
-<tr><td><p id="ROoST_Test+Planning"><span class="font-weight-bold">Test Planning</span><a class="text-muted" href=#ROoST_Test+Planning_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Composite Performed Activity for planning how the testing activities should be performed, and documenting it in a Test Plan.</p></td></tr>
-<tr><td><p id="ROoST_Test+Result"><span class="font-weight-bold">Test Result</span><a class="text-muted" href=#ROoST_Test+Result_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Document containing the actual results and identified issues relative to a Test Case execution.</p></td></tr>
-<tr><td><p id="ROoST_Test+Result+Analysis"><span class="font-weight-bold">Test Result Analysis</span><a class="text-muted" href=#ROoST_Test+Result+Analysis_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Simple Performed Activity for analyzing Test Results to determine whether or not tests have been successful in identifying defects.</p></td></tr>
-<tr><td><p id="ROoST_Test+Script"><span class="font-weight-bold">Test Script</span><a class="text-muted" href=#ROoST_Test+Script_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Short program written in a programming language used to test part of the functionality of a software system. Test scripts written as a short program can either be written using a special automated functional GUI test tool or in a well-known programming language (Wikipedia).</p></td></tr>
-<tr><td><p id="ROoST_Test+Software+Resource"><span class="font-weight-bold">Test Software Resource</span><a class="text-muted" href=#ROoST_Test+Software+Resource_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Software Resource that comprises the Testing Environment of a Project.</p></td></tr>
-<tr><td><p id="ROoST_Test+Suite"><span class="font-weight-bold">Test Suite</span><a class="text-muted" href=#ROoST_Test+Suite_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>A collection of test cases that are intended to be used to test a software program to show that it has some specified set of behaviours (Wikipedia).</p></td></tr>
-<tr><td><p id="ROoST_Tester"><span class="font-weight-bold">Tester</span><a class="text-muted" href=#ROoST_Tester_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Stakeholder responsible for coding and executing test cases.</p></td></tr>
-<tr><td><p id="ROoST_Testing+Environment"><span class="font-weight-bold">Testing Environment</span><a class="text-muted" href=#ROoST_Testing+Environment_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>The set of resources (Hardware and Software Resources) that are used to perform testing activities of a Project.</p></td></tr>
-<tr><td><p id="ROoST_Testing+Level"><span class="font-weight-bold">Testing Level</span><a class="text-muted" href=#ROoST_Testing+Level_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Levels in which testing activities are performed, such as Unit, Integration and System testing.</p></td></tr>
-<tr><td><p id="ROoST_Testing+Process"><span class="font-weight-bold">Testing Process</span><a class="text-muted" href=#ROoST_Testing+Process_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Specific Performed Process for planning and executing the dynamic testing activities for the software in development.</p></td></tr>
-<tr><td><p id="ROoST_Testing+Technique"><span class="font-weight-bold">Testing Technique</span><a class="text-muted" href=#ROoST_Testing+Technique_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Technique for designing test cases. It can be Black-box, White-box, Model-based or Mutation testing techniques, among others.</p></td></tr>
-<tr><td><p id="ROoST_Testing+Technique+Type"><span class="font-weight-bold">Testing Technique Type</span><a class="text-muted" href=#ROoST_Testing+Technique+Type_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Major types of testing techniques such as black-box, white-box, model-based and mutation testing techniques.</p></td></tr>
-<tr><td><p id="ROoST_Unit+Testing"><span class="font-weight-bold">Unit Testing</span><a class="text-muted" href=#ROoST_Unit+Testing_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Level-based Testing focusing on the unit or the individual components that have been developed, ensuring that the unit functions correctly in isolation.</p></td></tr>
-<tr><td><p id="ROoST_White-box+Testing+Technique"><span class="font-weight-bold">White-box Testing Technique</span><a class="text-muted" href=#ROoST_White-box+Testing+Technique_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Testing Technique in which the tests are derived from an examination of the structure of the code to be tested (adapted from ISO/IEC/IEEE 29119-1:2013 Software and systems engineering--Software testing--Part 1: Concepts and definitions)</p></td></tr>
-
-							</tbody>
-							<caption><small>ROoST concepts definition.</small></caption>
-						</table>
-  				</div>
-
-
-
-				<!--	<table style="width: 100%" border="1" cellpadding="6">
-						<tbody>
-							<tr style="background-color: #D8D8D8">
-								<td style="width: 25%"><b>Concept</b></td>
-								<td style="width: 75%"><b>Definition</b></td>
+			<div class="p-5 rounded" id="conceptsdefinition">
+				<h2 class="featurette-heading">4. Concepts Definition</h2>
+				<p class="lead">The following table shows the definitions for ROoST concepts.</p>		
+				
+				<div class="table-responsive my-5">
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th scope="col">Concept</th>
+								<th scope="col">Definition</th>
 							</tr>
+						</thead>
+						<tbody>
 							<tr><td><p id="ROoST_Black-box+Testing+Technique"><span class="font-weight-bold">Black-box Testing Technique</span><a class="text-muted" href=#ROoST_Black-box+Testing+Technique_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Testing technique that ignores the internal mechanism of a system or component and focuses solely on the outputs generated in response to selected inputs and execution conditions (adapted from ISO/IEC/IEEE 24765:2017 Systems and software engineering-Vocabulary)</p></td></tr>
 <tr><td><p id="ROoST_Code+To+Be+Tested"><span class="font-weight-bold">Code To Be Tested</span><a class="text-muted" href=#ROoST_Code+To+Be+Tested_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Portion of Code (software module) to be tested by a Test Case.</p></td></tr>
 <tr><td><p id="ROoST_Incident+Management+Tool"><span class="font-weight-bold">Incident Management Tool</span><a class="text-muted" href=#ROoST_Incident+Management+Tool_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Software product that manages and maintains lists of issues as needed by an organization (adapted from Wikipedia).</p></td></tr>
@@ -470,16 +361,18 @@ DEFINIÇÃO ANTIGA: Physical Object used for running software programs or to sup
 <tr><td><p id="ROoST_White-box+Testing+Technique"><span class="font-weight-bold">White-box Testing Technique</span><a class="text-muted" href=#ROoST_White-box+Testing+Technique_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Testing Technique in which the tests are derived from an examination of the structure of the code to be tested (adapted from ISO/IEC/IEEE 29119-1:2013 Software and systems engineering--Software testing--Part 1: Concepts and definitions)</p></td></tr>
 
 						</tbody>
-					</table>-->
-
+						<caption><small>ROoST concepts definition.</small></caption>
+					</table>
 				</div>
 
-				<hr>		
+			</div>
 
-				<div class="p-5 rounded" id="detailedconcepts">
-					<h2 class="featurette-heading">5. Detailed Concepts</h2>
-					<p class="lead">Reference Ontology on Software Testing (ROoST) detailed concepts.</p>					
-					<hr><div class="container-fluid" id="ROoST_Black-box+Testing+Technique_detail"><h4><i class="bi bi-diagram-3"></i> ROoST::Black-box Testing Technique</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code class="text-muted">&lt&ltsubkind&gt&gt</code>
+			<hr>		
+
+			<div class="p-5 rounded" id="detailedconcepts">
+				<h2 class="featurette-heading">5. Detailed Concepts</h2>
+				<p class="lead">Reference Ontology on Software Testing (ROoST) detailed concepts.</p>					
+				<hr><div class="container-fluid" id="ROoST_Black-box+Testing+Technique_detail"><h4><i class="bi bi-diagram-3"></i> ROoST::Black-box Testing Technique</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code class="text-muted">&lt&ltsubkind&gt&gt</code>
 <br/><span class="font-weight-bold text-center">Black-box Testing Technique</span></p></div><br/><h5>Specializes:</h5><p><i class="bi bi-diagram-2"></i> ROoST::Testing Technique</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Testing technique that ignores the internal mechanism of a system or component and focuses solely on the outputs generated in response to selected inputs and execution conditions (adapted from ISO/IEC/IEEE 24765:2017 Systems and software engineering-Vocabulary)</p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p></p></div></div></div>
 
 <hr><div class="container-fluid" id="ROoST_Code+To+Be+Tested_detail"><h4><i class="bi bi-diagram-3"></i> ROoST::Code To Be Tested</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code class="text-muted">&lt&ltrole&gt&gt</code>
@@ -722,9 +615,9 @@ Testing Technique (0..*) instanceOf (1..1) Testing Technique Type<br/>
 <br/><span class="font-weight-bold text-center">White-box Testing Technique</span></p></div><br/><h5>Specializes:</h5><p><i class="bi bi-diagram-2"></i> ROoST::Testing Technique</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Testing Technique in which the tests are derived from an examination of the structure of the code to be tested (adapted from ISO/IEC/IEEE 29119-1:2013 Software and systems engineering--Software testing--Part 1: Concepts and definitions)</p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p></p></div></div></div>
 
 
-				</div>
-				
-			</main>
+			</div>
+			
+		</main>
 	
     <footer class="p-5 rounded border-top">
     	<div class="row justify-content-md-center">
@@ -797,7 +690,7 @@ Testing Technique (0..*) instanceOf (1..1) Testing Technique Type<br/>
 				<div class="col-md-auto">
 					<small>
 						<span class="text-muted">
-						Tue Dec 14 21:27:59 BRT 2021
+						Wed Dec 15 22:38:29 BRT 2021
 						</span>
 					</small>
 				</div>
@@ -809,15 +702,12 @@ Testing Technique (0..*) instanceOf (1..1) Testing Technique Type<br/>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+	  <script type="text/javascript" src="bootstrap/jquery/jquery-3.5.1.slim.min.js"></script>
 
-    <script src="bootstrap-5.1.3-dist/js/jquery-3.2.1.slim.min.js"></script>
+	  <script type="text/javascript" src="bootstrap/js/popper-1.16.1.min.js"></script>
 
-    <script src="bootstrap-5.1.3-dist/js/popper.min.js"></script>
+	  <script type="text/javascript" src="bootstrap/4.6.1-dist/js/bootstrap.min.js"></script>
 
-
-    <script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
-
-    <script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
 
     <script type="text/javascript" src="jquery.min.js"></script>
 		<script type="text/javascript" src="maphilight.js"></script>
@@ -888,7 +778,14 @@ Testing Technique (0..*) instanceOf (1..1) Testing Technique Type<br/>
 			});			
 			
 		</script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-WXTXYYCXMP"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
 
+		  gtag('config', 'G-WXTXYYCXMP');
+		</script>
 	</body>
-	<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 </html>

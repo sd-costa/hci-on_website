@@ -1,233 +1,179 @@
 <!doctype html>
-
 <html lang="en">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	    <meta name="description" content="">
-	    <meta name="author" content="Simone Dornelas Costa">
-	    <meta charset="ISO-8859-1">
-	    
-	
-	    <title>Software Process Ontology (SPO)</title>
-	
-	    <!-- Bootstrap core CSS -->
-	    <link href="bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
-	    
-	    <!-- Custom styles for this template -->
-	    <link href="bootstrap-5.1.3-dist/css/navbar-top-fixed.css" rel="stylesheet">
-	    <link href="bootstrap-5.1.3-dist/css/sticky-footer-navbar.css" rel="stylesheet">
-	    <link href="bootstrap-5.1.3-dist/css/carousel.css" rel="stylesheet">
+      <meta name="description" content="">
+      <meta name="author" content="Simone Dornelas Costa">
+      <meta name="generator" content="Simone Dornelas Costa">
+      <title>HCI-ON</title>    
 
-	    <!-- ICONS -->
-	    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <!-- Bootstrap core CSS -->
+      <link rel="stylesheet" type="text/css" href="bootstrap/4.6.1-dist/css/bootstrap.min.css">
+      
+      
+      <!-- ICONS -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-	    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 
-	    <style>
-	      .bd-placeholder-img {
-	        font-size: 1.125rem;
-	        text-anchor: middle;
-	        -webkit-user-select: none;
-	        -moz-user-select: none;
-	        -ms-user-select: none;
-	        user-select: none;
-	      }
+      <!-- favicon -->
+      <link rel="icon" type="image/svg+xml" sizes="48x48" href="images/diagram-3-fill.svg">
 
-	      @media (min-width: 768px) {
-	        .bd-placeholder-img-lg {
-	          font-size: 3.5rem;
-	        }
-	      }
+      <style>   
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
 
-	      .h2, .h3, h2, h3 {
-	      	margin-bottom: 2.5rem;
-	      }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      </style>
+     
+     <!-- Custom styles for this template -->
+     <link href="bootstrap/css/carousel.css" rel="stylesheet">
+      
+    </head>
 
+  <body>
 
-	      .span {
-	      	font-size: 2rem;
-	      }
-
-	      .featurette-heading {
-	        margin-top: 0;
-	      }
-
-	      
-
-	    </style>
-
-	  <!--.h6, h6 {
-	      	margin-bottom: 2.5rem;
-	      	margin-top: 2.5rem;	
-	      }-->  
-	    
-<!--	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
-	    
-	    
-	<link rel="icon" type="image/svg+xml" sizes="48x48" href="images/diagram-3-fill.svg">
-  </head>
-
-  <body data-new-gr-c-s-check-loaded="14.1038.0" data-gr-ext-installed="">
-
-	<header>
-	
-	<!--MAIN fixed navbar -->	
-	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-	  <!--<div class="container-fluid">-->
-	    <a class="navbar-brand" href="hci-on.html">HCI-ON</a>
-	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	      <span class="navbar-toggler-icon"></span>
-	    </button>
-	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-	        <li class="nav-item">
-	          <a class="nav-link" aria-current="page" href="index.html">Home</a>
-	        </li>
-
-	        <li class="nav-item dropdown">
-	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-	            The Network
-	          </a>
-	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item fst-italic" href="hci-on.html#architecture" tabindex="-1" aria-disabled="true">Architecture</a></li>
-	            <li><a class="dropdown-item fst-italic" href="hci-on.html#hcionmechanism" tabindex="-1" aria-disabled="true">Evolution Mechanisms</a></li>
-	            <li><a class="dropdown-item fst-italic" href="hci-on.html#hcionseon" tabindex="-1" aria-disabled="true">Relationship with SEON</a></li>
-	          	<li><hr class="dropdown-divider"></li>
-
-	            <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Foundational Layer</a></li>
-	            <li><a class="dropdown-item" href="UFO.html">UFO - Unified Foundational Ontology</a></li>
-
-	            <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Core Layer</a></li>
-	            <li><a class="dropdown-item" href="HCIO.html">HCIO - Human-Computer Interaction Ontology</a></li>
-
-	            <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Domain Layer</a></li>
-	            <li><a class="dropdown-item" href="HCIDO.html">HCIDO - Human-Computer Interaction Design Ontology</a></li>
-							<li><a class="dropdown-item" href="HCIEO.html">HCIEO - Human-Computer Interaction Evaluation Ontology</a></li>
-							<!--<li><a class="dropdown-item" href="HCIDPO.html">HCIDPO - Human-Computer Interaction Design Process Ontology</a></li>-->
-							<li><a class="dropdown-item" href="UIT&EO.html">UIT&EO - UI Types and Elements Ontology</a></li>
-							<li><a class="dropdown-item" href="HCIMO.html">HCIMO - HCI Modality Ontology</a></li>
-							<li><a class="dropdown-item" href="CUO.html">CUO - Context of Use Ontology</a></li>
-							<li><a class="dropdown-item" href="UCO.html">UCO - User Characterization Ontology</a></li>
-							<li><a class="dropdown-item" href="HCIQCO.html">HCIQCO - HCI Quality Characteristics Ontology</a></li>
-	          </ul>
-	        </li>
-
-	        <li class="nav-item dropdown">
-	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-	            Features
-	          </a>
-	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item" href="SearchFrames.html">Concepts Searcher</a></li>
-	            <li><a class="dropdown-item" href="NetworkGraph.html">Graph</a></li>
-	            <li><a class="dropdown-item" href="NetworkStats.html">Stats</a></li>
-	            <li><a class="dropdown-item" href="videos.html">Videos</a></li>
-	            <!--<li><hr class="dropdown-divider"></li>
-	            <li><a class="dropdown-item" href="SeonFeedback.html">Feedback</a></li>-->
-	          </ul>
-	        </li>
-
-	        <!--<li class="nav-item dropdown">
-	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-	            More
-	          </a>
-	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item" href="SEON.owl" target="_blank">Operational Version (in OWL)</a></li>
-	            <li><a class="dropdown-item" href="#">Astah file</a></li>
-	            <li><a class="dropdown-item" href="#">Specifications</a></li>
-	            <li><a class="dropdown-item" href="#">Publications</a></li>
-	          </ul>
-	        </li>-->
-
-					<li class="nav-item dropdown">
-	          <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-	            SPO
-	          </a>
-	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item" href="#ontologydescription">Ontology Description</a></li>
-	            <li><a class="dropdown-item" href="#relatedontologies">Related Ontologies</a></li>
-	            <li><a class="dropdown-item" href="#ontologymodels">Ontology Models</a></li>
-	            <li><a class="dropdown-item" href="#conceptsdefinition">Concepts Definition</a></li>
-	            <li><a class="dropdown-item" href="#detailedconcepts">Detailed Concepts</a></li>
-	          </ul>
-	        </li>
-
-<!--	        <li class="nav-item">
-	          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-	        </li>-->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="HCI-ON.html">HCI-ON</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
         
-	      </ul>
-	      
-	    </div>
-	  <!--</div>-->
-	</nav>	
-		
-	
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+            The Network
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="HCI-ON.html">HCI-ON</a>
+            <a class="dropdown-item" href="HCI-ON.html#architecture">Architecture</a>
+            <a class="dropdown-item" href="HCI-ON.html#hcionmechanism">Evolution Mechanism</a>
+            <a class="dropdown-item" href="HCI-ON.html#hcionseon">Relationship with SEON</a>
+          </div>
+        </li>
 
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+            Networked Ontologies
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        
+            <a class="dropdown-item disabled">Foundational Layer</a>
+            <a class="dropdown-item" href="UFO.html">UFO</a>
 
-	
-		</header>
+            <a class="dropdown-item disabled">Core Layer</a>
+            <a class="dropdown-item" href="HCIO.html">HCIO</a>
 
-		<!-- Begin page content -->
-    <main role="main" class="container-fluid">	
-    		
-				<!--<div class="bg-light p-5 rounded" id="ontologydescription">
-    			<h1 class="featurette-heading">The Software Process Ontology (SPO)</h1>
-					<p class="lead" align="justify"><span class="text-muted font-weight-bold font-italic">Ontology Description. </span>The Software Process Ontology (SPO) aims at establishing a common conceptualization on the Software Process domain, including processes, activities, resources, people, artifacts and procedures. As a core ontology, SPO provides the general concepts for software processes, to be specialized and reused in domain-specific ontologies.</p>
-					<p class="lead text-right text-muted font-italic"><i class="bi bi-star-half"></i> core ontology from SEON</p>
-    		</div>-->
+            <a class="dropdown-item disabled">Domain Layer</a>
+            <a class="dropdown-item" href="HCIDO.html">HCIDO</a>
+            <a class="dropdown-item" href="HCIEO.html">HCIEO</a>
+            <a class="dropdown-item" href="UIT&EO.html">UIT&EO</a>
+            <a class="dropdown-item" href="HCIMO.html">HCIMO</a>
+            <a class="dropdown-item" href="CUO.html">CUO</a>
+            <a class="dropdown-item" href="UCO.html">UCO</a>
+            <a class="dropdown-item" href="HCIQCO.html">HCIQCO</a>
+            
+          </div>
+        </li>
 
-				<div class="bg-light p-5 rounded">
-					<div class="container-fluid d-flex justify-content-end"><span class="badge badge-danger text-lowercase"></span></div>
-    			<h1 class="featurette-heading">The Software Process Ontology (SPO)</h1>
-    			<p class="lead text-right font-italic"><i class="bi bi-star-half"></i> core ontology from SEON</p>
-    		</div>
-	
-				<hr> 
-				   		
-    		<div class="p-5 rounded" id="ontologydescription">
-  				<h2 class="featurette-heading">1. Ontology Description</h2>
-  				<p class="lead" align="justify">The Software Process Ontology (SPO) aims at establishing a common conceptualization on the Software Process domain, including processes, activities, resources, people, artifacts and procedures. As a core ontology, SPO provides the general concepts for software processes, to be specialized and reused in domain-specific ontologies.</p>
-    		</div>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+            Features
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="SearchFrames.html">Concepts Searcher</a> 
+            <a class="dropdown-item" href="NetworkGraph.html">Graph</a>
+            <a class="dropdown-item" href="NetworkStats.html">Stats</a>
+            <a class="dropdown-item" href="videos.html">Videos</a>
+          </div>
+        </li>
 
-				<hr>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+            SPO
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#ontologydescription">Ontology Description</a> 
+            <a class="dropdown-item" href="#relatedontologies">Related Ontologies</a>
+            <a class="dropdown-item" href="#ontologymodels">Ontology Models</a>
+            <a class="dropdown-item" href="#conceptsdefinition">Concepts Definition</a>
+            <a class="dropdown-item" href="#detailedconcepts">Detailed Concepts</a>
+          </div>
+        </li>
 
-				<div class="p-5 rounded" id="relatedontologies">
-					<h2 class="featurette-heading">2. Related Ontologies</h2>
-					<p class="lead">Networked ontologies used by SPO:</p>	
+      </ul>
+    </div>
+  </nav>
+
+	<!-- Begin page content -->
+  <main role="main" class="container-fluid">	
+
+			<div class="bg-light p-5 rounded">
+				<div class="container-fluid d-flex justify-content-end"><span class="badge badge-danger text-lowercase"></span></div>
+  			<h1 class="featurette-heading">The Software Process Ontology (SPO)</h1>
+  			<p class="lead text-right font-italic"><i class="bi bi-star-half"></i> core ontology from SEON</p>
+  		</div>
+
+			<hr> 
+			   		
+  		<div class="p-5 rounded" id="ontologydescription">
+				<h2 class="featurette-heading">1. Ontology Description</h2>
+				<p class="lead" align="justify">The Software Process Ontology (SPO) aims at establishing a common conceptualization on the Software Process domain, including processes, activities, resources, people, artifacts and procedures. As a core ontology, SPO provides the general concepts for software processes, to be specialized and reused in domain-specific ontologies.</p>
+  		</div>
+
+			<hr>
+
+			<div class="p-5 rounded" id="relatedontologies">
+				<h2 class="featurette-heading">2. Related Ontologies</h2>
+				<p class="lead">Networked ontologies used by SPO:</p>	
+				
+				<div class="table-responsive my-5">
 					
-					<div class="table-responsive">
-						
-						<table class="table table-hover">
-							<thead>
-								<tr>
-									<th scope="col">Ontology</th>
-									<th scope="col">Relation</th>
-									<th scope="col">Integration Level</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr><td><a class="text-muted" href="http://dev.nemo.inf.ufes.br/seon/EO.html" target="_blank">EO - Enterprise Ontology (external)</a></td><td>Some concepts from the Enterprise core Ontology are used by SPO.</td><td style="text-align:center">Medium</td></tr>
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th scope="col">Ontology</th>
+								<th scope="col">Relation</th>
+								<th scope="col">Integration Level</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr><td><a class="text-muted" href="http://dev.nemo.inf.ufes.br/seon/EO.html" target="_blank">EO - Enterprise Ontology (external)</a></td><td>Some concepts from the Enterprise core Ontology are used by SPO.</td><td style="text-align:center">Medium</td></tr>
 <tr><td><a class="text-muted" href="SysSwO.html" target="_blank">SysSwO - System and Software Ontology</a></td><td></td><td style="text-align:center"></td></tr>
 <tr><td><a class="text-muted" href="UFO.html">UFO - Unified Foundational Ontology</a></td><td>The SPO concepts are derived from UFO (mostly social entities from UFO-C).</td><td style="text-align:center">High</td></tr>
 <tr><td><a class="text-muted" href="SysSwO.html" target="_blank">SysSwO - System and Software Ontology</a></td><td></td><td style="text-align:center"></td></tr>
 <tr><td><a class="text-muted" href="SysSwO.html" target="_blank">SysSwO - System and Software Ontology</a></td><td></td><td style="text-align:center"></td></tr>
 
-							</tbody>
-						</table>
-  					<caption><small>Ontologies (re)used by SPO.</small></caption>
-  				</div>
+						</tbody>
+					</table>
+					<caption><small>Ontologies (re)used by SPO.</small></caption>
+				</div>
 
-				</div>	
+			</div>	
 
-				<hr>
-    	
-				<div class="p-5 rounded" id="ontologymodels">
-					<h2 class="featurette-heading">3. Ontology Models</h2>
-					<p class="lead"><p class="lead">Figure 1 presents the packages of the SPO Modularization .</p>
-<div class="container-fluid" align="center"><img src="images/SPO Modularization .png" width="771" class="map img-fluid" usemap="#SPO Modularization "><map name="SPO Modularization ">
+			<hr>
+  	
+			<div class="p-5 rounded" id="ontologymodels">
+				<h2 class="featurette-heading">3. Ontology Models</h2>
+				<p class="lead"><p class="lead">Figure 1 presents the packages of the SPO Modularization .</p>
+<div class="container-fluid my-5" align="center"><img src="images/SPO Modularization .png" width="771" class="map img-fluid" usemap="#SPO Modularization "><map name="SPO Modularization ">
 <area shape="rect" coords="25,51,234,121" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Standard+Process+Structure_section" target="_blank" title="">
 <area shape="rect" coords="286,51,499,121" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Standard+Activity+Definition_section" target="_blank" title="">
 <area shape="rect" coords="25,210,233,280" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Intended+Process+Structure_section" target="_blank" title="">
@@ -246,11 +192,11 @@
 <area shape="rect" coords="560,313,729,708" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Process+Assets_section" target="_blank" title="">
 <area shape="rect" coords="591,622,707,692" href="SysSwO.html#SysSwO_Sw+Artifacts_section" target="_blank" title="">
 <area shape="rect" coords="576,177,728,247" href="http://dev.nemo.inf.ufes.br/seon/EO.html#EO_EO_section" target="_blank" title=""></map>
-<p align="center" class="lead font-weight-bold">Figure 1. SPO Modularization .</p></div>
+<p align="center"><span class="font-weight-bold">Figure 1. </span>SPO Modularization .</p></div>
 <p align="justify" class="lead">Process-related packages address the three SPO process levels, describing processes and activities, how they are composed and related to their assets: (i) Standard Processes, described in the Standard Software Process Definition package; (ii) Intended Processes, represented in the Intended Software Process Definition and Scheduling package; and (iii) Performed Processes, depicted in the Software Process Execution package. All the process levels use process assets that are classified in four types: Agents, Artifacts, Resources, and Procedures.</p>
 <p class="lead">Figure 2 presents the SPO Color Pattern.</p>
-<div class="container-fluid" align="center"><img class="map img-fluid" src="images/SPO Color Pattern.png">
-<p align="center" class="lead font-weight-bold">Figure 2. SPO Color Pattern.</p></div>
+<div class="container-fluid my-5" align="center"><img class="map img-fluid" src="images/SPO Color Pattern.png">
+<p align="center"><span class="font-weight-bold">Figure 2. </span>SPO Color Pattern.</p></div>
 <p align="justify" class="lead">In order to facilitate concepts identification, SPO adopts a color pattern for differentiating the main notions in the ontology: concepts in Yellow are related to processes and activities, concepts in Green refer to artifacts, concepts in Blue concern agents, concepts in Purple are related to resources as hardware and software, concepts in Pink refer to procedures. Concepts in Gray are external, from other SEON ontologies. Darker colors represent types. White is used for domain concepts in domain ontologies.</p>
 
 <hr class="featurette-divider"><h3 class="featurette-heading" id="SPO_Intended+Software+Process+Definition_section">3.1.  Intended Software Process Definition</h3>
@@ -259,7 +205,7 @@
 <hr class="featurette-divider"><h3 class="featurette-heading" id="SPO_Allocation_section">3.1.1.  Allocation</h4>
 <p class="lead" align="justify">The Allocation package deals with allocating Stakeholders to perform Intended Activities by playing a certain Organizational Role.</p>
 <p class="lead">Figure 3 presents the conceptual model of the Allocation subontology.</p>
-<div class="container-fluid" align="center"><img src="images/Allocation.png" width="772" class="map img-fluid" usemap="#Allocation"><map name="Allocation">
+<div class="container-fluid my-5" align="center"><img src="images/Allocation.png" width="772" class="map img-fluid" usemap="#Allocation"><map name="Allocation">
 <area shape="rect" coords="383,172,519,202" href="UFO.html#UFO_Social+Role" target="" title="">
 <area shape="rect" coords="369,240,536,270" href="http://dev.nemo.inf.ufes.br/seon/EO.html#EO_Organizational+Role" target="_blank" title="A Social Role, recognized by the Organization, assigned to Agents when they are hired, included in a team, allocated or participating in activities.">
 <area shape="rect" coords="240,10,393,40" href="UFO.html#UFO_Social+Relator" target="" title="">
@@ -268,13 +214,13 @@
 <area shape="rect" coords="10,10,116,40" href="UFO.html#UFO_Agent" target="" title="Agents are Substantials (Functional Complexes or Collectives) that can bear special kinds of Intrinsic Moments named Intentional Moments.">
 <area shape="rect" coords="634,104,760,134" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Intended+Activity" target="_blank" title="Intention (Internal Commitment) representing the activity defined to be performed as part of an Intended Process, by a defined role, potentially consuming and producing artifacts, using resources and adopting procedures.">
 <area shape="rect" coords="636,10,762,40" href="UFO.html#UFO_Intention" target="" title="Intentions are desired state of affairs (situations) for which the agent commits at pursuing (@e.g., the Intention of going to a beach resort for the next summer break)."></map>
-<p align="center" class="lead font-weight-bold">Figure 3. Allocation conceptual model.</p></div>
+<p align="center"><span class="font-weight-bold">Figure 3. </span>Allocation conceptual model.</p></div>
 <p align="justify" class="lead">Stakeholders can be allocated to Scheduled Activities. A Stakeholder Allocation defines the relation representing a Stakeholder allocated to perform a Scheduled Activity acting an Organizational Role (e.g. the allocation of John as a Programmer to perform the scheduled Coding activity).</p>
 
 <hr class="featurette-divider"><h3 class="featurette-heading" id="SPO_Intended+Activity+Definition_section">3.1.2.  Intended Activity Definition</h4>
 <p class="lead" align="justify">The Intended Activity Definition sub-ontology allows defining the process assets planned to be involved in  Intended Activities.</p>
 <p class="lead">Figure 4 presents the conceptual model of the Intended Activity Definition subontology.</p>
-<div class="container-fluid" align="center"><img src="images/Intended Activity Definition.png" width="864" class="map img-fluid" usemap="#Intended Activity Definition"><map name="Intended Activity Definition">
+<div class="container-fluid my-5" align="center"><img src="images/Intended Activity Definition.png" width="864" class="map img-fluid" usemap="#Intended Activity Definition"><map name="Intended Activity Definition">
 <area shape="rect" coords="720,164,846,222" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Intended+Activity" target="_blank" title="Intention (Internal Commitment) representing the activity defined to be performed as part of an Intended Process, by a defined role, potentially consuming and producing artifacts, using resources and adopting procedures.">
 <area shape="rect" coords="10,10,181,40" href="UFO.html#UFO_Action+Universal" target="" title="">
 <area shape="rect" coords="127,164,254,221" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Standard+Activity" target="_blank" title="Action Universal representing a generic activity institutionalized as part of a Standard Process in an Organization, establishing general information such as dependence on other activities, types of artifacts created, changed and used, required software and hardware resources, adopted procedures, and roles to perform it.">
@@ -285,13 +231,13 @@
 <area shape="rect" coords="429,338,544,368" href="SysSwO.html#SysSwO_Hardware+Type" target="_blank" title="Object Kind which is the powertype of Hardware Equipment, classifying its specializations.">
 <area shape="rect" coords="10,97,140,127" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Activity+Universal" target="_blank" title="Action Universal representing any generic activity in an Organization (formalized or not), which is the powertype of every Performed Activity.">
 <area shape="rect" coords="429,162,552,222" href="SysSwO.html#SysSwO_Sw+Artifact+Type" target="_blank" title="Object Kind which is the powertype of Artifact, classifying its specializations."></map>
-<p align="center" class="lead font-weight-bold">Figure 4. Intended Activity Definition conceptual model.</p></div>
+<p align="center"><span class="font-weight-bold">Figure 4. </span>Intended Activity Definition conceptual model.</p></div>
 <p align="justify" class="lead">An Intended Activity needs to define its relations with the process assets. As an adaptation of a Standard Activity considering the peculiarities of its context, it can reuse and adapt the assets established at the standard level. Thus, an Intended Activity can define the Organizational Role responsible for performing it (e.g. a Requirements activity that is to be performed by a person with the role Requirements Engineer); the types of Artifacts to be created, changed or used (e.g. a Project Planning activity that creates an artifact of the type Project Plan); the types of required resources (e.g. a Testing activity requiring a software of the type Testing Tool); and the adopted Procedures (e.g. a Conceptual Modeling activity adopting a OO Method).</p>
 
 <hr class="featurette-divider"><h3 class="featurette-heading" id="SPO_Intended+Process+Structure_section">3.1.3.  Intended Process Structure</h4>
 <p class="lead" align="justify">The Intended Process Structure sub-ontology aims at describing intended processes in terms of sub-processes and activities.</p>
 <p class="lead">Figure 5 presents the conceptual model of the Intended Process Structure subontology.</p>
-<div class="container-fluid" align="center"><img src="images/Intended Process Structure.png" width="1221" class="map img-fluid" usemap="#Intended Process Structure"><map name="Intended Process Structure">
+<div class="container-fluid my-5" align="center"><img src="images/Intended Process Structure.png" width="1221" class="map img-fluid" usemap="#Intended Process Structure"><map name="Intended Process Structure">
 <area shape="rect" coords="588,481,714,511" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Intended+Activity" target="_blank" title="Intention (Internal Commitment) representing the activity defined to be performed as part of an Intended Process, by a defined role, potentially consuming and producing artifacts, using resources and adopting procedures.">
 <area shape="rect" coords="530,250,657,280" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Intended+Process" target="_blank" title="Intention (Internal Commitment) representing the process defined to be performed in a specific project or organizational area, considering its particularities.">
 <area shape="rect" coords="896,145,1018,175" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Software+Project" target="_blank" title="A Project related to software development or maintenance.">
@@ -322,13 +268,13 @@ A Social Agent involving people and other agents and facilities with an arrangem
 <area shape="rect" coords="1001,191,1168,221" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_General+Project+Process" target="_blank" title="">
 <area shape="rect" coords="1000,269,1167,299" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Specific+Project+Process" target="_blank" title="">
 <area shape="rect" coords="912,72,998,102" href="http://dev.nemo.inf.ufes.br/seon/EO.html#EO_Project" target="_blank" title="A Social Object as a temporary endeavor undertaken to create a unique product, service, or result."></map>
-<p align="center" class="lead font-weight-bold">Figure 5. Intended Process Structure conceptual model.</p></div>
+<p align="center"><span class="font-weight-bold">Figure 5. </span>Intended Process Structure conceptual model.</p></div>
 <p align="justify" class="lead">An Intended Process refers to the commitments made for defining a process intended to be performed in a specific project or organizational area, considering its peculiarities. It is often defined by adapting a Standard Process, considering a specific context. For Projects, it is a Project Process defining how to conduct the activities within the Project (e.g. the Development Process defined for the Alpha Project). It also can be defined in an organizational context, regardless of specific projects, being an Organizational Intended Process (e.g. the Human Resource Management Process defined for hiring new Employees). Intended Processes can be general or specific. A General Intended Process is composed of at least two Specific Intended Processes (e.g. a Training Process composed of Planning, Preparation, Execution and Evaluation Processes). A Specific Intended Process is composed of at least two Intended Activities.<br/>An Intended Activity refers to the commitments made within a broader Intended Process. Analogously, it uses to be adapted from a Standard Activity, and can be composite or simple. A Composite Standard Activity is composed of other two or more Intended Activities; a Simple Intended Activity is not decomposable into smaller activities. Moreover, Intended Activities can depend on other Intended Activities.</p>
 
 <hr class="featurette-divider"><h3 class="featurette-heading" id="SPO_Scheduled+Process_section">3.1.4.  Scheduled Process</h4>
 <p class="lead" align="justify">The Scheduled Process package aims at scheduling intended processes and activities.</p>
 <p class="lead">Figure 6 presents the conceptual model of the Scheduled Processes and Activities subontology.</p>
-<div class="container-fluid" align="center"><img src="images/Scheduled Processes and Activities.png" width="411" class="map img-fluid" usemap="#Scheduled Processes and Activities"><map name="Scheduled Processes and Activities">
+<div class="container-fluid my-5" align="center"><img src="images/Scheduled Processes and Activities.png" width="411" class="map img-fluid" usemap="#Scheduled Processes and Activities"><map name="Scheduled Processes and Activities">
 <area shape="rect" coords="170,225,315,288" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Scheduled+Activity" target="_blank" title="An Intended Activity defining the time interval it is planned to be performed.">
 <area shape="rect" coords="299,84,402,114" href="UFO.html#UFO_Appointment" target="" title="">
 <area shape="rect" coords="195,10,297,40" href="UFO.html#UFO_Commitment" target="" title="">
@@ -336,7 +282,7 @@ A Social Agent involving people and other agents and facilities with an arrangem
 <area shape="rect" coords="18,152,145,182" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Intended+Process" target="_blank" title="Intention (Internal Commitment) representing the process defined to be performed in a specific project or organizational area, considering its particularities.">
 <area shape="rect" coords="10,225,155,288" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Scheduled+Process" target="_blank" title="An Intended Process defining the Time Interval it is planned to be performed.">
 <area shape="rect" coords="56,85,279,115" href="UFO.html#UFO_Intention" target="" title="Intentions are desired state of affairs (situations) for which the agent commits at pursuing (@e.g., the Intention of going to a beach resort for the next summer break)."></map>
-<p align="center" class="lead font-weight-bold">Figure 6. Scheduled Processes and Activities conceptual model.</p></div>
+<p align="center"><span class="font-weight-bold">Figure 6. </span>Scheduled Processes and Activities conceptual model.</p></div>
 <p align="justify" class="lead">Scheduled Processes and Activities are specializations of Intended Processes and Activities (respectively), defined as appointments scheduled for a specific period of time. For example, the intended Testing Process of the Alpha Project can be scheduled for September 1st to 20th. Since Scheduled Process and Activity specialize Intended Process and Activity, they inherit all the relations (such as compositions, assets and adaptations) and remain information.</p>
 
 <hr class="featurette-divider"><h3 class="featurette-heading" id="SPO_Process+Assets_section">3.2.  Process Assets</h3>
@@ -345,7 +291,7 @@ A Social Agent involving people and other agents and facilities with an arrangem
 <hr class="featurette-divider"><h3 class="featurette-heading" id="SPO_Stakeholders_section">3.2.1.  Stakeholders</h4>
 <p class="lead" align="justify">The Stakeholders sub-ontology deals with the different types of stakeholders in a software process.</p>
 <p class="lead">Figure 7 presents the conceptual model of the Stakeholders subontology.</p>
-<div class="container-fluid" align="center"><img src="images/Stakeholders.png" width="683" class="map img-fluid" usemap="#Stakeholders"><map name="Stakeholders">
+<div class="container-fluid my-5" align="center"><img src="images/Stakeholders.png" width="683" class="map img-fluid" usemap="#Stakeholders"><map name="Stakeholders">
 <area shape="rect" coords="436,281,532,311" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Stakeholder" target="_blank" title="Agent (Person, Team or Organization) interested or affected by the process activities or results.">
 <area shape="rect" coords="538,151,649,181" href="UFO.html#UFO_Person" target="" title="Same as UFO::Human Agent
 A human Physical Agent.">
@@ -360,13 +306,13 @@ A Social Agent involving people and other agents and facilities with an arrangem
 <area shape="rect" coords="281,84,427,114" href="UFO.html#UFO_Social+Agent" target="" title="">
 <area shape="rect" coords="143,320,285,350" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Project+Stakeholder" target="_blank" title="Stakeholder interested in a particular Project.">
 <area shape="rect" coords="513,85,673,115" href="UFO.html#UFO_Physical+Agent" target="" title=""></map>
-<p align="center" class="lead font-weight-bold">Figure 7. Stakeholders conceptual model.</p></div>
+<p align="center"><span class="font-weight-bold">Figure 7. </span>Stakeholders conceptual model.</p></div>
 <p align="justify" class="lead">SPO considers three main types of Agents: Person, representing the people as the employees, external collaborators and any other person in the context of the processes; Team, addressing the groups established with a purpose in an organization or project; and Organization, expressing organizations such as clients, partners and suppliers.<br/>Stakeholder represents the agents interested or affected by the process activities or results. Considering the agent nature, Stakeholders can be classified in three types: Person Stakeholder (such as a hired Programmer, an external Instructor, or a User), Team Stakeholder (such as the Software Engineering Process Group - SEPG, a Quality Assurance or a Testing Team), and Organization Stakeholder (such as a Project Client or a Quality Assessment Organization). A specific type of Stakeholder is Project Stakeholder, representing any stakeholder interested in a particular Project (such as the Project Team, the Users, and the Project's Client Organization).</p>
 
 <hr class="featurette-divider"><h3 class="featurette-heading" id="SPO_Resources_section">3.2.2.  Resources</h4>
 <p class="lead" align="justify">The Resources sub-ontology deals with the different types of resources used in a software process.</p>
 <p class="lead">Figure 8 presents the conceptual model of the Resources subontology.</p>
-<div class="container-fluid" align="center"><img src="images/Resources.png" width="849" class="map img-fluid" usemap="#Resources"><map name="Resources">
+<div class="container-fluid my-5" align="center"><img src="images/Resources.png" width="849" class="map img-fluid" usemap="#Resources"><map name="Resources">
 <area shape="rect" coords="461,217,588,247" href="SysSwO.html#SysSwO_Software+Product" target="_blank" title="One or more computer programs together with any accompanying auxiliary items, such as documentation, delivered under a single name, ready for use.">
 <area shape="rect" coords="324,45,433,75" href="UFO.html#UFO_Object" target="" title="Non-agentive substantial individuals. Objects can be Physical or Social.">
 <area shape="rect" coords="234,217,385,247" href="SysSwO.html#SysSwO_Hardware+Equipment" target="_blank" title="DEFINIÇÃO NOVA: Physical Object used to process, transform, store, display or transmit information or data
@@ -382,13 +328,13 @@ DEFINIÇÃO ANTIGA: Physical Object used for running software programs or to sup
 <area shape="rect" coords="10,45,152,75" href="UFO.html#UFO_Object+Kind" target="" title="">
 <area shape="rect" coords="707,143,830,173" href="SysSwO.html#SysSwO_Sw+Artifact+Type" target="_blank" title="Object Kind which is the powertype of Artifact, classifying its specializations.">
 <area shape="rect" coords="584,284,668,314" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_CASE+Tool" target="_blank" title=""></map>
-<p align="center" class="lead font-weight-bold">Figure 8. Resources conceptual model.</p></div>
+<p align="center"><span class="font-weight-bold">Figure 8. </span>Resources conceptual model.</p></div>
 <p align="justify" class="lead">Hardware Equipments are physical objects used for running software programs or to support some related action. They are classified by Hardware Type and can be computers, printers, routers, among others. Software Products are artifacts representing (a set of) computer programs ready to be used for supporting software process activities. They are classified by Software Product Type and can be development tools, text editors, libraries, among others. Both Hardware Equipments and Software Products are considered Resources (Hardware Resource and Software Resource) when used by some process activity.</p>
 
 <hr class="featurette-divider"><h3 class="featurette-heading" id="SPO_Procedures_section">3.2.3.  Procedures</h4>
 <p class="lead" align="justify">The Procedures sub-ontology deals with the different types of procedures adopted in a software process.</p>
 <p class="lead">Figure 9 presents the conceptual model of the Procedures subontology.</p>
-<div class="container-fluid" align="center"><img src="images/Procedures.png" width="740" class="map img-fluid" usemap="#Procedures"><map name="Procedures">
+<div class="container-fluid my-5" align="center"><img src="images/Procedures.png" width="740" class="map img-fluid" usemap="#Procedures"><map name="Procedures">
 <area shape="rect" coords="470,142,553,172" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Procedure" target="_blank" title="Normative Description prescribing a defined way for performing process activities.">
 <area shape="rect" coords="443,209,589,239" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Document+Template" target="_blank" title="Procedure aiming to establish a uniform way for preparing a Document, providing a predefined format and a defined structure for filling with the expected information.">
 <area shape="rect" coords="314,209,381,239" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Method" target="_blank" title="Systematic Procedure defining a workflow of activities (a set of steps) and heuristics to perform one or more activities.">
@@ -402,7 +348,7 @@ DEFINIÇÃO ANTIGA: Physical Object used for running software programs or to sup
 <area shape="rect" coords="171,485,335,515" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Simple+Method+Activity" target="_blank" title="Method Activity that is not further decomposed into other Method Activities.">
 <area shape="rect" coords="355,485,545,515" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Composite+Method+Activity" target="_blank" title="Method Activity composed of other Method Activities.">
 <area shape="rect" coords="10,76,181,106" href="UFO.html#UFO_Action+Universal" target="" title=""></map>
-<p align="center" class="lead font-weight-bold">Figure 9. Procedures conceptual model.</p></div>
+<p align="center"><span class="font-weight-bold">Figure 9. </span>Procedures conceptual model.</p></div>
 <p align="justify" class="lead">Procedures are normative descriptions prescribing a defined way for performing the activities that adopt it. They can be of three types: Method, Technique and Document Template. A Method is a systematic procedure defining a workflow of activities (a set of steps) and heuristics to perform one or more activities. As a Method can be applied for different activities, it can have one or more Method Workflows (e.g. an OO Method can provide distinct workflows for the analysis and design activities), denoting a combination of Method Activities for the execution of process activities. Technique is a procedure that provides heuristics to perform an activity (but in a less rigid and detailed way than a Method, since it does not prescribe a set of activities). Examples of Techniques are pair programming, white-box testing, and brainstorming. Finally, a Document Template is a procedure establishing a uniform way for preparing a Document, providing a predefined format and a defined structure for filling it with the required information (e.g. a Project Plan Template, a Test Report Template).</p>
 
 <hr class="featurette-divider"><h3 class="featurette-heading" id="SPO_Software+Process+Execution_section">3.3.  Software Process Execution</h3>
@@ -411,7 +357,7 @@ DEFINIÇÃO ANTIGA: Physical Object used for running software programs or to sup
 <hr class="featurette-divider"><h3 class="featurette-heading" id="SPO_Performed+Process_section">3.3.1.  Performed Process</h4>
 <p class="lead" align="justify">The Performed Process sub-ontology deals with Performed Processes and Activities, and how they are decomposed.</p>
 <p class="lead">Figure 10 presents the conceptual model of the Performed Process subontology.</p>
-<div class="container-fluid" align="center"><img src="images/Performed Process.png" width="1235" class="map img-fluid" usemap="#Performed Process"><map name="Performed Process">
+<div class="container-fluid my-5" align="center"><img src="images/Performed Process.png" width="1235" class="map img-fluid" usemap="#Performed Process"><map name="Performed Process">
 <area shape="rect" coords="429,435,566,493" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Performed+Process" target="_blank" title="Complex Action, composed of other processes or activities, performed in a specific Time Interval, for reaching a goal in a Project or Organization.">
 <area shape="rect" coords="873,533,1010,591" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Performed+Activity" target="_blank" title="Action performed, in a specific Time Interval, by a Stakeholder, potentially producing and consuming Artifacts, as part of a Specific Performed Process.">
 <area shape="rect" coords="791,647,998,677" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Performed+Composite+Activity" target="_blank" title="Performed Activity composed of other Performed Activities.">
@@ -438,13 +384,13 @@ A Social Agent involving people and other agents and facilities with an arrangem
 <area shape="rect" coords="384,244,499,274" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Project+Process" target="_blank" title="Intended Process defined to be performed within a Project.">
 <area shape="rect" coords="1074,364,1189,394" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Project+Activity" target="_blank" title="Intended Activity defined to be performed within a Project, and thus that is part of a Project Process.">
 <area shape="rect" coords="1037,647,1221,677" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Performed+Project+Activity" target="_blank" title=""></map>
-<p align="center" class="lead font-weight-bold">Figure 10. Performed Process conceptual model.</p></div>
+<p align="center"><span class="font-weight-bold">Figure 10. </span>Performed Process conceptual model.</p></div>
 <p align="justify" class="lead">Performed Processes and Activities are actions performed in a specific period of time, in the past. They typically are the processes or activities executed in a project or organization by some agent. A Performed Process can occur in a Project, configuring a Project Performed Process (such as a performed Design Process), or in the context of an Organization, configuring an Organizational Performed Process (such as a performed Recruitment Process).<br/>A Performed Process can be general or specific. A General Performed Process is composed of two or more Specific Performed Processes (e.g. a Development Process can be composed of Requirements, Design, Construction and Test Processes). Specific Performed Processes are composed of two or more Performed Activities. A Performed Activity, analogously, can be simple or composite. A Composite Performed Activity is composed of other Performed Activities; a Simple Performed Activity is an atomic action that cannot be decomposed into smaller activities. Performed Activities can also depend on other Performed Activities (e.g. a Review activity that depends on a Documentation activity).</p>
 
 <hr class="featurette-divider"><h3 class="featurette-heading" id="SPO_Artifact+Participation_section">3.3.2.  Artifact Participation</h4>
 <p class="lead" align="justify">The Artifact Participation sub-ontology deals with the participation of artifacts in performed activities.</p>
 <p class="lead">Figure 11 presents the conceptual model of the Artifact Participation subontology.</p>
-<div class="container-fluid" align="center"><img src="images/Artifact Participation.png" width="810" class="map img-fluid" usemap="#Artifact Participation"><map name="Artifact Participation">
+<div class="container-fluid my-5" align="center"><img src="images/Artifact Participation.png" width="810" class="map img-fluid" usemap="#Artifact Participation"><map name="Artifact Participation">
 <area shape="rect" coords="308,148,445,178" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Performed+Activity" target="_blank" title="Action performed, in a specific Time Interval, by a Stakeholder, potentially producing and consuming Artifacts, as part of a Specific Performed Process.">
 <area shape="rect" coords="321,77,430,107" href="UFO.html#UFO_Action" target="" title="Actions are intentional events, i.e. they are caused by Intentions. Actions are events which instantiate a Plan (Action Universal) with the specific purpose of satisfying (the propositional content of) some Intention.">
 <area shape="rect" coords="31,77,177,107" href="UFO.html#UFO_Participation" target="" title="A participation is the portion of an event which depends exclusively on a single object. Each of participations is itself an event that can be complex or atomic but which existentially depends on a single substantial. Take for instance the event e: the stabbing of Caesar by Brutus. In this event we have the participation of Caesar himself, of Brutus and of the knife. In this case, e is composed of the individual participation of each of these entities.">
@@ -459,13 +405,13 @@ A Social Agent involving people and other agents and facilities with an arrangem
 <area shape="rect" coords="349,513,458,543" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Artifact+Usage" target="_blank" title="Artifact Participation in which an existing Artifact is used, but not modified.">
 <area shape="rect" coords="297,475,421,505" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Artifact+Creation" target="_blank" title="Artifact Participation in which a new Artifact is created.">
 <area shape="rect" coords="250,437,368,467" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Artifact+Change" target="_blank" title="Artifact Participation in which an existing Artifact is modified."></map>
-<p align="center" class="lead font-weight-bold">Figure 11. Artifact Participation conceptual model.</p></div>
+<p align="center"><span class="font-weight-bold">Figure 11. </span>Artifact Participation conceptual model.</p></div>
 <p align="justify" class="lead">Performed Activities handle Artifacts by creating, changing and using them. Thus, there are three types of Artifact Participation in Performed Activities: Artifact Creation, producing a new artifact (e.g. the creation of a Conceptual Model by the Conceptual Modeling activity), Artifact Change, modifying an existing artifact (e.g. the updating of a Conceptual Model by a Maintenance activity), and Artifact Usage, when an existing artifact is used by an activity, but not changed (e.g. a Conceptual Model used by the Detailed Design activity). These participations can be expressed by a relator (one of the Artifact Participation specializations), or by the corresponding material relation (creates, changes, uses).</p>
 
 <hr class="featurette-divider"><h3 class="featurette-heading" id="SPO_Stakeholder+Participation_section">3.3.3.  Stakeholder Participation</h4>
 <p class="lead" align="justify">The Stakeholder Participation sub-ontology deals with the participation of stakeholders in performed activities.</p>
 <p class="lead">Figure 12 presents the conceptual model of the Stakeholder Participation subontology.</p>
-<div class="container-fluid" align="center"><img src="images/Stakeholder Participation.png" width="808" class="map img-fluid" usemap="#Stakeholder Participation"><map name="Stakeholder Participation">
+<div class="container-fluid my-5" align="center"><img src="images/Stakeholder Participation.png" width="808" class="map img-fluid" usemap="#Stakeholder Participation"><map name="Stakeholder Participation">
 <area shape="rect" coords="535,297,672,327" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Performed+Activity" target="_blank" title="Action performed, in a specific Time Interval, by a Stakeholder, potentially producing and consuming Artifacts, as part of a Specific Performed Process.">
 <area shape="rect" coords="549,79,658,109" href="UFO.html#UFO_Action" target="" title="Actions are intentional events, i.e. they are caused by Intentions. Actions are events which instantiate a Plan (Action Universal) with the specific purpose of satisfying (the propositional content of) some Intention.">
 <area shape="rect" coords="339,79,485,109" href="UFO.html#UFO_Participation" target="" title="A participation is the portion of an event which depends exclusively on a single object. Each of participations is itself an event that can be complex or atomic but which existentially depends on a single substantial. Take for instance the event e: the stabbing of Caesar by Brutus. In this event we have the participation of Caesar himself, of Brutus and of the knife. In this case, e is composed of the individual participation of each of these entities.">
@@ -480,13 +426,13 @@ A Social Agent involving people and other agents and facilities with an arrangem
 <area shape="rect" coords="637,429,798,459" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Stakeholder+Allocation" target="_blank" title="Social Relator representing a Stakeholder allocated to perform a Scheduled Activity acting an Organizational Role.">
 <area shape="rect" coords="640,212,793,242" href="UFO.html#UFO_Social+Relator" target="" title="">
 <area shape="rect" coords="308,476,519,506" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Stakeholder+Main+Participation" target="_blank" title="The participation of a Stakeholder as the main responsible for a Performed Activity, playing an Organizational Role."></map>
-<p align="center" class="lead font-weight-bold">Figure 12. Stakeholder Participation conceptual model.</p></div>
+<p align="center"><span class="font-weight-bold">Figure 12. </span>Stakeholder Participation conceptual model.</p></div>
 <p align="justify" class="lead">A Stakeholder participates in Performed Activities, executing or contributing for them. A Stakeholder Participation represents the participation of a Stakeholder in a Performed Activity playing an Organizational Role (as the participation of a John acting as Designer in a User Interface Design activity). When a Stakeholder participates as the responsible for a Performed Activity, this is a Stakeholder Main Participation (as the participation, including the responsibility taken, of a Project Manager in a Project Planning activity). These two types of participations can also be expressed by the respective participates in and is in charge of material relations.</p>
 
 <hr class="featurette-divider"><h3 class="featurette-heading" id="SPO_Resource+Participation_section">3.3.4.  Resource Participation</h4>
 <p class="lead" align="justify">The Resource Participation sub-ontology deals with the participation of resources in performed activities.</p>
 <p class="lead">Figure 13 presents the conceptual model of the Resource Participation subontology.</p>
-<div class="container-fluid" align="center"><img src="images/Resource Participation.png" width="821" class="map img-fluid" usemap="#Resource Participation"><map name="Resource Participation">
+<div class="container-fluid my-5" align="center"><img src="images/Resource Participation.png" width="821" class="map img-fluid" usemap="#Resource Participation"><map name="Resource Participation">
 <area shape="rect" coords="316,141,453,171" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Performed+Activity" target="_blank" title="Action performed, in a specific Time Interval, by a Stakeholder, potentially producing and consuming Artifacts, as part of a Specific Performed Process.">
 <area shape="rect" coords="330,77,439,107" href="UFO.html#UFO_Action" target="" title="Actions are intentional events, i.e. they are caused by Intentions. Actions are events which instantiate a Plan (Action Universal) with the specific purpose of satisfying (the propositional content of) some Intention.">
 <area shape="rect" coords="98,77,244,107" href="UFO.html#UFO_Participation" target="" title="A participation is the portion of an event which depends exclusively on a single object. Each of participations is itself an event that can be complex or atomic but which existentially depends on a single substantial. Take for instance the event e: the stabbing of Caesar by Brutus. In this event we have the participation of Caesar himself, of Brutus and of the knife. In this case, e is composed of the individual participation of each of these entities.">
@@ -507,13 +453,13 @@ DEFINIÇÃO ANTIGA: Physical Object used for running software programs or to sup
 <area shape="rect" coords="10,325,132,355" href="UFO.html#UFO_Creation" target="" title="">
 <area shape="rect" coords="233,325,349,355" href="UFO.html#UFO_Change" target="" title="">
 <area shape="rect" coords="701,350,780,380" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Resource" target="_blank" title="Software Product or Hardware Equipment when used by a process activity."></map>
-<p align="center" class="lead font-weight-bold">Figure 13. Resource Participation conceptual model.</p></div>
+<p align="center"><span class="font-weight-bold">Figure 13. </span>Resource Participation conceptual model.</p></div>
 <p align="justify" class="lead">Performed Activities can use Resources during their execution. These resources can be a Software Resource (such as a Text Editor) or a Hardware Resource (such as a Laser Printer). These two types of participations can also be expressed by the respective participates in and is in charge of material relations. These participations of Resources in Performed Activities can be expressed by the relators Software Resource Participation or Hardware Resource Participation, or by the uses material relation.</p>
 
 <hr class="featurette-divider"><h3 class="featurette-heading" id="SPO_Procedure+Participation_section">3.3.5.  Procedure Participation</h4>
 <p class="lead" align="justify">The Procedure Participation sub-ontology deals with the adoption of procedures in performed activities.</p>
 <p class="lead">Figure 14 presents the conceptual model of the Procedure Participation subontology.</p>
-<div class="container-fluid" align="center"><img src="images/Procedure Participation.png" width="809" class="map img-fluid" usemap="#Procedure Participation"><map name="Procedure Participation">
+<div class="container-fluid my-5" align="center"><img src="images/Procedure Participation.png" width="809" class="map img-fluid" usemap="#Procedure Participation"><map name="Procedure Participation">
 <area shape="rect" coords="341,335,478,365" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Performed+Activity" target="_blank" title="Action performed, in a specific Time Interval, by a Stakeholder, potentially producing and consuming Artifacts, as part of a Specific Performed Process.">
 <area shape="rect" coords="355,77,464,107" href="UFO.html#UFO_Action" target="" title="Actions are intentional events, i.e. they are caused by Intentions. Actions are events which instantiate a Plan (Action Universal) with the specific purpose of satisfying (the propositional content of) some Intention.">
 <area shape="rect" coords="114,77,260,107" href="UFO.html#UFO_Participation" target="" title="A participation is the portion of an event which depends exclusively on a single object. Each of participations is itself an event that can be complex or atomic but which existentially depends on a single substantial. Take for instance the event e: the stabbing of Caesar by Brutus. In this event we have the participation of Caesar himself, of Brutus and of the knife. In this case, e is composed of the individual participation of each of these entities.">
@@ -527,7 +473,7 @@ DEFINIÇÃO ANTIGA: Physical Object used for running software programs or to sup
 <area shape="rect" coords="644,428,727,458" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Procedure" target="_blank" title="Normative Description prescribing a defined way for performing process activities.">
 <area shape="rect" coords="590,278,799,308" href="UFO.html#UFO_Normative+Description" target="" title="Normative Descriptions are Social Objects that define one or more rules/norms recognized by at least one Social Agent and that can define other Social objects (the crown of the king of Spain) or Social Roles (such as president, PhD candidate or pedestrian). @Examples of normative descriptions include the Brazilian Constitution, the Federal University of Espírito Santo PhD program regulation, but also a set of directives on how to perform some actions within an organization (a Plan Description).">
 <area shape="rect" coords="616,215,765,245" href="UFO.html#UFO_Social+Object" target="" title=""></map>
-<p align="center" class="lead font-weight-bold">Figure 14. Procedure Participation conceptual model.</p></div>
+<p align="center"><span class="font-weight-bold">Figure 14. </span>Procedure Participation conceptual model.</p></div>
 <p align="justify" class="lead">Performed Activities adopt Procedures for helping their execution. For example, when a Conceptual Modeling activity adopts an OO Method, or a Design Documentation activity adopts a Design Document Template. These participations of Procedures in Performed Activities can be expressed by the relator Procedure Participation, or by the adopts material relation.</p>
 
 <hr class="featurette-divider"><h3 class="featurette-heading" id="SPO_Standard+Software+Process+Definition_section">3.4.  Standard Software Process Definition</h3>
@@ -536,7 +482,7 @@ DEFINIÇÃO ANTIGA: Physical Object used for running software programs or to sup
 <hr class="featurette-divider"><h3 class="featurette-heading" id="SPO_Standard+Activity+Definition_section">3.4.1.  Standard Activity Definition</h4>
 <p class="lead" align="justify">The Standard Activity Definition package deals with the definition of standard process assets involved in standard activities.</p>
 <p class="lead">Figure 15 presents the conceptual model of the Standard Activity Definition subontology.</p>
-<div class="container-fluid" align="center"><img src="images/Standard Activity Definition.png" width="628" class="map img-fluid" usemap="#Standard Activity Definition"><map name="Standard Activity Definition">
+<div class="container-fluid my-5" align="center"><img src="images/Standard Activity Definition.png" width="628" class="map img-fluid" usemap="#Standard Activity Definition"><map name="Standard Activity Definition">
 <area shape="rect" coords="144,10,353,40" href="UFO.html#UFO_Normative+Description" target="" title="Normative Descriptions are Social Objects that define one or more rules/norms recognized by at least one Social Agent and that can define other Social objects (the crown of the king of Spain) or Social Roles (such as president, PhD candidate or pedestrian). @Examples of normative descriptions include the Brazilian Constitution, the Federal University of Espírito Santo PhD program regulation, but also a set of directives on how to perform some actions within an organization (a Plan Description).">
 <area shape="rect" coords="425,201,552,250" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Standard+Activity" target="_blank" title="Action Universal representing a generic activity institutionalized as part of a Standard Process in an Organization, establishing general information such as dependence on other activities, types of artifacts created, changed and used, required software and hardware resources, adopted procedures, and roles to perform it.">
 <area shape="rect" coords="394,11,565,41" href="UFO.html#UFO_Action+Universal" target="" title="">
@@ -548,13 +494,13 @@ DEFINIÇÃO ANTIGA: Physical Object used for running software programs or to sup
 <area shape="rect" coords="198,128,281,158" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Procedure" target="_blank" title="Normative Description prescribing a defined way for performing process activities.">
 <area shape="rect" coords="446,376,561,406" href="SysSwO.html#SysSwO_Hardware+Type" target="_blank" title="Object Kind which is the powertype of Hardware Equipment, classifying its specializations.">
 <area shape="rect" coords="430,75,560,105" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Activity+Universal" target="_blank" title="Action Universal representing any generic activity in an Organization (formalized or not), which is the powertype of every Performed Activity."></map>
-<p align="center" class="lead font-weight-bold">Figure 15. Standard Activity Definition conceptual model.</p></div>
+<p align="center"><span class="font-weight-bold">Figure 15. </span>Standard Activity Definition conceptual model.</p></div>
 <p align="justify" class="lead">A Standard Activity, institutionalized as a generic action, establishes a number of relations with the process assets or their types. These relations are important for guiding the definition of processes and activities in the other two process levels (Intended and Performed).<br/>Standard Activities can depend on other Standard Activities, setting a preferred execution order. A Standard Activity can define the types of Artifacts to be created, changed or used (e.g. a Requirements Documentation activity that creates an artifact of the type Requirements Document). A Standard Activity can establish the types of its required resources (e.g. a Conceptual Modeling activity requiring a software product of the type UML Modeling Tool). Standard Activities can also set up their adopted Procedures (e.g. a Coding activity adopting a Programming Technique). Finally, the Standard Activities can define the Organizational Roles that should perform them (e.g. a Design activity that is to be performed by a person playing the Designer role).</p>
 
 <hr class="featurette-divider"><h3 class="featurette-heading" id="SPO_Standard+Process+Structure_section">3.4.2.  Standard Process Structure</h4>
 <p class="lead" align="justify">The Standard Process Structure package aims at describing standard processes in terms of sub-processes and activities.</p>
 <p class="lead">Figure 16 presents the conceptual model of the Standard Process Structure subontology.</p>
-<div class="container-fluid" align="center"><img src="images/Standard Process Structure.png" width="929" class="map img-fluid" usemap="#Standard Process Structure"><map name="Standard Process Structure">
+<div class="container-fluid my-5" align="center"><img src="images/Standard Process Structure.png" width="929" class="map img-fluid" usemap="#Standard Process Structure"><map name="Standard Process Structure">
 <area shape="rect" coords="457,273,585,303" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Standard+Process" target="_blank" title="Complex Action Universal representing a generic process institutionalized in an Organization, establishing basic requirements for Intended Processes to be performed in that Organization or in its Projects.">
 <area shape="rect" coords="22,11,231,41" href="UFO.html#UFO_Normative+Description" target="" title="Normative Descriptions are Social Objects that define one or more rules/norms recognized by at least one Social Agent and that can define other Social objects (the crown of the king of Spain) or Social Roles (such as president, PhD candidate or pedestrian). @Examples of normative descriptions include the Brazilian Constitution, the Federal University of Espírito Santo PhD program regulation, but also a set of directives on how to perform some actions within an organization (a Plan Description).">
 <area shape="rect" coords="23,425,169,455" href="UFO.html#UFO_Social+Agent" target="" title="">
@@ -575,103 +521,26 @@ A Social Agent involving people and other agents and facilities with an arrangem
 <area shape="rect" coords="627,273,851,303" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Organizational+Standard+Process" target="_blank" title="Standard Process established to be performed in the context of an Organization, regardless of specific Projects.">
 <area shape="rect" coords="627,235,802,265" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Project+Standard+Process" target="_blank" title="A Standard Process established to be performed within a Project.">
 <area shape="rect" coords="627,311,801,341" href="http://dev.nemo.inf.ufes.br/seon/SPO.html#SPO_Hybrid+Standard+Process" target="_blank" title="Standard Process established to be performed in the context of a Project or Organization."></map>
-<p align="center" class="lead font-weight-bold">Figure 16. Standard Process Structure conceptual model.</p></div>
+<p align="center"><span class="font-weight-bold">Figure 16. </span>Standard Process Structure conceptual model.</p></div>
 <p align="justify" class="lead">Standard Processes and Activities are institutionalized generic actions establishing basic requirements for intended processes and activities to be performed in an organization or in its projects (for example, a standard Development Process, and its activities, to be performed in the Projects of an Organization). A Standard Process Definition Document, used for describing a set of Standard Processes, is recognized by one or more Organizations.<br/>A Standard Process is established to be performed in the context of projects, configuring a Project Standard Process (such as a standard Development Process), in the context of an organization, configuring an Organizational Standard Process (such as a standard Portfolio Management Process), or can be applicable to both contexts, configuring a Hybrid Standard Process (such as a standard Training Process).<br/>A Standard Process can be general or specific. A General Standard Process is composed of two or more Specific Standard Processes (e.g. a standard Development Process composed of standard Requirements, Design, Constructions and Test Processes). A Specific Standard Process is composed of two or more Standard Activities. A Standard Activity, analogously, can be composite or simple. A Composite Standard Activity is composed of other two or more Standard Activities; a Simple Standard Activity is not decomposable into smaller activities.<br/>Every process and activity performed in an organization or project happen based on an action type. For processes, this action type is the Process Universal, and for activities, this type is the Activity Universal. These generic actions can be formalized in an organization (configuring the discussed Standard Process and Activities), or remain non-formalized.</p>
 </p>					
-				</div>
+			</div>
 
-				<hr>
+			<hr>
 
-				<div class="p-5 rounded" id="conceptsdefinition">
-					<h2 class="featurette-heading">4. Concepts Definition</h2>
-					<p class="lead">The following table shows the definitions for SPO concepts.</p>		
-					<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->				
-					<div class="table-responsive">
-						<table class="table table-hover">
-							<thead>
-								<tr>
-									<th scope="col">Concept</th>
-									<th scope="col">Definition</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr><td><p id="SPO_Activity+Universal"><span class="font-italic font-weight-bold">Activity Universal</span><a class="text-muted" href=#SPO_Activity+Universal_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Action Universal representing any generic activity in an Organization (formalized or not), which is the powertype of every Performed Activity.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> a formalized standard Requirements Elicitation activity, a non-formalized generic (alternative) Requirements Elicitation activity.</span></p></td></tr>
-<tr><td><p id="SPO_Artifact+Change"><span class="font-italic font-weight-bold">Artifact Change</span><a class="text-muted" href=#SPO_Artifact+Change_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Artifact Participation in which an existing Artifact is modified.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> the change of the source Code as part of a Coding activity fixing a bug in it.</span></p></td></tr>
-<tr><td><p id="SPO_Artifact+Creation"><span class="font-italic font-weight-bold">Artifact Creation</span><a class="text-muted" href=#SPO_Artifact+Creation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Artifact Participation in which a new Artifact is created.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> the creation of the source Code as part of a Coding activity.</span></p></td></tr>
-<tr><td><p id="SPO_Artifact+Participation"><span class="font-italic font-weight-bold">Artifact Participation</span><a class="text-muted" href=#SPO_Artifact+Participation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>The participation of an Artifact in a Performed Activity.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> when an artifact is created, changed or used by an activity.</span></p></td></tr>
-<tr><td><p id="SPO_Artifact+Usage"><span class="font-italic font-weight-bold">Artifact Usage</span><a class="text-muted" href=#SPO_Artifact+Usage_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Artifact Participation in which an existing Artifact is used, but not modified.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> the usage of a Design Specification in a Coding activity.</span></p></td></tr>
-<tr><td><p id="SPO_CASE+Tool"><span class="font-italic font-weight-bold">CASE Tool</span><a class="text-muted" href=#SPO_CASE+Tool_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="SPO_Composite+Intended+Activity"><span class="font-italic font-weight-bold">Composite Intended Activity</span><a class="text-muted" href=#SPO_Composite+Intended+Activity_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Intended Activity composed of other Intended Activities.</p></td></tr>
-<tr><td><p id="SPO_Composite+Method+Activity"><span class="font-italic font-weight-bold">Composite Method Activity</span><a class="text-muted" href=#SPO_Composite+Method+Activity_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Method Activity composed of other Method Activities.</p></td></tr>
-<tr><td><p id="SPO_Composite+Standard+Activity"><span class="font-italic font-weight-bold">Composite Standard Activity</span><a class="text-muted" href=#SPO_Composite+Standard+Activity_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Standard Activity composed of other Standard Activities.</p></td></tr>
-<tr><td><p id="SPO_Document+Template"><span class="font-italic font-weight-bold">Document Template</span><a class="text-muted" href=#SPO_Document+Template_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Procedure aiming to establish a uniform way for preparing a Document, providing a predefined format and a defined structure for filling with the expected information.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> Project Plan Template, Test Report Template.</span></p></td></tr>
-<tr><td><p id="SPO_General+Intended+Process"><span class="font-italic font-weight-bold">General Intended Process</span><a class="text-muted" href=#SPO_General+Intended+Process_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Intended Process that is composed of Specific Intended Processes, allowing an Organization or Project to define sub-processes that are part of a complete Intended Process.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> the overall Development Process defined for the Alpha Project.</span></p></td></tr>
-<tr><td><p id="SPO_General+Project+Process"><span class="font-italic font-weight-bold">General Project Process</span><a class="text-muted" href=#SPO_General+Project+Process_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="SPO_General+Standard+Process"><span class="font-italic font-weight-bold">General Standard Process</span><a class="text-muted" href=#SPO_General+Standard+Process_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Standard Process that is composed of Specific Standard Processes, allowing an Organization to establish sub-processes that are part of a complete Standard Process.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> the overall Development Process established for the Organization Projects.</span></p></td></tr>
-<tr><td><p id="SPO_Hardware+Resource"><span class="font-italic font-weight-bold">Hardware Resource</span><a class="text-muted" href=#SPO_Hardware+Resource_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Hardware Equipment when used as Resource of some process activity.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> a specific Computer Dell I7 being used by the Project Planning activity.</span></p></td></tr>
-<tr><td><p id="SPO_Hardware+Resource+Participation"><span class="font-italic font-weight-bold">Hardware Resource Participation</span><a class="text-muted" href=#SPO_Hardware+Resource+Participation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>The participation of a Hardware Equipment as a Resource in a Performed Activity.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> the use of a specific Computer in a Coding activity.</span></p></td></tr>
-<tr><td><p id="SPO_Hybrid+Standard+Process"><span class="font-italic font-weight-bold">Hybrid Standard Process</span><a class="text-muted" href=#SPO_Hybrid+Standard+Process_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Standard Process established to be performed in the context of a Project or Organization.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> a Training Process, a Quality Auditing Process.</span></p></td></tr>
-<tr><td><p id="SPO_Intended+Activity"><span class="font-italic font-weight-bold">Intended Activity</span><a class="text-muted" href=#SPO_Intended+Activity_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Intention (Internal Commitment) representing the activity defined to be performed as part of an Intended Process, by a defined role, potentially consuming and producing artifacts, using resources and adopting procedures.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> Unit Testing, Measure Collection, Strategic Goals Definition.</span></p></td></tr>
-<tr><td><p id="SPO_Intended+Process"><span class="font-italic font-weight-bold">Intended Process</span><a class="text-muted" href=#SPO_Intended+Process_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Intention (Internal Commitment) representing the process defined to be performed in a specific project or organizational area, considering its particularities.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> Testing, Measurement, Strategic Planning intended processes.</span></p></td></tr>
-<tr><td><p id="SPO_Method"><span class="font-italic font-weight-bold">Method</span><a class="text-muted" href=#SPO_Method_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Systematic Procedure defining a workflow of activities (a set of steps) and heuristics to perform one or more activities.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> an OO Method, an Interview Method.</span></p></td></tr>
-<tr><td><p id="SPO_Method+Activity"><span class="font-italic font-weight-bold">Method Activity</span><a class="text-muted" href=#SPO_Method+Activity_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Action type representing one of the steps of a Method Workflow.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> the Classes Identification activity of an OO Method.</span></p></td></tr>
-<tr><td><p id="SPO_Method+Workflow"><span class="font-italic font-weight-bold">Method Workflow</span><a class="text-muted" href=#SPO_Method+Workflow_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Complex Action type denoting a set of steps (Method Activities) to be used when a Method is adopted.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> the steps for using a OO Method for the software design phase.</span></p></td></tr>
-<tr><td><p id="SPO_Organization+Stakeholder"><span class="font-italic font-weight-bold">Organization Stakeholder</span><a class="text-muted" href=#SPO_Organization+Stakeholder_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Organization interested or affected by the process activities or results.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> a Client Organization.</span></p></td></tr>
-<tr><td><p id="SPO_Organizational+Intended+Process"><span class="font-italic font-weight-bold">Organizational Intended Process</span><a class="text-muted" href=#SPO_Organizational+Intended+Process_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Intended Process defined to be performed in the context of an Organization, regardless of specific Projects.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> an intended Portfolio Management Process, a intended Human Resource Hiring Process.</span></p></td></tr>
-<tr><td><p id="SPO_Organizational+Standard+Process"><span class="font-italic font-weight-bold">Organizational Standard Process</span><a class="text-muted" href=#SPO_Organizational+Standard+Process_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Standard Process established to be performed in the context of an Organization, regardless of specific Projects.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> a standard Portfolio Management Process, a standard Human Resource Hiring Process.</span></p></td></tr>
-<tr><td><p id="SPO_Performed+Activity"><span class="font-italic font-weight-bold">Performed Activity</span><a class="text-muted" href=#SPO_Performed+Activity_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Action performed, in a specific Time Interval, by a Stakeholder, potentially producing and consuming Artifacts, as part of a Specific Performed Process.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> Requirement Elicitation, Component Design, Coding, Integration Test, Training Planning.</span></p></td></tr>
-<tr><td><p id="SPO_Performed+Composite+Activity"><span class="font-italic font-weight-bold">Performed Composite Activity</span><a class="text-muted" href=#SPO_Performed+Composite+Activity_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Performed Activity composed of other Performed Activities.</p></td></tr>
-<tr><td><p id="SPO_Performed+General+Process"><span class="font-italic font-weight-bold">Performed General Process</span><a class="text-muted" href=#SPO_Performed+General+Process_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>The overall Performed Process executed in a specific Project or Organization, which is necessarily composed of Specific Performed Processes.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> the overall process performed in a software project.</span></p></td></tr>
-<tr><td><p id="SPO_Performed+Organizational+Process"><span class="font-italic font-weight-bold">Performed Organizational Process</span><a class="text-muted" href=#SPO_Performed+Organizational+Process_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Performed Process executed in the context of an Organization, regardless of specific Projects.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> a performed Portfolio Management Process, a performed Human Resource Hiring Process.</span></p></td></tr>
-<tr><td><p id="SPO_Performed+Process"><span class="font-italic font-weight-bold">Performed Process</span><a class="text-muted" href=#SPO_Performed+Process_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Complex Action, composed of other processes or activities, performed in a specific Time Interval, for reaching a goal in a Project or Organization.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> Development, Configuration Management, Training performed processes.</span></p></td></tr>
-<tr><td><p id="SPO_Performed+Project+Activity"><span class="font-italic font-weight-bold">Performed Project Activity</span><a class="text-muted" href=#SPO_Performed+Project+Activity_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="SPO_Performed+Project+Process"><span class="font-italic font-weight-bold">Performed Project Process</span><a class="text-muted" href=#SPO_Performed+Project+Process_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Performed Process executed within a Project.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> a performed Requirement Process, a performed Construction Process.</span></p></td></tr>
-<tr><td><p id="SPO_Performed+Simple+Activity"><span class="font-italic font-weight-bold">Performed Simple Activity</span><a class="text-muted" href=#SPO_Performed+Simple+Activity_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Performed Activity that is not further decomposed into other Performed Activities.</p></td></tr>
-<tr><td><p id="SPO_Performed+Specific+Process"><span class="font-italic font-weight-bold">Performed Specific Process</span><a class="text-muted" href=#SPO_Performed+Specific+Process_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Performed Process that is part of the General Performed Process of a Project or Organization, necessarily composed of at least two Performed Activities.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> the Project Management Process performed in a specific project; the Portfolio Management Process performed in an organization.</span></p></td></tr>
-<tr><td><p id="SPO_Person+Stakeholder"><span class="font-italic font-weight-bold">Person Stakeholder</span><a class="text-muted" href=#SPO_Person+Stakeholder_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Person interested or affected by the process activities or their results.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> an Analyst, a Programmer, a User.</span></p></td></tr>
-<tr><td><p id="SPO_Procedure"><span class="font-italic font-weight-bold">Procedure</span><a class="text-muted" href=#SPO_Procedure_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Normative Description prescribing a defined way for performing process activities.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> an OO Method, the Pair Programming technique, a Project Plan Template.</span></p></td></tr>
-<tr><td><p id="SPO_Procedure+Participation"><span class="font-italic font-weight-bold">Procedure Participation</span><a class="text-muted" href=#SPO_Procedure+Participation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>The participation of a Procedure in a Performed Activity.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> the adoption of an Interview Technique in a Requirements Elicitation activity.</span></p></td></tr>
-<tr><td><p id="SPO_Process+Universal"><span class="font-italic font-weight-bold">Process Universal</span><a class="text-muted" href=#SPO_Process+Universal_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Complex Action Universal representing any generic process in an Organization (formalized or not), which is the powertype of every Performed Process.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> a formalized Standard Process (e.g. Development Process), a non-formalized generic process (e.g. Reuse Process).</span></p></td></tr>
-<tr><td><p id="SPO_Project+Activity"><span class="font-italic font-weight-bold">Project Activity</span><a class="text-muted" href=#SPO_Project+Activity_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Intended Activity defined to be performed within a Project, and thus that is part of a Project Process.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> a project Requirement Process, a project Construction Process.</span></p></td></tr>
-<tr><td><p id="SPO_Project+Process"><span class="font-italic font-weight-bold">Project Process</span><a class="text-muted" href=#SPO_Project+Process_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Intended Process defined to be performed within a Project.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> a project Requirement Process, a project Construction Process.</span></p></td></tr>
-<tr><td><p id="SPO_Project+Stakeholder"><span class="font-italic font-weight-bold">Project Stakeholder</span><a class="text-muted" href=#SPO_Project+Stakeholder_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Stakeholder interested in a particular Project.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> the Project Team, the Project Client.</span></p></td></tr>
-<tr><td><p id="SPO_Project+Standard+Process"><span class="font-italic font-weight-bold">Project Standard Process</span><a class="text-muted" href=#SPO_Project+Standard+Process_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>A Standard Process established to be performed within a Project.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> a standard Requirement Process, a standard Construction Process.</span></p></td></tr>
-<tr><td><p id="SPO_Resource"><span class="font-italic font-weight-bold">Resource</span><a class="text-muted" href=#SPO_Resource_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Software Product or Hardware Equipment when used by a process activity.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> a Smartphone being used by a Testing activity.</span></p></td></tr>
-<tr><td><p id="SPO_Scheduled+Activity"><span class="font-italic font-weight-bold">Scheduled Activity</span><a class="text-muted" href=#SPO_Scheduled+Activity_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>An Intended Activity defining the time interval it is planned to be performed.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> The Requirements Verification and Validation activity scheduled for August 5th to 9th.</span></p></td></tr>
-<tr><td><p id="SPO_Scheduled+Process"><span class="font-italic font-weight-bold">Scheduled Process</span><a class="text-muted" href=#SPO_Scheduled+Process_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>An Intended Process defining the Time Interval it is planned to be performed.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> The Requirements Development Process defined for the Alpha Project and scheduled for July 1st to August 15th.</span></p></td></tr>
-<tr><td><p id="SPO_Simple+Intended+Activity"><span class="font-italic font-weight-bold">Simple Intended Activity</span><a class="text-muted" href=#SPO_Simple+Intended+Activity_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Intended Activity that is not further decomposed into other Intended Activities.</p></td></tr>
-<tr><td><p id="SPO_Simple+Method+Activity"><span class="font-italic font-weight-bold">Simple Method Activity</span><a class="text-muted" href=#SPO_Simple+Method+Activity_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Method Activity that is not further decomposed into other Method Activities.</p></td></tr>
-<tr><td><p id="SPO_Simple+Standard+Activity"><span class="font-italic font-weight-bold">Simple Standard Activity</span><a class="text-muted" href=#SPO_Simple+Standard+Activity_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Standard Activity that is not further decomposed into other Standard Activities.</p></td></tr>
-<tr><td><p id="SPO_Software+Organization"><span class="font-italic font-weight-bold">Software Organization</span><a class="text-muted" href=#SPO_Software+Organization_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="SPO_Software+Project"><span class="font-italic font-weight-bold">Software Project</span><a class="text-muted" href=#SPO_Software+Project_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>A Project related to software development or maintenance.</p></td></tr>
-<tr><td><p id="SPO_Software+Resource"><span class="font-italic font-weight-bold">Software Resource</span><a class="text-muted" href=#SPO_Software+Resource_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Software Product when used as Resource of some process activity.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> the Eclipse IDE being used by the Coding activity.</span></p></td></tr>
-<tr><td><p id="SPO_Software+Resource+Participation"><span class="font-italic font-weight-bold">Software Resource Participation</span><a class="text-muted" href=#SPO_Software+Resource+Participation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>The participation of a Software Product as Resource in a Performed Activity.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> the use of the MS Project in a Project Scheduling activity.</span></p></td></tr>
-<tr><td><p id="SPO_Specific+Intended+Process"><span class="font-italic font-weight-bold">Specific Intended Process</span><a class="text-muted" href=#SPO_Specific+Intended+Process_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Intended Process that is part of the General Intended Process of a Project or Organization, necessarily composed of at least two Intended Activities.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> the Construction Process defined for a specific project; the Training Process defined for an organizational OO training.</span></p></td></tr>
-<tr><td><p id="SPO_Specific+Project+Process"><span class="font-italic font-weight-bold">Specific Project Process</span><a class="text-muted" href=#SPO_Specific+Project+Process_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p></p></td></tr>
-<tr><td><p id="SPO_Specific+Standard+Process"><span class="font-italic font-weight-bold">Specific Standard Process</span><a class="text-muted" href=#SPO_Specific+Standard+Process_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Standard Process that can be part of a General Standard Process of a Project or Organization, necessarily composed of at least two Standard Activities.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> the standard Requirements Development Process established as part of a broader standard Development Process.</span></p></td></tr>
-<tr><td><p id="SPO_Stakeholder"><span class="font-italic font-weight-bold">Stakeholder</span><a class="text-muted" href=#SPO_Stakeholder_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Agent (Person, Team or Organization) interested or affected by the process activities or results.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> an Analyst, a Programmer, a User, a Testing Team, a Client Organization.</span></p></td></tr>
-<tr><td><p id="SPO_Stakeholder+Allocation"><span class="font-italic font-weight-bold">Stakeholder Allocation</span><a class="text-muted" href=#SPO_Stakeholder+Allocation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Social Relator representing a Stakeholder allocated to perform a Scheduled Activity acting an Organizational Role.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> the allocation of Mary as a Project Manager to perform the scheduled Project Planning activity.</span></p></td></tr>
-<tr><td><p id="SPO_Stakeholder+Main+Participation"><span class="font-italic font-weight-bold">Stakeholder Main Participation</span><a class="text-muted" href=#SPO_Stakeholder+Main+Participation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>The participation of a Stakeholder as the main responsible for a Performed Activity, playing an Organizational Role.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> Mary acting as the Project Manager in a Project Control activity.</span></p></td></tr>
-<tr><td><p id="SPO_Stakeholder+Participation"><span class="font-italic font-weight-bold">Stakeholder Participation</span><a class="text-muted" href=#SPO_Stakeholder+Participation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>The participation of a Stakeholder in a Performed Activity, playing an Organizational Role.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> Mary acting as Programmer in a Coding Activity; the Quality Assurance Team acting as an Auditor in an Auditing activity.</span></p></td></tr>
-<tr><td><p id="SPO_Standard+Activity"><span class="font-italic font-weight-bold">Standard Activity</span><a class="text-muted" href=#SPO_Standard+Activity_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Action Universal representing a generic activity institutionalized as part of a Standard Process in an Organization, establishing general information such as dependence on other activities, types of artifacts created, changed and used, required software and hardware resources, adopted procedures, and roles to perform it.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> Conceptual Modeling, Training Evaluation, Project Risks Planning.</span></p></td></tr>
-<tr><td><p id="SPO_Standard+Process"><span class="font-italic font-weight-bold">Standard Process</span><a class="text-muted" href=#SPO_Standard+Process_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Complex Action Universal representing a generic process institutionalized in an Organization, establishing basic requirements for Intended Processes to be performed in that Organization or in its Projects.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> Development, Training, Acquisition standard processes.</span></p></td></tr>
-<tr><td><p id="SPO_Standard+Process+Definition+Document"><span class="font-italic font-weight-bold">Standard Process Definition Document</span><a class="text-muted" href=#SPO_Standard+Process+Definition+Document_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Plan Description, recognized by an Organization, which describes a set of Standard Processes.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> The whole available description of an organization processes.</span></p></td></tr>
-<tr><td><p id="SPO_Team+Stakeholder"><span class="font-italic font-weight-bold">Team Stakeholder</span><a class="text-muted" href=#SPO_Team+Stakeholder_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Team interested or affected by the process activities or results.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> a Testing Team.</span></p></td></tr>
-<tr><td><p id="SPO_Technique"><span class="font-italic font-weight-bold">Technique</span><a class="text-muted" href=#SPO_Technique_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Procedure that provides heuristics to perform an activity (but in a less rigid and detailed way than a method, since it does not prescribe a set of activities).<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> White-box testing, Pair programming.</span></p></td></tr>
-
-							</tbody>
-							<caption><small>SPO concepts definition.</small></caption>
-						</table>
-  				</div>
-
-
-
-				<!--	<table style="width: 100%" border="1" cellpadding="6">
-						<tbody>
-							<tr style="background-color: #D8D8D8">
-								<td style="width: 25%"><b>Concept</b></td>
-								<td style="width: 75%"><b>Definition</b></td>
+			<div class="p-5 rounded" id="conceptsdefinition">
+				<h2 class="featurette-heading">4. Concepts Definition</h2>
+				<p class="lead">The following table shows the definitions for SPO concepts.</p>		
+				
+				<div class="table-responsive my-5">
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th scope="col">Concept</th>
+								<th scope="col">Definition</th>
 							</tr>
+						</thead>
+						<tbody>
 							<tr><td><p id="SPO_Activity+Universal"><span class="font-italic font-weight-bold">Activity Universal</span><a class="text-muted" href=#SPO_Activity+Universal_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Action Universal representing any generic activity in an Organization (formalized or not), which is the powertype of every Performed Activity.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> a formalized standard Requirements Elicitation activity, a non-formalized generic (alternative) Requirements Elicitation activity.</span></p></td></tr>
 <tr><td><p id="SPO_Artifact+Change"><span class="font-italic font-weight-bold">Artifact Change</span><a class="text-muted" href=#SPO_Artifact+Change_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Artifact Participation in which an existing Artifact is modified.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> the change of the source Code as part of a Coding activity fixing a bug in it.</span></p></td></tr>
 <tr><td><p id="SPO_Artifact+Creation"><span class="font-italic font-weight-bold">Artifact Creation</span><a class="text-muted" href=#SPO_Artifact+Creation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Artifact Participation in which a new Artifact is created.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> the creation of the source Code as part of a Coding activity.</span></p></td></tr>
@@ -737,16 +606,18 @@ A Social Agent involving people and other agents and facilities with an arrangem
 <tr><td><p id="SPO_Technique"><span class="font-italic font-weight-bold">Technique</span><a class="text-muted" href=#SPO_Technique_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Procedure that provides heuristics to perform an activity (but in a less rigid and detailed way than a method, since it does not prescribe a set of activities).<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> White-box testing, Pair programming.</span></p></td></tr>
 
 						</tbody>
-					</table>-->
-
+						<caption><small>SPO concepts definition.</small></caption>
+					</table>
 				</div>
 
-				<hr>		
+			</div>
 
-				<div class="p-5 rounded" id="detailedconcepts">
-					<h2 class="featurette-heading">5. Detailed Concepts</h2>
-					<p class="lead">Software Process Ontology (SPO) detailed concepts.</p>					
-					<hr><div class="container-fluid" id="SPO_Activity+Universal_detail"><h4><i class="bi bi-diagram-3"></i> SPO::Activity Universal</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code class="text-muted">&lt&lt2ndOT&gt&gt</code>
+			<hr>		
+
+			<div class="p-5 rounded" id="detailedconcepts">
+				<h2 class="featurette-heading">5. Detailed Concepts</h2>
+				<p class="lead">Software Process Ontology (SPO) detailed concepts.</p>					
+				<hr><div class="container-fluid" id="SPO_Activity+Universal_detail"><h4><i class="bi bi-diagram-3"></i> SPO::Activity Universal</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><code class="text-muted">&lt&lt2ndOT&gt&gt</code>
 <br/><span class="font-weight-bold text-center">Activity Universal</span></p></div><br/><h5>Specializes:</h5><p><i class="bi bi-diagram-2"></i> UFO::Action Universal</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Action Universal representing any generic activity in an Organization (formalized or not), which is the powertype of every Performed Activity.<br/><span class="font-weight-bold">Example:</span><span class="font-italic"> a formalized standard Requirements Elicitation activity, a non-formalized generic (alternative) Requirements Elicitation activity.</span></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
 <code class="text-muted">Performed Activity (0..*) instance of (1..1) Activity Universal<br/>
 </code></p></div></div></div>
@@ -1114,9 +985,9 @@ Standard Process Definition Document (0..*) recognized by (1..*) Organization<br
 <br/><span class="font-weight-bold text-center">Technique</span></p></div><br/><h5>Specializes:</h5><p><i class="bi bi-diagram-2"></i> SPO::Procedure</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Procedure that provides heuristics to perform an activity (but in a less rigid and detailed way than a method, since it does not prescribe a set of activities).<br/><span class="font-weight-bold">Example:</span><span class="font-italic"> White-box testing, Pair programming.</span></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p></p></div></div></div>
 
 
-				</div>
-				
-			</main>
+			</div>
+			
+		</main>
 	
     <footer class="p-5 rounded border-top">
     	<div class="row justify-content-md-center">
@@ -1189,7 +1060,7 @@ Standard Process Definition Document (0..*) recognized by (1..*) Organization<br
 				<div class="col-md-auto">
 					<small>
 						<span class="text-muted">
-						Tue Dec 14 21:27:59 BRT 2021
+						Wed Dec 15 22:38:28 BRT 2021
 						</span>
 					</small>
 				</div>
@@ -1201,15 +1072,12 @@ Standard Process Definition Document (0..*) recognized by (1..*) Organization<br
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+	  <script type="text/javascript" src="bootstrap/jquery/jquery-3.5.1.slim.min.js"></script>
 
-    <script src="bootstrap-5.1.3-dist/js/jquery-3.2.1.slim.min.js"></script>
+	  <script type="text/javascript" src="bootstrap/js/popper-1.16.1.min.js"></script>
 
-    <script src="bootstrap-5.1.3-dist/js/popper.min.js"></script>
+	  <script type="text/javascript" src="bootstrap/4.6.1-dist/js/bootstrap.min.js"></script>
 
-
-    <script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
-
-    <script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
 
     <script type="text/javascript" src="jquery.min.js"></script>
 		<script type="text/javascript" src="maphilight.js"></script>
@@ -1280,7 +1148,14 @@ Standard Process Definition Document (0..*) recognized by (1..*) Organization<br
 			});			
 			
 		</script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-WXTXYYCXMP"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
 
+		  gtag('config', 'G-WXTXYYCXMP');
+		</script>
 	</body>
-	<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 </html>

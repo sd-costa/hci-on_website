@@ -92,7 +92,7 @@ public class PageWriter {
 
 		// Writing the HTML page
 		//Utils.stringToFile("./page/SEON.html", html);
-		Utils.stringToFile("./page/hci-on.html", html);
+		Utils.stringToFile("./page/HCI-ON.html", html);
 	}
 
 	/* Creates a Network view (graph) from the Ontologies and dependencies. */
@@ -315,8 +315,8 @@ public class PageWriter {
 
 		// Writing the HTML page
 		
-		Utils.stringToFile("./page/menu.html", html);
-		Utils.stringToFile("./page/testemenu.html", html);
+		Utils.stringToFile("./resources/menu.html", html);
+		
 	}
 
 	/* Creates div container-fluid and row of Stats page  */
@@ -822,7 +822,7 @@ public class PageWriter {
 	/* Generates the diagrams' structures of a single package. */
 	private String generateDiagramStructures(Package pack) {
 		//String DIAGRAMSTRUCT = "<p>@intro</p>\n<p align=\"center\">@image</p>\n<p align=\"center\"><b>@flabel</b></p>\n<p align=\"justify\">@description</p>\n";
-		String DIAGRAMSTRUCT = "<p class=\"lead\">@intro</p>\n<div class=\"container-fluid\" align=\"center\">@image\n<p align=\"center\" class=\"lead font-weight-bold\">@flabel</p></div>\n<p align=\"justify\" class=\"lead\">@description</p>\n";
+		String DIAGRAMSTRUCT = "<p class=\"lead\">@intro</p>\n<div class=\"container-fluid my-5\" align=\"center\">@image\n<p align=\"center\">@flabel</p></div>\n<p align=\"justify\" class=\"lead\">@description</p>\n";
 		String diagramStructs = "";
 		for (Diagram diag : pack.getDiagrams()) {
 			String name = diag.getName();
@@ -850,7 +850,7 @@ public class PageWriter {
 
 			String struct = DIAGRAMSTRUCT;
 			struct = struct.replace("@intro", "Figure " + figCount + " presents the " + introText + ".");
-			struct = struct.replace("@flabel", "Figure " + figCount + ". " + labelText + ".");
+			struct = struct.replace("@flabel", "<span class=\"font-weight-bold\">Figure " + figCount + ". </span>" + labelText + ".");
 			struct = struct.replace("@diagram", name);
 			struct = struct.replace("@image", image);
 			String newDescription = diag.getDescription();

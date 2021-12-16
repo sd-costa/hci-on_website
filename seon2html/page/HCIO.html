@@ -1,243 +1,189 @@
 <!doctype html>
-
 <html lang="en">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	    <meta name="description" content="">
-	    <meta name="author" content="Simone Dornelas Costa">
-	    <meta charset="ISO-8859-1">
-	    
-	
-	    <title>Human-Computer Interaction Ontology (HCIO)</title>
-	
-	    <!-- Bootstrap core CSS -->
-	    <link href="bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
-	    
-	    <!-- Custom styles for this template -->
-	    <link href="bootstrap-5.1.3-dist/css/navbar-top-fixed.css" rel="stylesheet">
-	    <link href="bootstrap-5.1.3-dist/css/sticky-footer-navbar.css" rel="stylesheet">
-	    <link href="bootstrap-5.1.3-dist/css/carousel.css" rel="stylesheet">
+      <meta name="description" content="">
+      <meta name="author" content="Simone Dornelas Costa">
+      <meta name="generator" content="Simone Dornelas Costa">
+      <title>HCI-ON</title>    
 
-	    <!-- ICONS -->
-	    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <!-- Bootstrap core CSS -->
+      <link rel="stylesheet" type="text/css" href="bootstrap/4.6.1-dist/css/bootstrap.min.css">
+      
+      
+      <!-- ICONS -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-	    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 
-	    <style>
-	      .bd-placeholder-img {
-	        font-size: 1.125rem;
-	        text-anchor: middle;
-	        -webkit-user-select: none;
-	        -moz-user-select: none;
-	        -ms-user-select: none;
-	        user-select: none;
-	      }
+      <!-- favicon -->
+      <link rel="icon" type="image/svg+xml" sizes="48x48" href="images/diagram-3-fill.svg">
 
-	      @media (min-width: 768px) {
-	        .bd-placeholder-img-lg {
-	          font-size: 3.5rem;
-	        }
-	      }
+      <style>   
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
 
-	      .h2, .h3, h2, h3 {
-	      	margin-bottom: 2.5rem;
-	      }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      </style>
+     
+     <!-- Custom styles for this template -->
+     <link href="bootstrap/css/carousel.css" rel="stylesheet">
+      
+    </head>
 
+  <body>
 
-	      .span {
-	      	font-size: 2rem;
-	      }
-
-	      .featurette-heading {
-	        margin-top: 0;
-	      }
-
-	      
-
-	    </style>
-
-	  <!--.h6, h6 {
-	      	margin-bottom: 2.5rem;
-	      	margin-top: 2.5rem;	
-	      }-->  
-	    
-<!--	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
-	    
-	    
-	<link rel="icon" type="image/svg+xml" sizes="48x48" href="images/diagram-3-fill.svg">
-  </head>
-
-  <body data-new-gr-c-s-check-loaded="14.1038.0" data-gr-ext-installed="">
-
-	<header>
-	
-	<!--MAIN fixed navbar -->	
-	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-	  <!--<div class="container-fluid">-->
-	    <a class="navbar-brand" href="hci-on.html">HCI-ON</a>
-	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	      <span class="navbar-toggler-icon"></span>
-	    </button>
-	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-	        <li class="nav-item">
-	          <a class="nav-link" aria-current="page" href="index.html">Home</a>
-	        </li>
-
-	        <li class="nav-item dropdown">
-	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-	            The Network
-	          </a>
-	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item fst-italic" href="hci-on.html#architecture" tabindex="-1" aria-disabled="true">Architecture</a></li>
-	            <li><a class="dropdown-item fst-italic" href="hci-on.html#hcionmechanism" tabindex="-1" aria-disabled="true">Evolution Mechanisms</a></li>
-	            <li><a class="dropdown-item fst-italic" href="hci-on.html#hcionseon" tabindex="-1" aria-disabled="true">Relationship with SEON</a></li>
-	          	<li><hr class="dropdown-divider"></li>
-
-	            <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Foundational Layer</a></li>
-	            <li><a class="dropdown-item" href="UFO.html">UFO - Unified Foundational Ontology</a></li>
-
-	            <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Core Layer</a></li>
-	            <li><a class="dropdown-item" href="HCIO.html">HCIO - Human-Computer Interaction Ontology</a></li>
-
-	            <li><a class="dropdown-item disabled fst-italic" href="#" tabindex="-1" aria-disabled="true">Domain Layer</a></li>
-	            <li><a class="dropdown-item" href="HCIDO.html">HCIDO - Human-Computer Interaction Design Ontology</a></li>
-							<li><a class="dropdown-item" href="HCIEO.html">HCIEO - Human-Computer Interaction Evaluation Ontology</a></li>
-							<!--<li><a class="dropdown-item" href="HCIDPO.html">HCIDPO - Human-Computer Interaction Design Process Ontology</a></li>-->
-							<li><a class="dropdown-item" href="UIT&EO.html">UIT&EO - UI Types and Elements Ontology</a></li>
-							<li><a class="dropdown-item" href="HCIMO.html">HCIMO - HCI Modality Ontology</a></li>
-							<li><a class="dropdown-item" href="CUO.html">CUO - Context of Use Ontology</a></li>
-							<li><a class="dropdown-item" href="UCO.html">UCO - User Characterization Ontology</a></li>
-							<li><a class="dropdown-item" href="HCIQCO.html">HCIQCO - HCI Quality Characteristics Ontology</a></li>
-	          </ul>
-	        </li>
-
-	        <li class="nav-item dropdown">
-	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-	            Features
-	          </a>
-	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item" href="SearchFrames.html">Concepts Searcher</a></li>
-	            <li><a class="dropdown-item" href="NetworkGraph.html">Graph</a></li>
-	            <li><a class="dropdown-item" href="NetworkStats.html">Stats</a></li>
-	            <li><a class="dropdown-item" href="videos.html">Videos</a></li>
-	            <!--<li><hr class="dropdown-divider"></li>
-	            <li><a class="dropdown-item" href="SeonFeedback.html">Feedback</a></li>-->
-	          </ul>
-	        </li>
-
-	        <!--<li class="nav-item dropdown">
-	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-	            More
-	          </a>
-	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item" href="SEON.owl" target="_blank">Operational Version (in OWL)</a></li>
-	            <li><a class="dropdown-item" href="#">Astah file</a></li>
-	            <li><a class="dropdown-item" href="#">Specifications</a></li>
-	            <li><a class="dropdown-item" href="#">Publications</a></li>
-	          </ul>
-	        </li>-->
-
-					<li class="nav-item dropdown">
-	          <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-	            HCIO
-	          </a>
-	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item" href="#ontologydescription">Ontology Description</a></li>
-	            <li><a class="dropdown-item" href="#relatedontologies">Related Ontologies</a></li>
-	            <li><a class="dropdown-item" href="#ontologymodels">Ontology Models</a></li>
-	            <li><a class="dropdown-item" href="#conceptsdefinition">Concepts Definition</a></li>
-	            <li><a class="dropdown-item" href="#detailedconcepts">Detailed Concepts</a></li>
-	          </ul>
-	        </li>
-
-<!--	        <li class="nav-item">
-	          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-	        </li>-->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="HCI-ON.html">HCI-ON</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
         
-	      </ul>
-	      
-	    </div>
-	  <!--</div>-->
-	</nav>	
-		
-	
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+            The Network
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="HCI-ON.html">HCI-ON</a>
+            <a class="dropdown-item" href="HCI-ON.html#architecture">Architecture</a>
+            <a class="dropdown-item" href="HCI-ON.html#hcionmechanism">Evolution Mechanism</a>
+            <a class="dropdown-item" href="HCI-ON.html#hcionseon">Relationship with SEON</a>
+          </div>
+        </li>
 
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+            Networked Ontologies
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        
+            <a class="dropdown-item disabled">Foundational Layer</a>
+            <a class="dropdown-item" href="UFO.html">UFO</a>
 
-	
-		</header>
+            <a class="dropdown-item disabled">Core Layer</a>
+            <a class="dropdown-item" href="HCIO.html">HCIO</a>
 
-		<!-- Begin page content -->
-    <main role="main" class="container-fluid">	
-    		
-				<!--<div class="bg-light p-5 rounded" id="ontologydescription">
-    			<h1 class="featurette-heading">The Human-Computer Interaction Ontology (HCIO)</h1>
-					<p class="lead" align="justify"><span class="text-muted font-weight-bold font-italic">Ontology Description. </span>The Human-Computer Interaction Ontology (HCIO), a reference ontology that aims to provide a common conceptualization of the Human-Computer Interaction (HCI) phenomenon and serves as a core ontology of HCI-ON. Given that a human-computer interaction involves communication between user and interactive computer system, HCIO is composed of sub-ontologies to deal with the interaction participants and with the interaction itself. <br/><br/>Given that a human-computer interaction involves communication between user and interactive computer system, HCIO is composed of sub-ontologies to deal with the interaction participants and with the interaction itself.</p>
-					<p class="lead text-right text-muted font-italic"><i class="bi bi-star-half"></i> core ontology from HCI-ON</p>
-    		</div>-->
+            <a class="dropdown-item disabled">Domain Layer</a>
+            <a class="dropdown-item" href="HCIDO.html">HCIDO</a>
+            <a class="dropdown-item" href="HCIEO.html">HCIEO</a>
+            <a class="dropdown-item" href="UIT&EO.html">UIT&EO</a>
+            <a class="dropdown-item" href="HCIMO.html">HCIMO</a>
+            <a class="dropdown-item" href="CUO.html">CUO</a>
+            <a class="dropdown-item" href="UCO.html">UCO</a>
+            <a class="dropdown-item" href="HCIQCO.html">HCIQCO</a>
+            
+          </div>
+        </li>
 
-				<div class="bg-light p-5 rounded">
-					<div class="container-fluid d-flex justify-content-end"><span class="badge badge-dark">version 1.0</span></div>
-    			<h1 class="featurette-heading">The Human-Computer Interaction Ontology (HCIO)</h1>
-    			<p class="lead text-right font-italic"><i class="bi bi-star-half"></i> core ontology from HCI-ON</p>
-    		</div>
-	
-				<hr> 
-				   		
-    		<div class="p-5 rounded" id="ontologydescription">
-  				<h2 class="featurette-heading">1. Ontology Description</h2>
-  				<p class="lead" align="justify">The Human-Computer Interaction Ontology (HCIO), a reference ontology that aims to provide a common conceptualization of the Human-Computer Interaction (HCI) phenomenon and serves as a core ontology of HCI-ON. Given that a human-computer interaction involves communication between user and interactive computer system, HCIO is composed of sub-ontologies to deal with the interaction participants and with the interaction itself. <br/><br/>Given that a human-computer interaction involves communication between user and interactive computer system, HCIO is composed of sub-ontologies to deal with the interaction participants and with the interaction itself.</p>
-    		</div>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+            Features
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="SearchFrames.html">Concepts Searcher</a> 
+            <a class="dropdown-item" href="NetworkGraph.html">Graph</a>
+            <a class="dropdown-item" href="NetworkStats.html">Stats</a>
+            <a class="dropdown-item" href="videos.html">Videos</a>
+          </div>
+        </li>
 
-				<hr>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+            HCIO
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#ontologydescription">Ontology Description</a> 
+            <a class="dropdown-item" href="#relatedontologies">Related Ontologies</a>
+            <a class="dropdown-item" href="#ontologymodels">Ontology Models</a>
+            <a class="dropdown-item" href="#conceptsdefinition">Concepts Definition</a>
+            <a class="dropdown-item" href="#detailedconcepts">Detailed Concepts</a>
+          </div>
+        </li>
 
-				<div class="p-5 rounded" id="relatedontologies">
-					<h2 class="featurette-heading">2. Related Ontologies</h2>
-					<p class="lead">Networked ontologies used by HCIO:</p>	
+      </ul>
+    </div>
+  </nav>
+
+	<!-- Begin page content -->
+  <main role="main" class="container-fluid">	
+
+			<div class="bg-light p-5 rounded">
+				<div class="container-fluid d-flex justify-content-end"><span class="badge badge-dark">version 1.0</span></div>
+  			<h1 class="featurette-heading">The Human-Computer Interaction Ontology (HCIO)</h1>
+  			<p class="lead text-right font-italic"><i class="bi bi-star-half"></i> core ontology from HCI-ON</p>
+  		</div>
+
+			<hr> 
+			   		
+  		<div class="p-5 rounded" id="ontologydescription">
+				<h2 class="featurette-heading">1. Ontology Description</h2>
+				<p class="lead" align="justify">The Human-Computer Interaction Ontology (HCIO), a reference ontology that aims to provide a common conceptualization of the Human-Computer Interaction (HCI) phenomenon and serves as a core ontology of HCI-ON. Given that a human-computer interaction involves communication between user and interactive computer system, HCIO is composed of sub-ontologies to deal with the interaction participants and with the interaction itself. <br/><br/>Given that a human-computer interaction involves communication between user and interactive computer system, HCIO is composed of sub-ontologies to deal with the interaction participants and with the interaction itself.</p>
+  		</div>
+
+			<hr>
+
+			<div class="p-5 rounded" id="relatedontologies">
+				<h2 class="featurette-heading">2. Related Ontologies</h2>
+				<p class="lead">Networked ontologies used by HCIO:</p>	
+				
+				<div class="table-responsive my-5">
 					
-					<div class="table-responsive">
-						
-						<table class="table table-hover">
-							<thead>
-								<tr>
-									<th scope="col">Ontology</th>
-									<th scope="col">Relation</th>
-									<th scope="col">Integration Level</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr><td><a class="text-muted" href="UFO.html">UFO - Unified Foundational Ontology</a></td><td>The HCIO concepts are derived from UFO (mostly social entities from UFO-C).</td><td style="text-align:center">High</td></tr>
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th scope="col">Ontology</th>
+								<th scope="col">Relation</th>
+								<th scope="col">Integration Level</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr><td><a class="text-muted" href="UFO.html">UFO - Unified Foundational Ontology</a></td><td>The HCIO concepts are derived from UFO (mostly social entities from UFO-C).</td><td style="text-align:center">High</td></tr>
 <tr><td><a class="text-muted" href="SysSwO.html" target="_blank">SysSwO - System and Software Ontology</a></td><td>Most HCIO concepts extend concepts from SysSwO.</td><td style="text-align:center">High</td></tr>
 
-							</tbody>
-						</table>
-  					<caption><small>Ontologies (re)used by HCIO.</small></caption>
-  				</div>
+						</tbody>
+					</table>
+					<caption><small>Ontologies (re)used by HCIO.</small></caption>
+				</div>
 
-				</div>	
+			</div>	
 
-				<hr>
-    	
-				<div class="p-5 rounded" id="ontologymodels">
-					<h2 class="featurette-heading">3. Ontology Models</h2>
-					<p class="lead"><p class="lead">Figure 1 presents the packages of the HCIO Modularization.</p>
-<div class="container-fluid" align="center"><img src="images/HCIO Modularization.png" width="661" class="map img-fluid" usemap="#HCIO Modularization"><map name="HCIO Modularization">
+			<hr>
+  	
+			<div class="p-5 rounded" id="ontologymodels">
+				<h2 class="featurette-heading">3. Ontology Models</h2>
+				<p class="lead"><p class="lead">Figure 1 presents the packages of the HCIO Modularization.</p>
+<div class="container-fluid my-5" align="center"><img src="images/HCIO Modularization.png" width="661" class="map img-fluid" usemap="#HCIO Modularization"><map name="HCIO Modularization">
 <area shape="rect" coords="145,146,275,214" href="HCIO.html#HCIO_HC+Interaction_section" target="" title="">
 <area shape="rect" coords="40,241,260,311" href="HCIO.html#HCIO_Interactive+Computer+System_section" target="" title="">
 <area shape="rect" coords="290,243,440,311" href="HCIO.html#HCIO_User_section" target="" title="">
 <area shape="rect" coords="10,104,455,327" href="HCIO.html#HCIO_HCIO_section" target="" title="">
 <area shape="rect" coords="563,193,651,261" href="SysSwO.html#SysSwO_SysSwO_section" target="_blank" title="">
 <area shape="rect" coords="374,10,440,78" href="UFO.html#UFO_UFO_section" target="" title=""></map>
-<p align="center" class="lead font-weight-bold">Figure 1. HCIO Modularization.</p></div>
+<p align="center"><span class="font-weight-bold">Figure 1. </span>HCIO Modularization.</p></div>
 <p align="justify" class="lead"></p>
 
 <hr class="featurette-divider"><h3 class="featurette-heading" id="HCIO_Interactive+Computer+System_section">3.1.  Interactive Computer System</h3>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 2 presents the conceptual model of the Interactive Computer System subontology.</p>
-<div class="container-fluid" align="center"><img src="images/Interactive Computer System.png" width="1115" class="map img-fluid" usemap="#Interactive Computer System"><map name="Interactive Computer System">
+<div class="container-fluid my-5" align="center"><img src="images/Interactive Computer System.png" width="1115" class="map img-fluid" usemap="#Interactive Computer System"><map name="Interactive Computer System">
 <area shape="rect" coords="75,495,265,525" href="SysSwO.html#SysSwO_Complex+Computer+System" target="_blank" title="">
 <area shape="rect" coords="407,780,666,810" href="HCIO.html#HCIO_Complex+Interactive+Computer+System" target="" title="Interactive Computer System composed of others Interactive Computer System">
 <area shape="rect" coords="406,695,606,725" href="HCIO.html#HCIO_Interactive+Computer+System" target="" title="Computer System that combines User Interface, Computer Machine and Loaded Software System Copies, used to process, transform, store, display or transmit information or data by receiving input, and communicating output to Users.">
@@ -271,13 +217,13 @@ Definição ANTIGA: Machine is a hardware equipament able to run programs.">
 <area shape="rect" coords="382,163,475,193" href="UFO.html#UFO_Disposition" target="" title="Dispositions are properties (moments) that are only manifested in particular situations and that can also fail to be manifested. When manifested, they are manifested through the occurrence of events. Take for example the disposition of a magnet m to attract metallic material. The object m has this disposition even if it is never manifested, for example, because it is never close to any magnetic material. Nonetheless, m can certainly be said to possess that intrinsic moment, which it shares with other magnets.">
 <area shape="rect" coords="169,560,363,590" href="HCIO.html#HCIO_Interactive+Software+System" target="" title="Software system that includes, among other programs, User Interface Programs.">
 <area shape="rect" coords="703,560,981,590" href="HCIO.html#HCIO_Loaded+Interactive+Software+System+Copy" target="" title="Loaded Software System Copy that is the materialization of an Interactive Software System."></map>
-<p align="center" class="lead font-weight-bold">Figure 2. Interactive Computer System conceptual model.</p></div>
+<p align="center"><span class="font-weight-bold">Figure 2. </span>Interactive Computer System conceptual model.</p></div>
 <p align="justify" class="lead">The Interactive Computer System sub-ontology addresses what an interactive computer system is and its elements, including the user interface. It is mainly an extension of SysSwO (SEON Core Layer). <br/><br/>Interactive Computer System is a subtype of Computer System, and like the last, it combines hardware and software. Concerning hardware, an Interactive Computer System is (the Computer System) composed of a set of Computer Machines and peripheral devices (Hardware Equipment) connected to them. The striking feature of an Interactive Computer System is that it has a User Interface, a complex Object that is composed of Input Equipment and Output Equipment connected to the Computer Machine. If an Output Equipment is part of a User Interface of an Interactive Computer System, then this Interactive Computer System should be constituted of the Computer Machine that connects the Output Equipment. The same applies to Input Equipment. These constraints are addressed by the following axioms:<br/><br/>A1. <code class="text-muted">&forall; oeq: Output Equipment, ui: User Interface, ics: Interactive Computer System partOf (oeq, ui) &and; partOf (ui, ics) &rarr; (&exist; cm: Computer Machine partOf (cm, ics) &and; connectedTo (oeq, cm))</code><br/><br/>A2. <code class="text-muted">&forall; ieq: Input Equipment, ui: User Interface, ics: Interactive Computer System partOf (ieq, ui) &and; partOf (ui, ics) &rarr; (&exist; cm: Computer Machine partOf (cm, ics) &and; connectedTo (ieq, cm))</code><br/><br/>When a Hardware Equipment is both an Input Equipment and an Output Equipment it is said an IO Equipment. Thus:<br/><br/>A3. <code class="text-muted">&forall; he: Hardware Equipment Input Equipment(he) &and; OutputEquipment(he) &rarr; IOEquipment (he)</code><br/><br/>Regarding software, an Interactive Computer System has a set of Software Systems (In- teractive Software System) loaded in its Computer Machines (Loaded Interactive Software System Copies). The programs that constitute these systems are instances of Program. Some of them deal with aspects related to the user interface and, thus, are instances of User Interface Program. Thus, an Interactive Computer System has a User Interface and the copies of the programs loaded in its computer (Loaded User Interface Programs Copy) that handle its User Interface. The following axiom applies:<br/><br/>A4. <code class="text-muted">&forall; ui: User Interface, ics: Interactive Computer System, lissc: Loaded Interactive Software System Copy partOf (ui, ics) &and; has (ics, lissc) &rarr; &exist; luipc: Loaded User Interface Program Copy includes (lissc, luipc) &and; handles (luipc, ui)</code><br/><br/>Interactive Computer Systems can form another Interactive Computer System, which is said a Complex Interactive Computer System.</p>
 
 <hr class="featurette-divider"><h3 class="featurette-heading" id="HCIO_User_section">3.2.  User</h3>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 3 presents the conceptual model of the User subontology.</p>
-<div class="container-fluid" align="center"><img src="images/User.png" width="1178" class="map img-fluid" usemap="#User"><map name="User">
+<div class="container-fluid my-5" align="center"><img src="images/User.png" width="1178" class="map img-fluid" usemap="#User"><map name="User">
 <area shape="rect" coords="259,506,547,536" href="HCIO.html#HCIO_Intentional+User+Participation+(User+Action)" target="" title="User participation intentionally performed.">
 <area shape="rect" coords="686,506,873,536" href="HCIO.html#HCIO_User+Initiated+Participation" target="" title="Event in which a User inputs data or information using an Input Equipment.">
 <area shape="rect" coords="181,322,247,353" href="HCIO.html#HCIO_User" target="" title="A Person who interacts with (or is expected to interact with) an Interactive Computer System.">
@@ -302,13 +248,13 @@ A human Physical Agent.">
 <area shape="rect" coords="890,475,1080,505" href="HCIO.html#HCIO_Complex+User+Participation" target="" title="Participation composed of two or more User Participations.">
 <area shape="rect" coords="946,430,1125,460" href="HCIO.html#HCIO_Atomic+User+Participation" target="" title="Single User Participation.">
 <area shape="rect" coords="279,414,388,444" href="HCIO.html#HCIO_User+Intention" target="" title="An Intention that inheres in a User, causing him to perform intentional user actions."></map>
-<p align="center" class="lead font-weight-bold">Figure 3. User conceptual model.</p></div>
+<p align="center"><span class="font-weight-bold">Figure 3. </span>User conceptual model.</p></div>
 <p align="justify" class="lead">The User sub-ontology focuses on the user and its possible actions when interacting with an interactive computer system.<br/><br/>User is the role played by a Person that participates in a human-computer interaction. Such participation is said a User Participation, which can be either intentional (Intentional User Participation &minus; or simply User Action) or unintentional (Unintentional User Participation).<br/><br/>In terms of UFO, User Participation is an Agent Participation. Intentional User Participation (User Action) is an Action Contribution, i.e., an intentional participation of a User. Intentional User Participations (User Actions) are caused by Intentions (User Intentions) that inhere in the User. As an Intention, User Intention has a Goal (more specifically a User Goal) as its propositional content. User Action, as an intentional participation, is performed by the User in order to achieve a User Goal. User Actions performed by a User can only be caused by User Intentions that inhere in that User. This constraint is addressed by the following axiom:<br/><br/>A5. <code class="text-muted">&forall; user: User, ua: Intentional User Participation (User Action), uint: User Intention participationOf (ua, user) &and; causedBy (ua, uint) &rarr; inheresIn (uint, user)</code><br/><br/>Considering its mereological structure, a User Participation can be an Atomic User Participation or a Complex User Participation, which is composed of others User Participations. In a Complex User Participation, all the User Participations are participations from the same User. Thus:<br/><br/>A6. <code class="text-muted">&forall; cup: Complex User Participation, user: User, up: User Participation participationOf (cup, user) &and; partOf (up, cup) &rarr; participationOf (up, user)</code><br/><br/>In another classification, which considers the nature of participations and is orthogonal to the ones discussed above, User Participations are classified into two disjoint types: User Initiated Participation and User Interpretation. User Initiated Participation refers to an act performed by the user making an input in the system. User Interpretation, in turn, regards interpreting a state of the system. When a User Initiated Participation is intentional, it is said a User Initiated Action.</p>
 
 <hr class="featurette-divider"><h3 class="featurette-heading" id="HCIO_HC+Interaction_section">3.3.  HC Interaction</h3>
 <p class="lead" align="justify"></p>
 <p class="lead">Figure 4 presents the conceptual model of the HC Interaction subontology.</p>
-<div class="container-fluid" align="center"><img src="images/HC Interaction.png" width="1604" class="map img-fluid" usemap="#HC Interaction"><map name="HC Interaction">
+<div class="container-fluid my-5" align="center"><img src="images/HC Interaction.png" width="1604" class="map img-fluid" usemap="#HC Interaction"><map name="HC Interaction">
 <area shape="rect" coords="461,848,666,878" href="HCIO.html#HCIO_Human-Computer+Interaction" target="" title="An exchange of information (i.e., communication) between a User and an Interactive Computer System via the User Interface.">
 <area shape="rect" coords="685,987,843,1017" href="HCIO.html#HCIO_User+Observable+State" target="" title="A situation (an Observable State) perceivable by Users, typically achieved as the result (output) of a Program Copy Execution, communicated or presented by an Output Equipment.">
 <area shape="rect" coords="1079,594,1237,624" href="SysSwO.html#SysSwO_Loaded+Program+Copy" target="_blank" title="Loaded Program Copy is the materialization of a Program, inhering in a Computer Machine.">
@@ -358,64 +304,26 @@ A human Physical Agent.">
 <area shape="rect" coords="102,864,182,894" href="HCIO.html#HCIO_User+Goal" target="" title="The propositional content of something the User wants to achieve (User Intention).">
 <area shape="rect" coords="25,769,134,799" href="HCIO.html#HCIO_User+Intention" target="" title="An Intention that inheres in a User, causing him to perform intentional user actions.">
 <area shape="rect" coords="886,434,993,464" href="SysSwO.html#SysSwO_Software+Item" target="_blank" title="Piece of software, produced during the software process, not considered a complete Software Product, but an intermediary result."></map>
-<p align="center" class="lead font-weight-bold">Figure 4. HC Interaction conceptual model.</p></div>
+<p align="center"><span class="font-weight-bold">Figure 4. </span>HC Interaction conceptual model.</p></div>
 <p align="justify" class="lead">The HC Interaction sub-ontology links concepts from the other two sub-ontologies to define what a human-computer interaction is.<br/><br/>A Human-Computer Interaction is an interaction between a User and an Interactive Computer System. Thus, a Human-Computer Interaction is composed by a User Participation and an Interactive Computer System Participation, indicating the events performed by both parties in a specific interaction.<br/><br/>As said before (see User Sub-ontology), in terms of UFO, User Participation is an Agent Participation. Interactive Computer System Participation, in turn, is a Complex Object Participation. It is a Complex Event, since it aggregates all events performed by the Interactive Computer System in the context of a single Human-Computer Interaction. It is an Object Participation because, being the Interactive Computer System an Object, its participation is always unintentional.<br/><br/>A User Initiated Participation is performed using one or more Input Equipment. As a result of a User Initiated Participation, a User Input Resulting State is achieved. User Input Resulting State is a Situation representing the data entered by the user before any program execution. This situation triggers Program Copy Executions. Moreover, we can say that User Initiated Participation directly causes Program Copy Execution. Program Copy Execution brings about a Computing Resulting State (internal computer state), which, in turn, can trigger other Program Copy Executions. Thus, a Program Copy Execution can directly cause new Program Copy Executions.<br/><br/>Some Program Copy Executions can bring about a special type of Computing Resulting State, the one that is perceivable by user, said User Observable State. A User Observable State, thus, triggers User Interpretation. Therefore, we say that Program Copy Execution directly causes User Interpretation. In this context, the following axiom applies:<br/><br/>A7. <code class="text-muted">&forall; ui: User Interpretation, uos: User Observable State, pce: Program Copy Execution, uirs: User Input Resulting State, uip: User Initiated Participation triggers (uos, ui) &and; bringsAbout (pce, uos) &and; triggers (uirs, pce) &and; bringsAbout (uip, uirs) &rarr; causes (uip, ui)</code><br/><br/>It is important to say that (A7) does not constrain who are the users involved in the User Initiated Participation and in the User Interpretation, i.e., the User in the User Initiated Participation may be different from the one involved in the User Interpretation.<br/><br/>A User Observable State triggers User Interpretation and is presented by one or more Output Equipment. Thus, Output Equipment supports User Interpretation, i.e.:<br/><br/>A8. <code class="text-muted">&forall; oe: Output Equipment, uos: User Observable State, ui: User Interpretation presents (oe, uos) &and; triggers (uos, ui) &rarr; supports (oe, ui)</code><br/><br/>In a Human-Computer Interaction, both the Input and Output Equipment involved in the interaction should be part of the User Interface of the Interactive Computer System that participates in the interaction.<br/><br/>Since User Initiated Participation typically leads to some processing inside the system that results in an output to the user who can interpret it, we say that User Initiated Participation (indirectly) causes User Interpretation. User Interpretation may cause the User to act again. Thus, User Interpretation may directly cause (in terms of UFO) User Initiated Participations.<br/><br/>When a User Participation is intentional, it means that the User performed it considering some goal (User Goal). Interpretations performed by the user (User Interpretations) may evaluate User Goal achievement. This is a case of goal-driven behavior, in which a cycle of actions (User Participation) are repeated until the user achieves his/her goal (User Initiated Participation (indirectly) causes User Interpretation and User Interpretations (directly) causes User Initiated Participations).<br/><br/>The HC Interaction sub-ontology main purpose is to define what human-computer interaction is. In view of what was discussed, in summary, a Human-Computer Interaction is a Complex Event composed of User Participation and Interactive Computer System Participation. User Participation can involve both User Initiated Participations and User Interpretations. Interactive Computer System Participation regards the set of Program Executions performed by the Interactive Computer System in the interaction.</p>
 </p>					
-				</div>
+			</div>
 
-				<hr>
+			<hr>
 
-				<div class="p-5 rounded" id="conceptsdefinition">
-					<h2 class="featurette-heading">4. Concepts Definition</h2>
-					<p class="lead">The following table shows the definitions for HCIO concepts.</p>		
-					<!--	Concepts are differentiated	by using <i>italic</i> for Foundational level concepts, <b><i>bold italic</i></b> for Core level concepts, 	and <b>bold</b> for Domain level concepts.-->				
-					<div class="table-responsive">
-						<table class="table table-hover">
-							<thead>
-								<tr>
-									<th scope="col">Concept</th>
-									<th scope="col">Definition</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr><td><p id="HCIO_Atomic+User+Participation"><span class="font-italic font-weight-bold">Atomic User Participation</span><a class="text-muted" href=#HCIO_Atomic+User+Participation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Single User Participation.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> user touching her finger to unlock her mobile phone by using her fingerprint; user clicking a button. </span></p></td></tr>
-<tr><td><p id="HCIO_Complex+Interactive+Computer+System"><span class="font-italic font-weight-bold">Complex Interactive Computer System</span><a class="text-muted" href=#HCIO_Complex+Interactive+Computer+System_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Interactive Computer System composed of others Interactive Computer System<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> IoT in a smart home. </span><br/><span class="font-weight-light">src.: </span><span>adapted from (ISO 9241-210, 2010) (ISO 9241-11, 2018).</span></p></td></tr>
-<tr><td><p id="HCIO_Complex+User+Participation"><span class="font-italic font-weight-bold">Complex User Participation</span><a class="text-muted" href=#HCIO_Complex+User+Participation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Participation composed of two or more User Participations.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> user typing her password and then answering security questions to log in the e-mail system.</span></p></td></tr>
-<tr><td><p id="HCIO_Human-Computer+Interaction"><span class="font-italic font-weight-bold">Human-Computer Interaction</span><a class="text-muted" href=#HCIO_Human-Computer+Interaction_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>An exchange of information (i.e., communication) between a User and an Interactive Computer System via the User Interface.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> user touching her finger to unlock her mobile phone by using her fingerprint and the mobile phone system showing a message informing that the fingerprint was not recognized; user entering a room, in a smart home, which automatically turns on the light. </span><br/><span class="font-weight-light">src.: </span><span>adapted from (ISO 9241-210, 2010).</span></p></td></tr>
-<tr><td><p id="HCIO_Input+Equipment"><span class="font-italic font-weight-bold">Input Equipment</span><a class="text-muted" href=#HCIO_Input+Equipment_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Hardware Equipment used to receive and transmit information or data from a User (input).<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> keyboard, mouse, sensors. </span><br/><span class="font-weight-light">src.: </span><span>adapted from (Dix et al., 2004).</span></p></td></tr>
-<tr><td><p id="HCIO_Intentional+User+Participation+(User+Action)"><span class="font-italic font-weight-bold">Intentional User Participation (User Action)</span><a class="text-muted" href=#HCIO_Intentional+User+Participation+(User+Action)_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>User participation intentionally performed.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> user touching her finger to unlock her mobile phone by using her fingerprint; user clicking the send button to send an e-mail.</span></p></td></tr>
-<tr><td><p id="HCIO_Interactive+Computer+System"><span class="font-italic font-weight-bold">Interactive Computer System</span><a class="text-muted" href=#HCIO_Interactive+Computer+System_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Computer System that combines User Interface, Computer Machine and Loaded Software System Copies, used to process, transform, store, display or transmit information or data by receiving input, and communicating output to Users.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> a desktop computer, its monitor, keyboard, mouse and software systems loaded in the computer (operational system, browser, text editor, etc.); smart watch; smart mobile phone. </span><br/><span class="font-weight-light">src.: </span><span> adapted from (ISO 9241-210, 2010).</span></p></td></tr>
-<tr><td><p id="HCIO_Interactive+Computer+System+Participation"><span class="font-italic font-weight-bold">Interactive Computer System Participation</span><a class="text-muted" href=#HCIO_Interactive+Computer+System+Participation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>The participation of an Interactive Computer System in a Human-Computer Interaction.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> the participation of the mobile phone system in the human-computer interaction in which the user touches her finger to unlock her mobile phone by using her fingerprint and the mobile phone system shows a message informing that the fingerprint was not recognized; the participation of the smart watch in the human-computer interaction in which the user uses the smart watch to monitor her heart pulse.</span></p></td></tr>
-<tr><td><p id="HCIO_Interactive+Software+System"><span class="font-italic font-weight-bold">Interactive Software System</span><a class="text-muted" href=#HCIO_Interactive+Software+System_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Software system that includes, among other programs, User Interface Programs.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> a home banking system and its graphical programs that deals with user interface aspects.</span></p></td></tr>
-<tr><td><p id="HCIO_Loaded+Interactive+Software+System+Copy"><span class="font-italic font-weight-bold">Loaded Interactive Software System Copy</span><a class="text-muted" href=#HCIO_Loaded+Interactive+Software+System+Copy_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Loaded Software System Copy that is the materialization of an Interactive Software System.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> the copy of the home banking system loaded in the computer of a certain user.</span></p></td></tr>
-<tr><td><p id="HCIO_Loaded+User+Interface+Program+Copy"><span class="font-italic font-weight-bold">Loaded User Interface Program Copy</span><a class="text-muted" href=#HCIO_Loaded+User+Interface+Program+Copy_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Loaded Program Copy that is the materialization of a User Interface Program.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> the copy of the programs that deal with interface aspects of the home banking system loaded in the computer of a certain user.</span></p></td></tr>
-<tr><td><p id="HCIO_Output+Equipment"><span class="font-italic font-weight-bold">Output Equipment</span><a class="text-muted" href=#HCIO_Output+Equipment_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Hardware Equipment used to transmit or display information or data, communicating output to Users.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> Monitor, speaker, etc. </span><br/><span class="font-weight-light">src.: </span><span> adapted from (Dix et al., 2004).</span></p></td></tr>
-<tr><td><p id="HCIO_Unintentional+User+Participation"><span class="font-italic font-weight-bold">Unintentional User Participation</span><a class="text-muted" href=#HCIO_Unintentional+User+Participation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>User participation unintentionally performed.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> a user walking and unintentionally giving information about number of steps to a monitoring system loaded in her smart watch; user entering a room, in a smart home, which automatically turns on the light.  </span></p></td></tr>
-<tr><td><p id="HCIO_User"><span class="font-italic font-weight-bold">User</span><a class="text-muted" href=#HCIO_User_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>A Person who interacts with (or is expected to interact with) an Interactive Computer System.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> a person who uses a home banking system, smart watch or smart mobile phone. </span><br/><span class="font-weight-light">src.: </span><span>adapted from (ISO 9241-210, 2010).</span></p></td></tr>
-<tr><td><p id="HCIO_User+Goal"><span class="font-italic font-weight-bold">User Goal</span><a class="text-muted" href=#HCIO_User+Goal_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>The propositional content of something the User wants to achieve (User Intention).<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> the goal of buying fly tickets to go on vacation.</span></p></td></tr>
-<tr><td><p id="HCIO_User+Initiated+Action"><span class="font-italic font-weight-bold">User Initiated Action</span><a class="text-muted" href=#HCIO_User+Initiated+Action_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Intentional User Action of inputting data or information using an Input Equipment.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> user touching her finger to unlock her mobile phone by using her fingerprint; user clicking the send button to send an email.</span></p></td></tr>
-<tr><td><p id="HCIO_User+Initiated+Participation"><span class="font-italic font-weight-bold">User Initiated Participation</span><a class="text-muted" href=#HCIO_User+Initiated+Participation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Event in which a User inputs data or information using an Input Equipment.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> user touching her finger to unlock her mobile phone by using her fingerprint.</span></p></td></tr>
-<tr><td><p id="HCIO_User+Input+Resulting+State"><span class="font-italic font-weight-bold">User Input Resulting State</span><a class="text-muted" href=#HCIO_User+Input+Resulting+State_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>A situation achieved as the result of User’s input (data or information) received by means of an Input Equipment.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> the user fingerprint captured by the mobile phone system; the button clicked.</span></p></td></tr>
-<tr><td><p id="HCIO_User+Intention"><span class="font-italic font-weight-bold">User Intention</span><a class="text-muted" href=#HCIO_User+Intention_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>An Intention that inheres in a User, causing him to perform intentional user actions.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> the intention to travel on vacation.  </span></p></td></tr>
-<tr><td><p id="HCIO_User+Interface"><span class="font-italic font-weight-bold">User Interface</span><a class="text-muted" href=#HCIO_User+Interface_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>All components of an interactive system (software or hardware) that provide information and controls for the user to accomplish specific tasks with the interactive system.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> mouse, keyboard, monitor, sensors and the software that handle them. </span><br/><span class="font-weight-light">src.: </span><span>adapted from (ISO 9241-210, 2010; ISO 9241-112, 2017).</span></p></td></tr>
-<tr><td><p id="HCIO_User+Interface+Program"><span class="font-italic font-weight-bold">User Interface Program</span><a class="text-muted" href=#HCIO_User+Interface+Program_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Program that deals with aspects related to the User Interface.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> the program responsible for the graphical user interface of the component that captures the user fingerprint to unlock a mobile phone.</span></p></td></tr>
-<tr><td><p id="HCIO_User+Interpretation"><span class="font-italic font-weight-bold">User Interpretation</span><a class="text-muted" href=#HCIO_User+Interpretation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Event in which a User interprets the system output.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> user interpreting a message from the mobile phone system informing that the captured fingerprint was not recognized; user sensing her smart watch vibrate; user hearing the notification sound of new message.</span></p></td></tr>
-<tr><td><p id="HCIO_User+Observable+State"><span class="font-italic font-weight-bold">User Observable State</span><a class="text-muted" href=#HCIO_User+Observable+State_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>A situation (an Observable State) perceivable by Users, typically achieved as the result (output) of a Program Copy Execution, communicated or presented by an Output Equipment.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> a message shown in the mobile phone screen informing the user that the captured fingerprint was not recognized, smart watch vibrating; sounds emitted by the mobile phone.</span></p></td></tr>
-<tr><td><p id="HCIO_User+Participation"><span class="font-italic font-weight-bold">User Participation</span><a class="text-muted" href=#HCIO_User+Participation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Event in which the user participates in a Human-Computer Interaction.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> user walking and unintentionally giving information about number of steps to a monitoring system loaded in her smart watch; user touching her finger to unlock her mobile phone by using her fingerprint; user interpreting a message from the mobile phone system informing that the captured fingerprint was not recognized.</span></p></td></tr>
-
-							</tbody>
-							<caption><small>HCIO concepts definition.</small></caption>
-						</table>
-  				</div>
-
-
-
-				<!--	<table style="width: 100%" border="1" cellpadding="6">
-						<tbody>
-							<tr style="background-color: #D8D8D8">
-								<td style="width: 25%"><b>Concept</b></td>
-								<td style="width: 75%"><b>Definition</b></td>
+			<div class="p-5 rounded" id="conceptsdefinition">
+				<h2 class="featurette-heading">4. Concepts Definition</h2>
+				<p class="lead">The following table shows the definitions for HCIO concepts.</p>		
+				
+				<div class="table-responsive my-5">
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th scope="col">Concept</th>
+								<th scope="col">Definition</th>
 							</tr>
+						</thead>
+						<tbody>
 							<tr><td><p id="HCIO_Atomic+User+Participation"><span class="font-italic font-weight-bold">Atomic User Participation</span><a class="text-muted" href=#HCIO_Atomic+User+Participation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Single User Participation.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> user touching her finger to unlock her mobile phone by using her fingerprint; user clicking a button. </span></p></td></tr>
 <tr><td><p id="HCIO_Complex+Interactive+Computer+System"><span class="font-italic font-weight-bold">Complex Interactive Computer System</span><a class="text-muted" href=#HCIO_Complex+Interactive+Computer+System_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Interactive Computer System composed of others Interactive Computer System<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> IoT in a smart home. </span><br/><span class="font-weight-light">src.: </span><span>adapted from (ISO 9241-210, 2010) (ISO 9241-11, 2018).</span></p></td></tr>
 <tr><td><p id="HCIO_Complex+User+Participation"><span class="font-italic font-weight-bold">Complex User Participation</span><a class="text-muted" href=#HCIO_Complex+User+Participation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Participation composed of two or more User Participations.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> user typing her password and then answering security questions to log in the e-mail system.</span></p></td></tr>
@@ -442,16 +350,18 @@ A human Physical Agent.">
 <tr><td><p id="HCIO_User+Participation"><span class="font-italic font-weight-bold">User Participation</span><a class="text-muted" href=#HCIO_User+Participation_detail><span class="m-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg></span></a></td><td><p>Event in which the user participates in a Human-Computer Interaction.<br/><span class="font-weight-light">E.g.:</span><span class="font-italic"> user walking and unintentionally giving information about number of steps to a monitoring system loaded in her smart watch; user touching her finger to unlock her mobile phone by using her fingerprint; user interpreting a message from the mobile phone system informing that the captured fingerprint was not recognized.</span></p></td></tr>
 
 						</tbody>
-					</table>-->
-
+						<caption><small>HCIO concepts definition.</small></caption>
+					</table>
 				</div>
 
-				<hr>		
+			</div>
 
-				<div class="p-5 rounded" id="detailedconcepts">
-					<h2 class="featurette-heading">5. Detailed Concepts</h2>
-					<p class="lead">Human-Computer Interaction Ontology (HCIO) detailed concepts.</p>					
-					<hr><div class="container-fluid" id="HCIO_Atomic+User+Participation_detail"><h4><i class="bi bi-diagram-3"></i> HCIO::Atomic User Participation</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><span class="font-weight-bold text-center">Atomic User Participation</span></p></div><br/><h5>Specializes:</h5><p><i class="bi bi-diagram-2"></i> HCIO::User Participation</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Single User Participation.<br/><span class="font-weight-bold">Example:</span><span class="font-italic"> user touching her finger to unlock her mobile phone by using her fingerprint; user clicking a button. </span></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p></p></div></div></div>
+			<hr>		
+
+			<div class="p-5 rounded" id="detailedconcepts">
+				<h2 class="featurette-heading">5. Detailed Concepts</h2>
+				<p class="lead">Human-Computer Interaction Ontology (HCIO) detailed concepts.</p>					
+				<hr><div class="container-fluid" id="HCIO_Atomic+User+Participation_detail"><h4><i class="bi bi-diagram-3"></i> HCIO::Atomic User Participation</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><span class="font-weight-bold text-center">Atomic User Participation</span></p></div><br/><h5>Specializes:</h5><p><i class="bi bi-diagram-2"></i> HCIO::User Participation</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Single User Participation.<br/><span class="font-weight-bold">Example:</span><span class="font-italic"> user touching her finger to unlock her mobile phone by using her fingerprint; user clicking a button. </span></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p></p></div></div></div>
 
 <hr><div class="container-fluid" id="HCIO_Complex+Interactive+Computer+System_detail"><h4><i class="bi bi-diagram-3"></i> HCIO::Complex Interactive Computer System</h4><div class="row d-flex"><div class="p-3 m-3 col"><div class="border border-dark mb-3"><p class="text-center"><br/><span class="font-weight-bold text-center">Complex Interactive Computer System</span></p></div><br/><h5>Specializes:</h5><p><i class="bi bi-diagram-2"></i> HCIO::Interactive Computer System</p></div><div class="p-3 m-3 col"><h5>Definition:</h5><p>Interactive Computer System composed of others Interactive Computer System<br/><span class="font-weight-bold">Example:</span><span class="font-italic"> IoT in a smart home. </span><br/><span class="font-weight-bold">Source: </span><span>adapted from (ISO 9241-210, 2010) (ISO 9241-11, 2018).</span></p></div><div class="p-3 m-3 col"><h5>Relations:</h5><p>
 <code class="text-muted">Complex Interactive Computer System (0..*) <>-- (2..*) Interactive Computer System<br/>
@@ -608,9 +518,9 @@ User (1..1) participation of (1..*) User Participation<br/>
 </code></p></div></div></div>
 
 
-				</div>
-				
-			</main>
+			</div>
+			
+		</main>
 	
     <footer class="p-5 rounded border-top">
     	<div class="row justify-content-md-center">
@@ -683,7 +593,7 @@ User (1..1) participation of (1..*) User Participation<br/>
 				<div class="col-md-auto">
 					<small>
 						<span class="text-muted">
-						Tue Dec 14 21:27:58 BRT 2021
+						Wed Dec 15 22:38:28 BRT 2021
 						</span>
 					</small>
 				</div>
@@ -695,15 +605,12 @@ User (1..1) participation of (1..*) User Participation<br/>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+	  <script type="text/javascript" src="bootstrap/jquery/jquery-3.5.1.slim.min.js"></script>
 
-    <script src="bootstrap-5.1.3-dist/js/jquery-3.2.1.slim.min.js"></script>
+	  <script type="text/javascript" src="bootstrap/js/popper-1.16.1.min.js"></script>
 
-    <script src="bootstrap-5.1.3-dist/js/popper.min.js"></script>
+	  <script type="text/javascript" src="bootstrap/4.6.1-dist/js/bootstrap.min.js"></script>
 
-
-    <script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
-
-    <script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
 
     <script type="text/javascript" src="jquery.min.js"></script>
 		<script type="text/javascript" src="maphilight.js"></script>
@@ -774,7 +681,14 @@ User (1..1) participation of (1..*) User Participation<br/>
 			});			
 			
 		</script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-WXTXYYCXMP"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
 
+		  gtag('config', 'G-WXTXYYCXMP');
+		</script>
 	</body>
-	<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 </html>
