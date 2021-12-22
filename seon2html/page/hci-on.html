@@ -38,7 +38,24 @@
         }
       }
     
+      pre {
+        display: block;
+        padding: 9.5px;
+        margin: 0 0 10px;
+        font-size: 13px;
+        line-height: 1.42857143;
+        color: #333;
+        word-break: break-all;
+        word-wrap: break-word;
+        background-color: #f5f5f5;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
 
+      .csl-entry {
+        font-size: 15px;
+        margin: 0 0 10px;
+      }
       </style>
      <!-- Custom styles for this template -->
      <link href="bootstrap/css/carousel.css" rel="stylesheet">
@@ -78,6 +95,7 @@
             <a class="dropdown-item" href="HCI-ON.html#architecture">Architecture</a>
             <a class="dropdown-item" href="HCI-ON.html#hcionmechanism">Evolution Mechanism</a>
             <a class="dropdown-item" href="HCI-ON.html#hcionseon">Relationship with SEON</a>
+            <a class="dropdown-item" href="HCI-ON.html#hcionref">References</a>
           </div>
         </li>
 
@@ -132,17 +150,17 @@
 	<div class="p-5 rounded" id="hciondescription">
     <h2 class="featurette-heading">The Network</h2>
 		<p align="justify" class="lead">The Human-Computer Interaction Ontology Network (HCI-ON), is a knowledge framework proposed to support addressing knowledge-related and semantic interoperability solutions.</p>
-		<p align="justify" class="lead">Ideally, in wide domains like HCI, ontologies should not be stand-alone artifacts. Thus, we advocate that ontologies should be organized in an ontology network (ON), where ontologies are modular and related together through a variety of relationships, forming a network of interlinked semantic resources (SUÁREZ-FIGUEROA et al., 2012).</p>
+		<p align="justify" class="lead">Ideally, in wide domains like HCI, ontologies should not be stand-alone artifacts. Thus, we advocate that ontologies should be organized in an ontology network (ON), where ontologies are modular and related together through a variety of relationships, forming a network of interlinked semantic resources (<a class="text-muted" href="#suarezfigueroa2012">SUÁREZ-FIGUEROA et al., 2012</a>).</p>
 		<p align="justify" class="lead">This way, knowledge is better structured and ontologies reuse concepts one from another, keeping consistency in shared concepts and decreasing overlap problems. By organizing ontologies in an ON, when ontologies are needed in scenarios spanning different HCI sub-domains, instead of spending effort to integrate several ontologies, one can just extract the ON portion to be used.</p>
 		<p align="justify" class="lead">Taking these considerations in mind, we propose the Human-Computer Interaction Ontology Network (HCI-ON) as a knowledge framework of the HCI domain</p>
-		<p align="justify" class="lead">Figure 4.2 shows the current version of HCI-ON, containing the foundational, core and well- founded domain-specific layers. Each circle (network’s node) represents an ontology. Dotted circles represent ontologies under development. Arrows denote dependency relationship between networked ontologies. Dependency relationship indicates that concepts from the target ontology are reused by the source ontology.</p>
+		<p align="justify" class="lead">Figure <a class="text-muted" href="#hcion-fig01">1</a> shows the current version of HCI-ON, containing the foundational, core and well-founded domain-specific layers. Each circle (network’s node) represents an ontology. Dotted circles represent ontologies under development. Arrows denote dependency relationship between networked ontologies. Dependency relationship indicates that concepts from the target ontology are reused by the source ontology.</p>
 		<div class="d-flex justify-content-center my-5">
-			<figure class="figure">
+			<figure class="figure" id="hcion-fig01">
 				<img src="images/hcion-fig02.png" class="figure-img img-fluid rounded" alt="...">
 				<figcaption class="figure-caption text-center"><span class="font-weight-bold">Figure 1: </span>HCI-ON current version.</figcaption>
 			</figure>
 		</div>
-		<p align="justify" class="lead">Ontology development and integration are not simple tasks. In addition, for building an integrated framework, it is not just putting the pieces together. Contrariwise, it is an incremental and long-term work. Therefore, the ON shall provide the means for facilitating its growth, i.e., mechanisms that deliver the high-level structures and methods for easily accommodating the new, lower-level, pieces in such a way that preserves the network properties and does not conflict with any existing part (RUY, 2017). Finally, by organizing HCI ontologies in a network, it is not our ambition to establish a “complete HCI ontology”, but providing a starting point, and a proper structure for easing the addition of new ontologies and evolution of the existing ones. Hence, HCI-ON rises with three main premises (RUY, 2017): grounding, being based on a well-founded grounding for supporting ontology development; growth, offering mechanisms to easily building and incorporating new HCI sub-domain ontologies to the network; and consistency, promoting integration by keeping a consistent semantics for concepts and relations along the whole network.</p>
+		<p align="justify" class="lead">Ontology development and integration are not simple tasks. In addition, for building an integrated framework, it is not just putting the pieces together. Contrariwise, it is an incremental and long-term work. Therefore, the ON shall provide the means for facilitating its growth, i.e., mechanisms that deliver the high-level structures and methods for easily accommodating the new, lower-level, pieces in such a way that preserves the network properties and does not conflict with any existing part (<a class="text-muted" href="#ruy2017">RUY, 2017</a>). Finally, by organizing HCI ontologies in a network, it is not our ambition to establish a “complete HCI ontology”, but providing a starting point, and a proper structure for easing the addition of new ontologies and evolution of the existing ones. Hence, HCI-ON rises with three main premises (<a class="text-muted" href="#ruy2017">RUY, 2017</a>): grounding, being based on a well-founded grounding for supporting ontology development; growth, offering mechanisms to easily building and incorporating new HCI sub-domain ontologies to the network; and consistency, promoting integration by keeping a consistent semantics for concepts and relations along the whole network.</p>
 
 	</div>
 
@@ -151,16 +169,21 @@
 	<div class="p-5 rounded" id="architecture">
 		<h2 class="featurette-heading">HCI-ON's Architecture </h2>
 		<p align="justify" class="lead">To truly enjoy the benefits of keeping the ontologies in a network, we need to take advantage of the existing resources available in the ON for gradually improving and extending it. It is crucial to establish a sustainable architecture that supports growing the ON by adding new ontologies to it or integrating existing ontologies into it.</p>
+		
+		<p align="justify" class="lead">HCI-ON adopts a three-layered architecture: in the background, we have a foundational ontology (the Unified Foundational Ontology – UFO (<a class="text-muted" href="#guizzardi2005">GUIZZARDI, 2005</a>; <a class="text-muted" href="#guizzardi2008">GUIZZARDI; FALBO; GUIZZARDI, 2008</a>; <a class="text-muted" href="#guizzardi2013">GUIZZARDI et al., 2013</a>)) to provide the general ground knowledge for classifying concepts and relations in the ON; in the center, core ontologies are used to represent the general domain knowledge, being the basis for the sub-domain networked ontologies; going to the borders, well-founded and aligned domain-specific ontologies appear, describing more specific knowledge. Well-founded domain ontologies are grounded in the foundational ontology and cover HCI more relevant aspects. Aligned ontologies are existing HCI ontologies that are connected to the ON as they are. Thus, the last layer of HCI-ON, which regards domain-specific ontologies, is subdivided into two: one with well-founded domain ontologies and another with aligned domain ontologies.</p>
+		<p align="justify" class="lead">Therefore, the HCI-ON architecture is organized considering the stated premises and the three ontology generality levels (foundational, core and domain), as Figure <a class="text-muted" href="#hcion-fig02">2</a> shows (see also Figure <a class="text-muted" href="#hcion-fig03">3</a>).</p>
+
 		<div class="d-flex justify-content-center my-5">
-			<figure class="figure">
+			<figure class="figure" id="hcion-fig02">
 				<img src="images/hcion-fig01.png" class="figure-img img-fluid rounded" alt="...">
 				<figcaption class="figure-caption text-center"><span class="font-weight-bold">Figure 2: </span>HCI-ON Architecture.</figcaption>
 			</figure>
 		</div>
-		<p align="justify" class="lead">HCI-ON adopts a three-layered architecture: in the background, we have a foundational ontology (the Unified Foundational Ontology – UFO (GUIZZARDI, 2005; GUIZZARDI; FALBO; GUIZZARDI, 2008; GUIZZARDI et al., 2013)) to provide the general ground knowledge for classifying concepts and relations in the ON; in the center, core ontologies are used to represent the general domain knowledge, being the basis for the sub-domain networked ontologies; going to the borders, well-founded and aligned domain-specific ontologies appear, describing more specific knowledge. Well-founded domain ontologies are grounded in the foun- dational ontology and cover HCI more relevant aspects. Aligned ontologies are existing HCI ontologies that are connected to the ON as they are. Thus, the last layer of HCI-ON, which regards domain-specific ontologies, is subdivided into two: one with well-founded domain ontologies and another with aligned domain ontologies.</p>
-		<p align="justify" class="lead">Therefore, the HCI-ON architecture is organized considering the stated premises and the three ontology generality levels (foundational, core and domain), as Figure 1 shows.</p>
+
+		<p align="justify" class="lead">In a nutshell, the foundational layer offers the ontological distinctions for the core and domain layers, while the core layer offers the HCI core knowledge for building the domain networked ontologies. This way of grounding the ontologies in the network is helpful for engineering the networked ontologies, since it provides ontological consistency and makes a number of modeling decisions easier. It assures the grounding and consistency premises. Moreover, HCI is a very interrelated domain and, as HCI-ON increases, it has more ontologies with concepts and relations potentially reusable by the new ontologies. This reuse-based development reinforces the growth premise. Regarding the aligned domain-specific layer, currently, HCI-ON contains the 35 HCI ontologies identified in our secondary study (<a class="text-muted" href="#costa2021-SLR">COSTA; BARCELLOS; FALBO, 2021</a>).</p>
+
 		<div class="d-flex justify-content-center my-5">
-			<figure class="figure">
+			<figure class="figure" id="hcion-fig03">
 				<img src="images/HCI-ON.png" width="594" class="map img-fluid" usemap="#HCI-ON"><map name="HCI-ON">
 <area shape="rect" coords="58,257,538,325" href="HCIO.html#HCIO_HCIO_section" target="" title="">
 <area shape="rect" coords="361,476,429,544" href="CUO.html#CUO_CUO_section" target="" title="">
@@ -179,8 +202,8 @@
 			graph view »</a></figcaption>
 			</figure>
 		</div>
-		<p align="justify" class="lead">In a nutshell, the foundational layer offers the ontological distinctions for the core and domain layers, while the core layer offers the HCI core knowledge for building the domain networked ontologies. This way of grounding the ontologies in the network is helpful for engine- ering the networked ontologies, since it provides ontological consistency and makes a number of modeling decisions easier. It assures the grounding and consistency premises. Moreover, HCI is a very interrelated domain and, as HCI-ON increases, it has more ontologies with concepts and relations potentially reusable by the new ontologies. This reuse-based development reinforces the growth premise. Regarding the aligned domain-specific layer, currently, HCI-ON contains the 35 HCI ontologies identified in our secondary study (see Chapter 3).</p>
-		<p align="justify" class="lead">These ontologies were connected to HCI-ON through alignment relationships and, thus, they are kept as they are. Therefore, they are not grounded in UFO. For better visualization, ontologies at the aligned domain-specific layer are represented in several figures. Figure 4.1, Figure 4.2, Figure 4.3 and Figure 4.4 complement Figure 1 and present all the networked ontologies of HCI-ON. In the figures, the id related to each ontology refer to the ones assigned to the ontologies in Chapter 3. Dotted arrows represent alignment relationships.</p>
+
+		<p align="justify" class="lead">These ontologies were connected to HCI-ON through alignment relationships and, thus, they are kept as they are. Therefore, they are not grounded in UFO. For better visualization, ontologies at the aligned domain-specific layer are represented in several figures. Figure <a class="text-muted" href="#hcion-fig041">4.1</a>, Figure <a class="text-muted" href="#hcion-fig042">4.2</a>, Figure <a class="text-muted" href="#hcion-fig043">4.3</a> and Figure <a class="text-muted" href="#hcion-fig044">4.4</a> complement Figure <a class="text-muted" href="#hcion-fig01">1</a> and present all the networked ontologies of HCI-ON. In the figures, the id related to each ontology refer to the ones assigned to the ontologies in (<a class="text-muted" href="#costa2021-SLR">COSTA; BARCELLOS; FALBO, 2021</a>). Dotted arrows represent alignment relationships.</p>
 	</div>
 
 	<hr>
@@ -188,7 +211,7 @@
 	<div class="p-5 rounded" id="hcionfl">
 		<p><i class="bi bi-star"></i></p>
 		<h3 class="featurette-heading">Foundational Layer</h3>
-		<p align="justify" class="lead">At the top of HCI-ON, sustaining the network, is the Unified Foundational Ontology (UFO) (GUIZZARDI, 2005). UFO is divided into three parts: an ontology of endurants (objects) (GUIZZARDI, 2005), an ontology of perdurants (events) (GUIZZARDI et al., 2013), and an ontology of social entities (GUIZZARDI; FALBO; GUIZZARDI, 2008). Its ontological distinctions are used for classifying HCI-ON concepts, e.g., as objects, actions, quality, agents, roles, goals and so on. UFO provides the necessary grounding for the concepts and relations of all networked ontologies. Although UFO is incorporated as an essential part of the ON, it is not under the HCI-ON control.</p>		
+		<p align="justify" class="lead">At the top of HCI-ON, sustaining the network, is the Unified Foundational Ontology (UFO) (<a class="text-muted" href="#guizzardi2005">GUIZZARDI, 2005</a>). UFO is divided into three parts: an ontology of endurants (objects) (<a class="text-muted" href="#guizzardi2005">GUIZZARDI, 2005</a>), an ontology of perdurants (events) (<a class="text-muted" href="#guizzardi2013">GUIZZARDI et al., 2013</a>), and an ontology of social entities (<a class="text-muted" href="#guizzardi2008">GUIZZARDI; FALBO; GUIZZARDI, 2008</a>). Its ontological distinctions are used for classifying HCI-ON concepts, e.g., as objects, actions, quality, agents, roles, goals and so on. UFO provides the necessary grounding for the concepts and relations of all networked ontologies. Although UFO is incorporated as an essential part of the ON, it is not under the HCI-ON control.</p>		
 	</div>
 
 	<hr>
@@ -196,7 +219,7 @@
 	<div class="p-5 rounded" id="hcioncl">
 		<p><i class="bi bi-star-half"></i></p>
 		<h3 class="featurette-heading">Core Layer</h3>
-		<p align="justify" class="lead">In the center of HCI-ON, providing the HCI core knowledge for the network, there is the Human-Computer Interaction Ontology (HCIO). HCIO is a core ontology developed based on a set of HCI theories and literature. It captures that interactive computer system have a complex artifactual nature, being constituted by software artifacts of different nature. Its purpose is to clarify the main notions and establish an explicit common and shared conceptualization about the HCI phenomenon. HCIO describes what an interactive system is, which types of actions users perform when interacting with an interactive system and, finally, what a human-computer interaction is. It is at the heart of HCI-ON, since it includes important concepts for talking about core aspects of HCI (e.g., to talk about HCI design or evaluation, it is necessary to refer to Interactive Computer System) (COSTA et al., 2020).</p>
+		<p align="justify" class="lead">In the center of HCI-ON, providing the HCI core knowledge for the network, there is the Human-Computer Interaction Ontology (HCIO). HCIO is a core ontology developed based on a set of HCI theories and literature. It captures that interactive computer system have a complex artifactual nature, being constituted by software artifacts of different nature. Its purpose is to clarify the main notions and establish an explicit common and shared conceptualization about the HCI phenomenon. HCIO describes what an interactive system is, which types of actions users perform when interacting with an interactive system and, finally, what a human-computer interaction is. It is at the heart of HCI-ON, since it includes important concepts for talking about core aspects of HCI (e.g., to talk about HCI design or evaluation, it is necessary to refer to Interactive Computer System) (<a class="text-muted" href="#costa2020-HCION">COSTA et al., 2020</a>).</p>
 	</div>
 
 	<hr>
@@ -213,7 +236,7 @@
 	<div class="p-5 rounded" id="hcionwfdsl">
 		<p><small><i class="bi bi-star-fill"></i></small></p>
 		<h4 class="featurette-heading">Well-founded Domain-specific Layer</h4>
-		<p align="justify" class="lead">Well-founded domain ontologies encompass HCI sub-domains (e.g., HCI design, HCI evaluation, user interface, user characterization), are grounded in UFO and reuse concepts from HCIO. They are connected to the network through dependency relationships. Currently, there are seven well-founded domain ontologies (some of them under development): HCI Design Ontology (HCIDO) (COSTA et al., 2020; CASTRO, 2021); HCI Evaluation Ontology (HCIEO) (presented in Chapter 6); UI Types and Elements Ontology (UIT&EO); HCI Modality Ontology (HCIMO); Context of Use Ontology (CUO); User Characterization Ontology (UCO), and HCI Quality Characteristics Ontology (HCIQCO). HCIDO and HCIEO address aspects related to, respectively, HCI design and evaluation, such as the process, produced arti- facts and stakeholders, among others. HCIMO treats, in a general way, HCI styles/paradigms (modalities of interaction). It connects to UIT&EO to indicate Input and Output (I/O) devices and types of interface used in these approaches. UIT&EO addresses interface types and their elements, associating them with the possible types of I/O equipment to be used in each element. CUO describes the elements that characterize a context of use, describing physical and social environments in which the interaction occurs, such as users involved in the interaction, tasks in which the interaction occurs and involved equipment (e.g., hardware, software). UCO treats, in a general way, aspects of user profile and characteristics that are important in the context of HCI domain, such as user’s needs, preferences, disability, capacity, impairments.</p>
+		<p align="justify" class="lead">Well-founded domain ontologies encompass HCI sub-domains (e.g., HCI design, HCI evaluation, user interface, user characterization), are grounded in UFO and reuse concepts from HCIO. They are connected to the network through dependency relationships. Currently, there are seven well-founded domain ontologies (some of them under development): HCI Design Ontology (HCIDO) (<a class="text-muted" href="#costa2020-HCION">COSTA et al., 2020</a>; <a class="text-muted" href="#castro2021thesis">CASTRO, 2021</a>); HCI Evaluation Ontology (HCIEO) (presented in Chapter 6); UI Types and Elements Ontology (UIT&EO); HCI Modality Ontology (HCIMO); Context of Use Ontology (CUO); User Characterization Ontology (UCO), and HCI Quality Characteristics Ontology (HCIQCO). HCIDO and HCIEO address aspects related to, respectively, HCI design and evaluation, such as the process, produced artifacts and stakeholders, among others. HCIMO treats, in a general way, HCI styles/paradigms (modalities of interaction). It connects to UIT&EO to indicate Input and Output (I/O) devices and types of interface used in these approaches. UIT&EO addresses interface types and their elements, associating them with the possible types of I/O equipment to be used in each element. CUO describes the elements that characterize a context of use, describing physical and social environments in which the interaction occurs, such as users involved in the interaction, tasks in which the interaction occurs and involved equipment (e.g., hardware, software). UCO treats, in a general way, aspects of user profile and characteristics that are important in the context of HCI domain, such as user’s needs, preferences, disability, capacity, impairments.</p>
 		<p align="justify" class="lead">Finally, HCIQCO describes quality characteristics of user interface or interactive computer system (e.g., usability, communicability). The decision on which well-founded domain ontologies we should develop was made in order to cover relevant aspects of the HCI domain, providing knowledge to talk about the whole life cycle of an HCI project, ranging from the HCI design, user interface, modalities of interaction, HCI evaluation to context of use.</p>
 	</div>
 
@@ -226,28 +249,28 @@
 
 		<div class="container">
 			<div class="d-flex justify-content-center my-5">
-				<figure class="figure">
+				<figure class="figure" id="hcion-fig041">
 					<img src="images/hcion-fig03.png" class="figure-img img-fluid rounded">
 					<figcaption class="figure-caption"><span class="text-center text-wrap"><span class="font-weight-bold">Figure 4.1: </span>HCI ontologies (#02, #06, #07, #11, #16, #18, #25 and #30) aligned to core and well-founded domain layers.</span></figcaption>
 				</figure>
 			</div>
 
 			<div class="d-flex justify-content-center my-5">					
-				<figure class="figure">
+				<figure class="figure" id="hcion-fig042">
 					<img src="images/hcion-fig04.png" class="figure-img img-fluid rounded">
 					<figcaption class="figure-caption"><span class="text-center text-wrap"><span class="font-weight-bold">Figure 4.2: </span>HCI ontologies (#01, #03, #04, #05, #08, #09, #10, #12 and #13) aligned to core and well-founded domain layers.</span></figcaption>
 				</figure>	
 			</div>
 
 			<div class="d-flex justify-content-center my-5">
-				<figure class="figure">
+				<figure class="figure" id="hcion-fig043">
 					<img src="images/hcion-fig05.png" class="figure-img img-fluid rounded">
 					<figcaption class="figure-caption"><span class="text-center text-wrap"><span class="font-weight-bold">Figure 4.3: </span>HCI ontologies (#14, #15, #17, #19, #20, #21, #22, #23 and #24) aligned to core and well-founded domain layers.</span></figcaption>
 				</figure>
 			</div>
 
 			<div class="d-flex justify-content-center my-5">
-				<figure class="figure">
+				<figure class="figure" id="hcion-fig044">
 					<img src="images/hcion-fig06.png" class="figure-img img-fluid rounded">
 					<figcaption class="figure-caption"><span class="text-center text-wrap"><span class="font-weight-bold">Figure 4.4: </span>HCI ontologies (#26, #27, #28, #29, #31, #32, #33, #34 and #35) aligned to core and well-founded domain layers.</span></figcaption>
 				</figure>	
@@ -263,19 +286,19 @@
 	
 	<div class="p-5 rounded" id="hcionmechanism">
 		<h2 class="featurette-heading">Mechanisms to support HCI-ON evolution</h2>
-		<p align="justify" class="lead">An ON is like a living organism, i.e., it is constantly evolving. In a network, each new added node (i.e., ontology) contributes for the whole network. When a new ontology is added, it should reuse existing elements (from a higher or the same layer). Other ontologies, in turn, may be adapted to keep consistency, in order to share the same semantics along the whole network. Even the core ontologies can evolve to adapt or incorporate new concepts or relations discovered when domain ontologies are created or integrated. Moreover, due to the wideness and complexity of the domain addressed by the ON, it requires a continuous and long-term effort with ontologies being added and integrated incrementally (RUY, 2017). Therefore, new ontologies can be gradually added to HCI-ON, evolving the ON and the conceptualization it provides.</p>
-		<p align="justify" class="lead">Figure 5, illustrates the mechanisms to evolve the HCI-ON.</p>
+		<p align="justify" class="lead">An ON is like a living organism, i.e., it is constantly evolving. In a network, each new added node (i.e., ontology) contributes for the whole network. When a new ontology is added, it should reuse existing elements (from a higher or the same layer). Other ontologies, in turn, may be adapted to keep consistency, in order to share the same semantics along the whole network. Even the core ontologies can evolve to adapt or incorporate new concepts or relations discovered when domain ontologies are created or integrated. Moreover, due to the wideness and complexity of the domain addressed by the ON, it requires a continuous and long-term effort with ontologies being added and integrated incrementally (<a class="text-muted" href="#ruy2017">RUY, 2017</a>). Therefore, new ontologies can be gradually added to HCI-ON, evolving the ON and the conceptualization it provides.</p>
+		<p align="justify" class="lead">Figure <a class="text-muted" href="#hcion-fig05">5</a>, illustrates the mechanisms to evolve the HCI-ON.</p>
 		<div class="d-flex justify-content-center my-5">
-			<figure class="figure">
+			<figure class="figure" id="hcion-fig05">
 				<img src="images/hcion-fig07.png" class="figure-img img-fluid rounded" alt="...">
 				<figcaption class="figure-caption text-center"><span class="font-weight-bold">Figure 5: </span>HCI-ON evolution mechanisms.</figcaption>
 			</figure>
 		</div>
-		<p align="justify" class="lead">Before explaining them, it is necessary to clarify the meaning of some terms used in Figure 7: integrate is the act of joining two (or more) ontologies (which deal with different subjects) using dependency relationships (SALAMON, 2018); merge is the act of joining two (or more) ontologies (which deal with the same subject) also using dependency relationships (SUÁREZ-FIGUEROA et al., 2012); align consists in putting two (or more) ontologies in correspondence using alignment relationships (SUÁREZ-FIGUEROA et al., 2012);; and (iv) re-engineer consists in changing, restructuring and improving existing ontologies (SUÁREZ-FIGUEROA et al., 2012). In this work, re-engineer involves the use of UFO (i.e., the ontology is re-engineered in the light of UFO).</p>
+		<p align="justify" class="lead">Before explaining them, it is necessary to clarify the meaning of some terms used in Figure <a class="text-muted" href="#hcion-fig05">5</a>: integrate is the act of joining two (or more) ontologies (which deal with different subjects) using dependency relationships (<a class="text-muted" href="#salamon2018thesis">SALAMON, 2018</a>); merge is the act of joining two (or more) ontologies (which deal with the same subject) also using dependency relationships (<a class="text-muted" href="#suarezfigueroa2012">SUÁREZ-FIGUEROA et al., 2012</a>); align consists in putting two (or more) ontologies in correspondence using alignment relationships (<a class="text-muted" href="#suarezfigueroa2012">SUÁREZ-FIGUEROA et al., 2012</a>); and (iv) re-engineer consists in changing, restructuring and improving existing ontologies (<a class="text-muted" href="#suarezfigueroa2012">SUÁREZ-FIGUEROA et al., 2012</a>). In this work, re-engineer involves the use of UFO (i.e., the ontology is re-engineered in the light of UFO).</p>
 		<p align="justify" class="lead">There are four ways (here, called mechanisms) of evolving HCI-ON: (i) develop new ontologies from scratch and integrate them to the network; (ii) integrate existing ontologies grounded in UFO to the network; (iii) integrate existing ontologies not grounded in UFO, to the network; and (iv) align existing ontologies not grounded in UFO, to the network. In (i), (ii) and (iii), dependency relationships are used to integrate ontologies to HCI-ON. In (iv) alignment relationships are used to put ontologies in correspondence with HCI-ON ontologies.</p>
 		<p align="justify" class="lead">In (i), the ontology engineer builds a new ontology aiming at its integration to HCI-ON. The new ontology must be developed from scratch, grounded in UFO or reusing HCI-ON conceptualization (from core or well-founded domain layer, which are grounded in UFO). This ensures sharing the same foundation among all networked ontologies. The integration of the ontology to the networked is done through the dependency relationships from the new ontology to networked ontologies. As an example, new HCI domains ontologies can be developed based on more general domain ontologies of HCI-ON. For instance, an ontology on Brain Computer Interface can be develop based on the User Interface Elements and Types Ontology (UIT&EO).</p>
 		<p align="justify" class="lead">In (ii), the ontology engineer wants to add an existing ontology to HCI-ON and that ontology was built grounded in UFO. Thus, it is already consistent with the network foundation and, thus, can be directly integrated to HCI-ON through the dependency relationships from the new ontology to networked ontologies. It may be necessary to make minor adjustments to reuse the networked ontologies conceptualization. For example, if there is an ontology about Persona developed grounded on UFO, it could be integrated to HCI-ON. When two or more existing ontologies addressing the same subject represent together the conceptualization the ontology engineer wants to add to HCI-ON (i.e., they are complementary), the ontology engineer needs to merge them before integrating them to HCI-ON.</p>
-		<p align="justify" class="lead">In (iii), the ontology engineer aims to add an existing ontology to HCI-ON and that ontology was not built grounded in UFO. Thus, first, it is necessary to re-engineer the existing ontology in the light of UFO, so that the ontology will share the same basic conceptualization than the other networked ontologies and, thus, it will be possible to integrate it into the network properly. Analogous to (ii), if there are more than one ontology and they are complementary, they need to be merged before the integrations to HCI-ON. It is worthy saying that the order in which re-engineer and merge are applied is at the discretion of the ontology engineer, i.e., he/she can merge the ontologies and them re-engineer them or the other way around. For example, taking the results of our SLR into account (Chapter 3), some new domain ontologies could be integrated to HCI-ON. For example, we can merge and re-engineer the ontologies #16 and #17 to produce a Persona Ontology; #07, #16, #25, #26 and #30 to produce a User Capacity and Accessibility Ontology; #06, #16, #20 and #27 to produce an HCI Procedure Ontology, and integrate them to HCI-ON.</p>
+		<p align="justify" class="lead">In (iii), the ontology engineer aims to add an existing ontology to HCI-ON and that ontology was not built grounded in UFO. Thus, first, it is necessary to re-engineer the existing ontology in the light of UFO, so that the ontology will share the same basic conceptualization than the other networked ontologies and, thus, it will be possible to integrate it into the network properly. Analogous to (ii), if there are more than one ontology and they are complementary, they need to be merged before the integrations to HCI-ON. It is worthy saying that the order in which re-engineer and merge are applied is at the discretion of the ontology engineer, i.e., he/she can merge the ontologies and them re-engineer them or the other way around. For example, taking the results of our SLR into account (<a class="text-muted" href="#costa2021-SLR">COSTA; BARCELLOS; FALBO, 2021</a>), some new domain ontologies could be integrated to HCI-ON. For example, we can merge and re-engineer the ontologies #16 and #17 to produce a Persona Ontology; #07, #16, #25, #26 and #30 to produce a User Capacity and Accessibility Ontology; #06, #16, #20 and #27 to produce an HCI Procedure Ontology, and integrate them to HCI-ON.</p>
 		<p align="justify" class="lead">Finally, in (iv) the ontology engineer wants to add an existing ontology to the network as it is. For that, he/she must connect the ontology with HCI-ON through alignment relationships (i.e., align the existing ontology with networked ontologies by indicating equivalences between their concepts). On one hand, aligning existing ontologies to HCI-ON makes the HCI-ON conceptualization more comprehensive. On the other hand, it allows the plugged ontologies not to be changed (not affecting applications in which they are used) and, even so, extend their conceptualizations through mappings with concepts from HCI-ON ontologies. With (iv) new existing HCI ontologies (besides the ones we found in the secondary study) can be aligned to HCI-ON.</p>
 
     <div class="embed-responsive embed-responsive-16by9">
@@ -289,10 +312,18 @@
 	
 	<div class="p-5 rounded" id="hcionseon">
 		<h2 class="featurette-heading">HCI-ON's & SEON </h2>
-		<p align="justify" class="lead">Since several HCI concepts are related to Software Engineering, HCI-ON is integrated to SEON (Software Engineering Ontology Network) (RUY et al., 2016). SEON defines concepts such as software, hardware, equipment, requirements, stakeholder among others that are relevant to HCI. For example, to talk about interactive systems, user and user group and user requirements concepts addressed in SEON are necessary.</p>
-		<p align="justify" class="lead">SEON (presented in Section 2.3.1) has been developed over the years and provides a well-grounded network of SE reference ontologies. It is important to highlight that as HCI-ON evolves, with new HCI networked ontologies, there is a tendency for this integration to become increasingly stronger. New HCI ontologies mean new concepts and if they are related to software engineering concepts, it is therefore of the utmost importance that SEON concepts are reused.</p>
+		<p align="justify" class="lead">Since several HCI concepts are related to Software Engineering, HCI-ON is integrated to SEON (Software Engineering Ontology Network) (<a class="text-muted" href="#ruy2016">RUY et al., 2016</a>). SEON defines concepts such as software, hardware, equipment, requirements, stakeholder among others that are relevant to HCI. For example, to talk about interactive systems, user and user group and user requirements concepts addressed in SEON are necessary.</p>
+		<p align="justify" class="lead">SEON has been developed over the years and provides a well-grounded network of SE reference ontologies. It is important to highlight that as HCI-ON evolves, with new HCI networked ontologies, there is a tendency for this integration to become increasingly stronger. New HCI ontologies mean new concepts and if they are related to software engineering concepts, it is therefore of the utmost importance that SEON concepts are reused.</p>
 		<div class="d-flex justify-content-center my-5">
-			<figure class="figure">
+			<figure class="figure" id="hcion-fig06">
+				<img src="images/hcion-fig08.png" class="figure-img img-fluid rounded" alt="...">
+				<figcaption class="figure-caption text-center"><span class="font-weight-bold">Figure 6: </span>HCI-ON & SEON.</figcaption>
+			</figure>
+		</div>
+		
+		<p align="justify" class="lead">Both SEON and HCI-ON adopt UFO (Unified Foundational Ontology) at the foundational layer. This makes easier to integrate them, since they keep the same conceptualization foundation and, as a consequence, contribute to consistency in the networked ontologies conceptualization.</p>
+		<div class="d-flex justify-content-center my-5">
+			<figure class="figure" id="hcion-fig07">
 				<img src="images/HCI-ON and SEON.png" width="1256" class="map img-fluid" usemap="#HCI-ON and SEON"><map name="HCI-ON and SEON">
 <area shape="rect" coords="711,331,1191,399" href="HCIO.html#HCIO_HCIO_section" target="" title="">
 <area shape="rect" coords="1014,549,1082,617" href="CUO.html#CUO_CUO_section" target="" title="">
@@ -319,16 +350,482 @@
 			graph view »</a></figcaption>
 			</figure>
 		</div>
-		<p align="justify" class="lead">Both SEON and HCI-ON adopt UFO (Unified Foundational Ontology) at the founda- tional layer. This makes easier to integrate them, since they keep the same conceptualization foundation and, as a consequence, contribute to consistency in the networked ontologies concep- tualization.</p>
-		<div class="d-flex justify-content-center my-5">
-			<figure class="figure">
-				<img src="images/hcion-fig08.png" class="figure-img img-fluid rounded" alt="...">
-				<figcaption class="figure-caption text-center"><span class="font-weight-bold">Figure 6: </span>HCI-ON & SEON.</figcaption>
-			</figure>
-		</div>
-		<p align="justify" class="lead">Figure 6 shows the connections between HCI-ON and SEON. SEON ontologies relevant to the current version of HCI-ON are: the core ontologies System and Software Ontology (SysSwO, presented in Section 2.3.1.1) and Software Process Ontology (SPO, presented in Section 2.3.1.2; the Core Ontology on Measurement (COM, presented in 2.3.1.3) (SEON core ontologies) and the Reference Software Requirements Ontology (RSRO, presented in 2.3.1.4) (SEON domain ontologies). SysSwO is reused by most HCI-ON ontologies, due to the fact that it deals with recurring and relevant aspects in HCI such as systems and software. On the other hand, SPO, RSRO and CSDO are reused more punctually as they support a more specific conceptualization of the HCI domain. In Figure 6, each circle (network’s node) represents HCI-ON and SEON core or domain ontology. Dotted circles represent HCI-ON ontologies under development. Red arrows (directed arcs) represent dependency relationships from HCI-ON to SEON. HCI-ON dependency to SEON core ontologies are denoted by red solid arrows, while to SEON domain ontologies are denoted by red dotted arrows.</p>
+		<p align="justify" class="lead">Figure <a class="text-muted" href="#hcion-fig06">6</a> (see also Figure <a class="text-muted" href="#hcion-fig07">7</a>) shows the connections between HCI-ON and SEON. SEON ontologies relevant to the current version of HCI-ON are: the core ontologies System and Software Ontology (<a class="text-muted" href="SysSwO.html">SysSwO</a>) and Software Process Ontology (<a class="text-muted" target="_blank" href="https://dev.nemo.inf.ufes.br/seon/SPO.html">SPO</a>) the Core Ontology on Measurement (<a class="text-muted" target="_blank" href="https://dev.nemo.inf.ufes.br/seon/COM.html">COM</a>) (SEON core ontologies) and the Reference Software Requirements Ontology (<a class="text-muted" target="_blank" href="https://dev.nemo.inf.ufes.br/seon/RSRO.html">RSRO</a>) (SEON domain ontologies). SysSwO is reused by most HCI-ON ontologies, due to the fact that it deals with recurring and relevant aspects in HCI such as systems and software. On the other hand, SPO, RSRO and CSDO are reused more punctually as they support a more specific conceptualization of the HCI domain. In Figure 6, each circle (network’s node) represents HCI-ON and SEON core or domain ontology. Dotted circles represent HCI-ON ontologies under development. Red arrows (directed arcs) represent dependency relationships from HCI-ON to SEON. HCI-ON dependency to SEON core ontologies are denoted by red solid arrows, while to SEON domain ontologies are denoted by red dotted arrows.</p>
 	</div>
 
+<!-- BEGIN REF --->
+<hr>
+
+<div class="csl-bib-body container p-5 rounded" id="hcionref">
+	<h2 class="featurette-heading">References</h2>
+  <ul style="list-style-type:circle">
+    <li>
+<div data-csl-entry-id="castro2021thesis" id="castro2021thesis" class="csl-entry"><p align="justify">Castro, M. V. H. B. C. (2021). <i>An Ontology to support Knowledge Management Solutions for Human-Computer Interaction Design</i> [Mathesis]. Federal University of Espírito Santo.
+
+<!-- Button trigger modal -->
+<a href="" data-toggle="modal" data-target="#exampleModal_castro2021thesis">[bibtex]</a>
+
+</p>
+
+<!-- Modal -->
+<div class="modal fade in" id="exampleModal_castro2021thesis" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><small>Bibtex</small></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+<pre id="copy_castro2021thesis">
+@masterthesis{castro2021thesis,
+  author = {Castro, Murillo Vasconcelos H B Castro},
+  title = {{An Ontology to support Knowledge Management Solutions for Human-Computer Interaction Design}},
+  institution = {Universidade Federal do Esp{\'{i}}rito Santo},
+  year = {2021}
+}
+</pre>
+<!-- Trigger -->
+      </div>
+      <div class="modal-footer">
+        <button id="btn-tooltip" type="button" class="btn btn-tooltip" data-clipboard-target="#copy_castro2021thesis">
+          <i class="bi bi-clipboard"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end--->
+
+</div>      
+    </li>
+
+    <li>
+
+<div data-csl-entry-id="costa2021-SLR" id="costa2021-SLR" class="csl-entry"><p align="justify">Costa, S. D., Barcellos, M. P., &#38; Falbo, R. de A. (2021). Ontologies in human–computer interaction: A systematic literature review. <i>Applied Ontology</i>, 1–32. https://doi.org/10.3233/AO-210255
+
+<!-- Button trigger modal -->
+<a href="" data-toggle="modal" data-target="#exampleModal_costa2021-SLR">[bibtex]</a>
+<a href="https://doi.org/10.3233/AO-210255" target="_blank">[doi]</a>
+</p>
+
+<!-- Modal -->
+<div class="modal fade in" id="exampleModal_costa2021-SLR" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><small>Bibtex</small></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+<pre id="copy_costa2021-SLR">
+@article{costa2021-SLR,
+  abstract = {Human–Computer Interaction (HCI) is a multidisciplinary area that involves a diverse body of knowledge and a complex landscape of concepts, which can lead to semantic problems, hampering communication and knowledge transfer. Ontologies have been successfully used to solve semantics and knowledge-related problems in several domains. This paper presents a systematic literature review that investigated the use of ontologies in the HCI domain. The main goal was to find out how HCI ontologies have been used and developed. 35 ontologies were identified. As a result, we noticed that they cover different HCI aspects, such as user interface, interaction phenomenon, pervasive computing, user modeling / profile, HCI design, interaction experience and adaptive interactive system. Although there are overlaps, we did not identify reuse among the 35 analyzed ontologies. The ontologies have been used mainly to support knowledge representation and reasoning. Although ontologies have been used in HCI for more than 25 years, their use became more frequent in the last decade, when ontologies address a higher number of HCI aspects and are represented as both conceptual and computational models. Concerning how ontologies have been developed, we noticed that some good practices of ontology engineering have not been followed. Considering that the quality of an ontology directly influences the quality of the solution built based on it, we believe that there is an opportunity for HCI and ontology engineering professionals to get closer to build better and more effective ontologies, as well as ontology-based solutions.},
+  author = {Costa, Simone Dornelas and Barcellos, Monalessa Perini and Falbo, Ricardo de Almeida},
+  doi = {10.3233/AO-210255},
+  issn = {18758533},
+  journal = {Applied Ontology},
+  month = {oct},
+  pages = {1--32},
+  title = {{Ontologies in human–computer interaction: A systematic literature review}},
+  url = {https://www.medra.org/servlet/aliasResolver?alias=iospress&doi=10.3233/AO-210255},
+  year = {2021},
+}
+</pre>
+<!-- Trigger -->
+      </div>
+      <div class="modal-footer">
+        <button id="btn-tooltip" type="button" class="btn too btn-tooltip" data-clipboard-target="#copy_costa2021-SLR">
+          <i class="bi bi-clipboard"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end--->
+
+</div>      
+
+    </li>
+
+    <li>
+      
+<div data-csl-entry-id="costa2020-HCION" id="costa2020-HCION" class="csl-entry"><p align="justify">Costa, S. D., Barcellos, M. P., Falbo, R. de A., &#38; Castro, M. V. H. B. (2020). Towards an Ontology Network on Human-Computer Interaction. In G. Dobbie, U. Frank, G. Kappel, S. W. Liddle, &#38; H. C. Mayr (Eds.), <i>Proceedings of the 39th International Conference on Conceptual Modeling</i> (pp. 331–341). Springer International Publishing. https://doi.org/10.1007/978-3-030-62522-1_24
+
+<!-- Button trigger modal -->
+<a href="" data-toggle="modal" data-target="#exampleModal_costa2020-HCION">[bibtex]</a>
+<a href="https://doi.org/10.1007/978-3-030-62522-1_24" target="_blank">[doi]</a>
+</p>
+<!-- Modal -->
+<div class="modal fade in" id="exampleModal_costa2020-HCION" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><small>Bibtex</small></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+<pre id="copy_costa2020-HCION">
+@inproceedings{costa2020-HCION,
+  address = {Cham},
+  author = {Costa, Simone Dornelas and Barcellos, Monalessa Perini and Falbo, Ricardo de Almeida and Castro, Murillo Vasconcelos Henriques Bittencourt},
+  booktitle = {Proceedings of the 39th International Conference on Conceptual Modeling},
+  doi = {10.1007/978-3-030-62522-1_24},
+  editor = {Dobbie, Gillian and Frank, Ulrich and Kappel, Gerti and Liddle, Stephen W and Mayr, Heinrich C},
+  isbn = {978-3-030-62522-1},
+  pages = {331--341},
+  publisher = {Springer International Publishing},
+  title = {{Towards an Ontology Network on Human-Computer Interaction}},
+  year = {2020},
+}
+</pre>
+<!-- Trigger -->
+      </div>
+      <div class="modal-footer">
+        <button id="btn-tooltip" type="button" class="btn too btn-tooltip" data-clipboard-target="#copy_costa2020-HCION">
+          <i class="bi bi-clipboard"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end--->
+
+</div>
+
+    </li>
+
+    <li>
+      
+<div data-csl-entry-id="guizzardi2005" id="guizzardi2005" class="csl-entry"><p align="justify">Guizzardi, G. (2005). <i>Ontological foundations for structural conceptual models</i> [Phdthesis]. Telematica Instituut / CTIT.
+<!-- Button trigger modal -->
+<a href="" data-toggle="modal" data-target="#exampleModal_guizzardi2005">[bibtex]</a>
+</p>
+<!-- Modal -->
+<div class="modal fade in" id="exampleModal_guizzardi2005" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><small>Bibtex</small></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+<pre id="copy_guizzardi2005">
+@phdthesis{guizzardi2005,
+  abstract = {The main objective of this thesis is to contribute to the theory of Conceptual Modeling by proposing ontological foundations for structural conceptual models. Conceptual Modeling is a discipline of great importance to several areas in Computer Science. Its main objective is concerned with identifying, analyzing and describing the essential concepts and constraints of a universe of discourse, with the help of a (diagrammatic) modeling language that is based on a set of basic modeling concepts (forming a metamodel). In this thesis, we show how conceptual modeling languages can be evaluated and (re)designed with the purpose of improving their ontological adequacy. In simple terms, ontological adequacy is a measure of how close the models produced using a modeling language are to the situations in the reality they are supposed to represent. The thesis starts by proposing a systematic evaluation method for comparing a metamodel of the concepts underlying a language to a reference ontology of the corresponding domain in reality. The focus of this thesis is on general conceptual modeling languages (as opposed to domain specific ones). Hence, the proposed reference ontology is a foundational (or upper-level) ontology. Moreover, since, it focuses on structural modeling aspects (as opposed to dynamic ones), this foundational ontology is an ontology of objects, their properties and relations, their parts, the roles they play, and the types they instantiate. The proposed ontology was developed by adapting and extending a number of theories coming, primarily, from formal ontology in philosophy, but also from cognitive science and linguistics. Once developed, every subtheory of the ontology is used in the creation of methodological tools (e.g., modeling profiles, guidelines and design patterns). The expressiveness and relevance of these tools are shown throughout the thesis to solve some classical and recurrent conceptual modeling problems. Finally, the thesis demonstrates the applicability and usefulness of both the method and the proposed ontology by analyzing and extending a fragment of the Unified Modeling Language (UML) which deals with the construction of structural conceptual models.},
+  author = {Guizzardi, Giancarlo},
+  isbn = {90-75176-81-3},
+  keywords = {EWI-7146,IR-50826,METIS-224913},
+  publisher = {Telematica Instituut / CTIT},
+  title = {{Ontological foundations for structural conceptual models}},
+  year = {2005}
+}
+</pre>
+<!-- Trigger -->
+      </div>
+      <div class="modal-footer">
+        <button id="btn-tooltip" type="button" class="btn too btn-tooltip" data-clipboard-target="#copy_guizzardi2005">
+          <i class="bi bi-clipboard"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end--->
+
+</div>
+
+    </li>
+
+
+    <li>
+<div data-csl-entry-id="guizzardi2008" id="guizzardi2008" class="csl-entry"><p align="justify">Guizzardi, G., Falbo, R., &#38; Guizzardi, R. S. S. (2008). Grounding software domain ontologies in the unified foundational ontology (ufo): The case of the ode software process ontology. <i>Proceedings of the 1th Iberoamerican Workshop on Requirements Engineering and Software Environments (IDEAS’2008)</i>, 127–140.
+
+<!-- Button trigger modal -->
+<a href="" data-toggle="modal" data-target="#exampleModal_guizzardi2008">[bibtex]</a>
+</p>
+<!-- Modal -->
+<div class="modal fade in" id="exampleModal_guizzardi2008" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><small>Bibtex</small></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+<pre id="copy_guizzardi2008">
+@inproceedings{guizzardi2008,
+  abstract = {Foundational Ontologies are theoretically well-founded domain- independent systems of categories that have been su ccessfully used to improve the quality of conceptual modeling languages and models. In this paper, we present the latest developments in the UFO ontology. Moreover, we elaborate on the relevance of these foundational ontologies in t he development of domain ontologies by showing a case study in the software process domain.},
+  address = {Recife, Pernambuco, Brasil},
+  author = {Guizzardi, Giancarlo and Falbo, Ricardo and Guizzardi, Renata S S},
+  booktitle = {Proceedings of the 1th Iberoamerican Workshop on Requirements Engineering and Software Environments (IDEAS'2008)},
+  pages = {127--140},
+  title = {{Grounding software domain ontologies in the unified foundational ontology (ufo): The case of the ode software process ontology}},
+  year = {2008}
+}
+</pre>
+<!-- Trigger -->
+      </div>
+      <div class="modal-footer">
+        <button id="btn-tooltip" type="button" class="btn too btn-tooltip" data-clipboard-target="#copy_guizzardi2008">
+          <i class="bi bi-clipboard"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end--->
+
+</div>     
+
+    </li>
+
+  <li>
+<div data-csl-entry-id="guizzardi2013" id="guizzardi2013" class="csl-entry"><p align="justify">Guizzardi, G., Wagner, G., Falbo, R. de A., Guizzardi, R. S. S., &#38; Almeida, J. P. A. (2013). Towards Ontological Foundations for the Conceptual Modeling of Events. In W. Ng, V. C. Storey, &#38; J. C. Trujillo (Eds.), <i>Proceedings of the Conceptual Modeling</i> (pp. 327–341). Springer Berlin Heidelberg. https://doi.org/10.1007/978-3-642-41924-9_27
+<!-- Button trigger modal -->
+<a href="" data-toggle="modal" data-target="#exampleModal_guizzardi2013">[bibtex]</a>
+<a href="https://doi.org/10.1007/978-3-642-41924-9_27" target="_blank">[doi]</a>
+</p>
+<!-- Modal -->
+<div class="modal fade in" id="exampleModal_guizzardi2013" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><small>Bibtex</small></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+<pre id="copy_guizzardi2013">
+@inproceedings{guizzardi2013,
+  abstract = {In recent years, there has been a growing interest in the application of foundational ontologies, i.e., formal ontological theories in the philosophical sense, to provide a theoretically sound foundation for improving the theory and practice of conceptual modeling. In this paper, we present advances on our research on the ontological foundations of conceptual modeling by addressing the concept of events. We present a foundational ontology of events (termed UFO-B) together with its axiomatization in first-order logic. Moreover, we report on an implementation of UFO-B using the computational logic language Alloy, and discuss its consistency, validation and possible uses.},
+  address = {Berlin, Heidelberg},
+  author = {Guizzardi, Giancarlo and Wagner, Gerd and Falbo, Ricardo de Almeida and Guizzardi, Renata S S and Almeida, Jo{\~{a}}o Paulo A},
+  booktitle = {Proceedings of the Conceptual Modeling},
+  doi = {10.1007/978-3-642-41924-9_27},
+  editor = {Ng, Wilfred and Storey, Veda C and Trujillo, Juan C},
+  isbn = {978-3-642-41924-9},
+  pages = {327--341},
+  publisher = {Springer Berlin Heidelberg},
+  title = {{Towards Ontological Foundations for the Conceptual Modeling of Events}},
+  year = {2013}
+}
+</pre>
+<!-- Trigger -->
+      </div>
+      <div class="modal-footer">
+        <button id="btn-tooltip" type="button" class="btn too btn-tooltip" data-clipboard-target="#copy_guizzardi2013">
+          <i class="bi bi-clipboard"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end--->
+
+</div>    
+
+  </li>
+
+<li>
+<div data-csl-entry-id="ruy2017" id="ruy2017" class="csl-entry"><p align="justify">Ruy, Fabiano B, Guizzardi, G., Falbo, R. A., Reginato, C. C., &#38; Santos, V. A. (2017). From reference ontologies to ontology patterns and back. <i>Data &#38; Knowledge Engineering</i>, <i>109</i>, 41–69. https://doi.org/https://doi.org/10.1016/j.datak.2017.03.004
+<!-- Button trigger modal -->
+<a href="" data-toggle="modal" data-target="#exampleModal_ruy2017">[bibtex]</a>
+<a href="https://doi.org/10.1016/j.datak.2017.03.004" target="_blank">[doi]</a>
+</p>
+<!-- Modal -->
+<div class="modal fade in" id="exampleModal_ruy2017" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><small>Bibtex</small></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+<pre id="copy_ruy2017">
+@article{ruy2017,
+  abstract = {Building proper reference ontologies is a hard task. There are a number of methods and tools that traditionally have been used to support this task. These include the use of foundational theories, the reuse of domain and core ontologies, the adoption of development methods, as well as the support of proper software tools. In this context, an approach that has gained increasing attention in recent years is the systematic application of ontology patterns. However, a pattern-based approach to ontology engineering requires: the existence of a set of suitable patterns that can be reused in the construction of new ontologies; a proper methodological support for eliciting these patterns, as well as for applying them in the construction of these new models. The goal of this paper is twofold: (i) firstly, we present an approach for deriving conceptual ontology patterns from ontologies. These patterns are derived from ontologies of different generality levels, ranging from foundational to domain ontologies; (ii) secondly, we present guidelines that describe how these patterns can be applied in combination for building reference domain ontologies in a reuse-oriented process. In summary, this paper is about the construction of ontology patterns from ontologies, as well as the construction of ontologies from ontology patterns.},
+  annote = {Special issue on conceptual modeling — 34th International Conference on Conceptual Modeling},
+  author = {Ruy, Fabiano B and Guizzardi, Giancarlo and Falbo, Ricardo A and Reginato, C{\'{a}}ssio C and Santos, Victor A},
+  doi = {https://doi.org/10.1016/j.datak.2017.03.004},
+  issn = {0169-023X},
+  journal = {Data {\&} Knowledge Engineering},
+  keywords = {Conceptual ontology patterns,Ontology engineering,Ontology patterns,Ontology reuse},
+  pages = {41--69},
+  title = {{From reference ontologies to ontology patterns and back}},
+  volume = {109},
+  year = {2017}
+}
+</pre>
+<!-- Trigger -->
+      </div>
+      <div class="modal-footer">
+        <button id="btn-tooltip" type="button" class="btn too btn-tooltip" data-clipboard-target="#copy_ruy2017">
+          <i class="bi bi-clipboard"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end--->
+
+</div>
+
+</li>
+
+<li>
+<div data-csl-entry-id="ruy2016" id="ruy2016" class="csl-entry"><p align="justify">Ruy, Fabiano Borges, Falbo, R. de A., Barcellos, M. P., Costa, S. D., &#38; Guizzardi, G. (2016). SEON: A Software Engineering Ontology Network. In E. Blomqvist, P. Ciancarini, F. Poggi, &#38; F. Vitali (Eds.), <i>Proceedings of the Knowledge Engineering and Knowledge Management</i> (pp. 527–542). Springer International Publishing. https://doi.org/10.1007/978-3-319-49004-5_34
+<!-- Button trigger modal -->
+<a href="" data-toggle="modal" data-target="#exampleModal_ruy2016">[bibtex]</a>
+<a href="https://doi.org/10.1007/978-3-319-49004-5_34" target="_blank">[doi]</a>
+</p>
+<!-- Modal -->
+<div class="modal fade in" id="exampleModal_ruy2016" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><small>Bibtex</small></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+<pre id="copy_ruy2016">
+@incollection{ruy2016,
+  abstract = {Software Engineering (SE) is a wide domain, where ontologies are useful instruments for dealing with Knowledge Management (KM) related problems. When SE ontologies are built and used in isolation, some problems remain, in particular those related to knowledge integration. The goal of this paper is to provide an integrated solution for better dealing with KM-related problems in SE by means of a Software Engineering Ontology Network (SEON). SEON is designed with mechanisms for easing the development and integration of SE domain ontologies. The current version of SEON includes core ontologies for software and software processes, as well as domain ontologies for the main technical software engineering subdomains, namely requirements, design, coding and testing. We discuss the development of SEON and some of its envisioned applications related to KM.},
+  address = {Cham},
+  author = {Ruy, Fabiano Borges and Falbo, Ricardo de Almeida and Barcellos, Monalessa Perini and Costa, Simone Dornelas and Guizzardi, Giancarlo},
+  booktitle = {Proceedings of the Knowledge Engineering and Knowledge Management},
+  doi = {10.1007/978-3-319-49004-5_34},
+  editor = {Blomqvist, Eva and Ciancarini, Paolo and Poggi, Francesco and Vitali, Fabio},
+  isbn = {978-3-319-49004-5},
+  pages = {527--542},
+  publisher = {Springer International Publishing},
+  title = {{SEON: A Software Engineering Ontology Network}},
+  url = {http://link.springer.com/10.1007/978-3-319-49004-5_34},
+  year = {2016}
+}
+</pre>
+<!-- Trigger -->
+      </div>
+      <div class="modal-footer">
+        <button id="btn-tooltip" type="button" class="btn too btn-tooltip" data-clipboard-target="#copy_ruy2016">
+          <i class="bi bi-clipboard"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end--->
+</div>
+</li>
+
+<li>
+<div data-csl-entry-id="salamon2018thesis" id="salamon2018thesis" class="csl-entry"><p align="justify">Salamon, J. S. (2018). <i>Uma abordagem orientada a objetivos para desenvolvimento de ontologias baseado em integração</i> (p. 152) [Mathesis]. Federal University of Espírito Santo. http://repositorio.ufes.br/handle/10/9861
+<!-- Button trigger modal -->
+<a href="" data-toggle="modal" data-target="#exampleModal_salamon2018thesis">[bibtex]</a>
+<a href="http://repositorio.ufes.br/handle/10/9861" target="_blank">[url]</a>
+</p>
+<!-- Modal -->
+<div class="modal fade in" id="exampleModal_salamon2018thesis" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><small>Bibtex</small></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+<pre id="copy_salamon2018thesis">
+@masterthesis{salamon2018thesis,
+  author = {Salamon, Jordana Sarmenghi},
+  institution = {Universidade Federal do Esp{\'{i}}rito Santo},
+  pages = {152},
+  title = {{Uma abordagem orientada a objetivos para desenvolvimento de ontologias baseado em integra{\c{c}}{\~{a}}o}},
+  url = {http://repositorio.ufes.br/handle/10/9861},
+  year = {2018}
+}
+</pre>
+<!-- Trigger -->
+      </div>
+      <div class="modal-footer">
+        <button id="btn-tooltip" type="button" class="btn too btn-tooltip" data-clipboard-target="#copy_salamon2018thesis">
+          <i class="bi bi-clipboard"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end--->
+</div>
+</li>
+
+<li>
+<div data-csl-entry-id="suarezfigueroa2012" id="suarezfigueroa2012" class="csl-entry"><p align="justify">Suárez-Figueroa, M. C., Gómez-Pérez, A., Motta, E., &#38; Gangemi, A. (2012). Ontology Engineering in a Networked World. In M. C. Suárez-Figueroa, A. Gómez-Pérez, E. Motta, &#38; A. Gangemi (Eds.), <i>Ontology Engineering in a Networked World</i> (p. XII, 444). Springer Berlin Heidelberg. https://doi.org/10.1007/978-3-642-24794-1
+<!-- Button trigger modal -->
+<a href="" data-toggle="modal" data-target="#exampleModal_suarezfigueroa2012">[bibtex]</a>
+<a href="https://doi.org/10.1007/978-3-642-24794-1" target="_blank">[doi]</a>
+</p>
+<!-- Modal -->
+<div class="modal fade in" id="exampleModal_suarezfigueroa2012" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><small>Bibtex</small></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+<pre id="copy_suarezfigueroa2012">
+@book{suarezfigueroa2012,
+  abstract = {While ontology engineering is rapidly entering the mainstream, expert ontology engineers are a scarce resource. Hence, there is a need for practical methodologies and technologies, which can assist a variety of user types with ontology development tasks. To address this need, this book presents a scenario-based methodology, the NeOn Methodology, which provides guidance for all main activities in ontology engineering. The context in which we consider these activities is that of a networked world, where reuse of existing resources is commonplace, ontologies are developed collaboratively, and managing relationships between ontologies becomes an essential aspect of the ontological engineering process. The description of both the methodology and the ontology engineering activities is grounded in a comprehensive software environment, the NeOn Toolkit and its plugins, which provides integrated support for all the activities described in the book. Here we provide an introduction for the whole book, while the rest of the content is organized into 4 parts: (1) the NeOn Methodology Framework, (2) the set of ontology engineering activities, (3) the NeOn Toolkit and plugins, and (4) three use cases. Primary goals of this book are (a) to disseminate the results from the NeOn project in a structured and comprehensive form, (b) to make it easier for students and practitioners to adopt ontology engineering methods and tools, and (c) to provide a textbook for undergraduate and postgraduate courses on ontology engineering.},
+  address = {Berlin, Heidelberg},
+  author = {Su{\'{a}}rez-Figueroa, Mari Carmen and G{\'{o}}mez-P{\'{e}}rez, Asunci{\'{o}}n and Motta, Enrico and Gangemi, Aldo},
+  booktitle = {Ontology Engineering in a Networked World},
+  doi = {10.1007/978-3-642-24794-1},
+  editor = {Su{\'{a}}rez-Figueroa, Mari Carmen and G{\'{o}}mez-P{\'{e}}rez, Asunci{\'{o}}n and Motta, Enrico and Gangemi, Aldo},
+  isbn = {978-3-642-24793-4},
+  issn = {0192-8651},
+  pages = {XII, 444},
+  pmid = {20657591},
+  publisher = {Springer Berlin Heidelberg},
+  title = {{Ontology Engineering in a Networked World}},
+  url = {http://link.springer.com/10.1007/978-3-642-24794-1},
+  year = {2012}
+}
+</pre>
+<!-- Trigger -->
+      </div>
+      <div class="modal-footer">
+        <button id="btn-tooltip" type="button" class="btn too btn-tooltip" data-clipboard-target="#copy_suarezfigueroa2012">
+          <i class="bi bi-clipboard"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end--->
+</div>
+</li>
+  </ul>
+
+</div>
+
+	<!-- END REF --->
 	</main>
 
 	<footer class="p-5 rounded border-top">
@@ -382,7 +879,7 @@
 			<div class="col-md-auto">
 				<small>
 					<span class="text-muted">
-					Thu Dec 16 17:18:12 BRT 2021
+					Tue Dec 21 21:11:28 BRT 2021
 					</span>
 				</small>
 			</div>
@@ -397,7 +894,58 @@
 		<script type="text/javascript" src="bootstrap/jquery/jquery-3.5.1.slim.min.js"></script>
  		<script type="text/javascript" src="bootstrap/js/popper-1.16.1.min.js"></script>
   	<script type="text/javascript" src="bootstrap/4.6.1-dist/js/bootstrap.min.js"></script>
+  	<script src="bootstrap/js/clipboard.min.js"></script>
 
+  	<script type="text/javascript">
+	    // Tooltip
+	    console.log("teste");
+
+	    $('.btn-tooltip').tooltip({
+	      trigger: 'click',
+	      placement: 'bottom'
+	    });
+
+	    function setTooltip(message) {
+	      $('.btn-tooltip').tooltip('hide')
+	        .attr('data-original-title', message)
+	        .tooltip('show');
+	    }
+
+	    function hideTooltip() {
+	      setTimeout(function() {
+	        $('.btn-tooltip').tooltip('hide');
+	      }, 1000);
+	    }
+
+	    // Clipboard
+	    var clipboard = new ClipboardJS('.btn-tooltip');
+
+	    clipboard.on('success', function(e) {
+	         setTooltip('Copied!');
+	         hideTooltip();
+	     
+	    });
+
+	    clipboard.on('error', function(e) {
+	        setTooltip('Failed!');
+	        hideTooltip();
+	      
+	    });
+	     
+
+
+	    // var clipboard = new ClipboardJS('button');
+
+	    // clipboard.on('success', function(e) {
+	    //   setTooltip('Copied!');
+	    //   hideTooltip();
+	    // });
+
+	    // clipboard.on('error', function(e) {
+	    //   setTooltip('Failed!');
+	    //   hideTooltip();
+	    // });
+	  </script>
 
     <script type="text/javascript" src="jquery.min.js"></script>
 		<script type="text/javascript" src="maphilight.js"></script>
